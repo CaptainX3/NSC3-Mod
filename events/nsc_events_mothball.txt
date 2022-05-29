@@ -1,0 +1,438 @@
+namespace = nsc_events_mothball
+
+#the mothball feature
+planet_event = {
+	id = nsc_events_mothball.1
+	title = "nsc_events_mothball.1.name"
+	desc = "nsc_events_mothball.1.desc"
+	picture = GFX_evt_hangar_bay
+	show_sound = event_administrative_work
+	is_triggered_only = yes
+	location = this
+
+	immediate = {
+		nsc_mothball_target_fleet_selecting_effect = yes
+	}
+
+	#fleet 1
+	option = {
+		name = nsc_events_mothball.1.fleet_1_mothball_start
+		trigger = { NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_1 } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_start.tooltip
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_1 = {
+				every_controlled_ship = {
+					limit = {
+						OR = {
+							is_ship_class = shipclass_military
+							is_ship_class = shipclass_military_special
+							is_ship_size = juggernaut
+						}
+					}
+					set_disabled = yes
+					add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+				}
+				set_fleet_flag = nsc_mothballed_fleet_1
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_1_mothball_stop
+		trigger = {
+			event_target:nsc_mothball_target_fleet_1 = {
+				has_fleet_flag = nsc_mothballed_fleet_1
+				NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+			}
+		}
+		allow = { owner = { resource_stockpile_compare = { resource = alloys value >= 1 mult = event_target:nsc_mothball_target_fleet_1.nsc_mothball_target_fleet_1_total_cost_var } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_stop.tooltip
+		owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_1.nsc_mothball_target_fleet_1_total_cost_var } }
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_1 = {
+				set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.3 days = 1 }
+				clear_variable = nsc_mothball_target_fleet_1_total_cost_var
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_1_mothball_restoration_in_progress #only for showing a tooltip
+		trigger = { event_target:nsc_mothball_target_fleet_1 = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var } }
+		allow = { custom_tooltip_fail = { text = nsc_mothball_stop_trigger.fail always = no } } #so, this option is not clickable
+		custom_tooltip = nsc_events_mothball.1.fleet_1_mothball_restoration_timer.tooltip
+	}
+	#fleet 2
+	option = {
+		name = nsc_events_mothball.1.fleet_2_mothball_start
+		trigger = { NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_2 } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_start.tooltip
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_2 = {
+				every_controlled_ship = {
+					limit = {
+						OR = {
+							is_ship_class = shipclass_military
+							is_ship_class = shipclass_military_special
+							is_ship_size = juggernaut
+						}
+					}
+					set_disabled = yes
+					add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+				}
+				set_fleet_flag = nsc_mothballed_fleet_2
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_2_mothball_stop
+		trigger = {
+			event_target:nsc_mothball_target_fleet_2 = {
+				has_fleet_flag = nsc_mothballed_fleet_2
+				NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+			}
+		}
+		allow = { owner = { resource_stockpile_compare = { resource = alloys value >= 1 mult = event_target:nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_2_total_cost_var } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_stop.tooltip
+		owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_2_total_cost_var } }
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_2 = {
+				set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.3 days = 1 }
+				clear_variable = nsc_mothball_target_fleet_2_total_cost_var
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_2_mothball_restoration_in_progress
+		trigger = { event_target:nsc_mothball_target_fleet_2 = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var } }
+		allow = { custom_tooltip_fail = { text = nsc_mothball_stop_trigger.fail always = no } }
+		custom_tooltip = nsc_events_mothball.1.fleet_2_mothball_restoration_timer.tooltip
+	}
+	#fleet 3
+	option = {
+		name = nsc_events_mothball.1.fleet_3_mothball_start
+		trigger = { NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_3 } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_start.tooltip
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_3 = {
+				every_controlled_ship = {
+					limit = {
+						OR = {
+							is_ship_class = shipclass_military
+							is_ship_class = shipclass_military_special
+							is_ship_size = juggernaut
+						}
+					}
+					set_disabled = yes
+					add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+				}
+				set_fleet_flag = nsc_mothballed_fleet_3
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_3_mothball_stop
+		trigger = {
+			event_target:nsc_mothball_target_fleet_3 = {
+				has_fleet_flag = nsc_mothballed_fleet_3
+				NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+			}
+		}
+		allow = { owner = { resource_stockpile_compare = { resource = alloys value >= 1 mult = event_target:nsc_mothball_target_fleet_3.nsc_mothball_target_fleet_3_total_cost_var } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_stop.tooltip
+		owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_3.nsc_mothball_target_fleet_3_total_cost_var } }
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_3 = {
+				set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.3 days = 1 }
+				clear_variable = nsc_mothball_target_fleet_3_total_cost_var
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_3_mothball_restoration_in_progress
+		trigger = { event_target:nsc_mothball_target_fleet_3 = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var } }
+		allow = { custom_tooltip_fail = { text = nsc_mothball_stop_trigger.fail always = no } }
+		custom_tooltip = nsc_events_mothball.1.fleet_3_mothball_restoration_timer.tooltip
+	}
+	#fleet 4
+	option = {
+		name = nsc_events_mothball.1.fleet_4_mothball_start
+		trigger = { NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_4 } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_start.tooltip
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_4 = {
+				every_controlled_ship = {
+					limit = {
+						OR = {
+							is_ship_class = shipclass_military
+							is_ship_class = shipclass_military_special
+							is_ship_size = juggernaut
+						}
+					}
+					set_disabled = yes
+					add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+				}
+				set_fleet_flag = nsc_mothballed_fleet_4
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_4_mothball_stop
+		trigger = {
+			event_target:nsc_mothball_target_fleet_4 = {
+				has_fleet_flag = nsc_mothballed_fleet_4
+				NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+			}
+		}
+		allow = { owner = { resource_stockpile_compare = { resource = alloys value >= 1 mult = event_target:nsc_mothball_target_fleet_4.nsc_mothball_target_fleet_4_total_cost_var } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_stop.tooltip
+		owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_4.nsc_mothball_target_fleet_4_total_cost_var } }
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_4 = {
+				set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.3 days = 1 }
+				clear_variable = nsc_mothball_target_fleet_4_total_cost_var
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_4_mothball_restoration_in_progress
+		trigger = { event_target:nsc_mothball_target_fleet_4 = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var } }
+		allow = { custom_tooltip_fail = { text = nsc_mothball_stop_trigger.fail always = no } }
+		custom_tooltip = nsc_events_mothball.1.fleet_4_mothball_restoration_timer.tooltip
+	}
+	#fleet 5
+	option = {
+		name = nsc_events_mothball.1.fleet_5_mothball_start
+		trigger = { NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_5 } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_start.tooltip
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_5 = {
+				every_controlled_ship = {
+					limit = {
+						OR = {
+							is_ship_class = shipclass_military
+							is_ship_class = shipclass_military_special
+							is_ship_size = juggernaut
+						}
+					}
+					set_disabled = yes
+					add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+				}
+				set_fleet_flag = nsc_mothballed_fleet_5
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_5_mothball_stop
+		trigger = {
+			event_target:nsc_mothball_target_fleet_5 = {
+				has_fleet_flag = nsc_mothballed_fleet_5
+				NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+			}
+		}
+		allow = { owner = { resource_stockpile_compare = { resource = alloys value >= 1 mult = event_target:nsc_mothball_target_fleet_5.nsc_mothball_target_fleet_5_total_cost_var } } }
+		custom_tooltip = nsc_events_mothball.1.fleet_mothball_stop.tooltip
+		owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_5.nsc_mothball_target_fleet_5_total_cost_var } }
+		hidden_effect = {
+			event_target:nsc_mothball_target_fleet_5 = {
+				set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
+				fleet_event = { id = nsc_events_mothball.3 days = 1 }
+				clear_variable = nsc_mothball_target_fleet_5_total_cost_var
+			}
+			planet_event = { id = nsc_events_mothball.1 }
+		}
+	}
+	option = {
+		name = nsc_events_mothball.1.fleet_5_mothball_restoration_in_progress
+		trigger = { event_target:nsc_mothball_target_fleet_5 = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var } }
+		allow = { custom_tooltip_fail = { text = nsc_mothball_stop_trigger.fail always = no } }
+		custom_tooltip = nsc_events_mothball.1.fleet_5_mothball_restoration_timer.tooltip
+	}
+	#window close
+	option = {
+		name = nsc_events_mothball.1.close
+		hidden_effect = {
+			every_fleet_in_orbit = {
+				switch = {
+					trigger = has_fleet_flag
+					nsc_mothball_temporal_target_1 = { remove_fleet_flag = nsc_mothball_temporal_target_1 }
+					nsc_mothball_temporal_target_2 = { remove_fleet_flag = nsc_mothball_temporal_target_2 }
+					nsc_mothball_temporal_target_3 = { remove_fleet_flag = nsc_mothball_temporal_target_3 }
+					nsc_mothball_temporal_target_4 = { remove_fleet_flag = nsc_mothball_temporal_target_4 }
+					nsc_mothball_temporal_target_5 = { remove_fleet_flag = nsc_mothball_temporal_target_5 }
+				}
+			}
+			remove_planet_flag = nsc_mothball_target_fleets_counting_stopped
+		}
+	}
+}
+fleet_event = {
+	id = nsc_events_mothball.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_controlled_ship = {
+			limit = {
+				OR = {
+					is_ship_class = shipclass_military
+					is_ship_class = shipclass_military_special
+					is_ship_size = juggernaut
+				}
+			}
+			set_disabled = no
+			remove_modifier = nsc_ship_in_mothball
+		}
+		switch = {
+			trigger = has_fleet_flag
+			nsc_mothballed_fleet_1 = { remove_fleet_flag = nsc_mothballed_fleet_1 }
+			nsc_mothballed_fleet_2 = { remove_fleet_flag = nsc_mothballed_fleet_2 }
+			nsc_mothballed_fleet_3 = { remove_fleet_flag = nsc_mothballed_fleet_3 }
+			nsc_mothballed_fleet_4 = { remove_fleet_flag = nsc_mothballed_fleet_4 }
+			nsc_mothballed_fleet_5 = { remove_fleet_flag = nsc_mothballed_fleet_5 }
+		}
+		clear_variable = nsc_fleet_in_mothball_repair_timer_var
+	}
+}
+#fleet in mothball repair timer #this one is a fleet event so that the 'nsc_fleet_in_mothball_repair_timer_var' variable won't conflict with each other
+fleet_event = {
+	id = nsc_events_mothball.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_variable_set = nsc_fleet_in_mothball_repair_timer_var
+	}
+
+	immediate = {
+		change_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = -1 }
+		fleet_event = { id = nsc_events_mothball.3 days = 1 }
+	}
+}
+#scuttle the fleet when the planet is occupied by an enemy
+planet_event = {
+	id = nsc_events_mothball.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_fleet_in_orbit = {
+			OR = {
+				has_fleet_flag = nsc_mothballed_fleet_1
+				has_fleet_flag = nsc_mothballed_fleet_2
+				has_fleet_flag = nsc_mothballed_fleet_3
+				has_fleet_flag = nsc_mothballed_fleet_4
+				has_fleet_flag = nsc_mothballed_fleet_5
+			}
+		}
+	}
+
+	immediate = {
+		every_fleet_in_orbit = {
+			limit = {
+				OR = {
+					has_fleet_flag = nsc_mothballed_fleet_1
+					has_fleet_flag = nsc_mothballed_fleet_2
+					has_fleet_flag = nsc_mothballed_fleet_3
+					has_fleet_flag = nsc_mothballed_fleet_4
+					has_fleet_flag = nsc_mothballed_fleet_5
+				}
+			}
+			destroy_fleet = this
+		}
+		from = { country_event = { id = nsc_events_mothball.5 } }
+		fromfrom = { country_event = { id = nsc_events_mothball.6 } }
+	}
+}
+#notification for the fleet owner
+country_event = {
+	id = nsc_events_mothball.5
+	title = "nsc_events_mothball.5.name"
+	desc = "nsc_events_mothball.5.desc"
+	picture = GFX_evt_exploding_ship
+	show_sound = event_ship_explosion
+	is_triggered_only = yes
+	location = from
+
+	option = {
+		name = nsc_events_mothball.5.a
+	}
+}
+#notification for the planet occupier
+country_event = {
+	id = nsc_events_mothball.6
+	title = "nsc_events_mothball.6.name"
+	desc = "nsc_events_mothball.6.desc"
+	picture = GFX_evt_exploding_ship
+	show_sound = event_ship_explosion
+	is_triggered_only = yes
+	location = from
+
+	option = {
+		name = nsc_events_mothball.6.a
+	}
+}
+#scuttle the fleet when the planet's owner is none or changed
+planet_event = {
+	id = nsc_events_mothball.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_fleet_in_orbit = {
+			OR = {
+				has_fleet_flag = nsc_mothballed_fleet_1
+				has_fleet_flag = nsc_mothballed_fleet_2
+				has_fleet_flag = nsc_mothballed_fleet_3
+				has_fleet_flag = nsc_mothballed_fleet_4
+				has_fleet_flag = nsc_mothballed_fleet_5
+			}
+		}
+	}
+
+	immediate = {
+		every_fleet_in_orbit = {
+			limit = {
+				OR = {
+					has_fleet_flag = nsc_mothballed_fleet_1
+					has_fleet_flag = nsc_mothballed_fleet_2
+					has_fleet_flag = nsc_mothballed_fleet_3
+					has_fleet_flag = nsc_mothballed_fleet_4
+					has_fleet_flag = nsc_mothballed_fleet_5
+				}
+			}
+			destroy_fleet = this
+		}
+		from = { country_event = { id = nsc_events_mothball.8 } }
+	}
+}
+#notification for the fleet owner or the planet's new owner
+country_event = {
+	id = nsc_events_mothball.8
+	title = "nsc_events_mothball.8.name"
+	desc = "nsc_events_mothball.8.desc"
+	picture = GFX_evt_exploding_ship
+	show_sound = event_ship_explosion
+	is_triggered_only = yes
+	location = from
+
+	option = {
+		name = nsc_events_mothball.8.a
+	}
+}

@@ -1,0 +1,104 @@
+namespace = nsc_events_modmenu
+
+country_event = {
+	id = nsc_events_modmenu.1
+	title = "nsc_events_modmenu.1.name"
+	desc = "nsc_events_modmenu.1.desc"
+	picture = GFX_evt_flagship
+	is_triggered_only = yes
+
+	option = {
+		name = nsc_events_modmenu.1.1 #no bonus
+		allow = {
+			custom_tooltip = {
+				fail_text = nsc_events_modmenu.1.fail
+				NOT = { has_global_flag = nsc_modmenu_ai_bonus_1 }
+			}
+		}
+		hidden_effect = {
+			every_playable_country = {
+				limit = { is_ai = yes }
+				nsc_modmenu_clear_ai_bonuses_effect = yes
+				add_modifier = { modifier = nsc_ai_bonus_1 days = -1 }
+			}
+			set_global_flag = nsc_modmenu_ai_bonus_1
+			country_event = { id = nsc_events_modmenu.1 }
+		}
+	}
+	option = {
+		name = nsc_events_modmenu.1.2 #15% bonus
+		allow = {
+			custom_tooltip = {
+				fail_text = nsc_events_modmenu.1.fail
+				NOT = { has_global_flag = nsc_modmenu_ai_bonus_2 }
+			}
+		}
+		hidden_effect = {
+			every_playable_country = {
+				limit = { is_ai = yes }
+				nsc_modmenu_clear_ai_bonuses_effect = yes
+				add_modifier = { modifier = nsc_ai_bonus_2 days = -1 }
+			}
+			set_global_flag = nsc_modmenu_ai_bonus_2
+			country_event = { id = nsc_events_modmenu.1 }
+		}
+	}
+	option = {
+		name = nsc_events_modmenu.1.3 #30% bonus
+		allow = {
+			custom_tooltip = {
+				fail_text = nsc_events_modmenu.1.fail
+				NOT = { has_global_flag = nsc_modmenu_ai_bonus_3 }
+			}
+		}
+		hidden_effect = {
+			every_playable_country = {
+				limit = { is_ai = yes }
+				nsc_modmenu_clear_ai_bonuses_effect = yes
+				add_modifier = { modifier = nsc_ai_bonus_3 days = -1 }
+			}
+			set_global_flag = nsc_modmenu_ai_bonus_3
+			country_event = { id = nsc_events_modmenu.1 }
+		}
+	}
+	option = {
+		name = nsc_events_modmenu.1.4 #50% bonus
+		allow = {
+			custom_tooltip = {
+				fail_text = nsc_events_modmenu.1.fail
+				NOT = { has_global_flag = nsc_modmenu_ai_bonus_4 }
+			}
+		}
+		hidden_effect = {
+			every_playable_country = {
+				limit = { is_ai = yes }
+				nsc_modmenu_clear_ai_bonuses_effect = yes
+				add_modifier = { modifier = nsc_ai_bonus_4 days = -1 }
+			}
+			set_global_flag = nsc_modmenu_ai_bonus_4
+			country_event = { id = nsc_events_modmenu.1 }
+		}
+	}
+	option = {
+		name = nsc_events_modmenu.1.5 #70% bonus
+		allow = {
+			custom_tooltip = {
+				fail_text = nsc_events_modmenu.1.fail
+				NOT = { has_global_flag = nsc_modmenu_ai_bonus_5 }
+			}
+		}
+		hidden_effect = {
+			every_playable_country = {
+				limit = { is_ai = yes }
+				nsc_modmenu_clear_ai_bonuses_effect = yes
+				add_modifier = { modifier = nsc_ai_bonus_5 days = -1 }
+			}
+			set_global_flag = nsc_modmenu_ai_bonus_5
+			country_event = { id = nsc_events_modmenu.1 }
+		}
+	}
+	option = {
+		name = nsc_events_modmenu.close
+		default_hide_option = yes
+	}
+}

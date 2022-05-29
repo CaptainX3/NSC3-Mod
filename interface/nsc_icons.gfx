@@ -1,0 +1,232 @@
+spriteTypes = {
+
+	#####################
+	### STARBASE SIZE ###
+	#####################
+	spriteType = {
+		name = "GFX_starbase_ship_size_small"
+		textureFile = "gfx/interface/icons/starbase_ship_sizes.dds"
+		noOfFrames = 7
+	}
+
+	spriteType = {
+		name = "GFX_starbase_ship_size_medium"
+		textureFile = "gfx/interface/icons/starbase_ship_sizes_medium.dds"
+		noOfFrames = 7
+	}
+	
+	spriteType = {
+		name = "GFX_starbase_outliner"
+		textureFile = "gfx/interface/icons/starbase_outliner.dds"
+		noOfFrames = 7
+	}
+	
+	#################
+	### SHIP SIZE ###
+	#################
+	#templates
+	spriteType = {
+		name = "GFX_nsc_ship_sizes"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_ship_sizes.dds"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_sizes_top"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_ship_sizes_top.dds"
+		noOfFrames = 19
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_sizes_top_damaged"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_ship_sizes_top_damaged.dds"
+		noOfFrames = 19
+	}
+	#StrikeCruiser
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_13"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 13
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_13_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 13
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_13_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 13
+	}
+	#escortcarrier
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_14"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 14
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_14_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 14
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_14_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 14
+	}
+	#Battlecruiser
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_15"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 15
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_15_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 15
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_15_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 15
+	}
+	#Carrier
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_16"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 16
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_16_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 16
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_16_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 16
+	}
+	#Dreadnought
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_17"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 17
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_17_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 17
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_17_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 17
+	}
+	#Flagship
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_18"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 18
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_18_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 18
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_18_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 18
+	}
+	#headquarters
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_19"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
+		default_frame = 19
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_19_top"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 19
+	}
+	spriteType = {
+		name = "GFX_nsc_ship_size_military_19_top_damaged"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
+		default_frame = 19
+	}
+
+	##################################
+	### STARBASE MODULES/BUILDINGS ###
+	##################################
+	spriteType = {
+		name = "GFX_modules_nsc_drydock"
+		textureFile = "gfx/interface/icons/modules/sb_drydock.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_sb_starbase_administration"
+		textureFile = "gfx/interface/icons/modules/sb_starbase_administration.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_sb_hq_annex"
+		textureFile = "gfx/interface/icons/modules/sb_hq_annex.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_sb_solar_panel_network"
+		textureFile = "gfx/interface/icons/modules/sb_solar_panel_network.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_sb_customs_office"
+		textureFile = "gfx/interface/icons/modules/sb_customs_office.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_sb_sensor_station"
+		textureFile = "gfx/interface/icons/modules/sb_sensor_station.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_sb_power_station"
+		textureFile = "gfx/interface/icons/modules/sb_power_station.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_starbase_farming_terminal"
+		textureFile = "gfx/interface/icons/modules/sb_farming_terminal.dds"
+		noOfFrames = 1
+	}
+	
+	#######################
+	### ASCENSION PERKS ###
+	#######################
+	spriteType = {
+		name = "GFX_ap_nsc_matterenergy"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_nsc_matterenergy.dds"
+		alwaystransparent = yes
+	}
+
+	#######################
+	###### MODIFIERS ######
+	#######################
+	spriteType = {
+		name = "GFX_mod_nsc_non_artificial_planet_slave_produces_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_nsc_non_artificial_planet_worker_produces_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+	}
+	spriteType = {
+		name = "GFX_mod_nsc_freebooter_jobs_upkeep_mult"
+		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
+	}
+
+}

@@ -1,0 +1,10 @@
+﻿l_english:
+
+##################################################################################################################################################################################################################
+### ASCENSION PERKS ###
+#######################
+
+ap_nsc_matterenergy:0 "Matter-Energy Manipulation"
+ap_nsc_matterenergy_desc:0 "Our scientists have discovered how to manipulate matter-energy patterns, allowing us to create the resources we need by converting other resources we already have."
+
+allow_resource_factory:0 "§HUnlocks Megastructure:§! Strategic Resource Factory"

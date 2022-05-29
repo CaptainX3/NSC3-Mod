@@ -1,0 +1,380 @@
+﻿l_english:
+
+
+##################################################################################################################################################################################################################
+### HULL SIZES ###
+##################
+
+STRIKECRUISER:0 "Strike Cruiser"
+BATTLECRUISER:0 "Battlecruiser"
+CARRIER:0 "Carrier"
+DREADNOUGHT:0 "Dreadnought"
+FLAGSHIP:0 "Flagship"
+SUPPORTSHIP:0 "Fleet Support Ship"
+EXPLORATIONSHIP:0 "Exploration Cruiser"
+
+StrikeCruiser:0 "Strike Cruiser"
+StrikeCruiser_plural:0 "Strike Cruisers"
+Battlecruiser:0 "Battlecruiser"
+Battlecruiser_plural:0 "Battlecruisers" 
+Carrier:0 "Carrier"
+Carrier_plural:0 "Carriers"
+Dreadnought:0 "Dreadnought"
+Dreadnought_plural:0 "Dreadnoughts"
+Flagship:0 "Flagship"
+Flagship_plural:0 "Flagships"
+supportship:0 "Fleet Support Ship"
+supportship_plural:0 "Fleet Support Ships"
+explorationship:0 "Exploration Cruiser"
+explorationship_plural:0 "Exploration Cruisers"
+escortcarrier:0 "Escort Carrier"
+escortcarrier_plural:0 "Escort Carriers"
+
+starbase_stronghold:0 "Grand Citadel"
+starbase_stronghold_plural:0 "Grand Citadels"
+
+starbase_headquarters:0 "Solar Stronghold"
+starbase_headquarters_plural:0 "Solar Strongholds"
+
+headquarters:0 "Headquarters"
+headquarters_plural:0 "Headquarters"
+headquarters_desc:0 "Provides §GHeadquarters Station§! empire modifier."
+
+xl_cannon:0 "Annihilator Cannon"
+xl_cannon_plural:0 "Annihilator Cannons"
+
+
+
+
+##################################################################################################################################################################################################################
+### SECTION NAMES ###
+#####################
+
+CORVETTE_MID_T1PD1: "Missile Boat 2"
+CORVETTE_MID_S3: "Interceptor"
+CORVETTE_MID_S2PD1: "Picket Ship"
+#-------------------------------------------------------------------#
+DESTROYER_BOW_M1S2: "Gunship Bow"
+DESTROYER_BOW_S3: "Picket Bow"
+DESTROYER_BOW_G2: "Missile Bow"
+DESTROYER_BOW_PD4_U: "PD Destroyer Bow"
+
+DESTROYER_STERN_S2: "Interceptor Stern"
+DESTROYER_STERN_M1: "Gunship Stern"
+DESTROYER_STERN_G1: "Missile Stern"
+DESTROYER_STERN_PD2_U: "PD Destroyer Stern"
+#-------------------------------------------------------------------#
+CRUISER_BOW_L1: "Artillery Bow"
+CRUISER_BOW_G1S2: "Missile Bow"
+CRUISER_BOW_M2: "Broadside Bow"
+CRUISER_BOW_G1PD2: "Pinpoint Bow"
+CRUISER_BOW_M1S2: "Volley Bow"
+
+CRUISER_MID_L1M1: "Artillery Core"
+CRUISER_MID_M3: "Broadside Core"
+CRUISER_MID_G2S2: "Missile Core"
+CRUISER_MID_G2PD2: "Pinpoint Core"
+
+CRUISER_STERN_M1: "Broadside Stern"
+CRUISER_STERN_S2: "Spitfire Stern"
+CRUISER_STERN_PD2: "Pinpoint Stern"
+#-------------------------------------------------------------------#
+EXPLORATIONSHIP_BOW_L1: "Artillery Bow (L1)"
+EXPLORATIONSHIP_BOW_G1S2: "Fusillade Bow (L1)"
+EXPLORATIONSHIP_BOW_M2: "Broadside Bow (L1)"
+EXPLORATIONSHIP_BOW_L2: "Artillery Bow (L2)"
+EXPLORATIONSHIP_BOW_G2S2: "Fusillade Bow (L2)"
+EXPLORATIONSHIP_BOW_M3: "Broadside Bow (L2)"
+EXPLORATIONSHIP_BOW_L4: "Artillery Bow (L3)"
+EXPLORATIONSHIP_BOW_G4S4: "Fusillade Bow (L3)"
+EXPLORATIONSHIP_BOW_M6: "Broadside Bow (L3)"
+
+EXPLORATIONSHIP_MID1_L1G1: "Barrage Core 1 (L1)"
+EXPLORATIONSHIP_MID1_L1M1: "Artillery Core 1 (L1)"
+EXPLORATIONSHIP_MID1_M2S2: "Volley Core 1 (L1)"
+EXPLORATIONSHIP_MID1_G3: "Missile Core 1 (L1)"
+EXPLORATIONSHIP_MID1_M3: "Broadside Core 1 (L1)"
+EXPLORATIONSHIP_MID1_L1G2: "Barrage Core 1 (L2)"
+EXPLORATIONSHIP_MID1_L2M1: "Artillery Core 1 (L2)"
+EXPLORATIONSHIP_MID1_M3S3: "Volley Core 1 (L2)"
+EXPLORATIONSHIP_MID1_G4H1: "Missile Core 1 (L2)"
+EXPLORATIONSHIP_MID1_M4: "Broadside Core 1 (L2)"
+EXPLORATIONSHIP_MID1_L2G4: "Barrage Core 1 (L3)"
+EXPLORATIONSHIP_MID1_L4M2: "Artillery Core 1 (L3)"
+EXPLORATIONSHIP_MID1_M6S6: "Volley Core 1 (L3)"
+EXPLORATIONSHIP_MID1_G8H2: "Missile Core 1 (L3)"
+EXPLORATIONSHIP_MID1_M8: "Broadside Core 1 (L3)"
+
+EXPLORATIONSHIP_MID2_L1G1: "Barrage Core 2 (L1)"
+EXPLORATIONSHIP_MID2_L1M1: "Artillery Core 2 (L1)"
+EXPLORATIONSHIP_MID2_M2S2: "Volley Core 2 (L1)"
+EXPLORATIONSHIP_MID2_G3: "Missile Core 2 (L1)"
+EXPLORATIONSHIP_MID2_M3: "Broadside Core 2 (L1)"
+EXPLORATIONSHIP_MID2_L1G2: "Barrage Core 2 (L2)"
+EXPLORATIONSHIP_MID2_L2M1: "Artillery Core 2 (L2)"
+EXPLORATIONSHIP_MID2_M3S3: "Volley Core 2 (L2)"
+EXPLORATIONSHIP_MID2_G4H1: "Missile Core 2 (L2)"
+EXPLORATIONSHIP_MID2_M4: "Broadside Core 2 (L2)"
+EXPLORATIONSHIP_MID2_L2G4: "Barrage Core 2 (L3)"
+EXPLORATIONSHIP_MID2_L4M2: "Artillery Core 2 (L3)"
+EXPLORATIONSHIP_MID2_M6S6: "Volley Core 2 (L3)"
+EXPLORATIONSHIP_MID2_G8H2: "Missile Core 2 (L3)"
+EXPLORATIONSHIP_MID2_M8: "Broadside Core 2 (L3)"
+
+EXPLORATIONSHIP_STERN_M1: "Broadside Stern (L1)"
+EXPLORATIONSHIP_STERN_L1: "Artillery Stern (L1)"
+EXPLORATIONSHIP_STERN_S3: "Spitfire Stern (L1)"
+EXPLORATIONSHIP_STERN_PD3: "PD Stern (L1)"
+EXPLORATIONSHIP_STERN_M4: "Broadside Stern (L2)"
+EXPLORATIONSHIP_STERN_L2: "Artillery Stern (L2)"
+EXPLORATIONSHIP_STERN_S6: "Spitfire Stern (L2)"
+EXPLORATIONSHIP_STERN_PD6: "PD Stern (L2)"
+EXPLORATIONSHIP_STERN_M8: "Broadside Stern (L3)"
+EXPLORATIONSHIP_STERN_L4: "Artillery Stern (L3)"
+EXPLORATIONSHIP_STERN_S12: "Spitfire Stern (L3)"
+EXPLORATIONSHIP_STERN_PD12: "PD Stern (L3)"
+#-------------------------------------------------------------------#
+ESCORTCARRIER_BOW_L1: "Artillery Bow"
+ESCORTCARRIER_BOW_M1S2: "Broadside Bow"
+ESCORTCARRIER_BOW_G2: "Missile Bow"
+
+ESCORTCARRIER_MID1_PD2H2: "Carrier Core 1"
+
+ESCORTCARRIER_MID2_PD2H2: "Carrier Core 2"
+ESCORTCARRIER_MID2_INV: "Invasion Core"
+
+ESCORTCARRIER_STERN_M1: "Broadside Stern"
+ESCORTCARRIER_STERN_G1: "Missile Stern"
+ESCORTCARRIER_STERN_S2: "Spitfire Stern"
+ESCORTCARRIER_STERN_PD2: "Point Defense Stern"
+#-------------------------------------------------------------------#
+STRIKECRUISER_BOW_M2S2: "Volley Bow"
+STRIKECRUISER_BOW_M2PD2: "Pinpoint Bow"
+STRIKECRUISER_BOW_G1S4: "Fusillade Bow"
+STRIKECRUISER_BOW_G2: "Missile Bow"
+STRIKECRUISER_BOW_L1: "Artillery Bow"
+STRIKECRUISER_BOW_M3: "Broadside Bow"
+
+STRIKECRUISER_MID_M2S2: "Volley Core"
+STRIKECRUISER_MID_S6: "Spitfire Core"
+STRIKECRUISER_MID_M3: "Broadside Core"
+
+STRIKECRUISER_STERN_M2: "Broadside Stern"
+STRIKECRUISER_STERN_S2PD2: "Pinpoint Stern"
+STRIKECRUISER_STERN_S4: "Spitfire Stern"
+#-------------------------------------------------------------------#
+BATTLECRUISER_BOW_L2: "Artillery Bow"
+BATTLECRUISER_BOW_G2S2: "Fusillade Bow"
+BATTLECRUISER_BOW_M3: "Broadside Bow"
+
+BATTLECRUISER_MID1_L1G2: "Barrage Core 1"
+BATTLECRUISER_MID1_L2M1: "Artillery Core 1"
+BATTLECRUISER_MID1_M2S2: "Volley Core 1"
+BATTLECRUISER_MID1_G4: "Missile Core 1"
+BATTLECRUISER_MID1_M4: "Broadside Core 1"
+
+BATTLECRUISER_MID2_L1G2: "Barrage Core 2"
+BATTLECRUISER_MID2_L2M1: "Artillery Core 2"
+BATTLECRUISER_MID2_M2S2: "Volley Core 2"
+BATTLECRUISER_MID2_G4: "Missile Core 2"
+BATTLECRUISER_MID2_M4: "Broadside Core 2"
+
+BATTLECRUISER_MID3_L1G2: "Barrage Core 3"
+BATTLECRUISER_MID3_L2M1: "Artillery Core 3"
+BATTLECRUISER_MID3_M2S2: "Volley Core 3"
+BATTLECRUISER_MID3_G4: "Missile Core 3"
+BATTLECRUISER_MID3_M4: "Broadside Core 3"
+
+BATTLECRUISER_STERN_M2: "Broadside Stern"
+BATTLECRUISER_STERN_L1: "Artillery Stern"
+BATTLECRUISER_STERN_S3: "Spitfire Stern"
+BATTLECRUISER_STERN_PD3: "Point Defense Stern"
+#-------------------------------------------------------------------#
+BATTLESHIP_BOW_L3M3S3: "Coverage Bow"
+BATTLESHIP_BOW_L4: "Artillery Bow"
+BATTLESHIP_BOW_L3S4: "Carronade Bow"
+BATTLESHIP_BOW_M6S6: "Volley Bow"
+BATTLESHIP_BOW_SFU: "Spitfire Bow"
+BATTLESHIP_BOW_XL1PD1: "XL Turret Bow"
+BATTLESHIP_BOW_XL1: "XL Spinal Mount Bow"
+
+BATTLESHIP_MID_L3M3: "Bombardment Core"
+BATTLESHIP_MID_L4: "Artillery Core"
+BATTLESHIP_MID_L2M6: "Broadside Core"
+BATTLESHIP_MID_L3S5: "Carronade Core"
+BATTLESHIP_MID_SFU: "Spitfire Core"
+
+BATTLESHIP_STERN_L4: "Artillery Stern"
+BATTLESHIP_STERN_M8: "Broadside Stern"
+BATTLESHIP_STERN_M6S6: "Volley Stern"
+BATTLESHIP_STERN_M6PD4: "Pinpoint Stern"
+BATTLESHIP_STERN_SFU: "Spitfire Stern"
+#-------------------------------------------------------------------#
+CARRIER_BOW_M1S2PD2: "Salvo Bow"
+CARRIER_BOW_M1G2PD4: "Point Defense Bow"
+CARRIER_BOW_G3PD2: "Barrage Bow"
+CARRIER_BOW_G2S4PD2: "Carronade Bow"
+
+CARRIER_MID1_G2HB: "Missile Core 1"
+CARRIER_MID1_S2PD2HB: "Pinpoint Core 1"
+CARRIER_MID1_PD4HB: "Point Defense Core 1"
+CARRIER_MID1_INVASION: "Invasion Core 1"
+
+CARRIER_MID1_G4HB_HU: "HC Missile Core 1"
+CARRIER_MID1_S2PD2HB_HU: "HC Pinpoint Core 1"
+CARRIER_MID1_PD4HB_HU: "HC PD Core 1"
+
+CARRIER_MID1_G4HB_SU: "SC Missile Core 1"
+CARRIER_MID1_S2PD2HB_SU: "SC Pinpoint Core 1"
+CARRIER_MID1_PD4HB_SU: "SC Point Defense Core 1"
+
+CARRIER_MID2_G2HB: "Missile Core 2"
+CARRIER_MID2_S2PD2HB: "Pinpoint Core 2"
+CARRIER_MID2_PD4HB: "Point Defense Core 2"
+CARRIER_MID2_INVASION: "Invasion Core 2"
+
+CARRIER_MID2_G4HB_HU: "HC Missile Core 2"
+CARRIER_MID2_S2PD2HB_HU: "HC Pinpoint Core 2"
+CARRIER_MID2_PD4HB_HU: "HC Point Defense Core 2"
+
+CARRIER_MID2_G4HB_SU: "SC Missile Core 2"
+CARRIER_MID2_S2PD2HB_SU: "SC Pinpoint Core 2"
+CARRIER_MID2_PD4HB_SU: "SC Point Defense Core 2"
+
+CARRIER_STERN_G2: "Missile Stern"
+CARRIER_STERN_M1PD2: "Coverage Stern"
+CARRIER_STERN_S2PD2: "Pinpoint Stern"
+#-------------------------------------------------------------------#
+DREADNOUGHT_BOW_L2M4S4: "Coverage Bow"
+DREADNOUGHT_BOW_L4: "Artillery Bow"
+DREADNOUGHT_BOW_L2S2PD6: "Carronade Bow"
+DREADNOUGHT_BOW_X2: "Devastator Bow"
+DREADNOUGHT_BOW_XL2: "XL Turret Bow"
+
+DREADNOUGHT_MID1_L2G5: "Barrage Core 1"
+DREADNOUGHT_MID1_L6: "Artillery Core 1"
+DREADNOUGHT_MID1_L2M7: "Bombardment Core 1"
+DREADNOUGHT_MID1_L2PD9: "Pinpoint Core 1"
+
+DREADNOUGHT_MID2_L2G5: "Barrage Core 2"
+DREADNOUGHT_MID2_L6: "Artillery Core 2"
+DREADNOUGHT_MID2_L2M7: "Bombardment Core 2"
+DREADNOUGHT_MID2_L2PD9: "Pinpoint Core 2"
+
+DREADNOUGHT_MID3_L2G5: "Barrage Core 3"
+DREADNOUGHT_MID3_L6: "Artillery Core 3"
+DREADNOUGHT_MID3_L2M7: "Bombardment Core 3"
+DREADNOUGHT_MID3_L2PD9: "Pinpoint Core 3"
+
+DREADNOUGHT_STERN_L2: "Artillery Stern"
+DREADNOUGHT_STERN_M6: "Broadside Stern"
+DREADNOUGHT_STERN_M4S4PD2: "Volley Stern"
+DREADNOUGHT_STERN_G4: "Missile Stern"
+#-------------------------------------------------------------------#
+TITAN_BOW_T2: "Nova Bow"
+TITAN_BOW_XL3: "Annihilator Bow"
+
+TITAN_MID1_G16: "Missile Core"
+TITAN_MID1_L4G10PD2: "Barrage Core"
+TITAN_MID1_L12PD4: "Artillery Core"
+
+TITAN_STERN_G16: "Missile Stern"
+TITAN_STERN_L4G10PD2: "Barrage Stern"
+TITAN_STERN_L10PD4: "Artillery Stern"
+#-------------------------------------------------------------------#
+FLAGSHIP_BOW_T4H6_1: "Siegebreaker Bow 1"
+FLAGSHIP_BOW_T4H6_2: "Siegebreaker Bow 2"
+FLAGSHIP_BOW_T4H6_3: "Siegebreaker Bow 3"
+FLAGSHIP_BOW_T1XL8H6_1: "Basilisk Bow 1"
+FLAGSHIP_BOW_T1XL8H6_2: "Basilisk Bow 2"
+FLAGSHIP_BOW_T1XL8H6_3: "Basilisk Bow 3"
+FLAGSHIP_BOW_XL12H6_1: "Stormbringer Bow 1"
+FLAGSHIP_BOW_XL12H6_2: "Stormbringer Bow 2"
+FLAGSHIP_BOW_XL12H6_3: "Stormbringer Bow 3"
+FLAGSHIP_BOW_G6S4H6: "Hailfire Bow"
+FLAGSHIP_BOW_M7S2H6: "Broadside Bow"
+
+FLAGSHIP_MID1_L16: "Artillery Core 1"
+FLAGSHIP_MID1_L8M8: "Bombardment Core 1"
+FLAGSHIP_MID1_L6S6PD4: "Carronade Core 1"
+FLAGSHIP_MID1_L8G8: "Barrage Core 1"
+FLAGSHIP_MID1_G16: "Missile Core 1"
+FLAGSHIP_MID1_M16: "Broadside Core 1"
+FLAGSHIP_MID1_G8M8: "Salvo Core 1"
+FLAGSHIP_MID1_H12PD4: "Carrier Core 1"
+
+FLAGSHIP_MID2_L16: "Artillery Core 2"
+FLAGSHIP_MID2_L8M8: "Bombardment Core 2"
+FLAGSHIP_MID2_L6S6PD4: "Carronade Core 2"
+FLAGSHIP_MID2_L8G8: "Barrage Core 2"
+FLAGSHIP_MID2_G16: "Missile Core 2"
+FLAGSHIP_MID2_M16: "Broadside Core 2"
+FLAGSHIP_MID2_G8M8: "Salvo Core 2"
+FLAGSHIP_MID2_H12PD4: "Carrier Core 2"
+
+FLAGSHIP_MID3_L16: "Artillery Core 3"
+FLAGSHIP_MID3_L8M8: "Bombardment Core 3"
+FLAGSHIP_MID3_L6S6PD4: "Carronade Core 3"
+FLAGSHIP_MID3_L8G8: "Barrage Core 3"
+FLAGSHIP_MID3_G16: "Missile Core 3"
+FLAGSHIP_MID3_M16: "Broadside Core 3"
+FLAGSHIP_MID3_G8M8: "Salvo Core 3"
+FLAGSHIP_MID3_H12PD4: "Carrier Core 3"
+
+FLAGSHIP_MID4_L16: "Artillery Core 4"
+FLAGSHIP_MID4_L8M8: "Bombardment Core 4"
+FLAGSHIP_MID4_L6S6PD4: "Carronade Core 4"
+FLAGSHIP_MID4_L8G8: "Barrage Core 4"
+FLAGSHIP_MID4_G16: "Missile Core 4"
+FLAGSHIP_MID4_M16: "Broadside Core 4"
+FLAGSHIP_MID4_G8M8: "Salvo Core 4"
+FLAGSHIP_MID4_H12PD4: "Carrier Core 4"
+
+FLAGSHIP_STERN_L16: "Artillery Stern"
+FLAGSHIP_STERN_M16: "Broadside Stern"
+FLAGSHIP_STERN_G16: "Missile Stern"
+FLAGSHIP_STERN_M8PD8: "Torrent Stern"
+FLAGSHIP_STERN_G8PD8: "Salvo Stern"
+FLAGSHIP_STERN_H6PD10: "PD Stern"
+#-------------------------------------------------------------------#
+STRONGHOLD_STARBASE_SECTION_T: "Grand Citadel Section"
+STRONGHOLD_STARBASE_SECTION_XL: "Grand Citadel Section"
+#-------------------------------------------------------------------#
+HEADQUARTERS_STARBASE_SECTION_T: "Stronghold Section"
+HEADQUARTERS_STARBASE_SECTION_XL: "Stronghold Section"
+#-------------------------------------------------------------------#
+PDSMALL_MILITARY_STATION_SECTION: "Light/PD Station Section"
+MEDTORP_MILITARY_STATION_SECTION: "Medium/Torpedo Station Section"
+
+LIGHT_MILITARY_STATION_SECTION_2: "Light Station Section"
+PD_MILITARY_STATION_SECTION_2: "PD Station Section"
+PDSMALL_MILITARY_STATION_SECTION_2: "Light/PD Station Section"
+MEDIUM_MILITARY_STATION_SECTION_2: "Medium Station Section"
+MEDTORP_MILITARY_STATION_SECTION_2: "Medium/Torp Station Section"
+MISSILE_MILITARY_STATION_SECTION_2: "Missile Station Section"
+HEAVY_MILITARY_STATION_SECTION_2: "Heavy Station Section"
+HANGAR_MILITARY_STATION_SECTION_2: "Hangar Station Section"
+
+LIGHT_MILITARY_STATION_SECTION_3: "Light Station Section"
+PD_MILITARY_STATION_SECTION_3: "PD Station Section"
+PDSMALL_MILITARY_STATION_SECTION_3: "Light/PD Station Section"
+MEDIUM_MILITARY_STATION_SECTION_3: "Medium Station Section"
+MEDTORP_MILITARY_STATION_SECTION_3: "Medium/Torp Station Section"
+MISSILE_MILITARY_STATION_SECTION_3: "Missile Station Section"
+HEAVY_MILITARY_STATION_SECTION_3: "Heavy Station Section"
+HANGAR_MILITARY_STATION_SECTION_3: "Hangar Station Section"
+
+#-------------------------------------------------------------------#
+XL_CANNON_CORE: "Annihilator Cannon Core"
+T_CANNON_CORE: "Obliterator Cannon Core"
+T_CANNON_CORE: "Obliterator Core"
+#-------------------------------------------------------------------#
+MISSILE_JUGGERNAUT_SECTION: "Missile Juggernaut"
+ARTILLERY_JUGGERNAUT_SECTION: "Artillery Juggernaut"
+STRIKECRAFT_JUGGERNAUT_SECTION: "Strike Craft Juggernaut"
+ARTILLERY_JUGGERNAUT_SECTION: "Broadside Juggernaut"
+#-------------------------------------------------------------------#
+CORE1_HEADQUARTERS_SECTION: "Headquarters Core 1"
+CORE2_HEADQUARTERS_SECTION: "Headquarters Core 2"
+CORE3_HEADQUARTERS_SECTION: "Headquarters Core 3"
+CORE4_HEADQUARTERS_SECTION: "Headquarters Core 4"

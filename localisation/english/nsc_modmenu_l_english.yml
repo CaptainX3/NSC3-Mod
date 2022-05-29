@@ -1,0 +1,25 @@
+﻿l_english:
+
+### 1. Empire Modifiers ###
+nsc_ai_bonus_1:0 "§RNo AI Bonus§!"
+nsc_ai_bonus_2:0 "§H15% AI Bonus§!"
+nsc_ai_bonus_3:0 "§Y30% AI Bonus§!"
+nsc_ai_bonus_4:0 "§B50% AI Bonus§!"
+nsc_ai_bonus_5:0 "§G70% AI Bonus§!"
+
+### 2. Edcits ###
+edict_nsc_modmenu:0 "§YNSC2 Configuration Menu§!"
+edict_nsc_modmenu_desc:0 "This will open the NSC2 Configuration Menu"
+edict_nsc_modmenu_tooltip:0 "§YClick to open the NSC2 Configuration Menu.§!"
+
+### 3. Events ###
+nsc_events_modmenu.1.name:0 "NSC2 Configuration Menu"
+nsc_events_modmenu.1.desc:0 "This menu will allow you to set or change the Production Bonus currently given to all AI empires. Changes you make here will take effect immediately. This will allow you to steadily increase the AI Production Bonus as you see fit, or eliminate it entirely. The last version of NSC2 automatically included the 70% AI Production Bonus. If you liked this as it was, select the last option in the menu below. You can also select a lower setting, but please read the warning below before doing so.\n\n§RWARNING: If this is a save game that was created BEFORE the April 4, 2021 update, we recommend choosing one of the higher settings, otherwise the AI empires in your game will likely have major problems or could collapse entirely. This also applies to setting a large bonus in a new game and then removing it later. We DO NOT recommend completely removing AI bonuses once they have been given. Use these settings with extreme caution - the NSC2 team is not responsible for any damage done to your save game by changing these settings.§!"
+
+nsc_events_modmenu.1.1:0 "Set AI Production Bonus to: §RNone§!"
+nsc_events_modmenu.1.2:0 "Set AI Production Bonus to: §H15%§!"
+nsc_events_modmenu.1.3:0 "Set AI Production Bonus to: §Y30%§!"
+nsc_events_modmenu.1.4:0 "Set AI Production Bonus to: §B50%§!"
+nsc_events_modmenu.1.5:0 "Set AI Production Bonus to: §G70%§!"
+nsc_events_modmenu.1.fail:0 "§RThis is the current AI Bonus setting.§!"
+nsc_events_modmenu.close:0 "Exit Menu"

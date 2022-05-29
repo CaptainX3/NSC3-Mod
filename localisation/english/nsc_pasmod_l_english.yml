@@ -1,0 +1,88 @@
+﻿l_english:
+
+### 디시인사이드 스텔라리스 갤러리 '어ㅅㅂ' 제작 ###
+
+##############
+### PASMOD ###
+##############
+
+### TIER I ###
+pasmod_orbital_drop_pod_default:0 "Small Orbital Drop Pod"
+pasmod_orbital_drop_pod_default_DESC:0 "§HArmy Type: $pasmod_assault_army_default$§!\n$pasmod_assault_army_default_DESC$\n\nThe §YSmall§! Drop Pod will drop §Y10§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_clone:0 "$pasmod_orbital_drop_pod_default$"
+pasmod_orbital_drop_pod_clone_DESC:0 "§HArmy Type: $pasmod_assault_army_clone$§!\n$pasmod_assault_army_clone_DESC$\n\nThe §YSmall§! Drop Pod will drop §Y10§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_gene:0 "$pasmod_orbital_drop_pod_default$"
+pasmod_orbital_drop_pod_gene_DESC:0 "§HArmy Type: $pasmod_assault_army_gene$§!\n$pasmod_assault_army_gene_DESC$\n\nThe §YSmall§! Drop Pod will drop §Y10§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+
+pasmod_orbital_drop_pod_psionic_force:0 "$pasmod_orbital_drop_pod_default$"
+pasmod_orbital_drop_pod_psionic_force_DESC:0 "§HArmy Type: $pasmod_assault_army_psionic_force$§!\n$pasmod_assault_army_psionic_force_DESC$\n\nThe §YSmall§! Drop Pod will drop §Y10§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_slave_army:0 "$pasmod_orbital_drop_pod_default$"
+pasmod_orbital_drop_pod_slave_army_DESC:0 "§HArmy Type: $pasmod_assault_army_slave_army$§!\n$pasmod_assault_army_slave_army_DESC$\n\nThe §YSmall§! Drop Pod will drop §Y10§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_droid_army:0 "$pasmod_orbital_drop_pod_default$"
+pasmod_orbital_drop_pod_droid_army_DESC:0 "§HArmy Type: $pasmod_assault_army_droid_army$§!\n$pasmod_assault_army_droid_army_DESC$\n\nThe §YSmall§! Drop Pod will drop §Y10§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+
+pasmod_orbital_drop_pod_battle_frame:0 "Battle Frame"
+pasmod_orbital_drop_pod_battle_frame_DESC:0 "$pasmod_assault_army_battle_frame$"
+
+### TIER II ###
+pasmod_orbital_drop_pod_default_2:0 "Medium Orbital Drop Pod"
+pasmod_orbital_drop_pod_default_2_DESC:0 "§HArmy Type: $pasmod_assault_army_default$§!\n$pasmod_assault_army_default_DESC$\n\nThe §YMedium§! Drop Pod will drop §Y20§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_clone_2:0 "$pasmod_orbital_drop_pod_default_2$"
+pasmod_orbital_drop_pod_clone_2_DESC:0 "§HArmy Type: $pasmod_assault_army_clone$§!\n$pasmod_assault_army_clone_DESC$\n\nThe §YMedium§! Drop Pod will drop §Y20§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_gene_2:0 "$pasmod_orbital_drop_pod_default_2$"
+pasmod_orbital_drop_pod_gene_2_DESC:0 "§HArmy Type: $pasmod_assault_army_gene$§!\n$pasmod_assault_army_gene_DESC$\n\nThe §YMedium§! Drop Pod will drop §Y20§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+
+pasmod_orbital_drop_pod_psionic_force_2:0 "$pasmod_orbital_drop_pod_default_2$"
+pasmod_orbital_drop_pod_psionic_force_2_DESC:0 "§HArmy Type: $pasmod_assault_army_psionic_force$§!\n$pasmod_assault_army_psionic_force_DESC$\n\nThe §YMedium§! Drop Pod will drop §Y20§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_slave_army_2:0 "$pasmod_orbital_drop_pod_default_2$"
+pasmod_orbital_drop_pod_slave_army_2_DESC:0 "§HArmy Type: $pasmod_assault_army_slave_army$§!\n$pasmod_assault_army_slave_army_DESC$\n\nThe §YMedium§! Drop Pod will drop §Y20§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_droid_army_2:0 "$pasmod_orbital_drop_pod_default_2$"
+pasmod_orbital_drop_pod_droid_army_2_DESC:0 "§HArmy Type: $pasmod_assault_army_droid_army$§!\n$pasmod_assault_army_droid_army_DESC$\n\nThe §YMedium§! Drop Pod will drop §Y20§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+
+pasmod_orbital_drop_pod_battle_frame_2:0 "Battle Frame II"
+pasmod_orbital_drop_pod_battle_frame_2_DESC:0 "$pasmod_assault_army_battle_frame$"
+
+### TIER III ###
+pasmod_orbital_drop_pod_default_3:0 "Large Orbital Drop Pod"
+pasmod_orbital_drop_pod_default_3_DESC:0 "§HArmy Type: $pasmod_assault_army_default$§!\n$pasmod_assault_army_default_DESC$\n\nThe §YLarge§! Drop Pod will drop §Y40§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_clone_3:0 "$pasmod_orbital_drop_pod_default_3$"
+pasmod_orbital_drop_pod_clone_3_DESC:0 "§HArmy Type: $pasmod_assault_army_clone$§!\n$pasmod_assault_army_clone_DESC$\n\nThe §YLarge§! Drop Pod will drop §Y40§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_gene_3:0 "$pasmod_orbital_drop_pod_default_3$"
+pasmod_orbital_drop_pod_gene_3_DESC:0 "§HArmy Type: $pasmod_assault_army_gene$§!\n$pasmod_assault_army_gene_DESC$\n\nThe §YLarge§! Drop Pod will drop §Y40§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+
+pasmod_orbital_drop_pod_psionic_force_3:0 "$pasmod_orbital_drop_pod_default_3$"
+pasmod_orbital_drop_pod_psionic_force_3_DESC:0 "§HArmy Type: $pasmod_assault_army_psionic_force$§!\n$pasmod_assault_army_psionic_force_DESC$\n\nThe §YLarge§! Drop Pod will drop §Y40§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_slave_army_3:0 "$pasmod_orbital_drop_pod_default_3$"
+pasmod_orbital_drop_pod_slave_army_3_DESC:0 "§HArmy Type: $pasmod_assault_army_slave_army$§!\n$pasmod_assault_army_slave_army_DESC$\n\nThe §YLarge§! Drop Pod will drop §Y40§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+pasmod_orbital_drop_pod_droid_army_3:0 "$pasmod_orbital_drop_pod_default_3$"
+pasmod_orbital_drop_pod_droid_army_3_DESC:0 "§HArmy Type: $pasmod_assault_army_droid_army$§!\n$pasmod_assault_army_droid_army_DESC$\n\nThe §YLarge§! Drop Pod will drop §Y40§! army units to the ground at one time. Can only be equipped on an Invasion Core on the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+
+pasmod_orbital_drop_pod_battle_frame_3:0 "Battle Frame III"
+pasmod_orbital_drop_pod_battle_frame_3_DESC:0 "$pasmod_assault_army_battle_frame$"
+
+### ARMIES ###
+pasmod_assault_army_default:0 "Planetary Assault Army"
+pasmod_assault_army_default_plural:0 "Planetary Assault Armies"
+pasmod_assault_army_default_desc:0 "Elite troops trained to invade lightly-defended planets with little to no support, based on Escort Carrier vessels and deployed by orbital drop pods. These "Space Marines" are fielded in smaller numbers than traditional assault armies, as there is limited room for soldiers and equipment aboard a proper warship."
+pasmod_assault_army_clone:0 "Clone Assault Unit"
+pasmod_assault_army_clone_plural:0 "Clone Assault army units"
+pasmod_assault_army_clone_desc:0 "Elite specialized clone troopers bred and trained to invade lightly-defended planets with little to no support, based on Escort Carrier vessels and deployed by orbital drop pods. Their lack of personal initiative is deemed an acceptable trade-off for their total obedience to orders and relative disposability."
+pasmod_assault_army_gene:0 "Orbital Drop Assault Division"
+pasmod_assault_army_gene_plural:0 "Orbital Drop Assault Divisions"
+pasmod_assault_army_gene_desc:0 "Massive assault division including genetically engineered special forces."
+
+pasmod_assault_army_psionic_force:0 "Psionic Special Forces"
+pasmod_assault_army_psionic_force_desc:0 "Elite soldiers gifted with psionic abilities and trained to invade lightly-defended planets with little to no support, based on Escort Carrier vessels and deployed by orbital drop pods. These psionic warriors focus on the use of destructive psionic powers to remove the enemy's willingness to fight, shattering their morale and winning quick victories with few casualties."
+pasmod_assault_army_slave_army:0 "Slave Troops"
+pasmod_assault_army_slave_army_desc:0 "Slaves trained to invade lightly-defended planets with little to no support, based on Escort Carrier vessels and deployed by orbital drop pods. Most are conscripted by force, but many slaves volunteer in a desperate attempt to increase their food rations or escape from grueling labor. As a bonus, slaves are inherently disposable; there are always more bodies to fuel the Empire's glorious expansion."
+pasmod_assault_army_droid_army:0 "Droid Army"
+pasmod_assault_army_droid_army_desc:0 "Cold, heartless killing machines designed specifically to invade lightly-defended planets with little to no support, based on Escort Carrier vessels and deployed by orbital drop pods. They are immune to the effects of poor morale that plague organic combat units, and will fight to the last droid standing."
+
+pasmod_assault_army_battle_frame:0 "Battle Frame"
+pasmod_assault_army_battle_frame_desc:0 ""
+
+### PASMOD TECHS ###
+tech_pasmod_basic_drop_pod:0 "New Orbital Drop Pod"
+tech_pasmod_basic_drop_pod_desc:0 "The Orbital Drop Pod is designed to drop a limited number of invasion armies onto an enemy planet. Due to the space required to house and transport the armies, it can be only equipped on the new Invasion Core section of the Escort Carrier or Carrier.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
+TECH_UNLOCK_PASMOD_ASSAULT_ARMY_DEFAULT_DROP_POD_TITLE:0 "§HUnlocks Component:§! $pasmod_orbital_drop_pod_default$"
+TECH_UNLOCK_PASMOD_ASSAULT_ARMY_DEFAULT_DROP_POD_DESC:0 "§H$pasmod_orbital_drop_pod_default$§!\nThe Orbital Drop Pod is designed to drop a limited number of invasion armies onto an enemy planet. Due to the space required to house and transport the armies, it can be only equipped on the new Invasion Core section of the Escort Carrier only.\n\n§BThe Pod will automatically deploy when Planetary Devastation reaches 30%.§!"
