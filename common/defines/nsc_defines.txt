@@ -1,0 +1,25 @@
+#################################
+### VANILLA DEFINE OVERWRITES ###
+#################################
+NShip = { 
+	FLEET_BASE_FORMATION_SCALE = 4
+	FLEET_BASE_FORMATION_DIV = 25
+	MILITARY_POWER_SCALE = 0.20
+}
+
+NGameplay = {
+	COMMAND_LIMIT_MAX = 1000
+	COMMAND_LIMIT_BASE = 50
+	NAVAL_CAPACITY_BASE = 50
+	EXPERIMENTAL_SUBSPACE_NAVIGATION_TIME_MULT = 1.5	# value * hyperlane distance to system defines the MIA time (travel time in days) for a Science Ship MIA Jump
+	LEADER_POOL_SIZE = 10					# Each leader pool will consist of this many leaders
+	LEADER_POOL_LEAD_TIME = 1				# Years leaders will remain in the leader pool until replaced
+}
+
+NGraphics = {
+	SHIP_RANDOM_HEIGHT_OFFSET = 65
+}
+
+NEconomy = {
+	FLEET_UPGRADE_TIME_COST_MULT = 0.05
+}

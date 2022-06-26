@@ -1,0 +1,66 @@
+trait_pc_nsc_freebooter_habitat_preference = {
+	icon = "gfx/interface/icons/traits/trait_pc_ring_preference.dds"
+	species_potential_add = {
+		this = { from = { has_origin = origin_nsc_freebooter } }
+	}
+	species_possible_remove = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL PRESAPIENT LITHOID }
+	sorting_priority = 100
+	modifier = {
+		pc_habitat_habitability = 1.0
+		pc_nsc_freebooter_habitat_habitability = 1.0
+		pc_relic_habitability = 1.0 #check 'pc_relic' planet class' modifier
+	}
+	custom_tooltip = trait_pc_nsc_freebooter_habitat_preference_warning
+	ai_weight = {
+		weight = 0
+	}
+}
+trait_nsc_freebooter = {
+	icon = "gfx/interface/icons/traits/trait_nsc_freebooter.dds"
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = { has_origin = origin_nsc_freebooter }
+	}
+	species_possible_remove = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	sorting_priority = 90
+	potential_crossbreeding_chance = 1.00
+	modifier = {
+		nsc_freebooter_jobs_produces_mult = 0.2
+		nsc_freebooter_jobs_upkeep_mult = 0.1
+		non_artificial_planet_jobs_produces_mult = -0.5
+		nsc_non_artificial_planet_slave_produces_mult = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}
+trait_nsc_freebooter_alt = {
+	icon = "gfx/interface/icons/traits/trait_nsc_freebooter.dds"
+	initial = no
+	randomized = no
+	species_potential_add = {
+		from = { has_origin = origin_nsc_freebooter }
+	}
+	species_possible_remove = {
+		always = no
+	}
+	allowed_archetypes = { BIOLOGICAL LITHOID }
+	sorting_priority = 90
+	potential_crossbreeding_chance = 1.00
+	modifier = {
+		nsc_freebooter_jobs_produces_mult = 0.2
+		nsc_freebooter_jobs_upkeep_mult = 0.1
+		non_artificial_planet_jobs_produces_mult = -0.5
+		nsc_non_artificial_planet_worker_produces_mult = 0.5
+	}
+	ai_weight = {
+		weight = 0
+	}
+}

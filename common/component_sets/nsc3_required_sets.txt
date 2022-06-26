@@ -1,0 +1,109 @@
+#####################
+### REQUIRED SETS ###
+#####################
+
+
+### HQ JUMP DRIVE ###
+component_set = {
+	key = "hq_ftl_components"
+	icon = "GFX_ship_part_flagship_jump_drive"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+### SPECIAL SLOT ###
+component_set = {
+	key = "special_ship_slot"
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+### EXPLORATION SLOT ###
+component_set = {
+	key = "exploration_ship_slot"
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+### AURAS ###
+component_set = {
+	key = "nsc_titan_aura"
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "nsc_flagship_aura"
+	required_component_set = yes
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "nsc_strike_cruiser_aura"
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "nsc_supportship_aura"
+	icon = "GFX_ship_part_sensor"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+component_set = {
+	key = "nsc_starbase_nanite_aura"
+	icon = "GFX_ship_part_aura_nanobot"
+	icon_frame = 1
+}
+
+### REACTOR BOOSTERS ###
+component_set = {
+	key = "NSC_REACTOR_BOOSTER_1"
+	icon = "GFX_nsc_reactor_booster_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "NSC_REACTOR_BOOSTER_2"
+	icon = "GFX_nsc_reactor_booster_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "NSC_REACTOR_BOOSTER_3"
+	icon = "GFX_nsc_reactor_booster_6"
+	icon_frame = 1
+}
+
+### SECONDARY POWER CORE ###
+component_set = {
+	key = "nsc_sec_power_core"
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	required_component_set = yes
+}
+
+### BOMBARDMENTS ###
+component_set = {
+	key = "NSC_BOMBARDMENT_1"
+	icon = "GFX_nsc_bombardment_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "NSC_BOMBARDMENT_2"
+	icon = "GFX_nsc_bombardment_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "NSC_BOMBARDMENT_3"
+	icon = "GFX_nsc_bombardment_3"
+	icon_frame = 1
+}

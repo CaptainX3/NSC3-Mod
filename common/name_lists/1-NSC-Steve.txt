@@ -1,0 +1,217 @@
+﻿1-NSC-Steve = {
+	category = "Humanoid"
+	selectable = { always = yes }
+
+	ship_names = {
+
+		generic = { "Steve" }
+
+		corvette = { "Steve" }
+		
+		destroyer = { "Steve" }
+		
+		cruiser = { "Steve" }
+
+		StrikeCruiser = { "Steve" }
+
+		Battlecruiser = { "Steve" }
+		
+		battleship = { "Steve" }
+
+		Carrier = { "Steve" }
+
+		escortcarrier = { "Steve" }
+
+		Dreadnought = { "Steve" }
+		
+		titan = { "Steve" }
+
+		Flagship = { "Steve" }
+
+		colossus = { "Steve" }
+		
+		science = { "Steve" }
+
+		explorationship = { "Steve" }
+		
+		colonizer = { "Steve" }
+		
+		constructor = { "Steve" }
+
+		transport = { "Steve" }
+		
+		military_station_small = { "Steve" }
+		
+		military_station_medium = { "Steve" }
+		
+		military_station_large = { "Steve" }
+
+		ion_cannon = { "Steve" }
+		
+		xl_cannon = { "Steve" }
+
+	}
+	ship_class_names = {
+        generic = { "Steve" }
+    }
+
+	fleet_names = {
+		random_names = { "Steve" }
+		sequential_name = "%O% Steve"
+	}
+		
+	army_names = {
+
+		machine_defense = {
+			sequential_name = "%O% Home Steve"
+		}
+		
+		machine_assault_1 = {
+			sequential_name = "%O% Procurers Steve"
+		}
+		
+		machine_assault_2 = {
+			sequential_name = "%O% Procurers Steve"
+		}
+		
+		machine_assault_3 = {
+			sequential_name = "%O% Procurers Steve"
+		}
+
+		defense_army = {
+			sequential_name = "%O% Home Steve"
+		}
+			
+		assault_army = {
+			sequential_name = "%O% Procurers Steve"
+		}
+		
+		slave_army = {
+			sequential_name = "%O% Captive Steve"
+		}
+		
+		clone_army = { 
+			sequential_name = "%O% Doppel Steve"
+		}
+		
+		undead_army = {
+			sequential_name = "%O% Dread Steve"
+		}
+
+		robotic_army = {
+			sequential_name = "%O% Automata Steve"
+		}
+
+		robotic_defense_army = {
+			sequential_name = "%O% Home Automata Steve"
+		}
+		
+		psionic_army = { 
+			sequential_name = "%O% Mentalist Steve"
+		}
+		
+		xenomorph_army = {
+			sequential_name = "%O% Exotica Steve"
+		}
+		
+		gene_warrior_army = {
+			sequential_name = "%O% Chemiker Steve"
+		}
+
+		occupation_army = {
+			sequential_name = "%O% Frontier Steve"
+		}
+
+		robotic_occupation_army = {
+			sequential_name = "%O% Frontier Automata Steve"
+		}
+
+		primitive_army = {
+			sequential_name = "%O% Primitive Steve"
+		}
+		industrial_army = {
+			sequential_name = "%O% Proletariat Steve"
+		}
+		postatomic_army = {
+			sequential_name = "%O% Crepuscular Steve"
+		}
+	}
+
+	planet_names = {
+
+		generic = {
+			names = { "Steve" }
+		}
+		
+		pc_desert = {
+			names = {
+			}
+		}
+		
+		pc_tropical = {
+			names = {
+			}
+		}
+		
+		pc_arid = {
+			names = {
+			}
+		}
+		
+		pc_continental = {
+			names = {
+			}
+		}
+		
+		pc_ocean = {
+			names = {
+			}
+		}
+		
+		pc_tundra = {
+			names = {
+			}
+		}
+		
+		pc_arctic = {
+			names = {
+			}
+		}
+
+		pc_savannah = {
+			names = {
+			}
+		}
+
+		pc_alpine = {
+			names = {
+			}
+		}
+		
+	}
+
+	character_names = {
+		default = {
+			# A complete name
+			full_names = {
+			}
+			
+			# Always combined with a second name
+			first_names_male = { "Steve" }
+			first_names_female = { "Steve" }
+			
+			# Always combined with a first name
+			second_names = {
+				"Alford" "Anfel" "Archford" "Belgarve" "Blunsbury" "Boxley" "Bronley" "Caddington" "Canley" "Charnham" "Cotting" "Crydon" "Fayner" "Fonnord" "Gasforth" "Gealin" "Greenord" "Hobblorn" "Honslett" "Ixbridge" "Konning" "Krickston" "Martlebone" "Namnden" "Nelow" "Newbley" "Nightsedge" "Peshard" "Ponnico" "Sandworth" "Sarking" "Shepminter" "Soulark" "Stutton" "Thoso" "Vauxin" "Walford" "Wessend"
+			}
+			
+			regnal_first_names_male = { "Steve" }
+
+			regnal_first_names_female = { "Steve" }
+			
+			regnal_second_names = {
+				"Befford" "Berken" "Bucken" "Camber" "Cheshen" "Corner" "Cumber" "Deckon" "Derben" "Dofham" "Dorpeth" "Glossom" "Hampin" "Harcord" "Helford" "Hunton" "Kanter" "Lancoln" "Lincoll" "Linton" "Norhunder" "Norpin" "Nortolk" "Nottern" "Oxkin" "Rulan" "Somer" "Starfod" "Stropp" "Sullened" "Sullock" "Vestern" "Warten" "Westmott" "Worsten" "Yolkin"
+			}
+		}
+    }
+}
