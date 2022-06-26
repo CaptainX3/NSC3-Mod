@@ -1,0 +1,96 @@
+#######################
+### ASCENSION PERKS ###
+#######################
+ap_nsc_matterenergy = {
+	potential = { NOT = { has_ascension_perk = ap_nsc_matterenergy } }
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+		custom_tooltip = {
+			fail_text = "requires_mega_engineering"
+			has_technology = tech_mega_engineering
+		}
+	}
+
+	on_enabled = { custom_tooltip = "allow_resource_factory" }	
+	
+	ai_weight = { factor = 10 }
+}
+
+
+ap_grasp_the_void = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_1"
+			num_ascension_perks > 0
+		}
+	}
+
+	on_enabled = {
+		custom_tooltip = "ap_grasp_the_void_tech_effect"
+	}
+
+	modifier = {
+		country_starbase_capacity_add = 5
+		ship_interstellar_speed_mult = 0.15
+		science_ship_survey_speed = 0.15
+		ship_anomaly_research_speed_mult = 0.15
+		ship_archaeological_site_excavation_speed_mult = 0.15
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_grasp_the_void
+		}
+	}
+
+	ai_weight = {
+		factor = 3
+		modifier = {
+			factor = 2
+			has_civic = civic_inwards_perfection
+		}
+		modifier = {
+			factor = 1.5
+			is_xenophobe = yes
+		}
+	}
+}
+
+ap_eternal_vigilance = {
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_starbase_4"
+			has_technology = tech_starbase_4
+		}
+	}
+
+	modifier = {
+		shipclass_starbase_damage_mult = 0.50
+		shipclass_starbase_hull_mult = 0.50
+		shipclass_military_station_damage_mult = 0.50
+		starbase_defense_platform_capacity_mult = 0.25
+		country_starbase_capacity_add = 10
+	}
+
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_eternal_vigilance
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 2
+			has_civic = civic_inwards_perfection
+		}
+		modifier = {
+			factor = 1.5
+			is_xenophobe = yes
+		}
+	}
+}

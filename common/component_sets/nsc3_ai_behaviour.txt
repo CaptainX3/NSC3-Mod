@@ -1,0 +1,9 @@
+#########################
+### AI BEHAVIOUR SETS ###
+#########################
+component_set = {
+	key = "ai_behaviour"
+	icon = "GFX_ship_part_computer"
+	icon_frame = 1	
+	required_component_set = yes
+}

@@ -1,0 +1,69 @@
+###################
+### WEAPON SETS ###
+###################
+
+### TITANIC ###
+component_set = {
+	key = "PERDITION_BEAM_FLAGSHIP"
+	icon = "GFX_ship_part_perdition_beam"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "PERDITION_BEAM_STARBASE"
+	icon = "GFX_ship_part_perdition_beam"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BASIC_T_BEAM"
+	icon = "GFX_ship_part_basic_t"
+	icon_frame = 1
+}
+
+### EXTRA LARGE ###
+component_set = {
+	key = "XL_BEAM_STARBASE"
+	icon = "GFX_ship_part_energy_lance_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BASIC_XL_BEAM"
+	icon = "GFX_ship_part_basic_xl"
+	icon_frame = 1
+}
+
+### MISSILES ###
+
+component_set = {
+	key = "TOMAHAWK_CRUISE_MISSILE"
+	icon = "GFX_ship_part_cruise_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "HARPOON_CRUISE_MISSILE"
+	icon = "GFX_ship_part_cruise_missile_2"
+	icon_frame = 1
+}
+
+### SMALL/MEDIUM/LARGE ###
+
+component_set = {
+	key = "NSC_BB_SNIPER"
+	icon = "GFX_ship_part_nsc_bb_sniper_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "NSC_BB_SNIPER_2"
+	icon = "GFX_ship_part_nsc_bb_sniper_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "POINT_DEFENCE_STARBASE"
+	icon = "GFX_starbase_pd_battery"
+	icon_frame = 1
+}
