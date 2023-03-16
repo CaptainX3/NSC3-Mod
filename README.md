@@ -11,7 +11,7 @@ Before you begin, please take note of the following things:
 <br />
 <br />
 
-**If you're installing NSC2 for the very first time, follow these steps:** 
+**If you're installing NSC2 for the very first time, follow these steps:**<br />
 _(If you're updating your manually-installed copy of the mod, scroll down to that section below.)_
 
 > STEP 1: Download the NSC2 zip file from the Releases section on this site. (You should be able to see the latest release on the right hand side of the main page.)
