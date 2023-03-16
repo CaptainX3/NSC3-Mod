@@ -7,9 +7,10 @@ Before you begin, please take note of the following things:
 > Installing a mod manually for Stellaris requires some basic PC knowledge, such as how to navigate to specific directories in Windows Explorer and opening/editing text files. If you do not know how to do these things, PLEASE subscribe to the mod on the Steam workshop, as it is extremely difficult to explain how to do these basic things in a Discord text channel if you are not familiar with computers in general.
 
 > Keep in mind that if you manually install NSC2, you will have to repeat this process EVERY TIME NSC2 has an update if you want to always have the latest version of the mod. This manual installation will not automatically change or update itself in any way.
+
 <br />
 <br />
-<br />
+
 **If you're installing NSC2 for the very first time, follow these steps:** 
 _(If you're updating your manually-installed copy of the mod, scroll down to that section below.)_
 
@@ -30,9 +31,10 @@ _(If you're updating your manually-installed copy of the mod, scroll down to tha
 > STEP 8: Make sure your mod load order is correct before you start the game!! If you need help with your load order, simply type "Fix Load Order" in the #the-flagship-bot channel on this Discord and the bot will post instructions on how to sort your mods.
 
 > STEP 9: Enjoy!
+
 <br />
 <br />
-<br />
+
 **If you're updating your manually-installed copy of NSC2, follow these steps:**
 
 > STEP 1: Download the NSC2 zip file from the Releases section on this site. (You should be able to see the latest release on the right hand side of the main page.)
