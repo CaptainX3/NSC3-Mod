@@ -1,0 +1,68 @@
+entity = {
+	name = "humanoid_01_headquarters_entity"
+	pdxmesh = "humanoid_01_headquarters_mesh"
+	
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part3"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part4"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "weapon_locator"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+	
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+	
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "part3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "part6" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "part1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.0 node = "part3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.0 node = "part7" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 4.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	scale = 1.0
+
+	game_data = {
+		size = 20.0
+	}
+}
+
+
+entity = {
+	name = "humanoid_01_headquarters_core1_entity"
+	pdxmesh = "empty_mesh"
+	locator = { name = "weapon_locator"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	scale = 0.1
+}
+
+entity = {
+	name = "humanoid_01_headquarters_core2_entity"
+	pdxmesh = "empty_mesh"
+	locator = { name = "weapon_locator"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	scale = 0.1
+}
+
+entity = {
+	name = "humanoid_01_headquarters_core3_entity"
+	pdxmesh = "empty_mesh"
+	locator = { name = "weapon_locator"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	scale = 0.1
+}
+
+entity = {
+	name = "humanoid_01_headquarters_core4_entity"
+	pdxmesh = "empty_mesh"
+	locator = { name = "weapon_locator"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	scale = 0.1
+}

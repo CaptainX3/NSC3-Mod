@@ -1,0 +1,73 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ship_counter_1"
+		textureFile = "gfx/interface/system/Corvette.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_2"
+		textureFile = "gfx/interface/system/Destroyer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_3"
+		textureFile = "gfx/interface/system/Cruiser.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_counter_4"
+		textureFile = "gfx/interface/system/Cruiser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_5"
+		textureFile = "gfx/interface/system/ExplorationShip.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_6"
+		textureFile = "gfx/interface/system/StrikeCruiser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_7"
+		textureFile = "gfx/interface/system/escortcarrier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_8"
+		textureFile = "gfx/interface/system/Battlecruiser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_10"
+		textureFile = "gfx/interface/system/Battleship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_12"
+		textureFile = "gfx/interface/system/Carrier.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_14"
+		textureFile = "gfx/interface/system/Dreadnought.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_18"
+		textureFile = "gfx/interface/system/Titan.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_25"
+		textureFile = "gfx/interface/system/Flagship.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_counter_32"
+		textureFile = "gfx/interface/system/Colossus.dds"
+	}
+	
+}

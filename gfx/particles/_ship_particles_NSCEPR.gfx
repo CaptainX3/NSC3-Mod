@@ -1,0 +1,227 @@
+objectTypes = {
+	
+	###########################
+	# Unbidden Ship Particles #
+	###########################
+	
+	pdxparticle = {
+		name = "ship_light_red_regular_effect"
+		type = "ship_light_red_regular_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_red_ship_effect"
+		type = "ed_large_red_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_red_station_ship_effect"
+		type = "ed_large_red_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_red_ship_effect"
+		type = "ed_small_red_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_red_station_ship_effect"
+		type = "ed_small_red_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_blue_ship_effect"
+		type = "ed_large_blue_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_blue_station_ship_effect"
+		type = "ed_large_blue_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_blue_ship_effect"
+		type = "ed_small_blue_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_blue_station_ship_effect"
+		type = "ed_small_blue_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_yellow_ship_effect"
+		type = "ed_large_yellow_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_yellow_station_ship_effect"
+		type = "ed_large_yellow_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_yellow_ship_effect"
+		type = "ed_small_yellow_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_yellow_station_ship_effect"
+		type = "ed_small_yellow_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ship_light_magenta_effect"
+		type = "ship_light_magenta_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ship_light_magenta_regular_effect"
+		type = "ship_light_magenta_regular_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_magenta_ship_effect"
+		type = "ed_large_magenta_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_magenta_station_ship_effect"
+		type = "ed_large_magenta_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_magenta_ship_effect"
+		type = "ed_small_magenta_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_magenta_station_ship_effect"
+		type = "ed_small_magenta_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ship_light_violet_effect"
+		type = "ship_light_violet_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ship_light_violet_regular_effect"
+		type = "ship_light_violet_regular_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_violet_ship_effect"
+		type = "ed_large_violet_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_large_violet_station_ship_effect"
+		type = "ed_large_violet_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_violet_ship_effect"
+		type = "ed_small_violet_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_small_violet_station_ship_effect"
+		type = "ed_small_violet_station_ship_effect"
+		
+		scale = 1.0
+	}
+	
+	##############################
+	# Fallen Empire Energy Cores #
+	##############################
+	
+	pdxparticle = {
+		name = "energy_core_ed2_effect"
+		type = "energy_core_ed2_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "energy_core_ed3_effect"
+		type = "energy_core_ed3_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "energy_core_ed4_effect"
+		type = "energy_core_ed4_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "energy_core_ed5_effect"
+		type = "energy_core_ed5_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "energy_core_ed6_effect"
+		type = "energy_core_ed6_effect"
+		
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "energy_core_ed7_effect"
+		type = "energy_core_ed7_effect"
+		
+		scale = 1.0
+	}
+}

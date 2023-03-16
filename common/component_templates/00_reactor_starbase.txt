@@ -1,0 +1,10 @@
+utility_component_template = {
+	key = "CITADEL_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 50000
+	component_set = "power_core"
+	class_restriction = { shipclass_starbase }
+	ai_weight = { weight = 10000 }
+}

@@ -1,0 +1,342 @@
+##########################################
+### VANILLA COMMON CATEGORY OVERWRITES ###
+##########################################
+
+ships = {
+	use_for_ai_budget = yes
+	generate_mult_modifiers = { upkeep }
+	generate_add_modifiers = { produces }
+
+	ai_use_parent_for_resources_upkeep = { energy }
+
+	parent = country
+
+	triggered_cost_modifier = {
+		key = starbase_shipyard_build
+		use_parent_icon = yes
+
+		modifier_types = { mult }
+	}
+
+	triggered_cost_modifier = {
+		key = gdf_ship
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			has_ship_owner_type = galactic_community
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_corvette
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = corvette
+				is_ship_size = offspring_corvette
+				is_ship_size = frigate
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_destroyer
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = destroyer
+				is_ship_size = offspring_destroyer
+			}
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_cruiser
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = cruiser
+				is_ship_size = offspring_cruiser
+			}
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_battleship
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_size = battleship
+				is_ship_size = offspring_battleship
+			}
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_military_station_small
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = military_station_small
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_military_station_small
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = military_station_small
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_science
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_class = shipclass_science_ship
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_titan
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = titan
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_StrikeCruiser
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = StrikeCruiser
+		}
+	}	
+	
+	triggered_cost_modifier = {
+		key = ship_Battlecruiser
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = Battlecruiser
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_Carrier
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = Carrier
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_Dreadnought
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = Dreadnought
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_Flagship
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = Flagship
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_explorationship
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = explorationship
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_military_station_medium
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = military_station_medium
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_military_station_medium
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = military_station_medium
+		}
+	}
+	
+	triggered_cost_modifier = {
+		key = ship_military_station_large
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = military_station_large
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_military_station_large
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = military_station_large
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_ion_cannon
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = ion_cannon
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_ion_cannon
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = ion_cannon
+		}
+	}
+}
+
+planet_livestock = {
+	parent = planet_jobs_productive
+    
+    generate_add_modifiers = { produces }
+    
+    generate_mult_modifiers = {
+        produces
+		cost
+        upkeep
+    }
+	modifier_category = pop
+}
+
+pop_category_purge = {
+    parent = planet_pops
+    generate_mult_modifiers = {
+        upkeep
+        produces
+	}
+	modifier_category = pop
+}
+
+pop_category_bio_trophy = {
+    parent = planet_pops
+    generate_mult_modifiers = {
+        upkeep
+        produces
+	}
+	generate_add_modifiers = {
+		upkeep
+	}
+	modifier_category = pop
+}
+
+leader_admirals = {
+    parent = leaders
+    
+    generate_mult_modifiers = {
+		cost
+		upkeep
+	}
+	modifier_category = leader
+}
+
+planet_buildings_strongholds = {
+	parent = planet_buildings
+
+	generate_mult_modifiers = {
+		cost
+		upkeep
+	}
+	generate_add_modifiers = {
+		cost
+		upkeep
+	}
+	modifier_category = planet
+}
+
+ship_components = {
+	parent = ships
+
+	generate_add_modifiers = {
+		produces
+	}
+
+	modifier_category = ship
+}

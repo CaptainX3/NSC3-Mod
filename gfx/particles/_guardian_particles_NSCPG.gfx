@@ -1,0 +1,554 @@
+objectTypes = {
+	
+	###################################
+	# Dragonfire Drake Main Particles #
+	###################################
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_red_eye_effect"
+		type = "NSC_space_dragon_red_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_red_wing_effect"
+		type = "NSC_space_dragon_red_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_orange_eye_effect"
+		type = "NSC_space_dragon_orange_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_orange_wing_effect"
+		type = "NSC_space_dragon_orange_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_yellow_eye_effect"
+		type = "NSC_space_dragon_yellow_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_yellow_wing_effect"
+		type = "NSC_space_dragon_yellow_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_chartreuse_eye_effect"
+		type = "NSC_space_dragon_chartreuse_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_chartreuse_wing_effect"
+		type = "NSC_space_dragon_chartreuse_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_green_eye_effect"
+		type = "NSC_space_dragon_green_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_green_wing_effect"
+		type = "NSC_space_dragon_green_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_aquamarine_eye_effect"
+		type = "NSC_space_dragon_aquamarine_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_aquamarine_wing_effect"
+		type = "NSC_space_dragon_aquamarine_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_cyan_eye_effect"
+		type = "NSC_space_dragon_cyan_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_cyan_wing_effect"
+		type = "NSC_space_dragon_cyan_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_azure_eye_effect"
+		type = "NSC_space_dragon_azure_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_azure_wing_effect"
+		type = "NSC_space_dragon_azure_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_true_blue_eye_effect"
+		type = "NSC_space_dragon_true_blue_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_true_blue_wing_effect"
+		type = "NSC_space_dragon_true_blue_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_violet_eye_effect"
+		type = "NSC_space_dragon_violet_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_violet_wing_effect"
+		type = "NSC_space_dragon_violet_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_magenta_eye_effect"
+		type = "NSC_space_dragon_magenta_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_magenta_wing_effect"
+		type = "NSC_space_dragon_magenta_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_rose_eye_effect"
+		type = "NSC_space_dragon_rose_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_rose_wing_effect"
+		type = "NSC_space_dragon_rose_wing_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_white_eye_effect"
+		type = "NSC_space_dragon_white_eye_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_space_dragon_white_wing_effect"
+		type = "NSC_space_dragon_white_wing_effect"
+		scale = 1.0
+	}
+	
+	#########################################
+	# Dragonfire Drake Wing/Mouth Particles #
+	#########################################
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_red_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_red_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_red_muzzle_particle"
+		type = "NSC_dragon_weapon_red_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_red"
+		type = "NSC_dragon_wing_projectile_particle_red"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_red"
+		type = "NSC_dragon_wing_muzzle_particle_red"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_orange"
+		type = "NSC_dragon_wing_projectile_particle_orange"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_orange"
+		type = "NSC_dragon_wing_muzzle_particle_orange"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_yellow_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_yellow_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_yellow_muzzle_particle"
+		type = "NSC_dragon_weapon_yellow_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_yellow"
+		type = "NSC_dragon_wing_projectile_particle_yellow"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_yellow"
+		type = "NSC_dragon_wing_muzzle_particle_yellow"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_chartreuse_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_chartreuse_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_chartreuse_muzzle_particle"
+		type = "NSC_dragon_weapon_chartreuse_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_chartreuse"
+		type = "NSC_dragon_wing_projectile_particle_chartreuse"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_chartreuse"
+		type = "NSC_dragon_wing_muzzle_particle_chartreuse"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_green_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_green_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_green_muzzle_particle"
+		type = "NSC_dragon_weapon_green_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_green"
+		type = "NSC_dragon_wing_projectile_particle_green"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_green"
+		type = "NSC_dragon_wing_muzzle_particle_green"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_aquamarine_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_aquamarine_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_aquamarine_muzzle_particle"
+		type = "NSC_dragon_weapon_aquamarine_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_aquamarine"
+		type = "NSC_dragon_wing_projectile_particle_aquamarine"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_aquamarine"
+		type = "NSC_dragon_wing_muzzle_particle_aquamarine"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_cyan_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_cyan_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_cyan_muzzle_particle"
+		type = "NSC_dragon_weapon_cyan_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_cyan"
+		type = "NSC_dragon_wing_projectile_particle_cyan"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_cyan"
+		type = "NSC_dragon_wing_muzzle_particle_cyan"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_azure_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_azure_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_azure_muzzle_particle"
+		type = "NSC_dragon_weapon_azure_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_azure"
+		type = "NSC_dragon_wing_projectile_particle_azure"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_azure"
+		type = "NSC_dragon_wing_muzzle_particle_azure"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_blue_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_blue_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_blue_muzzle_particle"
+		type = "NSC_dragon_weapon_blue_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_blue"
+		type = "NSC_dragon_wing_projectile_particle_blue"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_blue"
+		type = "NSC_dragon_wing_muzzle_particle_blue"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_violet_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_violet_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_violet_muzzle_particle"
+		type = "NSC_dragon_weapon_violet_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_violet"
+		type = "NSC_dragon_wing_projectile_particle_violet"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_violet"
+		type = "NSC_dragon_wing_muzzle_particle_violet"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_magenta_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_magenta_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_magenta_muzzle_particle"
+		type = "NSC_dragon_weapon_magenta_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_magenta"
+		type = "NSC_dragon_wing_projectile_particle_magenta"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_magenta"
+		type = "NSC_dragon_wing_muzzle_particle_magenta"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_rose_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_rose_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_rose_muzzle_particle"
+		type = "NSC_dragon_weapon_rose_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_rose"
+		type = "NSC_dragon_wing_projectile_particle_rose"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_rose"
+		type = "NSC_dragon_wing_muzzle_particle_rose"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_white_muzzle_windup_effect"
+		type = "NSC_dragon_weapon_white_muzzle_windup_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_weapon_white_muzzle_particle"
+		type = "NSC_dragon_weapon_white_muzzle_particle"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_projectile_particle_white"
+		type = "NSC_dragon_wing_projectile_particle_white"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "NSC_dragon_wing_muzzle_particle_white"
+		type = "NSC_dragon_wing_muzzle_particle_white"
+		scale = 1.0
+	}
+	
+	############################################
+	# Automated Dreadnought Weaponry Particles #
+	############################################
+	
+	pdxparticle = {
+		name = "dreadnought_kinetic_artillery_muzzle_particle"
+		type = "dreadnought_kinetic_artillery_file"
+		scale = 2.0
+	}
+	
+	pdxparticle = {
+		name = "dreadnought_gauss_cannon_small_muzzle_particle"
+		type = "dreadnought_gauss_cannon_muzzle"
+		scale = 0.75
+	}
+	
+	######################################
+	# Spectral Wraith Elecrtic Particles #
+	######################################
+	
+	##################
+	# Body Particles #
+	##################
+	
+	pdxparticle = {
+		name = "wraith_body_electricity_orange_effect"
+		type = "wraith_body_electricity_orange_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_body_electricity_yellow_new_effect"
+		type = "wraith_body_electricity_yellow_new_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_body_electricity_green_effect"
+		type = "wraith_body_electricity_green_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_body_electricity_violet_effect"
+		type = "wraith_body_electricity_violet_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_body_electricity_white_effect"
+		type = "wraith_body_electricity_white_effect"
+		scale = 1.0
+	}
+	
+	######################
+	# Tentacle Particles #
+	######################
+	
+	pdxparticle = {
+		name = "wraith_tentacle_electricity_orange_effect"
+		type = "wraith_tentacle_electricity_orange_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_tentacle_electricity_yellow_new_effect"
+		type = "wraith_tentacle_electricity_yellow_new_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_tentacle_electricity_green_effect"
+		type = "wraith_tentacle_electricity_green_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_tentacle_electricity_violet_effect"
+		type = "wraith_tentacle_electricity_violet_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "wraith_tentacle_electricity_white_effect"
+		type = "wraith_tentacle_electricity_white_effect"
+		scale = 1.0
+	}
+}

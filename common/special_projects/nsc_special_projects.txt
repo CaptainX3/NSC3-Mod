@@ -1,0 +1,47 @@
+special_project = {
+	key = "PROTOTYPE_EXPLORATION_CRUISER_PROJECT"
+	days_to_research = 180
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	picture = GFX_evt_big_landing_ship
+	
+	event_scope = country_event
+
+	on_success = {
+		country_event = { id = nsc_events_exploration_ship.11 }
+	}
+}
+
+special_project = {
+	key = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+	days_to_research = 250
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	picture = GFX_evt_space_hangar
+	
+	event_scope = ship_event
+
+	requirements = {
+		shipclass_science_ship = 1
+	}
+
+	on_success = {
+		ship_event = { id = nsc_events_exploration_ship.13 }
+	}
+}
+
+special_project = {
+	key = "NSC_FLAGSHIP_REBUILD_PROJECT"
+	days_to_research = 1500
+	tech_department = engineering_technology
+	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
+	picture = GFX_evt_space_hangar
+	
+	event_scope = planet_event
+
+	on_success = {
+		PREV = {
+			country_event = { id = nsc_events_flagship.9 }
+		}
+	}
+}

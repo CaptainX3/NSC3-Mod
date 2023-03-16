@@ -1,0 +1,7 @@
+spriteTypes = {	
+	######This legit took an hour to find this damn file lmaooo.
+	spriteType = {
+		name = "GFX_strategic_resource_factory_thumb"
+		textureFile = "gfx/interface/icons/megastructure_thumbs/strategic_resource_factory_thumb.dds"
+	}
+}

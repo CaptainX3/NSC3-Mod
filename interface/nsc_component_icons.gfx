@@ -1,0 +1,340 @@
+spriteTypes = {
+
+	####################
+	### SPECIAL SLOT ###
+	####################
+	spriteType = {
+		name = "GFX_special_slot_strike_craft"
+		textureFile = "gfx/interface/icons/ship_parts/special_strike_craft.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_special_slot_stellar_cartography"
+		textureFile = "gfx/interface/icons/ship_parts/special_stellar_cartography.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_multiphasic_sensors"
+		textureFile = "gfx/interface/icons/ship_parts/special_multiphasic_sensors.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_damage_control"
+		textureFile = "gfx/interface/icons/ship_parts/special_damage_control.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_ready_room"
+		textureFile = "gfx/interface/icons/ship_parts/special_ready_room.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_crew_lounge"
+		textureFile = "gfx/interface/icons/ship_parts/special_crew_lounge.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_fire_control"
+		textureFile = "gfx/interface/icons/ship_parts/special_fire_control.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_structural_integrity"
+		textureFile = "gfx/interface/icons/ship_parts/special_structural_integrity.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_auxiliary_shields"
+		textureFile = "gfx/interface/icons/ship_parts/special_auxiliary_shields.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_quantum_thrusters"
+		textureFile = "gfx/interface/icons/ship_parts/special_quantum_thrusters.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_deflector_array"
+		textureFile = "gfx/interface/icons/ship_parts/special_deflector_array.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_navigational_array"
+		textureFile = "gfx/interface/icons/ship_parts/special_navigational_array.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_mars_system"
+		textureFile = "gfx/interface/icons/ship_parts/mars_weapon_system.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_special_slot_kitchen_sink"
+		textureFile = "gfx/interface/icons/ship_parts/special_kitchen_sink.dds"
+		noOfFrames = 1
+	}
+	
+	################
+	### REACTORS ###
+	################
+	spriteType = {
+		name = "GFX_ship_part_reactor_6_NSC"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_6_NSC.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_reactor_7_NSC"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_7_NSC.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_reactor_8_NSC"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_8_NSC.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_reactor_9_NSC"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_9_NSC.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_reactor_10_NSC"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_10_NSC.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_reactor_11_enigmatic_NSC"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_11_enigmatic_NSC.dds"
+		noOfFrames = 1
+	}
+	
+	########################
+	### REACTOR BOOSTERS ###
+	########################
+	spriteType = {
+		name = "GFX_nsc_reactor_booster_4"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_reactor_booster_4.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_nsc_reactor_booster_5"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_reactor_booster_5.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_nsc_reactor_booster_6"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_reactor_booster_6.dds"
+		noOfFrames = 1
+	}
+	
+	#################
+	### COMPUTERS ###
+	#################
+	spriteType = {
+		name = "GFX_ship_part_nsc_ai_computer"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_nsc_ai_computer.dds"
+		noOfFrames = 1
+	}
+	
+	###############
+	### WEAPONS ###
+	###############
+	spriteType = {
+		name = "GFX_ship_part_cruise_missile_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_cruise_missile_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_cruise_missile_2"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_cruise_missile_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_basic_xl"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_basic_xl.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_basic_t"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_basic_t.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_nsc_bb_sniper_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_bb_sniper_gun_1.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_nsc_bb_sniper_2"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_bb_sniper_gun_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_nsc_pd_missile"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_nsc_pd_missile.dds"
+		noOfFrames = 1
+	}
+	
+	####################
+	### STRIKE CRAFT ###
+	####################
+	spriteType = {
+		name = "GFX_ship_part_strike_craft_fighter_pd_1"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_fighter_pd_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_strike_craft_fighter_pd_2"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_fighter_pd_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_strike_craft_fighter_pd_3"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_strike_craft_fighter_pd_3.dds"
+	}
+
+	##############
+	### DRIVES ###
+	##############
+	spriteType = {
+		name = "GFX_ship_part_flagship_jump_drive"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_flagship_jump_drive.dds"
+		noOfFrames = 1
+	}
+	
+	############
+	### LABS ###
+	############
+	spriteType = {
+		name = "GFX_exploration_slot_anomaly_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_anomaly_lab.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_survey_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_survey_lab.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_analysis_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_analysis_lab.dds"
+		noOfFrames = 1
+	}
+	spriteType = {
+		name = "GFX_exploration_slot_arch_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_arch_lab.dds"
+		noOfFrames = 1
+	}
+	
+	###########################
+	### EXPLORATION SYSTEMS ###
+	###########################
+	spriteType = {
+		name = "GFX_exploration_slot_combat_system"
+		textureFile = "gfx/interface/icons/ship_parts/special_structural_integrity.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_stellar_cartography"
+		textureFile = "gfx/interface/icons/ship_parts/special_stellar_cartography.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_quantum_thrusters"
+		textureFile = "gfx/interface/icons/ship_parts/special_quantum_thrusters.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_navigational_array"
+		textureFile = "gfx/interface/icons/ship_parts/special_navigational_array.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_exploration_slot_physics_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_physics_lab.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_society_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_society_lab.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_exploration_slot_engineering_lab"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_engineering_lab.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_exploration_slot_mining_facility"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_mining_facility.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_exploration_slot_solar_array"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_solar_array.dds"
+		noOfFrames = 1
+	}
+
+	spriteType = {
+		name = "GFX_exploration_slot_alloy_refinery"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_alloy_refinery.dds"
+		noOfFrames = 1
+	}
+	
+	####################
+	### BOMBARDMENTS ###
+	####################
+	spriteType = {
+		name = "GFX_nsc_bombardment_1"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_bombardment_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_nsc_bombardment_2"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_bombardment_2.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_nsc_bombardment_3"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_bombardment_3.dds"
+		noOfFrames = 1
+	}
+
+}

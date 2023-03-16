@@ -1,0 +1,176 @@
+##################################
+### MISSILES WEAPON COMPONENTS ###
+##################################
+
+weapon_component_template = {
+	key = "TOMAHAWK_CRUISE_MISSILE"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_cruise_missile_1"
+	icon_frame = 1
+	
+	power = -120
+	damage = { min = 45 max = 75 }
+	hull_damage = 1.5
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0
+	windup = { min = 1 max = 19 }
+	total_fire_time = 90
+	range = 200
+	min_range = 50
+	accuracy = 1.0
+	tracking = 0.0
+	missile_speed = 12.0
+	missile_evasion = 0.1
+	missile_shield = 0.0
+	missile_armor = 0.0
+	missile_health = 28.0
+	missile_retarget_range = 100.0
+	size_damage_factor = 1
+	
+	prerequisites = { "tech_tomahawk_cruise_missile_1" }
+	component_set = "TOMAHAWK_CRUISE_MISSILE"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+			volatile_motes = @l_t5_rare
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	target_weights = {
+		Flagship = 5
+		titan = 4
+		Dreadnought = 3
+		battleship = 2
+		Carrier = 1
+	}
+
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			has_monthly_income = { resource = volatile_motes value <= 1 }
+		}
+	}
+}
+
+weapon_component_template = {
+	key = "HARPOON_CRUISE_MISSILE"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_cruise_missile_2"
+	icon_frame = 1
+	
+	power = -90
+	damage = { min = 30 max = 50 }
+	hull_damage = 1.5
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.0
+	armor_penetration = 0.0
+	windup = { min = 1 max = 19 }
+	total_fire_time = 60
+	range = 100
+	min_range = 50
+	accuracy = 1.0
+	tracking = 0.0
+	missile_speed = 24.0
+	missile_evasion = 0.15
+	missile_shield = 0.0
+	missile_armor = 0.0
+	missile_health = 18.0
+	missile_retarget_range = 100.0
+	size_damage_factor = 1
+	
+	prerequisites = { "tech_tomahawk_cruise_missile_1" }
+	component_set = "HARPOON_CRUISE_MISSILE"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	target_weights = {
+		Flagship = 5
+		titan = 4
+		Dreadnought = 3
+		battleship = 2
+		Carrier = 1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "NSC_PD_MISSILE"
+	size = point_defence
+	type = point_defence
+	
+	icon = "GFX_ship_part_nsc_pd_missile"
+	icon_frame = 1
+	projectile_gfx = "nsc_pd_missile"
+	
+	power = -20
+	damage = { min = 8 max = 12 }
+	hull_damage = 1.0
+	shield_damage = 0.75
+	shield_penetration = 0.50
+	armor_damage = 2.0
+	armor_penetration = 0.75
+	windup = { min = 0 max = 0 }
+	total_fire_time = 5
+	range = 80.0
+	accuracy = 0.80
+	tracking = 0.90
+	
+	point_defence_targets = { "missile" "strike_craft" }
+	
+	prerequisites = { "tech_pd_tracking_3" }
+	
+	component_set = "NSC_PD_MISSILE"
+	
+	tags = { weapon_type_point_defense weapon_type_explosive }
+	
+	ai_tags = { weapon_role_point_defense screen }
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+		}
+		upkeep = {
+			energy = 0.10
+			alloys = 0.010
+		}
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}

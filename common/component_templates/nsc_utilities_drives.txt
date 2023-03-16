@@ -1,0 +1,95 @@
+############################
+### FTL DRIVE COMPONENTS ###
+############################
+
+utility_component_template = {
+	key = "FLAGSHIP_JUMP_DRIVE"
+	size = small
+	icon = "GFX_ship_part_flagship_jump_drive"
+	icon_frame = 1
+	
+	power = -50
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 150
+		}
+	}
+	
+	ftl = yes
+	jumpdrive = yes
+	
+	ship_modifier = {
+		ship_windup_mult = -0.95
+		ship_jumpdrive_cooldown_mult = -0.95
+		ship_ftl_jumpdrive_range_mult = 2.0
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+	size_restriction = { Flagship }
+	component_set = "ftl_components"
+	
+	ai_weight = { weight = 10 }
+}
+
+
+
+utility_component_template = {
+	key = "HEADQUARTERS_JUMP_DRIVE"
+	size = small
+	icon = "GFX_ship_part_flagship_jump_drive"
+	icon_frame = 1
+	
+	power = -500
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 500
+		}
+	}
+	jumpdrive = yes
+	
+	ship_modifier = {
+		ship_windup_mult = 5
+		ship_jumpdrive_cooldown_mult = 10
+		ship_ftl_jumpdrive_range_mult = 2
+	}
+
+	size_restriction = { headquarters }
+	component_set = "hq_ftl_components"
+	
+	ai_weight = { weight = 10 }
+}
+
+
+##############################
+### EXP CRUISER HYPERDRIVE ###
+##############################
+
+
+utility_component_template = {
+	key = "EXPLORATION_HYPER_DRIVE"
+	size = small
+	icon = "GFX_ship_part_hyper_drive_3"
+	icon_frame = 1
+	power = 15
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 15
+		}
+	}
+	ftl = yes
+	ship_modifier = {
+		ship_disengage_opportunities_add = 1
+		ship_windup_mult = -0.5
+	}
+
+	ai_weight = {
+		weight = 3
+	}
+
+	size_restriction = { explorationship }
+	component_set = "ftl_components"
+	upgrades_to = "JUMP_DRIVE_1"
+}
