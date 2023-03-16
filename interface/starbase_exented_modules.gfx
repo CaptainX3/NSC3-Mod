@@ -1,0 +1,290 @@
+spriteTypes = 
+{
+	corneredTileSpriteType = {
+		name = "GFX_drop_area_green_mod"
+		textureFile = "gfx/interface/planetview/tiles_frame_allowed.dds"
+		borderSize = { x=34 y=34 }
+	}
+	spriteType = {
+		name = "GFX_starbase_ship_size_small"
+		textureFile = "gfx/interface/icons/starbase_ship_sizes.dds"
+		noOfFrames = 7
+	}
+	spriteType = {
+		name = "GFX_starbase_ship_size_medium"
+		textureFile = "gfx/interface/icons/starbase_ship_sizes_medium.dds"
+		noOfFrames = 7
+	}	
+	spriteType = {
+		name = "GFX_starbase_outliner"
+		textureFile = "gfx/interface/icons/starbase_outliner.dds"
+		noOfFrames = 7
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_pd_battery"
+		texturefile = "gfx/interface/icons/modules/sb_defense.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_large_battery"
+		texturefile = "gfx/interface/icons/modules/sb_large.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_xl_battery"
+		texturefile = "gfx/interface/icons/modules/sb_extra_large.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_titanic_battery"
+		texturefile = "gfx/interface/icons/modules/sb_titanic.dds"
+	}
+	
+	spriteType = 
+	{
+		name = "GFX_starbase_shield_module"
+		texturefile = "gfx/interface/icons/modules/sb_shield.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_armor_module"
+		texturefile = "gfx/interface/icons/modules/sb_armor.dds"
+	}	
+	spriteType = 
+	{
+		name = "GFX_starbase_adv_space_engineers"
+		texturefile = "gfx/interface/icons/modules/adv_space_engineers.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_trader_bay"
+		texturefile = "gfx/interface/icons/modules/trader_bay.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_asteroid_mining"
+		texturefile = "gfx/interface/icons/modules/asteroid_mining.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_mining_experts"
+		texturefile = "gfx/interface/icons/modules/mining_experts.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_reinforced_defenses"
+		texturefile = "gfx/interface/icons/modules/reinforced_defenses.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_strategic_defenses"
+		texturefile = "gfx/interface/icons/modules/strategic_defenses.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_adv_starbase"
+		texturefile = "gfx/interface/icons/modules/adv_starbase.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_starbase_lab"
+		texturefile = "gfx/interface/icons/modules/starbase_lab.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_phy_support"
+		texturefile = "gfx/interface/icons/modules/phy_support.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_soc_support"
+		texturefile = "gfx/interface/icons/modules/soc_support.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_eng_support"
+		texturefile = "gfx/interface/icons/modules/eng_support.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_adv_assembly_yard"
+		texturefile = "gfx/interface/icons/modules/adv_assembly_yard.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_experienced_crew"
+		texturefile = "gfx/interface/icons/modules/experienced_crew.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_navy_veteran"
+		texturefile = "gfx/interface/icons/modules/navy_veteran.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_orbital_engineering"
+		texturefile = "gfx/interface/icons/modules/orbital_engineering.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_energy_collector"
+		texturefile = "gfx/interface/icons/modules/energy_collector.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_security_force"
+		texturefile = "gfx/interface/icons/modules/security_force.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_adv_starbase"
+		texturefile = "gfx/interface/icons/modules/adv_starbase.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_space_power_plant"
+		texturefile = "gfx/interface/icons/modules/space_power_plant.dds"
+	}
+	
+	spriteType = 
+	{
+		name = "GFX_starbase_repair_module"
+		texturefile = "gfx/interface/icons/modules/repair_module.dds"
+	}	
+	spriteType = 
+	{
+		name = "GFX_starbase_space_foundry"
+		texturefile = "gfx/interface/icons/modules/space_foundry.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_space_factory"
+		texturefile = "gfx/interface/icons/modules/space_factory.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_security_branch_office"
+		texturefile = "gfx/interface/icons/modules/security_branch_office.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_administration_office"
+		texturefile = "gfx/interface/icons/modules/administration_office.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_synthetic_crystal_fabricator"
+		texturefile = "gfx/interface/icons/modules/synthetic_crystal_fabricator.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_synthetic_volatile_motes_fabricator"
+		texturefile = "gfx/interface/icons/modules/synthetic_volatile_motes_fabricator.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_synthetic_gase_fabricator"
+		texturefile = "gfx/interface/icons/modules/synthetic_gase_fabricator.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_orbital_assembly"
+		texturefile = "gfx/interface/icons/modules/orbital_assembly.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_chain_manufacturing"
+		texturefile = "gfx/interface/icons/modules/chain_manufacturing.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_construction_planificator"
+		texturefile = "gfx/interface/icons/modules/construction_planificator.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_financial_space_center"
+		texturefile = "gfx/interface/icons/modules/financial_space_center.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_terraforming_module"
+		texturefile = "gfx/interface/icons/modules/terraforming_module.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_stasis_chambers"
+		texturefile = "gfx/interface/icons/modules/stasis_chambers.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_emergency_portal"
+		texturefile = "gfx/interface/icons/modules/emergency_portal.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_starbase_optimal_systems"
+		texturefile = "gfx/interface/icons/modules/starbase_optimal_systems.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_market_computers"
+		texturefile = "gfx/interface/icons/modules/market_computers.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_stellar_housing"
+		texturefile = "gfx/interface/icons/modules/stellar_housing.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_administration_computers"
+		texturefile = "gfx/interface/icons/modules/administration_computers.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_research_computers"
+		texturefile = "gfx/interface/icons/modules/research_computers.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_ship_amplifier"
+		texturefile = "gfx/interface/icons/modules/ship_amplifier.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_ship_disruptor"
+		texturefile = "gfx/interface/icons/modules/ship_disruptor.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_spy_command_post"
+		texturefile = "gfx/interface/icons/modules/spy_command_post.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_corvette_assembly_yard"
+		texturefile = "gfx/interface/icons/modules/corvette_assembly_yard.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_destroyer_assembly_yard"
+		texturefile = "gfx/interface/icons/modules/destroyer_assembly_yard.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_cruiser_assembly_yard"
+		texturefile = "gfx/interface/icons/modules/cruiser_assembly_yard.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_battleship_assembly_yard"
+		texturefile = "gfx/interface/icons/modules/battleship_assembly_yard.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_crew_formation_modules"
+		texturefile = "gfx/interface/icons/modules/crew_formation_modules.dds"
+	}
+}

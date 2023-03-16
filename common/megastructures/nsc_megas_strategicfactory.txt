@@ -1,0 +1,125 @@
+
+##################################
+### STRATEGIC RESOURCE FACTORY ###
+##################################
+
+nsc_strategic_resource_factory_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -10 y = -10 }
+	build_time = 1800
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 25000
+			unity = 500
+		}
+		upkeep = { energy = 5 }
+	}
+	
+	potential = {
+		has_ascension_perk = ap_nsc_matterenergy
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}		
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_nsc_factory"
+			from = { NOT = { has_country_flag = built_nsc_factory } }
+		}
+	}
+
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "must_build_around_star"
+				is_star = yes
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+		}
+	}
+		
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { owner = { is_same_value = from } }
+			}
+		}
+	}
+
+	on_build_complete = {
+        from = { 
+            set_country_flag = built_nsc_factory
+            set_country_flag = has_built_or_repaired_megastructure
+        }
+		fromfrom.planet = { set_planet_flag = has_megastructure }
+    }
+}
+
+nsc_strategic_resource_factory_1 = {
+	entity = "MiningBase_entity"
+	construction_entity = "MiningBase_entity"
+	portrait = "GFX_megastructure_think_tank_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -10 y = -10 }
+	build_time = 3600
+
+	resources = {
+		category = megastructures
+		cost = { alloys = 30000 unity = 2500 }
+		produces = {
+			volatile_motes = 25
+			exotic_gases = 25
+			sr_dark_matter = 25
+			rare_crystals = 25
+			nanites = 25
+			sr_zro = 25
+			sr_living_metal = 25
+		}
+		upkeep = {
+			energy = 500
+			minerals = 500
+		}
+	}
+	
+	upgrade_from = { nsc_strategic_resource_factory_0 }
+}

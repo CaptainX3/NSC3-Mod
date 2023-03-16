@@ -1,0 +1,172 @@
+#############
+### POWER ###
+#############
+@power1 = -150
+@power2 = -200
+@power3 = -250
+@power_add0 = 100
+@power_add1 = 150
+@power_add2 = 200
+@power_add3 = 250
+
+############
+### COST ###
+############
+@cost0 = 15
+@cost1 = 20
+@cost2 = 25
+@cost3 = 35
+@cost4 = 45
+
+########################
+### BOMBARDMENT MULT ###
+########################
+@bombardment0 = 0.10
+@bombardment1 = 0.20
+@bombardment2 = 0.30
+
+##################################
+### REACTOR BOOSTER COMPONENTS ###
+##################################
+
+### VANILLA REACTOR BOOSTER 3 OVERWRITE ###
+utility_component_template = {
+	key = "REACTOR_BOOSTER_3"
+	size = aux	
+	icon = "GFX_ship_part_reactor_booster_3"
+	icon_frame = 1
+	
+	power = @power_add0
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost0 }
+	}
+	
+	prerequisites = { "tech_reactor_boosters_3" }
+	component_set = "REACTOR_BOOSTER_3"
+    upgrades_to = "NSC_REACTOR_BOOSTER_1"
+	
+	ai_weight = { weight = 5 }
+}
+
+### NSC REACTOR BOOSTERS ###
+utility_component_template = {
+	key = "NSC_REACTOR_BOOSTER_1"
+	size = aux	
+	icon = "GFX_nsc_reactor_booster_4"
+	icon_frame = 1
+	
+	power = @power_add1
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost1 }
+	}
+	
+	prerequisites = { "tech_nsc_reactor_boosters_1" }
+	component_set = "NSC_REACTOR_BOOSTER_1"
+	upgrades_to = "NSC_REACTOR_BOOSTER_2"
+	
+	ai_weight = { weight = 6 }
+}
+
+utility_component_template = {
+	key = "NSC_REACTOR_BOOSTER_2"
+	size = aux	
+	icon = "GFX_nsc_reactor_booster_5"
+	icon_frame = 1
+	
+	power = @power_add2
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost2 }
+	}
+	
+	prerequisites = { "tech_nsc_reactor_boosters_2" }
+	component_set = "NSC_REACTOR_BOOSTER_2"
+	upgrades_to = "NSC_REACTOR_BOOSTER_3"
+	
+	ai_weight = { weight = 7 }
+}
+
+utility_component_template = {
+	key = "NSC_REACTOR_BOOSTER_3"
+	size = aux	
+	icon = "GFX_nsc_reactor_booster_6"
+	icon_frame = 1
+	
+	power = @power_add3
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost3 }
+	}
+	
+	prerequisites = { "tech_nsc_reactor_boosters_3" }
+	component_set = "NSC_REACTOR_BOOSTER_3"
+
+	ai_weight = { weight = 8 }
+}
+
+######################################
+### BOMBARDMENT UPGRADE COMPONENTS ###
+######################################
+utility_component_template = {
+	key = "NSC_BOMBARDMENT_1"
+	size = aux	
+	icon = "GFX_nsc_bombardment_1"
+	icon_frame = 1
+	
+	power = @power1
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost2 }
+	}
+	ship_modifier = { ship_orbital_bombardment_mult = @bombardment0 }
+	
+	prerequisites = { "tech_cruisers" }
+	component_set = "NSC_BOMBARDMENT_1"
+	class_restriction = { shipclass_military shipclass_transport }
+	upgrades_to = "NSC_BOMBARDMENT_2"
+
+	ai_weight = { weight = 8 }
+}
+
+utility_component_template = {
+	key = "NSC_BOMBARDMENT_2"
+	size = aux	
+	icon = "GFX_nsc_bombardment_2"
+	icon_frame = 1
+	
+	power = @power2
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost3 }
+	}
+	ship_modifier = { ship_orbital_bombardment_mult = @bombardment1 }
+	
+	prerequisites = { "tech_battleships" }
+	component_set = "NSC_BOMBARDMENT_2"
+	class_restriction = { shipclass_military shipclass_transport }
+	upgrades_to = "NSC_BOMBARDMENT_3"
+
+	ai_weight = { weight = 8 }
+}
+
+utility_component_template = {
+	key = "NSC_BOMBARDMENT_3"
+	size = aux	
+	icon = "GFX_nsc_bombardment_3"
+	icon_frame = 1
+	
+	power = @power3
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost4 }
+	}
+	ship_modifier = { ship_orbital_bombardment_mult = @bombardment2 }
+	
+	prerequisites = { "tech_Dreadnought_1" }
+	component_set = "NSC_BOMBARDMENT_3"
+	class_restriction = { shipclass_military shipclass_transport }
+
+	ai_weight = { weight = 8 }
+}

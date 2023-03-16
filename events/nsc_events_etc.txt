@@ -1,0 +1,138 @@
+namespace = nsc_events
+
+########################
+### NSC ACTIVE EVENT ###
+########################
+event = {
+    id = nsc_events.1
+    hide_window = yes
+    is_triggered_only = yes
+	
+    immediate = {
+		set_global_flag = has_nsc_active
+	}
+}
+
+###########################
+### HEADQUARTERS EVENTS ###
+###########################
+ship_event = {
+	id = nsc_events.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		owner = {
+			NOT = { has_modifier = nsc_headquarters_bonus }
+			any_controlled_ship = { is_ship_size = headquarters }
+		}
+	}
+	
+	immediate = {
+		owner = {
+			add_modifier = {
+				modifier = nsc_headquarters_bonus
+				days = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = nsc_events.3
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_modifier = nsc_headquarters_bonus
+		NOT = { any_controlled_ship = { is_ship_size = headquarters } }
+	}
+	
+	immediate = { remove_modifier = nsc_headquarters_bonus }
+}
+
+country_event = {
+	id = nsc_events.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = {
+			has_modifier = nsc_headquarters_bonus
+			NOT = { any_controlled_ship = { is_ship_size = headquarters } }
+		}
+	}
+	
+	immediate = { from = { remove_modifier = nsc_headquarters_bonus } }
+}
+
+country_event = {
+	id = nsc_events.5
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_modifier = nsc_headquarters_bonus
+		from = { any_controlled_ship = { is_ship_size = headquarters } }
+	}
+	
+	immediate = { remove_modifier = nsc_headquarters_bonus }
+}
+
+# Called when a Starbase changes owner
+# THIS = Ship (Starbase)
+# FROM = Former Owner (Country)
+ship_event = {
+	id = nsc_events.35
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = starbase
+	}
+
+	immediate = {
+		starbase = {
+			if = {
+				limit = {
+					owner = {
+						is_hive_empire = yes
+					}
+				}
+				remove_starbase_building = {
+					building = starbase_management
+				}
+				remove_starbase_building = {
+					building = starbase_management_machine
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						is_machine_empire = yes
+					}
+				}
+				remove_starbase_building = {
+					building = starbase_management
+				}
+				remove_starbase_building = {
+					building = starbase_management_hive
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						is_gestalt = no
+					}
+				}
+				remove_starbase_building = {
+					building = starbase_management_machine
+				}
+				remove_starbase_building = {
+					building = starbase_management_hive
+				}
+			}
+		}
+	}
+}

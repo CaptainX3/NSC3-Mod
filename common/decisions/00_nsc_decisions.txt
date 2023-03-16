@@ -1,0 +1,26 @@
+#mothball feature
+decision_nsc_mothball_menu = {
+	owned_planets_only = yes
+
+	potential = {
+		always = yes
+		exists = owner
+		owner = { is_ai = no }
+	}
+
+	allow = {
+		custom_tooltip_fail = {
+			text = decision_nsc_mothball_menu_trigger.fail
+			any_fleet_in_orbit = { nsc_mothball_target_fleet_requirement = yes }
+		}
+	}
+
+	effect = {
+		custom_tooltip = decision_nsc_mothball_menu_tooltip
+		hidden_effect = { planet_event = { id = nsc_events_mothball.menu } }
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

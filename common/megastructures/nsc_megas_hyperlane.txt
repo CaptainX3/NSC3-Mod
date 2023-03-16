@@ -1,0 +1,441 @@
+
+#########################
+### HYPERLANE CREATOR ###
+#########################
+
+### EMISOR ###
+hyperlane_creator_emisor_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			unity = 500
+		}
+	}
+	
+	potential = {
+		has_technology = tech_hyperlane_generation
+	}
+
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_generator_emisor"
+			from = {
+				NOR = {
+					has_megastructure = hyperlane_creator_emisor_0
+					has_megastructure = hyperlane_creator_emisor_1
+				}	
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+
+	ai_weight = { factor = 0 }
+}
+
+hyperlane_creator_emisor_1 = {
+	entity = "deactivated_gateway_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			energy = 2000
+			unity = 500
+		}
+	}
+	
+	upgrade_from = { hyperlane_creator_emisor_0 }
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+}
+
+hyperlane_creator_emisor_2 = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	build_time = 360
+	
+	resources = {
+		category = megastructures
+		cost = { energy = 10000 unity = 500 }
+	}
+	
+	upgrade_from = { hyperlane_creator_emisor_1 }
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+		custom_tooltip = {
+			fail_text = "requires_existing_generator_receptor"
+			from = { has_megastructure = hyperlane_creator_receptor_1 }	
+		}
+	}
+
+	on_build_complete = { from = { country_event = { id = nsc_events_hyperlane_gen.1 } } }
+}
+
+### RECEPTOR ###
+hyperlane_creator_receptor_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			unity = 500
+		}
+	}
+
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_existing_generator_emisor"
+			from = {
+				any_system_within_border = {
+					AND = {
+						OR = {
+							has_megastructure = hyperlane_creator_emisor_0
+							has_megastructure = hyperlane_creator_emisor_1
+						}
+						NOT = { has_hyperlane_to = root }
+					}	
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_system_generator_emisor"
+			root = {
+				NOR = {
+					has_megastructure = hyperlane_creator_emisor_0
+					has_megastructure = hyperlane_creator_emisor_1
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_generator_receptor"
+			from = {
+				NOR = {
+					has_megastructure = hyperlane_creator_receptor_0
+					has_megastructure = hyperlane_creator_receptor_1
+				}	
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_technology_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+
+	ai_weight = { factor = 0 }
+}
+
+hyperlane_creator_receptor_1 = {
+	entity = "deactivated_gateway_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			energy = 2000
+			unity = 500
+		}
+	}
+	
+	upgrade_from = { hyperlane_creator_receptor_0 }
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+}
+
+#########################
+### HYPERLANE REMOVER ###
+#########################
+
+### EMISOR ###
+hyperlane_remover_emisor_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			unity = 500
+		}
+	}	
+
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_remover_emisor"
+			from = {
+				NOR = {
+					has_megastructure = hyperlane_remover_emisor_0
+					has_megastructure = hyperlane_remover_emisor_1
+				}	
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_tech_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+
+	ai_weight = { factor = 0 }
+}
+
+hyperlane_remover_emisor_1 = {
+	entity = "deactivated_gateway_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			energy = 2000
+			unity = 500
+		}
+	}
+	
+	upgrade_from = { hyperlane_remover_emisor_0 }
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_tech_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+}
+
+hyperlane_remover_emisor_2 = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	build_time = 360
+	
+	resources = {
+		category = megastructures
+		cost = { energy = 10000 unity = 500 }
+	}
+	
+	upgrade_from = { hyperlane_remover_emisor_1 }
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_tech_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+		custom_tooltip = {
+			fail_text = "requires_existing_remover_receptor"
+			from = { has_megastructure = hyperlane_remover_receptor_1 }	
+		}
+	}
+
+	on_build_complete = { from = { country_event = { id = nsc_events_hyperlane_gen.3 } } }
+}
+
+### RECEPTOR ###
+hyperlane_remover_receptor_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			unity = 500
+		}
+	}
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_existing_remover_emisor"
+			from = {
+				any_system_within_border = {
+					AND = {
+						OR = {
+						has_megastructure = hyperlane_remover_emisor_0
+						has_megastructure = hyperlane_remover_emisor_1
+						}
+						has_hyperlane_to = root
+					}	
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_system_remover_emisor"
+			root = {
+				NOR = {
+					has_megastructure = hyperlane_remover_emisor_0
+					has_megastructure = hyperlane_remover_emisor_1
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_remover_receptor"
+			from = {
+				NOR = {
+					has_megastructure = hyperlane_remover_receptor_0
+					has_megastructure = hyperlane_remover_receptor_1
+				}	
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_tech_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+
+	ai_weight = { factor = 0 }
+}
+
+hyperlane_remover_receptor_1 = {
+	entity = "deactivated_gateway_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	show_galactic_map_icon = no
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+			energy = 2000
+			unity = 500
+		}
+	}
+	
+	upgrade_from = { hyperlane_remover_receptor_0 }
+	
+	potential = { has_technology = tech_hyperlane_generation }
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_tech_hyperlane_generation"
+			from = { has_technology = tech_hyperlane_generation }
+		}
+	}
+}

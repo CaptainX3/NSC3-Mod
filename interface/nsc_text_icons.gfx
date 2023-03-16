@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	### ship size icons ###
+
+
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_13"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_14"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_14.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_15"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_9.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_16"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_12.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_17"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_16.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_18"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_18.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_19"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_19.dds"
+	}
+
+	spriteType = {
+		name = "GFX_text_nsc_ship_size_military_20"
+		texturefile = "gfx/interface/icons/text_icons/icon_text_military_size_20.dds"
+	}
+}

@@ -1,0 +1,331 @@
+
+@nsc_flagship_entity_offset_x = -20
+@nsc_flagship_entity_offset_y = -20
+
+nsc_flagship_shipyard = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 360
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+			influence = @nsc_flagship_influence_cost
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			text = "requires_no_existing_nsc_flagship"
+			from = { NOT = { any_controlled_ship = { is_ship_size = Flagship } } }
+		}
+		custom_tooltip = {
+			text = "can_not_start_another_nsc_flagship_building"
+			from = { NOT = { has_country_flag = currently_building_nsc_flagship } }
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+	}
+
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				has_ringworld_output_boost = no
+			}
+		}
+	}
+
+	# from = country
+	ai_weight = {
+		factor = 0 #no, they will get the ship via an event chain
+	}
+
+	#no, not here #the contstruction can be disrupted easily in this phase and players will see the same notification event everytime they restart the construction
+	#on_build_start = { from = { country_event = { id = nsc_events_flagship.2 } } }
+	on_build_cancel = {}
+	on_build_complete = { from = { set_country_flag = currently_building_nsc_flagship } }
+}
+
+
+nsc_flagship_bow = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+
+	}
+
+	upgrade_from = {
+		nsc_flagship_shipyard
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+
+	on_build_start = { from = { country_event = { id = nsc_events_flagship.2 } } }
+}
+
+
+nsc_flagship_mid_1 = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+	}
+
+	upgrade_from = {
+		nsc_flagship_bow
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+}
+
+
+nsc_flagship_mid_2 = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+	}
+
+	upgrade_from = {
+		nsc_flagship_mid_1
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+
+	on_build_complete = { from = { country_event = { id = nsc_events_flagship.3 } } }
+}
+
+
+nsc_flagship_mid_3 = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+	}
+
+	upgrade_from = {
+		nsc_flagship_mid_2
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+}
+
+
+nsc_flagship_mid_4 = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+	}
+
+	upgrade_from = {
+		nsc_flagship_mid_3
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+}
+
+
+nsc_flagship_stern = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 4000
+		}
+		produces = {
+			influence = 3
+			unity = 25
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+		}
+	}
+
+	upgrade_from = {
+		nsc_flagship_mid_4
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+	on_build_complete = {
+		fromfrom = {
+			upgrade_megastructure_to = nsc_flagship_complete
+			finish_upgrade = yes
+		}
+	}
+}
+nsc_flagship_complete = {
+	entity = "flagship_construction_yard_entity"
+	construction_entity = "flagship_construction_yard_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
+	build_time = 250
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 0
+			influence = 0
+		}
+		produces = {
+			unity = 10
+		}
+		upkeep = {
+			energy = 5
+			alloys = 5
+		}
+	}
+
+	upgrade_from = {
+		nsc_flagship_stern
+	}
+
+	prerequisites = { "tech_Flagship_1" }
+
+	on_build_complete = {
+		from = { country_event = { id = nsc_events_flagship.4 } }
+	}
+}

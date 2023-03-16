@@ -1,0 +1,60 @@
+#########################
+###   CLOAKING SETS   ###
+#########################
+
+component_set = {
+	key = "STRIKECRUISER_CLOAKING_3"
+	icon = "GFX_ship_part_cloak_3"
+	icon_frame = 1	
+}
+component_set = {
+	key = "STRIKECRUISER_CLOAKING_DARK_MATTER"
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1	
+}
+component_set = {
+	key = "STRIKECRUISER_CLOAKING_PSI"
+	icon = "GFX_ship_part_cloak_psi"
+	icon_frame = 1	
+}
+
+
+component_set = {
+	key = "CARRIER_CLOAKING_3"
+	icon = "GFX_ship_part_cloak_3"
+	icon_frame = 1	
+}
+component_set = {
+	key = "CARRIER_CLOAKING_DARK_MATTER"
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1	
+}
+component_set = {
+	key = "CARRIER_CLOAKING_PSI"
+	icon = "GFX_ship_part_cloak_psi"
+	icon_frame = 1	
+}
+
+
+component_set = {
+	key = "EXPLORATION_CLOAKING_3"
+	icon = "GFX_ship_part_cloak_3"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EXPLORATION_CLOAKING_DARK_MATTER"
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1	
+}
+component_set = {
+	key = "EXPLORATION_CLOAKING_PSI"
+	icon = "GFX_ship_part_cloak_psi"
+	icon_frame = 1	
+}
+
+
+component_set = {
+	key = "FLAGSHIP_CLOAKING_3"
+	icon = "GFX_ship_part_cloak_3"
+	icon_frame = 1	
+}

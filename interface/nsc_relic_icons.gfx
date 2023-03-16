@@ -1,0 +1,27 @@
+spriteTypes = {
+
+	###################
+	### RELIC ICONS ###
+	###################
+	
+	### HYPERSPACE CORE ###
+	SpriteType = {
+		name = "GFX_r_nsc_hyperspace_core"
+		texturefile = "gfx/interface/icons/relics/r_nsc_hyperspace_core.dds"			
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/relics/r_nsc_hyperspace_core_shine.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/glow_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = yes
+			animationtime = 11
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "rotating"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+
+}

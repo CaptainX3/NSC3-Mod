@@ -1,0 +1,178 @@
+nsc_flagship_creation_effect = {
+	optimize_memory
+	random_owned_megastructure = {
+		limit = { is_megastructure_type = nsc_flagship_complete }
+		save_event_target_as = nsc_flagship_spawn_location
+	}
+	create_fleet = {
+		effect = {
+			set_owner = root
+			create_ship = {
+				name = random
+				random_existing_design = Flagship
+				graphical_culture = root
+			}
+			set_location = event_target:nsc_flagship_spawn_location
+		}
+	}
+	set_country_flag = nsc_flagship_owner
+}
+nsc_flagship_creation_for_ai_effect = {
+	optimize_memory
+	if = {
+		limit = { NOT = { has_technology = tech_bh_power_3 } }
+		give_technology = { tech = tech_bh_power_3 message = no }
+	}
+	if = {
+		limit = { NOT = { has_technology = tech_Flagship_1 } }
+		give_technology = { tech = tech_Flagship_1 message = no }
+	}
+	create_fleet = {
+		effect = {
+			set_owner = prev
+			create_ship = {
+				name = random
+				random_existing_design = Flagship
+				graphical_culture = prev
+			}
+			set_location = prev.capital_scope.starbase
+		}
+	}
+	set_country_flag = nsc_flagship_owner
+}
+nsc_mothball_target_fleet_cost_count = {
+	optimize_memory
+	random_fleet_in_orbit = {
+		limit = {
+			owner = { is_same_value = prev.controller } #leased fleets should not be possible to mothball 
+			#A: Hey, can I borrow your stuffs and put them into my garage and forget? #B: Jeez, mate! Why do you borrow things when you don't even need them? #idk, for fun?
+			OR = {
+				has_fleet_flag = nsc_mothball_temporal_target_$ID$
+				has_fleet_flag = nsc_mothballed_fleet_$ID$
+			}
+		}
+		save_event_target_as = nsc_mothball_target_fleet_$ID$
+		if = {
+			limit = { is_variable_set = nsc_mothball_target_fleet_total_cost_var }
+			clear_variable = nsc_mothball_target_fleet_total_cost_var
+		}
+		every_owned_ship = {
+			export_trigger_value_to_variable = { trigger = has_hp variable = nsc_mothball_target_ship_cost_var }
+			divide_variable = { which = nsc_mothball_target_ship_cost_var value = 5 } #100 / 5 = 20
+			prev = {
+				change_variable = {
+					which = nsc_mothball_target_fleet_total_cost_var
+					value = prev.nsc_mothball_target_ship_cost_var
+				}
+			}
+			clear_variable = nsc_mothball_target_ship_cost_var
+		}
+	}
+}
+nsc_mothball_target_fleet_selecting_effect = {
+	optimize_memory
+	if = { #lock temporally selected targets so they can keep appear in event options until the player choose to close the window
+		limit = { NOT = { has_planet_flag = nsc_mothball_target_fleets_counting_stopped } }
+		while = {
+			change_variable = { which = nsc_mothball_target_fleet_count_var value = 1 }
+			random_fleet_in_orbit = {
+				limit = {
+					nsc_mothball_target_fleet_requirement = yes
+					#exclude already selected targets
+					NOR = {
+						has_fleet_flag = nsc_mothball_temporal_target_1
+						has_fleet_flag = nsc_mothball_temporal_target_2
+						has_fleet_flag = nsc_mothball_temporal_target_3
+						has_fleet_flag = nsc_mothball_temporal_target_4
+						has_fleet_flag = nsc_mothball_temporal_target_5
+						has_fleet_flag = nsc_mothballed_fleet_1
+						has_fleet_flag = nsc_mothballed_fleet_2
+						has_fleet_flag = nsc_mothballed_fleet_3
+						has_fleet_flag = nsc_mothballed_fleet_4
+						has_fleet_flag = nsc_mothballed_fleet_5
+					}
+				}
+				if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 1 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_1 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_1
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 2 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_2 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_2
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 3 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_3 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_3
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 4 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_4 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_4
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 5 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_5 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_5
+				}
+			}
+			count = 5
+		}
+		clear_variable = nsc_mothball_target_fleet_count_var
+		set_planet_flag = nsc_mothball_target_fleets_counting_stopped
+		nsc_mothball_target_fleet_cost_count = { ID = 1 }
+		nsc_mothball_target_fleet_cost_count = { ID = 2 }
+		nsc_mothball_target_fleet_cost_count = { ID = 3 }
+		nsc_mothball_target_fleet_cost_count = { ID = 4 }
+		nsc_mothball_target_fleet_cost_count = { ID = 5 }
+	}
+}
+nsc_mothball_target_fleet_mothball_start_effect = {
+	optimize_memory
+	custom_tooltip = nsc_events_mothball.menu.fleet_$ID$_mothball_start.tooltip
+	hidden_effect = {
+		event_target:nsc_mothball_target_fleet_$ID$ = {
+			every_owned_ship = { set_disabled = yes }
+			remove_fleet_flag = nsc_mothball_temporal_target_$ID$
+			set_fleet_flag = nsc_mothballed_fleet_$ID$
+			add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+		}
+		planet_event = { id = nsc_events_mothball.menu }
+	}
+}
+nsc_mothball_target_fleet_mothball_stop_effect = {
+	optimize_memory
+	custom_tooltip = nsc_events_mothball.menu.fleet_mothball_stop.tooltip
+	owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_$ID$.nsc_mothball_target_fleet_total_cost_var } }
+	hidden_effect = {
+		event_target:nsc_mothball_target_fleet_$ID$ = {
+			set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
+			fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
+			fleet_event = { id = nsc_events_mothball.3 days = 1 }
+			clear_variable = nsc_mothball_target_fleet_total_cost_var
+		}
+		planet_event = { id = nsc_events_mothball.menu }
+	}
+}

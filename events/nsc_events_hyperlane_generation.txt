@@ -1,0 +1,293 @@
+namespace = nsc_events_hyperlane_gen #my modding experience says you MUST add the prefix as possible
+
+country_event = {
+	id = nsc_events_hyperlane_gen.1
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.1.name"
+	desc = "nsc_events_hyperlane_gen.1.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	
+	immediate = {
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_emisor_2 } }
+			save_event_target_as = hyperlane_creator_emisor
+		}	
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_receptor_1 } }
+			save_event_target_as = hyperlane_creator_receptor
+		}	
+		add_hyperlane = {
+			from = event_target:hyperlane_creator_emisor
+			to = event_target:hyperlane_creator_receptor
+		}
+		country_event = { id = nsc_events_hyperlane_gen.2 days = 1 }
+	}
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_megastructure = {
+			limit = { is_megastructure_type = hyperlane_creator_emisor_2 }
+			remove_megastructure = this
+		}
+		random_owned_megastructure = {
+			limit = { is_megastructure_type = hyperlane_creator_receptor_1 }
+			remove_megastructure = this
+		}
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.3
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.3.name"
+	desc = "nsc_events_hyperlane_gen.3.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	
+	immediate = {
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_emisor_2 } }
+			save_event_target_as = hyperlane_remover_emisor
+		}	
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_receptor_1 } }
+			save_event_target_as = hyperlane_remover_receptor
+		}	
+		remove_hyperlane = {
+			from = event_target:hyperlane_remover_emisor
+			to = event_target:hyperlane_remover_receptor
+		}
+		country_event = { id = nsc_events_hyperlane_gen.4 days = 1 }
+	}
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.4
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_owned_megastructure = {
+			limit = { is_megastructure_type = hyperlane_remover_emisor_2 }
+			remove_megastructure = this
+		}
+		random_owned_megastructure = {
+			limit = { is_megastructure_type = hyperlane_remover_receptor_1 }
+			remove_megastructure = this
+		}
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.5
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.5.name"
+	desc = "nsc_events_hyperlane_gen.5.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = event_target:hyperlane_generator_1
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.6
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.6.name"
+	desc = "nsc_events_hyperlane_gen.6.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = fromfrom
+	
+	trigger = {
+		from = { is_megastructure_type = hyperlane_creator_emisor_1 }
+	}
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.7
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.7.name"
+	desc = "nsc_events_hyperlane_gen.7.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = event_target:hyperlane_generator_2
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.8
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.8.name"
+	desc = "nsc_events_hyperlane_gen.8.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = fromfrom
+
+	trigger = {
+		from = { is_megastructure_type = hyperlane_creator_receptor_1 }
+	}
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.9
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.9.name"
+	desc = "nsc_events_hyperlane_gen.9.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = event_target:hyperlane_generator_3
+
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.10
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.10.name"
+	desc = "nsc_events_hyperlane_gen.10.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = fromfrom
+
+	trigger = {
+		from = { is_megastructure_type = hyperlane_remover_emisor_1 }
+	}
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.11
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.11.name"
+	desc = "nsc_events_hyperlane_gen.11.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = event_target:hyperlane_generator_4
+
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.12
+	is_triggered_only = yes
+	title = "nsc_events_hyperlane_gen.12.name"
+	desc = "nsc_events_hyperlane_gen.12.desc"
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = fromfrom
+
+	trigger = {
+		from = { is_megastructure_type = hyperlane_remover_receptor_1 }
+	}
+	
+	option = {
+		name = "nsc_events_hyperlane_gen.a"
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.13
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = { is_megastructure_type = hyperlane_creator_emisor_0 }
+	}
+	
+	immediate = {
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_emisor_0 } }
+			save_event_target_as = hyperlane_generator_1
+		}
+		country_event = { id = nsc_events_hyperlane_gen.5 }
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.14
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = { is_megastructure_type = hyperlane_creator_receptor_0 }
+	}
+	
+	immediate = {
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_receptor_0 } }
+			save_event_target_as = hyperlane_generator_2
+		}
+		country_event = { id = nsc_events_hyperlane_gen.7 }
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.15
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = { is_megastructure_type = hyperlane_remover_emisor_0 }
+	}
+	
+	immediate = {
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_emisor_0 } }
+			save_event_target_as = hyperlane_generator_3
+		}
+		country_event = { id = nsc_events_hyperlane_gen.9 }
+	}
+}
+
+country_event = {
+	id = nsc_events_hyperlane_gen.16
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		from = { is_megastructure_type = hyperlane_remover_receptor_0 }
+	}
+	
+	immediate = {
+		random_system_within_border = {
+			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_receptor_0 } }
+			save_event_target_as = hyperlane_generator_4
+		}
+		country_event = { id = nsc_events_hyperlane_gen.11 }
+	}
+}

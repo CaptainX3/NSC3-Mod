@@ -1,0 +1,42 @@
+ship_design = {
+	name = "Tester Flagship"
+	ship_size = Flagship
+	is_event_design = yes
+	hide_size = yes
+
+	section = {
+		template = "FLAGSHIP_BOW_H6T6"
+		slot = "bow"
+	}
+
+	section = {
+		template = "FLAGSHIP_MID1_G20"
+		slot = "mid1"
+	}
+
+	section = {
+		template = "FLAGSHIP_MID2_L20"
+		slot = "mid2"
+	}
+
+	section = {
+		template = "FLAGSHIP_MID3_M20"
+		slot = "mid3"
+	}
+
+	section = {
+		template = "FLAGSHIP_MID4_S8P4L8"
+		slot = "mid4"
+	}
+
+	section = {
+		template = "FLAGSHIP_STERN_P10H10"
+		slot = "stern"
+	}
+
+	required_component = "FLAGSHIP_BLACK_HOLE_REACTOR_3"
+	required_component = "HYPER_DRIVE_2"
+	required_component = "FLAGSHIP_SHIP_THRUSTER_1"
+	required_component = "SENSOR_2"
+	required_component = "COMBAT_COMPUTER_PICKET_ADVANCED"
+}

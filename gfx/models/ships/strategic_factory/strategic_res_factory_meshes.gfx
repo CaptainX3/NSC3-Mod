@@ -1,0 +1,265 @@
+objectTypes = {
+
+	####VANILLA RING DEFINITION.
+	### <TypeID>StrategicResourceRings</TypeID>
+	
+	
+	pdxmesh = {
+		name = "SRF_ring_rig"
+		file = "gfx/models/ships/strategic_factory/ring_rig.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle_ring_1"			type = "ring_rig_1_idle" } #References animation ID for the animation state, and
+		animation = { id = "idle_ring_2"			type = "ring_rig_2_idle" } #the type for the .anim connector in the .asset. This allows multiple entities to share the same rig but use unique animations if need be.
+	}
+	
+	
+	
+	
+   ##########VANILLA MESH DEFININITIONS.
+
+	pdxmesh = { ###SRF is the main station, the rings, believe it or not, are rings.
+		name = "mammalian_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/mammalian_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "mammalian_01_SRF_ring1_mesh"
+		file = "gfx/models/ships/strategic_factory/mammalian_01_SRF_ring1.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "mammalian_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/mammalian_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "mammalian_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/mammalian_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+
+	pdxmesh = {
+		name = "plantoid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/plantoid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+		
+		####Plantoid doesn't have a ring1
+
+	pdxmesh = {
+		name = "plantoid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/plantoid_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "plantoid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/plantoid_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+
+
+	pdxmesh = {
+		name = "avian_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/avian_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+		
+		####Avian one doesn't have a ring1
+
+	pdxmesh = {
+		name = "avian_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/avian_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "avian_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/avian_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+	
+	
+	pdxmesh = {
+		name = "lithoid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/lithoid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+		
+		####Lithoid doesn't have a ring1 either lol
+
+	pdxmesh = {
+		name = "lithoid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/lithoid_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "lithoid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/lithoid_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "humanoid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/humanoid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+
+			###No ring1 either lmaooo
+	pdxmesh = {
+		name = "humanoid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/humanoid_01_SRF_ring1.mesh"
+		scale = 1.0
+			###I take back everything I said about molluscoids and fungoids, Humanoid style is beautiful but holy shit is it a pain to do.
+	}
+	pdxmesh = {
+		name = "humanoid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/humanoid_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "reptilian_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/reptilian_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+		
+		####Reptilian one doesn't have a ring1
+
+	pdxmesh = {
+		name = "reptilian_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/reptilian_01_SRF_ring2.mesh"
+		scale = 1.0
+			#they're octagons for this lot lmao.
+	}
+	pdxmesh = {
+		name = "reptilian_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/reptilian_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "arthropoid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/arthropoid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "arthropoid_01_SRF_ring1_mesh"
+		file = "gfx/models/ships/strategic_factory/arthropoid_01_SRF_ring1.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "arthropoid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/arthropoid_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "arthropoid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/arthropoid_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+	
+	
+	
+
+	pdxmesh = {
+		name = "molluscoid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/molluscoid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "molluscoid_01_SRF_ring1_mesh"
+		file = "gfx/models/ships/strategic_factory/molluscoid_01_SRF_ring1.mesh"
+		scale = 1.0
+		###Wow the molluscoid one actually has a ring1 lmao.
+	}
+	pdxmesh = {
+		name = "molluscoid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/molluscoid_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "molluscoid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/molluscoid_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}	
+
+
+	###Fungoid style is also a nightmare to model
+	pdxmesh = {
+		name = "fungoid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/fungoid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+		
+		####Fungoid one doesn't have a ring either looooool
+
+	pdxmesh = {
+		name = "fungoid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/fungoid_01_SRF_ring2.mesh"
+		scale = 1.0
+			#they're octagons for this lot lmao.
+	}
+	pdxmesh = {
+		name = "fungoid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/fungoid_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+	
+	
+	
+	###Necroid style is also very not fun to make.
+	pdxmesh = {
+		name = "necroid_01_SRF_mesh"
+		file = "gfx/models/ships/strategic_factory/necroid_01_SRF_station.mesh"
+		scale = 1.0
+
+	}
+		
+		####Necroid one doesn't have a ring1.
+		
+	pdxmesh = {
+		name = "necroid_01_SRF_ring2_mesh"
+		file = "gfx/models/ships/strategic_factory/necroid_01_SRF_ring2.mesh"
+		scale = 1.0
+
+	}
+	pdxmesh = {
+		name = "necroid_01_SRF_ring3_mesh"
+		file = "gfx/models/ships/strategic_factory/necroid_01_SRF_ring3.mesh"
+		scale = 1.0
+
+	}
+	
+	
+	
+	
+
+}

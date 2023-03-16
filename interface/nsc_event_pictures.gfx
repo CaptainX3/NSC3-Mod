@@ -1,0 +1,13 @@
+spriteTypes = {	
+
+	######################
+	### EVENT PICTURES ###
+	######################
+	spriteType = {
+		name = "GFX_evt_flagship"
+		texturefile = "gfx/event_pictures/flagship_event.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
+	
+}
