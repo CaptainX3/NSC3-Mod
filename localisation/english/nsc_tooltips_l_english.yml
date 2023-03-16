@@ -1,0 +1,45 @@
+﻿l_english:
+
+##################################################################################################################################################################################################################
+### TOOLTIPS ###
+################
+
+requires_no_existing_nsc_factory:0 "You can only build one Strategic Resource Factory."
+requires_no_existing_mall:0 "You can only build one Galactic Mall."
+requires_no_existing_hospital:0 "You can only build one Galactic General Hospital."
+
+TBA:0 "\n§g(- Description To Be Added -)§!\n"
+
+hq_limit:0 "§ROnly one §Y$sm_hq_annex$§! may exist per empire.§!"
+drydock_limit:0 "§ROnly one §Y$sm_drydock$§! may exist per empire.§!"
+starbase_management_limit:0 "§ROnly five §Y$sm_starbase_management$§! may exist per empire.§!"
+starbase_management_machine_limit:0 "§ROnly five §Y$sm_starbase_management_machine$§! may exist per empire.§!"
+starbase_management_hive_limit:0 "§ROnly five §Y$sm_starbase_management_hive$§! may exist per empire.§!"
+requires_colony:0 "Requires Colonized planet"
+requires_stronghold:0 "Requires Grand Citadel Starbase"
+
+requires_technology_hyperlane_generation:0 "$TRIGGER_FAIL$Requires technology £physics  §Y$tech_hyperlane_generation$§!."
+
+requires_no_existing_generator_emisor:0 "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Generator (Emitter)§! in the Empire."
+requires_existing_generator_receptor:0 "$TRIGGER_FAIL$Requires existing §YHyperlane Generator (Receptor)§! in the Empire."
+requires_existing_generator_emisor:0 "$TRIGGER_FAIL$Requires existing §YHyperlane Generator (Emitter)§! in the Empire in a system not connected by an hyperlane to §Y[Root.GetName]§!."
+requires_no_existing_system_generator_emisor:0 "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Generator (Emitter)§! in the system."
+requires_no_existing_generator_receptor:0 "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Generator (Receptor)§! in the Empire."
+
+requires_no_existing_remover_emisor:0 "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Remover (Emitter)§! in the Empire."
+requires_existing_remover_receptor:0 "$TRIGGER_FAIL$Requires existing §YHyperlane Remover (Receptor)§! in the Empire."
+requires_existing_remover_emisor:0 "$TRIGGER_FAIL$Requires existing §YHyperlane Remover (Emitter)§! in the Empire in a system connected by an hyperlane to §Y[Root.GetName]§!."
+requires_no_existing_system_remover_emisor:0 "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Remover (Emitter)§! in the system."
+requires_no_existing_remover_receptor:0 "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Remover (Receptor)§! in the Empire."
+
+nsc_headquarters_bonus:0 "Headquarters Station Bonus"
+
+requires_technology_exploration_cruiser:0 "Requires §HExploration Cruiser (Level 1)§!"
+requires_technology_automated_exploration:0 "Requires §BAutomated Exploration Protocols§!"
+requires_discovery_tree:0 "Requires completing the §MDiscovery Tradition§!"
+
+starbase_h_limit.tooltip.fail: "You cannot build more than 6 hangar bays per starbase."
+starbase_t_limit.tooltip.fail: "You cannot build more than 2 Titanic weapons per starbase."
+starbase_xl_limit.tooltip.fail: "You cannot build more than 6 XL weapons per starbase."
+
+nsc.requires.asteroid: "Requires asteroid in the system."

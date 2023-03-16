@@ -1,0 +1,15 @@
+objectTypes = {
+	
+	pdxparticle = {
+		name = "nsc_flagship_explosion_particle"
+		type = "technosphere_explosion_effect"
+		scale = 5.0
+	}
+	
+	pdxparticle = {
+		name = "nsc_superdread_explosion_particle"
+		type = "technosphere_explosion_effect"
+		scale = 4.0
+	}
+	
+}

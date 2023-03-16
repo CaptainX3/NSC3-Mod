@@ -1,0 +1,24 @@
+nsc_mothball_target_fleet_requirement = {
+	owner = { is_same_value = prev.owner }
+	OR = {
+		is_ship_class = shipclass_military
+		is_ship_class = shipclass_military_special
+		is_ship_size = juggernaut
+	}
+}
+nsc_mothball_target_fleet_flag_all = {
+	OR = {
+		has_fleet_flag = nsc_mothballed_fleet_1
+		has_fleet_flag = nsc_mothballed_fleet_2
+		has_fleet_flag = nsc_mothballed_fleet_3
+		has_fleet_flag = nsc_mothballed_fleet_4
+		has_fleet_flag = nsc_mothballed_fleet_5
+	}
+}
+nsc_mothball_target_fleet_mothball_stop_trigger = {
+	exists = event_target:nsc_mothball_target_fleet_$ID$
+	event_target:nsc_mothball_target_fleet_$ID$ = {
+		has_fleet_flag = nsc_mothballed_fleet_$ID$
+		NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+	}
+}

@@ -1,0 +1,288 @@
+@power = -75
+@cost = 10
+@research = 10
+
+##############################
+### EXPLORATION COMPONENTS ###
+##############################
+utility_component_template = {
+	key = "EXPLORATION_SLOT_EMPTY"
+	size = medium	
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+	
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_ANOMALY_LAB"
+	size = medium	
+	icon = "GFX_exploration_slot_anomaly_lab"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}	
+	ship_modifier = { ship_anomaly_research_speed_mult = 1.5 }
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }	
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_SURVEY_LAB"
+	size = medium	
+	icon = "GFX_exploration_slot_survey_lab"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	ship_modifier = { science_ship_survey_speed = 1.5 }
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }	
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_ANALYSIS_LAB"
+	size = medium	
+	icon = "GFX_exploration_slot_analysis_lab"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	ship_modifier = { ship_anomaly_generation_chance_mult = 0.50 }
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }	
+}
+
+#utility_component_template = {
+#	key = "EXPLORATION_SLOT_ARCH_LAB"
+#	size = medium	
+#	icon = "GFX_exploration_slot_arch_lab"
+#	icon_frame = 1
+#	
+#	power = @power
+#	resources = {
+#		category = ship_components
+#		cost = { alloys = @cost }
+#	}
+#	modifier = { 
+#		ship_archaeological_site_excavation_speed_mult = 0.25
+#		ship_archeaological_site_clues_add = 1
+#	}
+#	
+#	component_set = "exploration_ship_slot"
+#	size_restriction = { explorationship }
+#
+#	ai_weight = { weight = 1 }	
+#}
+
+utility_component_template = {
+    key = "EXPLORATION_SLOT_PHYSICS_LAB"
+    size = medium	
+    icon = "GFX_exploration_slot_physics_lab"
+    icon_frame = 1
+	
+    power = @power
+  
+    resources = {
+        category = ship_components
+        cost = {  alloys = @cost }
+        produces = {  physics_research = @research }
+    }	
+    component_set = "exploration_ship_slot"
+    size_restriction = { explorationship }
+
+    ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_SOCIETY_LAB"
+	size = medium	
+	icon = "GFX_exploration_slot_society_lab"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+        category = ship_components
+        cost = { alloys = @cost }
+        produces = { society_research = @research }        
+    }
+
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_ENGINEERING_LAB"
+	size = medium	
+	icon = "GFX_exploration_slot_engineering_lab"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+        category = ship_components
+        cost = { alloys = @cost  }
+        produces = { engineering_research = @research }
+    }
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+	size = medium
+	
+	icon = "GFX_exploration_slot_stellar_cartography"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	ship_modifier = {
+		ship_windup_mult = -0.90
+		ship_winddown_mult = -0.90
+		ship_interstellar_speed_mult = 0.50
+	}
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }	
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+	size = medium
+	
+	icon = "GFX_exploration_slot_quantum_thrusters"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	modifier = { 
+		ship_speed_mult = 0.30
+		ships_upkeep_mult = 0.05
+	}
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }	
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+	size = medium
+	
+	icon = "GFX_exploration_slot_navigational_array"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60 }
+	}
+	
+	ship_modifier = {
+		ship_sensor_range_add = 4
+		ship_hyperlane_range_add = 4
+	}
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_MINING_FACILITY"
+	size = medium	
+	icon = "GFX_exploration_slot_mining_facility"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60  }
+		produces = { minerals = 7 }
+		upkeep = { energy = 5 }
+	}
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_SOLAR_ARRAY"
+	size = medium	
+	icon = "GFX_exploration_slot_solar_array"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60  }
+		produces = { energy = 7 }
+		upkeep = { minerals = 5 }
+	}
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_ALLOY_REFINERY"
+	size = medium	
+	icon = "GFX_exploration_slot_alloy_refinery"
+	icon_frame = 1
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60  }
+		produces = { alloys = 7 }
+		upkeep = {
+			minerals = 3
+			energy = 3 
+		}
+	}
+	
+	component_set = "exploration_ship_slot"
+	size_restriction = { explorationship }
+
+	ai_weight = { weight = 1 }
+}

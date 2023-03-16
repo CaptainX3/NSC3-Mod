@@ -1,0 +1,97 @@
+############
+### JOBS ###
+############
+diagnostician = {	
+    category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+    clothes_texture_index = 3
+    
+    possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+	
+	possible_precalc = can_fill_specialist_job
+	
+	resources = {
+		category = planet_doctors
+		upkeep = {
+            trigger = {
+                exists = owner
+                owner = { is_regular_empire = yes }
+            }
+			consumer_goods = 2.5
+        }
+        upkeep = {
+            trigger = {
+                exists = owner
+                owner = { is_gestalt = yes }
+            }
+			energy = 5
+		}		
+    }
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 10
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		pop_growth_speed = 0.025
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		planet_pop_assembly_organic_mult = 0.05
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		planet_pop_assembly_mult = 0.025
+	}
+		
+	weight = {
+		weight = @high_prio_specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 1.5
+			has_job = diagnostician
+		}
+		modifier = {
+			factor = 0.5
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 10
+			NOT = { has_job = diagnostician }
+			planet = {
+				free_amenities < 0
+			}
+		}
+	}
+}

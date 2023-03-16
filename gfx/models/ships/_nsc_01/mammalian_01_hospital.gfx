@@ -1,0 +1,16 @@
+objectTypes = {
+	pdxmesh = {
+		name = "mammalian_01_hospital_mesh"
+		file = "gfx/models/ships/_nsc_01/sa_outpost.mesh"
+		scale = 1.0
+	}
+}
+
+
+objectTypes = {
+	pdxmesh = {
+		name = "mammalian_02_hospital_mesh"
+		file = "gfx/models/ships/_nsc_01/sa_01_fortress.mesh"
+		scale = 1.0
+	}
+}

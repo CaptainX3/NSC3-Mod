@@ -1,0 +1,48 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "avian_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/avian_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "arthropoid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/arthropoid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "molluscoid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/molluscoid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "necroid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/necroid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "mammalian_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/mammalian_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "humanoid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/humanoid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "plantoid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/plantoid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "fungoid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/fungoid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "lithoid_01_supercap_yard_mesh"
+		file = "gfx/models/ships/nsc_megastructures/flagship_yard/lithoid_01_supercapital_assembly_yard.mesh"
+		scale = 1.0
+	}		
+}

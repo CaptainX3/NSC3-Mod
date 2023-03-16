@@ -1,0 +1,182 @@
+################
+# STARBASES #
+################
+
+@build_block_radius_starbase = 20
+@starbase_formation_priority = 1
+
+
+### Grand Citadel ###
+starbase_stronghold = {
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 40000
+		starbase_module_capacity_add = 15
+		starbase_building_capacity_add = 15
+		starbase_defense_platform_capacity_add = 30
+		starbase_trade_collection_range_add = 1
+		starbase_trade_protection_range_add = 1
+		starbase_trade_protection_add = 40
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+	
+	max_hitpoints = 200000
+	combat_size_multiplier = 50
+	size_multiplier = 18
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+		"7" = { locator = "part5" }
+		"8" = { locator = "part5" }
+		"9" = { locator = "part6" }
+		"10" = { locator = "part6" }
+		"11" = { locator = "part7" }
+		"12" = { locator = "part7" }
+		"13" = { locator = "part2" }
+		"14" = { locator = "part3" }
+		"15" = { locator = "part4" }
+		"16" = { locator = "part5" }
+		"17" = { locator = "part6" }
+		"18" = { locator = "part7" }
+		"19" = { locator = "part5" }
+		"20" = { locator = "part5" }
+	}
+	num_target_locators = 0
+	icon_frame = 6
+	icon = ship_size_military_station
+	base_buildtime = 360
+	
+	is_space_station = no
+	can_have_federation_design = no
+	enable_default_design = yes
+	is_designable = no
+	is_civilian = no
+	components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = yes
+	
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 4500 }
+		upkeep = { energy = 8 }
+	}
+	build_block_radius = @build_block_radius_starbase
+
+	prerequisites = { "tech_starbase_6" }
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ftl_inhibitor"
+
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}
+
+
+### Solar Stronghold ###
+starbase_headquarters = {
+	max_speed = 0.0
+	acceleration = 0.0
+	rotation_speed = 0.0
+	
+	modifier = {
+		ship_evasion_mult = -1
+		ship_armor_add = 80000
+		starbase_module_capacity_add = 20  #35
+		starbase_building_capacity_add = 20  #35
+		starbase_defense_platform_capacity_add = 60
+		starbase_trade_collection_range_add = 3
+		starbase_trade_protection_range_add = 3
+		starbase_trade_protection_add = 60
+		ship_sensor_range_add = 1
+	}
+	ship_modifier = {
+		ship_fire_rate_mult = 0.50
+		ship_weapon_range_mult = 0.20
+	}
+	
+	max_hitpoints = 250000
+	combat_size_multiplier = 50
+	size_multiplier = 24
+	fleet_slot_size = 2
+	section_slots = {
+		"core" = { locator = "part1" }
+		"1" = { locator = "part2" }
+		"2" = { locator = "part3" }
+		"3" = { locator = "part4" }
+		"4" = { locator = "part5" }
+		"5" = { locator = "part6" }
+		"6" = { locator = "part7" }
+		"7" = { locator = "part5" }
+		"8" = { locator = "part5" }
+		"9" = { locator = "part6" }
+		"10" = { locator = "part6" }
+		"11" = { locator = "part7" }
+		"12" = { locator = "part7" }
+		"13" = { locator = "part2" }
+		"14" = { locator = "part3" }
+		"15" = { locator = "part4" }
+		"16" = { locator = "part5" }
+		"17" = { locator = "part6" }
+		"18" = { locator = "part7" }
+		"19" = { locator = "part5" }
+		"20" = { locator = "part5" }
+	}
+	num_target_locators = 0
+	icon_frame = 7
+	icon = ship_size_military_station
+	base_buildtime = 2500
+	
+	is_space_station = no
+	can_have_federation_design = no
+	enable_default_design = yes
+	is_designable = no
+	is_civilian = no
+	components_add_to_cost = no
+	can_disable = yes
+	flip_control_on_disable = yes
+	
+	resources = {
+		category = starbase_stations
+		cost = { alloys = 6500 }
+		upkeep = { energy = 10 }
+	}
+	build_block_radius = @build_block_radius_starbase
+	
+	prerequisites = { "tech_starbase_7" }
+	class = shipclass_starbase
+
+	required_component_set = "power_core"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ftl_inhibitor"
+
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
+}

@@ -1,0 +1,96 @@
+##################         	 STRATEGIC RESOURCE FACTORY            ########################
+##################   SRF USES MININGBASE AS DEFINED IN TEMPLATES   ########################
+
+entity = {
+	name = "humanoid_01_MiningBase_entity"
+	pdxmesh = "humanoid_01_SRF_mesh"
+
+	locator = { name = "part1" position = { 0 0 0 } rotation = { 0 0 0 } } ###Used for attaching the ring rigs and fx
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { time = 0 node = "part1" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }	
+		start_event = { time = 0 node = "effect_01" particle = "matde_core_small_beam_effect" trigger_once = yes keep_particle = yes }
+		
+	}
+	
+	attach = { "part1" = "humanoid_01_SRF_core_1_entity" } ###Attaches the rotary ring core.
+	
+	
+	scale = 4.0 #Affects particle size and mesh size
+}
+
+
+#######RING ENTITIES#######
+###These are in turn attached to the ring rigs, which are animated and are then attached to the main entity.
+
+entity = {
+	name = "humanoid_01_SRF_ring_02"
+	pdxmesh = "humanoid_01_SRF_ring2_mesh"
+
+
+}
+entity = {
+	name = "humanoid_01_SRF_ring_03"
+	pdxmesh = "humanoid_01_SRF_ring3_mesh"
+
+
+}
+#Recycling the rigs from the Machine sentry array cause I've already got them set up. (Not because I'm a lazy bitch)
+#######RING RIGS##########
+
+entity = {
+	name = "humanoid_01_SRF_core_rings_entity"
+	pdxmesh = "SRF_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5
+	}
+	attach = { "ringnode" = "humanoid_01_SRF_core_1_entity" } ###This attaches the NEXT ring stage.
+}
+
+
+entity = {
+	name = "humanoid_01_SRF_core_1_entity"
+	pdxmesh = "SRF_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5}
+	
+	attach = { "ringnode" = "humanoid_01_SRF_core_2_entity" }
+}
+
+entity = {
+	name = "humanoid_01_SRF_core_2_entity"
+	pdxmesh = "SRF_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5
+	}
+	attach = { "ringnode" = "humanoid_01_SRF_ring_02" }
+	attach = { "ringnode" = "humanoid_01_SRF_core_3_entity" }
+}
+
+
+entity = {
+	name = "humanoid_01_SRF_core_3_entity"
+	pdxmesh = "SRF_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5
+	}
+	attach = { "ringnode" = "humanoid_01_SRF_ring_03" }
+
+}
+#########ANIMATIONS##########
+###Should be self explanatory.
+###UNIVERSAL FOR ALL VANILLA GFXCULTURES. IF YOU NEED TO USE YOUR OWN, REFERENCE IT HERE.
+animation = {
+	name = "ring_rig_1_idle"
+	file = "ring_idle_1.anim"
+}
+
+animation = {
+	name = "ring_rig_2_idle"
+	file = "ring_idle_2.anim"
+}

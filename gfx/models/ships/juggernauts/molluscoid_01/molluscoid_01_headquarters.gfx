@@ -1,0 +1,15 @@
+objectTypes = {
+	pdxmesh = {
+		name = "molluscoid_01_headquarters_mesh"
+		file = "gfx/models/ships/_nsc_01/mammalian_01_battle_fortress_frame.mesh"
+		scale = 0.8
+
+		meshsettings = {
+			index = 0
+			texture_diffuse = "mammalian_01_battle_fortress_diffuse.dds"
+			texture_normal = "mammalian_01_battle_fortress_normal.dds"
+			texture_specular = "mammalian_01_battle_fortress_specular.dds"
+			shader = "PdxMeshShip"
+		}
+	}
+}

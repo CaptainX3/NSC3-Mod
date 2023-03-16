@@ -20,8 +20,6 @@
 
 		Carrier = { "Steve" }
 
-		escortcarrier = { "Steve" }
-
 		Dreadnought = { "Steve" }
 		
 		titan = { "Steve" }
@@ -41,14 +39,8 @@
 		transport = { "Steve" }
 		
 		military_station_small = { "Steve" }
-		
-		military_station_medium = { "Steve" }
-		
-		military_station_large = { "Steve" }
 
 		ion_cannon = { "Steve" }
-		
-		xl_cannon = { "Steve" }
 
 	}
 	ship_class_names = {
@@ -57,83 +49,83 @@
 
 	fleet_names = {
 		random_names = { "Steve" }
-		sequential_name = "%O% Steve"
+		sequential_name = 1-NSC-Steve_STEVE
 	}
 		
 	army_names = {
 
 		machine_defense = {
-			sequential_name = "%O% Home Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		machine_assault_1 = {
-			sequential_name = "%O% Procurers Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		machine_assault_2 = {
-			sequential_name = "%O% Procurers Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		machine_assault_3 = {
-			sequential_name = "%O% Procurers Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 
 		defense_army = {
-			sequential_name = "%O% Home Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 			
 		assault_army = {
-			sequential_name = "%O% Procurers Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		slave_army = {
-			sequential_name = "%O% Captive Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		clone_army = { 
-			sequential_name = "%O% Doppel Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		undead_army = {
-			sequential_name = "%O% Dread Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 
 		robotic_army = {
-			sequential_name = "%O% Automata Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 
 		robotic_defense_army = {
-			sequential_name = "%O% Home Automata Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		psionic_army = { 
-			sequential_name = "%O% Mentalist Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		xenomorph_army = {
-			sequential_name = "%O% Exotica Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		
 		gene_warrior_army = {
-			sequential_name = "%O% Chemiker Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 
 		occupation_army = {
-			sequential_name = "%O% Frontier Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 
 		robotic_occupation_army = {
-			sequential_name = "%O% Frontier Automata Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 
 		primitive_army = {
-			sequential_name = "%O% Primitive Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		industrial_army = {
-			sequential_name = "%O% Proletariat Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 		postatomic_army = {
-			sequential_name = "%O% Crepuscular Steve"
+			sequential_name = 1-NSC-Steve_STEVE
 		}
 	}
 
