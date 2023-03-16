@@ -1,0 +1,127 @@
+##############
+### EDICTS ###
+##############
+nsc_doctrine_ai = {
+    length = -1
+	icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = edicts
+        cost = { influence = 0 }
+    }
+
+    modifier = {
+        ship_home_territory_fire_rate_mult = 0.10
+        ship_fire_rate_mult = 0.1
+        shipclass_military_station_damage_mult = 0.1
+        planet_orbital_bombardment_damage = -0.10
+        ship_orbital_bombardment_mult = 0.10
+        starbase_shipyard_build_speed_mult = 0.1
+        starbase_shipyard_build_cost_mult = -0.1
+        ship_weapon_damage = 0.1
+        ship_fire_rate_mult = 0.1
+        ship_armor_mult = 0.1
+        ship_shield_mult = 0.1
+        ship_hull_mult = 0.1
+        ship_accuracy_mult = 0.05
+        ship_tracking_mult = 0.05
+        ship_speed_mult = 0.05
+        ship_disengage_chance_mult = 0.05
+        ship_piracy_suppression_mult = 0.05
+        ship_evasion_mult = 0.05
+    }
+
+    potential = { is_ai = yes }
+    allow = { is_ai = yes }
+
+    ai_weight = { weight = 1000 }
+}
+
+nsc_flagship_repair_possible_check = {
+    length = 0
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = campaigns
+    }
+
+    effect = {
+        custom_tooltip = edict_nsc_flagship_repair_possible_check_tooltip
+        hidden_effect = { country_event = { id = nsc_events_flagship.8 } }
+    }
+
+    potential = {
+        has_country_flag = nsc_flagship_owner
+        NOR = {
+            has_country_flag = nsc_flagship_repair_project_possible
+            has_special_project = NSC_FLAGSHIP_REBUILD_PROJECT
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+nsc_flagship_repair = {
+    length = 0
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = campaigns
+        cost = {
+            alloys = 5100
+            influence = 300
+        }
+    }
+
+    effect = {
+        hidden_effect = {
+            random_owned_megastructure = {
+                limit = { is_megastructure_type = nsc_flagship_complete }
+                save_event_target_as = nsc_flagship_shipyard_completed
+            }
+            if = {
+                limit = { NOT = { exists = event_target:nsc_flagship_shipyard_completed } }
+                capital_scope = { save_event_target_as = nsc_flagship_shipyard_completed }
+            }
+            remove_country_flag = nsc_flagship_repair_project_possible
+        }
+		enable_special_project = {
+			name = NSC_FLAGSHIP_REBUILD_PROJECT
+			location = event_target:nsc_flagship_shipyard_completed
+		}
+    }
+
+    potential = {
+        has_country_flag = nsc_flagship_repair_project_possible
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+nsc_emergency_defenses = {
+    length = 360
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = campaigns
+        cost = {
+            energy = 500
+            influence = 500
+        }
+    }
+
+    modifier = {
+	    country_energy_produces_mult = -0.4
+	    shipsize_military_station_small_build_speed_mult = 3.0
+	    starbase_module_build_speed_mult = 3.0
+	    starbase_building_build_speed_mult = 3.0
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}

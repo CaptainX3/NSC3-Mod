@@ -1,0 +1,156 @@
+@corvette_scale = 6.0
+@destroyer_scale = 7.0
+@cruiser_scale = 10.0
+@battleship_scale = 12.0
+@Battlecruiser_scale = 13.0
+@LightCarrier_scale = 15.0
+@Carrier_scale = 17.0
+@military_station_large = 20.0
+@Dreadnought_scale = 20.0
+@Superdreadnought_scale = 25.0
+@Flagship_scale = 30.0
+
+
+##################         	 BATTLE FORTRESS            ########################
+
+entity = {
+	name = "nsc_01_fortress_entity"
+	pdxmesh = "mammalian_01_battle_fortress_mesh"
+	
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part2"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part3"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "part4"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	locator = { name = "weapon_locator"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5
+		start_event = { trigger_once = yes sound = { soundeffect = "defense_station_idle_hum" } }
+	
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0.0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+	
+	state = { name = "death" state_time = 5 looping = no
+		event = { time = 0.0 node = "light_locator_01" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 0.5 node = "part3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 1.5 node = "part6" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 2.0 node = "part1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 3.0 node = "part3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		event = { time = 4.0 node = "part7" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_small" } }
+		
+		event = { time = 4.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes sound = { soundeffect = "station_explosion_large" } }
+	}
+	
+	scale = 1.0
+
+	game_data = {
+		size = @military_station_large
+	}
+}
+
+
+##################         	 MINING BASE            ########################
+
+
+entity = {
+	name = "nsc_01_MiningBase_entity"
+	pdxmesh = "mammalian_01_MiningBase_mesh"
+
+	locator = { name = "part1" }
+	
+	scale = 4.0
+}
+
+
+##################         	 SOLAR POWER STATION            ########################
+
+entity = {
+	name = "nsc_01_PowerStation_entity"
+	pdxmesh = "mammalian_01_PowerStationV2_mesh"
+	
+	locator = { name = "part1" position = { 0 1.3 0 } }
+
+	scale = 10.0
+}
+
+
+##################         	 HEADQUARTERS            ########################
+
+entity = {
+	name = "nsc_01_Headquarters_entity"
+	pdxmesh = "mammalian_01_headquarters_station_mesh"
+	
+	locator = { name = "part1" }
+	
+	scale = 3.0
+}
+
+
+##################         	 DRYDOCK            ########################
+
+entity = {
+	name = "nsc_01_Drydock_entity"
+	pdxmesh = "mammalian_01_drydock_mesh"
+	
+	locator = { name = "part1" }
+	
+	scale = 0.5
+
+}
+
+
+
+##################         	 HOSPITAL            ########################
+
+
+entity = {
+	name = "nsc_01_SensorStation_entity"
+	pdxmesh = "sensor_station_mesh"
+	
+	locator = { name = "part1" }
+	
+	default_state = "idle"
+	state = { name = "idle"	 animation = "idle" animation_speed = 0.9
+		start_event = { trigger_once = yes sound = { soundeffect = "amb_sensor_station_01_idle" } }
+		event = { time = 1.0 node = "light_locator_01" particle = "ship_light_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 1.025 node = "light_locator_02" particle = "ship_light_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 1.05 node = "light_locator_03" particle = "ship_light_orange_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 1.0 node = "light_locator_04" particle = "ship_light_orange_effect" keep_particle = yes trigger_once = yes }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 0.0 node = "explosion_1" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 0.5 node = "explosion_2" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes }
+		event = { time = 1.5 node = "explosion_3" particle = "ship_explosion_particle" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 2.9 particle = "medium_station_explosion_particle" keep_particle = yes trigger_once = yes }
+	}
+	scale = 2.0
+
+}
+
+
+entity = {
+	name = "nsc_02_Hospital_entity"
+	pdxmesh = "mammalian_01_hospital_mesh"
+	
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	
+	scale = 4.0
+
+}
+
+
+entity = {
+	name = "nsc_03_Hospital_entity"
+	pdxmesh = "mammalian_02_hospital_mesh"
+	
+	locator = { name = "part1"	position = { 0 0 0 } rotation = { 0 0 0 } }
+	
+	scale = 6.0
+
+}

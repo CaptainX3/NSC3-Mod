@@ -1,0 +1,323 @@
+namespace = nsc_events_exploration_ship
+
+##################################
+### EXPLORATION CRUISER EVENTS ###
+##################################
+
+# On Game Start Countdown
+country_event = {
+	id = nsc_events_exploration_ship.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		has_technology = tech_hyper_drive_1
+	}
+
+	immediate = {
+		country_event = { id = nsc_events_exploration_ship.10 days = 30 }
+	}
+}
+
+country_event = {
+	id = nsc_events_exploration_ship.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		last_increased_tech = tech_hyper_drive_1
+	}
+
+	immediate = {
+		country_event = { id = nsc_events_exploration_ship.10 days = 30 }
+	}
+}
+
+# Prototype Project Prompt
+country_event = {
+	id = nsc_events_exploration_ship.10
+	title = "expcruiser.01.name"
+	desc = "expcruiser.01.desc"
+	picture = GFX_evt_ship_travel
+	show_sound = event_laboratory_sound
+	is_triggered_only = yes
+
+	#trigger = {
+	#	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = explorationship }
+	#}
+
+	option = {
+		name = "expcruiser.01.a"
+		enable_special_project = { name = "PROTOTYPE_EXPLORATION_CRUISER_PROJECT" }
+	}
+	option = {
+		name = "expcruiser.01.b"
+		add_resource = { engineering_research = 100 }
+	}
+}
+
+
+# Create Prototype
+country_event = { 
+	id = nsc_events_exploration_ship.11
+	title = "expcruiser.02.name"
+	desc = "expcruiser.02.desc"
+	picture = GFX_evt_ship_in_orbit_3
+	show_sound = event_construction
+	is_triggered_only = yes
+	
+	immediate = {
+		create_leader = {
+			class = scientist
+			sub_type = survey
+			name = random
+			species = owner.species
+		}
+		create_fleet = {
+			effect = {
+				set_owner = root
+				create_ship = {
+					name = "Exploration Cruiser"
+					design = "Prototype Exploration Cruiser"
+				}
+				set_location = root.capital_star.starbase
+				set_leader = last_created_leader
+				set_fleet_stance = evasive
+			}
+		}
+		every_country = {
+			limit = { 
+				is_ai = yes
+				is_country_type = default
+			}
+			create_leader = {
+				class = scientist
+				sub_type = survey
+				name = random
+				species = owner.species
+			}
+			create_fleet = {
+				effect = {
+					set_owner = prev
+					create_ship = {
+						name = "Exploration Cruiser"
+						design = "Prototype Exploration Cruiser"
+					}
+					set_location = prev.capital_star.starbase
+					set_leader = last_created_leader
+					set_fleet_stance = evasive
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}
+
+
+# Upgrade Project Prompt
+country_event = {
+	id = nsc_events_exploration_ship.12
+	title = "expcruiser.03.name"
+	desc = "expcruiser.03.desc"
+	picture = GFX_evt_federation_fleet
+	show_sound = event_administrative_work
+	is_triggered_only = yes
+
+	trigger = {
+		is_ai = no
+		last_increased_tech = tech_explorationship_1
+	}
+
+	option = {
+		name = "expcruiser.03.1"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 1 } }
+		allow = { has_resource = { type = alloys amount >= 400 } has_resource = { type = energy amount >= 50 } }
+		capital_scope.solar_system.starbase = {
+			enable_special_project = {
+				name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+				location = this
+				owner = root
+			}
+		}
+		add_resource = {
+			alloys = -400
+			energy = -50
+		}
+	}
+	option = {
+		name = "expcruiser.03.2"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 2 } }
+		allow = { has_resource = { type = alloys amount >= 800 } has_resource = { type = energy amount >= 100 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 2
+		}
+		add_resource = {
+			alloys = -800
+			energy = -100
+		}
+	}
+	option = {
+		name = "expcruiser.03.3"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 3 } }
+		allow = { has_resource = { type = alloys amount >= 1200 } has_resource = { type = energy amount >= 150 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 3
+		}
+		add_resource = {
+			alloys = -1200
+			energy = -150
+		}
+	}
+	option = {
+		name = "expcruiser.03.4"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 4 } }
+		allow = { has_resource = { type = alloys amount >= 1600 } has_resource = { type = energy amount >= 200 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 4
+		}
+		add_resource = {
+			alloys = -1600
+			energy = -200
+		}
+	}
+	option = {
+		name = "expcruiser.03.5"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 5 } }
+		allow = { has_resource = { type = alloys amount >= 2000 } has_resource = { type = energy amount >= 250 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 5
+		}
+		add_resource = {
+			alloys = -2000
+			energy = -250
+		}
+	}
+	option = {
+		name = "expcruiser.03.6"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 6 } }
+		allow = { has_resource = { type = alloys amount >= 2400 } has_resource = { type = energy amount >= 300 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 6
+		}
+		add_resource = {
+			alloys = -2400
+			energy = -300
+		}
+	}
+	option = {
+		name = "expcruiser.03.7"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 7 } }
+		allow = { has_resource = { type = alloys amount >= 2800 } has_resource = { type = energy amount >= 350 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 7
+		}
+		add_resource = {
+			alloys = -2800
+			energy = -350
+		}
+	}
+	option = {
+		name = "expcruiser.03.8"
+		trigger = { count_controlled_ship = { limit = { is_ship_size = science } count >= 8 } }
+		allow = { has_resource = { type = alloys amount >= 3200 } has_resource = { type = energy amount >= 400 } }
+		while = {
+			capital_scope.solar_system.starbase = {
+				enable_special_project = {
+					name = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
+					location = this
+					owner = root
+				}
+			}
+			count = 8
+		}
+		add_resource = {
+			alloys = -3200
+			energy = -400
+		}
+	}
+	option = {
+		name = "expcruiser.03.end"
+		add_resource = { influence = 25 }
+	}
+}
+
+
+# Upgrade Project Complete
+ship_event = {
+	id = nsc_events_exploration_ship.13
+	title = "expcruiser.04.name"
+	desc = "expcruiser.04.desc"
+	picture = GFX_evt_ship_in_orbit_3
+	show_sound = event_construction
+	is_triggered_only = yes
+
+	immediate = {
+		leader = {
+			save_event_target_as = nsc_events_8_reassign_target_leader
+			unassign_leader = this
+		}
+		create_fleet = {
+			effect = {
+				set_owner = root.owner
+				create_ship = {
+					name = "Exploration Cruiser"
+					design = "Prototype Exploration Cruiser"
+				}
+				set_location = root.solar_system.starbase
+				assign_leader = event_target:nsc_events_8_reassign_target_leader
+				set_fleet_stance = evasive
+			}
+		}
+		destroy_ship = root
+	}
+
+	option = {
+		name = "EXCELLENT"
+	}
+}

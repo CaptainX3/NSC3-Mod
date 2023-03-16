@@ -1,0 +1,122 @@
+objectTypes = {
+	
+	#IDLE
+	
+	pdxparticle = {
+		name = "extradimensional_01_red_exhaust_idle"
+		type = "extradimensional_01_red_exhaust_idle_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_yellow_exhaust_idle"
+		type = "extradimensional_01_yellow_exhaust_idle_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_magenta_exhaust_idle"
+		type = "extradimensional_01_magenta_exhaust_idle_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_blue_exhaust_idle"
+		type = "extradimensional_01_blue_exhaust_idle_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_violet_exhaust_idle"
+		type = "extradimensional_01_violet_exhaust_idle_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "mammalian_01_4_0_exhaust_oblong_idle_particle"
+		type = "mammalian_01_ship_exhaust_idle_large_file"
+		scale = 4.0
+	}
+	
+	pdxparticle = {
+		name = "pirate_01_7_0_exhaust_idle_particle"
+		type = "pirate_01_ship_exhaust_idle_file"
+		scale = 7.0
+	}
+	
+	#MOVING
+	
+	pdxparticle = {
+		name = "extradimensional_01_red_exhaust_moving"
+		type = "extradimensional_01_red_exhaust_moving_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_yellow_exhaust_moving"
+		type = "extradimensional_01_yellow_exhaust_moving_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_magenta_exhaust_moving"
+		type = "extradimensional_01_magenta_exhaust_moving_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_blue_exhaust_moving"
+		type = "extradimensional_01_blue_exhaust_moving_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "extradimensional_01_violet_exhaust_moving"
+		type = "extradimensional_01_violet_exhaust_moving_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "mammalian_01_4_0_ship_exhaust_oblong_moving_particle"
+		type = "mammalian_01_ship_exhaust_oblong_file"
+		scale = 4.0
+	}
+	
+	pdxparticle = {
+		name = "pirate_01_7_0_ship_exhaust_moving_particle"
+		type = "pirate_01_ship_exhaust_file"
+		scale = 7.0
+	}
+	
+	#DEATH
+	
+	pdxparticle = {
+		name = "ed_red_dissolve_effect"
+		type = "ed_red_dissolve_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_yellow_dissolve_effect"
+		type = "ed_yellow_dissolve_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_magenta_dissolve_effect"
+		type = "ed_magenta_dissolve_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_blue_dissolve_effect"
+		type = "ed_blue_dissolve_effect"
+		scale = 1.0
+	}
+	
+	pdxparticle = {
+		name = "ed_violet_dissolve_effect"
+		type = "ed_violet_dissolve_effect"
+		scale = 1.0
+	}
+}

@@ -1,0 +1,17 @@
+#########################
+### OPINION MODIFIERS ###
+#########################
+triggered_opinion_of_nsc_hopsital_1 = {
+	trigger = { from = { any_owned_megastructure = { is_megastructure_type = nsc_hospital_1 } } }
+	opinion = { base = 10 }
+}
+
+triggered_opinion_of_nsc_hopsital_2 = {
+	trigger = { from = { any_owned_megastructure = { is_megastructure_type = nsc_hospital_2 } } }
+	opinion = { base = 20 }
+}
+
+triggered_opinion_of_nsc_hopsital_3 = {
+	trigger = { from = { any_owned_megastructure = { is_megastructure_type = nsc_hospital_3 } } }
+	opinion = { base = 30 }
+}

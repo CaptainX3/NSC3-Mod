@@ -1,0 +1,137 @@
+### SUPERCAPITAL ASSEMBLY YARDS
+# USED AS THE MEGASTRUCTURE TO BUILD THE GLORIOUS FLAGSHIP.
+# By AryxErin
+@Flagship_scale = 30.0
+
+#### AVIAN SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "avian_01_flagship_construction_yard_entity"
+	pdxmesh = "avian_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### ARTHROPOID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "arthropoid_01_flagship_construction_yard_entity"
+	pdxmesh = "arthropoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### NECROID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "necroid_01_flagship_construction_yard_entity"
+	pdxmesh = "necroid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+
+#### MOLLUSCOID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "molluscoid_01_flagship_construction_yard_entity"
+	pdxmesh = "molluscoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### MAMMALIAN SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "mammalian_01_flagship_construction_yard_entity"
+	pdxmesh = "mammalian_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### HUMANOID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "humanoid_01_flagship_construction_yard_entity"
+	pdxmesh = "humanoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### PLANTOID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "plantoid_01_flagship_construction_yard_entity"
+	pdxmesh = "plantoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### FUNGOID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "fungoid_01_flagship_construction_yard_entity"
+	pdxmesh = "fungoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+#### LITHOID SUPERCAPITAL ASSEMBLY YARD
+
+entity = {
+	name = "lithoid_01_flagship_construction_yard_entity"
+	pdxmesh = "lithoid_01_supercap_yard_mesh"
+	
+	scale = 2
+		
+	game_data = {
+		size = @Flagship_scale
+		emissive_recolor_crunch = 10
+	}
+}
+
+
+
+
+
+

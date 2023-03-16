@@ -1,0 +1,421 @@
+#############
+### POWER ###
+#############
+@power0 = 0
+@power1 = -50
+@power2 = -150
+@power3 = -200
+@power4 = -300
+@power5 = -500
+
+###################
+### AURA RADIUS ###
+###################
+@radius0 = 100
+@radius1 = 150
+
+################################
+### FLAGSHIP AURA COMPONENTS ###
+################################
+
+
+utility_component_template = {
+	key = "NSC_FLAGSHIP_AURA_EMPTY"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = @power0
+	should_ai_use = no
+	component_set = "nsc_flagship_aura"
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "NSC_FLAGSHIP_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power5
+
+	component_set = "nsc_flagship_aura"
+
+	friendly_aura = {
+		name = "nsc_flagship_aura"
+		system_wide = yes
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_flagship_aura
+			priority = 1
+		}
+
+		modifier = {
+			ship_shield_mult = 0.20
+			ship_shield_regen_add_perc = 0.075
+			ship_fire_rate_mult = 0.20
+			ship_weapon_damage = 0.20
+			ship_accuracy_mult = 0.20
+			ship_tracking_mult = 0.20
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+}
+
+#############################
+### TITAN AURA COMPONENTS ###
+#############################
+utility_component_template = {
+	key = "NSC_TITAN_AURA_EMPTY"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = @power0
+	component_set = "nsc_titan_aura"
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "NSC_TITAN_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power4
+	component_set = "nsc_titan_aura"
+
+	friendly_aura = {
+		name = "nsc_titan_aura"
+		radius = @radius1
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_titan_aura
+			priority = 1
+		}
+
+		modifier = {
+			ship_shield_mult = 0.10
+			ship_shield_regen_add_perc = 0.05
+			ship_fire_rate_mult = 0.10
+			ship_weapon_damage = 0.10
+			ship_weapon_range_mult = 0.10
+			ship_accuracy_mult = 0.10
+			ship_tracking_mult = 0.10
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+}
+
+######################################
+### STRIKE CRUISER AURA COMPONENTS ###
+######################################
+utility_component_template = {
+	key = "NSC_STRIKE_CRUISER_AURA_EMPTY"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = @power0
+	component_set = "nsc_strike_cruiser_aura"
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "NSC_STRIKE_CRUISER_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power2
+	component_set = "nsc_strike_cruiser_aura"
+	
+	hostile_aura = {
+		name = "nsc_strike_cruiser_aura"
+		radius = @radius0
+		apply_on = ships
+		
+		stack_info = {
+			id = nsc_strike_cruiser_aura
+			priority = 1
+		}
+		
+		modifier = {
+			ship_emergency_ftl_min_days_add = 10
+			ship_disengage_chance_reduction = 0.20
+			ship_windup_mult = 3.0
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+	
+	ai_weight = { weight = 10 }
+}
+
+utility_component_template = {
+	key = "NSC_STRIKE_CRUISER_AURA_2"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power3
+	prerequisites = { "tech_escortcarrier_1" }
+	component_set = "nsc_strike_cruiser_aura"
+	
+	hostile_aura = {
+		name = "nsc_strike_cruiser_aura_2"
+		radius = @radius0
+		apply_on = ships
+		
+		stack_info = {
+			id = nsc_strike_cruiser_aura
+			priority = 1
+		}
+		
+		modifier = {
+			ship_emergency_ftl_min_days_add = 15
+			ship_disengage_chance_reduction = 0.30
+			ship_windup_mult = 5.0
+		}
+		
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+	
+	ai_weight = { weight = 10 }
+}
+
+####################################
+### SUPPORT SHIP AURA COMPONENTS ###
+####################################
+utility_component_template = {
+	key = "NSC_SUPPORTSHIP_AURA_EMPTY"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = @power0
+	component_set = "nsc_supportship_aura"
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "NSC_SUPPORTSHIP_HULL_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power1
+
+	prerequisites = { "tech_supportcruiser_1" }
+	component_set = "nsc_supportship_aura"
+
+	friendly_aura = {
+		name = "nsc_supportship_hull_aura"
+		radius = @radius0
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_supportship_hull_aura
+			priority = 1
+		}
+
+		modifier = { ship_hull_regen_add_perc = 0.02 }
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+
+	ai_weight = { weight = 2 }
+}
+
+utility_component_template = {
+	key = "NSC_SUPPORTSHIP_ARMOR_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power1
+	
+	prerequisites = { "tech_supportcruiser_1" }
+	component_set = "nsc_supportship_aura"
+
+	friendly_aura = {
+		name = "nsc_supportship_armor_aura"
+		radius = @radius0
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_supportship_armor_aura
+			priority = 1
+		}
+
+		modifier = { ship_armor_regen_add_perc = 0.02 }
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+
+	ai_weight = { weight = 2 }
+}
+
+utility_component_template = {
+	key = "NSC_SUPPORTSHIP_SHIELD_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power1
+	
+	prerequisites = { "tech_supportcruiser_1" }
+	component_set = "nsc_supportship_aura"
+
+	friendly_aura = {
+		name = "nsc_supportship_shield_aura"
+		radius = @radius0
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_supportship_shield_aura
+			priority = 1
+		}
+
+		modifier = { ship_shield_regen_add_perc = 0.02 }
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+
+	ai_weight = { weight = 2 }
+}
+
+utility_component_template = {
+	key = "NSC_SUPPORTSHIP_UPKEEP_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power1
+	
+	prerequisites = { "tech_supportcruiser_1" }
+	component_set = "nsc_supportship_aura"
+
+	friendly_aura = {
+		name = "nsc_supportship_upkeep_aura"
+		radius = @radius0
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_supportship_upkeep_aura
+			priority = 1
+		}
+
+		modifier = { ships_upkeep_mult = -0.20 }
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+
+	ai_weight = { weight = 2 }
+}
+
+utility_component_template = {
+	key = "NSC_SUPPORTSHIP_FTL_AURA"
+	size = medium
+	icon = "GFX_ship_part_science_lab_1"
+	icon_frame = 1
+	power = @power1
+	
+	prerequisites = { "tech_supportcruiser_1" }
+	component_set = "nsc_supportship_aura"
+
+	friendly_aura = {
+		name = "nsc_supportship_ftl_aura"
+		radius = @radius1
+		apply_on = ships
+
+		stack_info = {
+			id = nsc_supportship_ftl_aura
+			priority = 1
+		}
+
+		modifier = {
+			ship_windup_mult = -0.20
+			ship_winddown_mult = -0.20
+			ship_interstellar_speed_mult = 0.20
+		}
+
+		graphics = {
+			area_effect = {
+				entity = "circle_area_entity"
+				dynamic_scale = yes
+			}
+		}
+	}
+
+	ai_weight = { weight = 2 }
+}
+
+################################
+### STARBASE AURA COMPONENTS ###
+################################
+utility_component_template = {
+	key = "NSC_NANITE_FIELD"
+	size = medium
+	icon = "GFX_ship_part_aura_nanobot"
+	icon_frame = 1
+	power = @power0
+
+	class_restriction = { shipclass_starbase }
+	component_set = "nsc_starbase_nanite_aura"
+
+	hostile_aura = {
+		name = "nsc_nanite_aura"
+		system_wide = yes
+
+		stack_info = {
+			id = hostile_nsc_nanite_aura
+			priority = 10
+		}
+
+		modifier = { ship_armor_reduction = 0.20 }
+
+		graphics = {
+			area_effect = {
+				entity = "ship_aura_negative_entity"
+				dynamic_scale = no
+			}
+		}
+	}
+}

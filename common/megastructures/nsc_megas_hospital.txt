@@ -1,0 +1,230 @@
+
+################
+### HOSPITAL ###
+################
+nsc_hospital_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -5 y = -5 }
+	build_time = 1800
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 2500
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		has_technology = tech_hospital 
+	}
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_hospital"
+			from = { NOT = { has_country_flag = built_nsc_hospital } }
+		}
+	}
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				has_ringworld_output_boost = no
+			}
+		}
+	}
+		
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}	
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { owner = { is_same_value = from } }
+			}
+		}
+	}
+	on_build_complete = {
+        from = { 
+            set_country_flag = built_nsc_hospital
+            set_country_flag = has_built_or_repaired_megastructure
+        }
+		fromfrom.planet = { set_planet_flag = has_megastructure }
+    }
+}
+
+nsc_hospital_1 = {
+	entity = "nsc_01_SensorStation_entity"
+	construction_entity = "nsc_01_SensorStation_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -5 y = -5 }
+	build_time = 3600
+	
+	resources = {
+		category = megastructures
+		cost = { alloys = 15000 unity = 2500 }
+		produces = {
+			society_research = 100
+			unity = 100
+		}
+		upkeep = {
+			trigger = {
+                exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 25
+			consumer_goods = 25
+		}
+		upkeep = {
+			trigger = {
+                exists = owner
+				owner = { is_gestalt = yes }
+			}
+			energy = 25
+			minerals = 25
+		}
+	}
+	
+	upgrade_from = { nsc_hospital_0 }
+
+	country_modifier = { job_diagnostician_add = 1 }
+}
+
+nsc_hospital_2 = {
+	entity = "nsc_02_Hospital_entity"
+	construction_entity = "nsc_02_Hospital_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -5 y = -5 }
+	build_time = 3600
+	
+	resources = {
+		category = megastructures
+		cost = { alloys = 15000 unity = 2500 }
+		produces = {
+			society_research = 150
+			unity = 150
+		}
+		upkeep = {
+			trigger = {
+                exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 50
+			consumer_goods = 50
+		}
+		upkeep = {
+			trigger = {
+                exists = owner
+				owner = { is_gestalt = yes }
+			}
+			energy = 50
+			minerals = 50
+		}
+	}
+	
+	upgrade_from = { nsc_hospital_1 }
+
+	country_modifier = { job_diagnostician_add = 2 }
+}
+
+nsc_hospital_3 = {
+	entity = "nsc_03_Hospital_entity"
+	construction_entity = "nsc_03_Hospital_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -5 y = -5 }
+	build_time = 3600
+	
+	resources = {
+		category = megastructures
+		cost = { alloys = 15000 unity = 2500 }
+		produces = {
+			society_research = 200
+			unity = 200
+		}
+		upkeep = {
+			trigger = {
+                exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 75
+			consumer_goods = 75
+		}
+		upkeep = {
+			trigger = {
+                exists = owner
+				owner = { is_regular_empire = no }
+			}
+			energy = 75
+			minerals = 75
+		}
+	}
+	
+	upgrade_from = { nsc_hospital_2 }
+
+	country_modifier = { job_diagnostician_add = 3 }
+}
+

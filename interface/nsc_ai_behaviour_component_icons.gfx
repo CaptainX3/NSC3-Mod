@@ -1,0 +1,136 @@
+spriteTypes = {
+
+	#####################
+	### AI BEHAVIOURS ###
+	#####################
+	spriteType = {
+		name = "GFX_ship_part_computer_default_noai"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_computer_default_noai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_computer_noai"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_computer_noai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_advanced_noai"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_computer_advanced_noai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_sapient_noai"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_computer_sapient_noai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_computer_precog_noai"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_computer_precog_noai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_default"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_default.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_charge"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_charge.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_follow"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_follow.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_40"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_40.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_50"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_50.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_60"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_60.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_70"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_70.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_80"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_80.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_90"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_90.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_100"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_100.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_110"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_110.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_120"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_120.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_stationary_200"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_stationary_200.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_flank_40"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_flank_40.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_flank_60"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_flank_60.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_flank_80"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_flank_80.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_flank_100"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_flank_100.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_hitnrun_40"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_hitnrun_40.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_hitnrun_60"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_hitnrun_60.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_hitnrun_80"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_hitnrun_80.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ship_part_ai_behaviour_hitnrun_100"
+		texturefile = "gfx/interface/icons/ship_parts/ship_part_ai_behaviour_hitnrun_100.dds"
+	}
+	
+}
