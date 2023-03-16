@@ -1,3 +1,4 @@
+<pre>
 **HOW TO MANUALLY INSTALL NSC2**
 
 Here are the instructions on how to manually install NSC2 from the zip file provided below. DO NOT DO THIS if you are subscribed to the mod on the Steam Workshop - this download is only for those who cannot use the Steam workshop or don't want to.
@@ -53,3 +54,4 @@ _(If you're updating your manually-installed copy of the mod, scroll down to tha
 > STEP 8: Make sure your mod load order is correct before you start the game!! If you need help with your load order, simply type "Fix Load Order" in the #the-flagship-bot channel on this Discord and the bot will post instructions on how to sort your mods.
 
 > STEP 9: Enjoy!
+</pre>
