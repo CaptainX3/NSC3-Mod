@@ -13,6 +13,7 @@ ap_nsc_matterenergy = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
 	}
 
 	on_enabled = { custom_tooltip = "allow_resource_factory" }	

@@ -3,7 +3,10 @@ nsc_mothball_target_fleet_requirement = {
 	OR = {
 		is_ship_class = shipclass_military
 		is_ship_class = shipclass_military_special
-		is_ship_size = juggernaut
+		AND = {
+			is_ship_class = shipclass_starbase
+			is_mobile = yes
+		}
 	}
 }
 nsc_mothball_target_fleet_flag_all = {
@@ -21,4 +24,7 @@ nsc_mothball_target_fleet_mothball_stop_trigger = {
 		has_fleet_flag = nsc_mothballed_fleet_$ID$
 		NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
 	}
+}
+nsc_modmenu_game_content_on_trigger = {
+	always = yes #temporary trigger
 }

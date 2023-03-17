@@ -50,6 +50,10 @@ weapon_component_template = {
 		}
 	}
 
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = TOMAHAWK_CRUISE_MISSILE }
+	}
+
 	target_weights = {
 		Flagship = 5
 		titan = 4
@@ -114,6 +118,10 @@ weapon_component_template = {
 		}
 	}
 
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = HARPOON_CRUISE_MISSILE }
+	}
+
 	target_weights = {
 		Flagship = 5
 		titan = 4
@@ -168,6 +176,10 @@ weapon_component_template = {
 			energy = 0.10
 			alloys = 0.010
 		}
+	}
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_PD_MISSILE }
 	}
 
 	ai_weight = {
