@@ -2178,7 +2178,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship Carrier }
+	size_restriction = { battleship offspring_battleship }
 	
 	ai_weight = { 
 		weight = 11
@@ -2210,7 +2210,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+	size_restriction = { Dreadnought Carrier }
 	
 	ai_weight = { 
 		weight = 11
