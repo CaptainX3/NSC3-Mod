@@ -238,6 +238,10 @@ weapon_component_template = {
 		}
 	}
 
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = BATTLESHIP_SNIPER_GUN_1 }
+	}
+
 	target_weights = {
 		corvette = 5
 		destroyer = 4
@@ -285,6 +289,10 @@ weapon_component_template = {
 			energy = @s_t7_upkeep_energy
 			alloys = @s_t7_upkeep_alloys
 		}
+	}
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = BATTLESHIP_SNIPER_GUN_2 }
 	}
 
 	target_weights = {

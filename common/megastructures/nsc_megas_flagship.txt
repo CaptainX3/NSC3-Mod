@@ -52,6 +52,7 @@ nsc_flagship_shipyard = {
 				}
 			}
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Flagship }
 	}
 
 	placement_rules = {
@@ -302,6 +303,7 @@ nsc_flagship_complete = {
 	construction_entity = "flagship_construction_yard_entity"
 	portrait = GFX_megastructure_construction_background
 	place_entity_on_planet_plane = no
+	show_in_outliner = no
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {

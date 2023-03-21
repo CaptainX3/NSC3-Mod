@@ -43,9 +43,9 @@ country_event = {
 	show_sound = event_laboratory_sound
 	is_triggered_only = yes
 
-	#trigger = {
-	#	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = explorationship }
-	#}
+	trigger = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = explorationship }
+	}
 
 	option = {
 		name = "expcruiser.01.a"

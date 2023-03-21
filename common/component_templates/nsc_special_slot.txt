@@ -51,6 +51,10 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -75,6 +79,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_DAMAGE_CONTROL }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -95,6 +103,10 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_DAMAGE_CONTROL }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -115,6 +127,10 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_CREW_LOUNGE }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -137,6 +153,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_FIRE_CONTROL }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -158,6 +178,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+	
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY }
+	}
 
 	ai_weight = { weight = 1 }	
 }
@@ -179,6 +203,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_AUXILIARY_SHIELDS }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -203,7 +231,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
-
+	
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_QUANTUM_THRUSTERS }
+	}
 
 	ai_weight = { weight = 1 }	
 }
@@ -224,6 +255,10 @@ utility_component_template = {
 	
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_DEFLECTOR_ARRAY }
+	}
 	
 	ai_weight = { weight = 1 }	
 }
@@ -250,8 +285,11 @@ utility_component_template = {
 	component_set = "special_ship_slot"
 	
 	valid_for_country = {
-		has_technology = tech_jump_drive_1
-		has_technology = tech_psi_jump_drive_1
+		OR = {
+			has_technology = tech_jump_drive_1
+			has_technology = tech_psi_jump_drive_1
+		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY }
 	}
 
 	ai_weight = { weight = 1 }
@@ -272,6 +310,10 @@ utility_component_template = {
 	ship_modifier = { ship_piracy_suppression_add = 3 }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_KITCHEN_SINK }
+	}
 	
 	ai_weight = { weight = 1 }
 }
@@ -297,6 +339,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY }
+	}
 	
 	ai_weight = { weight = 1 }
 }
@@ -321,6 +367,10 @@ utility_component_template = {
 	prerequisites = { "tech_specialcomponents_1" }
 	class_restriction = { shipclass_military shipclass_science }
 	component_set = "special_ship_slot"
+	
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM }
+	}
 
 	ai_weight = { weight = 1 }
 }
@@ -345,6 +395,10 @@ utility_component_template = {
 	prerequisites = { "tech_Carrier_1" }
 	size_restriction = { Carrier }
 	component_set = "special_ship_slot"
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = SPECIAL_SLOT_STRIKE_CRAFT }
+	}
 	
 	ai_weight = { weight = 1 }
 }
