@@ -189,20 +189,20 @@
 			}
 			
 			# Always combined with a second name
-			first_names_male = { "Steve" }
-			first_names_female = { "Steve" }
+			first_names_male = { NSC_NAME_STEVE }
+			first_names_female = { NSC_NAME_STEVE }
 			
 			# Always combined with a first name
 			second_names = {
-				"Alford" "Anfel" "Archford" "Belgarve" "Blunsbury" "Boxley" "Bronley" "Caddington" "Canley" "Charnham" "Cotting" "Crydon" "Fayner" "Fonnord" "Gasforth" "Gealin" "Greenord" "Hobblorn" "Honslett" "Ixbridge" "Konning" "Krickston" "Martlebone" "Namnden" "Nelow" "Newbley" "Nightsedge" "Peshard" "Ponnico" "Sandworth" "Sarking" "Shepminter" "Soulark" "Stutton" "Thoso" "Vauxin" "Walford" "Wessend"
+				NECROID1_CHR_Alford NECROID1_CHR_Anfel NECROID1_CHR_Archford NECROID1_CHR_Belgarve NECROID1_CHR_Blunsbury NECROID1_CHR_Boxley NECROID1_CHR_Bronley NECROID1_CHR_Caddington NECROID1_CHR_Canley NECROID1_CHR_Charnham NECROID1_CHR_Cotting NECROID1_CHR_Crydon NECROID1_CHR_Fayner NECROID1_CHR_Fonnord NECROID1_CHR_Gasforth NECROID1_CHR_Gealin NECROID1_CHR_Greenord NECROID1_CHR_Hobblorn NECROID1_CHR_Honslett NECROID1_CHR_Ixbridge NECROID1_CHR_Konning NECROID1_CHR_Krickston NECROID1_CHR_Martlebone NECROID1_CHR_Namnden NECROID1_CHR_Nelow NECROID1_CHR_Newbley NECROID1_CHR_Nightsedge NECROID1_CHR_Peshard NECROID1_CHR_Ponnico NECROID1_CHR_Sandworth NECROID1_CHR_Sarking NECROID1_CHR_Shepminter NECROID1_CHR_Soulark NECROID1_CHR_Stutton NECROID1_CHR_Thoso NECROID1_CHR_Vauxin NECROID1_CHR_Walford NECROID1_CHR_Wessend
 			}
 			
-			regnal_first_names_male = { "Steve" }
+			regnal_first_names_male = { NSC_NAME_STEVE }
 
-			regnal_first_names_female = { "Steve" }
+			regnal_first_names_female = { NSC_NAME_STEVE }
 			
 			regnal_second_names = {
-				"Befford" "Berken" "Bucken" "Camber" "Cheshen" "Corner" "Cumber" "Deckon" "Derben" "Dofham" "Dorpeth" "Glossom" "Hampin" "Harcord" "Helford" "Hunton" "Kanter" "Lancoln" "Lincoll" "Linton" "Norhunder" "Norpin" "Nortolk" "Nottern" "Oxkin" "Rulan" "Somer" "Starfod" "Stropp" "Sullened" "Sullock" "Vestern" "Warten" "Westmott" "Worsten" "Yolkin"
+				NECROID1_CHR_Befford NECROID1_CHR_Berken NECROID1_CHR_Bucken NECROID1_CHR_Camber NECROID1_CHR_Cheshen NECROID1_CHR_Corner NECROID1_CHR_Cumber NECROID1_CHR_Deckon NECROID1_CHR_Derben NECROID1_CHR_Dofham NECROID1_CHR_Dorpeth NECROID1_CHR_Glossom NECROID1_CHR_Hampin NECROID1_CHR_Harcord NECROID1_CHR_Helford NECROID1_CHR_Hunton NECROID1_CHR_Kanter NECROID1_CHR_Lancoln NECROID1_CHR_Lincoll NECROID1_CHR_Linton NECROID1_CHR_Norhunder NECROID1_CHR_Norpin NECROID1_CHR_Nortolk NECROID1_CHR_Nottern NECROID1_CHR_Oxkin NECROID1_CHR_Rulan NECROID1_CHR_Somer NECROID1_CHR_Starfod NECROID1_CHR_Stropp NECROID1_CHR_Sullened NECROID1_CHR_Sullock NECROID1_CHR_Vestern NECROID1_CHR_Warten NECROID1_CHR_Westmott NECROID1_CHR_Worsten NECROID1_CHR_Yolkin
 			}
 		}
     }
