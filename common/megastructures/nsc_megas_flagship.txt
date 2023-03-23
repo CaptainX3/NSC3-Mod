@@ -18,7 +18,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 			influence = 30
@@ -26,7 +26,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 			influence = 60
@@ -34,7 +34,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 			influence = 90
@@ -42,7 +42,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 			influence = 120
@@ -50,7 +50,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 			influence = 150
@@ -58,7 +58,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 			influence = 180
@@ -66,7 +66,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 			influence = 210
@@ -74,7 +74,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 			influence = 240
@@ -82,7 +82,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 			influence = 270
@@ -90,7 +90,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 			influence = 300
@@ -98,7 +98,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 			influence = -30
@@ -106,7 +106,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 			influence = -60
@@ -114,7 +114,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 			influence = -90
@@ -122,7 +122,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 			influence = -120
@@ -130,7 +130,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 			influence = -150
@@ -138,7 +138,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 			influence = -180
@@ -146,7 +146,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 			influence = -210
@@ -154,7 +154,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 			influence = -240
@@ -162,7 +162,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 			influence = -270
@@ -170,7 +170,7 @@ nsc_flagship_shipyard = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 			influence = -300
@@ -284,140 +284,140 @@ nsc_flagship_bow = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 		}
@@ -457,140 +457,140 @@ nsc_flagship_mid_1 = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 		}
@@ -627,140 +627,140 @@ nsc_flagship_mid_2 = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 		}
@@ -799,140 +799,140 @@ nsc_flagship_mid_3 = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 		}
@@ -969,140 +969,140 @@ nsc_flagship_mid_4 = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 		}
@@ -1139,140 +1139,140 @@ nsc_flagship_stern = {
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.05 } }
 			}
 			alloys = 200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.10 } }
 			}
 			alloys = 400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.15 } }
 			}
 			alloys = 600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.20 } }
 			}
 			alloys = 800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.25 } }
 			}
 			alloys = 1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.30 } }
 			}
 			alloys = 1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.35 } }
 			}
 			alloys = 1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.40 } }
 			}
 			alloys = 1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.45 } }
 			}
 			alloys = 1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = 0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = 0.50 } }
 			}
 			alloys = 2000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.05 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.05 } }
 			}
 			alloys = -200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.10 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.10 } }
 			}
 			alloys = -400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.15 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.15 } }
 			}
 			alloys = -600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.20 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.20 } }
 			}
 			alloys = -800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.25 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.25 } }
 			}
 			alloys = -1000
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.30 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.30 } }
 			}
 			alloys = -1200
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.35 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.35 } }
 			}
 			alloys = -1400
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.40 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.40 } }
 			}
 			alloys = -1600
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.45 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.45 } }
 			}
 			alloys = -1800
 		}
 		cost = {
 			trigger = {
 				exists = owner
-				owner = { check_modifier_value = { modifier = nsc_modmenu_ship_class_Flagship_build_cost value = -0.50 } }
+				owner = { check_modifier_value = { modifier = ship_Flagship_cost_mult value = -0.50 } }
 			}
 			alloys = -2000
 		}
