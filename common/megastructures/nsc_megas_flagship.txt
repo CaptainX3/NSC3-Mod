@@ -52,7 +52,7 @@ nsc_flagship_shipyard = {
 				}
 			}
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Flagship }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	placement_rules = {

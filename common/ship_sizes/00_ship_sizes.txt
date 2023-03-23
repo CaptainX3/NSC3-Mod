@@ -503,7 +503,7 @@ StrikeCruiser = {
 	}
 
 	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = StrikeCruiser }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
 	}
 	
 	min_upgrade_cost = { alloys = 5 }
@@ -576,7 +576,7 @@ Battlecruiser = {
 	}
 
 	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Battlecruiser }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	}
 
 	min_upgrade_cost = { alloys = 6 }
@@ -737,7 +737,7 @@ Carrier = {
 	}
 
 	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Carrier }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
 	}
 
 	min_upgrade_cost = { alloys = 10 }
@@ -809,7 +809,7 @@ Dreadnought = {
 	}
 
 	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Dreadnought }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	}
 
 	min_upgrade_cost = { alloys = 12 }
@@ -983,7 +983,7 @@ Flagship = {
 			text = nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail
 			always = no
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Flagship } #also see: 'nsc_megas_flagship.txt'
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #also see: 'nsc_megas_flagship.txt'
 	}
 
 
@@ -1457,7 +1457,7 @@ explorationship = {
 	}
 
 	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = explorationship } #also see: 'nsc_events_exploration_ship.10'
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } #also see: 'nsc_events_exploration_ship.10'
 	}
 
 	min_upgrade_cost = { alloys = 5 }
