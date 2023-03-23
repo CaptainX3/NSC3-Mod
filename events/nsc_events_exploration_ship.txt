@@ -44,7 +44,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = explorationship }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
 
 	option = {

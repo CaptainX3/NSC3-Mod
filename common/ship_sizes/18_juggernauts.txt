@@ -190,7 +190,7 @@ headquarters = {
 				}
 			}
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = headquarters }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters }
 	}
 	
 	prerequisites = { "tech_juggernaut" "tech_starbase_6" "tech_space_defense_station_3" }

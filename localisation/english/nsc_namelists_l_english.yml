@@ -4,6 +4,8 @@
 ### NAME LISTS ###
 ##################
 
+NSC_NAME_STEVE:0 "Steve"
+
 name_list_1-NSC-Arthopoid: "NSC2 Arthopoid"
 name_list_1-NSC-Avian: "NSC2 Avian"
 name_list_1-NSC-Fungoid: "NSC2 Fungoid"

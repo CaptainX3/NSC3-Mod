@@ -445,7 +445,7 @@ tech_Flagship_1 = {
                 has_technology = tech_titans
             }
         }
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = classes ID = Flagship } #some other techs require this one so I decided not to lock it
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #some other techs require this one so I decided not to lock it
     }
 	
 	gateway = ship
