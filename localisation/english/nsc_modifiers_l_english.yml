@@ -5,46 +5,45 @@
 #################
 
 mod_shipsize_StrikeCruiser_upkeep_mult:0 "Strike Cruiser Upkeep"
-mod_shipsize_StrikeCruiser_construction_speed_mult:0 "Strike Cruiser Construction Speed"
 mod_shipsize_StrikeCruiser_hull_mult:0 "Strike Cruiser Hull Points"
 mod_shipsize_StrikeCruiser_build_speed_mult:0 "Strike Cruiser Build Speed"
 mod_ship_StrikeCruiser_cost_mult:0 "Strike Cruiser Build Cost"
 
 mod_shipsize_escortcarrier_upkeep_mult:0 "Escort Carrier Upkeep"
-mod_shipsize_escortcarrier_construction_speed_mult:0 "Escort Carrier Construction Speed"
 mod_shipsize_escortcarrier_hull_mult:0 "Escort Carrier Hull Points"
 mod_shipsize_escortcarrier_build_speed_mult:0 "Escort Carrier Build Speed"
 mod_ship_escortcarrier_cost_mult:0 "Escort Carrier Build Cost"
 
 mod_shipsize_Battlecruiser_upkeep_mult:0 "Battlecruiser Upkeep"
-mod_shipsize_Battlecruiser_construction_speed_mult:0 "Battlecruiser Construction Speed"
 mod_shipsize_Battlecruiser_hull_mult:0 "Battlecruiser Hull Points"
 mod_shipsize_Battlecruiser_build_speed_mult:0 "Battlecruiser Build Speed"
 mod_ship_Battlecruiser_cost_mult:0 "Battlecruiser Build Cost"
 
 mod_shipsize_Carrier_upkeep_mult:0 "Carrier Upkeep"
-mod_shipsize_Carrier_construction_speed_mult:0 "Carrier Construction Speed"
 mod_shipsize_Carrier_hull_mult:0 "Carrier Hull Points"
 mod_shipsize_Carrier_build_speed_mult:0 "Carrier Build Speed"
 mod_ship_Carrier_cost_mult:0 "Carrier Build Cost"
 
 mod_shipsize_Dreadnought_upkeep_mult:0 "Dreadnought Upkeep"
-mod_shipsize_Dreadnought_construction_speed_mult:0 "Dreadnought Construction Speed"
 mod_shipsize_Dreadnought_hull_mult:0 "Dreadnought Hull Points"
 mod_shipsize_Dreadnought_build_speed_mult:0 "Dreadnought Build Speed"
 mod_ship_Dreadnought_cost_mult:0 "Dreadnought Build Cost"
 
 mod_shipsize_titan_upkeep_mult:0 "Titan Upkeep"
-mod_shipsize_titan_construction_speed_mult:0 "Titan Construction Speed"
 mod_shipsize_titan_hull_mult:0 "Titan Hull Points"
 mod_shipsize_titan_build_speed_mult:0 "Titan Build Speed"
 mod_ship_titan_cost_mult:0 "Titan Build Cost"
 
 mod_shipsize_Flagship_upkeep_mult:0 "Flagship Upkeep"
-mod_shipsize_Flagship_construction_speed_mult:0 "Flagship Construction Speed"
 mod_shipsize_Flagship_hull_mult:0 "Flagship Hull Points"
 mod_shipsize_Flagship_build_speed_mult:0 "Flagship Build Speed"
 mod_ship_Flagship_cost_mult:0 "Flagship Build Cost"
+
+mod_shipsize_headquarters_build_speed_mult:0 "Headquarters Build Speed"
+mod_ship_headquarters_cost_mult:0 "Headquarters Build Cost"
+
+mod_shipsize_explorationship_build_speed_mult:0 "Exploration Cruiser Build Speed"
+mod_ship_explorationship_cost_mult:0 "Exploration Cruiser Build Cost"
 
 mod_country_resource_max_minerals_add:0 "Max Minerals"
 mod_country_resource_max_energy_add:0 "Max Energy"
