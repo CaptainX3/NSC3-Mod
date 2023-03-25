@@ -49,8 +49,13 @@ country_event = {
 
 	option = {
 		name = "expcruiser.01.a"
-		#[19:42:39][eventscope.cpp:2097]: enable_special_project: Unable to resolve location from 'this' (country scope) at  file: events/nsc_events_exploration_ship.txt line: 52
-		enable_special_project = { name = "PROTOTYPE_EXPLORATION_CRUISER_PROJECT" location = root.capital_star.starbase }
+		capital_scope.solar_system.starbase = {
+			enable_special_project = {
+				name = "PROTOTYPE_EXPLORATION_CRUISER_PROJECT"
+				location = this
+				owner = root
+			}
+		}
 	}
 	option = {
 		name = "expcruiser.01.b"
