@@ -70,7 +70,7 @@ starbase_stronghold = {
 	flip_control_on_disable = yes
 	
 	resources = {
-		category = starbase_stations
+		category = nsc_starbase_stronghold
 		cost = { alloys = 4500 }
 		upkeep = { energy = 8 }
 	}
@@ -158,7 +158,7 @@ starbase_headquarters = {
 	flip_control_on_disable = yes
 	
 	resources = {
-		category = starbase_stations
+		category = nsc_starbase_headquarters
 		cost = { alloys = 6500 }
 		upkeep = { energy = 10 }
 	}
