@@ -7,79 +7,10 @@ megastructures_nsc_flagship_shipyard = {
 	}
 	modifier_category = megastructure
 }
-nsc_starbase_stronghold = {
-	use_for_ai_budget = yes
-	parent = starbase_stations
-	generate_mult_modifiers = {
-		cost
-	}
-	modifier_category = starbase
-}
-nsc_starbase_headquarters = {
-	use_for_ai_budget = yes
-	parent = starbase_stations
-	generate_mult_modifiers = {
-		cost
-	}
-	modifier_category = starbase
-}
 
 ##########################################
 ### VANILLA COMMON CATEGORY OVERWRITES ###
 ##########################################
-
-starbase_stations = {
-	parent = starbases
-	modifier_category = starbase
-
-	triggered_cost_modifier = {
-		key = starbase_outpost
-		modifier_types = {
-			mult
-		}
-
-		trigger = {
-			is_scope_valid = yes #When called from ship designer the design is not valid yet.
-			OR = {
-				is_ship_size = starbase_outpost
-				is_ship_size = orbital_ring_tier_1 #TODOJM: Remove?
-			}
-		}
-	}
-	triggered_cost_modifier = {
-		key = starbase_starport
-		modifier_types = {
-			mult
-		}
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_size = starbase_starport
-		}
-	}
-	triggered_cost_modifier = {
-		key = starbase_starfortress
-		modifier_types = {
-			mult
-		}
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_size = starbase_starfortress
-		}
-	}
-	triggered_cost_modifier = {
-		key = starbase_citadel
-		modifier_types = {
-			mult
-		}
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_size = starbase_citadel
-		}
-	}
-}
 
 ships = {
 	use_for_ai_budget = yes
