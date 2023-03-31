@@ -189,6 +189,7 @@ hyperlane_creator_receptor_0 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }
@@ -274,6 +275,7 @@ hyperlane_remover_emisor_0 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }
@@ -408,6 +410,7 @@ hyperlane_remover_receptor_0 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }

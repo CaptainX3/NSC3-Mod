@@ -44,6 +44,8 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		#[21:13:45][effect_impl.cpp:341]: Script Error: Invalid context switch [capital_scope.solar_system.starbase] from Creatures of the Shroud [country]
+		exists = capital_scope.solar_system.starbase
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
 
@@ -305,7 +307,7 @@ ship_event = {
 
 	immediate = {
 		leader = {
-			save_event_target_as = nsc_events_8_reassign_target_leader
+			save_event_target_as = nsc_exploration_ship_reassign_target_leader
 			unassign_leader = this
 		}
 		create_fleet = {
@@ -316,7 +318,7 @@ ship_event = {
 					design = "Prototype Exploration Cruiser"
 				}
 				set_location = root.solar_system.starbase
-				assign_leader = event_target:nsc_events_8_reassign_target_leader
+				assign_leader = event_target:nsc_exploration_ship_reassign_target_leader
 				set_fleet_stance = evasive
 			}
 		}
