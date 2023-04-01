@@ -10,10 +10,11 @@ nsc_flagship_shipyard = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 360
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
 			influence = @nsc_flagship_influence_cost
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -117,9 +118,10 @@ nsc_flagship_bow = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -150,9 +152,10 @@ nsc_flagship_mid_1 = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -180,9 +183,10 @@ nsc_flagship_mid_2 = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -212,9 +216,10 @@ nsc_flagship_mid_3 = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -242,9 +247,10 @@ nsc_flagship_mid_4 = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -272,9 +278,10 @@ nsc_flagship_stern = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 4000
+			multiplier = value:nsc_flagship_build_cost
 		}
 		produces = {
 			influence = 3
@@ -307,7 +314,7 @@ nsc_flagship_complete = {
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
-		category = megastructures_nsc_flagship_shipyard
+		category = megastructures
 		cost = {
 			alloys = 0
 			influence = 0

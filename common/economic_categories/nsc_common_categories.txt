@@ -1,13 +1,3 @@
-
-megastructures_nsc_flagship_shipyard = {
-	use_for_ai_budget = yes
-	parent = megastructures
-	generate_mult_modifiers = {
-		cost
-	}
-	modifier_category = megastructure
-}
-
 ##########################################
 ### VANILLA COMMON CATEGORY OVERWRITES ###
 ##########################################
