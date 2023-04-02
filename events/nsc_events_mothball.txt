@@ -181,12 +181,12 @@ planet_event = {
 	trigger = {
 		exists = from
 		exists = fromfrom
-		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all = yes }
+		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all_trigger = yes }
 	}
 
 	immediate = {
 		every_fleet_in_orbit = {
-			limit = { nsc_mothball_target_fleet_flag_all = yes }
+			limit = { nsc_mothball_target_fleet_flag_all_trigger = yes }
 			destroy_fleet = this
 		}
 		from = { country_event = { id = nsc_events_mothball.5 } }
@@ -229,12 +229,12 @@ planet_event = {
 
 	trigger = {
 		exists = from
-		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all = yes }
+		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all_trigger = yes }
 	}
 
 	immediate = {
 		every_fleet_in_orbit = {
-			limit = { nsc_mothball_target_fleet_flag_all = yes }
+			limit = { nsc_mothball_target_fleet_flag_all_trigger = yes }
 			destroy_fleet = this
 		}
 		from = { country_event = { id = nsc_events_mothball.8 } }
@@ -261,12 +261,12 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all = yes }
+		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all_trigger = yes }
 	}
 
 	immediate = {
 		every_fleet_in_orbit = {
-			limit = { nsc_mothball_target_fleet_flag_all = yes }
+			limit = { nsc_mothball_target_fleet_flag_all_trigger = yes }
 			destroy_fleet = this
 		}
 	}
