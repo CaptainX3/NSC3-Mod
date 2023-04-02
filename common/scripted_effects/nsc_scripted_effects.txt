@@ -155,11 +155,11 @@ nsc_mothball_target_fleet_mothball_start_effect = {
 			set_fleet_flag = nsc_mothballed_fleet_$ID$
 			if = {
 				limit = { event_target:nsc_modmenu_data_storage = { check_variable = { which = nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var value != 0 } } }
-				add_modifier = { modifier = nsc_ship_in_mothball_resource_upkeep multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var }
+				add_modifier = { modifier = nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var }
 			}
 			if = {
 				limit = { event_target:nsc_modmenu_data_storage = { check_variable = { which = nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var value != 0 } } }
-				add_modifier = { modifier = nsc_ship_in_mothball_naval_cap_usage multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var }
+				add_modifier = { modifier = nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var }
 			}
 		}
 		planet_event = { id = nsc_events_mothball.menu }
