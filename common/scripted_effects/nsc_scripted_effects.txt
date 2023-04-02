@@ -81,11 +81,21 @@ nsc_mothball_target_fleet_selecting_effect = {
 						has_fleet_flag = nsc_mothball_temporal_target_3
 						has_fleet_flag = nsc_mothball_temporal_target_4
 						has_fleet_flag = nsc_mothball_temporal_target_5
+						has_fleet_flag = nsc_mothball_temporal_target_6
+						has_fleet_flag = nsc_mothball_temporal_target_7
+						has_fleet_flag = nsc_mothball_temporal_target_8
+						has_fleet_flag = nsc_mothball_temporal_target_9
+						has_fleet_flag = nsc_mothball_temporal_target_10
 						has_fleet_flag = nsc_mothballed_fleet_1
 						has_fleet_flag = nsc_mothballed_fleet_2
 						has_fleet_flag = nsc_mothballed_fleet_3
 						has_fleet_flag = nsc_mothballed_fleet_4
 						has_fleet_flag = nsc_mothballed_fleet_5
+						has_fleet_flag = nsc_mothballed_fleet_6
+						has_fleet_flag = nsc_mothballed_fleet_7
+						has_fleet_flag = nsc_mothballed_fleet_8
+						has_fleet_flag = nsc_mothballed_fleet_9
+						has_fleet_flag = nsc_mothballed_fleet_10
 					}
 				}
 				if = {
@@ -133,6 +143,51 @@ nsc_mothball_target_fleet_selecting_effect = {
 					}
 					set_fleet_flag = nsc_mothball_temporal_target_5
 				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 6 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_6 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_6
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 7 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_7 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_7
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 8 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_8 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_8
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 9 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_9 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_9
+				}
+				else_if = {
+					limit = {
+						prev = {
+							check_variable = { which = nsc_mothball_target_fleet_count_var value = 10 }
+							NOT = { any_fleet_in_orbit = { has_fleet_flag = nsc_mothballed_fleet_10 } }
+						}
+					}
+					set_fleet_flag = nsc_mothball_temporal_target_10
+				}
 			}
 			count = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_per_planet_var
 		}
@@ -143,6 +198,11 @@ nsc_mothball_target_fleet_selecting_effect = {
 		nsc_mothball_target_fleet_cost_count = { ID = 3 }
 		nsc_mothball_target_fleet_cost_count = { ID = 4 }
 		nsc_mothball_target_fleet_cost_count = { ID = 5 }
+		nsc_mothball_target_fleet_cost_count = { ID = 6 }
+		nsc_mothball_target_fleet_cost_count = { ID = 7 }
+		nsc_mothball_target_fleet_cost_count = { ID = 8 }
+		nsc_mothball_target_fleet_cost_count = { ID = 9 }
+		nsc_mothball_target_fleet_cost_count = { ID = 10 }
 	}
 }
 nsc_mothball_target_fleet_mothball_start_effect = {
