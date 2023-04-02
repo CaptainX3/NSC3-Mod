@@ -58,13 +58,9 @@ nsc_mothball_target_fleet_cost_count = {
 		}
 		every_owned_ship = {
 			export_trigger_value_to_variable = { trigger = has_hp variable = nsc_mothball_target_ship_cost_var }
-			divide_variable = { which = nsc_mothball_target_ship_cost_var value = 5 } #100 / 5 = 20
-			prev = {
-				change_variable = {
-					which = nsc_mothball_target_fleet_total_cost_var
-					value = prev.nsc_mothball_target_ship_cost_var
-				}
-			}
+			divide_variable = { which = nsc_mothball_target_ship_cost_var value = 100 }
+			multiply_variable = { which = nsc_mothball_target_ship_cost_var value = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_cost_var }
+			prev = { change_variable = { which = nsc_mothball_target_fleet_total_cost_var value = prev.nsc_mothball_target_ship_cost_var } }
 			clear_variable = nsc_mothball_target_ship_cost_var
 		}
 	}
@@ -138,7 +134,7 @@ nsc_mothball_target_fleet_selecting_effect = {
 					set_fleet_flag = nsc_mothball_temporal_target_5
 				}
 			}
-			count = 5
+			count = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_per_planet_var
 		}
 		clear_variable = nsc_mothball_target_fleet_count_var
 		set_planet_flag = nsc_mothball_target_fleets_counting_stopped
@@ -157,7 +153,14 @@ nsc_mothball_target_fleet_mothball_start_effect = {
 			every_owned_ship = { set_disabled = yes }
 			remove_fleet_flag = nsc_mothball_temporal_target_$ID$
 			set_fleet_flag = nsc_mothballed_fleet_$ID$
-			add_modifier = { modifier = nsc_ship_in_mothball days = -1 }
+			if = {
+				limit = { event_target:nsc_modmenu_data_storage = { check_variable = { which = nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var value != 0 } } }
+				add_modifier = { modifier = nsc_ship_in_mothball_resource_upkeep multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var }
+			}
+			if = {
+				limit = { event_target:nsc_modmenu_data_storage = { check_variable = { which = nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var value != 0 } } }
+				add_modifier = { modifier = nsc_ship_in_mothball_naval_cap_usage multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var }
+			}
 		}
 		planet_event = { id = nsc_events_mothball.menu }
 	}

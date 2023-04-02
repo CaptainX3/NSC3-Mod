@@ -73,7 +73,8 @@ mod_capital_focus_desc: "A policy that focuses on a fleet of large and powerful 
 mod_carrier_focus: "Carrier Focus"
 mod_carrier_focus_desc: "A policy that focuses on a fleet of Carriers equipped with large numbers of strike craft. Provides +35% build speed and -35% build cost to Escort Carriers and Carriers, but since our shipyards will be focused on these specific ships, other classes will build 20% slower and be 20% more expensive."
 
-nsc_ship_in_mothball:0 "Mothballed Ship"
+nsc_ship_in_mothball_resource_upkeep:0 "Mothballed Ship"
+nsc_ship_in_mothball_naval_cap_usage:0 "Mothballed Ship"
 
 mod_nsc_non_artificial_planet_slave_produces_mult:0 "$pop_cat_slave$ Pop Resource Output on Non-Artificial Worlds"
 mod_nsc_non_artificial_planet_worker_produces_mult:0 "$pop_cat_worker$ Pop Resource Output on Non-Artificial Worlds"

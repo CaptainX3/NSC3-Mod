@@ -143,7 +143,8 @@ fleet_event = {
 
 	immediate = {
 		every_owned_ship = { set_disabled = no }
-		remove_modifier = nsc_ship_in_mothball
+		remove_modifier = nsc_ship_in_mothball_resource_upkeep
+		remove_modifier = nsc_ship_in_mothball_naval_cap_usage
 		switch = {
 			trigger = has_fleet_flag
 			nsc_mothballed_fleet_1 = { remove_fleet_flag = nsc_mothballed_fleet_1 }

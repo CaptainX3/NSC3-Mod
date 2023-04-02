@@ -16,7 +16,9 @@ nsc_headquarters_bonus = {
     federation_naval_cap_contribution_mult = 0.25
 }
 #mothball feature
-nsc_ship_in_mothball = {
-	ships_upkeep_mult = -0.90
-	mod_ship_naval_cap_usage_mult = -0.75
+nsc_ship_in_mothball_resource_upkeep = {
+	ships_upkeep_mult = 0.01
+}
+nsc_ship_in_mothball_naval_cap_usage = {
+	mod_ship_naval_cap_usage_mult = 0.01
 }
