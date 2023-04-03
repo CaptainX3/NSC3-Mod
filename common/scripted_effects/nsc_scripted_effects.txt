@@ -40,7 +40,21 @@ nsc_flagship_creation_for_ai_effect = {
 	}
 	set_country_flag = nsc_flagship_owner
 }
-nsc_mothball_target_fleet_cost_count = {
+nsc_mothball_target_fleet_repair_cost_calc_effect = {
+	optimize_memory
+	if = {
+		limit = { is_variable_set = nsc_mothball_target_fleet_total_cost_var }
+		clear_variable = nsc_mothball_target_fleet_total_cost_var
+	}
+	every_owned_ship = {
+		export_trigger_value_to_variable = { trigger = has_hp variable = nsc_mothball_target_ship_cost_var }
+		divide_variable = { which = nsc_mothball_target_ship_cost_var value = 100 }
+		multiply_variable = { which = nsc_mothball_target_ship_cost_var value = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_cost_var }
+		prev = { change_variable = { which = nsc_mothball_target_fleet_total_cost_var value = prev.nsc_mothball_target_ship_cost_var } }
+		clear_variable = nsc_mothball_target_ship_cost_var
+	}
+}
+nsc_mothball_target_fleet_cost_count_effect = {
 	optimize_memory
 	random_fleet_in_orbit = {
 		limit = {
@@ -52,17 +66,7 @@ nsc_mothball_target_fleet_cost_count = {
 			}
 		}
 		save_event_target_as = nsc_mothball_target_fleet_$ID$
-		if = {
-			limit = { is_variable_set = nsc_mothball_target_fleet_total_cost_var }
-			clear_variable = nsc_mothball_target_fleet_total_cost_var
-		}
-		every_owned_ship = {
-			export_trigger_value_to_variable = { trigger = has_hp variable = nsc_mothball_target_ship_cost_var }
-			divide_variable = { which = nsc_mothball_target_ship_cost_var value = 100 }
-			multiply_variable = { which = nsc_mothball_target_ship_cost_var value = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_cost_var }
-			prev = { change_variable = { which = nsc_mothball_target_fleet_total_cost_var value = prev.nsc_mothball_target_ship_cost_var } }
-			clear_variable = nsc_mothball_target_ship_cost_var
-		}
+		nsc_mothball_target_fleet_repair_cost_calc_effect = yes
 	}
 }
 nsc_mothball_target_fleet_selecting_effect = {
@@ -86,16 +90,7 @@ nsc_mothball_target_fleet_selecting_effect = {
 						has_fleet_flag = nsc_mothball_temporal_target_8
 						has_fleet_flag = nsc_mothball_temporal_target_9
 						has_fleet_flag = nsc_mothball_temporal_target_10
-						has_fleet_flag = nsc_mothballed_fleet_1
-						has_fleet_flag = nsc_mothballed_fleet_2
-						has_fleet_flag = nsc_mothballed_fleet_3
-						has_fleet_flag = nsc_mothballed_fleet_4
-						has_fleet_flag = nsc_mothballed_fleet_5
-						has_fleet_flag = nsc_mothballed_fleet_6
-						has_fleet_flag = nsc_mothballed_fleet_7
-						has_fleet_flag = nsc_mothballed_fleet_8
-						has_fleet_flag = nsc_mothballed_fleet_9
-						has_fleet_flag = nsc_mothballed_fleet_10
+						nsc_mothball_target_fleet_all_flags_trigger = yes
 					}
 				}
 				if = {
@@ -193,16 +188,16 @@ nsc_mothball_target_fleet_selecting_effect = {
 		}
 		clear_variable = nsc_mothball_target_fleet_count_var
 		set_planet_flag = nsc_mothball_target_fleets_counting_stopped
-		nsc_mothball_target_fleet_cost_count = { ID = 1 }
-		nsc_mothball_target_fleet_cost_count = { ID = 2 }
-		nsc_mothball_target_fleet_cost_count = { ID = 3 }
-		nsc_mothball_target_fleet_cost_count = { ID = 4 }
-		nsc_mothball_target_fleet_cost_count = { ID = 5 }
-		nsc_mothball_target_fleet_cost_count = { ID = 6 }
-		nsc_mothball_target_fleet_cost_count = { ID = 7 }
-		nsc_mothball_target_fleet_cost_count = { ID = 8 }
-		nsc_mothball_target_fleet_cost_count = { ID = 9 }
-		nsc_mothball_target_fleet_cost_count = { ID = 10 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 1 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 2 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 3 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 4 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 5 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 6 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 7 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 8 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 9 }
+		nsc_mothball_target_fleet_cost_count_effect = { ID = 10 }
 	}
 }
 nsc_mothball_target_fleet_mothball_start_effect = {
@@ -225,17 +220,44 @@ nsc_mothball_target_fleet_mothball_start_effect = {
 		planet_event = { id = nsc_events_mothball.menu }
 	}
 }
+nsc_mothball_target_fleet_repair_time_calc_effect = {
+	export_trigger_value_to_variable = { trigger = count_owned_ship variable = nsc_fleet_in_mothball_repair_timer_var }
+	multiply_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = 30 } #30 days per each ship
+
+	#divide the value by 100 and multiply by pre-set number (e.g. the default is 20, so it's 20% of the value) to get its percentage
+	divide_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = 100 }
+	multiply_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_time_var }
+
+	ceiling_variable = nsc_fleet_in_mothball_repair_timer_var #Rounds a previously-set variable 'up' to the next integer.
+	if = { #if the fleet is already being restored
+		limit = { is_variable_set = nsc_fleet_in_mothball_spent_time_for_repair_var }
+		subtract_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = nsc_fleet_in_mothball_spent_time_for_repair_count_var }
+	}
+
+	fleet_event = { id = nsc_events_mothball.2 days = 1 } #why 'days' here only accepts integers but variables or script values? #I'm sad... :(
+	clear_variable = nsc_mothball_target_fleet_total_cost_var
+}
 nsc_mothball_target_fleet_mothball_stop_effect = {
 	optimize_memory
 	custom_tooltip = nsc_events_mothball.menu.fleet_mothball_stop.tooltip
 	owner = { add_resource = { alloys = -1 mult = event_target:nsc_mothball_target_fleet_$ID$.nsc_mothball_target_fleet_total_cost_var } }
 	hidden_effect = {
-		event_target:nsc_mothball_target_fleet_$ID$ = {
-			set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = @nsc_fleet_in_mothball_repair_time }
-			fleet_event = { id = nsc_events_mothball.2 days = @nsc_fleet_in_mothball_repair_time }
-			fleet_event = { id = nsc_events_mothball.3 days = 1 }
-			clear_variable = nsc_mothball_target_fleet_total_cost_var
-		}
+		event_target:nsc_mothball_target_fleet_$ID$ = { nsc_mothball_target_fleet_repair_time_calc_effect = yes }
 		planet_event = { id = nsc_events_mothball.menu }
+	}
+}
+nsc_mothball_target_fleet_remove_all_flags_effect = {
+	switch = {
+		trigger = has_fleet_flag
+		nsc_mothball_temporal_target_1 = { remove_fleet_flag = nsc_mothball_temporal_target_1 }
+		nsc_mothball_temporal_target_2 = { remove_fleet_flag = nsc_mothball_temporal_target_2 }
+		nsc_mothball_temporal_target_3 = { remove_fleet_flag = nsc_mothball_temporal_target_3 }
+		nsc_mothball_temporal_target_4 = { remove_fleet_flag = nsc_mothball_temporal_target_4 }
+		nsc_mothball_temporal_target_5 = { remove_fleet_flag = nsc_mothball_temporal_target_5 }
+		nsc_mothball_temporal_target_6 = { remove_fleet_flag = nsc_mothball_temporal_target_6 }
+		nsc_mothball_temporal_target_7 = { remove_fleet_flag = nsc_mothball_temporal_target_7 }
+		nsc_mothball_temporal_target_8 = { remove_fleet_flag = nsc_mothball_temporal_target_8 }
+		nsc_mothball_temporal_target_9 = { remove_fleet_flag = nsc_mothball_temporal_target_9 }
+		nsc_mothball_temporal_target_10 = { remove_fleet_flag = nsc_mothball_temporal_target_10 }
 	}
 }
