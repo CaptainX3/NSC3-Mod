@@ -46,6 +46,9 @@ nsc_events_mothball.menu.fleet_5_mothball_stop:0 "Reactivate §Y[nsc_mothball_ta
 nsc_events_mothball.menu.fleet_5_mothball_restoration_in_progress:0 "Reactivating [nsc_mothball_target_fleet_2.GetName]  (£time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days)"
 nsc_events_mothball.menu.fleet_5_mothball_restoration_timer.tooltip:0 "Time to Reactivation: £time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days"
 
+NSC_EVENTS_MOTHBALL_MESSAGE_TITLE:0 "Mothballed Fleet Restored"
+NSC_EVENTS_MOTHBALL_MESSAGE_DESC:0 "The §Y[From.GetName]§! fleet has been repaired after being mothballed on the [This.Orbit.GetName] planet."
+
 nsc_events_mothball.5.name:0 "Fleets Lost at [From.GetName]"
 nsc_events_mothball.5.desc:0 "When [From.GetName] was lost to the enemy, our Mothballed fleets were destroyed by our staff to ensure they did not fall into enemy hands."
 nsc_events_mothball.5.a:0 "A dark day for [This.GetName]."
