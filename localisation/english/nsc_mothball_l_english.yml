@@ -7,7 +7,7 @@
 ###########################
 
 decision_nsc_mothball_menu:0 "Fleet Mothballing"
-decision_nsc_mothball_menu_desc:0 "Allows you to deactivate and reserve fleets, lowering their upkeep and naval capacity usage." #a UI element in the mod menu refers this description #so don't change it to something like: Click here to open it! #people will be confused #except that, it's okay to change it :)
+decision_nsc_mothball_menu_desc:0 "Allows us to deactivate and reserve fleets, lowering their upkeep and naval capacity usage." #a UI element in the mod menu refers this description #so don't change it to something like: Click here to open it! #people will be confused #except that, it's okay to change it :)
 decision_nsc_mothball_menu_trigger.fail:0 "£trigger_no£ §RYou must have a fleet owned by you in orbit above this planet to use this feature.§!\n\n§Y(If you are unable to use this feature, click on each mothballed fleet and right click the planet to ensure they are marked as 'in orbit'.§!"
 decision_nsc_mothball_menu_tooltip:0 "Opens the Fleet Mothball Control Panel."
 nsc_events_mothball.menu.name:0 "Fleet Mothball Control"

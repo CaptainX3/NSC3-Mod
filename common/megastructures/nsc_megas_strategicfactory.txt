@@ -15,6 +15,7 @@ nsc_strategic_resource_factory_0 = {
 		cost = {
 			alloys = 25000
 			unity = 500
+			multiplier = value:nsc_strategic_resource_factory_build_cost
 		}
 		upkeep = { energy = 5 }
 	}
@@ -105,7 +106,11 @@ nsc_strategic_resource_factory_1 = {
 
 	resources = {
 		category = megastructures
-		cost = { alloys = 30000 unity = 2500 }
+		cost = {
+			alloys = 30000
+			unity = 2500
+			multiplier = value:nsc_strategic_resource_factory_build_cost
+		}
 		produces = {
 			volatile_motes = 25
 			exotic_gases = 25
@@ -114,10 +119,12 @@ nsc_strategic_resource_factory_1 = {
 			nanites = 25
 			sr_zro = 25
 			sr_living_metal = 25
+			multiplier = value:nsc_strategic_resource_factory_resource_produce
 		}
 		upkeep = {
 			energy = 500
 			minerals = 500
+			multiplier = value:nsc_strategic_resource_factory_resource_upkeep
 		}
 	}
 	
