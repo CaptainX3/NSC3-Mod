@@ -18,6 +18,7 @@ hyperlane_creator_emisor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 	
@@ -74,6 +75,7 @@ hyperlane_creator_emisor_1 = {
 			alloys = 2000
 			energy = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 	
@@ -98,7 +100,11 @@ hyperlane_creator_emisor_2 = {
 	
 	resources = {
 		category = megastructures
-		cost = { energy = 10000 unity = 500 }
+		cost = {
+			energy = 10000
+			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
+		}
 	}
 	
 	upgrade_from = { hyperlane_creator_emisor_1 }
@@ -133,6 +139,7 @@ hyperlane_creator_receptor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 
@@ -209,6 +216,7 @@ hyperlane_creator_receptor_1 = {
 			alloys = 2000
 			energy = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 	
@@ -242,6 +250,7 @@ hyperlane_remover_emisor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}	
 
@@ -295,6 +304,7 @@ hyperlane_remover_emisor_1 = {
 			alloys = 2000
 			energy = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 	
@@ -319,7 +329,11 @@ hyperlane_remover_emisor_2 = {
 	
 	resources = {
 		category = megastructures
-		cost = { energy = 10000 unity = 500 }
+		cost = {
+			energy = 10000
+			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
+		}
 	}
 	
 	upgrade_from = { hyperlane_remover_emisor_1 }
@@ -354,6 +368,7 @@ hyperlane_remover_receptor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 	
@@ -430,6 +445,7 @@ hyperlane_remover_receptor_1 = {
 			alloys = 2000
 			energy = 2000
 			unity = 500
+			multiplier = value:nsc_hyperlane_creator_emisor_build_cost
 		}
 	}
 	
