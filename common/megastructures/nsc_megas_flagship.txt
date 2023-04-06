@@ -23,6 +23,7 @@ nsc_flagship_shipyard = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 	}
 
@@ -130,6 +131,7 @@ nsc_flagship_bow = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 
 	}
@@ -164,6 +166,7 @@ nsc_flagship_mid_1 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 	}
 
@@ -195,6 +198,7 @@ nsc_flagship_mid_2 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 	}
 
@@ -228,6 +232,7 @@ nsc_flagship_mid_3 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 	}
 
@@ -259,6 +264,7 @@ nsc_flagship_mid_4 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 	}
 
@@ -290,6 +296,7 @@ nsc_flagship_stern = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+			multiplier = value:nsc_flagship_build_upkeep
 		}
 	}
 
