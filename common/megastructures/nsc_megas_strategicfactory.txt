@@ -22,6 +22,10 @@ nsc_strategic_resource_factory_0 = {
 			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_build_cost_var
 		}
 		upkeep = { energy = 5 }
+		upkeep = {
+			energy = 0.05
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var
+		}
 	}
 	
 	potential = {
