@@ -14,7 +14,11 @@ nsc_flagship_shipyard = {
 		cost = {
 			alloys = 4000
 			influence = @nsc_flagship_influence_cost
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			influence = @nsc_flagship_influence_cost_1_percent
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -23,7 +27,11 @@ nsc_flagship_shipyard = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 
@@ -122,7 +130,10 @@ nsc_flagship_bow = {
 		category = megastructures
 		cost = {
 			alloys = 4000
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -131,9 +142,12 @@ nsc_flagship_bow = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
 		}
-
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
@@ -157,7 +171,10 @@ nsc_flagship_mid_1 = {
 		category = megastructures
 		cost = {
 			alloys = 4000
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -166,7 +183,11 @@ nsc_flagship_mid_1 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 
@@ -189,7 +210,10 @@ nsc_flagship_mid_2 = {
 		category = megastructures
 		cost = {
 			alloys = 4000
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -198,7 +222,11 @@ nsc_flagship_mid_2 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 
@@ -223,7 +251,10 @@ nsc_flagship_mid_3 = {
 		category = megastructures
 		cost = {
 			alloys = 4000
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -232,7 +263,11 @@ nsc_flagship_mid_3 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 
@@ -255,7 +290,10 @@ nsc_flagship_mid_4 = {
 		category = megastructures
 		cost = {
 			alloys = 4000
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -264,7 +302,11 @@ nsc_flagship_mid_4 = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 
@@ -287,7 +329,10 @@ nsc_flagship_stern = {
 		category = megastructures
 		cost = {
 			alloys = 4000
-			multiplier = value:nsc_flagship_build_cost
+		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
 		}
 		produces = {
 			influence = 3
@@ -296,7 +341,11 @@ nsc_flagship_stern = {
 		upkeep = {
 			energy = 50
 			alloys = 50
-			multiplier = value:nsc_flagship_build_upkeep
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 

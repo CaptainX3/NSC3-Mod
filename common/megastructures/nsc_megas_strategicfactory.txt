@@ -15,7 +15,11 @@ nsc_strategic_resource_factory_0 = {
 		cost = {
 			alloys = 25000
 			unity = 500
-			multiplier = value:nsc_strategic_resource_factory_build_cost
+		}
+		cost = {
+			alloys = 250
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_build_cost_var
 		}
 		upkeep = { energy = 5 }
 	}
@@ -109,7 +113,11 @@ nsc_strategic_resource_factory_1 = {
 		cost = {
 			alloys = 30000
 			unity = 2500
-			multiplier = value:nsc_strategic_resource_factory_build_cost
+		}
+		cost = {
+			alloys = 300
+			unity = 25
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_build_cost_var
 		}
 		produces = {
 			volatile_motes = 25
@@ -119,12 +127,25 @@ nsc_strategic_resource_factory_1 = {
 			nanites = 25
 			sr_zro = 25
 			sr_living_metal = 25
-			multiplier = value:nsc_strategic_resource_factory_resource_produce
+		}
+		produces = {
+			volatile_motes = 0.25
+			exotic_gases = 0.25
+			sr_dark_matter = 0.25
+			rare_crystals = 0.25
+			nanites = 0.25
+			sr_zro = 0.25
+			sr_living_metal = 0.25
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_resource_produce_var
 		}
 		upkeep = {
 			energy = 500
 			minerals = 500
-			multiplier = value:nsc_strategic_resource_factory_resource_upkeep
+		}
+		upkeep = {
+			energy = 5
+			minerals = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var
 		}
 	}
 	
