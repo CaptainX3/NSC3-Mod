@@ -986,7 +986,6 @@ Flagship = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #also see: 'nsc_megas_flagship.txt'
 	}
 
-
 	prerequisites = { "tech_Flagship_1" }
 	class = shipclass_military
 	construction_type = starbase_shipyard
