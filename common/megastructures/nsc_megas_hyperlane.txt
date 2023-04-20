@@ -96,6 +96,7 @@ hyperlane_creator_emisor_1 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
 
@@ -132,6 +133,7 @@ hyperlane_creator_emisor_2 = {
 			fail_text = "requires_existing_generator_receptor"
 			from = { has_megastructure = hyperlane_creator_receptor_1 }	
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 
 	on_build_complete = { from = { country_event = { id = nsc_events_hyperlane_gen.1 } } }
@@ -250,6 +252,7 @@ hyperlane_creator_receptor_1 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
 
@@ -347,6 +350,7 @@ hyperlane_remover_emisor_1 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
 
@@ -383,6 +387,7 @@ hyperlane_remover_emisor_2 = {
 			fail_text = "requires_existing_remover_receptor"
 			from = { has_megastructure = hyperlane_remover_receptor_1 }	
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 
 	on_build_complete = { from = { country_event = { id = nsc_events_hyperlane_gen.3 } } }
@@ -501,5 +506,6 @@ hyperlane_remover_receptor_1 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }

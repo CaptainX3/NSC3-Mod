@@ -153,5 +153,9 @@ nsc_strategic_resource_factory_1 = {
 		}
 	}
 	
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+	}
+
 	upgrade_from = { nsc_strategic_resource_factory_0 }
 }

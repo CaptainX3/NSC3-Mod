@@ -53,6 +53,7 @@ nsc_hospital_0 = {
 			fail_text = "requires_no_existing_hospital"
 			from = { NOT = { has_country_flag = built_nsc_hospital } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
 	}
 	placement_rules = {
 		planet_possible = {
@@ -186,6 +187,10 @@ nsc_hospital_1 = {
 	
 	upgrade_from = { nsc_hospital_0 }
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+	}
+	
 	country_modifier = { job_diagnostician_add = 1 }
 }
 
@@ -252,6 +257,10 @@ nsc_hospital_2 = {
 	
 	upgrade_from = { nsc_hospital_1 }
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+	}
+	
 	country_modifier = { job_diagnostician_add = 2 }
 }
 
@@ -317,6 +326,10 @@ nsc_hospital_3 = {
 	}
 	
 	upgrade_from = { nsc_hospital_2 }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+	}
 
 	country_modifier = { job_diagnostician_add = 3 }
 }

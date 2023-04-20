@@ -53,6 +53,7 @@ nsc_galactic_mall_0 = {
 			fail_text = "requires_no_existing_mall"
 			from = { NOT = { has_country_flag = built_nsc_mall } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
 	}
 	placement_rules = {
 		planet_possible = {
@@ -161,6 +162,10 @@ nsc_galactic_mall_1 = {
 	}
 	
 	upgrade_from = { nsc_galactic_mall_0 }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+	}
 
 	country_modifier = { diplo_weight_mult = 0.15 country_unity_produces_mult = 0.1 }
 }

@@ -154,6 +154,10 @@ nsc_flagship_bow = {
 		nsc_flagship_shipyard
 	}
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
+
 	prerequisites = { "tech_Flagship_1" }
 
 	on_build_start = { from = { country_event = { id = nsc_events_flagship.2 } } }
@@ -193,6 +197,10 @@ nsc_flagship_mid_1 = {
 
 	upgrade_from = {
 		nsc_flagship_bow
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -236,6 +244,10 @@ nsc_flagship_mid_2 = {
 
 	prerequisites = { "tech_Flagship_1" }
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
+
 	on_build_complete = { from = { country_event = { id = nsc_events_flagship.3 } } }
 }
 
@@ -273,6 +285,10 @@ nsc_flagship_mid_3 = {
 
 	upgrade_from = {
 		nsc_flagship_mid_2
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -314,6 +330,10 @@ nsc_flagship_mid_4 = {
 		nsc_flagship_mid_3
 	}
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
+
 	prerequisites = { "tech_Flagship_1" }
 }
 
@@ -353,6 +373,10 @@ nsc_flagship_stern = {
 		nsc_flagship_mid_4
 	}
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
+
 	prerequisites = { "tech_Flagship_1" }
 	on_build_complete = {
 		fromfrom = {
@@ -389,6 +413,10 @@ nsc_flagship_complete = {
 	}
 
 	prerequisites = { "tech_Flagship_1" }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
 
 	on_build_complete = {
 		from = { country_event = { id = nsc_events_flagship.4 } }
