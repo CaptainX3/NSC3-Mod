@@ -16,7 +16,16 @@ nsc_strategic_resource_factory_0 = {
 			alloys = 25000
 			unity = 500
 		}
+		cost = {
+			alloys = 250
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_build_cost_var
+		}
 		upkeep = { energy = 5 }
+		upkeep = {
+			energy = 0.05
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var
+		}
 	}
 	
 	potential = {
@@ -44,8 +53,8 @@ nsc_strategic_resource_factory_0 = {
 			fail_text = "requires_no_existing_nsc_factory"
 			from = { NOT = { has_country_flag = built_nsc_factory } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy } #also see: 'ap_nsc_matterenergy'
 	}
-
 
 	placement_rules = {
 		planet_possible = {
@@ -105,7 +114,15 @@ nsc_strategic_resource_factory_1 = {
 
 	resources = {
 		category = megastructures
-		cost = { alloys = 30000 unity = 2500 }
+		cost = {
+			alloys = 30000
+			unity = 2500
+		}
+		cost = {
+			alloys = 300
+			unity = 25
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_build_cost_var
+		}
 		produces = {
 			volatile_motes = 25
 			exotic_gases = 25
@@ -115,11 +132,30 @@ nsc_strategic_resource_factory_1 = {
 			sr_zro = 25
 			sr_living_metal = 25
 		}
+		produces = {
+			volatile_motes = 0.25
+			exotic_gases = 0.25
+			sr_dark_matter = 0.25
+			rare_crystals = 0.25
+			nanites = 0.25
+			sr_zro = 0.25
+			sr_living_metal = 0.25
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_resource_produce_var
+		}
 		upkeep = {
 			energy = 500
 			minerals = 500
 		}
+		upkeep = {
+			energy = 5
+			minerals = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var
+		}
 	}
 	
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+	}
+
 	upgrade_from = { nsc_strategic_resource_factory_0 }
 }

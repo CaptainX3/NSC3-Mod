@@ -1,8 +1,6 @@
-name="NSC2 Developer Edition"
+name="NSC2 Developer Edition (XVCV)"
+version="1.0"
 tags={
-	"Spaceships"
-	"Gameplay"
-	"Technologies"
+	"Utilities"
 }
 supported_version="3.7.*"
-path="C:/Users/timdg/Documents/Paradox Interactive/Stellaris/mod/newshipclasses2-testing"

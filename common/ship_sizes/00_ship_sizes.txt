@@ -501,6 +501,11 @@ StrikeCruiser = {
 			alloys = 0.6
 		}
 	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
+	}
+	
 	min_upgrade_cost = { alloys = 5 }
 
 	ai_ship_data = {
@@ -569,6 +574,11 @@ Battlecruiser = {
 			alloys = 0.7
 		}
 	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
+	}
+
 	min_upgrade_cost = { alloys = 6 }
 
 	ai_ship_data = {
@@ -725,6 +735,11 @@ Carrier = {
 			alloys = 1.0
 		}
 	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
+	}
+
 	min_upgrade_cost = { alloys = 10 }
 
 	ai_ship_data = {
@@ -792,6 +807,11 @@ Dreadnought = {
 			alloys = 1.2
 		}
 	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }
+	}
+
 	min_upgrade_cost = { alloys = 12 }
 
 	ai_ship_data = {
@@ -845,8 +865,6 @@ titan = {
 
 	prerequisites = { "tech_titans" }
 	
-	
-
 	combat_disengage_chance = 1.25
 
 	class = shipclass_military
@@ -949,7 +967,7 @@ Flagship = {
 	fleet_slot_size = 24
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "mid4" = { locator = "part5" } "stern" = { locator = "part6" } }
 	num_target_locators = 4
-	icon = nsc_ship_size_military_20
+	icon = nsc_ship_size_military_18
 	combat_disengage_chance = 0.50
 
 	is_space_station = no
@@ -965,8 +983,8 @@ Flagship = {
 			text = nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail
 			always = no
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #also see: 'nsc_megas_flagship.txt'
 	}
-
 
 	prerequisites = { "tech_Flagship_1" }
 	class = shipclass_military
@@ -1413,7 +1431,7 @@ explorationship = {
 	fleet_slot_size = 5
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
 	num_target_locators = 0
-	icon = shipclass_science_ship
+	icon = nsc_ship_size_military_14
 	base_buildtime = 320
 	use_shipnames_from = science
 	combat_disengage_chance = 2.0
@@ -1436,6 +1454,11 @@ explorationship = {
 			alloys = 5
 		}
 	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } #also see: 'nsc_events_exploration_ship.10'
+	}
+
 	min_upgrade_cost = { alloys = 5 }
 
 	required_component_set = "power_core"

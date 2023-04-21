@@ -164,15 +164,6 @@ country_event = {
 		fromfrom = { is_ship_size = Flagship }
 	}
 
-	immediate = {
-		fromfrom.fleet.leader = {
-			random_list = {
-				60 = {}
-				40 = { kill_leader = { show_notification = yes } }
-			}
-		}
-	}
-
 	option = {
 		name = nsc_events_flagship.7.a
 		custom_tooltip = nsc_events_flagship.7.a.tooltip

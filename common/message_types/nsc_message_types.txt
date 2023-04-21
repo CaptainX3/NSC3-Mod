@@ -1,0 +1,10 @@
+message_type = {
+	key = "NSC_EVENTS_MOTHBALL_MESSAGE_TYPE"
+	icon = "GFX_message_repairs_complete"
+	icon_frame = 1
+
+	name = "NSC_EVENTS_MOTHBALL_MESSAGE_TITLE"
+	sound = "notification_repair_fleet"
+
+	ping = "ping_notification_green"
+}

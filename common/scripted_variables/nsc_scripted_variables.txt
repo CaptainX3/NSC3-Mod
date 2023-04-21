@@ -1,4 +1,3 @@
 @nsc_flagship_alloys_cost = 10200
 @nsc_flagship_influence_cost = 600
-
-@nsc_fleet_in_mothball_repair_time = 360
+@nsc_flagship_influence_cost_1_percent = 6

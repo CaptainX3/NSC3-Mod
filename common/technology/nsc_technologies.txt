@@ -445,6 +445,7 @@ tech_Flagship_1 = {
                 has_technology = tech_titans
             }
         }
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #some other techs require this one so I decided not to lock it
     }
 	
 	gateway = ship
@@ -2395,7 +2396,11 @@ tech_hyperlane_generation = {
 			desc = "TECH_UNLOCK_HYPERLANE_GENERATION_DESC"
 		}
 	}
-	
+
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
+	}
+
 	weight_modifier = {
 		factor = 0.5
 		modifier = {

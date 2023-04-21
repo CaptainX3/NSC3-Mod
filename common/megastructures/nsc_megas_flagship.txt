@@ -15,6 +15,11 @@ nsc_flagship_shipyard = {
 			alloys = 4000
 			influence = @nsc_flagship_influence_cost
 		}
+		cost = {
+			alloys = 40
+			influence = @nsc_flagship_influence_cost_1_percent
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -22,6 +27,11 @@ nsc_flagship_shipyard = {
 		upkeep = {
 			energy = 50
 			alloys = 50
+		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
 		}
 	}
 
@@ -52,6 +62,7 @@ nsc_flagship_shipyard = {
 				}
 			}
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	placement_rules = {
@@ -120,6 +131,10 @@ nsc_flagship_bow = {
 		cost = {
 			alloys = 4000
 		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -128,11 +143,19 @@ nsc_flagship_bow = {
 			energy = 50
 			alloys = 50
 		}
-
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
 		nsc_flagship_shipyard
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -153,6 +176,10 @@ nsc_flagship_mid_1 = {
 		cost = {
 			alloys = 4000
 		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -161,10 +188,19 @@ nsc_flagship_mid_1 = {
 			energy = 50
 			alloys = 50
 		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
 		nsc_flagship_bow
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -183,6 +219,10 @@ nsc_flagship_mid_2 = {
 		cost = {
 			alloys = 4000
 		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -191,6 +231,11 @@ nsc_flagship_mid_2 = {
 			energy = 50
 			alloys = 50
 		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
@@ -198,6 +243,10 @@ nsc_flagship_mid_2 = {
 	}
 
 	prerequisites = { "tech_Flagship_1" }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
 
 	on_build_complete = { from = { country_event = { id = nsc_events_flagship.3 } } }
 }
@@ -215,6 +264,10 @@ nsc_flagship_mid_3 = {
 		cost = {
 			alloys = 4000
 		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -223,10 +276,19 @@ nsc_flagship_mid_3 = {
 			energy = 50
 			alloys = 50
 		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
 		nsc_flagship_mid_2
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -245,6 +307,10 @@ nsc_flagship_mid_4 = {
 		cost = {
 			alloys = 4000
 		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -253,10 +319,19 @@ nsc_flagship_mid_4 = {
 			energy = 50
 			alloys = 50
 		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
 		nsc_flagship_mid_3
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -275,6 +350,10 @@ nsc_flagship_stern = {
 		cost = {
 			alloys = 4000
 		}
+		cost = {
+			alloys = 40
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_cost_var
+		}
 		produces = {
 			influence = 3
 			unity = 25
@@ -283,10 +362,19 @@ nsc_flagship_stern = {
 			energy = 50
 			alloys = 50
 		}
+		upkeep = {
+			energy = 0.5
+			alloys = 0.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_ship_class_Flagship_build_upkeep_var
+		}
 	}
 
 	upgrade_from = {
 		nsc_flagship_mid_4
+	}
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -302,6 +390,7 @@ nsc_flagship_complete = {
 	construction_entity = "flagship_construction_yard_entity"
 	portrait = GFX_megastructure_construction_background
 	place_entity_on_planet_plane = no
+	show_in_outliner = no
 	entity_offset = { x = @nsc_flagship_entity_offset_x y = @nsc_flagship_entity_offset_y }
 	build_time = 250
 	resources = {
@@ -324,6 +413,10 @@ nsc_flagship_complete = {
 	}
 
 	prerequisites = { "tech_Flagship_1" }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
+	}
 
 	on_build_complete = {
 		from = { country_event = { id = nsc_events_flagship.4 } }

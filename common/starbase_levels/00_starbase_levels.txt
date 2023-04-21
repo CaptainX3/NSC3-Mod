@@ -52,6 +52,9 @@ starbase_level_stronghold = {
 	level_weight = 5
 	ai_weight = { weight = 6 }
 	potential_home_base = yes
+	upgrade_possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = levels ID = stronghold }
+	}
 }
 
 starbase_level_headquarters = {
@@ -59,6 +62,9 @@ starbase_level_headquarters = {
 	level_weight = 6
 	ai_weight = { weight = 7 }
 	potential_home_base = yes
+	upgrade_possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = levels ID = headquarters }
+	}
 }
 
 starbase_level_hq = {

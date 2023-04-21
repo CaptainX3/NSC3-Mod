@@ -19,6 +19,11 @@ hyperlane_creator_emisor_0 = {
 			alloys = 2000
 			unity = 500
 		}
+		cost = {
+			alloys = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	potential = {
@@ -54,6 +59,7 @@ hyperlane_creator_emisor_0 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }
@@ -74,6 +80,12 @@ hyperlane_creator_emisor_1 = {
 			energy = 2000
 			unity = 500
 		}
+		cost = {
+			alloys = 20
+			energy = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	upgrade_from = { hyperlane_creator_emisor_0 }
@@ -84,6 +96,7 @@ hyperlane_creator_emisor_1 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
 
@@ -97,7 +110,15 @@ hyperlane_creator_emisor_2 = {
 	
 	resources = {
 		category = megastructures
-		cost = { energy = 10000 unity = 500 }
+		cost = {
+			energy = 10000
+			unity = 500
+		}
+		cost = {
+			energy = 100
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	upgrade_from = { hyperlane_creator_emisor_1 }
@@ -112,6 +133,7 @@ hyperlane_creator_emisor_2 = {
 			fail_text = "requires_existing_generator_receptor"
 			from = { has_megastructure = hyperlane_creator_receptor_1 }	
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 
 	on_build_complete = { from = { country_event = { id = nsc_events_hyperlane_gen.1 } } }
@@ -132,6 +154,11 @@ hyperlane_creator_receptor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+		}
+		cost = {
+			alloys = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
 		}
 	}
 
@@ -188,6 +215,7 @@ hyperlane_creator_receptor_0 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }
@@ -208,6 +236,12 @@ hyperlane_creator_receptor_1 = {
 			energy = 2000
 			unity = 500
 		}
+		cost = {
+			alloys = 20
+			energy = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	upgrade_from = { hyperlane_creator_receptor_0 }
@@ -218,6 +252,7 @@ hyperlane_creator_receptor_1 = {
 			fail_text = "requires_technology_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
 
@@ -240,6 +275,11 @@ hyperlane_remover_emisor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+		}
+		cost = {
+			alloys = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
 		}
 	}	
 
@@ -273,6 +313,7 @@ hyperlane_remover_emisor_0 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }
@@ -293,6 +334,12 @@ hyperlane_remover_emisor_1 = {
 			energy = 2000
 			unity = 500
 		}
+		cost = {
+			alloys = 20
+			energy = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	upgrade_from = { hyperlane_remover_emisor_0 }
@@ -303,6 +350,7 @@ hyperlane_remover_emisor_1 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
 
@@ -316,7 +364,15 @@ hyperlane_remover_emisor_2 = {
 	
 	resources = {
 		category = megastructures
-		cost = { energy = 10000 unity = 500 }
+		cost = {
+			energy = 10000
+			unity = 500
+		}
+		cost = {
+			energy = 100
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	upgrade_from = { hyperlane_remover_emisor_1 }
@@ -331,6 +387,7 @@ hyperlane_remover_emisor_2 = {
 			fail_text = "requires_existing_remover_receptor"
 			from = { has_megastructure = hyperlane_remover_receptor_1 }	
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 
 	on_build_complete = { from = { country_event = { id = nsc_events_hyperlane_gen.3 } } }
@@ -351,6 +408,11 @@ hyperlane_remover_receptor_0 = {
 		cost = {
 			alloys = 2000
 			unity = 500
+		}
+		cost = {
+			alloys = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
 		}
 	}
 	
@@ -407,6 +469,7 @@ hyperlane_remover_receptor_0 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } #also see: 'tech_hyperlane_generation'
 	}
 
 	ai_weight = { factor = 0 }
@@ -427,6 +490,12 @@ hyperlane_remover_receptor_1 = {
 			energy = 2000
 			unity = 500
 		}
+		cost = {
+			alloys = 20
+			energy = 20
+			unity = 5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var
+		}
 	}
 	
 	upgrade_from = { hyperlane_remover_receptor_0 }
@@ -437,5 +506,6 @@ hyperlane_remover_receptor_1 = {
 			fail_text = "requires_tech_hyperlane_generation"
 			from = { has_technology = tech_hyperlane_generation }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	}
 }
