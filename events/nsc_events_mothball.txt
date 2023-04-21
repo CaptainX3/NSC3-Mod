@@ -122,43 +122,14 @@ planet_event = {
 	option = {
 		name = nsc_events_mothball.menu.close
 		hidden_effect = {
-			every_fleet_in_orbit = {
-				switch = {
-					trigger = has_fleet_flag
-					nsc_mothball_temporal_target_1 = { remove_fleet_flag = nsc_mothball_temporal_target_1 }
-					nsc_mothball_temporal_target_2 = { remove_fleet_flag = nsc_mothball_temporal_target_2 }
-					nsc_mothball_temporal_target_3 = { remove_fleet_flag = nsc_mothball_temporal_target_3 }
-					nsc_mothball_temporal_target_4 = { remove_fleet_flag = nsc_mothball_temporal_target_4 }
-					nsc_mothball_temporal_target_5 = { remove_fleet_flag = nsc_mothball_temporal_target_5 }
-				}
-			}
+			every_fleet_in_orbit = { nsc_mothball_target_fleet_remove_all_flags_effect = yes }
 			remove_planet_flag = nsc_mothball_target_fleets_counting_stopped
 		}
 	}
 }
-fleet_event = {
-	id = nsc_events_mothball.2
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		every_owned_ship = { set_disabled = no }
-		remove_modifier = nsc_ship_in_mothball
-		switch = {
-			trigger = has_fleet_flag
-			nsc_mothballed_fleet_1 = { remove_fleet_flag = nsc_mothballed_fleet_1 }
-			nsc_mothballed_fleet_2 = { remove_fleet_flag = nsc_mothballed_fleet_2 }
-			nsc_mothballed_fleet_3 = { remove_fleet_flag = nsc_mothballed_fleet_3 }
-			nsc_mothballed_fleet_4 = { remove_fleet_flag = nsc_mothballed_fleet_4 }
-			nsc_mothballed_fleet_5 = { remove_fleet_flag = nsc_mothballed_fleet_5 }
-		}
-		clear_variable = nsc_fleet_in_mothball_repair_timer_var
-		#to do: add a notification here #using 'create_message' effect
-	}
-}
 #fleet in mothball repair timer #this one is a fleet event so that 'nsc_fleet_in_mothball_repair_timer_var' variable won't conflict with each other
 fleet_event = {
-	id = nsc_events_mothball.3
+	id = nsc_events_mothball.2
 	hide_window = yes
 	is_triggered_only = yes
 
@@ -167,8 +138,34 @@ fleet_event = {
 	}
 
 	immediate = {
+		change_variable = { which = nsc_fleet_in_mothball_spent_time_for_repair_var value = 1 }
 		change_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = -1 }
-		fleet_event = { id = nsc_events_mothball.3 days = 1 }
+		if = {
+			limit = { check_variable = { which = nsc_fleet_in_mothball_repair_timer_var value > 0 } }
+			fleet_event = { id = nsc_events_mothball.2 days = 1 }
+			else = { fleet_event = { id = nsc_events_mothball.3 } }
+		}
+	}
+}
+fleet_event = {
+	id = nsc_events_mothball.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		every_owned_ship = { set_disabled = no }
+		remove_modifier = nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod
+		remove_modifier = nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod
+		nsc_mothball_target_fleet_remove_all_flags_effect = yes
+		clear_variable = nsc_fleet_in_mothball_spent_time_for_repair_var
+		#[20:26:13][game_text.cpp:1086]: Unknown property `nsc_fleet_in_mothball_repair_timer_var` in text: nsc_fleet_in_mothball_repair_timer_var]§! Days
+		set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = 0 } #clear_variable = nsc_fleet_in_mothball_repair_timer_var
+		create_message = {
+			type = NSC_EVENTS_MOTHBALL_MESSAGE_TYPE
+			localization = NSC_EVENTS_MOTHBALL_MESSAGE_DESC
+			days = 10
+			target = this
+		}
 	}
 }
 #scuttle the fleet when the planet is occupied by enemy
@@ -180,12 +177,12 @@ planet_event = {
 	trigger = {
 		exists = from
 		exists = fromfrom
-		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all = yes }
+		any_fleet_in_orbit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
 	}
 
 	immediate = {
 		every_fleet_in_orbit = {
-			limit = { nsc_mothball_target_fleet_flag_all = yes }
+			limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
 			destroy_fleet = this
 		}
 		from = { country_event = { id = nsc_events_mothball.5 } }
@@ -228,12 +225,12 @@ planet_event = {
 
 	trigger = {
 		exists = from
-		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all = yes }
+		any_fleet_in_orbit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
 	}
 
 	immediate = {
 		every_fleet_in_orbit = {
-			limit = { nsc_mothball_target_fleet_flag_all = yes }
+			limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
 			destroy_fleet = this
 		}
 		from = { country_event = { id = nsc_events_mothball.8 } }
@@ -260,12 +257,12 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		any_fleet_in_orbit = { nsc_mothball_target_fleet_flag_all = yes }
+		any_fleet_in_orbit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
 	}
 
 	immediate = {
 		every_fleet_in_orbit = {
-			limit = { nsc_mothball_target_fleet_flag_all = yes }
+			limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
 			destroy_fleet = this
 		}
 	}
