@@ -1,0 +1,14 @@
+nsc_modmenu_game_content_on_trigger = {
+	optimize_memory
+	custom_tooltip = {
+		fail_text = nsc_modmenu_game_content_disabled.fail #show tooltip only when the global flag is missing
+		OR = {
+			NOT = { has_global_flag = nsc_on_press_begin } #enables all contents until players press begin button #changed to prevent the bug that the starting starport doesn't have any shipyard
+			has_global_flag = nsc_modmenu_game_content_$CATEGORY$_$SUBCAT$_$ID$_on
+		}
+	}
+}
+nsc_modmenu_game_content_check_variable_trigger = {
+	optimize_memory
+	event_target:nsc_modmenu_data_storage = { check_variable = { which = nsc_modmenu_$CATEGORY$_$SUBCAT$_$ID$_$MODIFIER$_var value $SYMBOL$ $VALUE$ } } #even 'value $SYMBOL$' works, wow
+}
