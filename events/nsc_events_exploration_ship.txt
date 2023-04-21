@@ -26,6 +26,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
+		is_ai = no
 		last_increased_tech = tech_hyper_drive_1
 	}
 
@@ -98,6 +99,7 @@ country_event = {
 			limit = { 
 				is_ai = yes
 				is_country_type = default
+				NOT = { any_owned_ship = { is_ship_size = explorationship } }
 			}
 			create_leader = {
 				class = scientist
