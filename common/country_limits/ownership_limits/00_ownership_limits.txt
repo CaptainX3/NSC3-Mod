@@ -21,5 +21,6 @@ default = {
 		space_dragon_origin_babies_limit
 		headquarters_ship_limit
 		explorationship_ship_limit
+		Flagship_ship_limit
 	}
 }
