@@ -40,37 +40,19 @@ expcruiser.04.desc: "We have completed a Science Ship Upgrade project. The Scien
 ### FLAGSHIP EVENT CHAIN ###
 ############################
 
-nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail:0 "§R$TRIGGER_FAIL$§! Due to its size and complexity, only the Flagship Shipyard Megastructure is capable of producing a Flagship-class vessel."
+nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail:0 "§R$TRIGGER_FAIL$§! Due to its size and complexity, only the $nsc_flagship_shipyard$ Megastructure is capable of producing a Flagship-class vessel."
 
-nsc_flagship_shipyard:0 "Flagship Shipyard"
+nsc_flagship_shipyard:0 "Grand Shipyard"
 nsc_flagship_shipyard_DESC:0 "This massive space station is necessary to construct the largest and deadliest warship that the galaxy has ever seen."
 
 nsc_flagship_shipyard_MEGASTRUCTURE_DETAILS:0 "$nsc_flagship_shipyard_DESC$"
 requires_no_existing_nsc_flagship:0 "£trigger_no£ Cannot build more than one Flagship."
 can_not_start_another_nsc_flagship_building:0 "£trigger_no£ Cannot start another Flagship construction project."
 
-nsc_flagship_bow:0 "Flagship Shipyard (Stage 1)"
-nsc_flagship_bow_DESC:0 "Flagship Construction Project: Stage 1 of 6\nThis massive shipyard is home to our Empire's mighty Flagship.\nIt is currently under construction and is approximately 16% complete."
-
-nsc_flagship_mid_1:0 "Flagship Shipyard (Stage 2)"
-nsc_flagship_mid_1_DESC:0 "Flagship Construction Project: Stage 2 of 6\nThis massive shipyard is home to our Empire's mighty Flagship.\nIt is currently under construction and is approximately 33% complete."
-
-nsc_flagship_mid_2:0 "Flagship Shipyard (Stage 3)"
-nsc_flagship_mid_2_DESC:0 "Flagship Construction Project: Stage 3 of 6\nThis massive shipyard is home to our Empire's mighty Flagship.\nIt is currently under construction and is approximately 50% complete."
-
-nsc_flagship_mid_3:0 "Flagship Shipyard (Stage 4)"
-nsc_flagship_mid_3_DESC:0 "Flagship Construction Project: Stage 4 of 6\nThis massive shipyard is home to our Empire's mighty Flagship.\nIt is currently under construction and is approximately 66% complete."
-
-nsc_flagship_mid_4:0 "Flagship Shipyard (Stage 5)"
-nsc_flagship_mid_4_DESC:0 "Flagship Construction Project: Stage 5 of 6\nThis massive shipyard is home to our Empire's mighty Flagship.\nIt is currently under construction and is approximately 83% complete."
-
-nsc_flagship_stern:0 "Flagship Shipyard (Final Stage)"
-nsc_flagship_stern_DESC:0 "Flagship Construction Project: Final Stage\nThis massive shipyard is home to our Empire's mighty Flagship.\nIt is currently under construction and is nearing completion."
-
-nsc_flagship_shipyard_complete:0 "Flagship Shipyard"
+nsc_flagship_shipyard_complete:0 "Grand Shipyard"
 nsc_flagship_shipyard_complete_DESC:0 "This massive shipyard is home to our Empire's mighty Flagship."
 
-nsc_events_flagship.1.name:0 "Flagship Shipyard Ready For Construction"
+nsc_events_flagship.1.name:0 "Grand Shipyard Ready For Construction"
 nsc_events_flagship.1.desc:0 "Our designs for the massive shipyard needed to build the Flagship are complete. We can begin construction of the assembly facility, but our Naval engineers need to finalize one - and only one - design for the utterly gargantuan vessel to be built. We'll only be able to construct one Flagship, so while we'll be able to retrofit and upgrade the vessel after it has been constructed, we need to have one, single design prior to construction."
 nsc_events_flagship.1.a:0 "A ship to change the tide..."
 

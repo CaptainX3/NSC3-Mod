@@ -979,8 +979,8 @@ titan = {
 				OR = {
 					is_megastructure_type = mega_shipyard_3
 					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = nsc_flagship_shipyard_complete
 				}
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
 			}
 		}
 	}
@@ -994,6 +994,7 @@ titan = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -1011,6 +1012,7 @@ titan = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
