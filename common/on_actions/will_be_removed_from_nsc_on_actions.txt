@@ -4,3 +4,10 @@ on_game_start = {
 		nsc_modmenu_etc.1
 	}
 }
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		nsc_modmenu_etc.1
+	}
+}

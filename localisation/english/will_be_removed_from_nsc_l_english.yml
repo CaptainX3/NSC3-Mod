@@ -1,0 +1,6 @@
+﻿l_english:
+
+### 디시인사이드 스텔라리스 갤러리 '어ㅅㅂ' 제작 ###
+
+nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod:0 "Mothballed Fleet"
+nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod:0 "$nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod$"
