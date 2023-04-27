@@ -1,0 +1,227 @@
+
+
+nsc_modmenu_game_content_enable_disable_effect = {
+	optimize_memory
+	$EFFECT$ = nsc_modmenu_game_content_$CATEGORY$_$SUBCAT$_$ID$_on
+}
+
+
+nsc_modmenu_game_content_set_variable_effect = {
+	optimize_memory
+	event_target:nsc_modmenu_data_storage = { set_variable = { which = nsc_modmenu_$CATEGORY$_$SUBCAT$_$ID$_$MODIFIER$_var value = $VALUE$ } }
+}
+
+
+
+
+
+
+nsc_modmenu_ship_class_setting_reset_effect = {
+	optimize_memory
+	#classes (total 7)
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Battlecruiser }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = headquarters }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser MODIFIER = build_speed VALUE = 0 }
+
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_speed VALUE = 0 }
+
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_speed VALUE = 0 }
+
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_upkeep VALUE = 0 }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed VALUE = 0 }
+
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed VALUE = 0 }
+
+}
+nsc_modmenu_ship_component_setting_reset_effect = {
+	optimize_memory
+	#components (total 39)
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
+	
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 }
+}
+nsc_modmenu_starbase_class_setting_reset_effect = {
+	optimize_memory
+	#levels (total 2)
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = stronghold }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = headquarters }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = outpost }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed VALUE = 0 }
+
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed VALUE = 0 }
+
+}
+nsc_modmenu_starbase_module_setting_reset_effect = {
+	optimize_memory
+	#modules (total 11)
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = pd_battery }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = large_battery }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = xl_battery }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = titanic_battery }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = shield_module }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = armor_module }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = space_power_plant }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = space_foundry }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = space_factory }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = security_branch_office }
+}
+nsc_modmenu_starbase_building_setting_reset_effect = {
+	optimize_memory
+	#buildings (total 31)
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = drydock }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = sensor_station }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = starbase_management }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = mining_base }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = power_station }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = farming_base }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = customs_office }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = solar_panel_01 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = solar_panel_02 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = solar_panel_03 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = solar_panel_04 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = nsc_nanite_field }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = adv_space_engineers }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = mining_experts }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = reinforced_defenses }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = strategic_defenses }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = adv_starbase }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = repair_module }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = advanced_military_program }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = synthetic_crystal_fabricator }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = synthetic_volatile_motes_fabricator }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = synthetic_gase_fabricator }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = orbital_assembly }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = chain_manufacturing }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = financial_space_center }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = stasis_chambers }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = emergency_portal }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = starbase_optimal_systems }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = stellar_housing }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = administration_computers }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = market_computers }
+}
+nsc_modmenu_etc_feature_setting_reset_effect = {
+	optimize_memory
+	#features (total 3)
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = mothball }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = matterenergy }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = hospital }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep VALUE = -90 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep VALUE = -75 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_per_planet VALUE = 5 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_cost VALUE = 20 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_time VALUE = 50 }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost VALUE = 0 }
+	
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep VALUE = 0 }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep VALUE = 0 }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep VALUE = 0 }
+}
+nsc_modmenu_etc_ai_difficulty_setting_reset_effect = {
+	optimize_memory
+	#ai_difficulty
+	if = {
+		limit = { has_global_flag = nsc_modmenu_setting_page_etc_category_ai_difficulty_customized }
+		remove_global_flag = nsc_modmenu_setting_page_etc_category_ai_difficulty_customized
+	}
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 0 }
+
+}
+nsc_modmenu_reset_all_settings_effect = {
+	optimize_memory
+	### Category: Mod ###
+
+
+	### Category: Ship ###
+	nsc_modmenu_ship_class_setting_reset_effect = yes
+	nsc_modmenu_ship_component_setting_reset_effect = yes
+
+	### Category: Starbase ###
+	nsc_modmenu_starbase_class_setting_reset_effect = yes
+	nsc_modmenu_starbase_module_setting_reset_effect = yes
+	nsc_modmenu_starbase_building_setting_reset_effect = yes
+
+	### Category: ETC ###
+	nsc_modmenu_etc_feature_setting_reset_effect = yes
+	nsc_modmenu_etc_ai_difficulty_setting_reset_effect = yes
+}

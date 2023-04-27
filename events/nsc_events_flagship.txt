@@ -24,23 +24,6 @@ country_event = {
 }
 
 
-#2. Whenever the player starts on their Shipyard, we can have a popup telling the player that they should finalize the design of their Flagship before the Shipyard is complete.
-#3. Once the Shipyard finishes, the player can then "upgrade" the Shipyard a total of 6 times, with each stage being a section of the Flagship being completed.
-#the notification event to tell players that they should finalize the flagship design
-country_event = {
-	id = nsc_events_flagship.2
-	title = "nsc_events_flagship.2.name"
-	desc = "nsc_events_flagship.2.desc"
-	picture = GFX_evt_physics_research
-	show_sound = event_construction
-	is_triggered_only = yes
-
-	option = {
-		name = nsc_events_flagship.2.a
-	}
-}
-
-
 #4. When the third Flagship stage is done, an event popup tells you that other empires know about this and may start their own Flagship programs.
 #the notification event to tell players that other empires know about their flagship project by now
 country_event = {
@@ -59,43 +42,24 @@ country_event = {
 
 #5. When the final stage is complete, the Flagship is spawned from the player design and an event popup talks about the completion of the project, its awesome power, and the reaction of other empires.
 #the notification event to tell players that their flagship construction has finished
-country_event = {
+ship_event = {
 	id = nsc_events_flagship.4
 	title = "nsc_events_flagship.4.name"
 	desc = "nsc_events_flagship.4.desc"
 	picture = GFX_evt_space_hangar
 	show_sound = relic_activation_khans_throne
+	location = this
 	is_triggered_only = yes
 
 	immediate = {
 		#6. A year (or whatever time frame) after the Flagship is spawned, you get an event telling you that other empires have rushed their flagships into production, and they're operational.
-		#This is the event that spawns Flagships for a random set of AI empires.
-		country_event = { id = nsc_events_flagship.5 days = 30 }
-		country_event = { id = nsc_events_flagship.6 days = 360 random = 180 }
+		#This is also the event that spawns Flagships for a random set of AI empires.
+		owner = { country_event = { id = nsc_events_flagship.6 days = 360 random = 180 } }
 	}
 
 	option = {
 		name = nsc_events_flagship.4.a
-	}
-}
-
-
-#connected from the 'nsc_events_flagship.4' event
-country_event = {
-	id = nsc_events_flagship.5
-	title = "nsc_events_flagship.5.name"
-	desc = "nsc_events_flagship.5.desc"
-	picture = GFX_evt_flagship
-	show_sound = event_celebration
-	is_triggered_only = yes
-
-	immediate = {
-		nsc_flagship_creation_effect = yes
-	}
-
-	option = {
-		name = nsc_events_flagship.5.a
-		add_resource = { influence = 100 }
+		owner = { add_resource = { influence = 100 } }
 	}
 }
 
@@ -166,26 +130,27 @@ country_event = {
 
 	option = {
 		name = nsc_events_flagship.7.a
-		custom_tooltip = nsc_events_flagship.7.a.tooltip
-		hidden_effect = { set_country_flag = nsc_flagship_repair_project_possible }
 	}
 }
 
-#Darrien said letting the players to check (if the flagship is destroyed or not) is better in the aspect of performance, than making the game to check by itself. #and I agree
+#the event for disbanded flagship
 country_event = {
 	id = nsc_events_flagship.8
-	hide_window = yes
+	title = "nsc_events_flagship.8.name"
+	desc = "nsc_events_flagship.8.desc"
+	picture = GFX_evt_space_debris
+	show_sound = event_ship_explosion
 	is_triggered_only = yes
 
-	immediate = {
-		if = {
-			limit = { NOT = { any_controlled_ship = { is_ship_size = Flagship } } }
-			set_country_flag = nsc_flagship_repair_project_possible
-		}
+	trigger = {
+		from = { any_controlled_ship = { is_ship_size = Flagship } }
+	}
+
+	option = {
+		name = nsc_events_flagship.8.a
 	}
 }
 
-#'NSC_FLAGSHIP_REBUILD_PROJECT' special proejct completion event
 country_event = {
 	id = nsc_events_flagship.9
 	title = "nsc_events_flagship.9.name"
@@ -193,10 +158,6 @@ country_event = {
 	picture = GFX_evt_flagship
 	show_sound = event_celebration
 	is_triggered_only = yes
-
-	immediate = {
-		nsc_flagship_creation_effect = yes
-	}
 
 	option = {
 		name = nsc_events_flagship.9.a
@@ -222,25 +183,5 @@ country_event = {
 	option = {
 		name = nsc_events_flagship.10.a
 		add_resource = { influence = 100 unity = 100 }
-	}
-}
-
-#the event for disbanded flagship
-country_event = {
-	id = nsc_events_flagship.11
-	title = "nsc_events_flagship.11.name"
-	desc = "nsc_events_flagship.11.desc"
-	picture = GFX_evt_space_debris
-	show_sound = event_ship_explosion
-	is_triggered_only = yes
-
-	trigger = {
-		from = { any_controlled_ship = { is_ship_size = Flagship } }
-	}
-
-	option = {
-		name = nsc_events_flagship.11.a
-		custom_tooltip = nsc_events_flagship.7.a.tooltip
-		hidden_effect = { set_country_flag = nsc_flagship_repair_project_possible }
 	}
 }
