@@ -35,7 +35,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
 	}
 	spriteType = {
-		name = "GFX_nsc_flagship_complete_outliner_icon"
+		name = "GFX_nsc_flagship_shipyard_complete_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
 	}
 	spriteType = {

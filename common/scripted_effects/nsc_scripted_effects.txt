@@ -1,22 +1,3 @@
-nsc_flagship_creation_effect = {
-	optimize_memory
-	random_owned_megastructure = {
-		limit = { is_megastructure_type = nsc_flagship_complete }
-		save_event_target_as = nsc_flagship_spawn_location
-	}
-	create_fleet = {
-		effect = {
-			set_owner = root
-			create_ship = {
-				name = random
-				random_existing_design = Flagship
-				graphical_culture = root
-			}
-			set_location = event_target:nsc_flagship_spawn_location
-		}
-	}
-	set_country_flag = nsc_flagship_owner
-}
 nsc_flagship_creation_for_ai_effect = {
 	optimize_memory
 	if = {

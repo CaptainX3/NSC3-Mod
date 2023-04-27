@@ -1,0 +1,15 @@
+namespace = nsc_modmenu_etc
+
+event = {
+	id = nsc_modmenu_etc.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			type = nsc_modmenu_data_storage
+			effect = { save_global_event_target_as = nsc_modmenu_data_storage }
+		}
+		nsc_modmenu_reset_all_settings_effect = yes
+	}
+}

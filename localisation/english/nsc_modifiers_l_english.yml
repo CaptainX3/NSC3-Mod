@@ -88,5 +88,5 @@ mod_brawler_weapon_damage_mult: "Brawler Weapon Damage"
 mod_gunship_weapon_damage_mult: "Gunship Weapon Damage"
 mod_explosive_weapon_damage_mult: "Explosive Weapon Damage"
 
-megastructures_nsc_flagship_shipyard:0 "Flagship Shipyard"
-mod_megastructures_nsc_flagship_shipyard_cost_mult:0 "Flagship Shipyard Build Cost"
+megastructures_nsc_flagship_shipyard:0 "Grand Shipyard"
+mod_megastructures_nsc_flagship_shipyard_cost_mult:0 "Grand Shipyard Build Cost"
