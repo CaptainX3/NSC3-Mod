@@ -1,4 +1,4 @@
-name="NSC2 Developer Edition (XVCV)"
+name="(-NSC2 Season 7-)"
 version="1.0"
 tags={
 	"Utilities"
