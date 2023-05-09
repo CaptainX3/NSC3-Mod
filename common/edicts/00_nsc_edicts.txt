@@ -37,6 +37,8 @@ nsc_doctrine_ai = {
     ai_weight = { weight = 1000 }
 }
 
+
+
 nsc_emergency_defenses = {
     length = 360
     icon = "GFX_edict_type_policy"
@@ -52,6 +54,8 @@ nsc_emergency_defenses = {
     modifier = {
 	    country_energy_produces_mult = -0.4
 	    shipsize_military_station_small_build_speed_mult = 3.0
+		shipsize_military_station_medium_build_speed_mult = 3.0
+		shipsize_military_station_large_build_speed_mult = 3.0
 	    starbase_module_build_speed_mult = 3.0
 	    starbase_building_build_speed_mult = 3.0
     }

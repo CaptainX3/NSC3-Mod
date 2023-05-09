@@ -17,8 +17,8 @@ ai_behaviour_follow_DESC:0 "Ships will follow rest of the fleet. Balanced defaul
 ai_behaviour_charge:0 "Charge Tactic"
 ai_behaviour_charge_DESC:0 "Ships will try to close the distance to the enemy fleet as directly as possible and engage in point blank range."
 
-ai_behaviour_stationary_40:0 "Artillery Tactic (Range: 40)"
-ai_behaviour_stationary_40_DESC:0 "Ships will move up to the shown distance (40) and then hold position while firing at the enemy."
+ai_behaviour_stationary_30:0 "Artillery Tactic (Range: 30)"
+ai_behaviour_stationary_30_DESC:0 "Ships will move up to the shown distance (30) and then hold position while firing at the enemy."
 ai_behaviour_stationary_50:0 "Artillery Tactic (Range: 50)"
 ai_behaviour_stationary_50_DESC:0 "Ships will move up to the shown distance (50) and then hold position while firing at the enemy."
 ai_behaviour_stationary_60:0 "Artillery Tactic (Range: 60)"
@@ -39,8 +39,8 @@ ai_behaviour_stationary_120_DESC:0 "Ships will move up to the shown distance (12
 ai_behaviour_stationary_200:0 "Standoff Tactic (Range: 200)"
 ai_behaviour_stationary_200_DESC:0 "Ships will move up to the shown distance (200) and then hold position. NOTE: This setting will cause the ship to stand off outside of normal weapon range, protecting them from most enemy fire but also preventing them from firing at the enemy themselves. Ideal for ships that you want to remain out of combat as much as possible."
 
-ai_behaviour_flank_40:0 "Flanking Tactic (40)"
-ai_behaviour_flank_40_DESC:0 "Ships will circle the enemy fleet at a set distance (40) while firing their weapons."
+ai_behaviour_flank_30:0 "Flanking Tactic (30)"
+ai_behaviour_flank_30_DESC:0 "Ships will circle the enemy fleet at a set distance (30) while firing their weapons."
 ai_behaviour_flank_60:0 "Flanking Tactic (60)"
 ai_behaviour_flank_60_DESC:0 "Ships will circle the enemy fleet at a set distance (60) while firing their weapons."
 ai_behaviour_flank_80:0 "Flanking Tactic (80)"
@@ -48,8 +48,8 @@ ai_behaviour_flank_80_DESC:0 "Ships will circle the enemy fleet at a set distanc
 ai_behaviour_flank_100:0 "Flanking Tactic (100)"
 ai_behaviour_flank_100_DESC:0 "Ships will circle the enemy fleet at a set distance (100) while firing their weapons."
 
-ai_behaviour_hitnrun_40:0 "Hit and Run Tactic (40)"
-ai_behaviour_hitnrun_40_DESC:0 "Ships will move up to the shown distance (40) and then fall back before their next attack run."
+ai_behaviour_hitnrun_30:0 "Hit and Run Tactic (30)"
+ai_behaviour_hitnrun_30_DESC:0 "Ships will move up to the shown distance (30) and then fall back before their next attack run."
 ai_behaviour_hitnrun_60:0 "Hit and Run Tactic (60)"
 ai_behaviour_hitnrun_60_DESC:0 "Ships will move up to the shown distance (60) and then fall back before their next attack run."
 ai_behaviour_hitnrun_80:0 "Hit and Run Tactic (80)"

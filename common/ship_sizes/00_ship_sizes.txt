@@ -1734,7 +1734,7 @@ military_station_medium = {
 	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
 	num_target_locators = 5
 	is_space_station = yes
-	base_buildtime = 150
+	base_buildtime = 90
 	is_designable = yes
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
@@ -1783,7 +1783,7 @@ military_station_large = {
 	num_target_locators = 5
 	is_space_station = yes
 	is_designable = yes
-	base_buildtime = 360
+	base_buildtime = 120
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
 	takes_name_from_ship_design = yes

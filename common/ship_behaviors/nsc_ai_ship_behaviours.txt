@@ -34,11 +34,11 @@ ship_behavior = {
 
 ### STATIONARY ###
 ship_behavior = {
-	name = "ai_behaviour_stationary_40"
-	desc = "ai_behaviour_stationary_40_DESC"
+	name = "ai_behaviour_stationary_30"
+	desc = "ai_behaviour_stationary_30_DESC"
 	
-	preferred_attack_range = 40
-	formation_distance = 45
+	preferred_attack_range = 30
+	formation_distance = 35
 	return_to_formation_distance = 60
 	collision_awareness = 0.35
 
@@ -165,11 +165,11 @@ ship_behavior = {
 
 ### FLANK ###
 ship_behavior = {
-	name = "ai_behaviour_flank_40"
-	desc = "ai_behaviour_flank_40_DESC"
+	name = "ai_behaviour_flank_30"
+	desc = "ai_behaviour_flank_30_DESC"
 	
-	preferred_attack_range = 40
-	formation_distance = 40
+	preferred_attack_range = 30
+	formation_distance = 30
 	return_to_formation_distance = 10
 	collision_awareness = 0.75
 
@@ -218,11 +218,11 @@ ship_behavior = {
 
 ### HIT AND RUN ###
 ship_behavior = {
-	name = "ai_behaviour_hitnrun_40"
-	desc = "ai_behaviour_hitnrun_40_DESC"
+	name = "ai_behaviour_hitnrun_30"
+	desc = "ai_behaviour_hitnrun_30_DESC"
 	
-	preferred_attack_range = 40
-	formation_distance = 30
+	preferred_attack_range = 30
+	formation_distance = 20
 	return_to_formation_distance = 50
 	collision_awareness = 0.5
 
