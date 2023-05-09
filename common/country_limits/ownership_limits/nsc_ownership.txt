@@ -14,11 +14,6 @@
 
 default = {
 	ship_of_size_limits = {
-		progenitor_ships_limit
-		titan_ships_limit
-		colossus_ships_limit
-		juggernaut_ships_limit
-		space_dragon_origin_babies_limit
 		headquarters_ship_limit
 		explorationship_ship_limit
 		Flagship_ship_limit
