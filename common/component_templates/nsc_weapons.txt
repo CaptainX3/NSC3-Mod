@@ -1,6 +1,3 @@
-#################################
-### TITANIC WEAPON COMPONENTS ###
-#################################
 weapon_component_template = {
 	key = "PERDITION_BEAM_FLAGSHIP"
 	size = titanic
@@ -11,7 +8,6 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	firing_arc = 10.0
-	min_range = 30.0
 	use_ship_kill_target = no
 	
 	power = -500
@@ -23,6 +19,7 @@ weapon_component_template = {
 	armor_penetration = 0.0
 	windup = { min = 80 max = 120 }
 	total_fire_time = 120
+	min_range = 30.0
 	range = 200
 	accuracy = 0.85
 	tracking = 0.0
@@ -54,55 +51,73 @@ weapon_component_template = {
 	ai_weight = { weight = 1 }
 }
 
-#weapon_component_template = {
-#	key = "BASIC_T_BEAM"
-#	size = titanic
-#	type = instant
-#	prio_projectile = yes
-#	
-#	icon = "GFX_ship_part_basic_t"
-#	icon_frame = 1
-#	
-#	firing_arc = 10.0
-#	min_range = 30.0
-#	use_ship_kill_target = no
-#	
-#	power = -300
-#	damage = { min = 2000 max = 4000 }
-#	hull_damage = 1.25
-#	shield_damage = 0.75
-#	shield_penetration = 0.0
-#	armor_damage = 1.50
-#	armor_penetration = 0.0
-#	windup = { min = 80 max = 120 }
-#	total_fire_time = 120
-#	range = 180
-#	accuracy = 0.85
-#	tracking = 0.0
-#	
-#	prerequisites = { "tech_battleships" }
-#	component_set = "BASIC_T_BEAM"
-#	projectile_gfx = "perdition_beam"
-#	tags = { weapon_type_energy }
-#	ai_tags = { weapon_role_artillery }
-#	size_restriction = { titan Flagship starbase_stronghold starbase_headquarters ion_cannon }
-#	upgrades_to = "PERDITION_BEAM_TITAN"
-#
-#	resources = {
-#		category = ship_components
-#		cost = { alloys = @xl_t7_cost }		
-#		upkeep = {
-#			energy = @xl_t7_upkeep_energy
-#			alloys = @xl_t7_upkeep_alloys
-#		}
-#	}
-#	
-#	ai_weight = { weight = 1 }
-#}
 
-#####################################
-### EXTRA LARGE WEAPON COMPONENTS ###
-#####################################
+
+weapon_component_template = {
+	key = "PERDITION_BEAM_STARBASE"
+	size = titanic
+	entity = "large_laser_gun_entity"
+	type = instant
+	prio_projectile = yes
+	damage = { min = 10000 max = 15000 }
+	windup = { min = 30 max = 45 }
+	total_fire_time = 120
+	firing_arc = 360.0
+	min_range = 50
+	range = 200
+	accuracy = 0.95
+	type = instant
+	power = -1000
+	hull_damage = 1.25
+	armor_damage = 1.50
+	shield_damage = 0.75	
+	icon = "GFX_ship_part_perdition_beam"
+	icon_frame = 1	
+	firing_arc = 360.0
+	use_ship_kill_target = no	
+	component_set = "PERDITION_BEAM_STARBASE"
+	projectile_gfx = "perdition_beam"
+	size_restriction = { starbase_citadel starbase_stronghold starbase_headquarters }
+	target_weights = {
+		Flagship = 5
+		titan = 4
+		Dreadnought = 3
+		battleship = 2
+		Carrier = 1
+	}
+}
+
+
+
+weapon_component_template = {
+	key = "POINT_DEFENCE_STARBASE"
+	size = point_defence
+	icon = "GFX_ship_part_point_defense_3"
+	icon_frame = 1
+	entity = "turret_point_defence_entity"
+	type = point_defence
+	damage = { min = 2 max = 6 }
+	windup = { min = 0 max = 0 }
+	total_fire_time = 8
+	range = 35
+	accuracy = 0.75
+	power = -20
+	hull_damage = 1.0
+	armor_penetration = 0.0
+	armor_damage = 1.0
+	shield_penetration = 0.0
+	shield_damage = 1.0
+	tracking = 0.4
+	component_set = "POINT_DEFENCE_STARBASE"
+	projectile_gfx = "white_laser_pd"
+	tags = { weapon_type_point_defense weapon_type_energy }
+	ai_tags = { weapon_role_point_defense screen }
+	size_restriction = { starbase_starport starbase_starhold starbase_starfortress starbase_citadel starbase_stronghold starbase_headquarters }
+	point_defence_targets = { "missile" "strike_craft" }
+}
+
+
+
 weapon_component_template = {
 	key = "XL_BEAM_STARBASE"
 	size = extra_large
@@ -153,54 +168,6 @@ weapon_component_template = {
 	ai_weight = { weight = 1 }
 }
 
-#weapon_component_template = {
-#	key = "BASIC_XL_BEAM"
-#	size = extra_large
-#	type = instant
-#	
-#	icon = "GFX_ship_part_basic_xl"
-#	icon_frame = 1
-#	
-#	firing_arc = 25.0
-#	min_range = 10.0
-#	use_ship_kill_target = no
-#	
-#	power = -200
-#	damage = { min = 600 max = 1000 }
-#	hull_damage = 1.50
-#	shield_damage = 0.50
-#	shield_penetration = 0.0
-#	armor_damage = 2.00
-#	armor_penetration = 0.0
-#	windup = { min = 10 max = 20 }
-#	total_fire_time = 70
-#	range = 120
-#	accuracy = 0.85
-#	tracking = 0.0
-#	
-#	prerequisites = { "tech_battleships" }
-#	component_set = "BASIC_XL_BEAM"
-#	projectile_gfx = "tachyon_lance"
-#	tags = { weapon_type_energy }
-#	ai_tags = { weapon_role_artillery }
-#	size_restriction = { battleship Dreadnought titan Flagship starbase_stronghold starbase_headquarters xl_cannon }
-#	upgrades_to = "ENERGY_LANCE_1"
-#	
-#	resources = {
-#		category = ship_components
-#		cost = { alloys = @xl_t5_cost }		
-#		upkeep = {
-#			energy = @xl_t5_upkeep_energy
-#			alloys = @xl_t5_upkeep_alloys
-#		}
-#	}
-#	
-#	ai_weight = { weight = 1 }
-#}
-
-############################################
-### SMALL/MEDIUM/LARGE WEAPON COMPONENTS ###
-############################################
 
 weapon_component_template = {
 	key = "BATTLESHIP_SNIPER_GUN_1"

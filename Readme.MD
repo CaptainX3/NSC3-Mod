@@ -1,4 +1,10 @@
-**HOW TO MANUALLY INSTALL NSC2**
+# **To download the latest Release version of NSC2, [click here](https://github.com/CaptainX3/NSC2-Mod/releases) and then click on the "Source code (zip)" link at the bottom of the latest release. After you download the file, read and follow the instructions below.**
+
+## ***DO NOT download NSC2 from this main page. This is the Developers version and is usually NOT in complete working order. You WILL have broken games if you download from the main branch on this page!***
+
+<br />
+
+# **HOW TO MANUALLY INSTALL NSC2**
 
 Here are the instructions on how to manually install NSC2 from the zip file provided below. DO NOT DO THIS if you are subscribed to the mod on the Steam Workshop - this download is only for those who cannot use the Steam workshop or don't want to.
 
@@ -9,9 +15,8 @@ Before you begin, please take note of the following things:
 > Keep in mind that if you manually install NSC2, you will have to repeat this process EVERY TIME NSC2 has an update if you want to always have the latest version of the mod. This manual installation will not automatically change or update itself in any way.
 
 <br />
-<br />
 
-**If you're installing NSC2 for the very first time, follow these steps:**<br />
+## **If you're installing NSC2 for the very first time, follow these steps:**<br />
 _(If you're updating your manually-installed copy of the mod, scroll down to that section below.)_
 
 > STEP 1: Download the NSC2 zip file from the Releases section on this site. (You should be able to see the latest release on the right hand side of the main page.)
@@ -33,9 +38,8 @@ _(If you're updating your manually-installed copy of the mod, scroll down to tha
 > STEP 9: Enjoy!
 
 <br />
-<br />
 
-**If you're updating your manually-installed copy of NSC2, follow these steps:**
+## **If you're updating your manually-installed copy of NSC2, follow these steps:**
 
 > STEP 1: Download the NSC2 zip file from the Releases section on this site. (You should be able to see the latest release on the right hand side of the main page.)
 

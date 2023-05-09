@@ -13,7 +13,7 @@ nsc_flagship_shipyard = {
 		category = megastructures
 		cost = {
 			alloys = 1000
-			unity = 1000
+			influence = 250
 		}
 
 		upkeep = {
@@ -128,7 +128,8 @@ nsc_flagship_shipyard_complete = {
 			unity = 2000
 		}
 		produces = {
-			unity = 10
+			unity = 50
+			influence = 5
 		}
 		upkeep = {
 			energy = 2
