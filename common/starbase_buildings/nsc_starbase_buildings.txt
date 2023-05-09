@@ -2,6 +2,9 @@
 ### VANILLA STARBASE BUILDING OVERWRITES ###
 ############################################
 
+#None
+
+
 ##############################
 ### NSC STARBASE BUILDINGS ###
 ##############################
@@ -430,111 +433,6 @@ customs_office = {
 	ai_weight = { weight = 25 }
 }
 
-solar_panel_01 = {
-	icon = "GFX_sb_solar_panel_network"
-	construction_days = 120
-
-	potential = {
-		is_orbital_ring = no
-	}
-
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel_01 }
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = { alloys = 125 }
-		produces = { energy = 3 }
-	}
-
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	
-	ai_weight = { weight = 25 }
-}
-
-solar_panel_02 = {
-	icon = "GFX_sb_solar_panel_network"
-	construction_days = 120
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_starbase_3 }
-		is_orbital_ring = no
-	}
-
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel_02 }
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = { alloys = 150 }
-		produces = { energy = 6 }
-	}
-
-	show_in_tech = "tech_starbase_3"
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	
-	ai_weight = { weight = 25 }
-}
-
-solar_panel_03 = {
-	icon = "GFX_sb_solar_panel_network"
-	construction_days = 120
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_starbase_4 }
-		is_orbital_ring = no
-	}
-
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel_03 }
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = { alloys = 175 }
-		produces = { energy = 9 }
-	}
-
-	show_in_tech = "tech_starbase_4"
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	
-	ai_weight = { weight = 25 }
-}
-
-solar_panel_04 = {
-	icon = "GFX_sb_solar_panel_network"
-	construction_days = 120
-
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_starbase_5 }
-		is_orbital_ring = no
-	}
-
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel_04 }
-	}
-
-	resources = {
-		category = starbase_buildings
-		cost = { alloys = 200 }
-		produces = { energy = 12 }
-	}
-
-	show_in_tech = "tech_starbase_5"
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
-	
-	ai_weight = { weight = 25 }
-}
-
 nsc_nanite_field = {
 	icon = "GFX_spaceport_module_orbital_mind_control_lazer"
 	construction_days = 180
@@ -568,7 +466,7 @@ nsc_nanite_field = {
 ### SE STARBASE BUILDINGS ###
 #############################
 
-adv_space_engineers = {
+construction_office = {
 	icon = "GFX_starbase_adv_space_engineers"
 	construction_days = 180	
 
@@ -594,7 +492,7 @@ adv_space_engineers = {
 	ai_weight = { weight = 100 }
 }
 
-mining_experts = {
+mining_manager = {
 	icon = "GFX_starbase_mining_experts"
 	construction_days = 220
 
@@ -669,7 +567,7 @@ strategic_defenses = {
 	show_in_tech = "tech_starbase_4"
 }
 
-adv_starbase = {
+adv_starbase_defenses = {
 	icon = "GFX_starbase_adv_starbase"
 	construction_days = 1000
 	resources = {
@@ -719,7 +617,7 @@ repair_module = {
 	ai_weight = { weight = 100 }
 }
 
-advanced_military_program = {
+ground_forces_academy = {
 	icon = "GFX_starbase_security_force"
 	construction_days = 550
 	resources = {
@@ -831,7 +729,7 @@ synthetic_gase_fabricator = {
 	show_in_tech = "tech_exotic_gases"
 }
 
-orbital_assembly = {
+robot_assembly = {
 	icon = "GFX_starbase_orbital_assembly"
 	construction_days = 720
 	resources = {
@@ -866,7 +764,7 @@ orbital_assembly = {
 	show_in_tech = "tech_robotic_workers"
 }
 
-chain_manufacturing = {
+assembly_line_manufacturing = {
 	icon = "GFX_starbase_chain_manufacturing"
 	construction_days = 720
 	resources = {
@@ -899,7 +797,7 @@ chain_manufacturing = {
 	}
 }
 
-financial_space_center = {
+federal_reserve_bank = {
 	icon = "GFX_starbase_financial_space_center"
 	construction_days = 360
 	resources = {
@@ -925,7 +823,7 @@ financial_space_center = {
 	}
 }
 
-stasis_chambers = {
+cloning_facilities = {
 	icon = "GFX_starbase_stasis_chambers"
 	construction_days = 360
 	resources = {
@@ -975,7 +873,7 @@ stasis_chambers = {
 	show_in_tech = "tech_genome_mapping"
 }
 
-emergency_portal = {
+navcom_ai = {
 	icon = "GFX_starbase_emergency_portal"
 	construction_days = 720
 
@@ -998,7 +896,7 @@ emergency_portal = {
 	}
 }
 
-starbase_optimal_systems = {
+starbase_ai = {
 	icon = "GFX_starbase_starbase_optimal_systems"
 	construction_days = 720
 
@@ -1033,7 +931,7 @@ starbase_optimal_systems = {
 	show_in_tech = "tech_starbase_5"
 }
 
-stellar_housing = {
+real_estate_dev = {
 	icon = "GFX_starbase_stellar_housing"
 	construction_days = 360
 
@@ -1070,7 +968,7 @@ stellar_housing = {
 	show_in_tech = "tech_housing_2"
 }
 
-administration_computers = {
+tv_network = {
 	icon = "GFX_starbase_administration_computers"
 	construction_days = 500
 
@@ -1108,7 +1006,7 @@ administration_computers = {
 	show_in_tech = "tech_colonial_centralization"
 }
 
-market_computers = {
+tv_studio = {
 	icon = "GFX_starbase_market_computers"
 	construction_days = 360
 
