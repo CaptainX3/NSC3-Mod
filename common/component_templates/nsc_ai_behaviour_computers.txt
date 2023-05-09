@@ -62,14 +62,14 @@ utility_component_template = {
 
 ### STATIONARY ###
 utility_component_template = {
-	key = "ai_behaviour_stationary_40"
+	key = "ai_behaviour_stationary_30"
 	size = small
 
-	icon = "GFX_ship_part_ai_behaviour_stationary_40"
+	icon = "GFX_ship_part_ai_behaviour_stationary_30"
 	icon_frame = 1
 
 	component_set = "ai_behaviour"
-	ship_behavior = "ai_behaviour_stationary_40"
+	ship_behavior = "ai_behaviour_stationary_30"
 	
 	resources = {
 		category = ship_components
@@ -243,14 +243,14 @@ utility_component_template = {
 
 ### FLANK ###
 utility_component_template = {
-	key = "ai_behaviour_flank_40"
+	key = "ai_behaviour_flank_30"
 	size = small
 
-	icon = "GFX_ship_part_ai_behaviour_flank_40"
+	icon = "GFX_ship_part_ai_behaviour_flank_30"
 	icon_frame = 1
 
 	component_set = "ai_behaviour"
-	ship_behavior = "ai_behaviour_flank_40"
+	ship_behavior = "ai_behaviour_flank_30"
 	
 	resources = {
 		category = ship_components
@@ -316,14 +316,14 @@ utility_component_template = {
 
 ### HIT AND RUN ###
 utility_component_template = {
-	key = "ai_behaviour_hitnrun_40"
+	key = "ai_behaviour_hitnrun_30"
 	size = small
 
-	icon = "GFX_ship_part_ai_behaviour_hitnrun_40"
+	icon = "GFX_ship_part_ai_behaviour_hitnrun_30"
 	icon_frame = 1
 
 	component_set = "ai_behaviour"
-	ship_behavior = "ai_behaviour_hitnrun_40"
+	ship_behavior = "ai_behaviour_hitnrun_30"
 	
 	resources = {
 		category = ship_components

@@ -889,16 +889,6 @@ Dreadnought = {
 		}
 	}
 
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
-			}
-		}
-	}
-
 	possible_construction = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	}
@@ -1057,8 +1047,8 @@ Flagship = {
 	}
 
 	max_hitpoints = 60000
-	size_multiplier = @nsc_flagship_size_multiplier
-	fleet_slot_size = @nsc_flagship_size_multiplier
+	size_multiplier = 24
+	fleet_slot_size = 24
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "mid4" = { locator = "part5" } "stern" = { locator = "part6" } }
 	num_target_locators = 4
 	icon = nsc_ship_size_military_18
@@ -1627,6 +1617,12 @@ explorationship = {
 	required_component_set = "exploration_ship_slot"
 	required_component_set = "exploration_ship_slot"
 	required_component_set = "exploration_ship_slot"
+	
+	ai_ship_data = {
+		min = value:desired_science_ships
+		system_mult = value:desired_science_ships_system_mult
+		max = 5
+	}
 }
 
 transport = {

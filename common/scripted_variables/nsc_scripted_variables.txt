@@ -1,1 +1,0 @@
-@nsc_flagship_size_multiplier = 24
