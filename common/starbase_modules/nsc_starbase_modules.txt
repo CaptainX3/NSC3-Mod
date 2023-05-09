@@ -5,6 +5,56 @@
 # HANGAR_STARBASE_SECTION
 # ASSEMBLYYARD_STARBASE_SECTION
 
+
+##########################################
+### VANILLA STARBASE MODULE OVERWRITES ###
+##########################################
+
+anchorage = {
+	icon = "GFX_starbase_anchorage"
+	section = "ANCHORAGE_STARBASE_SECTION"
+	construction_days = 180
+
+	potential = {
+		is_orbital_ring = no
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 50
+		}
+
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 20
+	}
+	triggered_country_modifier = {
+		potential = { has_starbase_building = naval_logistics_office }
+		country_naval_cap_add = 10
+	}
+
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			factor = 2
+			count_starbase_modules = {
+				type = anchorage
+				count < 2
+			}
+		}
+	}
+}
+
+
+#############################
+### NSC2 STARBASE MODULES ###
+#############################
+
 pd_battery = {
 	section = "PD_STARBASE_SECTION"
 	icon = "GFX_starbase_pd_battery"
