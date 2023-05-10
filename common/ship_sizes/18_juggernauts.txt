@@ -10,8 +10,7 @@ juggernaut = {
 	
 	modifier = {
 		ship_armor_add = 50000
-		ship_evasion_add = @juggernaut_evasion
-		starbase_shipyard_capacity_add = 6
+		starbase_shipyard_capacity_add = 15
 		ship_evasion_add = -75
 	}
 	
@@ -19,7 +18,7 @@ juggernaut = {
 	combat_size_multiplier = 5
 	size_multiplier = 32
 	fleet_slot_size = 32
-	section_slots = { "core" = { locator = "part1" } }
+	section_slots = { "core" = { locator = "part1" } "core2" = { locator = "part1" } "core3" = { locator = "part1" } "core4" = { locator = "part1" } }
 	num_target_locators = 0
 	icon_frame = 7 #probably unused, but mobile starbases are special
 	icon = ship_size_military_64
@@ -45,6 +44,7 @@ juggernaut = {
 				OR = {
 					is_megastructure_type = mega_shipyard_3
 					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = nsc_flagship_shipyard_complete
 				}
 			}
 		}
@@ -59,6 +59,7 @@ juggernaut = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -75,6 +76,7 @@ juggernaut = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -152,6 +154,7 @@ headquarters = {
 				OR = {
 					is_megastructure_type = mega_shipyard_3
 					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = nsc_flagship_shipyard_complete
 				}
 			}
 		}
@@ -166,6 +169,7 @@ headquarters = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -182,6 +186,7 @@ headquarters = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -190,6 +195,7 @@ headquarters = {
 				}
 			}
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters }
 	}
 	
 	prerequisites = { "tech_juggernaut" "tech_starbase_6" "tech_space_defense_station_3" }

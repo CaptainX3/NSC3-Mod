@@ -125,6 +125,16 @@ corvette = {
 		}
 	}
 
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	min_upgrade_cost = {
 		alloys = 1
 	}
@@ -220,6 +230,16 @@ frigate = {
 		}
 	}
 
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	min_upgrade_cost = {
 		alloys = 1
 	}
@@ -294,6 +314,17 @@ destroyer = {
 			alloys = @destroyer_upkeep_alloys
 		}
 	}
+	
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	min_upgrade_cost = {
 		alloys = 2
 	}
@@ -401,6 +432,16 @@ cruiser = {
 		}
 	}
 
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	min_upgrade_cost = {
 		alloys = 4
 	}
@@ -501,6 +542,21 @@ StrikeCruiser = {
 			alloys = 0.6
 		}
 	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
+	}
+	
 	min_upgrade_cost = { alloys = 5 }
 
 	ai_ship_data = {
@@ -569,6 +625,21 @@ Battlecruiser = {
 			alloys = 0.7
 		}
 	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
+	}
+
 	min_upgrade_cost = { alloys = 6 }
 
 	ai_ship_data = {
@@ -643,6 +714,16 @@ battleship = {
 		upkeep = {
 			energy = @battleship_upkeep_energy
 			alloys = @battleship_upkeep_alloys
+		}
+	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
 		}
 	}
 
@@ -725,6 +806,21 @@ Carrier = {
 			alloys = 1.0
 		}
 	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
+	}
+
 	min_upgrade_cost = { alloys = 10 }
 
 	ai_ship_data = {
@@ -792,6 +888,11 @@ Dreadnought = {
 			alloys = 1.2
 		}
 	}
+
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }
+	}
+
 	min_upgrade_cost = { alloys = 12 }
 
 	ai_ship_data = {
@@ -845,8 +946,6 @@ titan = {
 
 	prerequisites = { "tech_titans" }
 	
-	
-
 	combat_disengage_chance = 1.25
 
 	class = shipclass_military
@@ -870,6 +969,7 @@ titan = {
 				OR = {
 					is_megastructure_type = mega_shipyard_3
 					is_megastructure_type = mega_shipyard_restored
+					is_megastructure_type = nsc_flagship_shipyard_complete
 				}
 			}
 		}
@@ -884,6 +984,7 @@ titan = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -901,6 +1002,7 @@ titan = {
 					OR = {
 						is_megastructure_type = mega_shipyard_3
 						is_megastructure_type = mega_shipyard_restored
+						is_megastructure_type = nsc_flagship_shipyard_complete
 					}
 				}
 				AND = {
@@ -949,7 +1051,7 @@ Flagship = {
 	fleet_slot_size = 24
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "mid4" = { locator = "part5" } "stern" = { locator = "part6" } }
 	num_target_locators = 4
-	icon = nsc_ship_size_military_20
+	icon = nsc_ship_size_military_18
 	combat_disengage_chance = 0.50
 
 	is_space_station = no
@@ -963,10 +1065,11 @@ Flagship = {
 	possible_construction = {
 		custom_tooltip_fail = {
 			text = nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail
-			always = no
+			is_scope_type = megastructure
+			is_megastructure_type = nsc_flagship_shipyard_complete
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #also see: 'nsc_megas_flagship.txt'
 	}
-
 
 	prerequisites = { "tech_Flagship_1" }
 	class = shipclass_military
@@ -977,8 +1080,8 @@ Flagship = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = @nsc_flagship_alloys_cost
-			influence = @nsc_flagship_influence_cost
+			alloys = 10200
+			influence = 500
 		}
 		upkeep = {
 			energy = 10
@@ -1061,6 +1164,16 @@ constructor = {
 			has_technology = tech_hyper_drive_3
 			has_technology = tech_jump_drive_1
 			has_technology = tech_psi_jump_drive_1
+		}
+	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
 		}
 	}
 
@@ -1200,6 +1313,16 @@ colonizer = {
 		}
 	}
 
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	ai_ship_data = {
 		min = value:desired_colonizers
 	}
@@ -1263,6 +1386,17 @@ sponsored_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1324,6 +1458,17 @@ lithoid_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
+	
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1390,6 +1535,16 @@ science = {
 		}
 	}
 
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
@@ -1413,7 +1568,7 @@ explorationship = {
 	fleet_slot_size = 5
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
 	num_target_locators = 0
-	icon = shipclass_science_ship
+	icon = nsc_ship_size_military_14
 	base_buildtime = 320
 	use_shipnames_from = science
 	combat_disengage_chance = 2.0
@@ -1436,6 +1591,21 @@ explorationship = {
 			alloys = 5
 		}
 	}
+
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+	
+	possible_construction = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } #also see: 'nsc_events_exploration_ship.10'
+	}
+
 	min_upgrade_cost = { alloys = 5 }
 
 	required_component_set = "power_core"
@@ -1447,6 +1617,12 @@ explorationship = {
 	required_component_set = "exploration_ship_slot"
 	required_component_set = "exploration_ship_slot"
 	required_component_set = "exploration_ship_slot"
+	
+	ai_ship_data = {
+		min = value:desired_science_ships
+		system_mult = value:desired_science_ships_system_mult
+		max = 5
+	}
 }
 
 transport = {
@@ -1554,7 +1730,7 @@ military_station_medium = {
 	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
 	num_target_locators = 5
 	is_space_station = yes
-	base_buildtime = 150
+	base_buildtime = 90
 	is_designable = yes
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
@@ -1603,7 +1779,7 @@ military_station_large = {
 	num_target_locators = 5
 	is_space_station = yes
 	is_designable = yes
-	base_buildtime = 360
+	base_buildtime = 120
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
 	takes_name_from_ship_design = yes

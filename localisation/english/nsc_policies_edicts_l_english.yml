@@ -160,12 +160,5 @@ swarm_protocol_desc:0 "Our drones require only minimal training. Our ships must 
 ### EDICTS ###
 ##############
 
-edict_nsc_flagship_repair_possible_check:0 "Check for Flagship Reconstruction"
-edict_nsc_flagship_repair_possible_check_desc:0 "Click when your flagship is somehow destroyed and there is no Flagship Reconstruction edict."
-edict_nsc_flagship_repair_possible_check_tooltip:0 "Just click this edict. It will automatically check should the Flagship Reconstruction edict be available."
-
-edict_nsc_flagship_repair:0 "Flagship Reconstruction"
-edict_nsc_flagship_repair_desc:0 "Our glorious Flagship, the pride of our Empire, has been destroyed in battle. While it was prohibitively expensive to support more than one Flagship at a time, now that our Flagship has been destroyed, we have space in the budget to make a new one."
-
 edict_nsc_emergency_defenses:0 "Emergency Defense Initiative"
 edict_nsc_emergency_defenses_desc:0 "An onslaught is imminent, and our defenses are weak. We absolutely must build up our starbases, and turn them into bristling defensive emplacements, but we have precious little time.\n\nHowever, by throwing everything we have into the effort, we may be able to fortify our defenses in a fraction of the normal time - it will be incredibly costly, but likely not as costly as losing the war to our hated foes."

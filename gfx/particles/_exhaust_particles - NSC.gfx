@@ -1,17 +1,5 @@
 objectTypes = {
-	
-	pdxparticle = {
-		name = "mammalian_01_5_0_exhaust_oblong_idle_particle"
-		type = "mammalian_01_ship_exhaust_idle_large_file"
-		scale = 5.0
-	}
-	
-	pdxparticle = {
-		name = "mammalian_01_5_0_ship_exhaust_oblong_moving_particle"
-		type = "mammalian_01_ship_exhaust_oblong_file"
-		scale = 5.0
-	}
-	
+
 	pdxparticle = {
 		name = "molluscoid_01_5_0_exhaust_idle_particle"
 		type = "molluscoid_01_ship_exhaust_idle_file"

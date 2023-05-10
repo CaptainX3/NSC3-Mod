@@ -39,17 +39,17 @@
 
 @colossus_power = 10000
 
-@StrikeCruiser_power_1 = 370
-@StrikeCruiser_power_2 = 470
-@StrikeCruiser_power_3 = 620
-@StrikeCruiser_power_4 = 800
-@StrikeCruiser_power_5 = 1035
-@StrikeCruiser_power_6 = 1325
-@StrikeCruiser_power_7 = 1615
-@StrikeCruiser_power_8 = 1905
-@StrikeCruiser_power_9 = 2195
-@StrikeCruiser_power_10 = 2485
-@StrikeCruiser_power_11 = 2775
+@StrikeCruiser_power_1 = 480
+@StrikeCruiser_power_2 = 610
+@StrikeCruiser_power_3 = 800
+@StrikeCruiser_power_4 = 1040
+@StrikeCruiser_power_5 = 1345
+@StrikeCruiser_power_6 = 1725
+@StrikeCruiser_power_7 = 2100
+@StrikeCruiser_power_8 = 2475
+@StrikeCruiser_power_9 = 2850
+@StrikeCruiser_power_10 = 3230
+@StrikeCruiser_power_11 = 3610
 
 @Battlecruiser_power_1 = 675
 @Battlecruiser_power_2 = 825
@@ -2178,7 +2178,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship Carrier }
+	size_restriction = { battleship offspring_battleship }
 	
 	ai_weight = { 
 		weight = 11
@@ -2210,7 +2210,7 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+	size_restriction = { Dreadnought Carrier }
 	
 	ai_weight = { 
 		weight = 11

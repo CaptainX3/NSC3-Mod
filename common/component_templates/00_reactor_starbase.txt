@@ -5,6 +5,6 @@ utility_component_template = {
 	icon_frame = 1
 	power = 50000
 	component_set = "power_core"
-	class_restriction = { shipclass_starbase }
+	size_restriction = { starbase_outpost starbase_starport starbase_starhold starbase_starfortress starbase_citadel starbase_stronghold starbase_headquarters }
 	ai_weight = { weight = 10000 }
 }

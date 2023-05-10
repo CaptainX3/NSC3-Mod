@@ -50,6 +50,10 @@ weapon_component_template = {
 		}
 	}
 
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = TOMAHAWK_CRUISE_MISSILE }
+	}
+
 	target_weights = {
 		Flagship = 5
 		titan = 4
@@ -114,6 +118,10 @@ weapon_component_template = {
 		}
 	}
 
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = HARPOON_CRUISE_MISSILE }
+	}
+
 	target_weights = {
 		Flagship = 5
 		titan = 4
@@ -145,9 +153,9 @@ weapon_component_template = {
 	armor_penetration = 0.75
 	windup = { min = 0 max = 0 }
 	total_fire_time = 5
-	range = 80.0
+	range = 40.0
 	accuracy = 0.80
-	tracking = 0.90
+	tracking = 0.80
 	
 	point_defence_targets = { "missile" "strike_craft" }
 	
@@ -168,6 +176,10 @@ weapon_component_template = {
 			energy = 0.10
 			alloys = 0.010
 		}
+	}
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_PD_MISSILE }
 	}
 
 	ai_weight = {

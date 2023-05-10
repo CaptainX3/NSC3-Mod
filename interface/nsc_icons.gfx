@@ -35,7 +35,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
 	}
 	spriteType = {
-		name = "GFX_nsc_flagship_complete_outliner_icon"
+		name = "GFX_nsc_flagship_shipyard_complete_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
 	}
 	spriteType = {
@@ -169,7 +169,7 @@ spriteTypes = {
 		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top_damaged"
 		default_frame = 13
 	}
-	#escortcarrier
+	#explorationship
 	spriteType = {
 		name = "GFX_nsc_ship_size_military_14"
 		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes"
