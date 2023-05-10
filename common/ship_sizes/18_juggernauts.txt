@@ -10,8 +10,7 @@ juggernaut = {
 	
 	modifier = {
 		ship_armor_add = 50000
-		ship_evasion_add = @juggernaut_evasion
-		starbase_shipyard_capacity_add = 6
+		starbase_shipyard_capacity_add = 15
 		ship_evasion_add = -75
 	}
 	
@@ -19,7 +18,7 @@ juggernaut = {
 	combat_size_multiplier = 5
 	size_multiplier = 32
 	fleet_slot_size = 32
-	section_slots = { "core" = { locator = "part1" } }
+	section_slots = { "core" = { locator = "part1" } "core2" = { locator = "part1" } "core3" = { locator = "part1" } "core4" = { locator = "part1" } }
 	num_target_locators = 0
 	icon_frame = 7 #probably unused, but mobile starbases are special
 	icon = ship_size_military_64

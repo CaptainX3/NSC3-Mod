@@ -1,6 +1,7 @@
-name="(-NSC2 Season 7-)"
-version="1.0"
+name="(-NSC2 Season 8-)"
 tags={
-	"Utilities"
+	"Spaceships"
+	"Gameplay"
+	"Technologies"
 }
 supported_version="3.8.*"

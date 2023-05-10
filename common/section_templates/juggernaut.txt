@@ -11,6 +11,10 @@ ship_section_template = {
 	ship_size = juggernaut
 
 	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	fits_on_slot = "core4"
+	
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier artillery }
@@ -130,6 +134,10 @@ ship_section_template = {
 	ship_size = juggernaut
 
 	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	fits_on_slot = "core4"
+	
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
 
@@ -248,6 +256,10 @@ ship_section_template = {
 	ship_size = juggernaut
 
 	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	fits_on_slot = "core4"
+	
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
 
@@ -366,6 +378,10 @@ ship_section_template = {
 	ship_size = juggernaut
 
 	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	fits_on_slot = "core4"
+	
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
 
@@ -484,6 +500,10 @@ ship_section_template = {
 	ship_size = juggernaut
 
 	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	fits_on_slot = "core4"
+	
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
 
