@@ -1,9 +1,0 @@
-
-
-nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod = {
-	ships_upkeep_mult = 0.01
-}
-nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod = {
-	mod_ship_naval_cap_usage_mult = 0.01
-}
-
