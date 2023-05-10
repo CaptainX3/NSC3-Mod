@@ -50,6 +50,61 @@ anchorage = {
 	}
 }
 
+detection_array = {
+	icon = "GFX_spaceport_module_detecton_array"
+	section = "SCIENCE_STARBASE_SECTION"
+	construction_days = 60
+
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_detection_array }
+		is_orbital_ring = no
+	}
+
+	possible = {
+		NOT = {
+			has_starbase_building = dark_matter_listening_post
+		}
+		custom_tooltip = {
+			fail_text = "starbase_detection_limit.tooltip.fail"
+			NOT = { count_starbase_modules = { count = 6 type = detection_array include_being_constructed = yes } }
+		}
+	}
+
+	resources = {
+		category = starbase_modules
+		cost = {
+			alloys = 25
+		}
+
+		upkeep = {
+			energy = 0.25
+		}
+	}
+
+	station_modifier = {
+		ship_cloaking_detection_add = 1
+	}
+
+	ai_build_at_chokepoint = yes
+	ai_build_outside_chokepoint = yes
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+		modifier = {
+			add = 1000
+			owner = {
+				NOT = {
+					any_owned_starbase = {
+						has_starbase_module = detection_array
+					}
+				}
+			}
+		}
+	}
+
+	show_in_tech = "tech_detection_array"
+}
+
 
 #############################
 ### NSC2 STARBASE MODULES ###
@@ -177,7 +232,7 @@ xl_battery = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "starbase_xl_limit.tooltip.fail"
-			count_starbase_modules = { count < 6 type = xl_battery }
+			NOT = { count_starbase_modules = { count = 6 type = xl_battery include_being_constructed = yes } }
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = xl_battery }
 	}
@@ -216,7 +271,7 @@ titanic_battery = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "starbase_t_limit.tooltip.fail"
-			count_starbase_modules = { count < 2 type = titanic_battery }
+			NOT = { count_starbase_modules = { count = 2 type = titanic_battery include_being_constructed = yes } }
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = titanic_battery }
 	}

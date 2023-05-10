@@ -34,9 +34,10 @@ weapon_component_template = {
 	prerequisites = { "tech_tomahawk_cruise_missile_1" }
 	component_set = "TOMAHAWK_CRUISE_MISSILE"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
 	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	inline_script = "targeting/capital_ships"
 
 	resources = {
 		category = ship_components
@@ -103,9 +104,10 @@ weapon_component_template = {
 	prerequisites = { "tech_tomahawk_cruise_missile_1" }
 	component_set = "HARPOON_CRUISE_MISSILE"
 	projectile_gfx = "large_missile"
-	tags = { weapon_type_explosive }
+	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
 	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	inline_script = "targeting/capital_ships"
 
 	resources = {
 		category = ship_components
@@ -120,14 +122,6 @@ weapon_component_template = {
 
 	valid_for_country = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = HARPOON_CRUISE_MISSILE }
-	}
-
-	target_weights = {
-		Flagship = 5
-		titan = 4
-		Dreadnought = 3
-		battleship = 2
-		Carrier = 1
 	}
 
 	ai_weight = {
@@ -163,7 +157,7 @@ weapon_component_template = {
 	
 	component_set = "NSC_PD_MISSILE"
 	
-	tags = { weapon_type_point_defense weapon_type_explosive }
+	tags = { weapon_type_point_defense }
 	
 	ai_tags = { weapon_role_point_defense screen }
 

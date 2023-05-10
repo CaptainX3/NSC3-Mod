@@ -1,0 +1,8 @@
+target_weights = {
+	Flagship = 6
+	titan = 5
+	Dreadnought = 4
+	battleship = 3
+	Battlecruiser = 2
+	Carrier = 1
+}
