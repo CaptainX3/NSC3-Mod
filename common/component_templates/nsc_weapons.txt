@@ -27,9 +27,10 @@ weapon_component_template = {
 	prerequisites = { "tech_Flagship_1" }
 	component_set = "PERDITION_BEAM_FLAGSHIP"
 	projectile_gfx = "perdition_beam"
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy weapon_role_artillery t_slot }
 	ai_tags = { weapon_role_artillery }
 	size_restriction = { Flagship }
+	inline_script = "targeting/capital_ships"
 
 	resources = {
 		category = ship_components
@@ -39,19 +40,9 @@ weapon_component_template = {
 			alloys = @xl_t7_upkeep_alloys
 		}
 	}
-
-	target_weights = {
-		Flagship = 5
-		titan = 4
-		Dreadnought = 3
-		battleship = 2
-		Carrier = 1
-	}
 	
 	ai_weight = { weight = 1 }
 }
-
-
 
 weapon_component_template = {
 	key = "PERDITION_BEAM_STARBASE"
@@ -74,20 +65,13 @@ weapon_component_template = {
 	icon = "GFX_ship_part_perdition_beam"
 	icon_frame = 1	
 	firing_arc = 360.0
-	use_ship_kill_target = no	
+	use_ship_kill_target = no
+	tags = { weapon_type_energy weapon_role_artillery t_slot }
 	component_set = "PERDITION_BEAM_STARBASE"
 	projectile_gfx = "perdition_beam"
 	size_restriction = { starbase_citadel starbase_stronghold starbase_headquarters }
-	target_weights = {
-		Flagship = 5
-		titan = 4
-		Dreadnought = 3
-		battleship = 2
-		Carrier = 1
-	}
+	inline_script = "targeting/capital_ships"
 }
-
-
 
 weapon_component_template = {
 	key = "POINT_DEFENCE_STARBASE"
@@ -116,8 +100,6 @@ weapon_component_template = {
 	point_defence_targets = { "missile" "strike_craft" }
 }
 
-
-
 weapon_component_template = {
 	key = "XL_BEAM_STARBASE"
 	size = extra_large
@@ -144,9 +126,10 @@ weapon_component_template = {
 
 	component_set = "XL_BEAM_STARBASE"
 	projectile_gfx = "tachyon_lance"
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy weapon_role_artillery x_slot }
 	ai_tags = { weapon_role_artillery }
 	size_restriction = { starbase_stronghold starbase_headquarters headquarters }
+	inline_script = "targeting/capital_ships"
 	
 	resources = {
 		category = ship_components
@@ -155,14 +138,6 @@ weapon_component_template = {
 			energy = @xl_t6_upkeep_energy
 			alloys = @xl_t6_upkeep_alloys
 		}
-	}
-
-	target_weights = {
-		Flagship = 5
-		titan = 4
-		Dreadnought = 3
-		battleship = 2
-		Carrier = 1
 	}
 
 	ai_weight = { weight = 1 }
@@ -192,9 +167,10 @@ weapon_component_template = {
 	prerequisites = { "tech_spitfire_1" }
 	component_set = "NSC_BB_SNIPER"
 	projectile_gfx = "gauss_cannon_s"
-	tags = { weapon_type_kinetic }
+	tags = { weapon_type_kinetic s_slot }
 	ai_tags = { weapon_role_anti_shield }
 	size_restriction = { battleship Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	inline_script = "targeting/support_ships"
 	
 	resources = {
 		category = ship_components
@@ -207,13 +183,6 @@ weapon_component_template = {
 
 	valid_for_country = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = BATTLESHIP_SNIPER_GUN_1 }
-	}
-
-	target_weights = {
-		corvette = 5
-		destroyer = 4
-		cruiser = 3
-		StrikeCruiser = 2
 	}
 
 	ai_weight = { weight = 1 }
@@ -245,9 +214,10 @@ weapon_component_template = {
 	prerequisites = { "tech_spitfire_1" }
 	component_set = "NSC_BB_SNIPER_2"
 	projectile_gfx = "infrared_laser_s"
-	tags = { weapon_type_energy }
+	tags = { weapon_type_energy s_slot }
 	ai_tags = { weapon_role_anti_armor }
 	size_restriction = { battleship Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	inline_script = "targeting/support_ships"
 	
 	resources = {
 		category = ship_components
@@ -260,12 +230,6 @@ weapon_component_template = {
 
 	valid_for_country = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = BATTLESHIP_SNIPER_GUN_2 }
-	}
-
-	target_weights = {
-		corvette = 5
-		destroyer = 4
-		cruiser = 3
 	}
 
 	ai_weight = { weight = 1 }

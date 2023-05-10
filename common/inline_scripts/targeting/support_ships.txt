@@ -1,0 +1,6 @@
+target_weights = {
+	corvette = 5
+	destroyer = 4
+	cruiser = 3
+	StrikeCruiser = 2
+}

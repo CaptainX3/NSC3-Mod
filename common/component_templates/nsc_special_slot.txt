@@ -43,9 +43,7 @@ utility_component_template = {
 		cost = { alloys = @cost3 }
 	}
 
-	ship_modifier = { 
-		ship_sensor_range_add = 2
-	}
+	sensor = 2
 
 	prerequisites = { "tech_specialcomponents_1" }
 	
@@ -72,7 +70,7 @@ utility_component_template = {
 	}
 	
 	modifier = { 
-		ship_hull_regen_add_perc = 0.05
+		ship_hull_regen_add_perc = 0.01
 		ship_armor_regen_add_perc = 0.01
 	}
 	
@@ -251,7 +249,7 @@ utility_component_template = {
 		cost = { alloys = @cost2 }
 	}
 	
-	modifier = { ship_shield_regen_add_perc = 0.05 }
+	modifier = { ship_shield_regen_add_perc = 0.025 }
 	
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
@@ -307,7 +305,7 @@ utility_component_template = {
 		cost = { alloys = @cost0 }
 	}
 	
-	ship_modifier = { ship_piracy_suppression_add = 3 }
+	ship_modifier = { ship_piracy_suppression_add = 10 }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
 
