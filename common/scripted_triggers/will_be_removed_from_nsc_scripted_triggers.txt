@@ -1,3 +1,0 @@
-nsc_modmenu_game_content_on_trigger = {
-
-}

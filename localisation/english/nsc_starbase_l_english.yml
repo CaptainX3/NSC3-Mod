@@ -187,3 +187,6 @@ spower: "Power Station"
  mod_station_researchers_physics_research_produces_mult: "Research Station Physics £physics  Output"
  mod_station_researchers_society_research_produces_mult: "Research Station Society £society  Output"
  mod_station_researchers_engineering_research_produces_mult: "Research Station Engineering £engineering  Output"
+ 
+##Detection Array Limit
+starbase_detection_limit.tooltip.fail: "You cannot build more than 6 Detection Arrays per starbase."
