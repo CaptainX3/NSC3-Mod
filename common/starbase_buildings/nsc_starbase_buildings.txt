@@ -473,7 +473,7 @@ construction_office = {
 	potential = { is_orbital_ring = no }
 
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = adv_space_engineers }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = construction_office }
 	}
 
 	resources = {
@@ -500,7 +500,7 @@ mining_manager = {
 
 	possible = {
 		has_starbase_module = asteroid_mining 
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = mining_experts }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = mining_manager }
 	}
 
 	resources = {
@@ -577,7 +577,7 @@ adv_starbase_defenses = {
 	}
 
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = adv_starbase }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = adv_starbase_defenses }
 	}
 
 	station_modifier = { 
@@ -630,7 +630,7 @@ ground_forces_academy = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = advanced_military_program }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = ground_forces_academy }
 	}
 	planet_modifier = { 
 		planet_army_build_speed_mult = 0.35
@@ -749,7 +749,7 @@ robot_assembly = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = orbital_assembly }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = robot_assembly }
 	}
 	system_modifier = { planet_pop_assembly_mult = 0.1 }
 	ai_build_at_chokepoint = no
@@ -782,7 +782,7 @@ assembly_line_manufacturing = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = chain_manufacturing }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = assembly_line_manufacturing }
 	}
 	system_modifier = { 
 		planet_jobs_alloys_produces_mult = 0.2
@@ -811,7 +811,7 @@ federal_reserve_bank = {
 		is_orbital_ring = no
 	}
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = financial_space_center }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = federal_reserve_bank }
 	}
 	system_modifier = { trade_value_mult = 0.1 }
 	ai_build_at_chokepoint = no
@@ -836,7 +836,7 @@ cloning_facilities = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = stasis_chambers }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = cloning_facilities }
 	}
 	potential = {
 		is_orbital_ring = yes
@@ -885,7 +885,7 @@ navcom_ai = {
 		upkeep = { energy = 3 }
 	}
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = emergency_portal }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = navcom_ai }
 	}
 	country_modifier = { ship_disengage_chance_mult = 0.05 }
 	ai_build_at_chokepoint = no
@@ -912,7 +912,7 @@ starbase_ai = {
 	}
 
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = starbase_optimal_systems }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = starbase_ai }
 	}
 	
 	station_modifier = {
@@ -950,7 +950,7 @@ real_estate_dev = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = stellar_housing }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = real_estate_dev }
 	}
 
 	planet_modifier = { 
@@ -988,7 +988,7 @@ tv_network = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = administration_computers }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = tv_network }
 	}
 
 	planet_modifier = { 
@@ -1022,7 +1022,7 @@ tv_studio = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = market_computers }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = tv_studio }
 	}
 
 	planet_modifier = { 
