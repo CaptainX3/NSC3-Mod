@@ -12,7 +12,7 @@ on_game_start = {
 # This = Country
 on_tech_increased = {
 	events = {
-		nsc_events_exploration_ship.12
+		nsc_events_exploration_ship.10
 		nsc_events_flagship.1
 		nsc_events_exploration_ship.2
 	}

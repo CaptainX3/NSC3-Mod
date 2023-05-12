@@ -504,7 +504,7 @@ solar_panel = {
 				}
 			}
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel_01 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel }
 	}
 
 	resources = {

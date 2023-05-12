@@ -51,6 +51,10 @@ ship_event = {
 	location = this
 	is_triggered_only = yes
 
+	trigger = {
+		is_ship_size = Flagship #ok I'm an idiot sandwich, sorry mates :(
+	}
+
 	immediate = {
 		#6. A year (or whatever time frame) after the Flagship is spawned, you get an event telling you that other empires have rushed their flagships into production, and they're operational.
 		#This is also the event that spawns Flagships for a random set of AI empires.
