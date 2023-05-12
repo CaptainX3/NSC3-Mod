@@ -57,3 +57,1067 @@ nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_off_butto
         hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 } }
     }
 }
+#NSC_REACTOR_BOOSTER_2
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_2_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_2_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_2_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_2_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 } }
+    }
+}
+#NSC_REACTOR_BOOSTER_3
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_3_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_3_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_3_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_3_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 } }
+    }
+}
+#NSC_BOMBARDMENT_1
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_1_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_1_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_1_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_1_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 } }
+    }
+}
+#NSC_BOMBARDMENT_2
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_2_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_2_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_2_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_2_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 } }
+    }
+}
+#NSC_BOMBARDMENT_3
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_3_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_3_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_3_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_3_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 } }
+    }
+}
+#SPECIAL_SLOT_MULTIPHASIC_SENSORS
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS } }
+    }
+}
+#SPECIAL_SLOT_DAMAGE_CONTROL
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DAMAGE_CONTROL_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DAMAGE_CONTROL_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DAMAGE_CONTROL_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DAMAGE_CONTROL_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL } }
+    }
+}
+#SPECIAL_SLOT_READY_ROOM
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_READY_ROOM_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_READY_ROOM_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_READY_ROOM_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_READY_ROOM_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM } }
+    }
+}
+#SPECIAL_SLOT_CREW_LOUNGE
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_CREW_LOUNGE_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_CREW_LOUNGE_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_CREW_LOUNGE_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_CREW_LOUNGE_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE } }
+    }
+}
+#SPECIAL_SLOT_FIRE_CONTROL
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_FIRE_CONTROL_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_FIRE_CONTROL_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_FIRE_CONTROL_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_FIRE_CONTROL_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL } }
+    }
+}
+#SPECIAL_SLOT_STRUCTURAL_INTEGRITY
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY } }
+    }
+}
+#SPECIAL_SLOT_AUXILIARY_SHIELDS
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS } }
+    }
+}
+#SPECIAL_SLOT_QUANTUM_THRUSTERS
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS } }
+    }
+}
+#SPECIAL_SLOT_DEFLECTOR_ARRAY
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY } }
+    }
+}
+#SPECIAL_SLOT_NAVIGATIONAL_ARRAY
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY } }
+    }
+}
+#SPECIAL_SLOT_KITCHEN_SINK
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_KITCHEN_SINK_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_KITCHEN_SINK_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_KITCHEN_SINK_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_KITCHEN_SINK_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK } }
+    }
+}
+#SPECIAL_SLOT_STELLAR_CARTOGRAPHY
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY } }
+    }
+}
+#SPECIAL_SLOT_MARS_WEAPON_SYSTEM
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM } }
+    }
+}
+#SPECIAL_SLOT_STRIKE_CRAFT
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT } }
+    }
+}
+#EXPLORATION_SLOT_ANOMALY_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB } }
+    }
+}
+#EXPLORATION_SLOT_SURVEY_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB } }
+    }
+}
+#EXPLORATION_SLOT_ANALYSIS_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB } }
+    }
+}
+#EXPLORATION_SLOT_PHYSICS_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB } }
+    }
+}
+#EXPLORATION_SLOT_SOCIETY_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB } }
+    }
+}
+#EXPLORATION_SLOT_ENGINEERING_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB } }
+    }
+}
+#EXPLORATION_SLOT_STELLAR_CARTOGRAPHY
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY } }
+    }
+}
+#EXPLORATION_SLOT_QUANTUM_THRUSTERS
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS } }
+    }
+}
+#EXPLORATION_SLOT_NAVIGATIONAL_ARRAY
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY } }
+    }
+}
+#EXPLORATION_SLOT_MINING_FACILITY
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY } }
+    }
+}
+#EXPLORATION_SLOT_SOLAR_ARRAY
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY } }
+    }
+}
+#EXPLORATION_SLOT_ALLOY_REFINERY
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY } }
+    }
+}
+#BATTLESHIP_SNIPER_GUN_1
+nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 } }
+    }
+}
+#BATTLESHIP_SNIPER_GUN_2
+nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 } }
+    }
+}
+#TOMAHAWK_CRUISE_MISSILE
+nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE } }
+    }
+}
+#HARPOON_CRUISE_MISSILE
+nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+    }
+}
+#NSC_PD_MISSILE
+nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE } }
+    }
+}
+#AFTERBURNER_1
+nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } }
+    }
+}
+#AFTERBURNER_2
+nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } }
+    }
+}

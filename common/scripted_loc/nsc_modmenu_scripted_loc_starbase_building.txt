@@ -12,3 +12,367 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_starbase_category_building_drydock_disabled_desc
 	}
 }
+#sensor_station
+defined_text = {
+	name = Get_nsc_starbase_building_sensor_station_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = sensor_station } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_sensor_station_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = sensor_station } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_sensor_station_disabled_desc
+	}
+}
+#starbase_management
+defined_text = {
+	name = Get_nsc_starbase_building_starbase_management_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_management } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_starbase_management_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_management } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_starbase_management_disabled_desc
+	}
+}
+#mining_base
+defined_text = {
+	name = Get_nsc_starbase_building_mining_base_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = mining_base } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_mining_base_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = mining_base } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_mining_base_disabled_desc
+	}
+}
+#power_station
+defined_text = {
+	name = Get_nsc_starbase_building_power_station_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = power_station } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_power_station_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = power_station } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_power_station_disabled_desc
+	}
+}
+#farming_base
+defined_text = {
+	name = Get_nsc_starbase_building_farming_base_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = farming_base } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_farming_base_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = farming_base } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_farming_base_disabled_desc
+	}
+}
+#customs_office
+defined_text = {
+	name = Get_nsc_starbase_building_customs_office_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = customs_office } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_customs_office_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = customs_office } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_customs_office_disabled_desc
+	}
+}
+#nsc_nanite_field
+defined_text = {
+	name = Get_nsc_starbase_building_nsc_nanite_field_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = nsc_nanite_field } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = nsc_nanite_field } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_disabled_desc
+	}
+}
+#construction_office
+defined_text = {
+	name = Get_nsc_starbase_building_construction_office_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = construction_office } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_construction_office_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = construction_office } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_construction_office_disabled_desc
+	}
+}
+#mining_manager
+defined_text = {
+	name = Get_nsc_starbase_building_mining_manager_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = mining_manager } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_mining_manager_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = mining_manager } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_mining_manager_disabled_desc
+	}
+}
+#reinforced_defenses
+defined_text = {
+	name = Get_nsc_starbase_building_reinforced_defenses_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = reinforced_defenses } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_reinforced_defenses_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = reinforced_defenses } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_reinforced_defenses_disabled_desc
+	}
+}
+#strategic_defenses
+defined_text = {
+	name = Get_nsc_starbase_building_strategic_defenses_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = strategic_defenses } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_strategic_defenses_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = strategic_defenses } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_strategic_defenses_disabled_desc
+	}
+}
+#adv_starbase_defenses
+defined_text = {
+	name = Get_nsc_starbase_building_adv_starbase_defenses_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = adv_starbase_defenses } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_adv_starbase_defenses_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = adv_starbase_defenses } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_adv_starbase_defenses_disabled_desc
+	}
+}
+#repair_module
+defined_text = {
+	name = Get_nsc_starbase_building_repair_module_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = repair_module } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_repair_module_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = repair_module } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_repair_module_disabled_desc
+	}
+}
+#ground_forces_academy
+defined_text = {
+	name = Get_nsc_starbase_building_ground_forces_academy_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = ground_forces_academy } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_ground_forces_academy_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = ground_forces_academy } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_ground_forces_academy_disabled_desc
+	}
+}
+#synthetic_crystal_fabricator
+defined_text = {
+	name = Get_nsc_starbase_building_synthetic_crystal_fabricator_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = synthetic_crystal_fabricator } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_synthetic_crystal_fabricator_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = synthetic_crystal_fabricator } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_synthetic_crystal_fabricator_disabled_desc
+	}
+}
+#synthetic_volatile_motes_fabricator
+defined_text = {
+	name = Get_nsc_starbase_building_synthetic_volatile_motes_fabricator_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = synthetic_volatile_motes_fabricator } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_synthetic_volatile_motes_fabricator_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = synthetic_volatile_motes_fabricator } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_synthetic_volatile_motes_fabricator_disabled_desc
+	}
+}
+#synthetic_gase_fabricator
+defined_text = {
+	name = Get_nsc_starbase_building_synthetic_gase_fabricator_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = synthetic_gase_fabricator } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_synthetic_gase_fabricator_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = synthetic_gase_fabricator } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_synthetic_gase_fabricator_disabled_desc
+	}
+}
+#robot_assembly
+defined_text = {
+	name = Get_nsc_starbase_building_robot_assembly_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = robot_assembly } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_robot_assembly_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = robot_assembly } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_robot_assembly_disabled_desc
+	}
+}
+#assembly_line_manufacturing
+defined_text = {
+	name = Get_nsc_starbase_building_assembly_line_manufacturing_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = assembly_line_manufacturing } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_assembly_line_manufacturing_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = assembly_line_manufacturing } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_assembly_line_manufacturing_disabled_desc
+	}
+}
+#federal_reserve_bank
+defined_text = {
+	name = Get_nsc_starbase_building_federal_reserve_bank_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = federal_reserve_bank } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_federal_reserve_bank_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = federal_reserve_bank } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_federal_reserve_bank_disabled_desc
+	}
+}
+#cloning_facilities
+defined_text = {
+	name = Get_nsc_starbase_building_cloning_facilities_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = cloning_facilities } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_cloning_facilities_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = cloning_facilities } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_cloning_facilities_disabled_desc
+	}
+}
+#navcom_ai
+defined_text = {
+	name = Get_nsc_starbase_building_navcom_ai_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = navcom_ai } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_navcom_ai_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = navcom_ai } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_navcom_ai_disabled_desc
+	}
+}
+#starbase_ai
+defined_text = {
+	name = Get_nsc_starbase_building_starbase_ai_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_ai } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_starbase_ai_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_ai } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_starbase_ai_disabled_desc
+	}
+}
+#real_estate_dev
+defined_text = {
+	name = Get_nsc_starbase_building_real_estate_dev_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = real_estate_dev } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_real_estate_dev_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = real_estate_dev } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_real_estate_dev_disabled_desc
+	}
+}
+#tv_network
+defined_text = {
+	name = Get_nsc_starbase_building_tv_network_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = tv_network } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_tv_network_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = tv_network } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_tv_network_disabled_desc
+	}
+}
+#tv_studio
+defined_text = {
+	name = Get_nsc_starbase_building_tv_studio_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = tv_studio } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_tv_studio_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = tv_studio } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_tv_studio_disabled_desc
+	}
+}

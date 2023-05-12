@@ -47,16 +47,20 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_starbase_category_class_stronghold_disabled_desc
 	}
 }
+#headquarters
+defined_text = {
+	name = Get_nsc_starbase_class_headquarters_enable_disable_status
+	random = no
 
-
-
-
-
-
-
-
-
-
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = headquarters } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_class_headquarters_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = headquarters } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_class_headquarters_disabled_desc
+	}
+}
 #outpost
 defined_text = {
 	name = Get_nsc_starbase_class_outpost_enable_disable_status
