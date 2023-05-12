@@ -4,37 +4,29 @@
 ### EXPLORATION CRUISER EVENTS ###
 ##################################
 
-PROTOTYPE_EXPLORATION_CRUISER_PROJECT:0 "Prototype Exploration Cruiser"
-PROTOTYPE_EXPLORATION_CRUISER_PROJECT_DESC:0 "Our engineers believe they can create a new type of science ship that is specifically designed for deep space exploration, but will also be armed well enough to handle the inherent dangers that await us as we head out into the stars."
-
 EXPLORATION_CRUISER_UPGRADE_PROJECT:0 "Science Ship Upgade Project"
 EXPLORATION_CRUISER_UPGRADE_PROJECT_DESC:0 "Our fleet engineers stand ready to begin the monumental task of retrofitting one of our existing Science ships into the new Exploration Cruiser class. It is expected that this project will take approximately 250 days to complete. When finished, the Scientist Leader of the ship will transfer to their new ship automatically."
 
-expcruiser.01.name: "Prototype Exploration Cruiser"
-expcruiser.01.desc: "As we head out on our first expeditions to explore the galaxy, we have discovered many hidden dangers and threats. To keep our top scientific leaders safe while exploring, our engineers believe they can create a new type of science ship that is designed specifically for deep space exploration, but will also be armed well enough to handle the inherent dangers that await us as we head out into the stars. We have obtained the engineering resources required to begin a Special Project, and we can begin to create this design immediately. Alternatively, we can allocate our saved engineering research to other tasks. We await your decision."
+nsc_events_exploration_ship.3.name: "Prototype Exploration Cruiser"
+nsc_events_exploration_ship.3.desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our ship engineers have been working together with our scientists to come up with a solution to this problem. We believe we finally have the answer.\n\nThe Exploration Cruiser is a large, combat-capable Science Ship dedicated to exploring new worlds and seeking out new life and new civilizations. Our scientists will no longer have to fear the terrors of the void!"
 
-expcruiser.01.a: "An excellent idea. Begin the project immediately!"
-expcruiser.01.b: "I do not believe we have a need for such a ship at this time."
+nsc_events_exploration_ship.3.a: "Excellent, we shall boldly go where no one has gone before!"
 
-expcruiser.02.name: "Prototype Exploration Cruiser Completed"
-expcruiser.02.desc: "Our engineers were successful! The brand new Prototype Exploration Cruiser has been completed and is ready for orders!"
+nsc_events_exploration_ship.10.name: "Science Fleet Upgrade"
+nsc_events_exploration_ship.10.desc:0 "Now that we have finalized the permanent design of the Exploration Cruiser, our fleet logistics team would like to know if you want to upgrade our fleet of Science ships to this new, enhanced design. Performing the upgrade for each ship will take approximately §G250 days§! and will require an investment of §B400 Alloys§! and §Y50 Energy§! per ship, but would give our leading exploration scientists a much better chance of survival in an increasingly hostile universe. We can upgrade up to 8 Science ships to the new class. A Special Project will be created for each ship you want to upgrade, which will require moving that ship to our home system to begin the project. There is no time limit on how quickly you complete the projects. We await your decision."
 
-expcruiser.03.name: "Science Fleet Upgrade"
-expcruiser.03.desc:0 "Now that we have finalized the permanent design of the Exploration Cruiser, our fleet logistics team would like to know if you want to upgrade our fleet of Science ships to this new, enhanced design. Performing the upgrade for each ship will take approximately §G250 days§! and will require an investment of §B400 Alloys§! and §Y50 Energy§! per ship, but would give our leading exploration scientists a much better chance of survival in an increasingly hostile universe. We can upgrade up to 8 Science ships to the new class. A Special Project will be created for each ship you want to upgrade, which will require moving that ship to our home system to begin the project. There is no time limit on how quickly you complete the projects. We await your decision."
+nsc_events_exploration_ship.10.1:0 "Choose to upgrade §Y1§! ship. (§Y50 Energy§! & §B400 Alloys§!)"
+nsc_events_exploration_ship.10.2:0 "Choose to upgrade §Y2§! ships. (§Y100 Energy§! & §B800 Alloys§!)"
+nsc_events_exploration_ship.10.3:0 "Choose to upgrade §Y3§! ships. (§Y150 Energy§! & §B1200 Alloys§!)"
+nsc_events_exploration_ship.10.4:0 "Choose to upgrade §Y4§! ships. (§Y200 Energy§! & §B1600 Alloys§!)"
+nsc_events_exploration_ship.10.5:0 "Choose to upgrade §Y5§! ships. (§Y250 Energy§! & §B2000 Alloys§!)"
+nsc_events_exploration_ship.10.6:0 "Choose to upgrade §Y6§! ships. (§Y300 Energy§! & §B2400 Alloys§!)"
+nsc_events_exploration_ship.10.7:0 "Choose to upgrade §Y7§! ships. (§Y350 Energy§! & §B2800 Alloys§!)"
+nsc_events_exploration_ship.10.8:0 "Choose to upgrade §Y8§! ships. (§Y400 Energy§! & §B3200 Alloys§!)"
+nsc_events_exploration_ship.10.end: "Choose not to upgrade any ships at all. (§M+25 Influence§!)"
 
-expcruiser.03.1:0 "Choose to upgrade §Y1§! ship. (§B400 Alloys§! & §Y50 Energy§!)"
-expcruiser.03.2:0 "Choose to upgrade §Y2§! ships. (§B800 Alloys§! & §Y100 Energy§!)"
-expcruiser.03.3:0 "Choose to upgrade §Y3§! ships. (§B1200 Alloys§! & §Y150 Energy§!)"
-expcruiser.03.4:0 "Choose to upgrade §Y4§! ships. (§B1600 Alloys§! & §Y200 Energy§!)"
-expcruiser.03.5:0 "Choose to upgrade §Y5§! ships. (§B2000 Alloys§! & §Y250 Energy§!)"
-expcruiser.03.6:0 "Choose to upgrade §Y6§! ships. (§B2400 Alloys§! & §Y300 Energy§!)"
-expcruiser.03.7:0 "Choose to upgrade §Y7§! ships. (§B2800 Alloys§! & §Y350 Energy§!)"
-expcruiser.03.8:0 "Choose to upgrade §Y8§! ships. (§B3200 Alloys§! & §Y400 Energy§!)"
-expcruiser.03.end: "Choose not to upgrade any ships at all. (§M+25 Influence§!)"
-
-expcruiser.04.name: "Science Ship Upgrade Complete"
-expcruiser.04.desc: "We have completed a Science Ship Upgrade project. The Scientist leader has taken his station and the new ship is now awaiting your orders."
-
+nsc_events_exploration_ship.11.name: "Science Ship Upgrade Complete"
+nsc_events_exploration_ship.11.desc: "We have completed a Science Ship Upgrade project. The Scientist leader has taken his station and the new ship is now awaiting your orders."
 
 ##################################################################################################################################################################################################################
 ### FLAGSHIP EVENT CHAIN ###

@@ -1601,9 +1601,9 @@ explorationship = {
 			}
 		}
 	}
-	
+
 	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } #also see: 'nsc_events_exploration_ship.10'
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } #also see: 'nsc_events_exploration_ship.3', 'nsc_events_exploration_ship.10'
 	}
 
 	min_upgrade_cost = { alloys = 5 }

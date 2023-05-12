@@ -1,18 +1,4 @@
 special_project = {
-	key = "PROTOTYPE_EXPLORATION_CRUISER_PROJECT"
-	days_to_research = 180
-	tech_department = engineering_technology
-	icon = "gfx/interface/icons/situation_log/situation_log_ship.dds"
-	picture = GFX_evt_big_landing_ship
-	
-	event_scope = country_event
-
-	on_success = {
-		country_event = { id = nsc_events_exploration_ship.11 }
-	}
-}
-
-special_project = {
 	key = "EXPLORATION_CRUISER_UPGRADE_PROJECT"
 	days_to_research = 250
 	tech_department = engineering_technology
@@ -26,6 +12,6 @@ special_project = {
 	}
 
 	on_success = {
-		ship_event = { id = nsc_events_exploration_ship.13 }
+		ship_event = { id = nsc_events_exploration_ship.11 }
 	}
 }
