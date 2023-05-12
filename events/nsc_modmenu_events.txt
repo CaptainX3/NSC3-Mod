@@ -16,6 +16,18 @@ country_event = {
 		name = nsc_modmenu.1.a
 	}
 }
+#warning about changing the mod menu settings in the middle of the game
+country_event = {
+	id = nsc_modmenu.2
+	title = "nsc_modmenu.2.name"
+	desc = "nsc_modmenu.2.desc"
+	picture = GFX_evt_nsc_modmenu_mod_warning
+	is_triggered_only = yes
+
+	option = {
+		name = nsc_modmenu.2.a
+	}
+}
 #confirm resetting all settings
 country_event = {
 	id = nsc_modmenu.10

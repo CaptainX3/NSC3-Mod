@@ -2,22 +2,6 @@ nsc_modmenu_setting_page_mod_category_preset_shared_button_effect = {
     potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
     allow = { always = yes }
 }
-nsc_modmenu_setting_page_mod_category_preset_reset_button_effect = {
-    potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
-    allow = { always = yes }
-    effect = {
-        custom_tooltip = nsc_modmenu_setting_page_reset_effect_tooltip
-        hidden_effect = { nsc_modmenu_mod_preset_setting_reset_effect = yes }
-    }
-}
-nsc_modmenu_setting_page_mod_category_preset_go_home_button_effect = {
-    potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
-    allow = { always = yes }
-    effect = {
-        custom_tooltip = nsc_modmenu_go_home_page_effect_tooltip
-        hidden_effect = { nsc_modmenu_go_home_page_effect = yes }
-    }
-}
 nsc_modmenu_setting_page_mod_category_preset_go_back_button_effect = {
     potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
     allow = { always = yes }
@@ -27,4 +11,77 @@ nsc_modmenu_setting_page_mod_category_preset_go_next_button_effect = {
     potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
     allow = { always = yes }
     effect = { hidden_effect = { nsc_modmenu_go_next_page_effect = { CATEGORY = mod SUBCAT = introduction } } }
+}
+#preset_disable_all
+nsc_modmenu_setting_page_mod_category_preset_disable_all_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_mod_category_preset_disable_all_name_desc }
+}
+nsc_modmenu_setting_page_mod_category_preset_disable_all_apply_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
+    allow = {
+        custom_tooltip = nsc_modmenu_setting_page_mod_category_preset_disable_all_effect_tooltip
+        custom_tooltip = {
+            fail_text = nsc_modmenu_setting_page_mod_category_preset_apply.fail
+            hidden_trigger = {
+                NAND = {
+                    nsc_modmenu_ship_class_settings_on_trigger = no
+                    nsc_modmenu_ship_component_settings_on_trigger = no
+                    nsc_modmenu_starbase_class_settings_on_trigger = no
+                    nsc_modmenu_starbase_module_settings_on_trigger = no
+                    nsc_modmenu_starbase_building_settings_on_trigger = no
+                    nsc_modmenu_etc_feature_settings_on_trigger = no
+                }
+            }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_setting_page_mod_category_preset_disable_all_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_reset_all_settings_effect = yes #reset previous settings first
+            nsc_modmenu_disable_all_settings_effect = yes #then apply the preset
+        }
+    }
+}
+#preset_ship_classes_only
+nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_name_desc }
+}
+nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_apply_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_preset_page_opened }
+    allow = {
+        custom_tooltip = nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_effect_tooltip
+        custom_tooltip = {
+            fail_text = nsc_modmenu_setting_page_mod_category_preset_apply.fail
+            hidden_trigger = {
+                NAND = {
+                    nsc_modmenu_ship_class_settings_on_trigger = yes
+                    nsc_modmenu_ship_component_settings_on_trigger = no
+                    nsc_modmenu_starbase_class_settings_on_trigger = no
+                    nsc_modmenu_starbase_module_settings_on_trigger = no
+                    nsc_modmenu_starbase_building_settings_on_trigger = no
+                    nsc_modmenu_etc_feature_settings_on_trigger = no
+                }
+            }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_reset_all_settings_effect = yes
+            nsc_modmenu_ship_component_settings_disable_effect = yes
+
+            nsc_modmenu_starbase_class_settings_disable_effect = yes
+            nsc_modmenu_starbase_module_settings_disable_effect = yes
+            nsc_modmenu_starbase_building_settings_disable_effect = yes
+
+            nsc_modmenu_etc_feature_settings_disable_effect = yes
+            nsc_modmenu_etc_ai_difficulty_setting_reset_effect = yes
+        }
+    }
 }

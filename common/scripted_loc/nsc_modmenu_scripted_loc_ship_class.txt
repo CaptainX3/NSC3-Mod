@@ -46,3 +46,291 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_plus
 	}
 }
+#Battlecruiser
+defined_text = {
+	name = Get_nsc_ship_class_Battlecruiser_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Battlecruiser_build_cost
+	random = no
+
+	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Battlecruiser_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_speed_desc_plus
+	}
+}
+#Carrier
+defined_text = {
+	name = Get_nsc_ship_class_Carrier_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Carrier_build_cost
+	random = no
+
+	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Carrier_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_speed_desc_plus
+	}
+}
+#Dreadnought
+defined_text = {
+	name = Get_nsc_ship_class_Dreadnought_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Dreadnought_build_cost
+	random = no
+
+	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Dreadnought_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_speed_desc_plus
+	}
+}
+#Flagship
+defined_text = {
+	name = Get_nsc_ship_class_Flagship_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Flagship_build_cost
+	random = no
+
+	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_Flagship_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_plus
+	}
+}
+#headquarters
+defined_text = {
+	name = Get_nsc_ship_class_headquarters_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_headquarters_build_cost
+	random = no
+
+	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_headquarters_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_plus
+	}
+}
+#explorationship
+defined_text = {
+	name = Get_nsc_ship_class_explorationship_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_explorationship_build_cost
+	random = no
+
+	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_explorationship_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_plus
+	}
+}

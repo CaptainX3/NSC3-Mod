@@ -12,3 +12,535 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_disabled_desc
 	}
 }
+#NSC_REACTOR_BOOSTER_2
+defined_text = {
+	name = Get_nsc_ship_component_NSC_REACTOR_BOOSTER_2_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_2_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_2_disabled_desc
+	}
+}
+#NSC_REACTOR_BOOSTER_3
+defined_text = {
+	name = Get_nsc_ship_component_NSC_REACTOR_BOOSTER_3_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_3_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_3_disabled_desc
+	}
+}
+#NSC_BOMBARDMENT_1
+defined_text = {
+	name = Get_nsc_ship_component_NSC_BOMBARDMENT_1_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_1_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_1_disabled_desc
+	}
+}
+#NSC_BOMBARDMENT_2
+defined_text = {
+	name = Get_nsc_ship_component_NSC_BOMBARDMENT_2_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_2_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_2_disabled_desc
+	}
+}
+#NSC_BOMBARDMENT_3
+defined_text = {
+	name = Get_nsc_ship_component_NSC_BOMBARDMENT_3_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_3_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_BOMBARDMENT_3_disabled_desc
+	}
+}
+#SPECIAL_SLOT_MULTIPHASIC_SENSORS
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MULTIPHASIC_SENSORS } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MULTIPHASIC_SENSORS_disabled_desc
+	}
+}
+#SPECIAL_SLOT_DAMAGE_CONTROL
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_DAMAGE_CONTROL_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DAMAGE_CONTROL_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DAMAGE_CONTROL_disabled_desc
+	}
+}
+#SPECIAL_SLOT_READY_ROOM
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_READY_ROOM_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_READY_ROOM_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_READY_ROOM_disabled_desc
+	}
+}
+#SPECIAL_SLOT_CREW_LOUNGE
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_CREW_LOUNGE_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_CREW_LOUNGE_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_CREW_LOUNGE } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_CREW_LOUNGE_disabled_desc
+	}
+}
+#SPECIAL_SLOT_FIRE_CONTROL
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_FIRE_CONTROL_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_FIRE_CONTROL_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_FIRE_CONTROL } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_FIRE_CONTROL_disabled_desc
+	}
+}
+#SPECIAL_SLOT_STRUCTURAL_INTEGRITY
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRUCTURAL_INTEGRITY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRUCTURAL_INTEGRITY_disabled_desc
+	}
+}
+#SPECIAL_SLOT_AUXILIARY_SHIELDS
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_AUXILIARY_SHIELDS } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_AUXILIARY_SHIELDS_disabled_desc
+	}
+}
+#SPECIAL_SLOT_QUANTUM_THRUSTERS
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_QUANTUM_THRUSTERS } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_QUANTUM_THRUSTERS_disabled_desc
+	}
+}
+#SPECIAL_SLOT_DEFLECTOR_ARRAY
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DEFLECTOR_ARRAY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_DEFLECTOR_ARRAY_disabled_desc
+	}
+}
+#SPECIAL_SLOT_NAVIGATIONAL_ARRAY
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_NAVIGATIONAL_ARRAY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_NAVIGATIONAL_ARRAY_disabled_desc
+	}
+}
+#SPECIAL_SLOT_KITCHEN_SINK
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_KITCHEN_SINK_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_KITCHEN_SINK_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_KITCHEN_SINK } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_KITCHEN_SINK_disabled_desc
+	}
+}
+#SPECIAL_SLOT_STELLAR_CARTOGRAPHY
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STELLAR_CARTOGRAPHY_disabled_desc
+	}
+}
+#SPECIAL_SLOT_MARS_WEAPON_SYSTEM
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_MARS_WEAPON_SYSTEM_disabled_desc
+	}
+}
+#SPECIAL_SLOT_STRIKE_CRAFT
+defined_text = {
+	name = Get_nsc_ship_component_SPECIAL_SLOT_STRIKE_CRAFT_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_ANOMALY_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_ANOMALY_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_SURVEY_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_SURVEY_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_ANALYSIS_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_ANALYSIS_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_PHYSICS_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_PHYSICS_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_SOCIETY_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_SOCIETY_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_ENGINEERING_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_ENGINEERING_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_STELLAR_CARTOGRAPHY
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_QUANTUM_THRUSTERS
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_NAVIGATIONAL_ARRAY
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_MINING_FACILITY
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_MINING_FACILITY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_SOLAR_ARRAY
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_SOLAR_ARRAY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_disabled_desc
+	}
+}
+#EXPLORATION_SLOT_ALLOY_REFINERY
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_ALLOY_REFINERY_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_disabled_desc
+	}
+}
+#BATTLESHIP_SNIPER_GUN_1
+defined_text = {
+	name = Get_nsc_ship_component_BATTLESHIP_SNIPER_GUN_1_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_disabled_desc
+	}
+}
+#BATTLESHIP_SNIPER_GUN_2
+defined_text = {
+	name = Get_nsc_ship_component_BATTLESHIP_SNIPER_GUN_2_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_disabled_desc
+	}
+}
+#TOMAHAWK_CRUISE_MISSILE
+defined_text = {
+	name = Get_nsc_ship_component_TOMAHAWK_CRUISE_MISSILE_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_disabled_desc
+	}
+}
+#HARPOON_CRUISE_MISSILE
+defined_text = {
+	name = Get_nsc_ship_component_HARPOON_CRUISE_MISSILE_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled_desc
+	}
+}
+#NSC_PD_MISSILE
+defined_text = {
+	name = Get_nsc_ship_component_NSC_PD_MISSILE_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc
+	}
+}
+#AFTERBURNER_1
+defined_text = {
+	name = Get_nsc_ship_component_AFTERBURNER_1_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_disabled_desc
+	}
+}
+#AFTERBURNER_2
+defined_text = {
+	name = Get_nsc_ship_component_AFTERBURNER_2_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_disabled_desc
+	}
+}
