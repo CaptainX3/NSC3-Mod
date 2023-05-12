@@ -1,0 +1,41 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "machine_01_mega_art_rig"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Art/machine_01_mega_art_rig.mesh"
+		
+		animation = { id = "idle"						type = "machine_01_mega_art_rig_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_art_core_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Art/machine_01_mega_art_core.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_art_upper_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Art/machine_01_mega_art_upper.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_art_lower_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Art/machine_01_mega_art_lower.mesh"
+
+	}
+	
+	
+	pdxmesh = {
+		name = "machine_01_mega_art_institution_01_stage_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Art/machine_01_mega_art_stage_1.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_art_institution_01_stage_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Art/machine_01_mega_art_stage_3.mesh"
+
+	}
+
+}

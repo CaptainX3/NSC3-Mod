@@ -1,0 +1,36 @@
+objectTypes = {
+	
+	
+	
+	pdxmesh = {
+		name = "machine_01_interstellar_assembly_main_rig"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Interstellar_Assembly/machine_01_interstellar_assembly_main_rig.mesh"
+	
+		animation = { id = "idle"						type = "machine_01_interstellar_assembly_main_rig_idle_animation" }
+	}
+	
+	pdxmesh = {
+		name = "machine_01_interstellar_assembly_01_stage_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Interstellar_Assembly/machine_01_interstellar_assembly_part_1.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_interstellar_assembly_01_stage_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Interstellar_Assembly/machine_01_interstellar_assembly_part_2.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_interstellar_assembly_01_stage_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Interstellar_Assembly/machine_01_interstellar_assembly_part_3.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_interstellar_assembly_01_stage_4_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Interstellar_Assembly/machine_01_interstellar_assembly_part_4.mesh"
+
+	}
+	
+}

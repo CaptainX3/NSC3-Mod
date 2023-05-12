@@ -1,0 +1,40 @@
+objectTypes = {
+	
+
+#######  crisis corvettes  #######	
+	
+	pdxmesh = {
+		name = "machine_01_crisis_small_M1S1_mesh"
+		file = "gfx/models/ships/machine_01/Crisis_Assets/machine_01_dark_corvette_M1S1.mesh"
+		scale = 1.0
+	}
+		
+	pdxmesh = {
+		name = "machine_01_crisis_small_S3_mesh"
+		file = "gfx/models/ships/machine_01/Crisis_Assets/machine_01_dark_corvette_S3.mesh"
+		scale = 1.0
+	}	
+	
+#######  crisis destroyers  #######	
+
+	pdxmesh = {
+		name = "machine_01_crisis_medium_L1S2_mesh"
+		file = "gfx/models/ships/machine_01/Crisis_Assets/machine_01_dark_destroyer_L1S2.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_crisis_medium_M2S2_mesh"
+		file = "gfx/models/ships/machine_01/Crisis_Assets/machine_01_dark_destroyer_M2S2.mesh"
+		scale = 1.0
+	}
+	
+#######  crisis cruiser  #######	
+	
+	pdxmesh = {
+		name = "machine_01_crisis_large_L1M2S2_mesh"
+		file = "gfx/models/ships/machine_01/Crisis_Assets/machine_01_dark_cruiser_L1M2S2.mesh"
+		scale = 1.0
+	}
+	
+}

@@ -1,0 +1,100 @@
+### Ship ###
+#classes
+nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod = {
+	ship_StrikeCruiser_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_StrikeCruiser_build_speed_mod = {
+	shipsize_StrikeCruiser_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Battlecruiser_build_cost_mod = {
+	ship_Battlecruiser_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Battlecruiser_build_speed_mod = {
+	shipsize_Battlecruiser_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Carrier_build_cost_mod = {
+	ship_Carrier_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Carrier_build_speed_mod = {
+	shipsize_Carrier_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Dreadnought_build_cost_mod = {
+	ship_Dreadnought_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Dreadnought_build_speed_mod = {
+	shipsize_Dreadnought_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Flagship_build_cost_mod = {
+	ship_Flagship_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_Flagship_build_speed_mod = {
+	shipsize_Flagship_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_headquarters_build_cost_mod = {
+	ship_headquarters_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_headquarters_build_speed_mod = {
+	shipsize_headquarters_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_explorationship_build_cost_mod = {
+	ship_explorationship_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_explorationship_build_speed_mod = {
+	shipsize_explorationship_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+### Starbase ###
+#classes
+nsc_modmenu_starbase_class_common_upgrade_cost_mod = {
+	starbase_upgrade_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_starbase_class_common_upgrade_speed_mod = {
+	starbase_upgrade_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_starbase_class_outpost_build_cost_mod = {
+	starbase_outpost_cost_mult = 0.01
+	country_starbase_influence_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_starbase_class_outpost_build_speed_mod = {
+	shipsize_starbase_outpost_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+### ETC ###
+#features
+nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod = {
+	ships_upkeep_mult = 0.01
+}
+nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod = {
+	mod_ship_naval_cap_usage_mult = 0.01
+}
+#ai difficulties
+nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod = {
+	country_produces_mult = 0.01
+	country_physics_research_produces_mult = -0.01
+	country_society_research_produces_mult = -0.01
+	country_engineering_research_produces_mult = -0.01
+}
+nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod = {
+	country_physics_research_produces_mult = 0.01
+	country_society_research_produces_mult = 0.01
+	country_engineering_research_produces_mult = 0.01
+}
+nsc_modmenu_etc_feature_ai_difficulty_military_bonus_mod = {
+	ship_weapon_damage = 0.01
+}

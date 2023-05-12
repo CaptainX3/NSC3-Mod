@@ -1,0 +1,15 @@
+objectTypes = {
+		###loooooooool
+	pdxmesh = {
+		name = "jugger_01_juggernaut_frame_mesh"
+		file = "gfx/models/ships/juggernauts/molluscoid_01/molluscoid_01_juggernaut_frame.mesh"
+		animation = { id = "idle" 			type = "molluscoid_01_juggernaut_frame_idle_animation" }
+		animation = { id = "death" 			type = "molluscoid_01_juggernaut_frame_death_animation" }
+	}
+	
+	pdxmesh = {
+		name = "machine_01_juggernaut_mesh"
+		file = "gfx/models/ships/machine_01/Juggernaut_Assets/machine_01_juggernaut.mesh"
+
+	}
+}

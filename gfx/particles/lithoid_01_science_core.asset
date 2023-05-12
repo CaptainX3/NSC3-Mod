@@ -1,0 +1,343 @@
+particle={
+	name="lithoid_01_science_core_file"
+	subsystem={
+		name="trail"
+		max_amount=15
+		slave_particles=0
+		sort="depth"
+		emitter_type="sphere"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/sun_flairs.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255.000,R2
+			y=255.000,G2
+			z=255.000,B2
+			alpha=255.000,alpha
+		}
+		position={
+			x=0.000
+			y=0.000
+			z=0.000
+		}
+		start=0.000
+		duration=-1.000
+		emitter_yaw={ 0.000 0.000 }
+		emitter_pitch={ 90.000 0.000 }
+		velocity_pitch=0.000
+		velocity_yaw=0.000
+		velocity=0.000
+		life={ 2.000 0.200 }
+		emission=5.000
+		size=3.000,grow
+		particle_yaw={ 0.000 180.000 }
+		particle_pitch={ 0.000 180.000 }
+		rotation={ 0.000 180.000 }
+		rotation_speed={ 50.000 0.000 }
+	}
+	subsystem={
+		name="flare"
+		max_amount=15
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/flare_wide.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255.000,R
+			y=255.000,G
+			z=255.000,B
+			alpha=255.000,alpha_fade
+		}
+		position={
+			x=0.000
+			y=0.000
+			z=0.000
+		}
+		start=0.000
+		duration=-1.000
+		emitter_yaw={ 0.000 0.000 }
+		emitter_pitch={ 0.000 0.000 }
+		velocity_pitch=0.000
+		velocity_yaw=0.000
+		life={ 3.000 0.430 }
+		emission=3.000
+		size={ 2.500 0.800 }
+		particle_yaw={ 0.000 70.000 }
+		particle_pitch={ 0.000 180.000 }
+		rotation={ 0.000 180.000 }
+	}
+	subsystem={
+		name="globe"
+		max_amount=3
+		slave_particles=0
+		sort="depth"
+		emitter_type="sphere"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/bubble.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255.000,R2
+			y=255.000,G2
+			z=255.000,B2
+			alpha=230.000,alpha
+		}
+		position={
+			x=0.000
+			y=0.000
+			z=0.000
+		}
+		start=0.000
+		duration=-1.000
+		emitter_yaw={ 0.000 0.000 }
+		emitter_pitch={ 90.000 0.000 }
+		velocity_pitch=0.000
+		velocity_yaw=0.000
+		velocity=0.000
+		life=3.000
+		emission=100.000
+		size=2.300,grow
+		particle_yaw={ 0.000 180.000 }
+		particle_pitch={ 0.000 180.000 }
+		rotation={ 0.000 180.000 }
+		rotation_speed={ 50.000 0.000 }
+	}
+	subsystem={
+		name="glow_fire"
+		max_amount=15
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=220.000,R
+			y=255.000,G
+			z=255.000,B
+			alpha=50.000,alpha
+		}
+		position={
+			x=0.000
+			y=0.000
+			z=0.000
+		}
+		start=0.000
+		duration=-1.000
+		emitter_yaw={ 0.000 0.000 }
+		emitter_pitch={ 90.000 0.000 }
+		velocity_pitch=0.000
+		velocity_yaw=0.000
+		velocity=0.000
+		life=1.000
+		emission=10.000
+		size=1.900,grow
+		particle_pitch=90.000
+		rotation={ 0.000 180.000 }
+	}
+	subsystem={
+		name="glow_add"
+		max_amount=2
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		texture={
+			file="gfx/particles/flare.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255.000,R
+			y=255.000,G
+			z=255.000,B
+			alpha=50.000,alpha_fade
+		}
+		position={
+			x=0.000
+			y=0.000
+			z=0.000
+		}
+		start=0.000
+		duration=-1.000
+		emitter_yaw={ 0.000 0.000 }
+		emitter_pitch={ 0.000 0.000 }
+		velocity_pitch=0.000
+		velocity_yaw=0.000
+		velocity=0.000
+		life=3.000
+		emission={ 500.000 2.000 }
+		size=4.300
+		rotation={ 0.000 180.000 }
+		rotation_speed={ 50.000 0.000 }
+	}
+	animation={
+		name="alpha_fade"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.029 0.086 0.138 0.984 0.647 0.313 1.000 0.000 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="G"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.953 0.056 0.766 0.138 0.250 0.435 0.172 1.000 0.000 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="B"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 1.000 0.129 1.000 0.268 0.875 0.388 0.516 1.000 0.000 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="R"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.953 0.026 0.641 0.118 0.219 0.509 0.109 1.000 0.000 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="G2"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.719 0.209 0.570 0.444 0.195 1.000 0.281 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="B2"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.906 0.347 0.844 0.426 0.516 1.000 0.297 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="R2"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 1.000 0.097 0.211 0.194 0.172 0.268 0.313 0.350 0.156 0.424 0.102 0.600 0.195 0.726 0.055 1.000 0.000 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="grow"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.211 0.403 0.586 0.774 0.852 1.000 0.961 
+		}
+		op="MUL"
+		time="life"
+	}
+	animation={
+		name="alpha"
+		start=0.000
+		duration=1.000
+		repeat=no
+		minValue=0.000
+		maxValue=1.000
+		curve={
+			0.000 0.000 0.159 0.914 0.809 0.797 0.938 0.195 1.000 0.016 
+		}
+		op="MUL"
+		time="life"
+	}
+	force={
+		type="planar"
+		name="force0"
+		position={
+			0.000 0.000 0.000 
+		}
+		direction={
+			0.000 1.000 0.000 
+		}
+		local_force=yes
+		yaw=0.000
+		division=16
+		amount=5.000
+	}
+}

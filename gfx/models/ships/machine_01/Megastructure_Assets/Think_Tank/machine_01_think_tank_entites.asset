@@ -1,0 +1,224 @@
+#####################################################
+#####											#####
+#####				Machine						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "machine_01_thinktank_upper_ring_entity"
+	pdxmesh = "machine_01_thinktank_ring_1_mesh"
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
+		start_event = { node = "effect_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+}
+
+entity = {
+	name = "machine_01_thinktank_ring_entity"
+	pdxmesh = "machine_01_thinktank_ring_mesh"
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
+		start_event = { node = "effect_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+}
+entity = {
+	name = "machine_01_thinktank_lower_ring_entity"
+	pdxmesh = "machine_01_thinktank_ring_2_mesh"
+	default_state = "idle"
+	state = { name = "idle"
+	
+		start_event = { node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
+		start_event = { node = "effect_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	}
+}
+
+entity = {
+	name = "machine_01_thinktank_part1_entity"
+	pdxmesh = "machine_01_thinktank_part1_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_core_amb" } }
+		#event = { time = 0 node = "center" particle = "think_tank_core_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_07" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "light_locator_08" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+}
+
+
+entity = {
+	name = "machine_01_thinktank_part2_entity"
+	pdxmesh = "machine_01_thinktank_part2_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 10
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_structure_amb_01" stop_on_state_change = yes } }
+
+	}
+}
+
+
+entity = {
+	name = "machine_01_thinktank_part3_entity"
+	pdxmesh = "machine_01_thinktank_part3_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_structure_amb_02" stop_on_state_change = yes } }
+		start_event = { node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_03" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_04" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_03" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_04" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_03" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "effect_04" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		event = { node = "effect_01" particle = "machine_01_2_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+		event = { node = "effect_02" particle = "machine_01_2_0_ship_exhaust_oblong_moving_particle" keep_particle = yes trigger_once = yes }
+	}
+
+	
+}
+
+###matde_platform_small_beam_effect
+
+
+entity = {
+	name = "machine_01_thinktank_phase_01_entity"
+	pdxmesh = "machine_01_thinktank_rig"
+	locator = { name = "reactor"	position = { 0 0 0 } }
+	locator = { name = "reactorinvert"	position = { 0 0 0 } rotation = { 0 180 0 } }
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	
+	state = { name = "idle" animation = "think_tank_idle" animation_speed = 1
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_core_amb" } }
+		start_event = { node = "reactor" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "reactorinvert" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+	
+	attach = { "root" = "machine_01_thinktank_part1_entity" }
+	attach = { "root" = "machine_01_nexus_01_core_entity" }
+	
+	
+
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "machine_01_thinktank_phase_02_entity"
+	pdxmesh = "machine_01_thinktank_rig"
+	locator = { name = "reactor"	position = { 0 0 0 } }
+	locator = { name = "reactorinvert"	position = { 0 0 0 } rotation = { 0 180 0 } }
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	
+	state = { name = "idle" animation = "think_tank_idle" animation_speed = 1.5
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_core_amb" } }
+		start_event = { node = "reactor" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "reactorinvert" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		
+	}
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+	
+	attach = { "root" = "machine_01_thinktank_part1_entity" }
+	attach = { "root" = "machine_01_thinktank_part2_entity" }
+	attach = { "root" = "machine_01_nexus_01_core_entity" }
+	
+	
+
+
+	cull_radius = 500
+}
+entity = {
+	name = "machine_01_thinktank_phase_03_entity"
+	pdxmesh = "machine_01_thinktank_rig"
+	locator = { name = "reactor"	position = { 0 -8.21 0 } }
+	locator = { name = "reactorinvert"	position = { 0 -8.21 0 } rotation = { 0 180 0 } }
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "think_tank_idle" animation_speed = 2.0
+		start_event = { trigger_once = yes sound = { soundeffect = "think_tank_core_amb" } }
+		start_event = { node = "reactor" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "reactorinvert" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }	
+	}
+	state = { name = "construction"
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+	
+	
+	attach = { "root" = "machine_01_thinktank_part1_entity" }
+	attach = { "root" = "machine_01_thinktank_part2_entity" }
+	attach = { "root" = "machine_01_thinktank_part3_entity" }
+	attach = { "root" = "machine_01_nexus_03_core_entity" }
+	#attach = { "core" = "machine_01_thinktank_upper_ring_entity" }
+	#attach = { "ring" = "machine_01_thinktank_lower_ring_entity" }
+	
+	
+	
+
+
+	cull_radius = 500
+}
+
+
+entity = {
+	name = "machine_01_nexus_01_core_entity"
+	pdxmesh = "machine_01_thinktank_rig"
+	get_state_from_parent = no
+	
+	attach = { "core" = "machine_01_thinktank_ring_entity" }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "think_tank_idle" animation_speed = 3.0 }
+
+}
+
+entity = {
+	name = "machine_01_nexus_03_core_entity"
+	pdxmesh = "machine_01_thinktank_rig"
+	get_state_from_parent = no
+	
+	attach = { "core" = "machine_01_thinktank_upper_ring_entity" }
+	attach = { "ring" = "machine_01_thinktank_lower_ring_entity" }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "think_tank_idle" animation_speed = 5.0 }
+
+}
+
+
+animation = {
+	name = "machine_01_thinktank_idle_animation"
+	file = "machine_01_mega_shipyard_idle.anim"
+}

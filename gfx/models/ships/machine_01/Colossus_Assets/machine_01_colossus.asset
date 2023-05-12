@@ -1,0 +1,448 @@
+@colossus_scale = 24
+
+entity = {
+	name = "machine_01_colossus_entity"
+	pdxmesh = "machine_01_colossus_frame_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+	state = { name = "moving" animation = "idle" }
+	state = { name = "working" animation = "idle" }
+	state = { name = "death" animation = "closed_death" looping = no 
+		event = { time = 13.46 node = "core_effect" particle = "dreadnought_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"death" = 0
+				"working" = 0
+			}
+		}
+	}
+	state = { name = "death" animation = "opened_death" looping = no 
+		event = { time = 9.8 node = "core_effect" particle = "dreadnought_explosion_particle" sound = { soundeffect = ship_destroyed } }
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"death" = 0
+				"working" = 100
+			}
+		}
+	}
+	
+	game_data = {
+		size = @colossus_scale
+	}
+	
+
+}
+
+entity = {
+	name = "machine_01_colossus_ship_entity"
+	pdxmesh = "machine_01_colossus_mesh"
+	scale = 1 
+	#get_state_from_parent = no
+	
+	default_state = "idle"
+	# Actual idle state when being in idle/moving.
+	state = { name = "idle" animation = "idle" looping = no next_state = "idle" animation_blend_time = 5
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"death" = 0
+				"working" = 100
+				"working_looping" = 0
+			}
+		}
+		
+		start_event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_idle" } }
+		
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
+
+
+		#ion_cannon_core_effect
+		#fallen_empire_01_colossus_core_effect
+	}
+	# Idle state when going from opened state to idle. 
+	state = { name = "idle" animation = "closing" looping = no next_state = "idle" 
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"death" = 0
+				"working" = 0
+				"working_looping" = 100
+			}
+		}
+		
+		event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_closing" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_wind_down" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_75_exhaust_circle_idle" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "core_effect" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		#event = { time = 0 node = "core_effect" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
+
+		
+
+	}
+	# Actual moving state if going from idle/moving.
+	state = { name = "moving" animation = "idle" looping = yes next_state = "moving"
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"death" = 0
+				"working" = 100
+				"working_looping" = 0
+			}
+		}
+		event = { trigger_once = yes sound = { soundeffect = "moving_out_colossus" } }
+		
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
+		
+
+	}
+	# Moving state if going from open/working, uses closing animation.
+	state = { name = "moving" animation = "closing" looping = no next_state = "moving"
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"death" = 0
+				"working" = 0
+				"working_looping" = 100
+			}
+		}
+		event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_closing" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_wind_down" stop_on_state_change = yes } }
+		
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+
+	}
+	# Opened state, going after "opening" which is labeled "working".
+	state = { name = "working_looping" animation = "open" 
+		event = { time = 0	id = "beam_start" }
+	
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_starbase_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "planet_killer_gun_01" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }	
+		event = { time = 0 node = "planet_killer_gun_01" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes Life = 15 }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes Life = 5}	
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes Life = 10}			
+		event = { time = 0 node = "effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "barrel_effect_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
+
+	
+		
+		event = { time = 0 node = "planet_killer_gun_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		
+	
+		############### WINDUP LIGHT LOCATORS
+
+		#event = { time = 0 node = "01_gun_windup_01" particle = "particle_lance_windup_effect" keep_particle = yes }
+		#event = { time = 0 node = "02_gun_windup_01" particle = "particle_lance_windup_effect" keep_particle = yes }
+		#event = { time = 0 node = "03_gun_windup_01" particle = "particle_lance_windup_effect" keep_particle = yes }
+
+		#event = { time = 0.15 node = "01_gun_windup_02" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.15 node = "02_gun_windup_02" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.15 node = "03_gun_windup_02" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		#event = { time = 0.3 node = "01_gun_windup_03" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.3 node = "02_gun_windup_03" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.3 node = "03_gun_windup_03" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		#event = { time = 0.45 node = "01_gun_windup_04" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.45 node = "02_gun_windup_04" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.45 node = "03_gun_windup_04" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		#event = { time = 0.6 node = "01_gun_windup_05" particle = "particle_lance_windup_effect" keep_particle = yes }
+		#event = { time = 0.6 node = "02_gun_windup_05" particle = "particle_lance_windup_effect" keep_particle = yes }
+		#event = { time = 0.6 node = "03_gun_windup_05" particle = "particle_lance_windup_effect" keep_particle = yes }
+
+		#event = { time = 0.75 node = "01_gun_windup_06" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.75 node = "02_gun_windup_06" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.75 node = "03_gun_windup_06" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+		#event = { time = 0.9 node = "01_gun_windup_07" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.9 node = "02_gun_windup_07" particle = "particle_lance_windup_effect" keep_particle = yes  }
+		#event = { time = 0.9 node = "03_gun_windup_07" particle = "particle_lance_windup_effect" keep_particle = yes  }
+
+	
+	
+	
+	#"lithoid_01_collosus_core"
+	}
+	# Opening state, goes into "open" state when done.
+	state = { name = "working" animation = "opening" looping = no next_state = "working_looping" 
+		event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_opening" stop_on_state_change = yes } }
+		event = { trigger_once = yes sound = { soundeffect = "molluscoid_colossus_wind_up" stop_on_state_change = yes } }
+		
+		event = { time = 1000 id = "beam_start" } #will never fire, but lets the game know that an event with this ID exists
+	
+		event = { time = 0 node = "engine_large_01" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_02" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_03" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_04" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_05" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "engine_large_06" particle = "generic_1_75_exhaust_circle_long_moving" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "juggernaut_exhaust_idle_circle_l" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core_effect" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "planet_killer_gun_01" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node = "planet_killer_gun_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+
+
+		#reptilian_01_colossus_inner_core_effect
+		#planet_killer_gun_01
+	}
+	# Closed death state.
+	state = { name = "death" animation = "idle" looping = no
+		chance = {
+			if_current_state = {
+				"idle" = 100
+				"moving" = 100
+				"death" = 0
+				"working" = 0
+				"working_looping" = 0
+			}
+		}
+		
+		event = { time = 0.0 node = "explosion_locator_01" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 3.0 node = "explosion_locator_02" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 4.0 node = "explosion_locator_03" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 6.0 node = "explosion_locator_04" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 6.5 node = "explosion_locator_05" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 8.0 node = "core_effect" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		
+	}
+	# Opened death state.
+	state = { name = "death" animation = "open" looping = no animation_blend_time = 2
+		chance = {
+			if_current_state = {
+				"idle" = 0
+				"moving" = 0
+				"death" = 0
+				"working" = 100
+				"working_looping" = 100
+			}
+		}
+		
+		event = { time = 0.0 node = "explosion_locator_01" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 3.0 node = "explosion_locator_02" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 4.0 node = "explosion_locator_03" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 6.0 node = "explosion_locator_04" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 6.8 node = "explosion_locator_05" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+		event = { time = 8.0 node = "core_effect" particle = "ship_explosion_particle" sound = { soundeffect = ship_destroyed } keep_particle = yes }
+	}
+
+
+	attach = { "core_effect" = "machine_01_colossus_rings_entity" }
+	attach = { "barrel_core_01" = "machine_01_barrel_core_front_entity" }
+	attach = { "barrel_core_02" = "machine_01_barrel_core_rear_entity" }
+	
+	
+	#locator = { name = "planet_killer_gun_01" position = { 0 0 0 } } # Actual locator is in mesh.
+}
+
+
+
+
+
+
+
+entity = {
+	name = "machine_01_barrel_core_front_entity"
+	pdxmesh = "machine_01_colossus_ring_rig"
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_1" animation_speed = 10}
+	
+	attach = { "ringnode" = "machine_01_barrel_core_front_attach" }
+	
+}
+entity = {
+	name = "machine_01_barrel_core_rear_entity"
+	pdxmesh = "machine_01_colossus_ring_rig"
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_1" animation_speed = -10}
+	
+	attach = { "ringnode" = "machine_01_barrel_core_rear_attach" }
+	
+}
+
+
+
+
+
+
+entity = {
+	name = "machine_01_barrel_core_front_attach"
+	pdxmesh = "machine_01_colossus_barrel_core_front_mesh"
+}
+entity = {
+	name = "machine_01_barrel_core_rear_attach"
+	pdxmesh = "machine_01_colossus_barrel_core_rear_mesh"
+}
+
+
+
+
+
+#######RING ENTITIES#######
+###These are in turn attached to the ring rigs, which are animated and are then attached to the main entity.
+#This is catastrophically bad, don't do this.
+entity = {
+	name = "machine_01_colossus_ring_01"
+	pdxmesh = "machine_01_colossus_ring1_mesh"
+
+
+}
+entity = {
+	name = "machine_01_colossus_ring_02"
+	pdxmesh = "machine_01_colossus_ring2_mesh"
+
+
+}
+entity = {
+	name = "machine_01_colossus_ring_03"
+	pdxmesh = "machine_01_colossus_ring3_mesh"
+
+
+}
+
+#Recycling the rigs from the sentry array cause I've already got them set up.
+#######RING RIGS##########
+
+entity = {
+	name = "machine_01_colossus_rings_entity"
+	pdxmesh = "machine_01_colossus_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_1" animation_speed = 5
+	}
+	attach = { "ringnode" = "machine_01_colossus_rings_1_entity" } ###This attaches the NEXT ring stage.
+}
+
+
+entity = {
+	name = "machine_01_colossus_rings_1_entity"
+	pdxmesh = "machine_01_colossus_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5}
+	
+	attach = { "ringnode" = "machine_01_colossus_ring_01" } ###This attaches this stage's actual ring entity.
+	attach = { "ringnode" = "machine_01_colossus_rings_2_entity" }
+}
+
+entity = {
+	name = "machine_01_colossus_rings_2_entity"
+	pdxmesh = "machine_01_colossus_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_1" animation_speed = 5
+	}
+	attach = { "ringnode" = "machine_01_colossus_ring_02" }
+	attach = { "ringnode" = "machine_01_colossus_rings_3_entity" }
+}
+
+
+entity = {
+	name = "machine_01_colossus_rings_3_entity"
+	pdxmesh = "machine_01_colossus_ring_rig"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5
+	}
+	attach = { "ringnode" = "machine_01_colossus_ring_03" }
+
+}
+
+
+
+
+animation = {
+	name = "machine_01_colossus_ring_rig_1_idle"
+	file = "machine_01_colossus_ring_idle_1.anim"
+}
+
+animation = {
+	name = "machine_01_colossus_ring_rig_2_idle"
+	file = "machine_01_colossus_ring_idle_2.anim"
+}
+animation = {
+	name = "machine_01_colossus_idle_animation"
+	file = "machine_01_colossus_idle.anim"
+}
+animation = {
+	name = "machine_01_colossus_open_animation"
+	file = "machine_01_colossus_open.anim"
+}
+animation = {
+	name = "machine_01_colossus_opening_animation"
+	file = "machine_01_colossus_opening.anim"
+}
+animation = {
+	name = "machine_01_colossus_closing_animation"
+	file = "machine_01_colossus_closing.anim"
+}
+
+animation = {
+	name = "machine_01_colossus_frame_idle_animation"
+	file = "machine_01_colossus_frame_idle.anim"
+}
+animation = {
+	name = "machine_01_colossus_frame_closed_death_animation"
+	file = "machine_01_colossus_frame_closed_death.anim"
+}
+animation = {
+	name = "machine_01_colossus_frame_opened_death_animation"
+	file = "machine_01_colossus_frame_opened_death.anim"
+}

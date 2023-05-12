@@ -1,0 +1,59 @@
+### Modules ###
+nsc_modmenu_setting_page_starbase_category_module_shared_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+}
+nsc_modmenu_setting_page_starbase_category_module_reset_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_setting_page_reset_effect_tooltip
+        hidden_effect = { nsc_modmenu_starbase_module_setting_reset_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_go_home_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_go_home_page_effect_tooltip
+        hidden_effect = { nsc_modmenu_go_home_page_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_go_back_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_previous_page_effect = { CATEGORY = starbase SUBCAT = class } } }
+}
+nsc_modmenu_setting_page_starbase_category_module_go_next_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_next_page_effect = { CATEGORY = starbase SUBCAT = building } } }
+}
+#pd_battery
+nsc_modmenu_setting_page_starbase_category_module_pd_battery_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_module_pd_battery_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_module_pd_battery_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = module ID = pd_battery } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_pd_battery_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = pd_battery } }
+    }
+}

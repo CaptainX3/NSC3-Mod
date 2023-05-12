@@ -1,0 +1,65 @@
+objectTypes = {
+
+
+	pdxmesh = {
+		name = "machine_01_spyorb_rig"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_main_rig.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle"			type = "machine_01_spyorb_main_rig_idle" }
+	}
+	pdxmesh = {
+		name = "machine_01_spyorb_ring_rig"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_ring_rig.mesh"
+		scale = 1.0
+		
+		animation = { id = "idle_ring_1"			type = "machine_01_spyorb_ring_rig_1_idle" }
+		animation = { id = "idle_ring_2"			type = "machine_01_spyorb_ring_rig_2_idle" }
+	}
+	
+	
+	
+	pdxmesh = {
+		name = "machine_01_spyorb_outer_ring_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_outer_ring.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_spyorb_inner_ring_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_inner_ring.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_spyorb_small_ring_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_small_ring.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_spyorb_part_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_part_1.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_spyorb_part_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_part_2.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_spyorb_part_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Spy_Orb/machine_01_spy_orb_part_3.mesh"
+		scale = 1.0
+
+	}
+	
+
+}

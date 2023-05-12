@@ -1,0 +1,41 @@
+nsc_modmenu_game_content_on_trigger = {
+	optimize_memory
+	custom_tooltip = {
+		fail_text = nsc_modmenu_game_content_disabled.fail #show tooltip only when the global flag is missing
+		OR = {
+			NOT = { has_global_flag = nsc_on_press_begin } #enables all contents until players press begin button #changed to prevent the bug that the starting starport doesn't have any shipyard
+			has_global_flag = nsc_modmenu_game_content_$CATEGORY$_$SUBCAT$_$ID$_on
+		}
+	}
+}
+nsc_modmenu_game_content_check_variable_trigger = {
+	optimize_memory
+	event_target:nsc_modmenu_data_storage = { check_variable = { which = nsc_modmenu_$CATEGORY$_$SUBCAT$_$ID$_$MODIFIER$_var value $SYMBOL$ $VALUE$ } } #even 'value $SYMBOL$' works, wow
+}
+nsc_modmenu_mp_host_trigger = {
+	optimize_memory
+	custom_tooltip = {
+		fail_text = nsc_modmenu_mp_host_trigger.fail
+		OR = {
+			is_multiplayer = no
+			AND = {
+				is_multiplayer = yes
+				has_country_flag = nsc_mp_host_country
+			}
+		}
+	}
+}
+nsc_modmenu_setting_page_mod_category_faq_text_long_trigger = {
+	OR = {
+		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_1_page_opened
+		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_2_page_opened
+		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_3_page_opened
+		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_4_page_opened
+	}
+}
+nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = {
+	OR = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = stronghold }
+		#to do: add more starbase classes here!
+	}
+}

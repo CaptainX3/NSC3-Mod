@@ -1,0 +1,148 @@
+#I did some tests with 'From' scope... and I think I just gotta use this method instead of adding the scope all over the place
+nsc_modmenu_stopped_working_effect = {
+    potential = { NOT = { is_scope_type = country } }
+    allow = { always = yes }
+}
+nsc_modmenu_close_button_effect = {
+    potential = { always = yes }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = CLOSE_TITLE
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            remove_global_flag = nsc_modmenu_opened
+        }
+    }
+}
+nsc_modmenu_reset_all_settings_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_reset_all_settings_confirmation_opened } } }
+    effect = {
+        custom_tooltip = nsc_modmenu_reset_all_settings_button_effect_tooltip
+        hidden_effect = {
+            set_global_flag = nsc_modmenu_reset_all_settings_confirmation_opened
+            #Stellaris\common\button_effects\example.txt # From = player country
+            from = { country_event = { id = nsc_modmenu.10 } } #opening 'nsc_modmenu_reset_all_settings_confirmation' customgui
+        }
+    }
+}
+nsc_modmenu_reset_all_settings_confirm_button_effect = {
+    potential = { always = yes }
+    allow = { always = yes }
+    effect = {
+        hidden_effect = {
+            remove_global_flag = nsc_modmenu_reset_all_settings_confirmation_opened
+            nsc_modmenu_reset_all_settings_effect = yes
+        }
+    }
+}
+nsc_modmenu_reset_all_settings_confirm_cancel_button_effect = {
+    potential = { always = yes }
+    allow = { always = yes }
+    effect = { hidden_effect = { remove_global_flag = nsc_modmenu_reset_all_settings_confirmation_opened } }
+}
+#setting buttons
+nsc_modmenu_setting_button_shared_button_effect = {
+    potential = { always = yes }
+    allow = { always = yes }
+}
+nsc_modmenu_setting_button_mod_preset_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_preset_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_mod_preset_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_mod_introduction_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_introduction_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_mod_introduction_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_mod_faq_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_faq_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_mod_faq_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_ship_class_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_ship_class_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_ship_class_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_ship_component_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_ship_component_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_ship_component_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_starbase_class_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_starbase_class_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_starbase_class_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_starbase_module_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_starbase_module_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_starbase_module_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_starbase_building_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_starbase_building_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_starbase_building_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_etc_feature_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_etc_feature_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_etc_feature_page_opened
+        }
+    }
+}
+nsc_modmenu_setting_button_etc_ai_difficulty_button_effect = {
+    potential = { always = yes }
+    allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_etc_ai_difficulty_page_opened } } }
+    effect = {
+        hidden_effect = {
+            nsc_modmenu_clear_page_opened_flags_effect = yes
+            set_global_flag = nsc_modmenu_etc_ai_difficulty_page_opened
+        }
+    }
+}
