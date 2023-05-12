@@ -1,0 +1,51 @@
+objectTypes = {
+
+
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_outer_ring"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_core_outer.mesh"
+
+	}
+
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_inner_ring"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_core_inner.mesh"
+
+	}
+
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_frames"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_construction_frame.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_ring"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_core.mesh"
+
+	}
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_01_stage_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_stage_01.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_01_stage_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_stage_02.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_01_stage_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_stage_03.mesh"
+
+	}
+	pdxmesh = {
+		name = "machine_01_mega_shipyard_rig"
+	file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_rig.mesh"
+		animation = { id = "idle" 			type = "machine_01_mega_shipyard_01_stage_idle_animation" }
+	}
+
+}
+

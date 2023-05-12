@@ -1,0 +1,334 @@
+@spyorb_scale = 4 
+
+animation = {
+	name = "machine_01_spyorb_main_rig_idle"
+	file = "machine_01_spy_orb_main_idle.anim"
+}
+
+animation = {
+	name = "machine_01_spyorb_ring_rig_1_idle"
+	file = "machine_01_spy_orb_ring_1_idle.anim"
+}
+
+animation = {
+	name = "machine_01_spyorb_ring_rig_2_idle"
+	file = "machine_01_spy_orb_ring_2_idle.anim"
+}
+
+
+#####################################################
+#####											#####
+#####				Machine						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "machine_01_spyorb_part_1_entity"
+	pdxmesh = "machine_01_spyorb_part_1_mesh"
+	#scale = @spyorb_scale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		event = { time = 0 node = "core" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_dome" } }
+	}
+	
+
+}
+
+entity = {
+	name = "machine_01_spyorb_part_2_entity"
+	pdxmesh = "machine_01_spyorb_part_2_mesh"
+	#scale = @spyorb_scale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		#start_event = { time = 0 node = "effect_01" particle = "matde_platform_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = "effect_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = "effect_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_spire" } }
+	}
+
+}
+
+entity = {
+	name = "machine_01_spyorb_part_3_entity"
+	pdxmesh = "machine_01_spyorb_part_3_mesh"
+	#scale = @spyorb_scale
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" 
+		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_antennas" } }
+		start_event = { time = 0 node = "effect_01" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }	
+		start_event = { time = 0 node = "effect_02" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+		start_event = { time = 0 node = "effect_03" particle = "generic_075_exhaust_circle_moving" keep_particle = yes trigger_once = yes }
+	}
+
+}
+
+
+
+
+
+
+
+entity = {
+	name = "machine_01_spyorb_outer_ring_entity"
+	pdxmesh = "machine_01_spyorb_outer_ring_mesh"
+}
+entity = {
+	name = "machine_01_spyorb_inner_ring_entity"
+	pdxmesh = "machine_01_spyorb_inner_ring_mesh"
+}
+entity = {
+	name = "machine_01_spyorb_small_ring_entity"
+	pdxmesh = "machine_01_spyorb_small_ring_mesh"
+}
+
+
+entity = {
+	name = "machine_01_spyorb_core_entity"
+	pdxmesh = "machine_01_spyorb_ring_rig"
+
+	
+
+
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 2
+		start_event = { trigger_once = yes sound = { soundeffect = "spy_orb_hum_ring" } }
+	}
+	
+	attach = { "ringnode" = "machine_01_spyorb_outer_core_entity" }
+
+}
+
+entity = {
+	name = "machine_01_spyorb_outer_core_entity"
+	pdxmesh = "machine_01_spyorb_ring_rig"
+
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_1" animation_speed = 3
+	}
+	
+	attach = { "ringnode" = "machine_01_spyorb_outer_ring_entity" }
+	attach = { "ringnode" = "machine_01_spyorb_inner_core_entity" }
+	
+}
+
+entity = {
+	name = "machine_01_spyorb_inner_core_entity"
+	pdxmesh = "machine_01_spyorb_ring_rig"
+
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 5
+	}
+	
+	attach = { "ringnode" = "machine_01_spyorb_inner_ring_entity" }
+	attach = { "ringnode" = "machine_01_spyorb_small_core_entity" }
+
+}
+
+entity = {
+	name = "machine_01_spyorb_small_core_entity"
+	pdxmesh = "machine_01_spyorb_ring_rig"
+
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle_ring_2" animation_speed = 7
+	}
+	
+	attach = { "ringnode" = "machine_01_spyorb_small_ring_entity" }
+
+}
+
+###########PART ENTITIES FOR ANIMATION BYPASS###############
+
+entity = {
+	name = "machine_01_spyorb_phase_01_anim_entity"
+	pdxmesh = "machine_01_spyorb_rig"
+	
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.3
+		
+	}
+	
+	scale = @spyorb_scale
+	attach = { "Station" = "machine_01_spyorb_part_1_entity" }
+}
+
+entity = {
+	name = "machine_01_spyorb_phase_02_anim_entity"
+	pdxmesh = "machine_01_spyorb_rig"
+	
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.3
+		
+	}
+	
+	scale = @spyorb_scale
+	attach = { "Station" = "machine_01_spyorb_part_1_entity" }
+	attach = { "Station" = "machine_01_spyorb_part_2_entity" }
+
+
+}
+
+entity = {
+	name = "machine_01_spyorb_phase_03_anim_entity"
+	pdxmesh = "machine_01_spyorb_rig"
+	
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.3
+		
+	}
+	
+	scale = @spyorb_scale
+	attach = { "Station" = "machine_01_spyorb_part_1_entity" }
+	attach = { "Station" = "machine_01_spyorb_part_2_entity" }
+	attach = { "Ring" = "machine_01_spyorb_part_3_entity" }
+
+
+}
+
+
+entity = {
+	name = "machine_01_spyorb_phase_04_anim_entity"
+	pdxmesh = "machine_01_spyorb_rig"
+		
+	locator = { name = "root"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.3
+
+	}
+	
+	scale = @spyorb_scale
+	attach = { "Station" = "machine_01_spyorb_part_1_entity" }
+	attach = { "Station" = "machine_01_spyorb_part_2_entity" }
+	attach = { "Ring" = "machine_01_spyorb_part_3_entity" }
+	attach = { "Core" = "machine_01_spyorb_core_entity" }
+
+
+}
+
+
+
+
+
+
+
+#####################################
+#									#
+#	   ASSEMBLY PHASES (IN GAME)	#
+#									#
+#####################################
+
+
+entity = {
+	name = "machine_01_spyorb_phase_01_entity"
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	attach = { "root" = "machine_01_spyorb_phase_01_anim_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "machine_01_spyorb_phase_02_entity"
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	attach = { "root" = "machine_01_spyorb_phase_02_anim_entity" }
+
+	cull_radius = 500
+}
+	
+entity = {
+	name = "machine_01_spyorb_phase_03_entity"
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	attach = { "root" = "machine_01_spyorb_phase_03_anim_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "machine_01_spyorb_phase_04_entity"
+		
+	locator = { name = "reactor"	position = { 0 0 0 } }	
+	locator = { name = "reactorinvert"	position = { 0 0 0 } rotation = { 0 180 0 } }	
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = "reactor" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "reactorinvert" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+	}
+	attach = { "root" = "machine_01_spyorb_phase_04_anim_entity" }
+
+	cull_radius = 500
+}
+
+
+
+
+
+
+
+###########CONSTRUCTION ENTITIES#############
+entity = {
+	name = "machine_01_spyorb_phase_01_construction_entity"
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	attach = { "root" = "machine_01_spyorb_phase_01_anim_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "machine_01_spyorb_phase_02_construction_entity"
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	attach = { "root" = "machine_01_spyorb_phase_02_anim_entity" }
+
+	cull_radius = 500
+}
+	
+entity = {
+	name = "machine_01_spyorb_phase_03_construction_entity"
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	attach = { "root" = "machine_01_spyorb_phase_03_anim_entity" }
+
+	cull_radius = 500
+}
+
+entity = {
+	name = "machine_01_spyorb_phase_04_construction_entity"
+		
+
+	locator = { name = "root"	position = { 0 0 0 } }	
+
+	default_state = "idle"
+	state = { name = "idle"
+
+	}
+	attach = { "root" = "machine_01_spyorb_phase_04_anim_entity" }
+
+	cull_radius = 500
+}

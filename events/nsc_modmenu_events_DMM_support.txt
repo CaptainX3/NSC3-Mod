@@ -1,0 +1,48 @@
+namespace = nsc_modmenu_DMM_support #DMM = Dynamic Mod Menu (https://steamcommunity.com/sharedfiles/filedetails/?id=2458024521)
+
+#DMM support added by a user request
+#phase 1: register the mod menu
+#for both Single and Multiplayer Game
+country_event = {
+	id = nsc_modmenu_DMM_support.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = dmm_installed
+		NOT = { dmm_is_registered_mod = { DMM_FLAG = has_nsc_active } } #register only one time
+	}
+
+	immediate = {
+		dmm_register_mod = { DMM_NAME = "edict_nsc_modmenu" DMM_FLAG = has_nsc_active }
+	}
+}
+#for Singleplayer Game only
+event = {
+	id = nsc_modmenu_DMM_support.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = dmm_installed
+		NOT = { dmm_is_registered_mod = { DMM_FLAG = has_nsc_active } }
+	}
+
+	immediate = {
+		dmm_register_mod = { DMM_NAME = "edict_nsc_modmenu" DMM_FLAG = has_nsc_active }
+	}
+}
+#phase 2: opens the mod menu
+country_event = {
+	id = nsc_modmenu_DMM_support.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		from = { has_leader_flag = has_nsc_active }
+	}
+
+	immediate = {
+		nsc_modmenu_open_effect = yes
+	}
+}

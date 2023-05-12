@@ -1,0 +1,121 @@
+objectTypes = {
+	
+	#######  Battleship bow sections  #######	
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_bow_L1M1S2_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_L1M1S2.mesh"
+		scale = 1.0
+	}
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_bow_L1S4_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_L1S4.mesh"
+		scale = 1.0
+	}	
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_bow_L2_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_L2.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_bow_M1S2SHB_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_M1S2SHB.mesh"
+		scale = 1.0
+	}
+	
+		pdxmesh = {
+		name = "machine_01_old_battleship_bow_M2S4_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_M2S4.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_bow_M3S2_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_M3S2.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_bow_XL1_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_bow_XL1.mesh"
+		scale = 1.0
+	}	
+		
+#######  Battleship mid sections  #######			
+		
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_mid_L1M4_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_L1M4.mesh"
+		scale = 1.0
+	}
+	
+	
+		pdxmesh = {
+		name = "machine_01_old_battleship_mid_L2M2_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_L2M2.mesh"
+		scale = 1.0
+	}	
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_mid_L2S4_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_L2S4.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_mid_L3_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_L3.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_mid_M4SHB_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_M4SHB.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_old_battleship_mid_S4LHB_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_S4LHB.mesh"
+		scale = 1.0
+	}
+				
+				####carrier sec####
+	pdxmesh = {
+		name = "machine_01_old_battleship_mid_2_M4SHB_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_mid_2_M4SHB.mesh"
+		scale = 1.0
+	}
+		
+#######  Battleship stern sections  #######	
+		
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_stern_L1_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_stern_L1.mesh"
+		scale = 1.0
+	}
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_stern_M1S2_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_stern_M1S2.mesh"
+		scale = 1.0
+	}	
+
+	pdxmesh = {
+		name = "machine_01_old_battleship_stern_M2_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_stern_M2.mesh"
+		scale = 1.0
+	}
+		
+	pdxmesh = {
+		name = "machine_01_old_battleship_stern_S4_mesh"
+		file = "gfx/models/ships/machine_01/Old_Assets/machine_01_battleship_stern_S4.mesh"
+		scale = 1.0
+	}
+	
+}

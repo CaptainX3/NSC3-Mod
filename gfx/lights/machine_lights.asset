@@ -1,0 +1,16 @@
+light = {
+	name = "machine_colossus_core"
+	
+	color = { 
+		r = { 0.4 }
+		g = { 0.8 }
+		b = { 1.0 }
+	}
+	
+	intensity = 10.0
+	radius = 5
+	falloff = 2
+	
+	position = { x = 0 y = 0 z = 0 }
+
+}

@@ -1,0 +1,50 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "machine_01_dyson_sphere_destroyed_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Dyson_Sphere/dyson_sphere_destroyed.mesh"
+		scale = 1.0
+		
+	}
+
+	pdxmesh = {
+		name = "machine_01_dyson_sphere_frame_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Dyson_Sphere/machine_01_dyson_sphere_frame.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "machine_01_dyson_sphere_part_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Dyson_Sphere/machine_01_dyson_sphere_part_1.mesh"
+		scale = 1.0
+	}
+
+	pdxmesh = {
+		name = "machine_01_dyson_sphere_part_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Dyson_Sphere/machine_01_dyson_sphere_part_2.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_dyson_sphere_part_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Dyson_Sphere/machine_01_dyson_sphere_part_3.mesh"
+		scale = 1.0
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_dyson_sphere_part_4_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Dyson_Sphere/machine_01_dyson_sphere_part_4.mesh"
+		scale = 1.0
+
+	}
+
+
+	
+
+}
+
+
+
+

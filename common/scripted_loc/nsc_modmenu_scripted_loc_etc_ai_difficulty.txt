@@ -1,0 +1,42 @@
+#economy_bonus slider
+defined_text = {
+	name = Get_nsc_etc_ai_difficulty_current_economy_bonus
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_plus
+	}
+}
+#technology_bonus slider
+defined_text = {
+	name = Get_nsc_etc_ai_difficulty_current_technology_bonus
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_plus
+	}
+}
+#military_bonus slider
+defined_text = {
+	name = Get_nsc_etc_ai_difficulty_current_military_bonus
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_plus
+	}
+}

@@ -1,0 +1,14 @@
+#NSC_REACTOR_BOOSTER_1
+defined_text = {
+	name = Get_nsc_ship_component_NSC_REACTOR_BOOSTER_1_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_disabled_desc
+	}
+}

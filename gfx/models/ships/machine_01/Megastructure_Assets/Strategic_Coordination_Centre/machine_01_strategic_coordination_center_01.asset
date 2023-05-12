@@ -1,0 +1,69 @@
+
+#####################################################
+#####											#####
+#####					Machine					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "machine_01_strategic_coordination_center_stage_1_entity"
+	pdxmesh = "machine_01_strategic_coordination_center_stage_1_mesh"
+
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_hum" } }
+	}
+}
+
+entity = {
+	name = "machine_01_strategic_coordination_center_stage_2_entity"
+	pdxmesh = "machine_01_strategic_coordination_center_stage_2_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_04" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_beeps" } }
+	}
+}
+
+entity = {
+	name = "machine_01_strategic_coordination_center_stage_3_entity"
+	pdxmesh = "machine_01_strategic_coordination_center_stage_3_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle"
+		event = { time = 0 node = "light_locator_01"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_02"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_03"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_04"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_05"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_06"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_07"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_08"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_09"  particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_010" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_011" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+		event = { time = 0 node = "light_locator_012" particle = "ship_light_blue_effect" trigger_once = yes keep_particle = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_beeps" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_strategic_coordination_center_pulse" } }
+	}
+}
+
+

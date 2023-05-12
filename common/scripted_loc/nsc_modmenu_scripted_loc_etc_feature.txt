@@ -1,0 +1,266 @@
+#mothball
+defined_text = {
+	name = Get_nsc_etc_feature_mothball_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball } } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_mothball_fleet_resource_upkeep
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_desc_minus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_mothball_fleet_naval_capacity_upkeep
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_naval_capacity_upkeep_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_naval_capacity_upkeep_desc_minus
+	}
+}
+#hyperlane_generation
+defined_text = {
+	name = Get_nsc_etc_feature_hyperlane_generation_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_hyperlane_generation_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_desc_plus
+	}
+}
+#matterenergy
+defined_text = {
+	name = Get_nsc_etc_feature_matterenergy_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy } } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_matterenergy_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_matterenergy_resource_produce
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_matterenergy_resource_upkeep
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_desc_plus
+	}
+}
+#galactic_mall
+defined_text = {
+	name = Get_nsc_etc_feature_galactic_mall_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall } } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_galactic_mall_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_galactic_mall_resource_produce
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_galactic_mall_resource_upkeep
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_desc_plus
+	}
+}
+#hospital
+defined_text = {
+	name = Get_nsc_etc_feature_hospital_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital } } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_hospital_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_hospital_resource_produce
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_etc_feature_hospital_resource_upkeep
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_plus
+	}
+}

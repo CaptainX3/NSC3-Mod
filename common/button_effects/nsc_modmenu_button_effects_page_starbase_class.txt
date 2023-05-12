@@ -1,0 +1,268 @@
+### Levels ###
+nsc_modmenu_setting_page_starbase_category_class_shared_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+}
+nsc_modmenu_setting_page_starbase_category_class_reset_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_setting_page_reset_effect_tooltip
+        hidden_effect = { nsc_modmenu_starbase_class_setting_reset_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_go_home_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_go_home_page_effect_tooltip
+        hidden_effect = { nsc_modmenu_go_home_page_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_go_back_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_previous_page_effect = { CATEGORY = ship SUBCAT = component } } }
+}
+nsc_modmenu_setting_page_starbase_category_class_go_next_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_next_page_effect = { CATEGORY = starbase SUBCAT = module } } }
+}
+#common
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = yes
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_upgrade_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_upgrade_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = yes
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_upgrade_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_upgrade_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = yes
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_upgrade_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_upgrade_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = yes
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_upgrade_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_upgrade_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_speed } }
+        }
+    }
+}
+#stronghold
+nsc_modmenu_setting_page_starbase_category_class_stronghold_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_class_stronghold_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_class_stronghold_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_class_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = stronghold }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = class ID = stronghold } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_stronghold_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = stronghold } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = stronghold } }
+    }
+}
+#headquarters
+
+
+
+
+
+
+#outpost
+nsc_modmenu_setting_page_starbase_category_class_outpost_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_class_outpost_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_class_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no #vanilla content shouldn't be disabled
+        }
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = class ID = outpost } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_outpost_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost } }
+    }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = outpost } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+			nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_outpost_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+			nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_outpost_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+			nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_outpost_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+			nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_starbase_class_outpost_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = starbase SUBCAT = class ID = outpost MODIFIER = build_speed } }
+        }
+    }
+}

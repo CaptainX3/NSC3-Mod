@@ -1,0 +1,135 @@
+
+
+animation = {
+	name = "gateway_idle_animation"
+	file = "gateway_idle.anim"
+}
+
+animation = {
+	name = "gateway_death_animation"
+	file = "gateway_death.anim"
+}
+
+
+#####################################################
+#####											#####
+#####					Machine					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "machine_01_gateway_portal_entity"
+	pdxmesh = "machine_01_gateway_portal_mesh"
+	
+	get_state_from_parent = no
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 
+		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+	}
+	
+	game_data = {
+		uv_animation_speed 		= 0.05
+		uv_animation_direction 	= { 0.5 1.0 }
+		bloom_factor = 0.8
+	}
+	
+	scale = 1
+}
+
+entity = {
+	name = "machine_01_gateway_entity"
+	pdxmesh = "machine_01_gateway_mesh"
+
+	locator = { name = "Portal"	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" state_time = 4
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_hum" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" stop_on_state_change = yes } }
+	
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes life = 15}
+
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 7.63 node = "root" particle = "dreadnought_explosion_particle" keep_particle = yes }
+		event = { time = 2.1 node = "root" particle = "gateway_portal_death_residue_effect" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_death" stop_on_state_change = yes } }
+	}
+	
+	meshsettings = {
+		shader = "PdxMeshShip"
+	}
+	
+	attach = { Portal = "machine_01_gateway_portal_entity" }
+	
+}
+
+entity = {
+	name = "machine_01_deactivated_gateway_entity"
+	pdxmesh = "machine_01_gateway_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_hum" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" stop_on_state_change = yes } }
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 7.63 node = "root" particle = "dreadnought_explosion_particle" keep_particle = yes }
+		event = { time = 2.1 node = "root" particle = "gateway_portal_death_residue_effect" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_death" stop_on_state_change = yes } }
+	}
+	
+	meshsettings = {
+		shader = "PdxMeshShip"
+	}
+}
+
+entity = {
+	name = "machine_01_reactivated_gateway_entity"
+	pdxmesh = "machine_01_gateway_mesh"
+	
+	locator = { name = "Portal"	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" state_time = 4
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_hum" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" stop_on_state_change = yes } }
+	
+		event = { time = 0 node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 2 node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes life = 15}
+
+	}
+	state = { name = "death" animation = "death" looping = no
+		event = { time = 7.63 node = "root" particle = "dreadnought_explosion_particle" keep_particle = yes }
+		event = { time = 2.1 node = "root" particle = "gateway_portal_death_residue_effect" keep_particle = yes }
+		
+		event = { trigger_once = yes sound = { soundeffect = "megastructure_gate_way_station_death" stop_on_state_change = yes } }
+	}
+	
+	meshsettings = {
+		shader = "PdxMeshShip"
+	}
+	
+	attach = { Portal = "machine_01_gateway_portal_entity" }
+}

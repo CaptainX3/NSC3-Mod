@@ -1,0 +1,133 @@
+
+#####################################################
+#####											#####
+#####			   	MACHINE						#####
+#####											#####
+#####################################################
+
+
+entity = {
+	name = "machine_01_mega_art_upper_entity"
+	pdxmesh = "machine_01_mega_art_upper_mesh"
+
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = "effect_01" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+	}
+	
+	attach = { effect_02 = "mega_art_fountain_splash_entity" }
+}
+
+entity = {
+	name = "machine_01_mega_art_lower_entity"
+	pdxmesh = "machine_01_mega_art_lower_mesh"
+
+}
+
+entity = {
+	name = "machine_01_mega_art_core_entity"
+	pdxmesh = "machine_01_mega_art_core_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = "effect_01" particle = "avian_01_colossus_inner_core_effect" keep_particle = yes trigger_once = yes }
+	}
+
+}
+
+entity = {
+	name = "machine_01_mega_art_part_1_entity"
+	pdxmesh = "machine_01_mega_art_rig"
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+	}
+	
+	attach = { Upper_Ring = "machine_01_mega_art_upper_entity" }
+	attach = { Core_section = "machine_01_mega_art_core_entity" }
+}
+
+entity = {
+	name = "machine_01_mega_art_part_2_entity"
+	pdxmesh = "machine_01_mega_art_rig"
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		#start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+	}
+	
+	attach = { Upper_Ring = "machine_01_mega_art_upper_entity" }
+	attach = { Core_section = "machine_01_mega_art_core_entity" }
+	attach = { Lower_Ring = "machine_01_mega_art_lower_entity" }
+}
+
+
+
+entity = {
+	name = "machine_01_mega_art_institution_stage_1_entity"
+	pdxmesh = "machine_01_mega_art_institution_01_stage_1_mesh"
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.7 
+		#start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+	}
+	
+	attach = { part1 = "machine_01_mega_art_part_1_entity" }
+}
+
+entity = {
+	name = "machine_01_mega_art_institution_stage_2_entity"
+	pdxmesh = "machine_01_mega_art_institution_01_stage_1_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle"
+		#start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+	}
+	
+	attach = { part1 = "machine_01_mega_art_part_2_entity" }
+}
+
+entity = {
+	name = "machine_01_mega_art_institution_stage_3_entity"
+	pdxmesh = "machine_01_mega_art_institution_01_stage_3_mesh"
+
+	
+	default_state = "idle"
+	state = { name = "idle"
+		#start_event = { node = "part1" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "part2" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+		#start_event = { node = "part3" particle = "mega_art_core_2_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_energy" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_mega_art_installation_glitches" } }
+	}
+	
+	attach = { part1 = "machine_01_mega_art_part_2_entity" }
+	attach = { part2 = "machine_01_mega_art_part_2_entity" }
+	attach = { part3 = "machine_01_mega_art_part_2_entity" }
+}
+
+
+animation = {
+	name = "machine_01_mega_art_rig_idle_animation"
+	file = "machine_01_mega_art_rig_idle.anim"
+}
+
+

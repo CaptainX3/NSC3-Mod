@@ -1,0 +1,8 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "machine_01_construction_platform_01_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Construction_Platform/machine_01_construction_platform.mesh"
+		scale = 1.0
+	}
+}

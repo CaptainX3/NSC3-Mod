@@ -1,0 +1,14 @@
+#pd_battery
+defined_text = {
+	name = Get_nsc_starbase_module_pd_battery_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_pd_battery_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_pd_battery_disabled_desc
+	}
+}

@@ -1,0 +1,132 @@
+#entity = {
+#	name = "machine_01_interstellar_assembly_01_entity"
+#	pdxmesh = "machine_01_interstellar_assembly_01_mesh"
+#}
+
+
+animation = {
+	name = "machine_01_interstellar_assembly_main_rig_idle_animation"
+	file = "machine_01_interstellar_assembly_main_idle.anim"
+}
+
+#####################################################
+#####											#####
+#####				MACHINE						#####
+#####											#####
+#####################################################
+
+
+entity = {
+	name = "machine_01_interstellar_assembly_part_1_entity"
+	pdxmesh = "machine_01_interstellar_assembly_01_stage_1_mesh"
+
+	}
+
+entity = {
+	name = "machine_01_interstellar_assembly_part_2_entity"
+	pdxmesh = "machine_01_interstellar_assembly_01_stage_2_mesh"
+
+	}
+
+entity = {
+	name = "machine_01_interstellar_assembly_part_3_entity"
+	pdxmesh = "machine_01_interstellar_assembly_01_stage_3_mesh"
+
+	}
+entity = {
+	name = "machine_01_interstellar_assembly_part_4_entity"
+	pdxmesh = "machine_01_interstellar_assembly_01_stage_4_mesh"
+
+	}
+
+
+
+############### ASSEMBLY PHASES ####################
+
+entity = {
+	name = "machine_01_interstellar_assembly_stage_1_entity"
+	pdxmesh = "machine_01_interstellar_assembly_main_rig"
+	locator = { name = "effect_1"	position = { 0 0 0 } }	
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2  
+		start_event = { node = "effect_1" particle = "interstellar_assembly_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+	}
+
+	attach = { core = "machine_01_interstellar_assembly_part_1_entity" }
+	
+	#attach = { ring_1 = "hologram_effect_entity" }
+	attach = { ring_1 = "interstellar_assembly_effect_2_entity" }
+}
+
+entity = {
+	name = "machine_01_interstellar_assembly_stage_2_entity"
+	pdxmesh = "machine_01_interstellar_assembly_main_rig"
+	locator = { name = "effect_1"	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2 
+		start_event = { node = "effect_1" particle = "interstellar_assembly_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_pulse" } }
+	}
+
+	attach = { core = "machine_01_interstellar_assembly_part_1_entity" }
+	attach = { core = "machine_01_interstellar_assembly_part_2_entity" }
+	
+	#attach = { ring_1 = "hologram_effect_entity" }
+	attach = { ring = "interstellar_assembly_effect_2_entity" }
+}
+
+entity = {
+	name = "machine_01_interstellar_assembly_stage_3_entity"
+	pdxmesh = "machine_01_interstellar_assembly_main_rig"
+	locator = { name = "effect_1"	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2 
+		start_event = { node = "effect_1" particle = "interstellar_assembly_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_pulse" } }
+	}
+
+	attach = { core = "machine_01_interstellar_assembly_part_1_entity" }
+	attach = { core = "machine_01_interstellar_assembly_part_2_entity" }
+	attach = { ring = "machine_01_interstellar_assembly_part_3_entity" }
+
+		
+	#attach = { ring_1 = "hologram_effect_entity" }
+	attach = { ring = "interstellar_assembly_effect_2_entity" }
+
+}
+
+entity = {
+	name = "machine_01_interstellar_assembly_stage_4_entity"
+	pdxmesh = "machine_01_interstellar_assembly_main_rig"
+	locator = { name = "effect_1"	position = { 0 0 0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" animation_speed = 0.2 
+		start_event = { node = "effect_1" particle = "interstellar_assembly_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_pulse" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_interstellar_assembly_beats" } }
+	}
+
+	attach = { core = "machine_01_interstellar_assembly_part_1_entity" }
+	attach = { core = "machine_01_interstellar_assembly_part_2_entity" }
+	attach = { ring = "machine_01_interstellar_assembly_part_3_entity" }
+	attach = { ring = "machine_01_interstellar_assembly_part_4_entity" }
+
+	
+	#attach = { ring_1 = "hologram_effect_entity" }
+	attach = { ring = "interstellar_assembly_effect_2_entity" }
+	#attach = { ring = "interstellar_light_shaft_entity" }
+}
+
+

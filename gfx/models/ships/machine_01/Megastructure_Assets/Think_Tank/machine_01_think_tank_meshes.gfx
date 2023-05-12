@@ -1,0 +1,42 @@
+objectTypes = {
+
+
+	pdxmesh = {
+		name = "machine_01_thinktank_rig"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Mega_Shipyard/machine_01_mega_shipyard_rig.mesh"
+		scale = 1.0
+		
+		animation = { id = "think_tank_idle"					type = "machine_01_thinktank_idle_animation" }
+	}
+	pdxmesh = {
+		name = "machine_01_thinktank_ring_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Think_Tank/machine_01_think_tank_ring.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_thinktank_ring_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Think_Tank/machine_01_think_tank_stage_upper_ring.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "machine_01_thinktank_ring_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Think_Tank/machine_01_think_tank_stage_lower_ring.mesh"
+		scale = 1.0
+	}	
+	pdxmesh = {
+		name = "machine_01_thinktank_part1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Think_Tank/machine_01_think_tank_stage_1.mesh"
+		scale = 1.0
+	}
+	pdxmesh = {
+		name = "machine_01_thinktank_part2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Think_Tank/machine_01_think_tank_stage_2.mesh"
+		scale = 1.0
+	}
+		pdxmesh = {
+		name = "machine_01_thinktank_part3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Think_Tank/machine_01_think_tank_stage_3.mesh"
+		scale = 1.0
+	}
+}

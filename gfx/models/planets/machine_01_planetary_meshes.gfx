@@ -1,0 +1,86 @@
+objectTypes = {
+
+	## Ringworld
+	pdxmesh = {
+		name = "machine_01_ringworld_habitable_01_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_habitable.mesh"
+		cull_distance = 999999999.0f
+	}
+
+	pdxmesh = {
+		name = "machine_01_ringworld_habitable_damaged_01_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_habitable_damaged.mesh"
+		cull_distance = 999999999.0f
+	}
+	
+	pdxmesh = {
+		name = "machine_01_ringworld_seam_01_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_seam.mesh"
+		cull_distance = 999999999.0f
+	}
+	
+	pdxmesh = {
+		name = "machine_01_ringworld_seam_damaged_01_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_seam_damaged.mesh"
+		cull_distance = 999999999.0f
+	}
+
+	pdxmesh = {
+		name = "machine_01_ringworld_tech_01_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_tech.mesh"
+		cull_distance = 999999999.0f
+	}	
+	
+	pdxmesh = {
+		name = "machine_01_ringworld_tech_damaged_01_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_tech_damaged.mesh"
+		cull_distance = 999999999.0f
+	}
+
+
+	pdxmesh = {
+		name = "machine_01_ringworld_construction_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_construction.mesh"
+		scale = 1.0
+		
+		meshsettings = {
+			shader = "PdxMeshShip"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "machine_01_ringworld_seam_construction_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_seam.mesh"
+		scale = 1.0
+	}
+	
+	pdxmesh = {
+		name = "machine_01_ringworld_destroyed_mesh"
+		file = "gfx/models/planets/machine_01_ringworld_destroyed.mesh"
+		scale = 1.0
+	}
+	
+	
+	###ecu
+	
+		pdxmesh = {
+		name = "machine_01_city_planet_mesh"
+		file = "gfx/models/planets/machine_01_city_planet.mesh"
+		animation = { id = "idle"	type = "planet_no_pole_no_clouds_idle" }
+		scale = 1.0
+		cull_distance = 99999999.0f
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
