@@ -66,7 +66,7 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_button_effec
     }
 }
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_button_effect = {
-    potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
+    potential = { always = no } #this button is hidden until the new faq descriptions are ready #potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
     allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_3_page_opened } } }
     effect = {
         custom_tooltip = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip
@@ -77,7 +77,7 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_button_effec
     }
 }
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_button_effect = {
-    potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
+    potential = { always = no } #this button is hidden until the new faq descriptions are ready #potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
     allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_4_page_opened } } }
     effect = {
         custom_tooltip = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip
@@ -188,7 +188,7 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_button_effec
     }
 }
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_button_effect = {
-    potential = { always = no } #this button is hidden until the new faq descriptions are ready #potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
+    potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
     allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_4_page_opened } } }
     effect = {
         custom_tooltip = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip
@@ -199,7 +199,7 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_button_effec
     }
 }
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_button_effect = {
-    potential = { always = no } #this button is hidden until the new faq descriptions are ready #potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
+    potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
     allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_5_page_opened } } }
     effect = {
         custom_tooltip = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip
@@ -210,7 +210,7 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_button_effec
     }
 }
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_button_effect = {
-    potential = { always = no } #this button is hidden until the new faq descriptions are ready #potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
+    potential = { has_global_flag = nsc_modmenu_mod_faq_page_opened }
     allow = { hidden_trigger = { NOT = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_6_page_opened } } }
     effect = {
         custom_tooltip = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip
