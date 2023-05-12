@@ -1,0 +1,347 @@
+spriteTypes = {
+	### Edicts ###
+	spriteType = {
+		name = "GFX_edict_nsc_modmenu_icon"
+		textureFile = "gfx/interface/icons/edicts/edict_nsc_modmenu_icon.dds" #https://icons8.com/icons/set/settings
+	}
+	### Event Pictures ###
+	spriteType = {
+		name = "GFX_evt_nsc_modmenu_mod_introduction"
+		texturefile = "gfx/event_pictures/evt_nsc_modmenu_mod_introduction.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	spriteType = {
+		name = "GFX_evt_nsc_modmenu_mod_faq"
+		texturefile = "gfx/event_pictures/evt_nsc_modmenu_mod_faq.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+	}
+	### Customgui Elements ###
+	spriteType = {
+		name = "GFX_nsc_modmenu_background"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_background.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader" #this will make the sprite looks not clickable (it's actually clickable, but it will show no visual effect for that)
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_title"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_modmenu_title_45.dds"
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_title_45_mask.dds"			
+			animationtexturefile = "gfx/interface/icons/relics/shine_overlay_02.dds" 	# <- the animated file
+			animationrotation = -135	# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 8			# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nsc_steamworkshop_link_button"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_steamworkshop_link_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_steamworkshop_link_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_nsc_discord_link_button"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_discord_link_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_discord_link_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_reset_all_settings_button"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_modmenu_reset_all_settings_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_reset_all_settings_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_setting_tab_expand_button"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_modmenu_setting_tab_expand_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_setting_tab_expand_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_go_home_button"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_modmenu_go_home_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_go_home_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_reset_button"
+		texturefile = "gfx/interface/icons/customgui_elements/nsc_modmenu_reset_button.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		noOfFrames = 3
+		animation = {
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_reset_button_mask.dds"
+			animationtexturefile = "gfx/interface/buttons/close_texture.dds"
+			animationrotation = 180.0
+			animationlooping = yes
+			animationtime = 12.0
+			animationdelay = 0.0
+			animationblendmode = "overlay"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+			animationframes = { 1 2 3 }
+		}
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_header_line_long"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_header_line_long.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_header_line_short"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_header_line_short.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_contents_checkbox_checked"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_contents_checkbox_checked.dds"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_642_80"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_642_80.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_62_62"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_62_62.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_280_40"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_280_40.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_280_40_top_frame_only"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_280_40_top_frame_only.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_280_40_side_frame_only"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_280_40_side_frame_only.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_280_40_bottom_frame_only"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_280_40_bottom_frame_only.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_242_40"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_242_40.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = { #mostly used for: ship component, starbase module & building, etc feature names
+		name = "GFX_nsc_modmenu_element_background_180_40" #possible to show at least '36' characters including whitespace, without clipping (in 14 font size, with 'borderSize = { x = 2 }' and 'multiline = yes' code)
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_180_40.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = { #mostly used for: ship class, starbase level, ai difficulty preset names
+		name = "GFX_nsc_modmenu_element_background_164_40" #same as above but this one can show '34' characters at least
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_164_40.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_element_background_40_40"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_element_background_40_40.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_horizontal_slider_track_piece"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_modmenu_horizontal_slider_track_piece.dds"
+	}
+	#ship classes
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_StrikeCruiser"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_StrikeCruiser.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_Battlecruiser"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Battlecruiser.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_Carrier"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Carrier.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_Dreadnought"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Dreadnought.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_Flagship"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Flagship.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_headquarters"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_headquarters.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_explorationship"
+		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_explorationship.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	#ship components
+	spriteType = {
+		name = "GFX_nsc_modmenu_reactor_booster_4"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_reactor_booster_4.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	#starbase levels
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_outpost"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_outpost.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_starport"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_starport.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_starhold"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_starhold.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_starfortress"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_starfortress.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_citadel"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_citadel.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_stronghold"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_stronghold.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_headquarters"
+		textureFile = "gfx/interface/icons/customgui_elements/starbase_ship_sizes_medium/nsc_starbase_headquarters.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	#starbase modules
+	spriteType = {
+		name = "GFX_nsc_modmenu_sb_defense"
+		textureFile = "gfx/interface/icons/modules/sb_defense.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	#starbase buildings
+	spriteType = {
+		name = "GFX_nsc_modmenu_sb_drydock"
+		textureFile = "gfx/interface/icons/modules/sb_drydock.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	#etc features
+	spriteType = {
+		name = "GFX_nsc_modmenu_mothball"
+		textureFile = "gfx/interface/icons/decisions/decision_nsc_mothball_menu.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_hyperlane_generation"
+		textureFile = "gfx/interface/icons/technologies/tech_hyperlane_generation.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_matterenergy"
+		textureFile = "gfx/interface/icons/ascension_perks/ap_nsc_matterenergy.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_galactic_mall"
+		textureFile = "gfx/interface/icons/technologies/tech_galactic_mall.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_hospital"
+		textureFile = "gfx/interface/icons/technologies/tech_hospital.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+
+
+
+
+
+
+
+
+}

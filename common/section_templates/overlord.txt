@@ -182,7 +182,7 @@ ship_section_template = {
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -221,7 +221,7 @@ ship_section_template = {
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -260,7 +260,7 @@ ship_section_template = {
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -285,7 +285,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost4 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -334,7 +334,7 @@ ship_section_template = {
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -361,7 +361,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -383,7 +383,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 }
 
@@ -422,7 +422,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @destroyer_section_cost }
 	}
 	
 
@@ -457,7 +457,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -504,7 +504,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -538,7 +538,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -574,7 +574,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -631,7 +631,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -688,7 +688,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -742,7 +742,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 	
 	ai_weight = {
@@ -780,7 +780,7 @@ ship_section_template = {
 		
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -809,7 +809,7 @@ ship_section_template = {
 		
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -846,7 +846,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -873,7 +873,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cruiser_section_cost }
 	}
 }
 
@@ -911,7 +911,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -998,7 +998,7 @@ ship_section_template = {
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1057,7 +1057,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost4 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1203,7 +1203,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1322,7 +1322,7 @@ ship_section_template = {
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost5 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1399,7 +1399,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1461,7 +1461,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1563,7 +1563,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1686,7 +1686,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1807,7 +1807,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost5 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1840,7 +1840,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1898,7 +1898,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 
@@ -1987,7 +1987,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost5 }
+		cost = { alloys = @battleship_section_cost }
 	}
 }
 

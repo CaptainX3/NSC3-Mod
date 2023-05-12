@@ -1,0 +1,785 @@
+### Features ###
+nsc_modmenu_setting_page_etc_category_feature_shared_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+}
+nsc_modmenu_setting_page_etc_category_feature_reset_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_setting_page_reset_effect_tooltip
+        hidden_effect = { nsc_modmenu_etc_feature_setting_reset_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_go_home_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_go_home_page_effect_tooltip
+        hidden_effect = { nsc_modmenu_go_home_page_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_go_back_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_previous_page_effect = { CATEGORY = starbase SUBCAT = building } } }
+}
+nsc_modmenu_setting_page_etc_category_feature_go_next_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_next_page_effect = { CATEGORY = etc SUBCAT = ai_difficulty } } }
+}
+#mothball
+nsc_modmenu_setting_page_etc_category_feature_mothball_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_etc_category_feature_mothball_name_desc }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = etc SUBCAT = feature ID = mothball } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = mothball } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_resource_upkeep_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_resource_upkeep_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep VALUE = -5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep }
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_resource_upkeep_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep SYMBOL = < VALUE = 0 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_resource_upkeep_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep VALUE = 5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep }
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_naval_capacity_upkeep_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_naval_capacity_upkeep_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_naval_capacity_upkeep_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep VALUE = -5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep }
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_naval_capacity_upkeep_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_naval_capacity_upkeep_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep SYMBOL = < VALUE = 0 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_naval_capacity_upkeep_up_effect_tooltip
+        hidden_effect = {
+            hidden_effect = {
+                nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep VALUE = 5 }
+                every_playable_country = {
+                    limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                    every_owned_fleet = {
+                        limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                        nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_naval_capacity_upkeep }
+                    }
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_per_planet_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_per_planet_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_per_planet SYMBOL = > VALUE = 1 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_per_planet_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_per_planet VALUE = -1 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_per_planet_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_per_planet_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_per_planet SYMBOL = < VALUE = 10 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_per_planet_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_per_planet VALUE = 1 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_restore_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_restore_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_cost SYMBOL = > VALUE = 0 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_restore_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_cost VALUE = -5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_mothball_target_fleet_repair_cost_calc_effect = yes
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_restore_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_restore_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_restore_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_cost VALUE = 5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_mothball_target_fleet_repair_cost_calc_effect = yes
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_restore_time_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_restore_time_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_time SYMBOL = > VALUE = 0 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_restore_time_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_time VALUE = -5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_mothball_target_fleet_repair_time_calc_effect = yes
+                }
+            }
+        }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_mothball_restore_time_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_mothball_fleet_restore_time_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_time SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_mothball_fleet_restore_time_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_time VALUE = 5 }
+            every_playable_country = {
+                limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
+                every_owned_fleet = {
+                    limit = { nsc_mothball_target_fleet_all_flags_trigger = yes }
+                    nsc_mothball_target_fleet_repair_time_calc_effect = yes
+                }
+            }
+        }
+    }
+}
+#hyperlane_generation
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_name_desc }
+}
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = hyperlane_generation } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation MODIFIER = build_cost VALUE = 5 } }
+    }
+}
+#matterenergy
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_etc_category_feature_matterenergy_name_desc }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = etc SUBCAT = feature ID = matterenergy } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = matterenergy } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = build_cost VALUE = 5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_produce_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_produce_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_produce_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_produce_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_produce VALUE = 5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_upkeep_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_upkeep_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_upkeep_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_upkeep_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = matterenergy MODIFIER = resource_upkeep VALUE = 5 } }
+    }
+}
+#galactic_mall
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_etc_category_feature_galactic_mall_name_desc }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = etc SUBCAT = feature ID = galactic_mall } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = galactic_mall } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = build_cost VALUE = 5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_produce_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_produce_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_produce_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_produce_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_produce VALUE = 5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_upkeep_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_upkeep_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_upkeep_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_upkeep_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = galactic_mall MODIFIER = resource_upkeep VALUE = 5 } }
+    }
+}
+#hospital
+nsc_modmenu_setting_page_etc_category_feature_hospital_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_etc_category_feature_hospital_name_desc }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = etc SUBCAT = feature ID = hospital } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_etc_feature_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = hospital } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_build_cost_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = build_cost VALUE = 5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_produce_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_produce_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_produce_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_produce_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce VALUE = 5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_upkeep_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_upkeep_down_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep VALUE = -5 } }
+    }
+}
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_etc_feature_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_megastructure_resource_upkeep_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_megastructure_resource_upkeep_up_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep VALUE = 5 } }
+    }
+}

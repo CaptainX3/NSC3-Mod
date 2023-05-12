@@ -1,0 +1,24 @@
+
+#####################################################
+#####											#####
+#####				MACHINE						#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "machine_01_construction_platform_entity"
+	pdxmesh = "machine_01_construction_platform_01_mesh"
+	
+	 state = { name = "construction"
+    }
+		
+		default_state = "idle"
+		state = { name = "idle"
+		start_event = { trigger_once = yes sound = { soundeffect = "construction_platform_hum" } }
+	}
+	
+
+
+}
+
+

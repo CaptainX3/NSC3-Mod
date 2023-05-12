@@ -1,0 +1,41 @@
+objectTypes = {	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_01_stage_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_matter_decompressor_stage_1.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_01_stage_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_matter_decompressor_stage_2.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_01_stage_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_matter_decompressor_stage_3.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_01_stage_4_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_matter_decompressor_stage_4.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_destroyed_01_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_matter_decompressor_destroyed.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_sift_small_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_sift_small.mesh"
+	}
+	
+	pdxmesh = {
+		name = "machine_01_matter_decompressor_sift_large_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Matter_Decompressor/machine_01_sift_large.mesh"
+	}	
+}

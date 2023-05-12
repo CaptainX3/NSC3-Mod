@@ -1,0 +1,22 @@
+nsc_modmenu_setting_page_mod_category_introduction_shared_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_introduction_page_opened }
+    allow = { always = yes }
+}
+nsc_modmenu_setting_page_mod_category_introduction_go_home_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_introduction_page_opened }
+    allow = { always = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_go_home_page_effect_tooltip
+        hidden_effect = { nsc_modmenu_go_home_page_effect = yes }
+    }
+}
+nsc_modmenu_setting_page_mod_category_introduction_go_back_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_introduction_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_previous_page_effect = { CATEGORY = mod SUBCAT = preset } } }
+}
+nsc_modmenu_setting_page_mod_category_introduction_go_next_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_mod_introduction_page_opened }
+    allow = { always = yes }
+    effect = { hidden_effect = { nsc_modmenu_go_next_page_effect = { CATEGORY = mod SUBCAT = faq } } }
+}

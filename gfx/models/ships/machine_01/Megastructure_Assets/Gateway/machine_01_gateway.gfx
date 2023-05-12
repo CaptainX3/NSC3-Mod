@@ -1,0 +1,10 @@
+objectTypes = {
+	pdxmesh = {
+		name = "machine_01_gateway_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Gateway/machine_01_gateway.mesh"
+		
+		animation = { id = "idle"		type = "gateway_idle_animation" }
+		animation = { id = "death"		type = "gateway_death_animation" }
+
+	}
+}

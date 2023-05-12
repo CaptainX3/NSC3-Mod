@@ -1,0 +1,21 @@
+objectTypes = {
+	pdxmesh = {
+		name = "machine_01_strategic_coordination_center_stage_1_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Strategic_Coordination_Centre/machine_01_strategy_centre_stage_1.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_strategic_coordination_center_stage_2_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Strategic_Coordination_Centre/machine_01_strategy_centre_stage_2.mesh"
+
+	}
+	
+	pdxmesh = {
+		name = "machine_01_strategic_coordination_center_stage_3_mesh"
+		file = "gfx/models/ships/machine_01/Megastructure_Assets/Strategic_Coordination_Centre/machine_01_strategy_centre_stage_3.mesh"
+		
+	}
+
+
+}

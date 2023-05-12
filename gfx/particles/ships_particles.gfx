@@ -1,0 +1,15 @@
+objectTypes = {
+	
+
+#######Science ship core
+###############
+
+	pdxparticle = {
+		name = "machine_01_science_core"
+		type = "lithoid_01_science_core_file"
+	
+	scale = 1
+	}
+
+
+}

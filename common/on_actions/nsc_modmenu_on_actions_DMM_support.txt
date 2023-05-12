@@ -1,0 +1,20 @@
+# Triggers when pressing begin in the intro window
+# This = country to press begin
+on_press_begin = {
+	events = {
+		nsc_modmenu_DMM_support.1 #phase 1: register the mod menu
+	}
+}
+# No scope, like on_game_start
+# Does not run when loading MP saves due to OOS concerns
+on_single_player_save_game_load = {
+	events = {
+		nsc_modmenu_DMM_support.2 #phase 1: register the mod menu
+	}
+}
+#Dynamic Mod Menu customized on_action
+dmm_mod_selected = {
+	events = {
+		nsc_modmenu_DMM_support.10 #phase 2: opens the mod menu
+	}
+}

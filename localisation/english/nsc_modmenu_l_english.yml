@@ -1,0 +1,501 @@
+﻿l_english:
+
+### 디시인사이드 스텔라리스 갤러리 '어ㅅㅂ' 제작 ###
+
+### ETC ###
+nsc_modmenu_game_content_disabled.fail:0 "\n£trigger_no£ §RThis Content is disabled by NSC Mod Menu.§!"
+
+### Edicts ###
+edict_nsc_modmenu:0 "§YNSC Mod Menu§!"
+edict_nsc_modmenu_desc:0 "We can control various contents from New Ship Classes mod here."
+edict_nsc_modmenu_tooltip:0 "§YClick to Open New Ship Classes Mod Configuration UI.§!"
+edict_nsc_modmenu_tooltip.fail:0 "£trigger_no£ §RCan not open this UI multiple times.§!"
+
+### Country Modifiers ###
+#Ship Classes
+nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod:0 "NSC Modmenu"
+nsc_modmenu_ship_class_StrikeCruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Battlecruiser_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Battlecruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Carrier_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Carrier_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Dreadnought_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Dreadnought_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_headquarters_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_headquarters_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+
+#Starbase Levels
+nsc_modmenu_starbase_class_common_upgrade_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_common_upgrade_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_outpost_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_outpost_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+
+#ETC AI Difficulties
+nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_military_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+
+### Fleet Modifiers ###
+nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod:0 "Mothballed Fleet"
+nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod:0 "$nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod$"
+
+### Events ###
+nsc_modmenu.1.name:0 ""
+nsc_modmenu.1.desc:0 ""
+nsc_modmenu.1.a:0 ""
+
+### Custom GUI Common ###
+NSC_MODMENU_STOPPED_WORKING_DESC:0 "§RClose any other UIs to use this Customgui.§!"
+
+nsc_modmenu_setting_tab_expand_button_tooltip:0 "§HSetting Page list§!"
+nsc_modmenu_reset_all_settings_button_effect_tooltip:0 "§HReset All Settings§!"
+nsc_steamworkshop_link_button_tooltip:0 "§HSteam Workshop§!"
+nsc_discord_link_button_tooltip:0 "§HDiscord Server§!"
+
+nsc_modmenu_reset_all_settings_confirm_name:0 "Reset All Settings"
+nsc_modmenu_reset_all_settings_confirm_desc:0 "Are you sure you wish to §YReset All Settings to Default§!? This can not be undone."
+
+nsc_modmenu_setting_button_category_mod_name:0 "§EMod§!"
+nsc_modmenu_setting_button_mod_preset_name:0 "Presets"
+nsc_modmenu_setting_button_mod_introduction_name:0 "Introduction"
+nsc_modmenu_setting_button_mod_faq_name:0 "FAQ"
+
+nsc_modmenu_setting_button_category_ship_name:0 "§BShip§!"
+nsc_modmenu_setting_button_ship_class_name:0 "Classes"
+nsc_modmenu_setting_button_ship_component_name:0 "Components"
+
+nsc_modmenu_setting_button_category_starbase_name:0 "§BStarbase§!"
+nsc_modmenu_setting_button_starbase_class_name:0 "Levels"
+nsc_modmenu_setting_button_starbase_module_name:0 "Modules"
+nsc_modmenu_setting_button_starbase_building_name:0 "Buildings"
+
+nsc_modmenu_setting_button_category_etc_name:0 "§BETC§!"
+nsc_modmenu_setting_button_etc_feature_name:0 "Other Features"
+nsc_modmenu_setting_button_etc_ai_difficulty_name:0 "AI Difficulties"
+
+nsc_modmenu_game_content_enable_effect_tooltip:0 "Click to §Genable§! this Content. It is currently §Rdisabled§!."
+nsc_modmenu_game_content_disable_effect_tooltip:0 "Click to §Rdisable§! this Content. It is currently §Genabled§!."
+nsc_modmenu_game_content_setting_trigger_tooltip.fail:0 "£trigger_no£ §RThis Content is currently disabled. Enable it to change this setting.§!"
+nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail:0 "£trigger_no£ §RCan not disable Vanilla Content.§!"
+
+nsc_modmenu_setting_page_reset_effect_tooltip:0 "Click to §YReset This Page§!."
+nsc_modmenu_go_home_page_effect_tooltip:0 "Click to §YReturn to the Home Page§!."
+
+nsc_modmenu_go_page_mod_preset_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_preset_name$§! Page."
+nsc_modmenu_go_page_mod_introduction_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_introduction_name$§! Page."
+nsc_modmenu_go_page_mod_faq_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_faq_name$§! Page."
+nsc_modmenu_go_page_ship_class_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_ship_category_class_name$§! Page."
+nsc_modmenu_go_page_ship_component_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_ship_category_component_name$§! Page."
+nsc_modmenu_go_page_starbase_class_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_starbase_category_class_name$§! Page."
+nsc_modmenu_go_page_starbase_module_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_starbase_category_module_name$§! Page."
+nsc_modmenu_go_page_starbase_building_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_starbase_category_building_name$§! Page."
+nsc_modmenu_go_page_etc_feature_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_etc_category_feature_name$§! Page."
+nsc_modmenu_go_page_etc_ai_difficulty_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_etc_category_ai_difficulty_name$§! Page."
+
+nsc_modmenu_mp_host_trigger.fail:0 "£trigger_no£ §ROnly the Host Player can change Settings in the Mod Menu.§!\n§YThen you may ask, "Why am I able to view this UI if I cannot modify its Settings?" The reason is to allow you to check the adjustments made by the Host.§!"
+
+### Custom GUI Category: Mod ###
+#Presets
+nsc_modmenu_setting_page_mod_category_preset_name:0 "$nsc_modmenu_setting_button_category_mod_name$ $nsc_modmenu_setting_button_mod_preset_name$"
+
+#Introduction
+nsc_modmenu_setting_page_mod_category_introduction_name:0 "$nsc_modmenu_setting_button_category_mod_name$ $nsc_modmenu_setting_button_mod_introduction_name$"
+nsc_modmenu_setting_page_mod_category_introduction_desc:0 "§EWelcome to the NSC2 Official Mod Menu!\n\nThis menu will allow you to customize the mod as you choose. We highly recommend only changing these settings upon starting a new game - it is currently unknown how changing these settings will affect a save game.\n\nWe also have a FAQ section of this menu which will answer common questions about the mod and a section with instructions to help explain how to use certain features of the mod.\n\nIf you have any questions that are not answered here, feel free to join the NSC2 Discord server linked on the mod's Steam page.§!"
+
+#FAQ
+nsc_modmenu_setting_page_mod_category_faq_name:0 "$nsc_modmenu_setting_button_category_mod_name$ $nsc_modmenu_setting_button_mod_faq_name$"
+nsc_modmenu_setting_page_mod_category_faq_desc:0 "§EWelcome to the NSC2 Frequently Asked Questions page.\n\nHere you'll find the most common questions we get asked by the community. Simply click the buttons on either side of this text box.\n\nMore questions will be added in the future as we see them come up. If you still have questions that are not on this page, feel free to join the NSC2 Discord and ask our community!§!"
+
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_name:0 "FAQ List"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_name:0 "NSC2 Not Working Properly"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_tooltip:0 "Question: What do I do if NSC2 isn't working properly?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_tooltip$\n\nThe very first step in troubleshooting mod problems is to check your mod load order in the Paradox Launcher. Having mods in the wrong order will cause issues.\n\nThe Paradox launcher functions on LIOS  - "Last in, only served." This means that when two mods modify the same thing, the mod that is lower on the list will overwrite anything higher on the list. This is super important because a lot of different mods modify the same things.\n\nA bad load order is what can cause common "bugs" like these:\n\n- Various numbers, modifiers, or stats not being what they should be.\n- Not being able to research the new ship classes.\n- Having the black hole reactor available at game start.\n- Not being able to save ship designs due to the SAVEFAIL error (empty component spot).\n- Not having the correct number of starbase building and module slots.\n\nThe PDX launcher loads mods from TOP TO BOTTOM, with mods at the bottom of the list overwriting everything above them.\n\nTo fix load order bugs: Open your launcher, open your current mod playset, and click on the "Load Order" setting near the top right, and click the "Z to A" setting. NSC2 usually needs to be at or very near the BOTTOM of your load order. Remember that any mods below NSC2 will overwrite NSC2 files, which can break the mod in weird ways.\n\nAlso make sure that you are not running outdated mods! You must disable any mod with the yellow triangle in the launcher until it is updated to the latest Stellaris version and the triangle disappears! We cannot help fix issues if you refuse to turn off outdated mods.\n\nOnce you have set the Z to A order, make sure that you manually re-order your patches and addons so that they are below the mods that they patch.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_name:0 "Creating/Removing Hyperlanes"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip:0 "Question: How do I create or remove hyperlanes?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip$\n\nTo create a new hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Generator (Transmitter) megastructure in the system where you want the new hyperlane to start.\nStep 2: Build the Hyperlane Generator (Receiver) megastructure in the system where you want the new hyperlane to end.\nStep 3: Upgrade the Hyperlane Generator (Transmitter) in the starting system to complete it.\nStep 4: Upgrade the Hyperlane Generator (Receiver) in the ending system to complete it.\nStep 5: Finally, upgrade Hyperlane Generator (Transmitter) again to activate the transmitter and create the new hyperlane.\n\nTo remove a hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Remover (Transmitter) megastructure in the system where the hyperlane you want to remove begins.\nStep 2: Build the Hyperlane Remover (Receiver) megastructure in the system where the hyperlane you want to remove ends.\nStep 3: Upgrade the Hyperlane Remover (Transmitter) in the starting system to complete it.\nStep 4: Upgrade the Hyperlane Remover (Receiver) in the ending system to complete it.\nStep 5: Finally, upgrade Hyperlane Remover (Transmitter) again to activate the remover and destroy the hyperlane.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_name:0 "Advanced Combat Tactics"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip:0 "Question: How do the Advanced Combat Tactics work?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip$\n\nAdvanced Combat Tactics are a second combat computer in NSC2 for most ship classes. These tactics determine how the ship behaves in combat and have several options such as Hit and Run, Flanking, Stationary, and so on.\n\nIf you want to use the advanced tactics, select one of the "NO AI" combat computers in the top slot and then choose an advanced tactic for it in the second slot.\n\nIf you do not want to use advanced tactics and want the ship to behave as it would in vanilla, select a normal combat computer in the top slot and then choose the "Default Behavior" computer for the second slot.\n\nHover over each advanced tactic to see a detailed description on what the behavior does.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_name:0 "Reset NSC2"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip:0 "Question: How can I completely reset the mod's files if it is not working properly?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip$\n\nIf your copy of NSC2 (or any other mod) is not working properly, try ALL of these steps in order:\n\n1. VERIFY MOD LOAD ORDER\nThe best way to make sure your mods work properly is to order them in REVERSE alphabetical order - choose the Z..A sorting option in the launcher. If you need detailed help with sorting mods, use the bot command !loadorder. in any channel.\n\n2. VERIFY GAME FILES\nOpen Steam, go to your game library, and right click on Stellaris. Click on Properties and then go to the Local Files page, and choose the Verify integrity of game files option.\n\n3. RESET NSC2 (OR ANY OTHER MOD)\nDelete this entire folder from your PC: Steam\SteamApps\workshop\content\281990\683230077 and then unsubscribe and resubscribe to the mod. Verify that Steam is downloading the mod, and then try to run again.\n\n(If your issue is not with NSC2, but another mod, you can replace the 683230077 with the ID number for the mod you want to reset. You can find the mod's ID number by opening its page in the Steam workshop - it is the very last set of numbers shown in the URL.)\n\n4. CLEAR THE STELLARIS MOD FOLDER\nDelete this entire folder from your PC: Steam\SteamApps\workshop\content\281990 and then unsubscribe and resubscribe to all of your mods. Verify that Steam is downloading the mods, and then try to run again.\n\n5. RESET THE PARADOX MOD LAUNCHER\nGo to Documents/Paradox Interactive/Stellaris, delete launcher_v2.sqlite, go into the mod folder, delete all of the ugc .mod files, then verify the game files in Steam and rebuild your mod load order.\n\n6. RESET THE STELLARIS FOLDER\nIf the above steps do not work, back up your custom races and personal mods and delete the entire Documents/Paradox Interactive/Stellaris folder and then verify the game files and rebuild your mod load order again.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_name:0 "Name REPLACE_ME 5"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_tooltip:0 "Tooltip REPLACE_ME 5"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_6_name:0 "Name REPLACE_ME 6"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_6_tooltip:0 "Tooltip REPLACE_ME 6"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_6_desc:0 "§E Desc REPLACE_ME 6 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_7_name:0 "Name REPLACE_ME 7"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_7_tooltip:0 "Tooltip REPLACE_ME 7"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_7_desc:0 "§E Desc REPLACE_ME 7 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_8_name:0 "Name REPLACE_ME 8"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_8_tooltip:0 "Tooltip REPLACE_ME 8"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_8_desc:0 "§E Desc REPLACE_ME 8 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_9_name:0 "Name REPLACE_ME 9"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_9_tooltip:0 "Tooltip REPLACE_ME 9"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_9_desc:0 "§E Desc REPLACE_ME 9 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_10_name:0 "Name REPLACE_ME 10"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_10_tooltip:0 "Tooltip REPLACE_ME 10"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_10_desc:0 "§E Desc REPLACE_ME 10 §!"
+
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_name:0 "$nsc_modmenu_setting_page_mod_category_faq_question_list_1_name$"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_name:0 "Ship Upgrades"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_tooltip:0 "Question: How do I access the ship class upgrades like the Heavy Carrier and Spitfire Battleship?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_tooltip$\n\nThe ship upgrade techs give access to new ship sections, not totally new classes. Once you research a ship upgrade, look in the ship designer to see the new section options available for the ship.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_name:0 "Mothballing Fleets"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_tooltip:0 "Question: How do I mothball a fleet?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_tooltip$\n\nTo mothball a fleet, move it into orbit over one of your colonized planets. Make sure it's a planet that you don't plan to have other fleets orbiting, because once you activate the mothball system, all fleets that enter orbit will automatically be mothballed.\n\nOnce the fleet is in orbit, open the planetary decisions window and choose the Mothball option.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_name:0 "Headquarters Station"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip:0 "Question: How do I build the Headquarters Station?"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip$\n\nThe Headquarters Station is a type of Juggernaut and can be built at a starbase that can build Juggernauts.\n\nNote: You must have purchased and installed the Federations DLC to have access to Juggernauts and to build the HQ Station.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Name REPLACE_ME 4"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "Tooltip REPLACE_ME 4"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E Desc REPLACE_ME 4 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Name REPLACE_ME 5"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "Tooltip REPLACE_ME 5"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_name:0 "Name REPLACE_ME 6"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip:0 "Tooltip REPLACE_ME 6"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_desc:0 "§E Desc REPLACE_ME 6 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_name:0 "Name REPLACE_ME 7"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_tooltip:0 "Tooltip REPLACE_ME 7"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_desc:0 "§E Desc REPLACE_ME 7 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_8_name:0 "Name REPLACE_ME 8"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_8_tooltip:0 "Tooltip REPLACE_ME 8"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_8_desc:0 "§E Desc REPLACE_ME 8 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_9_name:0 "Name REPLACE_ME 9"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_9_tooltip:0 "Tooltip REPLACE_ME 9"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_9_desc:0 "§E Desc REPLACE_ME 9 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_10_name:0 "Name REPLACE_ME 10"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_10_tooltip:0 "Tooltip REPLACE_ME 10"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_10_desc:0 "§E Desc REPLACE_ME 10 §!"
+
+### Custom GUI Category: Ship Classes ###
+#Common
+nsc_modmenu_setting_page_ship_category_class_name:0 "$nsc_modmenu_setting_button_category_ship_name$ $nsc_modmenu_setting_button_ship_class_name$"
+
+nsc_modmenu_ship_class_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of this Ship Class by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_ship_class_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of this Ship Class by §R+5%§!."
+nsc_modmenu_ship_class_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of this Ship Class by §R-5%§!."
+nsc_modmenu_ship_class_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of this Ship Class by §G+5%§!."
+
+nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_speed_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_speed_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+#StrikeCruiser
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_name_desc:0 "§H$STRIKECRUISER$§!\n$SHIP_GRAPHICS_STRIKECRUISER_DESC$"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_enabled_desc:0 "$STRIKECRUISER$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_disabled_desc:0 "$STRIKECRUISER$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
+
+### Custom GUI Category: Ship Components ###
+#Common
+nsc_modmenu_setting_page_ship_category_component_name:0 "$nsc_modmenu_setting_button_category_ship_name$ $nsc_modmenu_setting_button_ship_component_name$"
+
+#NSC_REACTOR_BOOSTER_1
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_name_desc:0 "§H$NSC_REACTOR_BOOSTER_1$§!\n$NSC_REACTOR_BOOSTER_1_DESC$"
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_enabled_desc:0 "$NSC_REACTOR_BOOSTER_1$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_NSC_REACTOR_BOOSTER_1_disabled_desc:0 "$NSC_REACTOR_BOOSTER_1$: §RDisabled§!"
+
+### Custom GUI Category: Starbase Levels ###
+#Common
+nsc_modmenu_setting_page_starbase_category_class_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_class_name$"
+
+nsc_modmenu_starbase_class_upgrade_cost_down_effect_tooltip:0 "Click to change the Upgrade Cost of this Starbase Class by §G-5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_starbase_class_upgrade_cost_up_effect_tooltip:0 "Click to change the Upgrade Cost of this Starbase Class by §R+5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
+nsc_modmenu_starbase_class_upgrade_speed_down_effect_tooltip:0 "Click to change the Upgrade Speed of this Starbase Class by §R-5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
+nsc_modmenu_starbase_class_upgrade_speed_up_effect_tooltip:0 "Click to change the Upgrade Speed of this Starbase Class by §G+5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
+
+nsc_modmenu_starbase_class_upgrade_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_upgrade_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_starbase_class_upgrade_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_upgrade_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_starbase_class_upgrade_speed_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_upgrade_speed_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_starbase_class_upgrade_speed_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_upgrade_speed_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_desc_neutral:0 "Upgrade Cost: §Y[This.nsc_modmenu_starbase_class_common_upgrade_cost_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_desc_minus:0 "Upgrade Cost: §G[This.nsc_modmenu_starbase_class_common_upgrade_cost_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_desc_plus:0 "Upgrade Cost: §R+[This.nsc_modmenu_starbase_class_common_upgrade_cost_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_speed_desc_neutral:0 "Upgrade Speed: §Y[This.nsc_modmenu_starbase_class_common_upgrade_speed_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_speed_desc_minus:0 "Upgrade Speed: §R[This.nsc_modmenu_starbase_class_common_upgrade_speed_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_common_upgrade_speed_desc_plus:0 "Upgrade Speed: §G+[This.nsc_modmenu_starbase_class_common_upgrade_speed_var]%§!"
+
+#stronghold
+nsc_modmenu_setting_page_starbase_category_class_stronghold_name_desc:0 "$TECH_enable_OUTPOST_CONSTRUCTION_DESC$"
+nsc_modmenu_setting_page_starbase_category_class_stronghold_enabled_desc:0 "$starbase_stronghold$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_class_stronghold_disabled_desc:0 "$starbase_stronghold$: §RDisabled§!"
+
+#outpost
+nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "$TECH_enable_STRONGHOLD_CONSTRUCTION_DESC$"
+nsc_modmenu_setting_page_starbase_category_class_outpost_enabled_desc:0 "$starbase_outpost$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_disabled_desc:0 "$starbase_outpost$: §RDisabled§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
+nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
+
+nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of this Starbase Class by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of this Starbase Class by §R+5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of this Starbase Class by §R-5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of this Starbase Class by §G+5%§!."
+
+nsc_modmenu_starbase_class_outpost_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_starbase_class_outpost_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_starbase_class_outpost_build_speed_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_starbase_class_outpost_build_speed_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+### Custom GUI Category: Starbase Modules ###
+#Common
+nsc_modmenu_setting_page_starbase_category_module_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_module_name$"
+
+#pd_battery
+nsc_modmenu_setting_page_starbase_category_module_pd_battery_name_desc:0 "§H$sm_pd_battery$§!\n$sm_pd_battery_desc$"
+nsc_modmenu_setting_page_starbase_category_module_pd_battery_enabled_desc:0 "$sm_pd_battery$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_module_pd_battery_disabled_desc:0 "$sm_pd_battery$: §RDisabled§!"
+
+### Custom GUI Category: Starbase Buildings ###
+#Common
+nsc_modmenu_setting_page_starbase_category_building_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_building_name$"
+
+#drydock
+nsc_modmenu_setting_page_starbase_category_building_drydock_name_desc:0 "§H$sm_drydock$§!\n$sm_drydock_desc$"
+nsc_modmenu_setting_page_starbase_category_building_drydock_enabled_desc:0 "$sm_drydock$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_building_drydock_disabled_desc:0 "$sm_drydock$: §RDisabled§!"
+
+### Custom GUI Category: ETC Features ###
+#Common
+nsc_modmenu_setting_page_etc_category_feature_name:0 "$nsc_modmenu_setting_button_category_etc_name$ $nsc_modmenu_setting_button_etc_feature_name$"
+
+nsc_modmenu_megastructure_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of this Megastructure by §G-5%§!."
+nsc_modmenu_megastructure_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of this Megastructure by §R+5%§!."
+nsc_modmenu_megastructure_resource_produce_down_effect_tooltip:0 "Click to change the Resources Production of this Megastructure by §R-5%§!."
+nsc_modmenu_megastructure_resource_produce_up_effect_tooltip:0 "Click to change the Resources Production of this Megastructure by §G+5%§!."
+nsc_modmenu_megastructure_resource_upkeep_down_effect_tooltip:0 "Click to change the Resources Upkeep of this Megastructure by §G-5%§!."
+nsc_modmenu_megastructure_resource_upkeep_up_effect_tooltip:0 "Click to change the Resources Upkeep of this Megastructure by §R+5%§!."
+
+nsc_modmenu_megastructure_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_megastructure_build_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_megastructure_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_megastructure_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_megastructure_resource_produce_down_trigger_tooltip.fail:0 "$nsc_modmenu_megastructure_resource_produce_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_megastructure_resource_produce_up_trigger_tooltip.fail:0 "$nsc_modmenu_megastructure_resource_produce_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_megastructure_resource_upkeep_down_trigger_tooltip.fail:0 "$nsc_modmenu_megastructure_resource_upkeep_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_megastructure_resource_upkeep_up_trigger_tooltip.fail:0 "$nsc_modmenu_megastructure_resource_upkeep_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+#mothball
+nsc_modmenu_setting_page_etc_category_feature_mothball_name_desc:0 "§H$decision_nsc_mothball_menu$§!\n$decision_nsc_mothball_menu_desc$"
+nsc_modmenu_setting_page_etc_category_feature_mothball_enabled_desc:0 "$decision_nsc_mothball_menu$: §GEnabled§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_disabled_desc:0 "$decision_nsc_mothball_menu$: §RDisabled§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_desc_neutral:0 "Fleet Resource Upkeep: §Y[This.nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_desc_minus:0 "Fleet Resource Upkeep: §G[This.nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_naval_capacity_upkeep_desc_neutral:0 "Fleet Naval Cap Usage: §Y[This.nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_naval_capacity_upkeep_desc_minus:0 "Fleet Naval Cap Usage: §G[This.nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_per_planet_desc_neutral:0 "Mothball Cap per Colony: §Y[nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_per_planet_var]§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_restore_cost_desc_neutral:0 "Fleet Restoration Cost: §Y[nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_restore_time_desc_neutral:0 "Fleet Restoration Time: §Y[nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_time_var]%§!"
+
+nsc_modmenu_mothball_fleet_resource_upkeep_down_effect_tooltip:0 "Click to change the Upkeep of Mothballed Fleets by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_mothball_fleet_resource_upkeep_up_effect_tooltip:0 "Click to change the Upkeep of Mothballed Fleets by §R+5%§!."
+nsc_modmenu_mothball_fleet_naval_capacity_upkeep_down_effect_tooltip:0 "Click to change the Naval Capacity Usage of Mothballed Fleets by §G-5%§!."
+nsc_modmenu_mothball_fleet_naval_capacity_upkeep_up_effect_tooltip:0 "Click to change the Naval Capacity Usage of Mothballed Fleets by §R+5%§!."
+nsc_modmenu_mothball_fleet_per_planet_down_effect_tooltip:0 "Click to change the Number of Mothballed Fleets a Colony can hold by §R-1§!."
+nsc_modmenu_mothball_fleet_per_planet_up_effect_tooltip:0 "Click to change the Number of Mothballed Fleets a Colony can hold by §G+1§!."
+nsc_modmenu_mothball_fleet_restore_cost_down_effect_tooltip:0 "Click to change the Restoration Cost of Mothballed Fleets by §G-5%§!.\n§YThe Actual Restoration Cost = (The Total Hull Points of Ships in the Fleet) X (Fleet Restoration Cost Percent Value set in Mod Menu)§!"
+nsc_modmenu_mothball_fleet_restore_cost_up_effect_tooltip:0 "Click to change the Restoration Cost of Mothballed Fleets by §R+5%§!.\n§YThe Actual Restoration Cost = (The Total Hull Points of Ships in the Fleet) X (Fleet Restoration Cost Percent Value set in Mod Menu)§!"
+nsc_modmenu_mothball_fleet_restore_time_down_effect_tooltip:0 "Click to change the Restoration Time of Mothballed Fleets by §G-5%§!.\n§YThe Actual Restoration Time = (The Total Number of Ships in the Fleet) X 30 X (Fleet Restoration Time Percent Value set in Mod Menu)§!"
+nsc_modmenu_mothball_fleet_restore_time_up_effect_tooltip:0 "Click to change the Restoration Time of Mothballed Fleets by §R+5%§!.\n§YThe Actual Restoration Time = (The Total Number of Ships in the Fleet) X 30 X (Fleet Restoration Time Percent Value set in Mod Menu)§!"
+
+nsc_modmenu_mothball_fleet_resource_upkeep_down_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_resource_upkeep_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_mothball_fleet_resource_upkeep_up_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_resource_upkeep_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_mothball_fleet_naval_capacity_upkeep_down_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_naval_capacity_upkeep_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_mothball_fleet_naval_capacity_upkeep_up_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_naval_capacity_upkeep_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_mothball_fleet_per_planet_down_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_per_planet_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_mothball_fleet_per_planet_up_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_per_planet_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_mothball_fleet_restore_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_restore_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_mothball_fleet_restore_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_restore_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+nsc_modmenu_mothball_fleet_restore_time_down_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_restore_time_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_mothball_fleet_restore_time_up_trigger_tooltip.fail:0 "$nsc_modmenu_mothball_fleet_restore_time_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+#hyperlane_generation
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_name_desc:0 "$TECH_UNLOCK_HYPERLANE_GENERATION_DESC$"
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_enabled_desc:0 "$tech_hyperlane_generation$: §GEnabled§!"
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_disabled_desc:0 "$tech_hyperlane_generation$: §RDisabled§!"
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_desc_neutral:0 "Megastructure Build Cost: §Y[This.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_desc_minus:0 "Megastructure Build Cost: §G[This.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hyperlane_generation_build_cost_desc_plus:0 "Megastructure Build Cost: §R+[This.nsc_modmenu_etc_feature_hyperlane_generation_build_cost_var]%§!"
+
+#matterenergy
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_name_desc:0 "§H$ap_nsc_matterenergy$§!\n$ap_nsc_matterenergy_desc$"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_enabled_desc:0 "$ap_nsc_matterenergy$: §GEnabled§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_disabled_desc:0 "$ap_nsc_matterenergy$: §RDisabled§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_desc_neutral:0 "Megastructure Build Cost: §Y[This.nsc_modmenu_etc_feature_matterenergy_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_desc_minus:0 "Megastructure Build Cost: §G[This.nsc_modmenu_etc_feature_matterenergy_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_build_cost_desc_plus:0 "Megastructure Build Cost: §R+[This.nsc_modmenu_etc_feature_matterenergy_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_desc_neutral:0 "Megastructure Output: §Y[This.nsc_modmenu_etc_feature_matterenergy_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_desc_minus:0 "Megastructure Output: §R[This.nsc_modmenu_etc_feature_matterenergy_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_produce_desc_plus:0 "Megastructure Output: §G+[This.nsc_modmenu_etc_feature_matterenergy_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_desc_neutral:0 "Megastructure Upkeep: §Y[This.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_desc_minus:0 "Megastructure Upkeep: §G[This.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_matterenergy_resource_upkeep_desc_plus:0 "Megastructure Upkeep: §R+[This.nsc_modmenu_etc_feature_matterenergy_resource_upkeep_var]%§!"
+
+#galactic_mall
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_name_desc:0 "§H$TECH_UNLOCK_GALACTIC_MALL_TITLE$§!\n$TECH_UNLOCK_GALACTIC_MALL_DESC$"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_enabled_desc:0 "$tech_galactic_mall$: §GEnabled§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_disabled_desc:0 "$tech_galactic_mall$: §RDisabled§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_desc_neutral:0 "Megastructure Build Cost: §Y[This.nsc_modmenu_etc_feature_galactic_mall_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_desc_minus:0 "Megastructure Build Cost: §G[This.nsc_modmenu_etc_feature_galactic_mall_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_build_cost_desc_plus:0 "Megastructure Build Cost: §R+[This.nsc_modmenu_etc_feature_galactic_mall_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_desc_neutral:0 "Megastructure Output: §Y[This.nsc_modmenu_etc_feature_galactic_mall_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_desc_minus:0 "Megastructure Output: §R[This.nsc_modmenu_etc_feature_galactic_mall_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_produce_desc_plus:0 "Megastructure Output: §G+[This.nsc_modmenu_etc_feature_galactic_mall_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_desc_neutral:0 "Megastructure Upkeep: §Y[This.nsc_modmenu_etc_feature_galactic_mall_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_desc_minus:0 "Megastructure Upkeep: §G[This.nsc_modmenu_etc_feature_galactic_mall_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_galactic_mall_resource_upkeep_desc_plus:0 "Megastructure Upkeep: §R+[This.nsc_modmenu_etc_feature_galactic_mall_resource_upkeep_var]%§!"
+
+#hospital
+nsc_modmenu_setting_page_etc_category_feature_hospital_name_desc:0 "§H$TECH_UNLOCK_HOPSITAL_TITLE$§!\n$TECH_UNLOCK_HOSPITAL_DESC$"
+nsc_modmenu_setting_page_etc_category_feature_hospital_enabled_desc:0 "$tech_hospital$: §GEnabled§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_disabled_desc:0 "$tech_hospital$: §RDisabled§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_desc_neutral:0 "Megastructure Build Cost: §Y[This.nsc_modmenu_etc_feature_hospital_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_desc_minus:0 "Megastructure Build Cost: §G[This.nsc_modmenu_etc_feature_hospital_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_build_cost_desc_plus:0 "Megastructure Build Cost: §R+[This.nsc_modmenu_etc_feature_hospital_build_cost_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_desc_neutral:0 "Megastructure Output: §Y[This.nsc_modmenu_etc_feature_hospital_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_desc_minus:0 "Megastructure Output: §R[This.nsc_modmenu_etc_feature_hospital_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_produce_desc_plus:0 "Megastructure Output: §G+[This.nsc_modmenu_etc_feature_hospital_resource_produce_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_neutral:0 "Megastructure Upkeep: §Y[This.nsc_modmenu_etc_feature_hospital_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_minus:0 "Megastructure Upkeep: §G[This.nsc_modmenu_etc_feature_hospital_resource_upkeep_var]%§!"
+nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_plus:0 "Megastructure Upkeep: §R+[This.nsc_modmenu_etc_feature_hospital_resource_upkeep_var]%§!"
+
+### Custom GUI Category: ETC AI Difficulities ###
+#Common
+nsc_modmenu_setting_page_etc_category_ai_difficulty_name:0 "$nsc_modmenu_setting_button_category_etc_name$ $nsc_modmenu_setting_button_etc_ai_difficulty_name$"
+
+#Presets
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_none_name:0 "None"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_name:0 "Very Easy"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_easy_name:0 "Easy"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_normal_name:0 "Normal"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_hard_name:0 "Hard"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_hard_name:0 "Very Hard"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_custom_name:0 "Custom"
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_none_effect_tooltip:0 "§YSet AI Bonuses as follows:§!\nResources Production: §Y0%§!\nTechnology Research Speed: §Y0%§!\nShip Weapon Damage: §Y0%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_effect_tooltip:0 "§YSet AI Bonuses as follows:§!\nResources Production: §G+20%§!\nTechnology Research Speed: §G+20%§!\nShip Weapon Damage: §G+20%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_easy_effect_tooltip:0 "§YSet AI Bonuses as follows:§!\nResources Production: §G+40%§!\nTechnology Research Speed: §G+40%§!\nShip Weapon Damage: §G+40%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_normal_effect_tooltip:0 "§YSet AI Bonuses as follows:§!\nResources Production: §G+60%§!\nTechnology Research Speed: §G+60%§!\nShip Weapon Damage: §G+60%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_hard_effect_tooltip:0 "§YSet AI Bonuses as follows:§!\nResources Production: §G+80%§!\nTechnology Research Speed: §G+80%§!\nShip Weapon Damage: §G+80%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_hard_effect_tooltip:0 "§YSet AI Bonuses as follows:§!\nResources Production: §G+100%§!\nTechnology Research Speed: §G+100%§!\nShip Weapon Damage: §G+100%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_custom_effect_tooltip:0 "§YUse Sliders below to customize the AI Bonuses.§!"
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_none_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_none_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_easy_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_easy_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_normal_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_normal_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_hard_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_hard_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_hard_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_hard_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_custom_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_custom_effect_tooltip$\n£trigger_no£ §RThis Preset is already chosen.§!"
+
+#economy_bonus slider
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_effect_tooltip:0 "Click to change the Resources Production of AI Empires by §R-5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_effect_tooltip:0 "Click to change the Resources Production of AI Empires by §G+5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+0%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+10%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+15%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+20%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+25%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+30%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+35%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+40%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+45%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+50%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+55%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+60%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+65%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+70%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+75%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+80%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+85%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+90%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+95%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+100%§!."
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_neutral:0 "Current AI Resources Production Bonus: §Y[This.nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_plus:0 "Current AI Resources Production Bonus: §G+[This.nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc:0 "[nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_economy_bonus]"
+
+#technology_bonus slider
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_effect_tooltip:0 "Click to change the Technology Research Speed of AI Empires by §R-5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_effect_tooltip:0 "Click to change the Technology Research Speed of AI Empires by §G+5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_1_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+0%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_2_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_3_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+10%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_4_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+15%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_5_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+20%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_6_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+25%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_7_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+30%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_8_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+35%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_9_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+40%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_10_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+45%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_11_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+50%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_12_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+55%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_13_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+60%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_14_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+65%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_15_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+70%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_16_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+75%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_17_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+80%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_18_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+85%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_19_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+90%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_20_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+95%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_21_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+100%§!."
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_neutral:0 "Current AI Technology Research Speed Bonus: §Y[This.nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_plus:0 "Current AI Technology Research Speed Bonus: §G+[This.nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc:0 "[nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_technology_bonus]"
+
+#military_bonus slider
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_effect_tooltip:0 "Click to change the Ship Weapon Damage of AI Empires by §R-5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_effect_tooltip:0 "Click to change the Ship Weapon Damage of AI Empires by §G+5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_1_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+0%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_2_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+5%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_3_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+10%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_4_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+15%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_5_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+20%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_6_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+25%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_7_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+30%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_8_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+35%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_9_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+40%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_10_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+45%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_11_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+50%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_12_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+55%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_13_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+60%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_14_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+65%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_15_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+70%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_16_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+75%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_17_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+80%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_18_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+85%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_19_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+90%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_20_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+95%§!."
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_21_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+100%§!."
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
+
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_neutral:0 "Current AI Ship Weapon Damage Bonus: §Y[This.nsc_modmenu_etc_feature_ai_difficulty_military_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_plus:0 "Current AI Ship Weapon Damage Bonus: §G+[This.nsc_modmenu_etc_feature_ai_difficulty_military_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc:0 "[nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_military_bonus]"

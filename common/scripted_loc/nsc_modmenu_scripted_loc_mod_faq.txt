@@ -1,0 +1,89 @@
+defined_text = {
+	name = Get_nsc_mod_faq_question_list_context
+	random = no
+
+	#FAQ Question List 1
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_1_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_2_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_3_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_4_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_5_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_6_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_6_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_7_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_7_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_8_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_8_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_9_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_9_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_10_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_10_desc
+	}
+	#FAQ Question List 2
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_1_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_2_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_3_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_4_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_5_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_6_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_7_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_8_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_8_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_9_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_9_desc
+	}
+	text = {
+		trigger = { has_global_flag = nsc_modmenu_mod_faq_question_list_2_context_10_page_opened }
+		localization_key = nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_10_desc
+	}
+
+	default = nsc_modmenu_setting_page_mod_category_faq_desc
+}

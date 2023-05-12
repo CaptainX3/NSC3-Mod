@@ -1,0 +1,257 @@
+
+#####################################################
+#####											#####
+#####			     Machine					#####
+#####											#####
+#####################################################
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_1_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_1_mesh"
+	
+	####matde_black_hole_effect
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+	}
+	
+	attach = { core = "machine_01_sift_small" }
+}
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_2_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_2_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+		attach = { core = "machine_01_sift_small" }
+}
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_3_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_3_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle"
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }	
+	
+	
+		start_event = { node = "light_locator_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "light_locator_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+	}
+	
+	attach = { core = "machine_01_sift_small" }
+	attach = { core = "machine_01_sift_large" }
+}
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_4_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_4_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		start_event = { node = "effect_1" particle = "matde_core_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		start_event = { node = "core" particle = "matde_black_hole_effect" keep_particle = yes trigger_once = yes }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "ion_cannon_core_effect" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_collosus_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		event = { time = 0 node = "core" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes  }
+		start_event = { node = "inner_beam_1" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_2" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "inner_beam_3" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_01" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_02" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "engine_wide_03" particle = "matde_core_small_beam_effect" keep_particle = yes trigger_once = yes }
+		
+		
+		
+		
+		start_event = { node = "focus_01" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "focus_02" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "focus_03" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "focus_04" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "focus_05" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+		start_event = { node = "focus_06" particle = "ship_light_blue_effect" keep_particle = yes trigger_once = yes }
+
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_hum_treble" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_distortion" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_pulse" } }
+		start_event = { trigger_once = yes sound = { soundeffect = "sfx_matter_decompressor_conveyor" } }
+	}
+		attach = { core = "machine_01_sift_large" }
+		attach = { core = "machine_01_sift_large" }
+}
+
+# CONSTRUCTION ENTITIES
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_1_construction_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_1_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_2_construction_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_2_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_3_construction_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_3_mesh"
+	
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+entity = {
+	name = "machine_01_matter_decompressor_stage_4_construction_entity"
+	pdxmesh = "machine_01_matter_decompressor_01_stage_4_mesh"
+
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" }
+}
+
+
+
+#### SIFT ENTITIES ####
+
+
+entity = {
+	name = "machine_01_sift_small"
+	pdxmesh = "machine_01_matter_decompressor_sift_small_mesh"
+	
+	
+	get_state_from_parent = no
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 
+		
+	}
+	
+	game_data = {
+		uv_animation_speed 		= 0.05
+		uv_animation_direction 	= { 0.5 1.0 }
+		bloom_factor = 0.8
+	}
+	
+	scale = 1
+}
+
+entity = {
+	name = "machine_01_sift_large"
+	pdxmesh = "machine_01_matter_decompressor_sift_large_mesh"
+	
+	
+	get_state_from_parent = no
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 5 
+		
+	}
+	
+	game_data = {
+		uv_animation_speed 		= 0.05
+		uv_animation_direction 	= { 0.5 1.0 }
+		bloom_factor = 0.8
+	}
+	
+	scale = 1
+}
+
+
+
+
+
+

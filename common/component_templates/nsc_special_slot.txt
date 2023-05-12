@@ -43,7 +43,7 @@ utility_component_template = {
 		cost = { alloys = @cost3 }
 	}
 
-	sensor = 2
+	sensor_range = 2
 
 	prerequisites = { "tech_specialcomponents_1" }
 	
@@ -305,7 +305,7 @@ utility_component_template = {
 		cost = { alloys = @cost0 }
 	}
 	
-	ship_modifier = { ship_piracy_suppression_add = 10 }
+	modifier = { ship_piracy_suppression_add = 10 }
 	class_restriction = { shipclass_military shipclass_constructor }
 	component_set = "special_ship_slot"
 

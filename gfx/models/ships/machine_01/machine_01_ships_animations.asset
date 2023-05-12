@@ -1,0 +1,127 @@
+
+#animation = {
+#	name = "machine_01_corvette_frame_idle_animation"
+#	file = "corvette_frame_idle.anim"
+#}
+#
+#animation = {
+#	name = "machine_01_corvette_frame_death_animation"
+#	file = "corvette_frame_death.anim"
+#}
+#
+#animation = {
+#	name = "machine_01_corvette_frame_moving_animation"
+#	file = "corvette_frame_moving.anim"
+#}
+#
+#animation = {
+#	name = "machine_01_destroyer_frame_death_animation"
+#	file = "destroyer_frame_death.anim"
+#}
+#
+#animation = {
+#	name = "machine_01_destroyer_frame_idle_animation"
+#	file = "destroyer_frame_idle.anim"
+#}
+#
+#animation = {
+#	name = "machine_01_destroyer_frame_moving_animation"
+#	file = "destroyer_frame_moving.anim"
+#}
+
+animation = {
+	name = "machine_01_cruiser_frame_death_animation"
+	file = "Cruiser_assets/machine_01_cruiser_death.anim"
+}
+
+animation = {
+	name = "machine_01_cruiser_frame_death2_animation"
+	file = "Cruiser_assets/machine_01_cruiser_death.anim"
+}
+
+animation = {
+	name = "machine_01_cruiser_frame_death3_animation"
+	file = "cruiser_assets/machine_01_cruiser_death.anim"
+}
+
+animation = {
+	name = "machine_01_cruiser_frame_idle_animation"
+	file = "cruiser_assets/machine_01_cruiser_frame_idle.anim"
+}
+
+
+
+
+animation = {
+	name = "machine_01_battleship_frame_death_animation"
+	file = "Battleship_Assets/machine_01_battleship_death_1.anim"
+}
+
+animation = {
+	name = "machine_01_battleship_frame_death2_animation"
+	file = "Battleship_Assets/machine_01_battleship_death_2.anim"
+}
+
+animation = {
+	name = "machine_01_battleship_frame_death3_animation"
+	file = "Battleship_Assets/machine_01_battleship_death_3.anim"
+}
+
+animation = {
+	name = "machine_01_battleship_frame_idle_animation"
+	file = "Battleship_Assets/machine_01_battleship_idle_anim.anim"
+}
+
+
+
+
+
+
+animation = {
+	name = "machine_01_construction_idle_animation"
+	file = "Civilian_Assets/construction_ship/machine_01_new_constructor_idle.anim"
+}
+
+animation = {
+	name = "machine_01_construction_start_animation"
+	file = "Civilian_Assets/construction_ship/machine_01_new_constructor_start.anim"
+}
+
+animation = {
+	name = "machine_01_construction_working_looping_animation"
+	file = "Civilian_Assets/construction_ship/machine_01_new_constructor_working.anim"
+}
+
+
+
+
+
+
+
+
+
+animation = {
+	name = "machine_01_science_station_idle_animation"
+	file = "molluscoid_01_science_station_idle.anim"
+}
+
+animation = {
+	name = "machine_01_science_station_death_animation"
+	file = "molluscoid_01_science_station_death.anim"
+}
+
+animation = {
+	name = "machine_01_orbital_station_main_idle_animation"
+	file = "molluscoid_01_orbital_station_main_idle.anim"
+}
+
+animation = {
+	name = "machine_01_orbital_station_main_death_animation"
+	file = "molluscoid_01_orbital_station_main_death.anim"
+}
+
+animation = {
+	name = "machine_01_super_habitat_frame_idle"
+	file = "Habitat_Assets/machine_01_super_habitat_idle.anim"
+}
+

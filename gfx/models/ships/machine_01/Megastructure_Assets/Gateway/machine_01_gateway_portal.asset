@@ -1,0 +1,22 @@
+#entity = {
+#	name = "machine_01_gateway_portal_entity"
+#	pdxmesh = "machine_01_gateway_portal_mesh"
+#	
+#	get_state_from_parent = no
+#	
+#	default_state = "idle"
+#	state = { name = "idle" state_time = 5 
+#		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+#		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+#		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+#		event = { time = 0 node = "center" particle = "lithoid_01_science_core" keep_particle = yes trigger_once = yes sound = { soundeffect = "megastructure_gate_way_portal_hum" } }
+#	}
+#	
+#	game_data = {
+#		uv_animation_speed 		= 0.05
+#		uv_animation_direction 	= { 0.5 1.0 }
+#		bloom_factor = 0.8
+#	}
+#	
+#	scale = 1
+#}

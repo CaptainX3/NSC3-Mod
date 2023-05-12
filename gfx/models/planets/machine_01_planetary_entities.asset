@@ -1,0 +1,167 @@
+
+#######MACHINE RINGWORLD#######
+
+@ringworld_segment_size = 50
+
+entity = {
+	name = "machine_01_ringworld_construction_entity"
+	cull_radius = 500.0
+	pdxmesh = "machine_01_ringworld_construction_mesh"
+	
+
+}
+
+
+
+
+entity = {
+	name = "machine_01_ringworld_3x_seams_entity"
+	cull_radius = 500.0
+	pdxmesh = "machine_01_ringworld_construction_mesh"
+	
+
+
+	default_state = "idle"
+	state = { name = "idle"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" stop_on_state_change = yes } }
+	}
+	
+	state = { name = "construction"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+	
+	locator = { name = "locator1" 	position = { -225 	0 	-60.289 	} rotation ={ -30 0 0} 	}
+	locator = { name = "locator2" 	position = {  225 	0 	-60.289		} rotation ={ 30 0 0}	}
+	
+	attach = { locator1 = "machine_01_ringworld_construction_entity" }
+	attach = { locator2 = "machine_01_ringworld_construction_entity" }
+}
+
+
+entity = {
+	name = "machine_01_ringworld_seam_entity_01_full_entity"
+	cull_radius = 10000.0
+	
+	locator = { name = "ringworld_north" 		position = { 450	0 	0 		} rotation = {	90	0	0	}		}
+	locator = { name = "ringworld_south" 		position = { -450	0 	0 		} rotation = {	-90	0	0	}		}
+	locator = { name = "ringworld_west" 		position = { 0		0 	450 	} rotation = {	0	0	0	}		}
+	locator = { name = "ringworld_east" 		position = { 0		0 	-450 	} rotation = {	180	0	0	}		}	
+    
+	state = { name = "construction"}
+    
+	attach = { ringworld_north 		= "machine_01_ringworld_3x_seams_entity" }
+	attach = { ringworld_south 		= "machine_01_ringworld_3x_seams_entity" }
+	attach = { ringworld_west 		= "machine_01_ringworld_3x_seams_entity" }
+	attach = { ringworld_east 		= "machine_01_ringworld_3x_seams_entity" }
+}
+
+
+entity = {
+	name = "machine_01_ringworld_habitable_entity_01_entity"
+	cull_radius = 500
+	pdxmesh = "machine_01_ringworld_habitable_01_mesh"
+		
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+	}
+	
+	state = { name = "construction"
+	}
+	
+	
+
+
+
+
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+
+entity = {
+	name = "machine_01_ringworld_tech_entity_01_entity"
+	cull_radius = 500.0
+	pdxmesh = "machine_01_ringworld_tech_01_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle"		state_time = 5
+	}
+	state = { name = "construction"
+	}
+	
+	
+	meshsettings = {
+		shader = "PdxMeshTerra"
+	}
+
+	game_data = {
+		size = @ringworld_segment_size
+		#custom_texture = "gfx/models/planets/ringworld_tech_fadein.dds"
+	}
+}
+
+
+entity = {
+	name = "machine_01_ringworld_seam_entity_01_entity"
+	cull_radius = 500
+	pdxmesh = "machine_01_ringworld_seam_01_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" state_time = 100 time_offset = { 0 100 }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_01" stop_on_state_change = yes } }
+		start_event = { trigger_once = yes sound = { soundeffect = "ringworld_hum_idle_02" stop_on_state_change = yes } }
+	}
+	state = { name = "construction"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+
+
+
+	
+
+	game_data = {
+		size = @ringworld_segment_size
+	}
+}
+
+entity = {
+	name = "machine_01_ringworld_destroyed_entity"
+		cull_radius = 500.0
+		pdxmesh = "machine_01_ringworld_destroyed_mesh"
+
+	}
+
+entity = {
+	name = "machine_01_ringworld_phase_3_construction_entity"
+	cull_radius = 500.0
+	pdxmesh = "ringworld_seam_01_mesh"
+	
+	meshsettings = {
+		shader = "PdxMeshTerra"
+	}
+	
+	state = { name = "construction"
+	start_event = { trigger_once = yes sound = { soundeffect = "ringworld_construction_ambient" } }
+	}
+	
+	locator = { name = "locator1" 	position = { -225 	0 	-60.289 	} rotation ={ -30 0 0} 	}
+	locator = { name = "locator2" 	position = {  225 	0 	-60.289		} rotation ={ 30 0 0}	}
+	
+	attach = { locator1 = "machine_01_ringworld_habitable_entity_01_entity" }
+	attach = { locator2 = "machine_01_ringworld_tech_entity_01_entity" }
+}
+
+
+###athena cityworld
+
+entity = {
+	name = "machine_01_city_planet_entity"
+	pdxmesh = "machine_01_city_planet_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = "idle" time_offset = { 0 100 } 
+	}
+	
+}
