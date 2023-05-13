@@ -157,7 +157,7 @@ weapon_component_template = {
 	
 	component_set = "NSC_PD_MISSILE"
 	
-	tags = { weapon_type_point_defense }
+	tags = { weapon_type_point_defense weapon_type_explosive }
 	
 	ai_tags = { weapon_role_point_defense screen }
 
