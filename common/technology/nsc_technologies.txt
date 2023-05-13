@@ -1625,7 +1625,7 @@ tech_defense_platforms_3 = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }
-	prerequisites = { "tech_defense_platforms_2" "tech_starbase_5" }
+	prerequisites = { "tech_defense_platforms_2" "tech_starbase_6" }
 	weight = @tier4weight3
 	
 	modifier = { starbase_defense_platform_capacity_add = 12 }
@@ -1647,7 +1647,7 @@ tech_defense_platforms_4 = {
 	area = engineering
 	tier = 5
 	category = { voidcraft }
-	prerequisites = { "tech_defense_platforms_3" }
+	prerequisites = { "tech_defense_platforms_3" "tech_starbase_7" }
 	weight = @tier5weight1
 	
 	modifier = { starbase_defense_platform_capacity_add = 16 }
@@ -1841,6 +1841,7 @@ tech_galactic_mall = {
 	area = society
 	tier = 5
 	category = { statecraft }
+	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	
 	prereqfor_desc = {
@@ -1867,6 +1868,7 @@ tech_hospital = {
 	area = society
 	tier = 5
 	category = { biology }
+	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
 	
 	prereqfor_desc = {

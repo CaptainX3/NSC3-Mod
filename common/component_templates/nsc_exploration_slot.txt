@@ -22,6 +22,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_anomaly_lab"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -45,6 +46,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_survey_lab"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -68,6 +70,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_analysis_lab"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -113,6 +116,7 @@ utility_component_template = {
     size = medium	
     icon = "GFX_exploration_slot_physics_lab"
     icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
     power = @power
   
@@ -136,6 +140,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_society_lab"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -159,6 +164,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_engineering_lab"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -180,9 +186,9 @@ utility_component_template = {
 utility_component_template = {
 	key = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
 	size = medium
-	
 	icon = "GFX_exploration_slot_stellar_cartography"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -208,9 +214,9 @@ utility_component_template = {
 utility_component_template = {
 	key = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
 	size = medium
-	
 	icon = "GFX_exploration_slot_quantum_thrusters"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -235,9 +241,9 @@ utility_component_template = {
 utility_component_template = {
 	key = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
 	size = medium
-	
 	icon = "GFX_exploration_slot_navigational_array"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -265,6 +271,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_mining_facility"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -289,6 +296,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_solar_array"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
@@ -313,6 +321,7 @@ utility_component_template = {
 	size = medium	
 	icon = "GFX_exploration_slot_alloy_refinery"
 	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
 	
 	power = @power
 	resources = {
