@@ -26,12 +26,14 @@ nsc_modmenu_mp_host_trigger = {
 	}
 }
 nsc_modmenu_setting_page_mod_category_faq_text_long_trigger = {
+	optimize_memory
 	OR = {
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_1_page_opened
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_2_page_opened
 	}
 }
 nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = {
+	optimize_memory
 	OR = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = stronghold }
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = headquarters }
@@ -39,6 +41,8 @@ nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starba
 	}
 }
 nsc_modmenu_ship_class_settings_on_trigger = {
+	optimize_memory
+	#classes (total 7)
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
@@ -48,6 +52,8 @@ nsc_modmenu_ship_class_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }	
 }
 nsc_modmenu_ship_component_settings_on_trigger = {
+	optimize_memory
+	#components (total 39)
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
@@ -95,10 +101,14 @@ nsc_modmenu_ship_component_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 }
 }
 nsc_modmenu_starbase_class_settings_on_trigger = {
+	optimize_memory
+	#levels (total 2 modded)
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = stronghold }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = headquarters }
 }
 nsc_modmenu_starbase_module_settings_on_trigger = {
+	optimize_memory
+	#modules (total 11)
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = large_battery }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = xl_battery }
@@ -142,6 +152,8 @@ nsc_modmenu_starbase_building_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = tv_studio }
 }
 nsc_modmenu_etc_feature_settings_on_trigger = {
+	optimize_memory
+	#features (total 5)
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
