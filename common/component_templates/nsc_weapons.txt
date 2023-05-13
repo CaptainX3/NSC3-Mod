@@ -182,7 +182,7 @@ weapon_component_template = {
 	}
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = BATTLESHIP_SNIPER_GUN_1 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 }
 	}
 
 	ai_weight = { weight = 1 }
@@ -229,7 +229,7 @@ weapon_component_template = {
 	}
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = BATTLESHIP_SNIPER_GUN_2 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
 	}
 
 	ai_weight = { weight = 1 }
