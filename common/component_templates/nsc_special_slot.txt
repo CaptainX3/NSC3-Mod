@@ -103,7 +103,7 @@ utility_component_template = {
 	component_set = "special_ship_slot"
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_DAMAGE_CONTROL }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_READY_ROOM }
 	}
 	
 	ai_weight = { weight = 1 }	
