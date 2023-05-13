@@ -67,7 +67,7 @@ utility_component_template = {
 	upgrades_to = "NSC_REACTOR_BOOSTER_2"
 	
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_REACTOR_BOOSTER_1 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	}
 
 	ai_weight = { weight = 6 }
@@ -90,7 +90,7 @@ utility_component_template = {
 	upgrades_to = "NSC_REACTOR_BOOSTER_3"
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_REACTOR_BOOSTER_2 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	}
 
 	ai_weight = { weight = 7 }
@@ -112,7 +112,7 @@ utility_component_template = {
 	component_set = "NSC_REACTOR_BOOSTER_3"
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_REACTOR_BOOSTER_3 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
 	}
 
 	ai_weight = { weight = 8 }
@@ -140,7 +140,7 @@ utility_component_template = {
 	upgrades_to = "NSC_BOMBARDMENT_2"
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_BOMBARDMENT_1 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_1 }
 	}
 
 	ai_weight = { weight = 8 }
@@ -165,7 +165,7 @@ utility_component_template = {
 	upgrades_to = "NSC_BOMBARDMENT_3"
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_BOMBARDMENT_2 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_2 }
 	}
 
 	ai_weight = { weight = 8 }
@@ -189,7 +189,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military shipclass_transport }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_BOMBARDMENT_3 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_BOMBARDMENT_3 }
 	}
 
 	ai_weight = { weight = 8 }

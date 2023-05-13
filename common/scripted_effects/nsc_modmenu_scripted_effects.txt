@@ -264,7 +264,7 @@ nsc_modmenu_starbase_building_setting_reset_effect = {
 }
 nsc_modmenu_etc_feature_setting_reset_effect = {
 	optimize_memory
-	#features (total 3)
+	#features (total 5)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = mothball }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = etc SUBCAT = feature ID = matterenergy }

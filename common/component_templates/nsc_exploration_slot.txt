@@ -34,7 +34,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 	
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_ANOMALY_LAB }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB }
 	}
 
 	ai_weight = { weight = 1 }	
@@ -57,7 +57,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_SURVEY_LAB }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB }
 	}
 
 	ai_weight = { weight = 1 }	
@@ -80,7 +80,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_ANALYSIS_LAB }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB }
 	}
 
 	ai_weight = { weight = 1 }	
@@ -125,7 +125,7 @@ utility_component_template = {
     size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_PHYSICS_LAB }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
 	}
 
     ai_weight = { weight = 1 }
@@ -148,7 +148,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_SOCIETY_LAB }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
 	}
 
 	ai_weight = { weight = 1 }
@@ -171,7 +171,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_ENGINEERING_LAB }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
 	}
 	
 	ai_weight = { weight = 1 }
@@ -199,7 +199,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
 	}
 
 	ai_weight = { weight = 1 }	
@@ -226,7 +226,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
 	}
 
 	ai_weight = { weight = 1 }	
@@ -254,7 +254,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
 	}
 
 	ai_weight = { weight = 1 }
@@ -278,7 +278,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_MINING_FACILITY }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
 	}
 	
 	ai_weight = { weight = 1 }
@@ -302,7 +302,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_SOLAR_ARRAY }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
 	}
 	
 	ai_weight = { weight = 1 }
@@ -329,7 +329,7 @@ utility_component_template = {
 	size_restriction = { explorationship }
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = EXPLORATION_SLOT_ALLOY_REFINERY }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
 	}
 	
 	ai_weight = { weight = 1 }

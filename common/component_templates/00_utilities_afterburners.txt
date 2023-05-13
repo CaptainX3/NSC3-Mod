@@ -43,7 +43,7 @@ utility_component_template = {
 	upgrades_to = "AFTERBURNER_2"
 	
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = AFTERBURNER_1 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 }
 	}
 
 	ai_weight = {
@@ -80,7 +80,7 @@ utility_component_template = {
 	component_set = "AFTERBURNER_2"
 	
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = AFTERBURNER_2 }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 }
 	}
 
 	ai_weight = {
