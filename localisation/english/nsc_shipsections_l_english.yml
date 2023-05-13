@@ -138,9 +138,9 @@ EXPLORATIONSHIP_3_STERN_M4: "Broadside Stern (L3)"
 EXPLORATIONSHIP_3_STERN_S8: "Spitfire Stern (L3)"
 EXPLORATIONSHIP_3_STERN_PD8: "PD Stern (L3)"
 #-------------------------------------------------------------------#
-EXPLORATIONSHIP_4_BOW_L3: "Artillery Bow (L4)"
-EXPLORATIONSHIP_4_BOW_G3S3: "Fusillade Bow (L4)"
-EXPLORATIONSHIP_4_BOW_M7: "Broadside Bow (L4)"
+EXPLORATIONSHIP_4_BOW_L6: "Artillery Bow (L4)"
+EXPLORATIONSHIP_4_BOW_G7S7: "Fusillade Bow (L4)"
+EXPLORATIONSHIP_4_BOW_M14: "Broadside Bow (L4)"
 
 EXPLORATIONSHIP_4_MID1_L3G6: "Barrage Core 1 (L4)"
 EXPLORATIONSHIP_4_MID1_L5M3: "Artillery Core 1 (L4)"
