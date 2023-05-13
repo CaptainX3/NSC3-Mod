@@ -367,6 +367,7 @@ asteroid_mining = {
 	}
 	
 	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
 		custom_tooltip = { fail_text = "nsc.requires.asteroid" solar_system = { any_system_planet = { is_asteroid = yes } } }
 	}
 
