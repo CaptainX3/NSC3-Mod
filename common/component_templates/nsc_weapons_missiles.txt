@@ -52,7 +52,7 @@ weapon_component_template = {
 	}
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = TOMAHAWK_CRUISE_MISSILE }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
 	}
 
 	target_weights = {
@@ -121,7 +121,7 @@ weapon_component_template = {
 	}
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = HARPOON_CRUISE_MISSILE }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
 	}
 
 	ai_weight = {
@@ -173,7 +173,7 @@ weapon_component_template = {
 	}
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = components ID = NSC_PD_MISSILE }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
 	}
 
 	ai_weight = {

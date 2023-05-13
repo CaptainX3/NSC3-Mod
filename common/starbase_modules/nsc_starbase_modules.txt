@@ -145,7 +145,7 @@ pd_battery = {
 	}
 	
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = pd_battery }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery }
 	}
 	
 	ai_weight = {
@@ -166,7 +166,7 @@ large_battery = {
 	}
 
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = large_battery }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = large_battery }
 	}
 	
 	resources =	{
@@ -234,7 +234,7 @@ xl_battery = {
 			fail_text = "starbase_xl_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count = 6 type = xl_battery include_being_constructed = yes } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = xl_battery }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = xl_battery }
 	}
 
 
@@ -273,7 +273,7 @@ titanic_battery = {
 			fail_text = "starbase_t_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count = 2 type = titanic_battery include_being_constructed = yes } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = titanic_battery }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = titanic_battery }
 	}
 
 
@@ -309,7 +309,7 @@ shield_module = {
 	}
 
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = shield_module }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = shield_module }
 	}
 
 	ai_weight = {
@@ -340,7 +340,7 @@ armor_module = {
 	}
 	
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = armor_module }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = armor_module }
 	}
 
 	ai_weight = {
@@ -367,6 +367,7 @@ asteroid_mining = {
 	}
 	
 	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
 		custom_tooltip = { fail_text = "nsc.requires.asteroid" solar_system = { any_system_planet = { is_asteroid = yes } } }
 	}
 
@@ -399,7 +400,7 @@ space_foundry = {
 	
 	potential = { exists = owner owner = { has_technology = tech_alloys_1 } is_orbital_ring = no }
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = space_foundry }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = space_foundry }
 	}
 	ai_weight = {
 		weight = 50
@@ -434,7 +435,7 @@ space_factory = {
 	}
 	
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = space_factory }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = space_factory }
 	}
 
 	ai_weight = {
@@ -461,7 +462,7 @@ security_branch_office = {
 	}
 	
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = modules ID = security_branch_office }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = security_branch_office }
 	}
 
 	resources = {
@@ -504,7 +505,7 @@ solar_panel = {
 				}
 			}
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = buildings ID = solar_panel }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
 	}
 
 	resources = {
