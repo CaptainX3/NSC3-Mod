@@ -176,10 +176,10 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "�
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip$\n\nThe Headquarters Station is a type of Juggernaut and can be built at a starbase that can build Juggernauts.\n\nNote: You must have purchased and installed the Federations DLC to have access to Juggernauts and to build the HQ Station.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Creating Hyperlanes"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "§EQuestion: How do I create hyperlanes?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip$\n\nTo create a new hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Generator (Transmitter) megastructure in the system where you want the new hyperlane to start.\n\nStep 2: Build the Hyperlane Generator (Receiver) megastructure in the system where you want the new hyperlane to end.\n\nStep 3: Upgrade the Hyperlane Generator (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Generator (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Generator (Transmitter) again to activate the transmitter and create the new hyperlane.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip$\n\nStep 1: Build the Hyperlane Generator (Transmitter) megastructure in the system where you want the new hyperlane to start.\n\nStep 2: Build the Hyperlane Generator (Receiver) megastructure in the system where you want the new hyperlane to end.\n\nStep 3: Upgrade the Hyperlane Generator (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Generator (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Generator (Transmitter) again to activate the transmitter and create the new hyperlane.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_name:0 "Removing Hyperlanes"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip:0 "§EQuestion: How do I remove hyperlanes?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip$\n\nTo remove a hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Remover (Transmitter) megastructure in the system where the hyperlane you want to remove begins.\n\nStep 2: Build the Hyperlane Remover (Receiver) megastructure in the system where the hyperlane you want to remove ends.\n\nStep 3: Upgrade the Hyperlane Remover (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Remover (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Remover (Transmitter) again to activate the remover and destroy the hyperlane.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip$\n\nStep 1: Step 1: Build the Hyperlane Remover (Transmitter) megastructure in the system where the hyperlane you want to remove begins.\n\nStep 2: Build the Hyperlane Remover (Receiver) megastructure in the system where the hyperlane you want to remove ends.\n\nStep 3: Upgrade the Hyperlane Remover (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Remover (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Remover (Transmitter) again to activate the remover and destroy the hyperlane.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_name:0 "Name REPLACE_ME 7"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_tooltip:0 "Tooltip REPLACE_ME 7"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_desc:0 "§E Desc REPLACE_ME 7 §!"
@@ -472,16 +472,6 @@ nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H$NSC_PD_MISSILE$§!\n$NSC_PD_MISSILE_DESC$"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_enabled_desc:0 "$NSC_PD_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc:0 "$NSC_PD_MISSILE$: §RDisabled§!"
-
-#AFTERBURNER_1
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_name_desc:0 "§H$AFTERBURNER_1$§!\n$AFTERBURNER_1_DESC$"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_enabled_desc:0 "$AFTERBURNER_1$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_disabled_desc:0 "$AFTERBURNER_1$: §RDisabled§!"
-
-#AFTERBURNER_2
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_name_desc:0 "§H$AFTERBURNER_2$§!\n$AFTERBURNER_2_DESC$"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_enabled_desc:0 "$AFTERBURNER_2$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_disabled_desc:0 "$AFTERBURNER_2$: §RDisabled§!"
 
 ### Custom GUI Category: Starbase Levels ###
 #Common
