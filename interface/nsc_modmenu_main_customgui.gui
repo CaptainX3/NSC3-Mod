@@ -138,7 +138,7 @@ guiTypes = {
 			name = "close" #do not change this name #or it will not function at all #which means players won't be able to close this ui
 			quadTextureSprite = "GFX_close"
 			position = { x = 756 y = @nsc_modmenu_close_button_height }
-			shortcut = "ESCAPE"
+			#shortcut = "ESCAPE" #someone asked me to disable this
 			clicksound = "back_click"
 			effect = "nsc_modmenu_close_button_effect"
 		}
