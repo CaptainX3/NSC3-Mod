@@ -1,0 +1,11 @@
+﻿l_korean:
+
+##################################################################################################################################################################################################################
+### JOBS ###
+############
+
+job_diagnostician:0 "Diagnostician"
+job_diagnostician_plural:0 "Diagnosticians"
+job_diagnostician_desc:0 "These specialized workers in the Galactic Hospital are experts in manufacturing robots or increasing reproduction of organic life"
+
+mod_job_diagnostician_add:0 "$job_diagnostician$ Jobs"

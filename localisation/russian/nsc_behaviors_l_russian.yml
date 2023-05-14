@@ -1,0 +1,58 @@
+﻿l_russian:
+
+
+##################################################################################################################################################################################################################
+### ADVANCED BEHAVIORS ###
+##########################
+
+ai_behaviour: "AI Tactic"
+ai_behaviour_DESC: "AI Tactic slot."
+
+ai_behaviour_default: "Default Behavior"
+ai_behaviour_default_DESC: "Uses the tactical behaviour set in the original computer. For use with the vanilla combat computers.\n\n§GHow To Use:§! §BChoose this computer if you would like to use a vanilla behavior in the slot above and NOT use an Advanced Tactic. If you want to use an Advanced Tactic for this ship class, choose a vanilla computer in the slot above first, and then choose a Tactic for this slot.§!\n\n"
+
+ai_behaviour_follow: "Escort Tactic"
+ai_behaviour_follow_DESC: "Ships will follow rest of the fleet. Balanced default behaviour."
+
+ai_behaviour_charge: "Charge Tactic"
+ai_behaviour_charge_DESC: "Ships will try to close the distance to the enemy fleet as directly as possible and engage in point blank range."
+
+ai_behaviour_stationary_30: "Artillery Tactic (Range: 30)"
+ai_behaviour_stationary_30_DESC: "Ships will move up to the shown distance (30) and then hold position while firing at the enemy."
+ai_behaviour_stationary_50: "Artillery Tactic (Range: 50)"
+ai_behaviour_stationary_50_DESC: "Ships will move up to the shown distance (50) and then hold position while firing at the enemy."
+ai_behaviour_stationary_60: "Artillery Tactic (Range: 60)"
+ai_behaviour_stationary_60_DESC: "Ships will move up to the shown distance (60) and then hold position while firing at the enemy."
+ai_behaviour_stationary_70: "Artillery Tactic (Range: 70)"
+ai_behaviour_stationary_70_DESC: "Ships will move up to the shown distance (70) and then hold position while firing at the enemy."
+ai_behaviour_stationary_80: "Artillery Tactic (Range: 80)"
+ai_behaviour_stationary_80_DESC: "Ships will move up to the shown distance (80) and then hold position while firing at the enemy."
+ai_behaviour_stationary_90: "Artillery Tactic (Range: 90)"
+ai_behaviour_stationary_90_DESC: "Ships will move up to the shown distance (90) and then hold position while firing at the enemy."
+ai_behaviour_stationary_100: "Artillery Tactic (Range: 100)"
+ai_behaviour_stationary_100_DESC: "Ships will move up to the shown distance (100) and then hold position while firing at the enemy."
+ai_behaviour_stationary_110: "Artillery Tactic (Range: 110)"
+ai_behaviour_stationary_110_DESC: "Ships will move up to the shown distance (110) and then hold position while firing at the enemy."
+ai_behaviour_stationary_120: "Artillery Tactic (Range: 120)"
+ai_behaviour_stationary_120_DESC: "Ships will move up to the shown distance (120) and then hold position while firing at the enemy."
+
+ai_behaviour_stationary_200: "Standoff Tactic (Range: 200)"
+ai_behaviour_stationary_200_DESC: "Ships will move up to the shown distance (200) and then hold position. NOTE: This setting will cause the ship to stand off outside of normal weapon range, protecting them from most enemy fire but also preventing them from firing at the enemy themselves. Ideal for ships that you want to remain out of combat as much as possible."
+
+ai_behaviour_flank_30: "Flanking Tactic (30)"
+ai_behaviour_flank_30_DESC: "Ships will circle the enemy fleet at a set distance (30) while firing their weapons."
+ai_behaviour_flank_60: "Flanking Tactic (60)"
+ai_behaviour_flank_60_DESC: "Ships will circle the enemy fleet at a set distance (60) while firing their weapons."
+ai_behaviour_flank_80: "Flanking Tactic (80)"
+ai_behaviour_flank_80_DESC: "Ships will circle the enemy fleet at a set distance (80) while firing their weapons."
+ai_behaviour_flank_100: "Flanking Tactic (100)"
+ai_behaviour_flank_100_DESC: "Ships will circle the enemy fleet at a set distance (100) while firing their weapons."
+
+ai_behaviour_hitnrun_30: "Hit and Run Tactic (30)"
+ai_behaviour_hitnrun_30_DESC: "Ships will move up to the shown distance (30) and then fall back before their next attack run."
+ai_behaviour_hitnrun_60: "Hit and Run Tactic (60)"
+ai_behaviour_hitnrun_60_DESC: "Ships will move up to the shown distance (60) and then fall back before their next attack run."
+ai_behaviour_hitnrun_80: "Hit and Run Tactic (80)"
+ai_behaviour_hitnrun_80_DESC: "Ships will move up to the shown distance (80) and then fall back before their next attack run."
+ai_behaviour_hitnrun_100: "Hit and Run Tactic (100)"
+ai_behaviour_hitnrun_100_DESC: "Ships will move up to the shown distance (100) and then fall back before their next attack run."

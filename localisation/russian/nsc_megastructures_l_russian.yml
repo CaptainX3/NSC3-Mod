@@ -1,0 +1,131 @@
+﻿l_russian:
+
+##################################################################################################################################################################################################################
+### MEGASTRUCTURES ###
+######################
+
+hyperlane_creator_emisor_0:0 "Hyperlane Generator (Transmitter) Construction Site"
+hyperlane_creator_emisor_0_DESC:0 "Create A New Hyperlane - Step 1: Build this structure in the system where you want the new hyperlane to start."
+hyperlane_creator_emisor_0_MEGASTRUCTURE_DETAILS:0 "Create A New Hyperlane - Step 1: Build this structure in the system where you want the new hyperlane to start."
+                                  
+hyperlane_creator_receptor_0:0 "Hyperlane Generator (Receiver) Construction Site"
+hyperlane_creator_receptor_0_DESC:0 "Create A New Hyperlane - Step 2: Build this structure in the system where you want the new hyperlane to end."
+hyperlane_creator_receptor_0_MEGASTRUCTURE_DETAILS:0 "Create A New Hyperlane - Step 2: Build this structure in the system where you want the new hyperlane to end."
+
+hyperlane_creator_emisor_1:0 "Hyperlane Generator (Transmitter)"
+hyperlane_creator_emisor_1_DESC:0 "Create A New Hyperlane - Step 3: Upgrade this structure to complete the construction of the hyperlane generator transmitter."
+
+hyperlane_creator_receptor_1:0 "Hyperlane Generator (Receiver)"
+hyperlane_creator_receptor_1_DESC:0 "Create A New Hyperlane - Step 4: Upgrade this structure to complete the construction of the hyperlane generator receiver."
+
+hyperlane_creator_emisor_2:0 "Hyperlane Generator (Transmitter) - Activation"
+hyperlane_creator_emisor_2_DESC:0 "Create A New Hyperlane - Step 5: Upgrade this structure to activate the transmitter and create the new hyperlane."
+
+
+
+hyperlane_remover_emisor_0:0 "Hyperlane Remover (Transmitter) Construction Site"
+hyperlane_remover_emisor_0_DESC:0 "Remove A Hyperlane - Step 1: Build this structure in the system where the hyperlane that you want to remove begins."
+hyperlane_remover_emisor_0_MEGASTRUCTURE_DETAILS:0 "Remove A Hyperlane - Step 1: Build this structure in the system where the hyperlane that you want to remove begins."
+
+hyperlane_remover_receptor_0:0 "Hyperlane Remover (Receiver) Construction Site"
+hyperlane_remover_receptor_0_DESC:0 "Remove A Hyperlane - Step 2: Build this structure in the system where the hyperlane that you want to remove ends."
+hyperlane_remover_receptor_0_MEGASTRUCTURE_DETAILS:0 "Remove A Hyperlane - Step 2: Build this structure in the system where the hyperlane that you want to remove ends."
+
+hyperlane_remover_emisor_1:0 "Hyperlane Remover (Transmitter)"
+hyperlane_remover_emisor_1_DESC:0 "Remove A Hyperlane - Step 3: Upgrade this structure to complete the construction of the hyperlane removal transmitter."
+
+hyperlane_remover_receptor_1:0 "Hyperlane Remover (Receiver)"
+hyperlane_remover_receptor_1_DESC:0 "Remove A Hyperlane - Step 4: Upgrade this structure to complete the construction of the hyperlane removal receiver."
+
+hyperlane_remover_emisor_2:0 "Hyperlane Remover (Transmitter) - Activation"
+hyperlane_remover_emisor_2_DESC:0 "Remove A Hyperlane - Step 5: Upgrade this structure to activate the transmitter and remove the hyperlane between the two systems."
+
+
+
+nsc_strategic_resource_factory_0_MEGASTRUCTURE_DETAILS:0 "A massive industrial complex that can produce most strategic resources, at the cost of consuming vast quantities of minerals and energy."
+nsc_strategic_resource_factory_0:0 "Strategic Resource Factory Construction Site"
+nsc_strategic_resource_factory_0_DESC:0 "A massive industrial complex that can produce most strategic resources, at the cost of consuming vast quantities of minerals and energy."
+nsc_strategic_resource_factory_0_CONSTRUCTION_INFO_DELAYED:0 "A massive industrial complex that can produce most strategic resources, at the cost of consuming vast quantities of minerals and energy."
+
+nsc_strategic_resource_factory_1:0 "Strategic Resource Factory"
+nsc_strategic_resource_factory_1_DESC:0 "A massive industrial complex that can produce most strategic resources, at the cost of consuming vast quantities of minerals and energy."
+nsc_strategic_resource_factory_1_CONSTRUCTION_INFO_DELAYED:0 "A massive industrial complex that can produce most strategic resources, at the cost of consuming vast quantities of minerals and energy."
+nsc_strategic_resource_factory_1_MEGASTRUCTURE_DETAILS:0 "A massive industrial complex that can produce most strategic resources, at the cost of consuming vast quantities of minerals and energy."
+
+
+
+nsc_galactic_mall_0_MEGASTRUCTURE_DETAILS:0 "The galaxy's largest shopping center, capable of producing vast quantities of consumer goods, and the ultimate shopping experience."
+
+nsc_galactic_mall_0:0 "Galactic Mall Construction Site"
+nsc_galactic_mall_0_DESC:0 "The galaxy's largest shopping center, capable of producing vast quantities of consumer goods, and the ultimate shopping experience."
+nsc_galactic_mall_0_CONSTRUCTION_INFO_DELAYED:0 "The galaxy's largest shopping center, capable of producing vast quantities of consumer goods, and the ultimate shopping experience."
+nsc_galactic_mall_1:0 "Galactic Mall"
+nsc_galactic_mall_1_DESC:0 "The galaxy's largest consumer mall and shopping center, capable of producing §G500§! £consumer_goods §YConsumer Goods§! and §G50§! £unity£ §YUnity§!"
+nsc_galactic_mall_1_CONSTRUCTION_INFO_DELAYED:0 "The galaxy's largest consumer mall and shopping center, capable of producing an impressive amount of £consumer_goods at the cost of £energy and £minerals"
+nsc_galactic_mall_1_MEGASTRUCTURE_DETAILS:0 "The galaxy's largest shopping center, capable of producing vast quantities of consumer goods, and the ultimate shopping experience."
+
+
+
+nsc_hospital_0_MEGASTRUCTURE_DETAILS:0 "A massive hospital dedicated to the study of the xenoraces in the galaxy and the analysis and treatment of the diseases that affect these species."
+				       
+nsc_hospital_0:0 "Galactic General Hospital Construction Site"
+nsc_hospital_0_DESC:0 "A massive hospital dedicated to the study of the xenoraces in the galaxy and the analysis and treatment of the diseases that affect these species."
+nsc_hospital_0_CONSTRUCTION_INFO_DELAYED:0 "A massive hospital dedicated to the study of the xenoraces in the galaxy and the analysis and treatment of the diseases that affect these species."
+
+nsc_hospital_1:0 "Galactic Clinic"
+nsc_hospital_1_DESC:0 "A large, space-borne medical clinic, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_1_CONSTRUCTION_INFO_DELAYED:0 "A large, space-borne medical clinic, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_1_MEGASTRUCTURE_DETAILS:0 "A large, space-borne medical clinic, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+
+nsc_hospital_2:0 "Galactic Medical Center"
+nsc_hospital_2_DESC:0 "A huge, space-borne medical center, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_2_CONSTRUCTION_INFO_DELAYED:0 "A huge, space-borne medical center, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_2_MEGASTRUCTURE_DETAILS:0 "A huge, space-borne medical center, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+
+nsc_hospital_3:0 "Galactic General Hospital"
+nsc_hospital_3_DESC:0 "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_3_CONSTRUCTION_INFO_DELAYED:0 "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_3_MEGASTRUCTURE_DETAILS:0 "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+
+triggered_opinion_of_nsc_hopsital_1:0 "Galactic Hospital"
+triggered_opinion_of_nsc_hopsital_2:0 "$triggered_opinion_of_nsc_hopsital_1$"
+triggered_opinion_of_nsc_hopsital_3:0 "$triggered_opinion_of_nsc_hopsital_1$"
+
+
+
+
+
+##################################################################################################################################################################################################################
+### HYPERLANE CREATION/REMOVAL ###
+##################################
+
+nsc_events_hyperlane_gen.1.name:0 "Hyperlane Generated"
+nsc_events_hyperlane_gen.1.desc:0 "Our efforts in creating a new hyperlane between §Y[hyperlane_creator_emisor.GetName]§! and §Y[hyperlane_creator_receptor.GetName]§! have proved successful."
+nsc_events_hyperlane_gen.a:0 "Excellent"
+
+nsc_events_hyperlane_gen.3.name:0 "Hyperlane Removed"
+nsc_events_hyperlane_gen.3.desc:0 "Our efforts in removing the existing hyperlane between §Y[hyperlane_remover_emisor.GetName]§! and §Y[hyperlane_remover_receptor.GetName]§! have proved successful."
+
+nsc_events_hyperlane_gen.5.name:0 "Hyperlane Generator (Transmitter) Construction"
+nsc_events_hyperlane_gen.5.desc:0 "We have finished the first stages of construction of our Hyperlane Generator (Transmitter) in §Y[hyperlane_generator_1.GetName]§!."
+
+nsc_events_hyperlane_gen.7.name:0 "Hyperlane Generator (Receiver) Construction"
+nsc_events_hyperlane_gen.7.desc:0 "We have finished the first stages of construction of our Hyperlane Generator (Receiver) in §Y[hyperlane_generator_2.GetName]§!."
+
+nsc_events_hyperlane_gen.9.name:0 "Hyperlane Remover (Transmitter) Construction"
+nsc_events_hyperlane_gen.9.desc:0 "We have finished the first stages of construction of our Hyperlane Remover (Transmitter) in §Y[hyperlane_generator_3.GetName]§!."
+
+nsc_events_hyperlane_gen.11.name:0 "Hyperlane Remover (Receiver) Construction"
+nsc_events_hyperlane_gen.11.desc:0 "We have finished the first stages of construction of our Hyperlane Remover (Receiver) in §Y[hyperlane_generator_4.GetName]§!."
+
+nsc_events_hyperlane_gen.6.name:0 "Hyperlane Generator (Transmitter) Completed"
+nsc_events_hyperlane_gen.6.desc:0 "We have finally finished the last stages of construction of our Hyperlane Generator (Transmitter) in §Y[From.From.GetName]§!."
+
+nsc_events_hyperlane_gen.8.name:0 "Hyperlane Generator (Receiver) Completed"
+nsc_events_hyperlane_gen.8.desc:0 "We have finally finished the last stages of construction of our Hyperlane Generator (Receiver) in §Y[From.From.GetName]§!."
+
+nsc_events_hyperlane_gen.10.name:0 "Hyperlane Remover (Transmitter) Completed"
+nsc_events_hyperlane_gen.10.desc:0 "We have finally finished the last stages of construction of our Hyperlane Remover (Transmitter) in §Y[From.From.GetName]§!."
+
+nsc_events_hyperlane_gen.12.name:0 "Hyperlane Remover (Receiver) Completed"
+nsc_events_hyperlane_gen.12.desc:0 "We have finally finished the last stages of construction of our Hyperlane Remover (Receiver) in §Y[From.From.GetName]§!."

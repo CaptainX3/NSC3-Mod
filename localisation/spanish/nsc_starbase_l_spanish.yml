@@ -1,0 +1,192 @@
+﻿l_spanish:
+
+
+##################################################################################################################################################################################################################
+### STARBASE MODULES & BUILDINGS ###
+####################################
+
+stb_shipyard: "Shipyard"
+stb_shipyard_desc: "A starbase focused on ship construction."
+
+sm_drydock: "Drydock"
+sm_drydock_desc: "This specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair warships."
+sm_drydock_desc_modifier: "Increases the the build capacity of each §Y$sm_shipyard$§! by §G1§!"
+
+sm_sensor_station: "Sensor Station"
+sm_sensor_station_desc: "The starbase sensor station uses advanced sensor arrays to extend our intelligence gathering capabilities across several star systems, giving us advanced warning of any possible threats near our borders."
+
+sm_solar_panel: "Solar Panel Network"
+sm_solar_panel_desc: "This network of solar panels provides energy to the starbase, helping to counteract the costs of running the installation and generating surplus energy."
+
+sm_starbase_management: "Starbase Administration Office"
+sm_starbase_management_desc: "Some systems are absolutely critical to the maintenance of our empire's trade networks. A Starbase Administration Office is the seat of a very important official of our Empire, tasked with the protection of local trade routes and the defense of this critical starbase."
+
+sm_customs_office: "Starbase Customs Office"
+sm_customs_office_desc: "Central location for all immigration for the system."
+
+sm_starbase_management_machine: "Starbase Network Hub"
+sm_starbase_management_machine_desc: "01000101 01110010 01110010 01101111 01110010 00100000 00110100 00110000 00110100 0001010"
+
+sm_starbase_management_hive: "Starbase Lair"
+sm_starbase_management_hive_desc: "We are one."
+
+sm_mining_base: "System Mineral Refinery"
+sm_mining_base_desc: "Some systems are specialized for the extraction of mineral resources to fuel our economy. A System Mineral Refinery gives a starbase the capacity to increase the efficiency of mineral extraction operations on all planets within the system."
+
+sm_farming_base: "System Agriculture Terminal"
+sm_farming_base_desc: "Some systems are specialized towards producing vast quantities of food to sustain our ever-growing population. A System Agriculture Terminal coordinates the efforts of all agricultural enterprises in the star system, increasing crop yields on all affected planets."
+
+sm_power_station: "System Energy Grid"
+sm_power_station_desc: "Some systems are specialized towards producing the raw energy all civilizations need to function. A System Energy Grid oversees all power-generating efforts across the system, increasing the efficiency of our technicians on all planets within the star system."
+
+
+
+##################################################################################################################################################################################################################
+### STARBASE EXTENDED ###
+#########################
+ 
+ sm_shield_module: "Shield Generator"
+ sm_shield_module_desc: "Adds more shields to the Starbase."
+
+ sm_armor_module: "Armor Plating"
+ sm_armor_module_desc: "Adds more armor to the Starbase."
+
+ sm_pd_battery: "Point Defense System"
+ sm_pd_battery_desc: "Adds two point defense slots to the Starbase."
+ 
+ sm_large_battery: "Large Battery"
+ sm_large_battery_desc: "Adds one large weapon slot to the Starbase."
+ 
+ sm_xl_battery: "Extra Large Battery"
+ sm_xl_battery_desc: "Adds one extra large weapon slot to the Starbase. §YWARNING: There is a build limit of 5 of these per starbase.§!"
+ 
+ sm_titanic_battery: "Titanic Battery"
+ sm_titanic_battery_desc: "Adds one titanic weapon slot to the Starbase. §YWARNING: There is a build limit of 2 of these per starbase.§!"
+ 
+ sm_construction_office: "Starbase Construction Office"
+ sm_construction_office_desc: "Increases the efficiency at which the starbase builds modules, buildings, and upgrades."
+ 
+ sm_asteroid_mining: "Asteroid Mining Team"
+ sm_asteroid_mining_desc: "A team which mines stray asteroids that are too small to be targeted by a standard mining station. Having an §GAsteroid Mining Manager§! will improve the output by §Y2 Minerals§! £minerals."
+
+ sm_mining_manager: "Asteroid Mining Manager"
+ sm_mining_manager_desc: "A Manager that increases the efficiency of every asteroid mining team. Will improve the output of every §GAsteroid Mining Team§! by §Y2 Minerals§! £minerals."
+
+ sm_reinforced_defenses: "Reinforced Starbase Defenses"
+ sm_reinforced_defenses_desc: "Improves the shields and armor of the Starbase."
+
+ sm_strategic_defenses: "Strategic Starbase Defenses"
+ sm_strategic_defenses_desc: "Improves the shields and weapons of the Starbase."
+
+ sm_adv_starbase_defenses: "Advanced Starbase Defenses"
+ sm_adv_starbase_defenses_desc: "Improves the armor and weapons of the Starbase."
+
+ sm_orbital_lab: "Orbital Research Lab"
+ sm_orbital_lab_desc: "An advanced research laboratory. Having a §GSupport Lab§! will improve the research output."
+
+ sm_orbital_physics_support_lab: "Physics Support Lab"
+ sm_orbital_physics_support_lab_desc: "A laboratory specializing in Physics research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Physics Research§!."
+
+ sm_orbital_society_support_lab: "Society Support Lab"
+ sm_orbital_society_support_lab_desc: "A laboratory specializing in Society research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Society Research§!."
+
+ sm_orbital_engineering_support_lab: "Engineering Support Lab"
+ sm_orbital_engineering_support_lab_desc: "A laboratory specializing in Egineering research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Engineering Research§!."
+
+ sm_ground_forces_academy: "Ground Forces Academy"
+ sm_ground_forces_academy_desc: "Increases the efficiency in which ground armies are recruited and trained."
+
+ sm_repair_module: "Repair Facility"
+ sm_repair_module_desc: "A facility that specializes in the rapid repair of ships orbiting the starbase."
+
+ sm_space_foundry: "Space Foundry"
+ sm_space_foundry_desc: "The space foundry will refine minerals into alloys. Having §GAssembly Line Manufacturing§! will improve the output by §Y1 Alloy§!  £alloys."
+
+ sm_space_factory: "Space Factory"
+ sm_space_factory_desc: "The space factory will refine minerals into consumer goods. Having §GAssembly Line Manufacturing§! will improve the output by §Y2 Consumer Goods§!  £consumer_goods."
+
+ sm_security_branch_office: "Security Branch Office"
+ sm_security_branch_office_desc: "A secury branch office will focus on the defense of your trade routes against the local piracy."
+
+ sm_administration_office: "Administration Office"
+ sm_administration_office_desc: "Assists in empire-level management tasks, increasing the administration ability of the empire."
+
+ sm_synthetic_crystal_fabricator: "Synthetic Crystals Fabricator"
+ sm_synthetic_crystal_fabricator_desc: "A special refinery that transforms minerals into rare crystals."
+
+ sm_synthetic_volatile_motes_fabricator: "Synthetic Volatile Motes Fabricator"
+ sm_synthetic_volatile_motes_fabricator_desc: "A special refinery that transforms minerals into volatile motes."
+
+ sm_synthetic_gase_fabricator: "Synthetic Gases Fabricator"
+ sm_synthetic_gase_fabricator_desc: "A special refinery that transforms minerals into exotic gases."
+
+ sm_robot_assembly: "Robot Assembly Facility"
+ sm_robot_assembly_desc: "Builds robot populations and automatically transfers them into the colonies of the system."
+
+ sm_assembly_line_manufacturing: "Assembly Line Manufacturing"
+ sm_assembly_line_manufacturing_desc: "Helps in the production of alloys and consumer goods both in space and on planets. Will also improve the output of every §GSpace Foundry§! by §Y1 Alloy§!  £alloys  and §GSpace Factory§! by §Y2 Consumer Goods§!  £consumer_goods." 
+
+ sm_federal_reserve_bank: "Federal Reserve Bank"
+ sm_federal_reserve_bank_desc: "A large financial bank that helps to improve trade within the system."
+
+ sm_cloning_facilities: "Cloning Facilities"
+ sm_cloning_facilities_desc: "Facilities that increase population growth across the system, at the cost of population happiness."
+
+ sm_navcom_ai: "Navcom AI"
+ sm_navcom_ai_desc: "An extremely advanced navigation system that can rapidly calculate coordinates for emergency jumps. Increases the chance for ships to successfully disengage from combat."
+
+ sm_starbase_ai: "Starbase Artificial Intelligence"
+ sm_starbase_ai_desc: "An extremely advanced AI computer capable of improving a starbase's attack, defense, and trade protection abilities."
+
+ sm_tv_studio: "Entertainment TV Studio"
+ sm_tv_studio_desc: "A TV studio that produces entertainment programming for citizens across the system, increasing planetary amenities."
+
+ sm_real_estate_dev: "Real Estate Developer"
+ sm_real_estate_dev_desc: "An office where real estate agents assist citizens with finding suitable locations for new homes. Increases the available planetary housing."
+
+ sm_tv_network: "TV News Network"
+ sm_tv_network_desc: "A TV studio that produces news programming for citizens across the system, increasing planetary stability. Would you like to know more?"
+
+ POINT_DEFENCE_STARBASE: "Automated Defense System"
+ POINT_DEFENCE_STARBASE_DESC: "Automated Defense System"
+ CITADEL_DARK_MATTER_REACTOR: "Dark Matter Reactor"
+ CITADEL_DARK_MATTER_REACTOR_DESC: "Dark Matter Reactor"
+ STARBASE_AURA_SHIP_DISRUPTOR: "Ship Disruptor"
+ STARBASE_AURA_SHIP_AMPLIFIER: "Ship Amplifier"
+ aura_starbase_ship_disruptor: "$offensive_aura$ - $STARBASE_AURA_SHIP_DISRUPTOR$"
+ aura_starbase_ship_amplifier: "$defensive_aura$ - $STARBASE_AURA_SHIP_AMPLIFIER$"
+ 
+ TITANIC_STARBASE_SECTION: "Titanic Section"
+ EXTRA_LARGE_STARBASE_SECTION: "XL Section"
+ LARGE_STARBASE_SECTION: "Large Section"
+ PD_STARBASE_SECTION: "Point Defense Section"
+ HANGAR_STARBASE_SECTION: "Hangar Section"
+ MISSILE_STARBASE_SECTION: "Missile Section"
+ BATTERY_STARBASE_SECTION: "Medium Section"
+ 
+ 
+##################################################################################################################################################################################################################
+###  STARBASE TYPES   ###
+#########################
+
+smining: "Mining Station"
+sfactory: "Orbital Factory"
+sfarm: "Orbital Farm"
+srefinery: "Orbital Refinery"
+ssensor: "Observatory"
+scolony: "Orbital Colony"
+spower: "Power Station"
+
+
+##################################################################################################################################################################################################################
+###    MISC STUFF     ###
+#########################
+
+
+ mod_pop_category_bio_trophy_unity_produces_mult: "Bio-Trophy Unity"
+ mod_station_researchers_physics_research_produces_mult: "Research Station Physics £physics  Output"
+ mod_station_researchers_society_research_produces_mult: "Research Station Society £society  Output"
+ mod_station_researchers_engineering_research_produces_mult: "Research Station Engineering £engineering  Output"
+ 
+##Detection Array Limit
+starbase_detection_limit.tooltip.fail: "You cannot build more than 6 Detection Arrays per starbase."
