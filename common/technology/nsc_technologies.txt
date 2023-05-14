@@ -413,6 +413,10 @@ tech_explorationship_1 = {
 		}
 	}
 
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
+	}
+
 	modifier = {
 		command_limit_add = 10
 		country_naval_cap_add = 20
@@ -447,6 +451,10 @@ tech_explorationship_2 = {
 		}
 	}
 	
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 0.1
@@ -480,6 +488,10 @@ tech_explorationship_3 = {
 		}
 	}
 	
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 0.1
@@ -513,6 +525,10 @@ tech_explorationship_4 = {
 		}
 	}
 	
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
+	}
+
 	weight_modifier = {
 		modifier = {
 			factor = 0.1
