@@ -1,4 +1,4 @@
-﻿l_japanese:
+﻿l_braz_por:
 
 ### 디시인사이드 스텔라리스 갤러리 '어ㅅㅂ' 제작 ###
 
@@ -136,9 +136,9 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_name:0 "Rese
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip:0 "§EQuestion: How can I completely reset the mod's files if it is not working properly?§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip$\n\nIf your copy of NSC2 (or any other mod) is not working properly, try ALL of these steps in order:\n\n1. VERIFY MOD LOAD ORDER\nThe best way to make sure your mods work properly is to order them in REVERSE alphabetical order - choose the Z..A sorting option in the launcher. If you need detailed help with sorting mods, use the bot command !loadorder. in any channel.\n\n2. VERIFY GAME FILES\nOpen Steam, go to your game library, and right click on Stellaris. Click on Properties and then go to the Local Files page, and choose the Verify integrity of game files option.\n\n3. RESET NSC2 (OR ANY OTHER MOD)\nDelete this entire folder from your PC: Steam/SteamApps/workshop/content/281990/683230077 and then unsubscribe and resubscribe to the mod. Verify that Steam is downloading the mod, and then try to run again.\n\n(If your issue is not with NSC2, but another mod, you can replace the 683230077 with the ID number for the mod you want to reset. You can find the mod's ID number by opening its page in the Steam workshop - it is the very last set of numbers shown in the URL.)\n\n4. CLEAR THE STELLARIS MOD FOLDER\nDelete this entire folder from your PC: Steam/SteamApps/workshop/content/281990 and then unsubscribe and resubscribe to all of your mods. Verify that Steam is downloading the mods, and then try to run again.\n\n5. RESET THE PARADOX MOD LAUNCHER\nGo to Documents/Paradox Interactive/Stellaris, delete launcher_v2.sqlite, go into the mod folder, delete all of the ugc .mod files, then verify the game files in Steam and rebuild your mod load order.\n\n6. RESET THE STELLARIS FOLDER\nIf the above steps do not work, back up your custom races and personal mods and delete the entire Documents/Paradox Interactive/Stellaris folder and then verify the game files and rebuild your mod load order again.§!"
 #'\' here is changed to '/' because of the "[13:59:34][localization_reader.cpp:255]: Illegal break character (utf32=83)" errors
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_name:0 "Name REPLACE_ME 3"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip:0 "Tooltip REPLACE_ME 3"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_desc:0 "§E Desc REPLACE_ME 3 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_name:0 "Creating/Removing Hyperlanes"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip:0 "§EQuestion: How do I create or remove hyperlanes?§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip$\n\nTo create a new hyperlane, follow these steps:\n\nStep 1: Build the Hyperlane Generator (Transmitter) megastructure in the system where you want the new hyperlane to start.\n\nStep 2: Build the Hyperlane Generator (Receiver) megastructure in the system where you want the new hyperlane to end.\n\nStep 3: Upgrade the Hyperlane Generator (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Generator (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Generator (Transmitter) again to activate the transmitter and create the new hyperlane.\n\nTo remove a hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Remover (Transmitter) megastructure in the system where the hyperlane you want to remove begins.\n\nStep 2: Build the Hyperlane Remover (Receiver) megastructure in the system where the hyperlane you want to remove ends.\n\nStep 3: Upgrade the Hyperlane Remover (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Remover (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Remover (Transmitter) again to activate the remover and destroy the hyperlane.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_name:0 "Name REPLACE_ME 4"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip:0 "Tooltip REPLACE_ME 4"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_desc:0 "§E Desc REPLACE_ME 4 §!"
@@ -174,12 +174,12 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_desc:0 "§E$
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Headquarters Station"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: How do I build the Headquarters Station?§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip$\n\nThe Headquarters Station is a type of Juggernaut and can be built at a starbase that can build Juggernauts.\n\nNote: You must have purchased and installed the Federations DLC to have access to Juggernauts and to build the HQ Station.§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Creating Hyperlanes"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "§EQuestion: How do I create hyperlanes?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip$\n\nTo create a new hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Generator (Transmitter) megastructure in the system where you want the new hyperlane to start.\n\nStep 2: Build the Hyperlane Generator (Receiver) megastructure in the system where you want the new hyperlane to end.\n\nStep 3: Upgrade the Hyperlane Generator (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Generator (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Generator (Transmitter) again to activate the transmitter and create the new hyperlane.§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_name:0 "Removing Hyperlanes"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip:0 "§EQuestion: How do I remove hyperlanes?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip$\n\nTo remove a hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Remover (Transmitter) megastructure in the system where the hyperlane you want to remove begins.\n\nStep 2: Build the Hyperlane Remover (Receiver) megastructure in the system where the hyperlane you want to remove ends.\n\nStep 3: Upgrade the Hyperlane Remover (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Remover (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Remover (Transmitter) again to activate the remover and destroy the hyperlane.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Name REPLACE_ME 5"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "Tooltip REPLACE_ME 5"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_name:0 "Name REPLACE_ME 6"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_tooltip:0 "Tooltip REPLACE_ME 6"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_6_desc:0 "§E Desc REPLACE_ME 6 §!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_name:0 "Name REPLACE_ME 7"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_tooltip:0 "Tooltip REPLACE_ME 7"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_7_desc:0 "§E Desc REPLACE_ME 7 §!"
@@ -472,16 +472,6 @@ nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H$NSC_PD_MISSILE$§!\n$NSC_PD_MISSILE_DESC$"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_enabled_desc:0 "$NSC_PD_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc:0 "$NSC_PD_MISSILE$: §RDisabled§!"
-
-#AFTERBURNER_1
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_name_desc:0 "§H$AFTERBURNER_1$§!\n$AFTERBURNER_1_DESC$"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_enabled_desc:0 "$AFTERBURNER_1$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_disabled_desc:0 "$AFTERBURNER_1$: §RDisabled§!"
-
-#AFTERBURNER_2
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_name_desc:0 "§H$AFTERBURNER_2$§!\n$AFTERBURNER_2_DESC$"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_enabled_desc:0 "$AFTERBURNER_2$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_disabled_desc:0 "$AFTERBURNER_2$: §RDisabled§!"
 
 ### Custom GUI Category: Starbase Levels ###
 #Common
