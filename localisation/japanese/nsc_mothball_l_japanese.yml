@@ -1,0 +1,62 @@
+﻿l_japanese:
+
+### 디시인사이드 스텔라리스 갤러리 '어ㅅㅂ' 제작 ###
+
+###########################
+### MOTHBALL EVENT ###
+###########################
+
+decision_nsc_mothball_menu:0 "Fleet Mothballing"
+decision_nsc_mothball_menu_desc:0 "Allows us to deactivate and reserve fleets, lowering their upkeep and naval capacity usage." #a UI element in the mod menu refers this description #so don't change it to something like: Click here to open it! #people will be confused #except that, it's okay to change it :)
+decision_nsc_mothball_menu_trigger.fail:0 "£trigger_no£ §RYou must have a fleet owned by you in orbit above this planet to use this feature.§!\n\n§Y(If you are unable to use this feature, click on each mothballed fleet and right click the planet to ensure they are marked as 'in orbit'.§!"
+decision_nsc_mothball_menu_tooltip:0 "Opens the Fleet Mothball Control Panel."
+nsc_events_mothball.menu.name:0 "Fleet Mothball Control"
+nsc_events_mothball.menu.desc:0 "Welcome to the Fleet Mothball System. In this window, you can select fleets to Mothball or Reactivate. Please take note of the following:\n\nA planet must be colonized by your empire to Mothball fleets in its orbit. Up to 5 fleets can be Mothballed in a planet's orbit at any given time.\n\nLeased fleets cannot be Mothballed.\n\nMothballing a fleet will reduce its Naval Capacity usage by 75% and reduce its upkeep costs by 90% as long as it is in Mothball status.\n\nYou will not be able to control or move Mothballed fleets. If you accidentally click on and try to move a Mothballed fleet, simply click on it again and right click on the planet to mark it as In Orbit. You will not be able to Reactivate a fleet that is not marked as In Orbit.\n\nReactivating a fleet will cost alloys to repair the ships to Combat Ready status. The cost will depend on the total hull points of all ships in the fleet. Reactivating a fleet takes 360 days for repairs.\n\n§RWARNING: Make sure that you can afford the increased Upkeep Costs and Naval Capacity of a fleet before Reactivating it!§!"
+nsc_events_mothball.menu.close:0 "Close"
+nsc_events_mothball.menu.fleet_mothball_stop.tooltip:0 "Reactivate the fleet to Combat Ready status."
+nsc_mothball_stop_trigger.fail:0 "The Fleet is currently being Reactivated."
+
+nsc_events_mothball.menu.fleet_1_mothball_start:0 "Mothball §Y[nsc_mothball_target_fleet_1.GetName]§!  (Reactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_1.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_1_mothball_start.tooltip:0 "Start Mothballing the fleet.\nReactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_1.nsc_mothball_target_fleet_total_cost_var]§!"
+nsc_events_mothball.menu.fleet_1_mothball_stop:0 "Reactivate §Y[nsc_mothball_target_fleet_1.GetName]§!  (Cost: £alloys£§Y[nsc_mothball_target_fleet_1.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_1_mothball_restoration_in_progress:0 "Reactivating [nsc_mothball_target_fleet_1.GetName]  (£time£ §Y[nsc_mothball_target_fleet_1.nsc_fleet_in_mothball_repair_timer_var]§! Days)"
+nsc_events_mothball.menu.fleet_1_mothball_restoration_timer.tooltip:0 "Time to Reactivation: £time£ §Y[nsc_mothball_target_fleet_1.nsc_fleet_in_mothball_repair_timer_var]§! Days"
+
+nsc_events_mothball.menu.fleet_2_mothball_start:0 "Mothball §Y[nsc_mothball_target_fleet_2.GetName]§!  (Reactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_2_mothball_start.tooltip:0 "Start Mothballing the fleet.\nReactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!"
+nsc_events_mothball.menu.fleet_2_mothball_stop:0 "Reactivate §Y[nsc_mothball_target_fleet_2.GetName]§!  (Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_2_mothball_restoration_in_progress:0 "Reactivating [nsc_mothball_target_fleet_2.GetName]  (£time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days)"
+nsc_events_mothball.menu.fleet_2_mothball_restoration_timer.tooltip:0 "Time to Reactivation: £time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days"
+
+nsc_events_mothball.menu.fleet_3_mothball_start:0 "Mothball §Y[nsc_mothball_target_fleet_2.GetName]§!  (Reactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_3_mothball_start.tooltip:0 "Start Mothballing the fleet.\nReactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!"
+nsc_events_mothball.menu.fleet_3_mothball_stop:0 "Reactivate §Y[nsc_mothball_target_fleet_2.GetName]§!  (Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_3_mothball_restoration_in_progress:0 "Reactivating [nsc_mothball_target_fleet_2.GetName]  (£time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days)"
+nsc_events_mothball.menu.fleet_3_mothball_restoration_timer.tooltip:0 "Time to Reactivation: £time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days"
+
+nsc_events_mothball.menu.fleet_4_mothball_start:0 "Mothball §Y[nsc_mothball_target_fleet_2.GetName]§!  (Reactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_4_mothball_start.tooltip:0 "Start Mothballing the fleet.\nReactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!"
+nsc_events_mothball.menu.fleet_4_mothball_stop:0 "Reactivate §Y[nsc_mothball_target_fleet_2.GetName]§!  (Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_4_mothball_restoration_in_progress:0 "Reactivating [nsc_mothball_target_fleet_2.GetName]  (£time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days)"
+nsc_events_mothball.menu.fleet_4_mothball_restoration_timer.tooltip:0 "Time to Reactivation: £time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days"
+
+nsc_events_mothball.menu.fleet_5_mothball_start:0 "Mothball §Y[nsc_mothball_target_fleet_2.GetName]§!  (Reactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_5_mothball_start.tooltip:0 "Start Mothballing the fleet.\nReactivation Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!"
+nsc_events_mothball.menu.fleet_5_mothball_stop:0 "Reactivate §Y[nsc_mothball_target_fleet_2.GetName]§!  (Cost: £alloys£§Y[nsc_mothball_target_fleet_2.nsc_mothball_target_fleet_total_cost_var]§!)"
+nsc_events_mothball.menu.fleet_5_mothball_restoration_in_progress:0 "Reactivating [nsc_mothball_target_fleet_2.GetName]  (£time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days)"
+nsc_events_mothball.menu.fleet_5_mothball_restoration_timer.tooltip:0 "Time to Reactivation: £time£ §Y[nsc_mothball_target_fleet_2.nsc_fleet_in_mothball_repair_timer_var]§! Days"
+
+NSC_EVENTS_MOTHBALL_MESSAGE_TITLE:0 "Mothballed Fleet Restored"
+NSC_EVENTS_MOTHBALL_MESSAGE_DESC:0 "The §Y[From.GetName]§! fleet has been repaired after being mothballed on the [This.Orbit.GetName] planet."
+
+nsc_events_mothball.5.name:0 "Fleets Lost at [From.GetName]"
+nsc_events_mothball.5.desc:0 "When [From.GetName] was lost to the enemy, our Mothballed fleets were destroyed by our staff to ensure they did not fall into enemy hands."
+nsc_events_mothball.5.a:0 "A dark day for [This.GetName]."
+
+nsc_events_mothball.6.name:0 "Enemy Fleets Destroyed at [From.GetName]"
+nsc_events_mothball.6.desc:0 "When we occupied [From.GetName], there were Mothballed enemy fleets in orbit. These fleets were destroyed by enemy staff before we could take control of them."
+nsc_events_mothball.6.a:0 "Unfortunate."
+
+nsc_events_mothball.8.name:0 "Fleets Lost at [From.GetName]"
+nsc_events_mothball.8.desc:0 "When we abadoned [From.GetName], someone neglected to Reactivate our Mothballed fleets in orbit. As a result, they were destroyed along with all other orbital facilities."
+nsc_events_mothball.8.a:0 "That is ridiculous!"

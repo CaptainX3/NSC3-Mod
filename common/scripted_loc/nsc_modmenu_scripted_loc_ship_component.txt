@@ -516,31 +516,3 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc
 	}
 }
-#AFTERBURNER_1
-defined_text = {
-	name = Get_nsc_ship_component_AFTERBURNER_1_enable_disable_status
-	random = no
-
-	text = {
-		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_enabled_desc
-	}
-	text = {
-		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 } } }
-		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_1_disabled_desc
-	}
-}
-#AFTERBURNER_2
-defined_text = {
-	name = Get_nsc_ship_component_AFTERBURNER_2_enable_disable_status
-	random = no
-
-	text = {
-		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_enabled_desc
-	}
-	text = {
-		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 } } }
-		localization_key = nsc_modmenu_setting_page_ship_category_component_AFTERBURNER_2_disabled_desc
-	}
-}

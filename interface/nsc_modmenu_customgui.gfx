@@ -449,16 +449,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_nsc_pd_missile.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_AFTERBURNER_1"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_afterburners_1.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_AFTERBURNER_2"
-		texturefile = "gfx/interface/icons/ship_parts/ship_part_afterburners_2.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
 	#starbase levels
 	spriteType = {
 		name = "GFX_nsc_modmenu_starbase_outpost"

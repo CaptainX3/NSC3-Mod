@@ -1,0 +1,164 @@
+﻿l_german:
+
+##################################################################################################################################################################################################################
+### POLICIES ###
+################
+
+policy_tech_options_policy:0 "Research Diversity Initiative"
+policy_tech_options_policy_desc:0 "This policy will allow our empire to spend research points on providing our scientists with more options when choosing their next research project."
+
+defaulttech_option_name: "Default Research"
+defaulttech_option:0 "Default Research"
+defaulttech_option_desc:0 "This option will keep the research alternatives at the normal number - nothing will change."
+
+tech5_option_name: "Research Initiative 5"
+tech5_option:0 "Research Initiative 5"
+tech5_option_desc:0 "This option will increase the number of research alternatives to 5 and will cost approximately 10% of our monthly research production."
+
+tech10_option_name: "Research Initiative 10"
+tech10_option:0 "Research Initiative 10"
+tech10_option_desc:0 "This option will increase the number of research alternatives to 10 and will cost approximately 15% of our monthly research production."
+
+tech15_option_name: "Research Initiative 15"
+tech15_option:0 "Research Initiative 15"
+tech15_option_desc:0 "This option will increase the number of research alternatives to 15 and will cost approximately 20% of our monthly research production."
+
+tech20_option_name: "Research Initiative 20"
+tech20_option:0 "Research Initiative 20"
+tech20_option_desc:0 "This option will increase the number of research alternatives to 20 and will cost approximately 30% of our monthly research production."
+
+
+
+##################################################################################################################################################################################################################
+### DOCTRINES ###
+#################
+
+policy_armament_doctrine:0 "Armament Doctrine"
+policy_armament_doctrine_desc:0 "This Fleet Doctrine determines what armaments our ship designs should emphasize, at the expense of reduced efficiency with other weapons."
+
+balanced_focus_name:0 "Standard Armament"
+balanced_focus:0 "Standard Armament"
+balanced_focus_desc:0 "We will spread our focus evenly across the weapon types; there is no need to specialize in one to the detriment of the others."
+
+brawler_name:0 "Brawler Focus"
+brawler:0 "Brawler Focus"
+brawler_desc:0 "Kinetic weapons have a long and storied history. Our Kinetic weapons will tear through enemy shields and hulls and bring glory to our nation."
+
+gunship_focus_name:0 "Gunship Focus"
+gunship_focus:0 "Gunship Focus"
+gunship_focus_desc:0 "There is a certain majesty to the manipulation of direct energy to destroy one's foes. Our Energy weapons will burn through enemy ships and melt away their fleets."
+
+guided_munitions_focus_name:0 "Missile Focus"
+guided_munitions_focus:0 "Missile Focus"
+guided_munitions_focus_desc:0 "Explosive weapons . Our powerful missiles will secure victory for our people."
+
+strike_craft_focus_name:0 "Strike Craft Focus"
+strike_craft_focus:0 "Strike Craft Focus"
+strike_craft_focus_desc:0 "Strike Craft, our valiant pilots will prove victorious"
+
+policy_defense_doctrine:0 "Defense Doctrine"
+policy_defense_doctrine_desc:0 "This Fleet Doctrine determines which type of ship defenses our ships should emphasize, at the cost of reduced efficiency with the other defensive option."
+
+uniform_focus_name:0 "Standard Defenses"
+uniform_focus:0 "Standard Defenses"
+uniform_focus_desc:0 "We will focus on armor and shields in equal measure; there is no need to favor one over the other. They are strongest together."
+
+armor_focus_name:0 "Armor Focus"
+armor_focus:0 "Armor Focus"
+armor_focus_desc:0 "Trust in the strength of our Armor. Thick and impenetrable, it surrounds our hulls in its protective embrace, and cannot be ignored by missiles or torpedoes."
+
+shield_focus_name:0 "Shield Focus"
+shield_focus:0 "Shield Focus"
+shield_focus_desc:0 "Shimmering shields are the superior defensive option. Unlike armor, they recharge without the need for repairs, allowing for extended campaigns without the need to halt our pace of operations."
+
+policy_composition_doctrine:0 "Fleet Composition Doctrine"
+policy_composition_doctrine_desc:0 "This Fleet Doctrine determines which types of ships should make up the bulk of our naval forces, allowing us to construct our favored vessels more quickly at a lower cost, at the expense of taking longer and costing more to build ships that we are not emphasizing."
+
+standard_composition_name:0 "Standard Composition"
+standard_composition:0 "Standard Composition"
+standard_composition_desc:0 "Every ship has its place; we should not retool our shipyards to favor one type of construction over another. A wide-ranging fleet is the best option."
+
+light_ship_focus_name:0 "Light Ship Focus"
+light_ship_focus:0 "Light Ship Focus"
+light_ship_focus_desc:0 "Light ships are cheap and speedy, both in construction and in space. They're perfect for quashing pirates, protecting trade, defending wide swathes of space, screening larger vessels, and defending our nation on a budget. We need to prioritize the construction of these valuable vessels."
+
+versatility_focus_name:0 "Cruiser Focus"
+versatility_focus:0 "Cruiser Focus"
+versatility_focus_desc:0 "Cruisers, and their larger cousins, Strike Cruisers and Battlecruisers, are the most versatile ships we can build. They excel at all ranges, with a wide range of weapons, and are tough enough to withstand a hit, but don't take nearly as long to build, or cost nearly as much to produce and maintain, as capital ships. For a versatile fleet, we should focus on Cruisers to fill out our Navy."
+
+capital_focus_name:0 "Capital Ship Focus"
+capital_focus:0 "Capital Ship Focus"
+capital_focus_desc:0 "Capital Ships are the pride of our fleets. With heavy armaments to obliterate the enemy, and heavy defenses to shrug off any attack, these mighty warships are the greatest weapon in our arsenal. They are nothing less than the future of galactic warfare, and we should build our fleets around them, and focus our efforts on their construction."
+
+carrier_focus_name:0 "Carrier Focus"
+carrier_focus:0 "Carrier Focus"
+carrier_focus_desc:0 "Our Strike Craft are our greatest weapons. Our pilots are the best and brightest of our people, and our Carriers are the vessels that deploy our valiant warriors into battle. We must focus our efforts on producing as many of these powerful vessels as possible."
+
+policy_operations_doctrine:0 "Fleet Operations Doctrine"
+policy_operations_doctrine_desc:0 "A Navy has many duties: Power projection, defense of core territory, and the protection of internal trade. Our Fleet Operations Doctrine determines which of these tasks to emphasize."
+
+standard_operations_name:0 "Standard Operations"
+standard_operations:0 "Standard Operations"
+standard_operations_desc:0 "We shouldn't over-specialize our Fleet Operations. We must be ready for any and all duties at all times, and never neglect one aspect of naval planning."
+
+blue_sky:0 "Blue Sky Operations"
+blue_sky_name:0 "Blue Sky Operations"
+blue_sky_desc:0 "Nothing is more important than the defense of our planets and our people. Our Navy exists purely to defend our nation, and we should plan to keep our campaigns limited to space we control, and fight primarily with our mighty Starbases in support of our fleets."
+
+black_sky:0 "Black Sky Operations"
+black_sky_name:0 "Black Sky Operations"
+black_sky_desc:0 "Our Navy must be able to project power far away from home--to protect our allies, punish our enemies, and respond to crises wherever they may arise. We cannot rely on Starbases to support our fleet; we must be able to fight anywhere, even across the galaxy. A Black Sky fleet is a tool of diplomacy, just like any other."
+
+privateer_operation:0 "Anti-Piracy Operations"
+privateer_operation_name:0 "Anti-Piracy Operations"
+privateer_operation_desc:0 "Our fleets are more than sufficient to defend us and our way of life, but they are also instrumental in protecting our internal trade. Trade is the lifeblood of our Empire, and we must do everything we can to protect it."
+
+policy_crew_doctrine:0 "Crew Training Doctrine"
+policy_crew_doctrine_desc:0 "The training of a Navy's crews and officers is one of the most important aspect it ever undertakes. We should carefully tailor our training programs to fit our circumstances; outdated or maladapted training programs are worse than useless, and will cripple our Navy. We must decide how to train our crews and officers."
+
+standard_crew:0 "Standard Training"
+standard_crew_name:0 "Standard Training"
+standard_crew_desc:0 "A standard level of training, without any specialized focus, will allow us to best maintain operational readiness."
+
+excellent_crew:0 "Naval Academy Training"
+excellent_crew_name:0 "Naval Academy Training"
+excellent_crew_desc:0 "We must implement a full Naval Academy training program. Crews are to be trained for years, with potential officers given additional specialized training. However, many will fail to meet the high standards we set, reducing the pool of acceptable crews for our ships."
+
+militia_crew:0 "Rapid Training"
+militia_crew_name:0 "Rapid Training"
+militia_crew_desc:0 "We must implement a rapid training program, focused on getting ship crews ready as soon as possible, without any advanced training. This will allow us to swell our ranks with many recruits to fill our ships, but will result in reduced combat performance."
+
+ai_crew:0 "Artificial Intelligence Crews"
+ai_crew_name:0 "Artificial Intelligence Crews"
+ai_crew_desc:0 "We will crew our ships mostly with AI units. This has the advantage of producing ship crews at an impressive rate. However, AI units optimized for crew roles have difficulties adapting to rapidly altering situations, which will increase the number of casualties we take in battle."
+
+edict_nsc_doctrine_ai:0 "AI Doctrine Replacement"
+edict_nsc_doctrine_ai_desc:0 "For AI Only"
+
+policy_crew_doctrine_gestalt:0 "Drone Crew Doctrine"
+policy_crew_doctrine_gestalt_desc:0 "The training of a Navy's drones is one of the most important aspect it ever undertakes. We should carefully tailor our training programs to fit our circumstances; outdated or maladapted training programs are worse than useless, and will cripple our Navy. We must decide how to train our drones."
+
+standard_drones:0 "Standard Drones"
+standard_drones_name:0 "Standard Drones"
+standard_drones_desc:0 "Our drones are sufficient at the moment; we do not require either higher quality drones, independent drones, or a swarm of naval drones."
+
+quality_protocol:0 "Quality Protocol"
+quality_protocol_name:0 "Quality Protocol"
+quality_protocol_desc:0 "Our drones must be of the highest quality, to make our ships fight at peak efficiency. We will be unable to fill as many ships as we might have with more lax standards, but this is the price we pay for excellence."
+
+adaptive_protocol:0 "Adaptive Protocol"
+adaptive_protocol_name:0 "Adaptive Protocol"
+adaptive_protocol_desc:0 "Our officer drones have been designed with more independent thought in order to adapt in different situations. This means that we can field more ships, with our officer drones able to manage their crews with more autonomy, but overall combat performance will suffer slightly from the lack of unified action."
+
+swarm_protocol:0 "Swarm Protocol"
+swarm_protocol_name:0 "Swarm Protocol"
+swarm_protocol_desc:0 "Our drones require only minimal training. Our ships must be fast, and blot out the stars with their numbers; it does not take much training to do this. Each ship is a negligible loss; there are two more to take its place. The Swarm will overwhelm with sheer numbers."
+
+
+
+##################################################################################################################################################################################################################
+### EDICTS ###
+##############
+
+edict_nsc_emergency_defenses:0 "Emergency Defense Initiative"
+edict_nsc_emergency_defenses_desc:0 "An onslaught is imminent, and our defenses are weak. We absolutely must build up our starbases, and turn them into bristling defensive emplacements, but we have precious little time.\n\nHowever, by throwing everything we have into the effort, we may be able to fortify our defenses in a fraction of the normal time - it will be incredibly costly, but likely not as costly as losing the war to our hated foes."

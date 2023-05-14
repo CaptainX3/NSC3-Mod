@@ -30,6 +30,7 @@ nsc_modmenu_setting_page_mod_category_faq_text_long_trigger = {
 	OR = {
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_1_page_opened
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_2_page_opened
+		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_3_page_opened
 	}
 }
 nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = {
@@ -96,9 +97,6 @@ nsc_modmenu_ship_component_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
-	
-	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 }
-	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 }
 }
 nsc_modmenu_starbase_class_settings_on_trigger = {
 	optimize_memory
