@@ -83,6 +83,14 @@ starbase_stronghold = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "ftl_inhibitor"
+	
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
 }
 
 
@@ -163,4 +171,12 @@ starbase_headquarters = {
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
 	required_component_set = "ftl_inhibitor"
+	
+	potential_construction = {
+		always = no
+	}
+
+	possible_construction = {
+		always = no
+	}
 }
