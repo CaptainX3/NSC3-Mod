@@ -166,7 +166,6 @@ guiTypes = {
 			@nsc_modmenu_setting_page_mod_common_text_position_height = 222
 			@nsc_modmenu_setting_page_mod_common_text_size_width = 462
 			@nsc_modmenu_setting_page_mod_common_text_size_height = 304
-			@nsc_modmenu_setting_page_mod_common_text_size_long_height = 800
 			@nsc_modmenu_setting_page_mod_common_text_borderSize_width = 13
 			@nsc_modmenu_setting_page_mod_common_text_bordersize_height = 10
 			@nsc_modmenu_setting_page_header_width = 230
@@ -413,6 +412,9 @@ guiTypes = {
 						no_clicksound = yes
 						effect = "nsc_modmenu_setting_page_mod_category_faq_text_short_button_effect"
 					}
+
+					@nsc_modmenu_setting_page_mod_common_text_size_long_height = 800
+
 					#the difference of this effect button with the above one is its height size #this button is longer
 					effectbuttonType = {
 						name = "nsc_modmenu_setting_page_mod_category_faq_text_long"
