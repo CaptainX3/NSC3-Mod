@@ -41,10 +41,6 @@ utility_component_template = {
 	prerequisites = { "tech_afterburners_1" }
 	component_set = "AFTERBURNER_1"
 	upgrades_to = "AFTERBURNER_2"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_1 }
-	}
 
 	ai_weight = {
 		weight = 10
@@ -78,10 +74,6 @@ utility_component_template = {
 	class_restriction = { shipclass_military shipclass_science_ship shipclass_starbase }	#nsc
 	prerequisites = { "tech_afterburners_2" }
 	component_set = "AFTERBURNER_2"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = AFTERBURNER_2 }
-	}
 
 	ai_weight = {
 		weight = 15
