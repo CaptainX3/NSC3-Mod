@@ -255,6 +255,9 @@ TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_DESC:0 "§HExploration Cruiser - Level
 TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_TITLE:0 "§HUnlocks Ship Upgrade:§! Exploration Cruiser - Level 3"
 TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_DESC:0 "§HExploration Cruiser - Level 3§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
+TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_TITLE:0 "§HUnlocks Ship Upgrade:§! Exploration Cruiser - Level 4"
+TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_DESC:0 "§HExploration Cruiser - Level 4§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
+
 TECH_UNLOCK_DRYDOCK_CONSTRUCTION_TITLE:0 "§HUnlocks Starbase Building:§! Drydock"
 TECH_UNLOCK_DRYDOCK_CONSTRUCTION_DESC:0 "§HDrydock§!\nThis specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair many warships at once."
 
