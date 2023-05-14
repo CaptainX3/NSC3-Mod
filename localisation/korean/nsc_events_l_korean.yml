@@ -1,0 +1,81 @@
+﻿l_korean:
+
+##################################################################################################################################################################################################################
+### EXPLORATION CRUISER EVENTS ###
+##################################
+
+EXPLORATION_CRUISER_UPGRADE_PROJECT:0 "Science Ship Upgade Project"
+EXPLORATION_CRUISER_UPGRADE_PROJECT_DESC:0 "Our fleet engineers stand ready to begin the monumental task of retrofitting one of our existing Science ships into the new Exploration Cruiser class. It is expected that this project will take approximately 250 days to complete. When finished, the Scientist Leader of the ship will transfer to their new ship automatically."
+
+nsc_events_exploration_ship.3.name: "Prototype Exploration Cruiser"
+nsc_events_exploration_ship.3.desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our ship engineers have been working together with our scientists to come up with a solution to this problem. We believe we finally have the answer.\n\nThe Exploration Cruiser is a large, combat-capable Science Ship dedicated to exploring new worlds and seeking out new life and new civilizations. Our scientists will no longer have to fear the terrors of the void!"
+
+nsc_events_exploration_ship.3.a: "Excellent, we shall boldly go where no one has gone before!"
+
+nsc_events_exploration_ship.10.name: "Science Fleet Upgrade"
+nsc_events_exploration_ship.10.desc:0 "Now that we have finalized the permanent design of the Exploration Cruiser, our fleet logistics team would like to know if you want to upgrade our fleet of Science ships to this new, enhanced design. Performing the upgrade for each ship will take approximately §G250 days§! and will require an investment of §B400 Alloys§! and §Y50 Energy§! per ship, but would give our leading exploration scientists a much better chance of survival in an increasingly hostile universe. We can upgrade up to 8 Science ships to the new class. A Special Project will be created for each ship you want to upgrade, which will require moving that ship to our home system to begin the project. There is no time limit on how quickly you complete the projects. We await your decision."
+
+nsc_events_exploration_ship.10.1:0 "Choose to upgrade §Y1§! ship. (§Y50 Energy§! & §B400 Alloys§!)"
+nsc_events_exploration_ship.10.2:0 "Choose to upgrade §Y2§! ships. (§Y100 Energy§! & §B800 Alloys§!)"
+nsc_events_exploration_ship.10.3:0 "Choose to upgrade §Y3§! ships. (§Y150 Energy§! & §B1200 Alloys§!)"
+nsc_events_exploration_ship.10.4:0 "Choose to upgrade §Y4§! ships. (§Y200 Energy§! & §B1600 Alloys§!)"
+nsc_events_exploration_ship.10.5:0 "Choose to upgrade §Y5§! ships. (§Y250 Energy§! & §B2000 Alloys§!)"
+nsc_events_exploration_ship.10.6:0 "Choose to upgrade §Y6§! ships. (§Y300 Energy§! & §B2400 Alloys§!)"
+nsc_events_exploration_ship.10.7:0 "Choose to upgrade §Y7§! ships. (§Y350 Energy§! & §B2800 Alloys§!)"
+nsc_events_exploration_ship.10.8:0 "Choose to upgrade §Y8§! ships. (§Y400 Energy§! & §B3200 Alloys§!)"
+nsc_events_exploration_ship.10.end: "Choose not to upgrade any ships at all. (§M+25 Influence§!)"
+
+nsc_events_exploration_ship.11.name: "Science Ship Upgrade Complete"
+nsc_events_exploration_ship.11.desc: "We have completed a Science Ship Upgrade project. The Scientist leader has taken his station and the new ship is now awaiting your orders."
+
+##################################################################################################################################################################################################################
+### FLAGSHIP EVENT CHAIN ###
+############################
+
+nsc_flagship_cannot_be_acquired_by_conventional_means.tooltip.fail:0 "§R$TRIGGER_FAIL$§! Due to its size and complexity, only the $nsc_flagship_shipyard$ Megastructure is capable of producing a Flagship-class vessel."
+
+nsc_flagship_shipyard:0 "Grand Shipyard"
+nsc_flagship_shipyard_DESC:0 "This massive space station is necessary to construct the largest and deadliest warship that the galaxy has ever seen."
+
+nsc_flagship_shipyard_MEGASTRUCTURE_DETAILS:0 "$nsc_flagship_shipyard_DESC$"
+requires_no_existing_nsc_flagship:0 "£trigger_no£ Cannot build more than one Flagship."
+can_not_start_another_nsc_flagship_building:0 "£trigger_no£ Cannot start another Flagship construction project."
+
+nsc_flagship_shipyard_complete:0 "Grand Shipyard"
+nsc_flagship_shipyard_complete_DESC:0 "This massive shipyard is home to our Empire's mighty Flagship."
+
+nsc_events_flagship.1.name:0 "Grand Shipyard Ready For Construction"
+nsc_events_flagship.1.desc:0 "Our designs for the massive shipyard needed to build the Flagship are complete. We can begin construction of the assembly facility, but our Naval engineers need to finalize one - and only one - design for the utterly gargantuan vessel to be built. We'll only be able to construct one Flagship, so while we'll be able to retrofit and upgrade the vessel after it has been constructed, we need to have one, single design prior to construction."
+nsc_events_flagship.1.a:0 "A ship to change the tide..."
+
+nsc_events_flagship.3.name:0 "Secret No Longer"
+nsc_events_flagship.3.desc:0 "The construction of our mighty Flagship is naturally afforded the highest classification level we have, and we have spent considerable time, effort, and resources to keep the project shrouded in secrecy.\n\nHowever, despite our heroic efforts to keep its construction a closely-guarded secret, such a massive project is all but impossible to hide, and the galaxy's foreign powers have been aware of it for some time, and they are not standing idly by while we single-handedly change the face of interstellar warfare. Our intelligence agents are reporting that many empires have already begun construction of their own Flagships, hoping to maintain the balance of power in the galaxy.\n\nA new arms race is now underway."
+nsc_events_flagship.3.a:0 "Disappointing, but not unexpected."
+
+nsc_events_flagship.4.name:0 "The Ultimate Power In The Universe"
+nsc_events_flagship.4.desc:0 "After years of work, the consumption of vast quantities of resources, the construction of an incredible shipyard, and the expenditure of a considerable amount of political capital, the Flagship is finally complete and fully operational. It is the ultimate warship, capable of annihilating enemy fleets and turning the tides of entire wars.\n\nThe unveiling of this massive new warship has been a shock to the citizenry of our own empire, and also to the masses of foreign xenos, but, as previous intelligence reports have indicated, their governments have not been caught by surprise, and have been making their preparations to counter our mighty new weapon. Intelligence reports indicate that several empires are well on their way to rushing their own Flagships into production."
+nsc_events_flagship.4.a:0 "Excellent."
+
+nsc_events_flagship.6.name:0 "Leveling The Playing Field"
+nsc_events_flagship.6.desc:0 "Our agents now report that multiple foreign powers have launched their own, fully-operational Flagships in an attempt to keep up in the naval arms race. The galaxy is now home to several of these gargantuan warships, with each one carrying enough firepower to crush an entire fleet. While the sheer expense of building and maintaining these vessels will keep any nation from building more than one Flagship, their incredible might will surely shape any future armed conflict in which they take part."
+nsc_events_flagship.6.a:0 "Understood."
+
+nsc_events_flagship.7.name:0 "An Epic Disaster"
+nsc_events_flagship.7.desc:0 "Our Flagship, the pride of our Navy, the glorious symbol of our empire's might, has been destroyed!\n\nThe shock of such a gross calamity can not be understated. The public has put a great deal of faith in the capability of our Flagship to defend us, and our propaganda has heavily featured our Flagship to keep our citizenry inspired. In the days, weeks, and years to come, many will surely question the command decisions that lead to the destruction of the most powerful warship our empire has ever produced.\n\nNow that we no longer have to spend the significant resources needed to maintain the Flagship, it will be possible to construct a new one, though it will require the same kind of in-depth Special Project as before - and we must take care not to lose our next Flagship as well. A review of our Naval strategies is certainly in order."
+nsc_events_flagship.7.a:0 "Understood, we will begin the project soon."
+
+nsc_events_flagship.8.name:0 "Voluntary Disarmament"
+nsc_events_flagship.8.desc:0 "The existence of mighty superweapons such as the Flagship have powerful ripple effects. The maintenance costs of such incredible warships are significant, and their mere existence serves as a symbol of a nation's martial disposition - and can raise international tensions and accelerate the naval arms race.\n\nWhether due to economics or politics, you, our honored [Root.GetRulerTitle], has decided to dismantle their Flagship, though the Shipyard remains operational. It is possible to invest the significant resources to immediately begin construction of a new Flagship, though it will be difficult to keep such a massive project a secret - easier this time, at least, since the massive shipyards themselves are already in existence - and the rationale for dismantling and then reconstructing such a massive project is dubious at best. In any event, doing so will require a Special Project.\n\nOn the other hand, if it is more prudent to wait and keep our options open for a later date, there is now a Flagship Reconstruction Edict available, for the time when it becomes necessary or desirable to build another Flagship."
+nsc_events_flagship.8.a:0 "We will rebuild the Flagship when it is needed."
+
+nsc_events_flagship.9.name:0 "New Flagship Complete"
+nsc_events_flagship.9.desc:0 "Our new Flagship is finally complete and ready for launch. Hopefully, this one will not meet the same grim fate as the last one - these ships are not cheap or quick to replace, after all, and losing them is a massive blow to our morale and our military power. The Flagship is the most powerful weapon in our arsenal - it should be handled with care.\n\nWe must try not to let our people down."
+nsc_events_flagship.9.a:0 "We will not fail again."
+
+##################################################################################################################################################################################################################
+### FLAGSHIP DUEL EVENT ###
+###########################
+
+nsc_events_flagship.10.name:0 "A Legendary Battle"
+nsc_events_flagship.10.desc:0 "Ever since the inception of the Flagship Project, even before the colossal shipyard to construct the vessel was built, many naval theorists have posited that, like previous developments led to a focus on capital ship clashes, the new phase of the naval arms race could one day lead to enemy Flagships meeting on the field of battle. Some even posited that the only feasible way to counter a Flagship would be with another Flagship, making such clashes inevitable.\n\nThat day is finally here. Our Flagship is about to engage an enemy Flagship, and the heavens will rumble with their power. Both nations have put enormous resources into developing their Flagships, and designed their doctrines at least partially around the mighty vessels. Now, the entire galaxy will see the results--with the balance of galactic power, and the future of naval combat and thought, on the line."
+nsc_events_flagship.10.a:0 "Onward to Glory!"

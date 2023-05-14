@@ -1,0 +1,95 @@
+﻿l_simp_chinese:
+
+##################################################################################################################################################################################################################
+### MODIFIERS ###
+#################
+
+mod_shipsize_StrikeCruiser_upkeep_mult:0 "Strike Cruiser Upkeep"
+mod_shipsize_StrikeCruiser_hull_mult:0 "Strike Cruiser Hull Points"
+mod_shipsize_StrikeCruiser_build_speed_mult:0 "Strike Cruiser Build Speed"
+mod_ship_StrikeCruiser_cost_mult:0 "Strike Cruiser Build Cost"
+
+mod_shipsize_escortcarrier_upkeep_mult:0 "Escort Carrier Upkeep"
+mod_shipsize_escortcarrier_hull_mult:0 "Escort Carrier Hull Points"
+mod_shipsize_escortcarrier_build_speed_mult:0 "Escort Carrier Build Speed"
+mod_ship_escortcarrier_cost_mult:0 "Escort Carrier Build Cost"
+
+mod_shipsize_Battlecruiser_upkeep_mult:0 "Battlecruiser Upkeep"
+mod_shipsize_Battlecruiser_hull_mult:0 "Battlecruiser Hull Points"
+mod_shipsize_Battlecruiser_build_speed_mult:0 "Battlecruiser Build Speed"
+mod_ship_Battlecruiser_cost_mult:0 "Battlecruiser Build Cost"
+
+mod_shipsize_Carrier_upkeep_mult:0 "Carrier Upkeep"
+mod_shipsize_Carrier_hull_mult:0 "Carrier Hull Points"
+mod_shipsize_Carrier_build_speed_mult:0 "Carrier Build Speed"
+mod_ship_Carrier_cost_mult:0 "Carrier Build Cost"
+
+mod_shipsize_Dreadnought_upkeep_mult:0 "Dreadnought Upkeep"
+mod_shipsize_Dreadnought_hull_mult:0 "Dreadnought Hull Points"
+mod_shipsize_Dreadnought_build_speed_mult:0 "Dreadnought Build Speed"
+mod_ship_Dreadnought_cost_mult:0 "Dreadnought Build Cost"
+
+mod_shipsize_titan_upkeep_mult:0 "Titan Upkeep"
+mod_shipsize_titan_hull_mult:0 "Titan Hull Points"
+mod_shipsize_titan_build_speed_mult:0 "Titan Build Speed"
+mod_ship_titan_cost_mult:0 "Titan Build Cost"
+
+mod_shipsize_Flagship_upkeep_mult:0 "Flagship Upkeep"
+mod_shipsize_Flagship_hull_mult:0 "Flagship Hull Points"
+mod_shipsize_Flagship_build_speed_mult:0 "Flagship Build Speed"
+mod_ship_Flagship_cost_mult:0 "Flagship Build Cost"
+
+mod_shipsize_headquarters_build_speed_mult:0 "Headquarters Build Speed"
+mod_ship_headquarters_cost_mult:0 "Headquarters Build Cost"
+
+mod_shipsize_explorationship_build_speed_mult:0 "Exploration Cruiser Build Speed"
+mod_ship_explorationship_cost_mult:0 "Exploration Cruiser Build Cost"
+
+mod_country_resource_max_minerals_add:0 "Max Minerals"
+mod_country_resource_max_energy_add:0 "Max Energy"
+
+mod_leader_admirals_upkeep_mult:0 "Admiral Upkeep"
+
+country_command_limit_mult: "Fleet Command Limit"
+
+mod_weapon_type_point_defense_weapon_damage_mult:0 "Point Defense Weapon Damage"
+
+mod_planet_livestock_produces_mult:0 "Livestock Output"
+
+mod_pop_category_purge_produces_mult:0 "Purge Pops Output"
+
+mod_deposit_blockers_time_cost_mult:0 "Tile Blocker Removal Time"
+
+mod_shipsize_military_station_medium_build_speed_mult:0 "Defense Station Build Speed"
+
+mod_shipsize_military_station_large_build_speed_mult:0 "Defense Fortress Build Speed"
+
+mod_light_ship_focus: "Light Ship Focus"
+mod_light_ship_focus_desc: "A policy that focuses on a fleet of fast, light combat ships. Provides +20% build speed and -20% build cost to Corvettes, Destroyers, and Cruisers, but since our shipyards will be focused on these specific ships, larger classes will build 20% slower and be 20% more expensive."
+mod_versatility_focus: "Cruiser Focus"
+mod_versatility_focus_desc: "A policy that focuses on a fleet of mid-sized combat ships. Provides +20% build speed and -20% build cost to Cruisers, Strike Cruisers, and Battlecruisers, but since our shipyards will be focused on these specific ships, other classes will build 20% slower and be 20% more expensive."
+mod_capital_focus: "Capital Ship Focus"
+mod_capital_focus_desc: "A policy that focuses on a fleet of large and powerful warships. Provides +20% build speed and -20% build cost to Battleships, Carriers, Dreadnoughts, and Titans, but since our shipyards will be focused on these specific ships, smaller classes will build 20% slower and be 20% more expensive."
+mod_carrier_focus: "Carrier Focus"
+mod_carrier_focus_desc: "A policy that focuses on a fleet of Carriers equipped with large numbers of strike craft. Provides +35% build speed and -35% build cost to Escort Carriers and Carriers, but since our shipyards will be focused on these specific ships, other classes will build 20% slower and be 20% more expensive."
+
+mod_nsc_non_artificial_planet_slave_produces_mult:0 "$pop_cat_slave$ Pop Resource Output on Non-Artificial Worlds"
+mod_nsc_non_artificial_planet_worker_produces_mult:0 "$pop_cat_worker$ Pop Resource Output on Non-Artificial Worlds"
+mod_nsc_freebooter_jobs_produces_mult:0 "Pop Resource Output on Habitat, Relic Worlds"
+mod_nsc_freebooter_jobs_upkeep_mult:0 "Pop Upkeep on Habitat, Relic Worlds"
+
+mod_shipsize_StrikeCruiser_hull_mult: "StrikeCruiser Hull"
+mod_shipsize_Battlecruiser_hull_mult: "Battlecruiser Hull"
+mod_shipsize_Carrier_hull_mult: "Carrier Hull"
+mod_shipsize_Dreadnought_hull_mult: "Dreadnought Hull"
+mod_shipsize_Flagship_hull_mult: "Flagship Hull"
+
+mod_brawler_weapon_damage_mult: "Brawler Weapon Damage"
+mod_gunship_weapon_damage_mult: "Gunship Weapon Damage"
+mod_explosive_weapon_damage_mult: "Explosive Weapon Damage"
+
+megastructures_nsc_flagship_shipyard:0 "Grand Shipyard"
+mod_megastructures_nsc_flagship_shipyard_cost_mult:0 "Grand Shipyard Build Cost"
+
+shipsize_military_station_medium_build_speed_mult:0 "Defense Station Build Speed"
+shipsize_military_station_large_build_speed_mult:0 "Fortress Build Speed"

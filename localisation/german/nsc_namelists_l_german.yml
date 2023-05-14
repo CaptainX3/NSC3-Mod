@@ -1,0 +1,22 @@
+﻿l_german:
+
+##################################################################################################################################################################################################################
+### NAME LISTS ###
+##################
+
+NSC_NAME_STEVE:0 "Steve"
+
+name_list_1-NSC-Arthopoid: "NSC2 Arthopoid"
+name_list_1-NSC-Avian: "NSC2 Avian"
+name_list_1-NSC-Fungoid: "NSC2 Fungoid"
+name_list_1-NSC-Hive: "NSC2 Hive"
+name_list_1-NSC-Human: "NSC2 Human"
+name_list_1-NSC-Humanoid: "NSC2 Humanoid"
+name_list_1-NSC-Lithoid: "NSC2 Lithoid"
+name_list_1-NSC-Machine: "NSC2 Machine"
+name_list_1-NSC-Mammalian: "NSC2 Mammalian"
+name_list_1-NSC-Molluscoid: "NSC2 Molluscoid"
+name_list_1-NSC-Necroid: "NSC2 Necroid"
+name_list_1-NSC-Plantoid: "NSC2 Plantoid"
+name_list_1-NSC-Reptilian: "NSC2 Reptilian"
+name_list_1-NSC-Steve: "NSC2 Steve"
