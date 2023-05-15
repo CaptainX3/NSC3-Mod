@@ -1,0 +1,120 @@
+[img=https://i.imgur.com/coIAQl8.png]
+
+
+[img=https://i.imgur.com/7TfkmwZ.png]
+You can join our server and chat directly with the NSC2 devs and many other players and modders, or post ideas and suggestions for us! [u]Over 90% of the new content added to the mod comes directly from our Discord users![/u] Simply head to the link below to join.
+
+Join the Official NSC2 Discord: https://discord.gg/8yTv5MR9H3
+
+
+
+[img=https://i.imgur.com/qb8MUpV.png]
+[list]
+[*][b]Mass Effect Shipsets[/b] - Adds ships from the Mass Effect universe to Stellaris.
+[i](Note: This addon is not maintained by the NSC2 development team)[/i]
+https://steamcommunity.com/sharedfiles/filedetails/?id=2838228491
+[/list]
+
+
+
+[img=https://i.imgur.com/BPbpHUB.png]
+[b]We have uploaded the previous version of NSC2 to the workshop for those who wish to continue their save games before upgrading to this new version. To subscribe to the Previous Version, click here: https://steamcommunity.com/sharedfiles/filedetails/?id=2386308448[/b]
+
+
+
+
+[img=https://i.imgur.com/LeHB0xY.png]
+[h1][b]May 14, 2023 - Season 8 Update 2 (Mod Version 8.2)
+[i]New Save Game is [u]Not Required[/u][/i][/b][/h1]
+[list]
+[*]Now that we have a tool to help us automatically create and update the files, NSC2's localisation is now available in all languages in the game. The text will still be in English, but you no longer have to set your game language to English to see NSC2's text.
+
+[*]Reduced the number of leaders in the Leader Pool by half due to performance issues (Paradox is aware of this issue and is likely working on a fix).
+
+[*]Fixed a bug where some of the Advanced Ship Components were not being properly activated by the mod menu.
+
+[*]Fixed a bug where some settings weren't being properly applied by the mod menu.
+
+[*]Fixed some minor localisation errors.
+[/list]
+
+
+
+
+[img=https://i.imgur.com/MvnNcvc.png]
+[h1][b]May 13, 2023 - Season 8 Update 1 (Mod Version 8.1)
+[i]New Save Game is [u]Absolutely Required[/u][/i][/b][/h1]
+[list]
+[*]Mod code updated for Stellaris 3.8 Gemini.
+
+[*]NEW NSC2 Mod Menu: We have added an advanced configuration menu to NSC2. It will automatically pop up when you start a new game, and can be accessed at any time during a game via the Edicts screen or via the Mod Settings button if using Dynamic Mod Menu. This new menu will allow you to configure NSC2 to your liking by selecting which features of the mod you want to use during the game. It also includes a FAQ section with the most common questions the dev team gets asked. Please make sure you read all instructions the first time you use the menu so you know how it works! Also please note that not ALL NSC2 features can be turned on and off, as some things are required for other things in the mod to function. We have provided as much customization as is possible.
+
+[*]Flagship Change: The Flagship shipyard has now been changed into the Grand Shipyard, which is an actual shipyard where you build the Flagship as you would any other ship class at a starbase. The Grand Shipyard features 5 shipyards and can build the Flagship, the Colossus, the HQ station, Juggernauts, Titans, and Dreadnoughts with bonuses of -50% build cost and +50% build speed. (The Flagship event chain still exists, but has been altered a bit so you can build the Flagship directly rather than wait for the event to spawn it and hope it works properly.)
+
+[*]The Machine Shipset (https://steamcommunity.com/sharedfiles/filedetails/?id=2077186491) is now part of NSC2 directly until the original author returns to modding, if she chooses to do so. You can unsubscribe from the main mod on the Steam workshop for now as it is all built in to NSC2 directly. We have gone through and fixed all errors and issues that we could find with the set since it became outdated.
+
+[*]Offspring Destroyers, Cruisers, and Battleships now have access to the same ship sections & upgrades as the NSC2 versions of those ships. (We may expand Offspring stuff in the future when we have a chance.)
+
+[*]Removed the Prototype Exploration Cruiser event chain. Level 1 Exploration Cruiser tech will now be given via event near the start of the game and will be upgradable to Levels 2, 3, and 4 with tech research. The event which allows you to upgrade your science ships into Exploration Cruisers will happen after you research Level 2.
+
+[*]Exploration Cruisers will be limited to 3 at game start and will increase to a total limit of 10 once Level 2 tech is researched.
+
+[*]Increased the build limit of Colossus class ships from 1 to 3.
+
+[*]Removed the build limit on Titan class ships.
+
+[*]Added 3 more weapon and utility sections to the Juggernaut to make it more effective at combat and defense (this is a 300% increase from what it was before).
+
+[*]Increased the Juggernaut shipyard capacity from 6 to 15.
+
+[*]Increased the build limit of offspring ships by 3x (Original limit was 200 naval capacity, now it is 600).
+
+[*]Changed the lowest range on advanced combat tactics from 40 to 30 to account for recent vanilla weapon changes.
+
+[*]Added a build limit of 6 to the Starbase Detection Array module to keep cloaking from being completely useless due to the larger number of starbase slots in NSC2.
+
+[*]Added the missing HQ Station models for some of the more recent DLC species.
+
+[*]All Defense Platform, Station, & Fortress sections that can equip torpedoes now require torpedo tech before they can be used. (This will prevent the AI from building defenses with no weapons.)
+
+[*]Increased all Strike Cruiser reactor power levels by 30%.
+
+[*]Removed the 4 sizes of Solar Panels from the Starbase Buildings list and instead added one to the Modules list, which can be built more than once.
+
+[*]Removed the Power Station from the Starbase Modules list (replaced by the Solar Panels)
+
+[*]Added the Defense Station and Fortress to the Emergency Defense Initiative edict.
+
+[*]Reduced the default build time for Defense Stations from 150 days to 90 days.
+
+[*]Reduced the default build time for Defense Fortresses from 360 days to 120 days.
+
+[*]Reduced the range and tracking on the Harrington Missile Pod (the stats it had were for testing, they weren't meant for the final version).
+
+[*]Changed the Anchorage starbase module to give 20 naval capacity each and an extra 10 if the Naval Logistics Office is also built.
+
+[*]Log truncated due to Steam page character limit. Please read the complete change log here: https://steamcommunity.com/sharedfiles/filedetails/changelog/683230077
+[/list]
+
+
+
+
+[img]https://i.imgur.com/akB16zD.png[/img]
+
+[h1][b]If the above steps don't work to solve your issue, the best way to get assistance is to open a Support Ticket on the NSC2 Discord: https://discord.gg/8yTv5MR9H3[/b][/h1]
+
+
+
+[img=https://i.imgur.com/eT3BKYc.png]
+
+[h1][b]To report a bug with the mod, you can file a new Bug Report on the NSC2 Discord: https://discord.gg/8yTv5MR9H3[/b][/h1]
+
+
+[h3][i]Copyright 2023 T. Graham. This item is not authorized for posting on Steam except under the Steam account named CaptainX3. It is also not authorized to be posted on any other website EXCEPT the official Paradox Mods database. Copies of this mod found other than on this exact page or on the PDX Mod Database are stolen and unauthorized. All Rights Reserved.[/i][/h3]
+
+
+[h1][url=https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FYRBMQMX9CMQJ]If you'd like to make a donation for all of the hard work on this mod, you can click here to make a one-time or monthly donation via Paypal. We also have 3 monthly subscriptions on the NSC2 Discord that come with various benefits for those who would like to offer long term support.[/url][/h1]
+
+
+
+[img=https://i.imgur.com/HpvFgsd.png]
