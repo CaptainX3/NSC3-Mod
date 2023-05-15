@@ -1,5 +1,5 @@
 nsc_modmenu = {
-	length = 0
+	length = 1
 	icon = "GFX_edict_nsc_modmenu_icon"
 
 	effect = {
