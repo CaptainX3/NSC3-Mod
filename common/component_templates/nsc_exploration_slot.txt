@@ -14,7 +14,7 @@ utility_component_template = {
 	component_set = "exploration_ship_slot"
 	size_restriction = { explorationship }
 	
-	ai_weight = { weight = 1 }
+	ai_weight = { weight = 2 }
 }
 
 utility_component_template = {
