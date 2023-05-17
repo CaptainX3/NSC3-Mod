@@ -258,6 +258,16 @@ planet_buildings_strongholds = {
 
 ship_components = {
 	parent = ships
-
-	modifier_category = ship
+	
+	generate_mult_modifiers = {
+		cost
+        produces
+        upkeep
+	}
+	
+	generate_add_modifiers = {
+		cost
+        produces
+        upkeep
+	}
 }

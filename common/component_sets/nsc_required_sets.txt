@@ -19,13 +19,13 @@ component_set = {
 	required_component_set = yes
 }
 
-### EXPLORATION SLOT ###
-component_set = {
-	key = "exploration_ship_slot"
-	icon = "GFX_ship_part_sensor"
-	icon_frame = 1
-	required_component_set = yes
-}
+# ### EXPLORATION SLOT ###
+# component_set = {
+	# key = "exploration_ship_slot"
+	# icon = "GFX_ship_part_sensor"
+	# icon_frame = 1
+	# required_component_set = yes
+# }
 
 ### AURAS ###
 component_set = {
