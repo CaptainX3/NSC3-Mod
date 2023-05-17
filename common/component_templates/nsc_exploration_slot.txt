@@ -108,7 +108,6 @@ utility_component_template = {
 	resources = {
         category = ship_components
         cost = { alloys = @cost }
-        #produces = { physics_research = @research }      
     }
 
 	ship_modifier = {
@@ -136,8 +135,11 @@ utility_component_template = {
 	resources = {
         category = ship_components
         cost = { alloys = @cost }
-        produces = { society_research = @research }        
     }
+	
+	ship_modifier = {
+		ships_society_research_produces_add = @research
+	}
 
 	component_set = "EXPLORATION_SLOT_SOCIETY_LAB"
 	size_restriction = { explorationship }
@@ -160,8 +162,11 @@ utility_component_template = {
 	resources = {
         category = ship_components
         cost = { alloys = @cost  }
-        produces = { engineering_research = @research }
     }
+	
+	ship_modifier = {
+		ships_engineering_research_produces_add = @research
+	}
 	
 	component_set = "EXPLORATION_SLOT_ENGINEERING_LAB"
 	size_restriction = { explorationship }
@@ -296,8 +301,11 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = { alloys = 60  }
-		produces = { energy = 7 }
 		upkeep = { minerals = 5 }
+	}
+	
+	ship_modifier = {
+		ships_energy_produces_add = 7
 	}
 	
 	component_set = "EXPLORATION_SLOT_SOLAR_ARRAY"
@@ -321,11 +329,14 @@ utility_component_template = {
 	resources = {
 		category = ship_components
 		cost = { alloys = 60  }
-		produces = { alloys = 7 }
 		upkeep = {
 			minerals = 3
 			energy = 3 
 		}
+	}
+	
+	ship_modifier = {
+		ships_alloys_produces_add = 7
 	}
 	
 	component_set = "EXPLORATION_SLOT_ALLOY_REFINERY"
