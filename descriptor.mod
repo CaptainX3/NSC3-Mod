@@ -1,4 +1,4 @@
-name="NSC2 Developer Edition"
+name="NSC2 Season 8"
 tags={
 	"Spaceships"
 	"Gameplay"
