@@ -318,6 +318,14 @@ nsc_modmenu_etc_ai_difficulty_setting_reset_effect = {
 }
 nsc_modmenu_reset_all_settings_effect = {
 	optimize_memory
+	#recreates the data storage when it doesn't exist
+	if = {
+		limit = { NOT = { any_country = { is_country_type = nsc_modmenu_data_storage } } }
+		create_country = {
+			type = nsc_modmenu_data_storage
+			effect = { save_global_event_target_as = nsc_modmenu_data_storage }
+		}
+	}
 	### Category: Mod ###
 	nsc_modmenu_mod_faq_setting_reset_effect = yes
 
