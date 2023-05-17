@@ -108,8 +108,12 @@ utility_component_template = {
 	resources = {
         category = ship_components
         cost = { alloys = @cost }
-        produces = { physics_research = @research }        
+        #produces = { physics_research = @research }      
     }
+
+	ship_modifier = {
+		ships_physics_research_produces_add = @research
+	}
 
     component_set = "EXPLORATION_SLOT_PHYSICS_LAB"
     size_restriction = { explorationship }
