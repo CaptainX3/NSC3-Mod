@@ -10,6 +10,18 @@ ships = {
 
 	parent = country
 
+	generate_mult_modifiers = {
+		cost
+        produces
+        upkeep
+	}
+	
+	generate_add_modifiers = {
+		cost
+        produces
+        upkeep
+	}
+
 	triggered_cost_modifier = {
 		key = starbase_shipyard_build
 		use_parent_icon = yes
@@ -254,20 +266,4 @@ planet_buildings_strongholds = {
 	parent = planet_buildings
 
 	modifier_category = planet
-}
-
-ship_components = {
-	parent = ships
-	
-	generate_mult_modifiers = {
-		cost
-        produces
-        upkeep
-	}
-	
-	generate_add_modifiers = {
-		cost
-        produces
-        upkeep
-	}
 }
