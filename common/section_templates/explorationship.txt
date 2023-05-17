@@ -824,7 +824,7 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	aux_utility_slots = 2
+	aux_utility_slots = 3
 	
 	resources = {
 		category = ship_sections
@@ -862,7 +862,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	
-	aux_utility_slots = 2
+	aux_utility_slots = 3
 	
 	resources = {
 		category = ship_sections
@@ -900,7 +900,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	
-	aux_utility_slots = 2
+	aux_utility_slots = 3
 	
 	resources = {
 		category = ship_sections
@@ -1597,7 +1597,7 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections
@@ -1655,7 +1655,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections
@@ -1713,7 +1713,7 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	
-	aux_utility_slots = 3
+	aux_utility_slots = 5
 	
 	resources = {
 		category = ship_sections
@@ -2810,7 +2810,7 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	
-	aux_utility_slots = 4
+	aux_utility_slots = 6
 	
 	resources = {
 		category = ship_sections
@@ -2888,7 +2888,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	
-	aux_utility_slots = 4
+	aux_utility_slots = 6
 	
 	resources = {
 		category = ship_sections
@@ -2966,7 +2966,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}
 	
-	aux_utility_slots = 4
+	aux_utility_slots = 6
 	
 	resources = {
 		category = ship_sections

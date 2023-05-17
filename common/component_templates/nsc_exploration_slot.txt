@@ -5,24 +5,25 @@
 ##############################
 ### EXPLORATION COMPONENTS ###
 ##############################
-utility_component_template = {
-	key = "EXPLORATION_SLOT_EMPTY"
-	size = medium	
-	icon = "GFX_ship_part_empty_ftl_drive"
-	icon_frame = 1
+# utility_component_template = {
+	# key = "EXPLORATION_SLOT_EMPTY"
+	# size = aux
+	# icon = "GFX_ship_part_empty_ftl_drive"
+	# icon_frame = 1
+	# prerequisites = { "tech_explorationship_1" }
 
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
+	# component_set = "exploration_ship_slot"
+	# size_restriction = { explorationship }
 	
-	ai_weight = { weight = 2 }
-}
+	# ai_weight = { weight = 2 }
+# }
 
 utility_component_template = {
 	key = "EXPLORATION_SLOT_ANOMALY_LAB"
-	size = medium	
+	size = aux
 	icon = "GFX_exploration_slot_anomaly_lab"
 	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
+	prerequisites = { "tech_explorationship_1" }
 	
 	power = @power
 	resources = {
@@ -31,7 +32,9 @@ utility_component_template = {
 	}	
 	ship_modifier = { ship_anomaly_research_speed_mult = 1.5 }
 	
-	component_set = "exploration_ship_slot"
+	ship_limit = 2
+	
+	component_set = "EXPLORATION_SLOT_ANOMALY_LAB"
 	size_restriction = { explorationship }
 	
 	valid_for_country = {
@@ -43,10 +46,10 @@ utility_component_template = {
 
 utility_component_template = {
 	key = "EXPLORATION_SLOT_SURVEY_LAB"
-	size = medium	
+	size = aux
 	icon = "GFX_exploration_slot_survey_lab"
 	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
+	prerequisites = { "tech_explorationship_1" }
 	
 	power = @power
 	resources = {
@@ -55,7 +58,9 @@ utility_component_template = {
 	}
 	ship_modifier = { science_ship_survey_speed = 1.5 }
 	
-	component_set = "exploration_ship_slot"
+	ship_limit = 2
+	
+	component_set = "EXPLORATION_SLOT_SURVEY_LAB"
 	size_restriction = { explorationship }
 
 	valid_for_country = {
@@ -67,10 +72,10 @@ utility_component_template = {
 
 utility_component_template = {
 	key = "EXPLORATION_SLOT_ANALYSIS_LAB"
-	size = medium	
+	size = aux
 	icon = "GFX_exploration_slot_analysis_lab"
 	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
+	prerequisites = { "tech_explorationship_1" }
 	
 	power = @power
 	resources = {
@@ -79,7 +84,9 @@ utility_component_template = {
 	}
 	ship_modifier = { ship_anomaly_generation_chance_mult = 0.50 }
 	
-	component_set = "exploration_ship_slot"
+	ship_limit = 2
+	
+	component_set = "EXPLORATION_SLOT_ANALYSIS_LAB"
 	size_restriction = { explorationship }
 
 	valid_for_country = {
@@ -89,9 +96,248 @@ utility_component_template = {
 	ai_weight = { weight = 1 }	
 }
 
+
+utility_component_template = {
+    key = "EXPLORATION_SLOT_PHYSICS_LAB"
+    size = aux
+    icon = "GFX_exploration_slot_physics_lab"
+    icon_frame = 1
+	prerequisites = { "tech_explorationship_3" }
+	
+    power = @power
+	resources = {
+        category = ship_components
+        cost = { alloys = @cost }
+        produces = { physics_research = @research }        
+    }
+
+    component_set = "EXPLORATION_SLOT_PHYSICS_LAB"
+    size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
+	}
+
+    ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_SOCIETY_LAB"
+	size = aux
+	icon = "GFX_exploration_slot_society_lab"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_3" }
+	
+	power = @power
+	resources = {
+        category = ship_components
+        cost = { alloys = @cost }
+        produces = { society_research = @research }        
+    }
+
+	component_set = "EXPLORATION_SLOT_SOCIETY_LAB"
+	size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_ENGINEERING_LAB"
+	size = aux
+	icon = "GFX_exploration_slot_engineering_lab"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_3" }
+	
+	power = @power
+	resources = {
+        category = ship_components
+        cost = { alloys = @cost  }
+        produces = { engineering_research = @research }
+    }
+	
+	component_set = "EXPLORATION_SLOT_ENGINEERING_LAB"
+	size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
+	}
+	
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+	size = aux
+	icon = "GFX_exploration_slot_stellar_cartography"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_1" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	ship_modifier = {
+		ship_windup_mult = -0.90
+		ship_winddown_mult = -0.90
+		ship_interstellar_speed_mult = 0.50
+	}
+	
+	ship_limit = 1
+	
+	component_set = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+	size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
+	}
+
+	ai_weight = { weight = 1 }	
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+	size = aux
+	icon = "GFX_exploration_slot_quantum_thrusters"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_1" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	modifier = { 
+		ship_speed_mult = 0.30
+		ships_upkeep_mult = 0.05
+	}
+	
+	component_set = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+	size_restriction = { explorationship }
+	
+	ship_limit = 2
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
+	}
+
+	ai_weight = { weight = 1 }	
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+	size = aux
+	icon = "GFX_exploration_slot_navigational_array"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_2" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60 }
+	}
+	
+	sensor_range = 3
+	hyperlane_range = 3
+	
+	component_set = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+	size_restriction = { explorationship }
+	
+	ship_limit = 2
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
+	}
+
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_MINING_FACILITY"
+	size = aux
+	icon = "GFX_exploration_slot_mining_facility"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_4" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60  }
+		produces = { minerals = 7 }
+		upkeep = { energy = 5 }
+	}
+	
+	component_set = "EXPLORATION_SLOT_MINING_FACILITY"
+	size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
+	}
+	
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_SOLAR_ARRAY"
+	size = aux
+	icon = "GFX_exploration_slot_solar_array"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_4" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60  }
+		produces = { energy = 7 }
+		upkeep = { minerals = 5 }
+	}
+	
+	component_set = "EXPLORATION_SLOT_SOLAR_ARRAY"
+	size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
+	}
+	
+	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "EXPLORATION_SLOT_ALLOY_REFINERY"
+	size = aux
+	icon = "GFX_exploration_slot_alloy_refinery"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_4" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = 60  }
+		produces = { alloys = 7 }
+		upkeep = {
+			minerals = 3
+			energy = 3 
+		}
+	}
+	
+	component_set = "EXPLORATION_SLOT_ALLOY_REFINERY"
+	size_restriction = { explorationship }
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
+	}
+	
+	ai_weight = { weight = 1 }
+}
+
+
 #utility_component_template = {
 #	key = "EXPLORATION_SLOT_ARCH_LAB"
-#	size = medium	
+#	size = aux
 #	icon = "GFX_exploration_slot_arch_lab"
 #	icon_frame = 1
 #	
@@ -110,236 +356,3 @@ utility_component_template = {
 #
 #	ai_weight = { weight = 1 }	
 #}
-
-utility_component_template = {
-    key = "EXPLORATION_SLOT_PHYSICS_LAB"
-    size = medium	
-    icon = "GFX_exploration_slot_physics_lab"
-    icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-    power = @power
-  
-    resources = {
-        category = ship_components
-        cost = {  alloys = @cost }
-        produces = {  physics_research = @research }
-    }	
-    component_set = "exploration_ship_slot"
-    size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
-	}
-
-    ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_SOCIETY_LAB"
-	size = medium	
-	icon = "GFX_exploration_slot_society_lab"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-        category = ship_components
-        cost = { alloys = @cost }
-        produces = { society_research = @research }        
-    }
-
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
-	}
-
-	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_ENGINEERING_LAB"
-	size = medium	
-	icon = "GFX_exploration_slot_engineering_lab"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-        category = ship_components
-        cost = { alloys = @cost  }
-        produces = { engineering_research = @research }
-    }
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
-	}
-	
-	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
-	size = medium
-	icon = "GFX_exploration_slot_stellar_cartography"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-		category = ship_components
-		cost = { alloys = @cost }
-	}
-	ship_modifier = {
-		ship_windup_mult = -0.90
-		ship_winddown_mult = -0.90
-		ship_interstellar_speed_mult = 0.50
-	}
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
-	}
-
-	ai_weight = { weight = 1 }	
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
-	size = medium
-	icon = "GFX_exploration_slot_quantum_thrusters"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-		category = ship_components
-		cost = { alloys = @cost }
-	}
-	modifier = { 
-		ship_speed_mult = 0.30
-		ships_upkeep_mult = 0.05
-	}
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
-	}
-
-	ai_weight = { weight = 1 }	
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
-	size = medium
-	icon = "GFX_exploration_slot_navigational_array"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-		category = ship_components
-		cost = { alloys = 60 }
-	}
-	
-	ship_modifier = {
-		ship_sensor_range_add = 4
-		ship_hyperlane_range_add = 4
-	}
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
-	}
-
-	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_MINING_FACILITY"
-	size = medium	
-	icon = "GFX_exploration_slot_mining_facility"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-		category = ship_components
-		cost = { alloys = 60  }
-		produces = { minerals = 7 }
-		upkeep = { energy = 5 }
-	}
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
-	}
-	
-	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_SOLAR_ARRAY"
-	size = medium	
-	icon = "GFX_exploration_slot_solar_array"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-		category = ship_components
-		cost = { alloys = 60  }
-		produces = { energy = 7 }
-		upkeep = { minerals = 5 }
-	}
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
-	}
-	
-	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "EXPLORATION_SLOT_ALLOY_REFINERY"
-	size = medium	
-	icon = "GFX_exploration_slot_alloy_refinery"
-	icon_frame = 1
-	prerequisites = { "tech_explorationship_2" }
-	
-	power = @power
-	resources = {
-		category = ship_components
-		cost = { alloys = 60  }
-		produces = { alloys = 7 }
-		upkeep = {
-			minerals = 3
-			energy = 3 
-		}
-	}
-	
-	component_set = "exploration_ship_slot"
-	size_restriction = { explorationship }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
-	}
-	
-	ai_weight = { weight = 1 }
-}
