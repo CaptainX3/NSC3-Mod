@@ -1572,6 +1572,7 @@ explorationship = {
 	base_buildtime = 320
 	use_shipnames_from = science
 	combat_disengage_chance = 2.0
+	components_add_to_cost = no
 	
 	is_space_station = no
 	enable_default_design = yes
@@ -1585,7 +1586,6 @@ explorationship = {
 
 	resources = {
 		category = ships
-		cost = { alloys = 500 }
 		upkeep = {
 			energy = 5
 			alloys = 5
@@ -1613,10 +1613,10 @@ explorationship = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "exploration_ship_slot"
-	required_component_set = "exploration_ship_slot"
-	required_component_set = "exploration_ship_slot"
-	required_component_set = "exploration_ship_slot"
+	# required_component_set = "exploration_ship_slot"
+	# required_component_set = "exploration_ship_slot"
+	# required_component_set = "exploration_ship_slot"
+	# required_component_set = "exploration_ship_slot"
 	
 	ai_ship_data = {
 		min = value:desired_science_ships

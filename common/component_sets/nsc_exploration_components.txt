@@ -1,0 +1,85 @@
+
+
+component_set = {
+	key = "EXPLORATION_SLOT_ANOMALY_LAB"
+
+	icon = "GFX_exploration_slot_anomaly_lab"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_SURVEY_LAB"
+
+	icon = "GFX_exploration_slot_survey_lab"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_ANALYSIS_LAB"
+
+	icon = "GFX_exploration_slot_analysis_lab"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_PHYSICS_LAB"
+
+	icon = "GFX_exploration_slot_physics_lab"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_SOCIETY_LAB"
+
+	icon = "GFX_exploration_slot_anomaly_lab"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_ENGINEERING_LAB"
+
+	icon = "GFX_exploration_slot_engineering_lab"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+
+	icon = "GFX_exploration_slot_stellar_cartography"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+
+	icon = "GFX_exploration_slot_quantum_thrusters"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+
+	icon = "GFX_exploration_slot_navigational_array"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_MINING_FACILITY"
+
+	icon = "GFX_exploration_slot_mining_facility"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_SOLAR_ARRAY"
+
+	icon = "GFX_exploration_slot_solar_array"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "EXPLORATION_SLOT_ALLOY_REFINERY"
+
+	icon = "GFX_exploration_slot_alloy_refinery"
+	icon_frame = 1
+}

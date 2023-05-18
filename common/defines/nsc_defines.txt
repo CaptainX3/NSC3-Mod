@@ -12,7 +12,7 @@ NGameplay = {
 	COMMAND_LIMIT_BASE = 50
 	NAVAL_CAPACITY_BASE = 50
 	EXPERIMENTAL_SUBSPACE_NAVIGATION_TIME_MULT = 1.5	# value * hyperlane distance to system defines the MIA time (travel time in days) for a Science Ship MIA Jump
-	LEADER_POOL_SIZE = 10					# Each leader pool will consist of this many leaders
+	LEADER_POOL_SIZE = 5					# Each leader pool will consist of this many leaders
 	LEADER_POOL_LEAD_TIME = 1				# Years leaders will remain in the leader pool until replaced
 }
 
