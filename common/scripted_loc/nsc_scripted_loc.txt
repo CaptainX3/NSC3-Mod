@@ -1,0 +1,15 @@
+#mothball
+#[20:26:13][game_text.cpp:1086]: Unknown property `nsc_fleet_in_mothball_repair_timer_var` in text: nsc_fleet_in_mothball_repair_timer_var]§! Days
+defined_text = {
+	name = Get_nsc_fleet_in_mothball_repair_timer_var_status
+	random = no
+
+	text = {
+		trigger = { NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var } }
+		localization_key = nsc_fleet_in_mothball_repair_timer_var_cleared
+	}
+	text = {
+		trigger = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
+		localization_key = nsc_fleet_in_mothball_repair_timer_var_not_cleared
+	}
+}

@@ -6,6 +6,7 @@ nsc_modmenu_data_storage = {
 	needs_survey = no
 	diplomatic_wars = no
 	share_communications = no
+	default_ships = no
 	can_have_their_comms_shared = no
 	ship_disengagement = no
 	observable = no
@@ -20,7 +21,7 @@ nsc_modmenu_data_storage = {
 		auto_delete = no
 	}
 	modules = {
-		basic_technology_module = {}
+		standard_event_module = {}
 		exclusive_diplomacy_module = {}
 	}
 }
