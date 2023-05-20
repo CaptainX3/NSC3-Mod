@@ -86,8 +86,8 @@ nsc_modmenu_game_content_disable_effect_tooltip:0 "Click to §Rdisable§! this C
 nsc_modmenu_game_content_setting_trigger_tooltip.fail:0 "£trigger_no£ §RThis Content is currently disabled. Enable it to change this setting.§!"
 nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail:0 "£trigger_no£ §RCan not disable Vanilla Content.§!"
 
-nsc_modmenu_setting_page_reset_effect_tooltip:0 "Click to §YReset This Page§!."
-nsc_modmenu_go_home_page_effect_tooltip:0 "Click to §YReturn to the Home Page§!."
+nsc_modmenu_setting_page_reset_effect_tooltip:0 "Click to §Yreset this Page§!."
+nsc_modmenu_go_home_page_effect_tooltip:0 "Click to §Yreturn to the Home Page§!."
 
 nsc_modmenu_go_page_mod_preset_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_preset_name$§! Page."
 nsc_modmenu_go_page_mod_introduction_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_introduction_name$§! Page."

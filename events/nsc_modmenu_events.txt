@@ -54,10 +54,6 @@ event = {
 	is_triggered_only = yes
 
 	immediate = {
-		create_country = {
-			type = nsc_modmenu_data_storage
-			effect = { save_global_event_target_as = nsc_modmenu_data_storage }
-		}
 		nsc_modmenu_reset_all_settings_effect = yes
 	}
 }
@@ -78,7 +74,7 @@ country_event = {
 		set_country_flag = nsc_mp_host_country
 	}
 }
-#enables all contents until players press begin button #and opens the modmenu
+#enable all contents until players press begin button #and open the modmenu
 country_event = {
 	id = nsc_modmenu_etc.20
 	hide_window = yes
@@ -91,6 +87,26 @@ country_event = {
 
 	immediate = {
 		set_global_flag = nsc_on_press_begin
+		nsc_modmenu_open_effect = yes
+	}
+}
+#on_single_player_save_game_load
+#reset all modmenu settings to default, enabling all contents and then open the modmenu
+event = {
+	id = nsc_modmenu_etc.30
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOR = {
+			has_global_flag = nsc_on_press_begin
+			any_country = { is_country_type = nsc_modmenu_data_storage }
+		}
+	}
+
+	immediate = {
+		set_global_flag = nsc_on_press_begin
+		nsc_modmenu_reset_all_settings_effect = yes
 		nsc_modmenu_open_effect = yes
 	}
 }
