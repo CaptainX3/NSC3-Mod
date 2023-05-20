@@ -122,7 +122,21 @@ planet_event = {
 	option = {
 		name = nsc_events_mothball.menu.close
 		hidden_effect = {
-			every_fleet_in_orbit = { nsc_mothball_target_fleet_remove_all_flags_effect = yes }
+			every_fleet_in_orbit = {
+				switch = {
+					trigger = has_fleet_flag
+					nsc_mothball_temporal_target_1 = { remove_fleet_flag = nsc_mothball_temporal_target_1 }
+					nsc_mothball_temporal_target_2 = { remove_fleet_flag = nsc_mothball_temporal_target_2 }
+					nsc_mothball_temporal_target_3 = { remove_fleet_flag = nsc_mothball_temporal_target_3 }
+					nsc_mothball_temporal_target_4 = { remove_fleet_flag = nsc_mothball_temporal_target_4 }
+					nsc_mothball_temporal_target_5 = { remove_fleet_flag = nsc_mothball_temporal_target_5 }
+					nsc_mothball_temporal_target_6 = { remove_fleet_flag = nsc_mothball_temporal_target_6 }
+					nsc_mothball_temporal_target_7 = { remove_fleet_flag = nsc_mothball_temporal_target_7 }
+					nsc_mothball_temporal_target_8 = { remove_fleet_flag = nsc_mothball_temporal_target_8 }
+					nsc_mothball_temporal_target_9 = { remove_fleet_flag = nsc_mothball_temporal_target_9 }
+					nsc_mothball_temporal_target_10 = { remove_fleet_flag = nsc_mothball_temporal_target_10 }
+				}
+			}
 			remove_planet_flag = nsc_mothball_target_fleets_counting_stopped
 		}
 	}
@@ -158,8 +172,7 @@ fleet_event = {
 		remove_modifier = nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod
 		nsc_mothball_target_fleet_remove_all_flags_effect = yes
 		clear_variable = nsc_fleet_in_mothball_spent_time_for_repair_var
-		#[20:26:13][game_text.cpp:1086]: Unknown property `nsc_fleet_in_mothball_repair_timer_var` in text: nsc_fleet_in_mothball_repair_timer_var]§! Days
-		set_variable = { which = nsc_fleet_in_mothball_repair_timer_var value = 0 } #clear_variable = nsc_fleet_in_mothball_repair_timer_var
+		clear_variable = nsc_fleet_in_mothball_repair_timer_var
 		create_message = {
 			type = NSC_EVENTS_MOTHBALL_MESSAGE_TYPE
 			localization = NSC_EVENTS_MOTHBALL_MESSAGE_DESC
