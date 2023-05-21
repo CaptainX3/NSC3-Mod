@@ -21,13 +21,8 @@ anchorage = {
 
 	resources = {
 		category = starbase_modules
-		cost = {
-			alloys = 50
-		}
-
-		upkeep = {
-			energy = 1
-		}
+		cost = { alloys = 50 }
+		upkeep = { energy = 1 }
 	}
 
 	country_modifier = {
@@ -46,6 +41,7 @@ anchorage = {
 				type = anchorage
 				count < 2
 			}
+		}
 		modifier = {
 			factor = 0
 			count_starbase_modules = {
@@ -79,13 +75,8 @@ detection_array = {
 
 	resources = {
 		category = starbase_modules
-		cost = {
-			alloys = 25
-		}
-
-		upkeep = {
-			energy = 0.25
-		}
+		cost = { alloys = 25 }
+		upkeep = { energy = 0.25 }
 	}
 
 	station_modifier = {
@@ -394,13 +385,29 @@ space_foundry = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_foundry"
 	construction_days = 120
+	
 	resources = {
 		category = starbase_modules
 		cost = { alloys = 75 }
-		produces = { alloys = 8 }
-		produces = { trigger = { has_starbase_building = assembly_line_manufacturing } alloys = 1 }
-		upkeep = { minerals = 16 energy = 2 }
-	}	
+		
+		produces = { 
+			alloys = 8
+		}
+		upkeep = {
+			minerals = 16
+			energy = 2
+		}
+		produces = {
+			trigger = { has_starbase_building = assembly_line_manufacturing }
+			alloys = 1
+		}
+		upkeep = {
+			trigger = { has_starbase_building = assembly_line_manufacturing }
+			minerals = 2
+			energy = 1
+		}
+	}
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	
@@ -424,13 +431,29 @@ space_factory = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_factory"
 	construction_days = 120
+	
 	resources = {
 		category = starbase_modules
 		cost = { alloys = 75 }
-		produces = { consumer_goods = 10 }
-		produces = { trigger = { has_starbase_building = assembly_line_manufacturing } consumer_goods = 2 }
-		upkeep = { minerals = 10 energy = 2 }
-	}	
+		
+		produces = { 
+			consumer_goods = 10
+		}
+		upkeep = {
+			minerals = 10
+			energy = 2
+		}
+		produces = {
+			trigger = { has_starbase_building = assembly_line_manufacturing }
+			consumer_goods = 2
+		}
+		upkeep = {
+			trigger = { has_starbase_building = assembly_line_manufacturing }
+			minerals = 2
+			energy = 1
+		}
+	}
+
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	
@@ -516,9 +539,24 @@ solar_panel = {
 
 	resources = {
 		category = starbase_modules
-		cost = { alloys = 125 }
-		produces = { energy = 5 }
-		upkeep = { consumer_goods = 2 }
+		cost = { alloys = 150 }
+		
+		produces = { 
+			energy = 5
+		}
+		upkeep = {
+			minerals = 2
+			consumer_goods = 2
+		}
+		produces = {
+			trigger = { has_starbase_building = solar_capacitor }
+			energy = 2
+		}
+		upkeep = {
+			trigger = { has_starbase_building = solar_capacitor }
+			minerals = 1
+			consumer_goods = 1
+		}
 	}
 
 	ai_build_at_chokepoint = no
@@ -527,11 +565,11 @@ solar_panel = {
 	ai_weight = {
 		weight = 50
 		modifier = { factor = 5 has_starbase_size < starbase_starport }
-		modifier = { factor = 4 count_starbase_modules = { type = solar_panel count > 1 } }
-		modifier = { factor = 3 count_starbase_modules = { type = solar_panel count > 2 } }
-		modifier = { factor = 2 count_starbase_modules = { type = solar_panel count > 3 } }
-		modifier = { factor = 1 count_starbase_modules = { type = solar_panel count > 4 } }
-		modifier = { factor = 0 count_starbase_modules = { type = solar_panel count > 5 } }
+		modifier = { factor = 4 count_starbase_modules = { type = solar_panel count > 0 } }
+		modifier = { factor = 3 count_starbase_modules = { type = solar_panel count > 1 } }
+		modifier = { factor = 2 count_starbase_modules = { type = solar_panel count > 2 } }
+		modifier = { factor = 1 count_starbase_modules = { type = solar_panel count > 3 } }
+		modifier = { factor = 0 count_starbase_modules = { type = solar_panel count > 4 } }
 	}
 }
 

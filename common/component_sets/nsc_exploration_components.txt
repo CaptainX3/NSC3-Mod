@@ -22,6 +22,13 @@ component_set = {
 }
 
 component_set = {
+	key = "EXPLORATION_SLOT_DEBRIS_LAB"
+
+	icon = "GFX_exploration_slot_debris_lab"
+	icon_frame = 1
+}
+
+component_set = {
 	key = "EXPLORATION_SLOT_PHYSICS_LAB"
 
 	icon = "GFX_exploration_slot_physics_lab"
