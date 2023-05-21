@@ -206,9 +206,9 @@ guiTypes = {
 					}
 
 					@nsc_modmenu_setting_page_mod_category_preset_content_container_width_1 = 15
-					@nsc_modmenu_setting_page_mod_category_preset_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_mod_category_preset_content_container_width_2 = 204 #+189 x pixels from '@nsc_modmenu_setting_page_mod_category_preset_content_container_width_1'
-					@nsc_modmenu_setting_page_mod_category_preset_content_container_height_2 = 174 #+109 y pixels from '@nsc_modmenu_setting_page_mod_category_preset_content_container_height_1'
+					@nsc_modmenu_setting_page_mod_category_preset_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_mod_category_preset_content_container_height_2 = 154 #+99 y pixels from '@nsc_modmenu_setting_page_mod_category_preset_content_container_height_1'
 					@nsc_modmenu_setting_page_mod_category_preset_common_borderSize_width = 2
 					@nsc_modmenu_setting_page_mod_category_preset_apply_background_height = 39
 					@nsc_modmenu_setting_page_mod_category_preset_apply_width = 12
@@ -718,11 +718,11 @@ guiTypes = {
 					}
 			
 					@nsc_modmenu_setting_page_ship_category_class_content_container_width_1 = 64
-					@nsc_modmenu_setting_page_ship_category_class_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_ship_category_class_content_container_width_2 = 417 #+353 x pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_width_1'
-					@nsc_modmenu_setting_page_ship_category_class_content_container_height_2 = 213 #+148 y pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_height_1'
-					@nsc_modmenu_setting_page_ship_category_class_content_container_height_3 = 361
-					@nsc_modmenu_setting_page_ship_category_class_content_container_height_4 = 509
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_2 = 193 #+138 y pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_height_1'
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_3 = 331
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_4 = 469
 					@nsc_modmenu_setting_page_ship_category_class_common_header_width = 77
 					@nsc_modmenu_setting_page_ship_category_class_common_borderSize_width = 2
 					@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width = 240
@@ -1391,27 +1391,27 @@ guiTypes = {
 					}
 				
 					@nsc_modmenu_setting_page_ship_category_component_content_container_width_1 = 74
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_ship_category_component_content_container_width_2 = 423 #+349 x pixels from '@nsc_modmenu_setting_page_ship_category_component_content_container_width_1'
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_2 = 157 #+92 y pixels from '@nsc_modmenu_setting_page_ship_category_component_content_container_height_1'
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_3 = 249
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_4 = 341
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_5 = 433
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_6 = 525
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_7 = 617
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_8 = 709
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_9 = 801
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_10 = 893
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_11 = 985
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_12 = 1077
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_13 = 1169
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_14 = 1261
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_15 = 1353
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_16 = 1445
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_17 = 1537
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_18 = 1629
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_19 = 1721
-					@nsc_modmenu_setting_page_ship_category_component_content_container_height_20 = 1813
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_2 = 137 #+82 y pixels from '@nsc_modmenu_setting_page_ship_category_component_content_container_height_1'
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_3 = 219
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_4 = 301
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_5 = 383
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_6 = 465
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_7 = 547
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_8 = 629
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_9 = 711
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_10 = 793
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_11 = 875
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_12 = 957
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_13 = 1039
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_14 = 1121
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_15 = 1203
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_16 = 1285
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_17 = 1367
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_18 = 1449
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_19 = 1531
+					@nsc_modmenu_setting_page_ship_category_component_content_container_height_20 = 1613
 					@nsc_modmenu_setting_page_ship_category_component_common_icon_width = 3
 					@nsc_modmenu_setting_page_ship_category_component_common_icon_height = 3
 					@nsc_modmenu_setting_page_ship_category_component_common_header_width = 61
@@ -3574,9 +3574,9 @@ guiTypes = {
 					}
 
 					@nsc_modmenu_setting_page_starbase_category_class_content_container_width_1 = 89
-					@nsc_modmenu_setting_page_starbase_category_class_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_starbase_category_class_content_container_width_2 = 430 #+341 x pixels from '@nsc_modmenu_setting_page_starbase_category_class_content_container_width_1'
-					@nsc_modmenu_setting_page_starbase_category_class_content_container_height_2 = 213 #+148 y pixels from '@nsc_modmenu_setting_page_starbase_category_class_content_container_height_1'
+					@nsc_modmenu_setting_page_starbase_category_class_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_starbase_category_class_content_container_height_2 = 193 #+138 y pixels from '@nsc_modmenu_setting_page_starbase_category_class_content_container_height_1'
 					@nsc_modmenu_setting_page_starbase_category_class_common_icon_width = 4
 					@nsc_modmenu_setting_page_starbase_category_class_common_icon_height = 2
 					@nsc_modmenu_setting_page_starbase_category_class_common_header_width = 39
@@ -3915,13 +3915,13 @@ guiTypes = {
 					}
 				
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_width_1 = 74
-					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_width_2 = 423 #+349 x pixels from '@nsc_modmenu_setting_page_starbase_category_module_content_container_width_1'
-					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_2 = 157 #+92 y pixels from '@nsc_modmenu_setting_page_starbase_category_module_content_container_height_1'
-					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_3 = 249
-					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_4 = 341
-					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_5 = 433
-					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_6 = 525
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_2 = 137 #+82 y pixels from '@nsc_modmenu_setting_page_starbase_category_module_content_container_height_1'
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_3 = 219
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_4 = 301
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_5 = 383
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_6 = 465
 					@nsc_modmenu_setting_page_starbase_category_module_common_icon_width = 2
 					@nsc_modmenu_setting_page_starbase_category_module_common_header_width = 61
 					@nsc_modmenu_setting_page_starbase_category_module_common_header_height = 11
@@ -4531,27 +4531,27 @@ guiTypes = {
 					}
 
 					@nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 = 74
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 = 423 #+349 x pixels from '@nsc_modmenu_setting_page_starbase_category_building_content_container_width_1'
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_2 = 157 #+92 y pixels from '@nsc_modmenu_setting_page_starbase_category_building_content_container_height_1'
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_3 = 249
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_4 = 341
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_5 = 433
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_6 = 525
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_7 = 617
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_8 = 709
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_9 = 801
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_10 = 893
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_11 = 985
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_12 = 1077
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_13 = 1169
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_14 = 1261
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_15 = 1353
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_16 = 1445
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_17 = 1537
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_18 = 1629
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_19 = 1721
-					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_20 = 1813
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_2 = 137 #+82 y pixels from '@nsc_modmenu_setting_page_starbase_category_building_content_container_height_1'
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_3 = 219
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_4 = 301
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_5 = 383
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_6 = 465
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_7 = 547
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_8 = 629
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_9 = 711
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_10 = 793
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_11 = 875
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_12 = 957
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_13 = 1039
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_14 = 1121
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_15 = 1203
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_16 = 1285
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_17 = 1367
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_18 = 1449
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_19 = 1531
+					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_20 = 1613
 					@nsc_modmenu_setting_page_starbase_category_building_common_icon_width = 2
 					@nsc_modmenu_setting_page_starbase_category_building_common_header_width = 61
 					@nsc_modmenu_setting_page_starbase_category_building_common_header_height = 11
@@ -5981,10 +5981,10 @@ guiTypes = {
 					}
 				
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_width_1 = 64
-					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1 = 65
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_width_2 = 417 #+353 x pixels from '@nsc_modmenu_setting_page_etc_category_feature_content_container_width_1'
-					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_2 = 273 #+208 y pixels from '@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1'
-					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_3 = 481
+					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1 = 55
+					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_2 = 253 #+198 y pixels from '@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1'
+					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_3 = 451
 					@nsc_modmenu_setting_page_etc_category_feature_common_header_width = 61
 					@nsc_modmenu_setting_page_etc_category_feature_common_header_height = 22
 					@nsc_modmenu_setting_page_etc_category_feature_common_borderSize_width = 2
@@ -6704,6 +6704,8 @@ guiTypes = {
 						effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_go_next_button_effect"
 					}
 
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_width = 59
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_height = 47
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_position_width = 197
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width = 250
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height = 30
@@ -6720,7 +6722,7 @@ guiTypes = {
 					#presets
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_preset"
-						position = { x = 59 y = 57 }
+						position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_height }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header"
 							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_position_width y = 0 }
@@ -6795,59 +6797,63 @@ guiTypes = {
 						}
 					}
 
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_header_width = 57
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height = 25
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_width = 25 #+25 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_width'
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_1_width = 23 #-2 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_width'
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2_width = 40 #+15 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_width'
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_2_width = 38
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3_width = 55
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_3_width = 53
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4_width = 70
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_4_width = 68
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5_width = 85
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_5_width = 83
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6_width = 100
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_6_width = 98
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7_width = 115
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_7_width = 113
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8_width = 130
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_8_width = 128
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9_width = 145
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_9_width = 143
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10_width = 160
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_10_width = 158
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11_width = 175
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_11_width = 173
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12_width = 190
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_12_width = 188
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13_width = 205
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_13_width = 203
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14_width = 220
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_14_width = 218
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15_width = 235
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_15_width = 233
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16_width = 250
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_16_width = 248
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17_width = 265
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_17_width = 263
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18_width = 280
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_18_width = 278
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19_width = 295
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_19_width = 293
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20_width = 310
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_20_width = 308
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_width = 325
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_21_width = 323
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_width = 350 #25 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_width'
-
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_width = 198
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width = 57
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_1 = 172
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_2 = 220 #+48 y pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_1'
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_3 = 268
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height = 25
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_1_width = 25 #+25 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_width'
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_1_width = 23 #-2 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_1_width'
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_2_width = 40 #+15 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_1_width'
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_2_width = 38
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_3_width = 55
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_3_width = 53
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_4_width = 70
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_4_width = 68
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_5_width = 85
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_5_width = 83
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_6_width = 100
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_6_width = 98
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_7_width = 115
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_7_width = 113
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_8_width = 130
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_8_width = 128
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_9_width = 145
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_9_width = 143
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_10_width = 160
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_10_width = 158
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_11_width = 175
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_11_width = 173
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_12_width = 190
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_12_width = 188
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_13_width = 205
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_13_width = 203
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_14_width = 220
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_14_width = 218
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_15_width = 235
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_15_width = 233
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_16_width = 250
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_16_width = 248
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_17_width = 265
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_17_width = 263
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_18_width = 280
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_18_width = 278
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_19_width = 295
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_19_width = 293
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_20_width = 310
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_20_width = 308
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width = 325
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_21_width = 323
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_up_width = 350 #25 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width'
+					
 					#economy_bonus slider
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus"
-						position = { x = 198 y = 192 }
+						position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_1 }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_header"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_header_width y = 0 }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width y = 0 }
 							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
 							text = "AI Economy Bonus Slider"
@@ -6857,15 +6863,15 @@ guiTypes = {
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down"
-							position = { x = 0 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height }
+							position = { x = 0 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height }
 							quadTextureSprite = "gfx_horizontal_left_button"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_button_effect"
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_1_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_button_effect"
@@ -6873,8 +6879,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_1"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_1_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_1_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_1_button_effect"
@@ -6882,8 +6888,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_2_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2_button_effect"
@@ -6891,8 +6897,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_2"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_2_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_2_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_2_button_effect"
@@ -6900,8 +6906,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_3_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3_button_effect"
@@ -6909,8 +6915,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_3"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_3_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_3_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_3_button_effect"
@@ -6918,8 +6924,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_4_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4_button_effect"
@@ -6927,8 +6933,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_4"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_4_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_4_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_4_button_effect"
@@ -6936,8 +6942,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_5_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5_button_effect"
@@ -6945,8 +6951,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_5"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_5_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_5_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_5_button_effect"
@@ -6954,8 +6960,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_6_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6_button_effect"
@@ -6963,8 +6969,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_6"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_6_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_6_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_6_button_effect"
@@ -6972,8 +6978,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_7_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7_button_effect"
@@ -6981,8 +6987,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_7"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_7_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_7_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_7_button_effect"
@@ -6990,8 +6996,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_8_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8_button_effect"
@@ -6999,8 +7005,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_8"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_8_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_8_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_8_button_effect"
@@ -7008,8 +7014,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_9_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9_button_effect"
@@ -7017,8 +7023,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_9"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_9_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_9_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_9_button_effect"
@@ -7026,8 +7032,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_10_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10_button_effect"
@@ -7035,8 +7041,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_10"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_10_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_10_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_10_button_effect"
@@ -7044,8 +7050,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_11_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11_button_effect"
@@ -7053,8 +7059,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_11"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_11_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_11_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_11_button_effect"
@@ -7062,8 +7068,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_12_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12_button_effect"
@@ -7071,8 +7077,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_12"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_12_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_12_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_12_button_effect"
@@ -7080,8 +7086,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_13_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13_button_effect"
@@ -7089,8 +7095,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_13"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_13_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_13_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_13_button_effect"
@@ -7098,8 +7104,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_14_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14_button_effect"
@@ -7107,8 +7113,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_14"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_14_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_14_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_14_button_effect"
@@ -7116,8 +7122,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_15_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15_button_effect"
@@ -7125,8 +7131,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_15"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_15_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_15_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_15_button_effect"
@@ -7134,8 +7140,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_16_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16_button_effect"
@@ -7143,8 +7149,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_16"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_16_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_16_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_16_button_effect"
@@ -7152,8 +7158,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_17_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17_button_effect"
@@ -7161,8 +7167,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_17"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_17_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_17_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_17_button_effect"
@@ -7170,8 +7176,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_18_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18_button_effect"
@@ -7179,8 +7185,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_18"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_18_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_18_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_18_button_effect"
@@ -7188,8 +7194,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_19_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19_button_effect"
@@ -7197,8 +7203,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_19"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_19_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_19_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_19_button_effect"
@@ -7206,8 +7212,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_20_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20_button_effect"
@@ -7215,8 +7221,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_20"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_20_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_20_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_20_button_effect"
@@ -7224,8 +7230,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_button_effect"
@@ -7233,29 +7239,26 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_21"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_21_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_21_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_21_button_effect"
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_up_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height }
 							quadTextureSprite = "gfx_horizontal_right_button"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_button_effect"
 						}
 					}
-
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_header_width = 57
-
 					#technology_bonus slider
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus"
-						position = { x = 198 y = 250 }
+						position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_2 }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_header"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_header_width y = 0 }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width y = 0 }
 							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
 							text = "AI Technology Bonus Slider"
@@ -7265,15 +7268,15 @@ guiTypes = {
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down"
-							position = { x = 0 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height }
+							position = { x = 0 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height }
 							quadTextureSprite = "gfx_horizontal_left_button"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_button_effect"
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_1"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_1_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_1_button_effect"
@@ -7281,8 +7284,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_1"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_1_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_1_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_1_button_effect"
@@ -7290,8 +7293,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_2"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_2_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_2_button_effect"
@@ -7299,8 +7302,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_2"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_2_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_2_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_2_button_effect"
@@ -7308,8 +7311,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_3"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_3_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_3_button_effect"
@@ -7317,8 +7320,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_3"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_3_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_3_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_3_button_effect"
@@ -7326,8 +7329,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_4"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_4_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_4_button_effect"
@@ -7335,8 +7338,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_4"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_4_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_4_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_4_button_effect"
@@ -7344,8 +7347,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_5"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_5_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_5_button_effect"
@@ -7353,8 +7356,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_5"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_5_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_5_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_5_button_effect"
@@ -7362,8 +7365,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_6"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_6_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_6_button_effect"
@@ -7371,8 +7374,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_6"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_6_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_6_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_6_button_effect"
@@ -7380,8 +7383,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_7"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_7_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_7_button_effect"
@@ -7389,8 +7392,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_7"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_7_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_7_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_7_button_effect"
@@ -7398,8 +7401,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_8"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_8_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_8_button_effect"
@@ -7407,8 +7410,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_8"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_8_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_8_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_8_button_effect"
@@ -7416,8 +7419,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_9"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_9_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_9_button_effect"
@@ -7425,8 +7428,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_9"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_9_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_9_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_9_button_effect"
@@ -7434,8 +7437,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_10"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_10_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_10_button_effect"
@@ -7443,8 +7446,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_10"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_10_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_10_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_10_button_effect"
@@ -7452,8 +7455,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_11"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_11_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_11_button_effect"
@@ -7461,8 +7464,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_11"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_11_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_11_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_11_button_effect"
@@ -7470,8 +7473,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_12"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_12_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_12_button_effect"
@@ -7479,8 +7482,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_12"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_12_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_12_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_12_button_effect"
@@ -7488,8 +7491,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_13"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_13_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_13_button_effect"
@@ -7497,8 +7500,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_13"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_13_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_13_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_13_button_effect"
@@ -7506,8 +7509,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_14"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_14_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_14_button_effect"
@@ -7515,8 +7518,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_14"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_14_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_14_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_14_button_effect"
@@ -7524,8 +7527,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_15"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_15_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_15_button_effect"
@@ -7533,8 +7536,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_15"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_15_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_15_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_15_button_effect"
@@ -7542,8 +7545,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_16"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_16_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_16_button_effect"
@@ -7551,8 +7554,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_16"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_16_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_16_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_16_button_effect"
@@ -7560,8 +7563,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_17"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_17_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_17_button_effect"
@@ -7569,8 +7572,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_17"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_17_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_17_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_17_button_effect"
@@ -7578,8 +7581,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_18"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_18_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_18_button_effect"
@@ -7587,8 +7590,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_18"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_18_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_18_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_18_button_effect"
@@ -7596,8 +7599,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_19"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_19_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_19_button_effect"
@@ -7605,8 +7608,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_19"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_19_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_19_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_19_button_effect"
@@ -7614,8 +7617,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_20"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_20_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_20_button_effect"
@@ -7623,8 +7626,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_20"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_20_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_20_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_20_button_effect"
@@ -7632,8 +7635,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_21"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_21_button_effect"
@@ -7641,29 +7644,26 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_21"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_21_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_21_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_21_button_effect"
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_up_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height }
 							quadTextureSprite = "gfx_horizontal_right_button"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_button_effect"
 						}
 					}
-
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_header_width = 57
-
 					#military_bonus slider
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus"
-						position = { x = 198 y = 308 }
+						position = { x = 198 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_3 }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_header"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_header_width y = 0 }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width y = 0 }
 							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
 							text = "AI Military Bonus Slider"
@@ -7673,15 +7673,15 @@ guiTypes = {
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down"
-							position = { x = 0 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height }
+							position = { x = 0 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height }
 							quadTextureSprite = "gfx_horizontal_left_button"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_button_effect"
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_1"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_1_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_1_button_effect"
@@ -7689,8 +7689,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_1"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_1_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_1_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_1_button_effect"
@@ -7698,8 +7698,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_2"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_2_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_2_button_effect"
@@ -7707,8 +7707,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_2"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_2_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_2_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_2_button_effect"
@@ -7716,8 +7716,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_3"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_3_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_3_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_3_button_effect"
@@ -7725,8 +7725,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_3"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_3_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_3_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_3_button_effect"
@@ -7734,8 +7734,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_4"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_4_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_4_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_4_button_effect"
@@ -7743,8 +7743,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_4"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_4_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_4_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_4_button_effect"
@@ -7752,8 +7752,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_5"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_5_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_5_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_5_button_effect"
@@ -7761,8 +7761,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_5"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_5_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_5_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_5_button_effect"
@@ -7770,8 +7770,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_6"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_6_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_6_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_6_button_effect"
@@ -7779,8 +7779,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_6"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_6_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_6_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_6_button_effect"
@@ -7788,8 +7788,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_7"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_7_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_7_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_7_button_effect"
@@ -7797,8 +7797,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_7"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_7_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_7_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_7_button_effect"
@@ -7806,8 +7806,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_8"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_8_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_8_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_8_button_effect"
@@ -7815,8 +7815,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_8"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_8_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_8_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_8_button_effect"
@@ -7824,8 +7824,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_9"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_9_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_9_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_9_button_effect"
@@ -7833,8 +7833,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_9"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_9_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_9_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_9_button_effect"
@@ -7842,8 +7842,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_10"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_10_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_10_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_10_button_effect"
@@ -7851,8 +7851,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_10"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_10_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_10_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_10_button_effect"
@@ -7860,8 +7860,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_11"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_11_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_11_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_11_button_effect"
@@ -7869,8 +7869,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_11"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_11_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_11_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_11_button_effect"
@@ -7878,8 +7878,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_12"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_12_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_12_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_12_button_effect"
@@ -7887,8 +7887,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_12"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_12_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_12_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_12_button_effect"
@@ -7896,8 +7896,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_13"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_13_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_13_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_13_button_effect"
@@ -7905,8 +7905,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_13"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_13_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_13_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_13_button_effect"
@@ -7914,8 +7914,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_14"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_14_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_14_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_14_button_effect"
@@ -7923,8 +7923,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_14"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_14_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_14_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_14_button_effect"
@@ -7932,8 +7932,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_15"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_15_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_15_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_15_button_effect"
@@ -7941,8 +7941,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_15"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_15_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_15_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_15_button_effect"
@@ -7950,8 +7950,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_16"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_16_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_16_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_16_button_effect"
@@ -7959,8 +7959,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_16"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_16_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_16_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_16_button_effect"
@@ -7968,8 +7968,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_17"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_17_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_17_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_17_button_effect"
@@ -7977,8 +7977,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_17"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_17_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_17_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_17_button_effect"
@@ -7986,8 +7986,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_18"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_18_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_18_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_18_button_effect"
@@ -7995,8 +7995,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_18"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_18_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_18_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_18_button_effect"
@@ -8004,8 +8004,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_19"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_19_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_19_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_19_button_effect"
@@ -8013,8 +8013,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_19"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_19_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_19_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_19_button_effect"
@@ -8022,8 +8022,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_20"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_20_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_20_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_20_button_effect"
@@ -8031,8 +8031,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_20"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_20_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_20_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_20_button_effect"
@@ -8040,8 +8040,8 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_21"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_21_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_nsc_modmenu_horizontal_slider_track_piece"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_21_button_effect"
@@ -8049,15 +8049,15 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_21"
 							position = {
-								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_21_width
-								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height
+								x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_21_width
+								y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height
 							}
 							quadTextureSprite = "GFX_horizontal_slider"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_21_button_effect"
 						}
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_height }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_up_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_down_height }
 							quadTextureSprite = "gfx_horizontal_right_button"
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_button_effect"
 						}
