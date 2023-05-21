@@ -150,7 +150,7 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 }
 nsc_modmenu_ship_component_setting_reset_effect = {
 	optimize_memory
-	#components (total 39)
+	#components (total 38)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
@@ -230,7 +230,7 @@ nsc_modmenu_starbase_module_setting_reset_effect = {
 }
 nsc_modmenu_starbase_building_setting_reset_effect = {
 	optimize_memory
-	#buildings (total 27)
+	#buildings (total 29)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = drydock }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = sensor_station }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = starbase_management }
