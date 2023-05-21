@@ -143,7 +143,7 @@ guiTypes = {
 			effect = "nsc_modmenu_close_button_effect"
 		}
 
-		@nsc_modmenu_main_height = 1800
+		@nsc_modmenu_main_height = 1610
 
 		containerWindowType = {
 			name = "nsc_modmenu_main"
@@ -413,7 +413,7 @@ guiTypes = {
 						effect = "nsc_modmenu_setting_page_mod_category_faq_text_short_button_effect"
 					}
 
-					@nsc_modmenu_setting_page_mod_common_text_size_long_height = 800
+					@nsc_modmenu_setting_page_mod_common_text_size_long_height = 760
 
 					#the difference of this effect button with the above one is its height size #this button is longer
 					effectbuttonType = {
@@ -6887,7 +6887,7 @@ guiTypes = {
 							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_position_width y = 0 }
 							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
-							text = "AI Difficulty Presets"
+							text = "nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_name"
 							font = "malgun_goth_24"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_shared_button_effect"
@@ -6957,7 +6957,8 @@ guiTypes = {
 					}
 
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_width = 198
-					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width = 57
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_position_width = 32
+					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_size_width = 300
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_1 = 172
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_2 = 220 #+48 y pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_1'
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_3 = 268
@@ -7012,10 +7013,10 @@ guiTypes = {
 						position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_1 }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_header"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width y = 0 }
-							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_position_width y = 0 }
+							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
-							text = "AI Economy Bonus Slider"
+							text = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_name"
 							font = "malgun_goth_24"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_shared_button_effect"
@@ -7417,10 +7418,10 @@ guiTypes = {
 						position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_2 }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_header"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width y = 0 }
-							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_position_width y = 0 }
+							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
-							text = "AI Technology Bonus Slider"
+							text = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_name"
 							font = "malgun_goth_24"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_shared_button_effect"
@@ -7822,10 +7823,10 @@ guiTypes = {
 						position = { x = 198 y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_height_3 }
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_header"
-							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_width y = 0 }
-							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
+							position = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_position_width y = 0 }
+							size = { x = @nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_header_size_width y = @nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height }
 							spriteType = "GFX_invisible"
-							text = "AI Military Bonus Slider"
+							text = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_name"
 							font = "malgun_goth_24"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_etc_category_ai_difficulty_shared_button_effect"

@@ -5,11 +5,11 @@ defined_text = {
 
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus SYMBOL = = VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_neutral
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_neutral
 	}
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus SYMBOL = > VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_plus
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_plus
 	}
 }
 #technology_bonus slider
@@ -19,11 +19,11 @@ defined_text = {
 
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus SYMBOL = = VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_neutral
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_neutral
 	}
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus SYMBOL = > VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_plus
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_plus
 	}
 }
 #military_bonus slider
@@ -33,10 +33,10 @@ defined_text = {
 
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus SYMBOL = = VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_neutral
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_neutral
 	}
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus SYMBOL = > VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_plus
+		localization_key = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_plus
 	}
 }
