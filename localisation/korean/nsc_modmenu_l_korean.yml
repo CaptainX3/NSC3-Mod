@@ -49,7 +49,7 @@ nsc_modmenu.1.desc:0 ""
 nsc_modmenu.1.a:0 ""
 
 nsc_modmenu.2.name:0 "Caution"
-nsc_modmenu.2.desc:0 "§R*** WARNING *** WARNING *** WARNING ***\n\nThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!\n\n"
+nsc_modmenu.2.desc:0 "§R*** WARNING *** WARNING *** WARNING ***\n\nThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make certain changes AT THE START OF YOUR GAME!\n\nIf you turn on or off some features in the middle of a game, there is a very good chance that it will completely break your save.\n\n§!§GWhat is safe to change in the middle of a game?\n\nYou can safely INCREASE any AI bonus that you'd like at any time.\n\nYou can safely DECREASE any of the build cost, build speed, or upkeep numbers at any time.\n\nYou can safely enable or disable any components or ship classes that NO EMPIRE has researched yet.\n\n§!§HWhat is NOT safe to change in the middle of a game?\n\nDo not DECREASE the AI bonuses during a game, this can cause their economy to collapse.\n\nDo not INCREASE any of the build cost, build speed, or upkeep numbers, this can also cause issues with AI empires.\n\nDo not turn off any component, ship class, or other object that has already been researched by ANY empire. This can break the game in unexpected ways.\n\n§!§ROnce again, BE VERY CAREFUL OF CHANGING MOD SETTINGS IN THE MIDDLE OF A GAME. Do so at your own risk - we are not responsible for broken save games. You have been warned!§!"
 nsc_modmenu.2.a:0 "$ACKNOWLEDGED$"
 
 ### Custom GUI Common ###
@@ -86,8 +86,8 @@ nsc_modmenu_game_content_disable_effect_tooltip:0 "Click to §Rdisable§! this C
 nsc_modmenu_game_content_setting_trigger_tooltip.fail:0 "£trigger_no£ §RThis Content is currently disabled. Enable it to change this setting.§!"
 nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail:0 "£trigger_no£ §RCan not disable Vanilla Content.§!"
 
-nsc_modmenu_setting_page_reset_effect_tooltip:0 "Click to §YReset This Page§!."
-nsc_modmenu_go_home_page_effect_tooltip:0 "Click to §YReturn to the Home Page§!."
+nsc_modmenu_setting_page_reset_effect_tooltip:0 "Click to §Yreset this Page§!."
+nsc_modmenu_go_home_page_effect_tooltip:0 "Click to §Yreturn to the Home Page§!."
 
 nsc_modmenu_go_page_mod_preset_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_preset_name$§! Page."
 nsc_modmenu_go_page_mod_introduction_effect_tooltip:0 "Click to go to §Y$nsc_modmenu_setting_page_mod_category_introduction_name$§! Page."
@@ -403,6 +403,11 @@ nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_n
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_enabled_desc:0 "$EXPLORATION_SLOT_ANALYSIS_LAB$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_disabled_desc:0 "$EXPLORATION_SLOT_ANALYSIS_LAB$: §RDisabled§!"
 
+#EXPLORATION_SLOT_DEBRIS_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_name_desc:0 "§H$EXPLORATION_SLOT_DEBRIS_LAB$§!\n$EXPLORATION_SLOT_DEBRIS_LAB_DESC$"
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_enabled_desc:0 "$EXPLORATION_SLOT_DEBRIS_LAB$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_disabled_desc:0 "$EXPLORATION_SLOT_DEBRIS_LAB$: §RDisabled§!"
+
 #EXPLORATION_SLOT_PHYSICS_LAB
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_name_desc:0 "§H$EXPLORATION_SLOT_PHYSICS_LAB$§!\n$EXPLORATION_SLOT_PHYSICS_LAB_DESC$"
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_enabled_desc:0 "$EXPLORATION_SLOT_PHYSICS_LAB$: §GEnabled§!"
@@ -477,10 +482,10 @@ nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc:0 
 #Common
 nsc_modmenu_setting_page_starbase_category_class_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_class_name$"
 
-nsc_modmenu_starbase_class_upgrade_cost_down_effect_tooltip:0 "Click to change the Upgrade Cost of this Starbase Class by §G-5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
-nsc_modmenu_starbase_class_upgrade_cost_up_effect_tooltip:0 "Click to change the Upgrade Cost of this Starbase Class by §R+5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
-nsc_modmenu_starbase_class_upgrade_speed_down_effect_tooltip:0 "Click to change the Upgrade Speed of this Starbase Class by §R-5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
-nsc_modmenu_starbase_class_upgrade_speed_up_effect_tooltip:0 "Click to change the Upgrade Speed of this Starbase Class by §G+5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
+nsc_modmenu_starbase_class_upgrade_cost_down_effect_tooltip:0 "Click to change the Upgrade Cost of all Starbase Levels by §G-5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_starbase_class_upgrade_cost_up_effect_tooltip:0 "Click to change the Upgrade Cost of all Starbase Levels by §R+5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
+nsc_modmenu_starbase_class_upgrade_speed_down_effect_tooltip:0 "Click to change the Upgrade Speed of all Starbase Levels by §R-5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
+nsc_modmenu_starbase_class_upgrade_speed_up_effect_tooltip:0 "Click to change the Upgrade Speed of all Starbase Levels by §G+5%§!.\n§YDue to Technical Limits, all Starbase Levels share the same Upgrade Cost & Speed Settings.§!"
 
 nsc_modmenu_starbase_class_upgrade_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_upgrade_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_starbase_class_upgrade_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_upgrade_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
@@ -505,7 +510,7 @@ nsc_modmenu_setting_page_starbase_category_class_headquarters_enabled_desc:0 "$s
 nsc_modmenu_setting_page_starbase_category_class_headquarters_disabled_desc:0 "$starbase_headquarters$: §RDisabled§!"
 
 #outpost
-nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "$TECH_UNLOCK_OUTPOST_CONSTRUCTION_DESC$"
+nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "This setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC2."
 nsc_modmenu_setting_page_starbase_category_class_outpost_enabled_desc:0 "$starbase_outpost$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_disabled_desc:0 "$starbase_outpost$: §RDisabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
@@ -515,10 +520,10 @@ nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_neutra
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
 
-nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of this Starbase Class by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
-nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of this Starbase Class by §R+5%§!."
-nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of this Starbase Class by §R-5%§!."
-nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of this Starbase Class by §G+5%§!."
+nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of all Starbase Levels by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of all Starbase Levels by by §R+5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of all Starbase Levels by by §R-5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of all Starbase Levels by by §G+5%§!."
 
 nsc_modmenu_starbase_class_outpost_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_starbase_class_outpost_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
@@ -627,6 +632,16 @@ nsc_modmenu_setting_page_starbase_category_building_customs_office_disabled_desc
 nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_name_desc:0 "§H$sm_nsc_nanite_field$§!\n$sm_nsc_nanite_field_desc$"
 nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_enabled_desc:0 "$sm_nsc_nanite_field$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_disabled_desc:0 "$sm_nsc_nanite_field$: §RDisabled§!"
+
+#solar_capacitor
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_name_desc:0 "§H$sm_solar_capacitor$§!\n$sm_solar_capacitor_desc$"
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_enabled_desc:0 "$sm_solar_capacitor$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_disabled_desc:0 "$sm_solar_capacitor$: §RDisabled§!"
+
+#artifact_silo
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_name_desc:0 "§H$sm_artifact_silo$§!\n$sm_artifact_silo_desc$"
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_enabled_desc:0 "$sm_artifact_silo$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_disabled_desc:0 "$sm_artifact_silo$: §RDisabled§!"
 
 #construction_office
 nsc_modmenu_setting_page_starbase_category_building_construction_office_name_desc:0 "§H$sm_construction_office$§!\n$sm_construction_office_desc$"
@@ -830,6 +845,8 @@ nsc_modmenu_setting_page_etc_category_feature_hospital_resource_upkeep_desc_plus
 nsc_modmenu_setting_page_etc_category_ai_difficulty_name:0 "$nsc_modmenu_setting_button_category_etc_name$ $nsc_modmenu_setting_button_etc_ai_difficulty_name$"
 
 #Presets
+nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_name:0 "AI Difficulty Presets"
+
 nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_none_name:0 "None"
 nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_name:0 "Very Easy"
 nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_easy_name:0 "Easy"
@@ -855,6 +872,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_hard_trigger_too
 nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_custom_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_custom_effect_tooltip$\n£trigger_no£ §RThis Preset is already applied.§!"
 
 #economy_bonus slider
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_name:0 "AI Economy Bonus: [nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_economy_bonus]"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_neutral:0 "§Y[This.nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_plus:0 "§G+[This.nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_var]%§!"
+
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_effect_tooltip:0 "Click to change the Resources Production of AI Empires by §R-5%§!."
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_effect_tooltip:0 "Click to change the Resources Production of AI Empires by §G+5%§!."
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_1_effect_tooltip:0 "Click to set AI Resources Production Bonus to §G+0%§!."
@@ -882,11 +903,13 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_economy_bonus_2
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
 
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_neutral:0 "Current AI Resources Production Bonus: §Y[This.nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_var]%§!"
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc_plus:0 "Current AI Resources Production Bonus: §G+[This.nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_var]%§!"
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc:0 "[nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_economy_bonus]"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_economy_bonus_desc:0 "Current AI Resources Production Bonus: [nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_economy_bonus]"
 
 #technology_bonus slider
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_name:0 "AI Technology Bonus: [nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_technology_bonus]"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_neutral:0 "§Y[This.nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_plus:0 "§G+[This.nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_var]%§!"
+
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_effect_tooltip:0 "Click to change the Technology Research Speed of AI Empires by §R-5%§!."
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_effect_tooltip:0 "Click to change the Technology Research Speed of AI Empires by §G+5%§!."
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonus_1_effect_tooltip:0 "Click to set AI Technology Research Speed Bonus to §G+0%§!."
@@ -914,11 +937,13 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonu
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_technology_bonus_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
 
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_neutral:0 "Current AI Technology Research Speed Bonus: §Y[This.nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_var]%§!"
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc_plus:0 "Current AI Technology Research Speed Bonus: §G+[This.nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_var]%§!"
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc:0 "[nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_technology_bonus]"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_desc:0 "Current AI Technology Research Speed Bonus: [nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_technology_bonus]"
 
 #military_bonus slider
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_name:0 "AI Military Bonus: [nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_military_bonus]"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_neutral:0 "§Y[This.nsc_modmenu_etc_feature_ai_difficulty_military_bonus_var]%§!"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_plus:0 "§G+[This.nsc_modmenu_etc_feature_ai_difficulty_military_bonus_var]%§!"
+
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_effect_tooltip:0 "Click to change the Ship Weapon Damage of AI Empires by §R-5%§!."
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_effect_tooltip:0 "Click to change the Ship Weapon Damage of AI Empires by §G+5%§!."
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_1_effect_tooltip:0 "Click to set AI Ship Weapon Damage Bonus to §G+0%§!."
@@ -946,6 +971,4 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_trigger_tooltip.fail:0 "$nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
 
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_neutral:0 "Current AI Ship Weapon Damage Bonus: §Y[This.nsc_modmenu_etc_feature_ai_difficulty_military_bonus_var]%§!"
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc_plus:0 "Current AI Ship Weapon Damage Bonus: §G+[This.nsc_modmenu_etc_feature_ai_difficulty_military_bonus_var]%§!"
-nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc:0 "[nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_military_bonus]"
+nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_military_bonus_desc:0 "Current AI Ship Weapon Damage Bonus: [nsc_modmenu_data_storage.Get_nsc_etc_ai_difficulty_current_military_bonus]"

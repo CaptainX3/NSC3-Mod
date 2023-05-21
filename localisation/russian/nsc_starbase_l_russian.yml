@@ -6,38 +6,41 @@
 ####################################
 
 stb_shipyard: "Shipyard"
-stb_shipyard_desc: "A starbase focused on ship construction."
+stb_shipyard_desc: "A starbase focused on ship construction.\n"
 
 sm_drydock: "Drydock"
-sm_drydock_desc: "This specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair warships."
-sm_drydock_desc_modifier: "Increases the the build capacity of each §Y$sm_shipyard$§! by §G1§!"
+sm_drydock_desc: "This specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair warships.\n"
+sm_drydock_desc_modifier: "Increases the the build capacity of each §Y$sm_shipyard$§! by §G1§!\n"
 
 sm_sensor_station: "Sensor Station"
-sm_sensor_station_desc: "The starbase sensor station uses advanced sensor arrays to extend our intelligence gathering capabilities across several star systems, giving us advanced warning of any possible threats near our borders."
+sm_sensor_station_desc: "The starbase sensor station uses advanced sensor arrays to extend our intelligence gathering capabilities across several star systems, giving us advanced warning of any possible threats near our borders.\n"
 
-sm_solar_panel: "Solar Panel Network"
-sm_solar_panel_desc: "This network of solar panels provides energy to the starbase, helping to counteract the costs of running the installation and generating surplus energy."
+sm_solar_panel: "Solar Panel"
+sm_solar_panel_desc: "This set of solar panels provides energy to the starbase, helping to counteract the costs of running the installation and generating surplus energy.\n"
 
 sm_starbase_management: "Starbase Administration Office"
-sm_starbase_management_desc: "Some systems are absolutely critical to the maintenance of our empire's trade networks. A Starbase Administration Office is the seat of a very important official of our Empire, tasked with the protection of local trade routes and the defense of this critical starbase."
+sm_starbase_management_desc: "Some systems are absolutely critical to the maintenance of our empire's trade networks. A Starbase Administration Office is the seat of a very important official of our Empire, tasked with the protection of local trade routes and the defense of this critical starbase.\n"
 
 sm_customs_office: "Starbase Customs Office"
-sm_customs_office_desc: "Central location for all immigration for the system."
+sm_customs_office_desc: "Central location for all immigration for the system.\n"
 
 sm_starbase_management_machine: "Starbase Network Hub"
-sm_starbase_management_machine_desc: "01000101 01110010 01110010 01101111 01110010 00100000 00110100 00110000 00110100 0001010"
+sm_starbase_management_machine_desc: "01000101 01110010 01110010 01101111 01110010 00100000 00110100 00110000 00110100 0001010\n"
 
 sm_starbase_management_hive: "Starbase Lair"
-sm_starbase_management_hive_desc: "We are one."
+sm_starbase_management_hive_desc: "We are one.\n"
 
 sm_mining_base: "System Mineral Refinery"
-sm_mining_base_desc: "Some systems are specialized for the extraction of mineral resources to fuel our economy. A System Mineral Refinery gives a starbase the capacity to increase the efficiency of mineral extraction operations on all planets within the system."
+sm_mining_base_desc: "Some systems are specialized for the extraction of mineral resources to fuel our economy. A System Mineral Refinery gives a starbase the capacity to increase the efficiency of mineral extraction operations on all planets within the system.\n"
 
 sm_farming_base: "System Agriculture Terminal"
-sm_farming_base_desc: "Some systems are specialized towards producing vast quantities of food to sustain our ever-growing population. A System Agriculture Terminal coordinates the efforts of all agricultural enterprises in the star system, increasing crop yields on all affected planets."
+sm_farming_base_desc: "Some systems are specialized towards producing vast quantities of food to sustain our ever-growing population. A System Agriculture Terminal coordinates the efforts of all agricultural enterprises in the star system, increasing crop yields on all affected planets.\n"
 
 sm_power_station: "System Energy Grid"
-sm_power_station_desc: "Some systems are specialized towards producing the raw energy all civilizations need to function. A System Energy Grid oversees all power-generating efforts across the system, increasing the efficiency of our technicians on all planets within the star system."
+sm_power_station_desc: "Some systems are specialized towards producing the raw energy all civilizations need to function. A System Energy Grid oversees all power-generating efforts across the system, increasing the efficiency of our technicians on all planets within the star system.\n"
+
+sm_artifact_silo: "Minor Artifacts Storage"
+sm_artifact_silo_desc: "This specialized silo can be used to store Minor Artifacts on a starbase.\n"
 
 
 
@@ -46,106 +49,115 @@ sm_power_station_desc: "Some systems are specialized towards producing the raw e
 #########################
  
  sm_shield_module: "Shield Generator"
- sm_shield_module_desc: "Adds more shields to the Starbase."
+ sm_shield_module_desc: "Adds more shields to the Starbase.\n"
 
  sm_armor_module: "Armor Plating"
- sm_armor_module_desc: "Adds more armor to the Starbase."
+ sm_armor_module_desc: "Adds more armor to the Starbase.\n"
 
  sm_pd_battery: "Point Defense System"
- sm_pd_battery_desc: "Adds two point defense slots to the Starbase."
+ sm_pd_battery_desc: "Adds four point defense slots to the Starbase.\n"
+ 
+ sm_gun_battery: "Gun Battery"
+ sm_gun_battery_desc: "Adds four medium weapon slots to the Starbase.\n"
+ 
+ sm_missile_battery: "Torpedo Battery"
+ sm_missile_battery_desc: "Adds four torpedo weapon slots to the Starbase.\n"
  
  sm_large_battery: "Large Battery"
- sm_large_battery_desc: "Adds one large weapon slot to the Starbase."
+ sm_large_battery_desc: "Adds two large weapon slots to the Starbase.\n"
  
  sm_xl_battery: "Extra Large Battery"
- sm_xl_battery_desc: "Adds one extra large weapon slot to the Starbase. §YWARNING: There is a build limit of 5 of these per starbase.§!"
+ sm_xl_battery_desc: "Adds one extra large weapon slot to the Starbase.\n\n§YWARNING: There is a build limit of 5 of these per starbase.§!\n"
  
  sm_titanic_battery: "Titanic Battery"
- sm_titanic_battery_desc: "Adds one titanic weapon slot to the Starbase. §YWARNING: There is a build limit of 2 of these per starbase.§!"
+ sm_titanic_battery_desc: "Adds one titanic weapon slot to the Starbase.\n\n§YWARNING: There is a build limit of 2 of these per starbase.§!\n"
  
  sm_construction_office: "Starbase Construction Office"
- sm_construction_office_desc: "Increases the efficiency at which the starbase builds modules, buildings, and upgrades."
+ sm_construction_office_desc: "Increases the efficiency at which the starbase builds modules, buildings, and upgrades.\n"
  
  sm_asteroid_mining: "Asteroid Mining Team"
- sm_asteroid_mining_desc: "A team which mines stray asteroids that are too small to be targeted by a standard mining station. Having an §GAsteroid Mining Manager§! will improve the output by §Y2 Minerals§! £minerals."
+ sm_asteroid_mining_desc: "A team which mines stray asteroids that are too small to be targeted by a standard mining station. Having an §GAsteroid Mining Manager§! will improve the output by §Y2 Minerals§! £minerals.\n"
 
  sm_mining_manager: "Asteroid Mining Manager"
- sm_mining_manager_desc: "A Manager that increases the efficiency of every asteroid mining team. Will improve the output of every §GAsteroid Mining Team§! by §Y2 Minerals§! £minerals."
+ sm_mining_manager_desc: "A Manager that increases the efficiency of every asteroid mining team. Will improve the output of every §GAsteroid Mining Team§! by §Y2 Minerals§! £minerals.\n"
+ 
+ sm_solar_capacitor: "Solar Capacitors"
+ sm_solar_capacitor_desc: "A capacitor system that increases the energy production efficiency of Solar Panels.\n\n§YSolar Panel§! Production: §G+2 Energy§! £energy\n\n\n§YSolar Panel§! Upkeep: §R+1 Minerals§! £minerals  (for Gestalts) and  §R+1 Consumer Goods§! £consumer_goods£  (for Non-Gestalts)\n"
 
  sm_reinforced_defenses: "Reinforced Starbase Defenses"
- sm_reinforced_defenses_desc: "Improves the shields and armor of the Starbase."
+ sm_reinforced_defenses_desc: "Improves the shields and armor of the Starbase.\n"
 
  sm_strategic_defenses: "Strategic Starbase Defenses"
- sm_strategic_defenses_desc: "Improves the shields and weapons of the Starbase."
+ sm_strategic_defenses_desc: "Improves the shields and weapons of the Starbase.\n"
 
  sm_adv_starbase_defenses: "Advanced Starbase Defenses"
- sm_adv_starbase_defenses_desc: "Improves the armor and weapons of the Starbase."
+ sm_adv_starbase_defenses_desc: "Improves the armor and weapons of the Starbase.\n"
 
  sm_orbital_lab: "Orbital Research Lab"
- sm_orbital_lab_desc: "An advanced research laboratory. Having a §GSupport Lab§! will improve the research output."
+ sm_orbital_lab_desc: "An advanced research laboratory. Having a §GSupport Lab§! will improve the research output.\n"
 
  sm_orbital_physics_support_lab: "Physics Support Lab"
- sm_orbital_physics_support_lab_desc: "A laboratory specializing in Physics research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Physics Research§!."
+ sm_orbital_physics_support_lab_desc: "A laboratory specializing in Physics research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Physics Research§!.\n"
 
  sm_orbital_society_support_lab: "Society Support Lab"
- sm_orbital_society_support_lab_desc: "A laboratory specializing in Society research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Society Research§!."
+ sm_orbital_society_support_lab_desc: "A laboratory specializing in Society research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Society Research§!.\n"
 
  sm_orbital_engineering_support_lab: "Engineering Support Lab"
- sm_orbital_engineering_support_lab_desc: "A laboratory specializing in Egineering research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Engineering Research§!."
+ sm_orbital_engineering_support_lab_desc: "A laboratory specializing in Egineering research. Will improve the output of every §GOrbital Research Lab§! by §Y2 Engineering Research§!.\n"
 
  sm_ground_forces_academy: "Ground Forces Academy"
- sm_ground_forces_academy_desc: "Increases the efficiency in which ground armies are recruited and trained."
+ sm_ground_forces_academy_desc: "Increases the efficiency in which ground armies are recruited and trained.\n"
 
  sm_repair_module: "Repair Facility"
- sm_repair_module_desc: "A facility that specializes in the rapid repair of ships orbiting the starbase."
+ sm_repair_module_desc: "A facility that specializes in the rapid repair of ships orbiting the starbase.\n"
 
  sm_space_foundry: "Space Foundry"
- sm_space_foundry_desc: "The space foundry will refine minerals into alloys. Having §GAssembly Line Manufacturing§! will improve the output by §Y1 Alloy§!  £alloys."
+ sm_space_foundry_desc: "The space foundry will refine minerals into alloys. Having §GAssembly Line Manufacturing§! will improve the output by §Y1 Alloy§!  £alloys.\n"
 
  sm_space_factory: "Space Factory"
- sm_space_factory_desc: "The space factory will refine minerals into consumer goods. Having §GAssembly Line Manufacturing§! will improve the output by §Y2 Consumer Goods§!  £consumer_goods."
+ sm_space_factory_desc: "The space factory will refine minerals into consumer goods. Having §GAssembly Line Manufacturing§! will improve the output by §Y2 Consumer Goods§!  £consumer_goods.\n"
 
  sm_security_branch_office: "Security Branch Office"
- sm_security_branch_office_desc: "A secury branch office will focus on the defense of your trade routes against the local piracy."
+ sm_security_branch_office_desc: "A secury branch office will focus on the defense of your trade routes against the local piracy.\n"
 
  sm_administration_office: "Administration Office"
- sm_administration_office_desc: "Assists in empire-level management tasks, increasing the administration ability of the empire."
+ sm_administration_office_desc: "Assists in empire-level management tasks, increasing the administration ability of the empire.\n"
 
  sm_synthetic_crystal_fabricator: "Synthetic Crystals Fabricator"
- sm_synthetic_crystal_fabricator_desc: "A special refinery that transforms minerals into rare crystals."
+ sm_synthetic_crystal_fabricator_desc: "A special refinery that transforms minerals into rare crystals.\n"
 
  sm_synthetic_volatile_motes_fabricator: "Synthetic Volatile Motes Fabricator"
- sm_synthetic_volatile_motes_fabricator_desc: "A special refinery that transforms minerals into volatile motes."
+ sm_synthetic_volatile_motes_fabricator_desc: "A special refinery that transforms minerals into volatile motes.\n"
 
  sm_synthetic_gase_fabricator: "Synthetic Gases Fabricator"
- sm_synthetic_gase_fabricator_desc: "A special refinery that transforms minerals into exotic gases."
+ sm_synthetic_gase_fabricator_desc: "A special refinery that transforms minerals into exotic gases.\n"
 
  sm_robot_assembly: "Robot Assembly Facility"
- sm_robot_assembly_desc: "Builds robot populations and automatically transfers them into the colonies of the system."
+ sm_robot_assembly_desc: "Builds robot populations and automatically transfers them into the colonies of the system.\n"
 
  sm_assembly_line_manufacturing: "Assembly Line Manufacturing"
- sm_assembly_line_manufacturing_desc: "Helps in the production of alloys and consumer goods both in space and on planets. Will also improve the output of every §GSpace Foundry§! by §Y1 Alloy§!  £alloys  and §GSpace Factory§! by §Y2 Consumer Goods§!  £consumer_goods." 
+ sm_assembly_line_manufacturing_desc: "Helps in the production of alloys and consumer goods both in space and on planets. Will also improve the output of every §GSpace Foundry§! by §Y1 Alloy§!  £alloys  and §GSpace Factory§! by §Y2 Consumer Goods§!  £consumer_goods.\n" 
 
  sm_federal_reserve_bank: "Federal Reserve Bank"
- sm_federal_reserve_bank_desc: "A large financial bank that helps to improve trade within the system."
+ sm_federal_reserve_bank_desc: "A large financial bank that helps to improve trade within the system.\n"
 
  sm_cloning_facilities: "Cloning Facilities"
- sm_cloning_facilities_desc: "Facilities that increase population growth across the system, at the cost of population happiness."
+ sm_cloning_facilities_desc: "Facilities that increase population growth across the system, at the cost of population happiness.\n"
 
  sm_navcom_ai: "Navcom AI"
- sm_navcom_ai_desc: "An extremely advanced navigation system that can rapidly calculate coordinates for emergency jumps. Increases the chance for ships to successfully disengage from combat."
+ sm_navcom_ai_desc: "An extremely advanced navigation system that can rapidly calculate coordinates for emergency jumps. Increases the chance for ships to successfully disengage from combat.\n"
 
  sm_starbase_ai: "Starbase Artificial Intelligence"
- sm_starbase_ai_desc: "An extremely advanced AI computer capable of improving a starbase's attack, defense, and trade protection abilities."
+ sm_starbase_ai_desc: "An extremely advanced AI computer capable of improving a starbase's attack, defense, and trade protection abilities.\n"
 
  sm_tv_studio: "Entertainment TV Studio"
- sm_tv_studio_desc: "A TV studio that produces entertainment programming for citizens across the system, increasing planetary amenities."
+ sm_tv_studio_desc: "A TV studio that produces entertainment programming for citizens across the system, increasing planetary amenities.\n"
 
  sm_real_estate_dev: "Real Estate Developer"
- sm_real_estate_dev_desc: "An office where real estate agents assist citizens with finding suitable locations for new homes. Increases the available planetary housing."
+ sm_real_estate_dev_desc: "An office where real estate agents assist citizens with finding suitable locations for new homes. Increases the available planetary housing.\n"
 
  sm_tv_network: "TV News Network"
- sm_tv_network_desc: "A TV studio that produces news programming for citizens across the system, increasing planetary stability. Would you like to know more?"
+ sm_tv_network_desc: "A TV studio that produces news programming for citizens across the system, increasing planetary stability. Would you like to know more?\n"
 
  POINT_DEFENCE_STARBASE: "Automated Defense System"
  POINT_DEFENCE_STARBASE_DESC: "Automated Defense System"
