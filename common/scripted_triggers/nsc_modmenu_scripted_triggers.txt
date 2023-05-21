@@ -81,6 +81,7 @@ nsc_modmenu_ship_component_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
@@ -128,6 +129,8 @@ nsc_modmenu_starbase_building_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = farming_base }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = customs_office }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = nsc_nanite_field }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo }
 	
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = construction_office }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = mining_manager }

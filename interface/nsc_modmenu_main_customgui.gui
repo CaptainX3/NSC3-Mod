@@ -2732,10 +2732,67 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_off_button_effect"
 						}
 					}
+					#EXPLORATION_SLOT_DEBRIS_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_12 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_DEBRIS_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_DEBRIS_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_off_button_effect"
+						}
+					}
 					#EXPLORATION_SLOT_PHYSICS_LAB
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_12 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_13 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_icon_background"
@@ -2792,7 +2849,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_SOCIETY_LAB
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_13 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_13 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_icon_background"
@@ -2849,7 +2906,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_ENGINEERING_LAB
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_13 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_14 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_icon_background"
@@ -2906,7 +2963,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_STELLAR_CARTOGRAPHY
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_14 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_14 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_icon_background"
@@ -2963,7 +3020,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_QUANTUM_THRUSTERS
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_14 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_15 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_icon_background"
@@ -3020,7 +3077,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_NAVIGATIONAL_ARRAY
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_15 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_15 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_icon_background"
@@ -3077,7 +3134,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_MINING_FACILITY
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_15 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_16 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_icon_background"
@@ -3134,7 +3191,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_SOLAR_ARRAY
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_16 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_16 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_icon_background"
@@ -3191,7 +3248,7 @@ guiTypes = {
 					#EXPLORATION_SLOT_ALLOY_REFINERY
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_16 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_17 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_icon_background"
@@ -3248,7 +3305,7 @@ guiTypes = {
 					#BATTLESHIP_SNIPER_GUN_1
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_17 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_17 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1_icon_background"
@@ -3305,7 +3362,7 @@ guiTypes = {
 					#BATTLESHIP_SNIPER_GUN_2
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_17 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_18 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_2_icon_background"
@@ -3362,7 +3419,7 @@ guiTypes = {
 					#TOMAHAWK_CRUISE_MISSILE
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_18 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_18 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_icon_background"
@@ -3419,7 +3476,7 @@ guiTypes = {
 					#HARPOON_CRUISE_MISSILE
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_18 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_19 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_icon_background"
@@ -3476,7 +3533,7 @@ guiTypes = {
 					#NSC_PD_MISSILE
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE"
-						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_19 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_19 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_icon_background"
@@ -4968,10 +5025,112 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_off_button_effect"
 						}
 					}
+					#solar_capacitor
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_5 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_building_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_orbitalring_energy_hub"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_header_width y = @nsc_modmenu_setting_page_starbase_category_building_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_building_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_solar_capacitor"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_building_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_on_width y = @nsc_modmenu_setting_page_starbase_category_building_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_on_width y = @nsc_modmenu_setting_page_starbase_category_building_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_off_button_effect"
+						}
+					}
+					#artifact_silo
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_5 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_building_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_spaceport_module_resource_silo"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_header_width y = @nsc_modmenu_setting_page_starbase_category_building_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_building_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_artifact_silo"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_building_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_building_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_on_width y = @nsc_modmenu_setting_page_starbase_category_building_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_building_common_on_width y = @nsc_modmenu_setting_page_starbase_category_building_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_building_artifact_silo_off_button_effect"
+						}
+					}
 					#construction_office
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_construction_office"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_5 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_6 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_construction_office_icon_background"
@@ -5022,7 +5181,7 @@ guiTypes = {
 					#mining_manager
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_mining_manager"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_5 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_6 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_mining_manager_icon_background"
@@ -5073,7 +5232,7 @@ guiTypes = {
 					#reinforced_defenses
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_reinforced_defenses"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_6 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_7 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_reinforced_defenses_icon_background"
@@ -5124,7 +5283,7 @@ guiTypes = {
 					#strategic_defenses
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_strategic_defenses"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_6 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_7 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_strategic_defenses_icon_background"
@@ -5175,7 +5334,7 @@ guiTypes = {
 					#adv_starbase_defenses
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_adv_starbase_defenses"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_7 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_8 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_adv_starbase_defenses_icon_background"
@@ -5226,7 +5385,7 @@ guiTypes = {
 					#repair_module
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_repair_module"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_7 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_8 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_repair_module_icon_background"
@@ -5277,7 +5436,7 @@ guiTypes = {
 					#ground_forces_academy
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_ground_forces_academy"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_8 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_9 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_ground_forces_academy_icon_background"
@@ -5328,7 +5487,7 @@ guiTypes = {
 					#synthetic_crystal_fabricator
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_synthetic_crystal_fabricator"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_8 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_9 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_synthetic_crystal_fabricator_icon_background"
@@ -5379,7 +5538,7 @@ guiTypes = {
 					#synthetic_volatile_motes_fabricator
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_synthetic_volatile_motes_fabricator"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_9 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_10 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_synthetic_volatile_motes_fabricator_icon_background"
@@ -5430,7 +5589,7 @@ guiTypes = {
 					#synthetic_gase_fabricator
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_synthetic_gase_fabricator"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_9 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_10 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_synthetic_gase_fabricator_icon_background"
@@ -5481,7 +5640,7 @@ guiTypes = {
 					#robot_assembly
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_robot_assembly"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_10 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_11 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_robot_assembly_icon_background"
@@ -5532,7 +5691,7 @@ guiTypes = {
 					#assembly_line_manufacturing
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_assembly_line_manufacturing"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_10 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_11 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_assembly_line_manufacturing_icon_background"
@@ -5583,7 +5742,7 @@ guiTypes = {
 					#federal_reserve_bank
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_federal_reserve_bank"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_11 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_12 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_federal_reserve_bank_icon_background"
@@ -5634,7 +5793,7 @@ guiTypes = {
 					#cloning_facilities
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_cloning_facilities"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_11 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_12 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_cloning_facilities_icon_background"
@@ -5685,7 +5844,7 @@ guiTypes = {
 					#navcom_ai
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_navcom_ai"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_12 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_13 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_navcom_ai_icon_background"
@@ -5736,7 +5895,7 @@ guiTypes = {
 					#starbase_ai
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_starbase_ai"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_12 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_13 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_starbase_ai_icon_background"
@@ -5787,7 +5946,7 @@ guiTypes = {
 					#real_estate_dev
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_real_estate_dev"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_13 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_14 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_real_estate_dev_icon_background"
@@ -5838,7 +5997,7 @@ guiTypes = {
 					#tv_network
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_tv_network"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_13 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_14 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_tv_network_icon_background"
@@ -5889,7 +6048,7 @@ guiTypes = {
 					#tv_studio
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_building_tv_studio"
-						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_14 }
+						position = { x = @nsc_modmenu_setting_page_starbase_category_building_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_building_content_container_height_15 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_building_tv_studio_icon_background"

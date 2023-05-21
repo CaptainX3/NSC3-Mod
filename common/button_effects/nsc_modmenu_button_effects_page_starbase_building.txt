@@ -253,6 +253,62 @@ nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_off_button_
         hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = nsc_nanite_field } }
     }
 }
+#solar_capacitor
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_building_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_building_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = building ID = solar_capacitor } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_building_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = solar_capacitor } }
+    }
+}
+#artifact_silo
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_building_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_building_artifact_silo_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_building_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = building ID = artifact_silo } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_building_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = building ID = artifact_silo } }
+    }
+}
 #construction_office
 nsc_modmenu_setting_page_starbase_category_building_construction_office_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_starbase_building_page_opened }

@@ -266,8 +266,8 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nsc_modmenu_REACTOR_BOOSTER_1"
 		textureFile = "gfx/interface/icons/ship_parts/nsc_reactor_booster_4.dds"
-		#hover over an icon and you will see it becomes brighter (when that icon is part of an 'effectbuttonType' ui object) without this 'effectFile' #and that's the only reason of this code block
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+		#hover over an icon and you will see it becomes brighter and makes click sound (when that icon is part of an 'effectbuttonType' ui object) without this 'effectFile'
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader" #and that's the only reason of this code block
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_REACTOR_BOOSTER_2"
@@ -377,6 +377,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_ANALYSIS_LAB"
 		textureFile = "gfx/interface/icons/ship_parts/exploration_analysis_lab.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_DEBRIS_LAB"
+		textureFile = "gfx/interface/icons/ship_parts/exploration_debris_lab.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
@@ -579,6 +584,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nsc_modmenu_spaceport_module_orbital_mind_control_lazer"
 		texturefile = "gfx/interface/icons/modules/spaceport_module_orbital_mind_control_lazer.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_orbitalring_energy_hub"
+		texturefile = "gfx/interface/icons/modules/orbitalring_energy_hub.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_spaceport_module_resource_silo"
+		texturefile = "gfx/interface/icons/modules/spaceport_module_resource_silo.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {

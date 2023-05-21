@@ -403,6 +403,11 @@ nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_n
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_enabled_desc:0 "$EXPLORATION_SLOT_ANALYSIS_LAB$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_disabled_desc:0 "$EXPLORATION_SLOT_ANALYSIS_LAB$: §RDisabled§!"
 
+#EXPLORATION_SLOT_DEBRIS_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_name_desc:0 "§H$EXPLORATION_SLOT_DEBRIS_LAB$§!\n$EXPLORATION_SLOT_DEBRIS_LAB_DESC$"
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_enabled_desc:0 "$EXPLORATION_SLOT_DEBRIS_LAB$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_disabled_desc:0 "$EXPLORATION_SLOT_DEBRIS_LAB$: §RDisabled§!"
+
 #EXPLORATION_SLOT_PHYSICS_LAB
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_name_desc:0 "§H$EXPLORATION_SLOT_PHYSICS_LAB$§!\n$EXPLORATION_SLOT_PHYSICS_LAB_DESC$"
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_enabled_desc:0 "$EXPLORATION_SLOT_PHYSICS_LAB$: §GEnabled§!"
@@ -627,6 +632,16 @@ nsc_modmenu_setting_page_starbase_category_building_customs_office_disabled_desc
 nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_name_desc:0 "§H$sm_nsc_nanite_field$§!\n$sm_nsc_nanite_field_desc$"
 nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_enabled_desc:0 "$sm_nsc_nanite_field$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_disabled_desc:0 "$sm_nsc_nanite_field$: §RDisabled§!"
+
+#solar_capacitor
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_name_desc:0 "§H$sm_solar_capacitor$§!\n$sm_solar_capacitor_desc$"
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_enabled_desc:0 "$sm_solar_capacitor$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_disabled_desc:0 "$sm_solar_capacitor$: §RDisabled§!"
+
+#artifact_silo
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_name_desc:0 "§H$sm_artifact_silo$§!\n$sm_artifact_silo_desc$"
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_enabled_desc:0 "$sm_artifact_silo$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_building_artifact_silo_disabled_desc:0 "$sm_artifact_silo$: §RDisabled§!"
 
 #construction_office
 nsc_modmenu_setting_page_starbase_category_building_construction_office_name_desc:0 "§H$sm_construction_office$§!\n$sm_construction_office_desc$"
