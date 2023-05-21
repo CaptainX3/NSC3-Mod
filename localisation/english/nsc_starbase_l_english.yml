@@ -82,7 +82,7 @@ sm_artifact_silo_desc: "This specialized silo can be used to store Minor Artifac
  sm_mining_manager_desc: "A Manager that increases the efficiency of every asteroid mining team. Will improve the output of every §GAsteroid Mining Team§! by §Y2 Minerals§! £minerals.\n"
  
  sm_solar_capacitor: "Solar Capacitors"
- sm_solar_capacitor_desc: "A capacitor system that increases the energy production efficiency of Solar Panels.\n\n§YSolar Panel§! Production: §G+2 Energy§! £energy\n\n\n§YSolar Panel§! Upkeep: §R+1 Minerals§! £minerals  and  §R+1 Consumer Goods§! £consumer_goods.\n"
+ sm_solar_capacitor_desc: "A capacitor system that increases the energy production efficiency of Solar Panels.\n\n§YSolar Panel§! Production: §G+2 Energy§! £energy\n\n\n§YSolar Panel§! Upkeep: §R+1 Minerals§! £minerals  (for Non-Gestalts) and  §R+1 Consumer Goods§! £consumer_goods£  (for Non-Gestalts)\n"
 
  sm_reinforced_defenses: "Reinforced Starbase Defenses"
  sm_reinforced_defenses_desc: "Improves the shields and armor of the Starbase.\n"
