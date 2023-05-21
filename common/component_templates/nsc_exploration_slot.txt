@@ -96,6 +96,32 @@ utility_component_template = {
 	ai_weight = { weight = 1 }	
 }
 
+utility_component_template = {
+	key = "EXPLORATION_SLOT_DEBRIS_LAB"
+	size = aux
+	icon = "GFX_exploration_slot_debris_lab"
+	icon_frame = 1
+	prerequisites = { "tech_explorationship_1" }
+	
+	power = @power
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost }
+	}
+	
+	modifier = { scavenge_debris_mult = 1.5 }
+	
+	ship_limit = 2
+	
+	component_set = "EXPLORATION_SLOT_DEBRIS_LAB"
+	size_restriction = { explorationship }
+	
+	# valid_for_country = {
+		# nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB }
+	# }
+
+	ai_weight = { weight = 1 }	
+}
 
 utility_component_template = {
     key = "EXPLORATION_SLOT_PHYSICS_LAB"

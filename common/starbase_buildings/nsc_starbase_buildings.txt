@@ -461,6 +461,73 @@ nsc_nanite_field = {
 	ai_weight = { weight = 10 }
 }
 
+solar_capacitor = {
+	icon = "GFX_orbitalring_energy_hub"
+	construction_days = 120
+
+	potential = {
+		exists = owner
+		is_orbital_ring = no
+		owner = {
+			is_gestalt = no
+			has_technology = "tech_starbase_4"
+		}
+	}
+
+	possible = {
+		has_starbase_module = solar_panel
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor }
+	}
+	
+	show_in_tech = "tech_starbase_4"
+	
+	resources = {
+		category = starbase_buildings
+		cost = { alloys = 100 }
+		produces = { energy = 5 }
+		upkeep = { 
+			minerals = 10
+			consumer_goods = 10
+			rare_crystals = 2
+		}
+	}
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	ai_weight = { weight = 5 }
+}
+
+artifact_silo = {
+	icon = "GFX_spaceport_module_resource_silo"
+	construction_days = 180
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 150
+		}
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			exists = owner
+			host_has_dlc = "Ancient Relics Story Pack"
+			owner = {
+				has_technology = tech_archaeostudies
+			}
+		}
+		country_resource_max_minor_artifacts_add = 3000
+	}
+	
+	# possible = {
+		# nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo }
+	# }
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+
 
 #############################
 ### SE STARBASE BUILDINGS ###
@@ -772,24 +839,33 @@ assembly_line_manufacturing = {
 		cost = { alloys = 250 }
 		upkeep = { energy = 4 }
 	}
+	
 	potential = {
 		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { OR = { has_technology = tech_alloys_2 has_technology = tech_luxuries_2 } }
 	}
+	
 	possible = {
+		OR = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
 			solar_system = { any_system_colony = { is_owned_by = from } }
 		}
+			has_starbase_module = space_foundry
+			has_starbase_module = space_factory
+		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = assembly_line_manufacturing }
 	}
+	
 	system_modifier = { 
 		planet_jobs_alloys_produces_mult = 0.2
 		planet_jobs_consumer_goods_produces_mult = 0.2
 	}
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
+	
 	ai_weight = {
 		weight = 100
 		modifier = { factor = 0.01 has_starbase_size < starbase_starhold }
