@@ -1,0 +1,8 @@
+Files you need to change when adding a UI element in the modmenu:
+- nsc_modmenu_l_english.yml
+- nsc_modmenu_button_effects_page_ship_component.txt
+- nsc_modmenu_customgui.gfx
+- nsc_modmenu_main_customgui.gui
+- nsc_modmenu_scripted_effects.txt
+- nsc_modmenu_scripted_triggers.txt
+- nsc_modmenu_scripted_loc_ship_component.txt
