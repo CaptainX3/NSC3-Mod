@@ -163,11 +163,13 @@ guiTypes = {
 			@nsc_modmenu_setting_page_mod_common_picture_frame_height = 51
 			@nsc_modmenu_setting_page_mod_common_picture_width = 155 #+6 x pixels from '@nsc_modmenu_setting_page_mod_common_picture_frame_width'
 			@nsc_modmenu_setting_page_mod_common_picture_height = 56 #+5 y pixels from '@nsc_modmenu_setting_page_mod_common_picture_frame_height'
+
 			@nsc_modmenu_setting_page_mod_common_text_position_height = 222
 			@nsc_modmenu_setting_page_mod_common_text_size_width = 462
 			@nsc_modmenu_setting_page_mod_common_text_size_height = 304
 			@nsc_modmenu_setting_page_mod_common_text_borderSize_width = 13
 			@nsc_modmenu_setting_page_mod_common_text_bordersize_height = 10
+
 			@nsc_modmenu_setting_page_header_width = 230
 			@nsc_modmenu_setting_page_header_height = 5
 			@nsc_modmenu_setting_page_go_home_width = 536 #+306 x pixels from '@nsc_modmenu_setting_page_header_width'
@@ -209,6 +211,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_mod_category_preset_content_container_width_2 = 204 #+189 x pixels from '@nsc_modmenu_setting_page_mod_category_preset_content_container_width_1'
 					@nsc_modmenu_setting_page_mod_category_preset_content_container_height_1 = 55
 					@nsc_modmenu_setting_page_mod_category_preset_content_container_height_2 = 154 #+99 y pixels from '@nsc_modmenu_setting_page_mod_category_preset_content_container_height_1'
+
 					@nsc_modmenu_setting_page_mod_category_preset_common_borderSize_width = 2
 					@nsc_modmenu_setting_page_mod_category_preset_apply_background_height = 39
 					@nsc_modmenu_setting_page_mod_category_preset_apply_width = 12
@@ -434,6 +437,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_height = 51
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_header_width = 1
 					@nsc_modmenu_setting_page_mod_category_faq_question_borderSize_width = 2
+
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_button_width = -11
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_button_1_height = 28
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_button_2_height = 72
@@ -723,11 +727,14 @@ guiTypes = {
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_2 = 193 #+138 y pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_height_1'
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_3 = 331
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_4 = 469
+
 					@nsc_modmenu_setting_page_ship_category_class_common_header_width = 77
 					@nsc_modmenu_setting_page_ship_category_class_common_borderSize_width = 2
+
 					@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width = 240
 					@nsc_modmenu_setting_page_ship_category_class_common_on_width = 245 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width'
 					@nsc_modmenu_setting_page_ship_category_class_common_on_height = 5
+
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height = 39
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width = 43
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height = 50
@@ -1412,11 +1419,13 @@ guiTypes = {
 					@nsc_modmenu_setting_page_ship_category_component_content_container_height_18 = 1449
 					@nsc_modmenu_setting_page_ship_category_component_content_container_height_19 = 1531
 					@nsc_modmenu_setting_page_ship_category_component_content_container_height_20 = 1613
+
 					@nsc_modmenu_setting_page_ship_category_component_common_icon_width = 3
 					@nsc_modmenu_setting_page_ship_category_component_common_icon_height = 3
 					@nsc_modmenu_setting_page_ship_category_component_common_header_width = 61
 					@nsc_modmenu_setting_page_ship_category_component_common_header_height = 11
 					@nsc_modmenu_setting_page_ship_category_component_common_borderSize_width = 2
+					
 					@nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width = 224
 					@nsc_modmenu_setting_page_ship_category_component_common_on_width = 229 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width'
 					@nsc_modmenu_setting_page_ship_category_component_common_on_height = 16
@@ -3634,13 +3643,16 @@ guiTypes = {
 					@nsc_modmenu_setting_page_starbase_category_class_content_container_width_2 = 430 #+341 x pixels from '@nsc_modmenu_setting_page_starbase_category_class_content_container_width_1'
 					@nsc_modmenu_setting_page_starbase_category_class_content_container_height_1 = 55
 					@nsc_modmenu_setting_page_starbase_category_class_content_container_height_2 = 193 #+138 y pixels from '@nsc_modmenu_setting_page_starbase_category_class_content_container_height_1'
+
 					@nsc_modmenu_setting_page_starbase_category_class_common_icon_width = 4
 					@nsc_modmenu_setting_page_starbase_category_class_common_icon_height = 2
 					@nsc_modmenu_setting_page_starbase_category_class_common_header_width = 39
 					@nsc_modmenu_setting_page_starbase_category_class_common_borderSize_width = 2
+
 					@nsc_modmenu_setting_page_starbase_category_class_common_on_off_background_width = 202
 					@nsc_modmenu_setting_page_starbase_category_class_common_on_width = 207 #+5 x pixels from '@nsc_modmenu_setting_page_starbase_category_class_common_on_off_background_width'
 					@nsc_modmenu_setting_page_starbase_category_class_common_on_height = 5
+
 					@nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_down_width = 15
 					@nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_down_height = 50
 					@nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_up_width = 203
@@ -3979,10 +3991,12 @@ guiTypes = {
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_4 = 301
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_5 = 383
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_6 = 465
+
 					@nsc_modmenu_setting_page_starbase_category_module_common_icon_width = 2
 					@nsc_modmenu_setting_page_starbase_category_module_common_header_width = 61
 					@nsc_modmenu_setting_page_starbase_category_module_common_header_height = 11
 					@nsc_modmenu_setting_page_starbase_category_module_common_borderSize_width = 2
+
 					@nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width = 224
 					@nsc_modmenu_setting_page_starbase_category_module_common_on_width = 229 #+5 x pixels from '@nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width'
 					@nsc_modmenu_setting_page_starbase_category_module_common_on_height = 16
@@ -4609,10 +4623,12 @@ guiTypes = {
 					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_18 = 1449
 					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_19 = 1531
 					@nsc_modmenu_setting_page_starbase_category_building_content_container_height_20 = 1613
+
 					@nsc_modmenu_setting_page_starbase_category_building_common_icon_width = 2
 					@nsc_modmenu_setting_page_starbase_category_building_common_header_width = 61
 					@nsc_modmenu_setting_page_starbase_category_building_common_header_height = 11
 					@nsc_modmenu_setting_page_starbase_category_building_common_borderSize_width = 2
+
 					@nsc_modmenu_setting_page_starbase_category_building_common_on_off_background_width = 224
 					@nsc_modmenu_setting_page_starbase_category_building_common_on_width = 229 #+5 x pixels from '@nsc_modmenu_setting_page_starbase_category_building_common_on_off_background_width'
 					@nsc_modmenu_setting_page_starbase_category_building_common_on_height = 16
@@ -6144,12 +6160,15 @@ guiTypes = {
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1 = 55
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_2 = 253 #+198 y pixels from '@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1'
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_3 = 451
+
 					@nsc_modmenu_setting_page_etc_category_feature_common_header_width = 61
 					@nsc_modmenu_setting_page_etc_category_feature_common_header_height = 22
 					@nsc_modmenu_setting_page_etc_category_feature_common_borderSize_width = 2
+
 					@nsc_modmenu_setting_page_etc_category_feature_common_on_off_background_width = 240
 					@nsc_modmenu_setting_page_etc_category_feature_common_on_width = 245
 					@nsc_modmenu_setting_page_etc_category_feature_common_on_height = 27
+
 					@nsc_modmenu_setting_page_etc_category_feature_common_sub_setting_1_header_height = 61
 					@nsc_modmenu_setting_page_etc_category_feature_common_sub_setting_1_modifier_down_width = 6
 					@nsc_modmenu_setting_page_etc_category_feature_common_sub_setting_1_modifier_down_height = 72
@@ -6162,6 +6181,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_etc_category_feature_common_sub_setting_4_modifier_down_height = 188
 					@nsc_modmenu_setting_page_etc_category_feature_common_sub_setting_5_header_height = 216
 					@nsc_modmenu_setting_page_etc_category_feature_common_sub_setting_5_modifier_down_height = 227
+
 					@nsc_modmenu_setting_page_etc_category_feature_matterenergy_icon_width = 5
 					@nsc_modmenu_setting_page_etc_category_feature_matterenergy_icon_height = 1
 					@nsc_modmenu_setting_page_etc_category_feature_mothball_icon_width = 9
@@ -6865,11 +6885,14 @@ guiTypes = {
 
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_width = 59
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_height = 47
+
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_position_width = 197
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_width = 250
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_header_size_height = 30
+
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_background_width = 1
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_background_height = 33
+
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_none_height = 49
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_width = 126
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_preset_very_easy_height = 32
@@ -8266,6 +8289,7 @@ guiTypes = {
 
 					@nsc_modmenu_setting_button_category_header_width = 12
 					@nsc_modmenu_setting_button_category_header_height = -18
+					
 					@nsc_modmenu_setting_button_height_1 = 10
 					@nsc_modmenu_setting_button_height_2 = 49 #+39 y pixels from '@nsc_modmenu_setting_button_height_1'
 					@nsc_modmenu_setting_button_height_3 = 88
