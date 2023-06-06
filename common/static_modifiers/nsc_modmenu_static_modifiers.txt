@@ -85,15 +85,10 @@ nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod = {
 }
 #ai difficulties
 nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod = {
-	planet_jobs_produces_mult = 0.01
-	planet_jobs_physics_research_produces_mult = -0.01
-	planet_jobs_society_research_produces_mult = -0.01
-	planet_jobs_engineering_research_produces_mult = -0.01
-	
-	stations_produces_mult = 0.01
-	stations_physics_research_produces_mult = -0.01
-	stations_society_research_produces_mult = -0.01
-	stations_engineering_research_produces_mult = -0.01
+	country_produces_mult = 0.01
+	country_society_research_produces_mult = -0.01
+	country_physics_research_produces_mult = -0.01
+	country_engineering_research_produces_mult = -0.01
 }
 nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod = {
 	all_technology_research_speed = 0.01
