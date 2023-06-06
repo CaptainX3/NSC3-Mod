@@ -117,6 +117,7 @@ nsc_modmenu_starbase_module_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
 }
 nsc_modmenu_starbase_building_settings_on_trigger = {
+	optimize_memory
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = drydock }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = sensor_station }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_management }

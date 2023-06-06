@@ -303,14 +303,21 @@ nsc_modmenu_etc_feature_setting_reset_effect = {
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_produce VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = hospital MODIFIER = resource_upkeep VALUE = 0 }
 }
-nsc_modmenu_etc_ai_difficulty_setting_reset_effect = {
-	optimize_memory
-	#ai_difficulty
+nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = {
+	if = {
+		limit = { NOT = { has_global_flag = nsc_modmenu_setting_page_etc_category_ai_difficulty_customized } }
+		set_global_flag = nsc_modmenu_setting_page_etc_category_ai_difficulty_customized
+	}
+}
+nsc_modmenu_ai_difficulty_preset_custom_flag_remove_effect = {
 	if = {
 		limit = { has_global_flag = nsc_modmenu_setting_page_etc_category_ai_difficulty_customized }
 		remove_global_flag = nsc_modmenu_setting_page_etc_category_ai_difficulty_customized
 	}
-
+}
+nsc_modmenu_etc_ai_difficulty_setting_reset_effect = {
+	optimize_memory
+	#ai_difficulty
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 0 }
@@ -318,6 +325,8 @@ nsc_modmenu_etc_ai_difficulty_setting_reset_effect = {
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = economy_bonus }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+
+	nsc_modmenu_ai_difficulty_preset_custom_flag_remove_effect = yes
 }
 nsc_modmenu_reset_all_settings_effect = {
 	optimize_memory
