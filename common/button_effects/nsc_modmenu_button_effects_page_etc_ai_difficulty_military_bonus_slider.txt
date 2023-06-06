@@ -12,6 +12,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_b
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_down_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = -5 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -29,6 +33,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_but
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_military_bonus_up_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_change_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 5 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -40,6 +48,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_1_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 0 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -59,6 +71,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_2_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 5 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -78,6 +94,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_3_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 10 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -97,6 +117,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_4_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 15 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -116,6 +140,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_5_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 20 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -135,6 +163,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_6_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 25 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -154,6 +186,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_7_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 30 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -173,6 +209,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_8_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 35 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -192,6 +232,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_9_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 40 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -211,6 +255,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_10_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 45 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -230,6 +278,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_11_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 50 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -249,6 +301,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_12_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 55 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -268,6 +324,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_13_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 60 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -287,6 +347,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_14_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 65 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -306,6 +370,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_15_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 70 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -325,6 +393,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_16_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 75 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -344,6 +416,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_17_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 80 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -363,6 +439,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_18_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 85 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -382,6 +462,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_19_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 90 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -401,6 +485,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_20_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 95 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
@@ -420,6 +508,10 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_
         custom_tooltip = nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_military_bonus_21_effect_tooltip
         hidden_effect = {
             nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus VALUE = 100 }
+            every_playable_country = {
+                limit = { is_ai = yes }
+                nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = military_bonus }
+            }
             nsc_modmenu_ai_difficulty_preset_custom_flag_add_effect = yes
         }
     }
