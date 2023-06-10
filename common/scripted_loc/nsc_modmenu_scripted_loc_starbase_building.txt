@@ -110,6 +110,34 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_starbase_category_building_nsc_nanite_field_disabled_desc
 	}
 }
+#solar_capacitor
+defined_text = {
+	name = Get_nsc_starbase_building_solar_capacitor_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_solar_capacitor_disabled_desc
+	}
+}
+#artifact_silo
+defined_text = {
+	name = Get_nsc_starbase_building_artifact_silo_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_artifact_silo_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_building_artifact_silo_disabled_desc
+	}
+}
 #construction_office
 defined_text = {
 	name = Get_nsc_starbase_building_construction_office_enable_disable_status

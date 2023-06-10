@@ -673,6 +673,34 @@ nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_o
         hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB } }
     }
 }
+#EXPLORATION_SLOT_DEBRIS_LAB
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB } }
+    }
+}
 #EXPLORATION_SLOT_PHYSICS_LAB
 nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
