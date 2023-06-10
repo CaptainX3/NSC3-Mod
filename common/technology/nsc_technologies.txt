@@ -1866,6 +1866,10 @@ tech_galactic_mall = {
 			desc = "TECH_UNLOCK_GALACTIC_MALL_DESC"
 		}
 	}
+
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+	}
 	
 	weight_modifier = {
 		modifier = {
@@ -1892,6 +1896,10 @@ tech_hospital = {
 			title = "TECH_UNLOCK_HOPSITAL_TITLE"
 			desc = "TECH_UNLOCK_HOSPITAL_DESC"
 		}
+	}
+
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
 	}
 	
 	weight_modifier = {

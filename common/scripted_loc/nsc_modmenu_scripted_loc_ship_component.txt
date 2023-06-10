@@ -320,6 +320,20 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_disabled_desc
 	}
 }
+#EXPLORATION_SLOT_DEBRIS_LAB
+defined_text = {
+	name = Get_nsc_ship_component_EXPLORATION_SLOT_DEBRIS_LAB_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_disabled_desc
+	}
+}
 #EXPLORATION_SLOT_PHYSICS_LAB
 defined_text = {
 	name = Get_nsc_ship_component_EXPLORATION_SLOT_PHYSICS_LAB_enable_disable_status

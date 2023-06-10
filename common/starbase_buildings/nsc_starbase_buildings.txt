@@ -476,7 +476,7 @@ solar_capacitor = {
 
 	possible = {
 		has_starbase_module = solar_panel
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = solar_capacitor }
 	}
 	
 	show_in_tech = "tech_starbase_4"
@@ -485,10 +485,30 @@ solar_capacitor = {
 		category = starbase_buildings
 		cost = { alloys = 100 }
 		produces = { energy = 5 }
-		upkeep = { 
-			minerals = 10
-			consumer_goods = 10
+		upkeep = {
 			rare_crystals = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					OR = {
+						is_gestalt = no
+						has_valid_civic = civic_machine_servitor
+					}
+				}
+			}
+			consumer_goods = 10
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_gestalt = yes
+					NOT = { has_valid_civic = civic_machine_servitor }
+				}
+			}
+			minerals = 10
 		}
 	}
 	ai_build_at_chokepoint = no
@@ -518,9 +538,9 @@ artifact_silo = {
 		country_resource_max_minor_artifacts_add = 3000
 	}
 	
-	# possible = {
-		# nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo }
-	# }
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = artifact_silo }
+	}
 
 	ai_weight = {
 		weight = 100
