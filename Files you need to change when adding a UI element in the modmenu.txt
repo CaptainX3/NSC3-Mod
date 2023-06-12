@@ -1,8 +1,0 @@
-Files you need to change when adding a UI element in the modmenu:
-- nsc_modmenu_l_english.yml
-- nsc_modmenu_button_effects_page_$CATEGORY$_$SUBCAT$.txt (Change '$CATEGORY$_$SUBCAT$' depending on the type of content you are trying to add. i.e. 'ship_component', 'starbase_module')
-- nsc_modmenu_customgui.gfx (Depending on the type of content you are trying to add, you can skip this one.)
-- nsc_modmenu_main_customgui.gui
-- nsc_modmenu_scripted_effects.txt
-- nsc_modmenu_scripted_triggers.txt
-- nsc_modmenu_scripted_loc_$CATEGORY$_$SUBCAT$.txt
