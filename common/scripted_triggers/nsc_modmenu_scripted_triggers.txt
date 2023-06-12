@@ -31,6 +31,7 @@ nsc_modmenu_setting_page_mod_category_faq_text_long_trigger = {
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_1_page_opened
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_2_page_opened
 		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_3_page_opened
+		has_global_flag = nsc_modmenu_mod_faq_question_list_1_context_4_page_opened
 	}
 }
 nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starbase_class_trigger = {
