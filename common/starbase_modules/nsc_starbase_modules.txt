@@ -545,8 +545,7 @@ solar_panel = {
 			energy = 5
 		}
 		upkeep = {
-			minerals = 2
-			consumer_goods = 2
+			alloys = 5
 		}
 		produces = {
 			trigger = { has_starbase_building = solar_capacitor }
@@ -554,8 +553,7 @@ solar_panel = {
 		}
 		upkeep = {
 			trigger = { has_starbase_building = solar_capacitor }
-			minerals = 1
-			consumer_goods = 1
+			alloys = 5
 		}
 	}
 
@@ -573,3 +571,187 @@ solar_panel = {
 	}
 }
 
+public_plaza = {
+	icon = "GFX_starbase_filler"
+	construction_days = 90
+
+	potential = { is_orbital_ring = no }
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "starbase_filler_limit.tooltip.fail:"
+			NOT = { count_starbase_modules = { count > 3 type = public_plaza include_being_constructed = yes } }
+		}
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			consumer_goods = 50
+		}
+		produces = { 
+			unity = 5
+		}
+		upkeep = {
+			energy = 2
+		}
+	}
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = no
+	ai_weight = { weight = 0 }
+}
+
+fleet_club = {
+	icon = "GFX_starbase_filler"
+	construction_days = 90
+
+	potential = { is_orbital_ring = no }
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "starbase_filler_limit.tooltip.fail:"
+			NOT = { count_starbase_modules = { count > 3 type = fleet_club include_being_constructed = yes } }
+		}
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			consumer_goods = 50
+		}
+		produces = { 
+			influence = 0.1
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	system_modifier = { 
+		job_entertainer_add = 1
+		job_manager_add = 1
+	}
+	
+	country_modifier = {
+		species_leader_exp_gain = 0.01
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = no
+	ai_weight = { weight = 0 }
+}
+
+storage_room = {
+	icon = "GFX_starbase_filler"
+	construction_days = 30
+	
+	possible = {
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 80
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+	
+	country_modifier = {
+		country_resource_max_add = 500
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = no
+	ai_weight = { weight = 0 }
+}
+
+nightclub = {
+	icon = "GFX_starbase_filler"
+	construction_days = 120
+
+	potential = { is_orbital_ring = no }
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "starbase_filler_limit.tooltip.fail:"
+			NOT = { count_starbase_modules = { count > 3 type = nightclub include_being_constructed = yes } }
+		}
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			consumer_goods = 75
+			luxury_goods = 10
+		}
+		produces = { 
+			unity = 5
+		}
+		upkeep = {
+			energy = 5
+		}
+	}
+	
+	system_modifier = { 
+		job_entertainer_add = 1
+		job_manager_add = 1
+		pop_government_ethic_attraction = 0.01
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = no
+	ai_weight = { weight = 0 }
+}
+
+public_market = {
+	icon = "GFX_starbase_filler"
+	construction_days = 100
+
+	potential = { is_orbital_ring = no }
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "starbase_filler_limit.tooltip.fail:"
+			NOT = { count_starbase_modules = { count > 3 type = public_market include_being_constructed = yes } }
+		}
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 200
+			consumer_goods = 75
+		}
+		produces = { 
+			consumer_goods = 5
+			luxury_goods = 5
+		}
+		upkeep = {
+			energy = 8
+		}
+	}
+	
+	system_modifier = { 
+		job_merchant_add = 3
+		job_administrator_add = 1
+	}
+	
+	station_modifier = {
+		trade_value_add = 2
+		starbase_trade_collection_range_add = 1
+	}
+	
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = no
+	ai_weight = { weight = 0 }
+}

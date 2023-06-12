@@ -416,11 +416,6 @@ tech_explorationship_1 = {
 	potential = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
-
-	modifier = {
-		command_limit_add = 10
-		country_naval_cap_add = 20
-	}
 	
 	weight_modifier = {	
 		modifier = {
@@ -453,6 +448,11 @@ tech_explorationship_2 = {
 	
 	potential = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
+	}
+	
+	modifier = {
+		command_limit_add = 10
+		country_naval_cap_add = 20
 	}
 
 	weight_modifier = {
@@ -1783,7 +1783,6 @@ tech_nsc_ai_computer_1 = {
 	potential = {
 		OR = {
 			has_technology = tech_explorationship_1
-			has_technology = tech_escortcarrier_1
 			has_technology = tech_Carrier_1
 			has_technology = tech_Flagship_1
 			has_technology = tech_juggernaut

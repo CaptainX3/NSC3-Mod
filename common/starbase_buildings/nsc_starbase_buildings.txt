@@ -520,6 +520,13 @@ artifact_silo = {
 	icon = "GFX_spaceport_module_resource_silo"
 	construction_days = 180
 
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_archaeostudies }
+		is_orbital_ring = no
+		host_has_dlc = "Ancient Relics Story Pack"
+	}
+	
 	resources = {
 		category = starbase_buildings
 		cost = {
@@ -527,14 +534,7 @@ artifact_silo = {
 		}
 	}
 
-	triggered_country_modifier = {
-		potential = {
-			exists = owner
-			host_has_dlc = "Ancient Relics Story Pack"
-			owner = {
-				has_technology = tech_archaeostudies
-			}
-		}
+	country_modifier = {
 		country_resource_max_minor_artifacts_add = 3000
 	}
 	

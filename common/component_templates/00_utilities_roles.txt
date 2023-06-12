@@ -2,6 +2,7 @@
 @cost1 = 5
 @cost2 = 10
 @cost3 = 20
+@cost4 = 50
 
 @power0 = -5
 @power1 = -10
@@ -79,7 +80,7 @@ utility_component_template = {
 	}
 	ship_behavior = "swarm"
 
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_SWARM_BASIC"
 	ai_tags = { gunship }
@@ -104,7 +105,7 @@ utility_component_template = {
 	}
 	ship_behavior = "picket"
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ai_tags = { screen }
 	ai_tag_weight = 0
@@ -131,7 +132,7 @@ utility_component_template = {
 	}
 	ship_behavior = "line"
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_LINE_BASIC"
 	ai_tags = { gunship }
@@ -156,7 +157,7 @@ utility_component_template = {
 	}
 	ship_behavior = "artillery"
 
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_ARTILLERY_BASIC"
 	ai_tags = { artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
@@ -207,7 +208,7 @@ utility_component_template = {
 	}
 	ship_behavior = "torpedo"
 
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	upgrades_to = "COMBAT_COMPUTER_TORPEDO_BASIC"
 	ai_tags = { explosive explosive_stealth }
@@ -235,7 +236,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "swarm"
 	prerequisites = { "tech_combat_computers_1" }
@@ -268,7 +269,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "swarm"
 	prerequisites = { "tech_combat_computers_2" }
@@ -301,7 +302,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "swarm"
 	prerequisites = { "tech_combat_computers_3" }
@@ -343,7 +344,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "swarm"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -375,7 +376,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "swarm"
 	prerequisites = { "tech_precognition_interface" }
@@ -412,7 +413,7 @@ utility_component_template = {
 		}
 	}
 
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_1" "tech_torpedoes_1" }
@@ -442,7 +443,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_2" "tech_torpedoes_1" }
@@ -472,7 +473,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_3" "tech_torpedoes_1" }
@@ -511,7 +512,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_autonomous" "tech_torpedoes_1" }
@@ -541,7 +542,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_precognition_interface" "tech_torpedoes_1" }
@@ -574,7 +575,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_1" }
@@ -605,7 +606,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_2" }
@@ -636,7 +637,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_3" }
@@ -679,7 +680,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -712,7 +713,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "picket"
 	prerequisites = { "tech_precognition_interface" }
@@ -745,7 +746,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_1" }
@@ -776,7 +777,7 @@ utility_component_template = {
 		}
 	}
 
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_2" }
@@ -807,7 +808,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_3" }
@@ -847,7 +848,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -877,7 +878,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "line"
 	prerequisites = { "tech_precognition_interface" }
@@ -911,7 +912,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_1" }
@@ -942,7 +943,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_2" }
@@ -973,7 +974,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_3" }
@@ -1014,7 +1015,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -1044,7 +1045,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "artillery"
 	prerequisites = { "tech_precognition_interface" }
@@ -1078,7 +1079,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_1" }
@@ -1108,7 +1109,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_2" }
@@ -1138,7 +1139,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_3" }
@@ -1178,7 +1179,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_combat_computers_autonomous" }
@@ -1207,7 +1208,7 @@ utility_component_template = {
 		}
 	}
 	
-	class_restriction = { }
+	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
 	ship_behavior = "carrier"
 	prerequisites = { "tech_precognition_interface" }
@@ -1505,3 +1506,27 @@ utility_component_template = {
 		weight = 0
 	}
 }
+
+#######################
+### NSC AI COMPUTER ###
+#######################
+utility_component_template = {
+	key = "NSC_AI_COMBAT_COMPUTER"
+	size = small
+	icon = "GFX_ship_part_nsc_ai_computer"
+	icon_frame = 1
+	power = -40
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost4 }
+	}
+	ship_behavior = "nsc_ai"
+	prerequisites = { "tech_nsc_ai_computer_1" }
+	size_restriction = { juggernaut Carrier Flagship explorationship }
+	component_set = "combat_computers"
+	
+	valid_for_country = { 
+		is_ai = no
+	}
+}
+
