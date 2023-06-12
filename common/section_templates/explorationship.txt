@@ -1210,7 +1210,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "EXPLORATIONSHIP_MID1_G5H1"
+	key = "EXPLORATIONSHIP_3_MID1_G5H1"
 	ship_size = explorationship
 	fits_on_slot = mid1
 	entity = "explorationship_mid_M3_entity"

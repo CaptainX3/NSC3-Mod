@@ -287,4 +287,9 @@ spriteTypes =
 		name = "GFX_starbase_crew_formation_modules"
 		texturefile = "gfx/interface/icons/modules/crew_formation_modules.dds"
 	}
+	spriteType = 
+	{
+		name = "GFX_starbase_filler"
+		texturefile = "gfx/interface/icons/modules/sb_filler.dds"
+	}	
 }
