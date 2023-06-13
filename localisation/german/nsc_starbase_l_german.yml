@@ -10,7 +10,7 @@ stb_shipyard_desc: "A starbase focused on ship construction.\n"
 
 sm_drydock: "Drydock"
 sm_drydock_desc: "This specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair warships.\n"
-sm_drydock_desc_modifier: "Increases the the build capacity of each §Y$sm_shipyard$§! by §G1§!\n"
+sm_drydock_desc_modifier: "Increases the build capacity of each §Y$sm_shipyard$§! by §G1§!\n"
 
 sm_sensor_station: "Sensor Station"
 sm_sensor_station_desc: "The starbase sensor station uses advanced sensor arrays to extend our intelligence gathering capabilities across several star systems, giving us advanced warning of any possible threats near our borders.\n"
@@ -42,6 +42,21 @@ sm_power_station_desc: "Some systems are specialized towards producing the raw e
 sm_artifact_silo: "Minor Artifacts Storage"
 sm_artifact_silo_desc: "This specialized silo can be used to store Minor Artifacts on a starbase.\n"
 
+sm_public_plaza: "Public Plaza"
+sm_public_plaza_desc: "A beautiful plaza where people can gather and relax."
+
+sm_fleet_club: "Fleet Officer's Club"
+sm_fleet_club_desc: "A place for rest & relaxation specifically for fleet officers."
+
+sm_storage_room: "Storage Room"
+sm_storage_room_desc: "A small storage area for various resources."
+
+sm_nightclub: "Nightclub"
+sm_nightclub_desc: "Ain't no party like a Starbase party 'cause a Starbase party don't stop."
+
+sm_public_market: "Public Market"
+sm_public_market_desc: "A large trading market accessible to the general public."
+
 
 
 ##################################################################################################################################################################################################################
@@ -58,10 +73,10 @@ sm_artifact_silo_desc: "This specialized silo can be used to store Minor Artifac
  sm_pd_battery_desc: "Adds four point defense slots to the Starbase.\n"
  
  sm_gun_battery: "Gun Battery"
- sm_gun_battery_desc: "Adds four medium weapon slots to the Starbase.\n"
+ sm_gun_battery_desc: "Adds two medium weapon slots to the Starbase.\n"
  
  sm_missile_battery: "Torpedo Battery"
- sm_missile_battery_desc: "Adds four torpedo weapon slots to the Starbase.\n"
+ sm_missile_battery_desc: "Adds two torpedo weapon slots to the Starbase.\n"
  
  sm_large_battery: "Large Battery"
  sm_large_battery_desc: "Adds two large weapon slots to the Starbase.\n"

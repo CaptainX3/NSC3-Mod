@@ -42,4 +42,6 @@ starbase_h_limit.tooltip.fail: "You cannot build more than 6 hangar bays per sta
 starbase_t_limit.tooltip.fail: "You cannot build more than 2 Titanic weapons per starbase."
 starbase_xl_limit.tooltip.fail: "You cannot build more than 6 XL weapons per starbase."
 
+starbase_filler_limit.tooltip.fail: "You cannot build more than 3 of these modules per starbase."
+
 nsc.requires.asteroid: "Requires asteroid in the system."
