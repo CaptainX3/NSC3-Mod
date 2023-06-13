@@ -49,8 +49,8 @@ nsc_modmenu.1.desc:0 ""
 nsc_modmenu.1.a:0 ""
 
 nsc_modmenu.2.name:0 "Caution"
-nsc_modmenu.2.desc:0 "§R*** WARNING *** WARNING *** WARNING ***\n\nThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!\n\n"
-# nsc_modmenu.2.a:0 "$ACKNOWLEDGED$"
+nsc_modmenu.2.desc:0 "§R*** WARNING *** WARNING *** WARNING ***\n\nThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!"
+nsc_modmenu.2.a:0 "$ACKNOWLEDGED$"
 
 ### Custom GUI Common ###
 NSC_MODMENU_STOPPED_WORKING_DESC:0 "§RClose any other UIs to use this Customgui.§!"
@@ -112,13 +112,13 @@ nsc_modmenu_setting_page_mod_category_preset_apply.fail:0 "£trigger_no£ §RThi
 nsc_modmenu_setting_page_mod_category_preset_disable_all:0 "Why did I subscribe to this mod?"
 nsc_modmenu_setting_page_mod_category_preset_disable_all_desc:0 "Unable to recall the reason, you decided to simply turn off all of its contents and features, out of reluctance to restart the game..."
 nsc_modmenu_setting_page_mod_category_preset_disable_all_name_desc:0 "§H$nsc_modmenu_setting_page_mod_category_preset_disable_all$§!\n$nsc_modmenu_setting_page_mod_category_preset_disable_all_desc$"
-nsc_modmenu_setting_page_mod_category_preset_disable_all_effect_tooltip:0 "Disables all Contents and Features of NSC2."
+nsc_modmenu_setting_page_mod_category_preset_disable_all_effect_tooltip:0 "§YDisables all Contents and Features of NSC2.§!"
 
 #preset_ship_classes_only
 nsc_modmenu_setting_page_mod_category_preset_ship_classes_only:0 "Good Old Times"
 nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_desc:0 "Do you miss the days when things were simpler? Do you miss the days when this mod offered only new ship classes but nothing else? Then this preset is just for you!"
 nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_name_desc:0 "§H$nsc_modmenu_setting_page_mod_category_preset_ship_classes_only$§!\n$nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_desc$"
-nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_effect_tooltip:0 "Enables only Ship Classes of NSC2."
+nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_effect_tooltip:0 "§YEnables only Ship Classes of NSC2.§!"
 
 ### Custom GUI Category: Mod Introduction ###
 nsc_modmenu_setting_page_mod_category_introduction_name:0 "$nsc_modmenu_setting_button_category_mod_name$ $nsc_modmenu_setting_button_mod_introduction_name$"
@@ -588,6 +588,31 @@ nsc_modmenu_setting_page_starbase_category_module_security_branch_office_disable
 nsc_modmenu_setting_page_starbase_category_module_solar_panel_name_desc:0 "§H$sm_solar_panel$§!\n$sm_solar_panel_desc$"
 nsc_modmenu_setting_page_starbase_category_module_solar_panel_enabled_desc:0 "$sm_solar_panel$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_module_solar_panel_disabled_desc:0 "$sm_solar_panel$: §RDisabled§!"
+
+#public_plaza
+nsc_modmenu_setting_page_starbase_category_module_public_plaza_name_desc:0 "§H$sm_public_plaza$§!\n$sm_public_plaza_desc$"
+nsc_modmenu_setting_page_starbase_category_module_public_plaza_enabled_desc:0 "$sm_public_plaza$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_module_public_plaza_disabled_desc:0 "$sm_public_plaza$: §RDisabled§!"
+
+#fleet_club
+nsc_modmenu_setting_page_starbase_category_module_fleet_club_name_desc:0 "§H$sm_fleet_club$§!\n$sm_fleet_club_desc$"
+nsc_modmenu_setting_page_starbase_category_module_fleet_club_enabled_desc:0 "$sm_fleet_club$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_module_fleet_club_disabled_desc:0 "$sm_fleet_club$: §RDisabled§!"
+
+#storage_room
+nsc_modmenu_setting_page_starbase_category_module_storage_room_name_desc:0 "§H$sm_storage_room$§!\n$sm_storage_room_desc$"
+nsc_modmenu_setting_page_starbase_category_module_storage_room_enabled_desc:0 "$sm_storage_room$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_module_storage_room_disabled_desc:0 "$sm_storage_room$: §RDisabled§!"
+
+#nightclub
+nsc_modmenu_setting_page_starbase_category_module_nightclub_name_desc:0 "§H$sm_nightclub$§!\n$sm_nightclub_desc$"
+nsc_modmenu_setting_page_starbase_category_module_nightclub_enabled_desc:0 "$sm_nightclub$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_module_nightclub_disabled_desc:0 "$sm_nightclub$: §RDisabled§!"
+
+#public_market
+nsc_modmenu_setting_page_starbase_category_module_public_market_name_desc:0 "§H$sm_public_market$§!\n$sm_public_market_desc$"
+nsc_modmenu_setting_page_starbase_category_module_public_market_enabled_desc:0 "$sm_public_market$: §GEnabled§!"
+nsc_modmenu_setting_page_starbase_category_module_public_market_disabled_desc:0 "$sm_public_market$: §RDisabled§!"
 
 ### Custom GUI Category: Starbase Buildings ###
 #Common
