@@ -579,7 +579,7 @@ public_plaza = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail:"
+			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = public_plaza include_being_constructed = yes } }
 		}
 		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
@@ -611,7 +611,7 @@ fleet_club = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail:"
+			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = fleet_club include_being_constructed = yes } }
 		}
 		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
@@ -680,7 +680,7 @@ nightclub = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail:"
+			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = nightclub include_being_constructed = yes } }
 		}
 		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
@@ -720,7 +720,7 @@ public_market = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail:"
+			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = public_market include_being_constructed = yes } }
 		}
 		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
