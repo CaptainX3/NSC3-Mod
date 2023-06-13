@@ -582,7 +582,7 @@ public_plaza = {
 			fail_text = "starbase_filler_limit.tooltip.fail:"
 			NOT = { count_starbase_modules = { count > 3 type = public_plaza include_being_constructed = yes } }
 		}
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
 	}
 
 	resources = {
@@ -614,7 +614,7 @@ fleet_club = {
 			fail_text = "starbase_filler_limit.tooltip.fail:"
 			NOT = { count_starbase_modules = { count > 3 type = fleet_club include_being_constructed = yes } }
 		}
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
 	}
 
 	resources = {
@@ -650,7 +650,7 @@ storage_room = {
 	construction_days = 30
 	
 	possible = {
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room }
 	}
 
 	resources = {
@@ -683,7 +683,7 @@ nightclub = {
 			fail_text = "starbase_filler_limit.tooltip.fail:"
 			NOT = { count_starbase_modules = { count > 3 type = nightclub include_being_constructed = yes } }
 		}
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
 	}
 
 	resources = {
@@ -723,7 +723,7 @@ public_market = {
 			fail_text = "starbase_filler_limit.tooltip.fail:"
 			NOT = { count_starbase_modules = { count > 3 type = public_market include_being_constructed = yes } }
 		}
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
 	}
 
 	resources = {

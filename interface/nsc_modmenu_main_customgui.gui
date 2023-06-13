@@ -3991,6 +3991,8 @@ guiTypes = {
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_4 = 301
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_5 = 383
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_6 = 465
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_7 = 547
+					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_8 = 629
 
 					@nsc_modmenu_setting_page_starbase_category_module_common_icon_width = 2
 					@nsc_modmenu_setting_page_starbase_category_module_common_header_width = 61
@@ -4560,6 +4562,261 @@ guiTypes = {
 							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
 							spriteType = "GFX_checkbox_20_20_01"
 							effect = "nsc_modmenu_setting_page_starbase_category_module_solar_panel_off_button_effect"
+						}
+					}
+					#public_plaza
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_module_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_module_content_container_height_6 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_header_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_module_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_public_plaza"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_off_button_effect"
+						}
+					}
+					#fleet_club
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_module_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_module_content_container_height_7 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_header_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_module_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_fleet_club"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_off_button_effect"
+						}
+					}
+					#storage_room
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_module_storage_room"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_module_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_module_content_container_height_7 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_header_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_module_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_storage_room"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_storage_room_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_storage_room_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_storage_room_off_button_effect"
+						}
+					}
+					#nightclub
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_module_nightclub"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_module_content_container_width_1 y = @nsc_modmenu_setting_page_starbase_category_module_content_container_height_8 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_header_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_module_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_nightclub"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_nightclub_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_nightclub_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_nightclub_off_button_effect"
+						}
+					}
+					#public_market
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_starbase_category_module_public_market"
+						position = { x = @nsc_modmenu_setting_page_starbase_category_module_content_container_width_2 y = @nsc_modmenu_setting_page_starbase_category_module_content_container_height_8 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_icon"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
+							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_header"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_header_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_starbase_category_module_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "sm_public_market"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_public_market_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width y = @nsc_modmenu_setting_page_starbase_category_module_common_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_on"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_public_market_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_off"
+							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_on_width y = @nsc_modmenu_setting_page_starbase_category_module_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_starbase_category_module_public_market_off_button_effect"
 						}
 					}
 				}
