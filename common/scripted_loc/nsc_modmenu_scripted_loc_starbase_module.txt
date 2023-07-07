@@ -152,3 +152,73 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_starbase_category_module_solar_panel_disabled_desc
 	}
 }
+#public_plaza
+defined_text = {
+	name = Get_nsc_starbase_module_public_plaza_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_public_plaza_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_public_plaza_disabled_desc
+	}
+}
+#fleet_club
+defined_text = {
+	name = Get_nsc_starbase_module_fleet_club_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_fleet_club_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_fleet_club_disabled_desc
+	}
+}
+#storage_room
+defined_text = {
+	name = Get_nsc_starbase_module_storage_room_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_storage_room_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_storage_room_disabled_desc
+	}
+}
+#nightclub
+defined_text = {
+	name = Get_nsc_starbase_module_nightclub_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_nightclub_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_nightclub_disabled_desc
+	}
+}
+#public_market
+defined_text = {
+	name = Get_nsc_starbase_module_public_market_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_public_market_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market } } }
+		localization_key = nsc_modmenu_setting_page_starbase_category_module_public_market_disabled_desc
+	}
+}

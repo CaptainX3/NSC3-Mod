@@ -337,3 +337,143 @@ nsc_modmenu_setting_page_starbase_category_module_solar_panel_off_button_effect 
         hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = solar_panel } }
     }
 }
+#public_plaza
+nsc_modmenu_setting_page_starbase_category_module_public_plaza_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_module_public_plaza_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_module_public_plaza_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = module ID = public_plaza } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_public_plaza_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = public_plaza } }
+    }
+}
+#fleet_club
+nsc_modmenu_setting_page_starbase_category_module_fleet_club_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_module_fleet_club_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_module_fleet_club_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = module ID = fleet_club } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_fleet_club_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = fleet_club } }
+    }
+}
+#storage_room
+nsc_modmenu_setting_page_starbase_category_module_storage_room_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_module_storage_room_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_module_storage_room_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = module ID = storage_room } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_storage_room_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = storage_room } }
+    }
+}
+#nightclub
+nsc_modmenu_setting_page_starbase_category_module_nightclub_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_module_nightclub_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_module_nightclub_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = module ID = nightclub } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_nightclub_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = nightclub } }
+    }
+}
+#public_market
+nsc_modmenu_setting_page_starbase_category_module_public_market_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_starbase_module_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_starbase_category_module_public_market_name_desc }
+}
+nsc_modmenu_setting_page_starbase_category_module_public_market_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = module ID = public_market } }
+    }
+}
+nsc_modmenu_setting_page_starbase_category_module_public_market_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_starbase_module_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = module ID = public_market } }
+    }
+}
