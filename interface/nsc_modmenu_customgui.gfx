@@ -546,6 +546,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/modules/sb_solar_panel_network.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_filler"
+		texturefile = "gfx/interface/icons/modules/sb_filler.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
 	#starbase buildings
 	spriteType = {
 		name = "GFX_nsc_modmenu_sb_drydock"
