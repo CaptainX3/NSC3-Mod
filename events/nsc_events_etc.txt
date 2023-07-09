@@ -106,6 +106,18 @@ ship_event = {
 				remove_starbase_building = {
 					building = starbase_management_machine
 				}
+				remove_starbase_module = {
+					module = public_plaza
+				}
+				remove_starbase_module = {
+					module = fleet_club
+				}
+				remove_starbase_module = {
+					module = nightclub
+				}
+				remove_starbase_module = {
+					module = public_market
+				}
 			}
 			if = {
 				limit = {
@@ -118,6 +130,18 @@ ship_event = {
 				}
 				remove_starbase_building = {
 					building = starbase_management_hive
+				}
+				remove_starbase_module = {
+					module = public_plaza
+				}
+				remove_starbase_module = {
+					module = fleet_club
+				}
+				remove_starbase_module = {
+					module = nightclub
+				}
+				remove_starbase_module = {
+					module = public_market
 				}
 			}
 			if = {
