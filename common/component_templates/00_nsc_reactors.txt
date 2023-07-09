@@ -567,7 +567,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_FUSION_REACTOR"
 
 	ai_weight = {
@@ -921,7 +921,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_COLD_FUSION_REACTOR"
 
 	ai_weight = {
@@ -1275,7 +1275,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_ANTIMATTER_REACTOR"
 
 	ai_weight = {
@@ -1629,7 +1629,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_ZERO_POINT_REACTOR"
 
 	ai_weight = {
@@ -1983,7 +1983,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_DARK_MATTER_REACTOR"
 
 	ai_weight = {
@@ -2411,7 +2411,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_GRAVITON_REACTOR"
 
 	ai_weight = {
@@ -2760,7 +2760,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
@@ -3058,7 +3058,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
@@ -3356,7 +3356,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 8 }
@@ -3654,7 +3654,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 	upgrades_to = "JUGGERNAUT_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 9 }
@@ -4017,7 +4017,7 @@ utility_component_template = {
 
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	size_restriction = { juggernaut headquarters star_eater }
 
 	ai_weight = { weight = 10 }
 }

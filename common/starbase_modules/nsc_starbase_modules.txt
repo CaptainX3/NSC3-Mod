@@ -533,6 +533,10 @@ solar_panel = {
 					has_megastructure = dyson_sphere_5
 				}
 			}
+			custom_tooltip = {
+			fail_text = "starbase_filler_limit.tooltip.fail"
+			NOT = { count_starbase_modules = { count > 6 type = solar_panel include_being_constructed = yes } }
+		}
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
 	}
@@ -545,15 +549,15 @@ solar_panel = {
 			energy = 5
 		}
 		upkeep = {
-			alloys = 5
+			alloys = 1
 		}
 		produces = {
 			trigger = { has_starbase_building = solar_capacitor }
-			energy = 2
+			energy = 3
 		}
 		upkeep = {
 			trigger = { has_starbase_building = solar_capacitor }
-			alloys = 5
+			alloys = 1
 		}
 	}
 
@@ -575,7 +579,14 @@ public_plaza = {
 	icon = "GFX_starbase_filler"
 	construction_days = 90
 
-	potential = { is_orbital_ring = no }
+	potential = {
+		exists = owner
+		owner = { 
+			is_hive_empire = no
+			is_machine_empire = no
+		}
+		is_orbital_ring = no
+	}
 	
 	possible = {
 		custom_tooltip = {
@@ -607,7 +618,14 @@ fleet_club = {
 	icon = "GFX_starbase_filler"
 	construction_days = 90
 
-	potential = { is_orbital_ring = no }
+	potential = {
+		exists = owner
+		owner = { 
+			is_hive_empire = no
+			is_machine_empire = no
+		}
+		is_orbital_ring = no
+	}
 	
 	possible = {
 		custom_tooltip = {
@@ -676,7 +694,14 @@ nightclub = {
 	icon = "GFX_starbase_filler"
 	construction_days = 120
 
-	potential = { is_orbital_ring = no }
+	potential = {
+		exists = owner
+		owner = { 
+			is_hive_empire = no
+			is_machine_empire = no
+		}
+		is_orbital_ring = no
+	}
 	
 	possible = {
 		custom_tooltip = {
@@ -716,7 +741,14 @@ public_market = {
 	icon = "GFX_starbase_filler"
 	construction_days = 100
 
-	potential = { is_orbital_ring = no }
+	potential = {
+		exists = owner
+		owner = { 
+			is_hive_empire = no
+			is_machine_empire = no
+		}
+		is_orbital_ring = no
+	}
 	
 	possible = {
 		custom_tooltip = {

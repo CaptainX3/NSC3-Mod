@@ -240,7 +240,7 @@ ship_event = {
 				set_owner = prev.owner
 				create_ship = {
 					name = "Exploration Cruiser"
-					design = "Prototype Exploration Cruiser"
+					random_existing_design = explorationship
 				}
 				set_location = prev.owner.solar_system.starbase
 				assign_leader = event_target:nsc_exploration_ship_reassign_target_leader

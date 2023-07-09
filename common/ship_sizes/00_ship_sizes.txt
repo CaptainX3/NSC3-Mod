@@ -39,30 +39,29 @@
 ##########################
 ### FORMATION PRIORITY ###
 ##########################
-@corvette_formation = 1
-@destroyer_formation = 2
-@cruiser_formation = 3
-@strikecruiser_formation = 4
-@battlecruiser_formation = 5
-@battleship_formation = 6
-@dreadnought_formation = 7
-@titan_formation = 8
-@flagship_formation = 9
-@carrier_formation = 11
+@corvette_formation_priority = 1
+@destroyer_formation_priority = 2
+@cruiser_formation_priority = 3
+@strikecruiser_formation_priority = 4
+@battlecruiser_formation_priority = 5
+@battleship_formation_priority = 6
+@dreadnought_formation_priority = 7
+@titan_formation_priority = 8
+@flagship_formation_priority = 9
+@carrier_formation_priority = 10
 
 ########################
 ### COLLISION RADIUS ###
 ########################
-@corvette_collision = 2
-@destroyer_collision = 2.5
-@cruiser_collision = 3.5
-@battlecruiser_collision = 6
-@battleship_collision = 6
-@carrier_collision = 9
-@dreadnought_collision = 9
-@escortcarrier_collision = 10
-@titan_collision = 12
-@flagship_collision = 0
+@corvette_collision_radius = 2
+@destroyer_collision_radius = 2.5
+@cruiser_collision_radius = 3.5
+@battlecruiser_collision_radius = 6
+@battleship_collision_radius = 6
+@carrier_collision_radius = 9
+@dreadnought_collision_radius = 9
+@titan_collision_radius = 12
+@flagship_collision_radius = 10
 
 ##########################
 ### BUILD BLOCK RADIUS ###
@@ -471,11 +470,11 @@ cruiser = {
 }
 
 StrikeCruiser = {
-	formation_priority = @strikecruiser_formation
+	formation_priority = @strikecruiser_formation_priority
 	max_speed = 180
 	acceleration = 0.25
 	rotation_speed = 0.175
-	collision_radius = @cruiser_collision
+	collision_radius = @cruiser_collision_radius
 
 	modifier = {
 		ship_evasion_add = 10
@@ -584,11 +583,11 @@ StrikeCruiser = {
 }
 
 Battlecruiser = {
-	formation_priority = @battlecruiser_formation
+	formation_priority = @battlecruiser_formation_priority
 	max_speed = 120
 	acceleration = 0.25
 	rotation_speed = 0.16
-	collision_radius = @battlecruiser_collision
+	collision_radius = @battlecruiser_collision_radius
 	
 	modifier = {
 		ship_evasion_add = 8
@@ -765,11 +764,11 @@ battleship = {
 }
 
 Carrier = {
-	formation_priority = @carrier_formation
+	formation_priority = @carrier_formation_priority
 	max_speed = 90
 	acceleration = 0.2
 	rotation_speed = 0.15
-	collision_radius = @carrier_collision
+	collision_radius = @carrier_collision_radius
 	
 	modifier = {
 		ship_piracy_suppression_add = 12
@@ -848,11 +847,11 @@ Carrier = {
 }
 
 Dreadnought = {
-	formation_priority = @dreadnought_formation
+	formation_priority = @dreadnought_formation_priority
 	max_speed = 90
 	acceleration = 0.2
 	rotation_speed = 0.15
-	collision_radius = @dreadnought_collision
+	collision_radius = @dreadnought_collision_radius
 	
 	modifier = {
 		ship_piracy_suppression_add = 4
@@ -1035,11 +1034,11 @@ titan = {
 }
 
 Flagship = {
-	formation_priority = @flagship_formation
+	formation_priority = @flagship_formation_priority
 	max_speed = 90
 	acceleration = 0.2
 	rotation_speed = 0.15
-	collision_radius = @flagship_collision
+	collision_radius = @flagship_collision_radius
 
 	modifier = {
 		ship_piracy_suppression_add = 20
