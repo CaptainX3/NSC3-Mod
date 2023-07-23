@@ -17,6 +17,8 @@ defined_text = {
 	random = no
 
 	text = {
+		#'SYMBOL = =' code here works fine, ignore those cwtools or irony mod manager errors
+		#I leave this annotation because I've got the total 2 bug reports and expect more without it
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_resource_upkeep SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_etc_category_feature_mothball_fleet_resource_upkeep_desc_neutral
 	}
