@@ -4,7 +4,7 @@ defined_text = {
 	random = no
 
 	text = {
-		#'SYMBOL = =' code here works fine, ignore those cwtools or irony mod manager errors
+		#'SYMBOL = =' code here works fine, ignore those cwtools or irony mod manager errors #stellaris v3.8.4
 		#I leave this annotation because I've got the total 2 bug reports and expect more without it
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_starbase_category_class_common_upgrade_cost_desc_neutral
