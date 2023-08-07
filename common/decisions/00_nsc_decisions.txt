@@ -9,6 +9,8 @@ decision_nsc_mothball_menu = {
 	}
 
 	allow = {
+		is_under_colonization = no
+		has_orbital_bombardment = no
 		custom_tooltip_fail = {
 			text = decision_nsc_mothball_menu_trigger.fail
 			any_fleet_in_orbit = { nsc_mothball_target_fleet_requirement = yes }
