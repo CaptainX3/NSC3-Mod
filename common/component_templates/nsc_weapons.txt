@@ -128,7 +128,7 @@ weapon_component_template = {
 	projectile_gfx = "tachyon_lance"
 	tags = { weapon_type_energy weapon_role_artillery x_slot }
 	ai_tags = { weapon_role_artillery }
-	size_restriction = { starbase_stronghold starbase_headquarters headquarters }
+	size_restriction = { starbase_stronghold starbase_headquarters }
 	inline_script = "targeting/capital_ships"
 	
 	resources = {
@@ -169,7 +169,7 @@ weapon_component_template = {
 	projectile_gfx = "gauss_cannon_s"
 	tags = { weapon_type_kinetic s_slot }
 	ai_tags = { weapon_role_anti_shield }
-	size_restriction = { battleship Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	size_restriction = { battleship Flagship juggernaut military_station_small military_station_medium military_station_large }
 	inline_script = "targeting/support_ships"
 	
 	resources = {
@@ -216,7 +216,7 @@ weapon_component_template = {
 	projectile_gfx = "infrared_laser_s"
 	tags = { weapon_type_energy s_slot }
 	ai_tags = { weapon_role_anti_armor }
-	size_restriction = { battleship Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	size_restriction = { battleship Flagship juggernaut military_station_small military_station_medium military_station_large }
 	inline_script = "targeting/support_ships"
 	
 	resources = {

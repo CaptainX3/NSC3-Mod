@@ -49,7 +49,7 @@ nsc_modmenu.1.desc:0 ""
 nsc_modmenu.1.a:0 ""
 
 nsc_modmenu.2.name:0 "Caution"
-nsc_modmenu.2.desc:0 "§R*** WARNING *** WARNING *** WARNING ***\n\nThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!"
+nsc_modmenu.2.desc:0 "§YSpecial Note: To reopen this menu during the game, open the Governments screen, go to Policies & Edicts, enable the NSC2 Mod Menu edict.§!\n\n§RThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!"
 nsc_modmenu.2.a:0 "$ACKNOWLEDGED$"
 
 ### Custom GUI Common ###
@@ -468,10 +468,10 @@ nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_name_de
 nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_enabled_desc:0 "$TOMAHAWK_CRUISE_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_disabled_desc:0 "$TOMAHAWK_CRUISE_MISSILE$: §RDisabled§!"
 
-#HARPOON_CRUISE_MISSILE
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_name_desc:0 "§H$HARPOON_CRUISE_MISSILE$§!\n$HARPOON_CRUISE_MISSILE_DESC$"
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_enabled_desc:0 "$HARPOON_CRUISE_MISSILE$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled_desc:0 "$HARPOON_CRUISE_MISSILE$: §RDisabled§!"
+#FRIGATE HARPOON TORPEDO
+nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_name_desc:0 "§H$FRIGATE_TORPEDO_1$§!\n$FRIGATE_TORPEDO_1_DESC$"
+nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_enabled_desc:0 "$FRIGATE_TORPEDO_1$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled_desc:0 "$FRIGATE_TORPEDO_1$: §RDisabled§!"
 
 #NSC_PD_MISSILE
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H$NSC_PD_MISSILE$§!\n$NSC_PD_MISSILE_DESC$"

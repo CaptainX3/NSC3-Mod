@@ -177,19 +177,19 @@ frigate = {
 	acceleration = 0.25
 	rotation_speed = 0.1
 	collision_radius = @frigate_collision_radius
-	max_hitpoints = 400
+	max_hitpoints = 500
 	modifier = {
 		ship_evasion_add = 50
 		ship_piracy_suppression_add = 10
 	}
 	hull_scale = 1.25
-	size_multiplier = 1
-	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "part1" } }
+	size_multiplier = 2
+	fleet_slot_size = 2
+	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_military_1_torpedo
-	base_buildtime = 60
+	base_buildtime = 90
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -206,8 +206,9 @@ frigate = {
 			name = energy_torpedoes
 			trigger = { has_technology = tech_energy_torpedoes_1 }
 		}
-	} 
-	prerequisites = { "tech_corvettes" "tech_torpedoes_1" }
+	}
+	
+	prerequisites = { "tech_destroyers" }
 	
 	combat_disengage_chance = 1.00
 
@@ -268,7 +269,7 @@ destroyer = {
 	acceleration = 0.3
 	rotation_speed = 0.2
 	collision_radius = @destroyer_collision_radius
-	max_hitpoints = 800
+	max_hitpoints = 1000
 	modifier = {
 		ship_evasion_add = 35
 		ship_piracy_suppression_add = 8
@@ -305,6 +306,7 @@ destroyer = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
+	required_component_set = "nsc_supportship_aura"
 
 	resources = {
 		category = ships
@@ -365,7 +367,7 @@ cruiser = {
 	collision_radius = @cruiser_collision_radius
 	max_hitpoints = 1800
 	modifier = {
-		ship_evasion_add = 10
+		ship_evasion_add = 15
 		ship_piracy_suppression_add = 6
 	}
 	size_multiplier = 3
@@ -421,7 +423,8 @@ cruiser = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-	required_component_set = "nsc_supportship_aura"
+	required_component_set = "nsc_strike_cruiser_upgrade"
+	required_component_set = "nsc_strike_cruiser_aura"
 
 	resources = {
 		category = ships
@@ -469,119 +472,6 @@ cruiser = {
 	}
 }
 
-StrikeCruiser = {
-	formation_priority = @strikecruiser_formation_priority
-	max_speed = 180
-	acceleration = 0.25
-	rotation_speed = 0.175
-	collision_radius = @cruiser_collision_radius
-
-	modifier = {
-		ship_evasion_add = 10
-		ship_piracy_suppression_add = 12
-	}
-	max_hitpoints = 2000
-	size_multiplier = 5
-	fleet_slot_size = 5
-	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
-	num_target_locators = 4
-	icon = nsc_ship_size_military_13
-	base_buildtime = 330
-	use_shipnames_from = cruiser
-	combat_disengage_chance = 0.80
-
-	is_space_station = no
-	can_have_federation_design = yes
-	enable_default_design = yes
-	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-
-	default_behavior = swarm
-	ship_roles = { gunship brawler screen }
-	triggered_ship_roles = {
-		{
-			name = explosive
-			trigger = { has_technology = tech_torpedoes_1 }
-		}
-		{
-			name = explosive_stealth
-			trigger = { has_technology = tech_cloaking_3 }
-		}
-		{
-			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
-		}
-		{
-			name = energy_torpedoes_stealth
-			trigger = {
-				has_technology = tech_cloaking_3
-				has_technology = tech_energy_torpedoes_1
-			}
-		}
-		{
-			name = artillery_stealth
-			trigger = {
-				has_technology = tech_cloaking_3
-			}
-		}
-		{
-			name = brawler_stealth
-			trigger = { has_technology = tech_cloaking_1 }
-		}
-	}
-	
-	prerequisites = { "tech_StrikeCruiser_1" }
-	
-	class = shipclass_military
-	construction_type = starbase_shipyard
-	
-	resources = {
-		category = ships
-		upkeep = {
-			energy = 1.6
-			alloys = 0.6
-		}
-	}
-
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
-			}
-		}
-	}
-
-	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
-	}
-	
-	min_upgrade_cost = { alloys = 5 }
-
-	ai_ship_data = {
-		fraction = {
-			base = 0
-			modifier = {
-				add = 10 #10
-				has_technology = tech_StrikeCruiser_1
-			}
-			modifier = {
-				add = -100
-				uses_standard_ship_sizes = no
-			}
-		}
-	}
-
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
-	required_component_set = "special_ship_slot"
-	required_component_set = "nsc_strike_cruiser_aura"
-}
-
 Battlecruiser = {
 	formation_priority = @battlecruiser_formation_priority
 	max_speed = 120
@@ -610,9 +500,17 @@ Battlecruiser = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = line
-	ship_roles = { artillery carrier gunship explosive energy_tordpedoes brawler screen }
+	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler screen }
 
 	prerequisites = { "tech_Battlecruiser_1" }
+	
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
+	required_component_set = "special_ship_slot"
 	
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -658,14 +556,6 @@ Battlecruiser = {
 					}
 				}
 	}
-
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
-	required_component_set = "special_ship_slot"
 }
 
 battleship = {
@@ -772,10 +662,10 @@ Carrier = {
 	
 	modifier = {
 		ship_piracy_suppression_add = 12
-		ship_evasion_mult = -1
+		ship_evasion_add = 5
 	}
 	
-	max_hitpoints = 6000
+	max_hitpoints = 7000
 	size_multiplier = 10
 	fleet_slot_size = 10
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
@@ -794,6 +684,15 @@ Carrier = {
 	ship_roles = { carrier heavy_carrier super_carrier }
 
 	prerequisites = { "tech_Carrier_1" }
+	
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
+	required_component_set = "special_ship_slot"
+	required_component_set = "special_ship_slot"
 	
 	class = shipclass_military
 	construction_type = starbase_shipyard
@@ -836,14 +735,6 @@ Carrier = {
 				}
 	}
 
-	required_component_set = "power_core"
-	required_component_set = "ftl_components"
-	required_component_set = "thruster_components"
-	required_component_set = "sensor_components"
-	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
-	required_component_set = "special_ship_slot"
-	required_component_set = "special_ship_slot"
 }
 
 Dreadnought = {
@@ -949,6 +840,7 @@ titan = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
+	
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
@@ -1079,7 +971,7 @@ Flagship = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 10200
+			alloys = 10000
 			influence = 500
 		}
 		upkeep = {
@@ -1568,7 +1460,7 @@ explorationship = {
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
 	num_target_locators = 0
 	icon = nsc_ship_size_military_14
-	base_buildtime = 320
+	base_buildtime = 300
 	use_shipnames_from = science
 	combat_disengage_chance = 2.0
 	components_add_to_cost = no

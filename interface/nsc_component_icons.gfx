@@ -165,8 +165,14 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_ship_part_cruise_missile_2"
-		textureFile = "gfx/interface/icons/ship_parts/ship_part_cruise_missile_2.dds"
+		name = "GFX_ship_part_frigate_torpedo_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_frigate_torpedo_1.dds"
+		noOfFrames = 1
+	}
+	
+	spriteType = {
+		name = "GFX_ship_part_battlecruiser_torpedo_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_battlecruiser_torpedo_1.dds"
 		noOfFrames = 1
 	}
 	

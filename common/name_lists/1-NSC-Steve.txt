@@ -12,8 +12,6 @@
 		
 		cruiser = { "Steve" }
 
-		StrikeCruiser = { "Steve" }
-
 		Battlecruiser = { "Steve" }
 		
 		battleship = { "Steve" }

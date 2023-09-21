@@ -18,6 +18,7 @@
 ###############################
 ### SPECIAL SLOT COMPONENTS ###
 ###############################
+
 utility_component_template = {
 	key = "SPECIAL_SLOT_EMPTY"
 	size = medium
