@@ -1,0 +1,1 @@
+## ***DO NOT download NSC2 from the branch on this main page!<br/><br/>This is NOT a working version of the mod, it is for the NSC2 Dev Team only.***<br/><br/>**To download the latest Release version of NSC2, [click here](https://github.com/CaptainX3/NSC2-Mod/releases). After you download the file, read and follow the instructions on that page to install the mod.**
