@@ -1,0 +1,44 @@
+
+###############################
+### UPGRADE COMPONENTS ###
+###############################
+
+utility_component_template = {
+	key = "STRIKE_CRUISER_UPGRADE_EMPTY"
+	size = medium
+	icon = "GFX_ship_part_empty_ftl_drive"
+	icon_frame = 1
+	power = 0
+
+	size_restriction = { cruiser }
+	component_set = "nsc_strike_cruiser_upgrade"
+	
+	ai_weight = { weight = 1 }
+}
+
+
+utility_component_template = {
+	key = "STRIKE_CRUISER_UPGRADE"
+	size = medium
+	icon = "GFX_ship_part_nsc_ai_computer"
+	icon_frame = 1
+	power = -100
+	
+	resources = {
+		category = ship_components
+		cost = { alloys = 10 }		
+	}
+
+	modifier = {
+	}
+	
+	ship_modifier = {
+	}
+
+	prerequisites = { "tech_StrikeCruiser_1" }
+	
+	size_restriction = { cruiser }
+	component_set = "nsc_strike_cruiser_upgrade"
+	
+	ai_weight = { weight = 5 }
+}

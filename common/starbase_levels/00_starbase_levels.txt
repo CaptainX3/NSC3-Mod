@@ -67,13 +67,6 @@ starbase_level_headquarters = {
 	}
 }
 
-starbase_level_hq = {
-	ship_size = headquarters
-	potential_home_base = yes
-	show_in_outliner = no
-	collects_trade = no
-}
-
 #########################
 ### SPECIAL STARBASES ###
 #########################

@@ -1,7 +1,6 @@
-@cost1 = 30
+@cost1 = 40
 @cost2 = 50
-@cost3 = 60
-@cost4 = 80
+@cost3 = 100
 @section_cost = 30
 
 
@@ -10,7 +9,7 @@
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DESTROYER_BOW_M1S2"
+	key = "DESTROYER_BOW_M2S2"
 	ship_size = destroyer
 	fits_on_slot = bow
 	entity = "destroyer_bow_M1S2_entity"
@@ -19,6 +18,11 @@ ship_section_template = {
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}	
+	component_slot = {
+		name = "MEDIUM_GUN_02"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}	
@@ -34,23 +38,27 @@ ship_section_template = {
 	}
 
 	small_utility_slots = 6
+	medium_utility_slots = 1
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cost2 }
 	}
 }
 
-
-
 ship_section_template = {
-	key = "DESTROYER_BOW_S3"
+	key = "DESTROYER_BOW_G1S3"
 	ship_size = destroyer
 	fits_on_slot = bow
-	entity = "destroyer_bow_S3_entity"
+	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { screen }
+	ai_tags = { gunship brawler }
 
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_missile_turret"
+		locatorname = "medium_gun_01"
+	}	
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "small_turret"
@@ -59,31 +67,25 @@ ship_section_template = {
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
-		locatorname = "small_gun_02"
+		locatorname = "small_gun_01"
 	}	
 	component_slot = {
 		name = "SMALL_GUN_03"
 		template = "small_turret"
-		locatorname = "small_gun_03"
+		locatorname = "small_gun_02"
 	}
-	component_slot = {
-		name = "PD_GUN_01"
-		template = "invisible_point_defence_turret"
-		locatorname = "small_gun_01"
-	}
-	
+
 	small_utility_slots = 6
+	medium_utility_slots = 1
 
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { alloys = @cost2 }
 	}
 }
 
-
-
 ship_section_template = {
-	key = "DESTROYER_BOW_S4"
+	key = "DESTROYER_BOW_S5"
 	ship_size = destroyer
 	fits_on_slot = bow
 	entity = "destroyer_bow_S3_entity"
@@ -98,28 +100,75 @@ ship_section_template = {
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "small_turret"
-		locatorname = "small_gun_02"
+		locatorname = "small_gun_01"
 	}	
 	component_slot = {
 		name = "SMALL_GUN_03"
 		template = "small_turret"
-		locatorname = "small_gun_03"
+		locatorname = "small_gun_02"
 	}
 	component_slot = {
 		name = "SMALL_GUN_04"
 		template = "small_turret"
-		locatorname = "small_gun_01"
+		locatorname = "small_gun_02"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "small_turret"
+		locatorname = "small_gun_03"
 	}
 	
-	small_utility_slots = 6
-
+	small_utility_slots = 5
+	medium_utility_slots = 2
+	
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost1 }
 	}
 }
 
+ship_section_template = {
+	key = "DESTROYER_BOW_S3P2"
+	ship_size = destroyer
+	fits_on_slot = bow
+	entity = "destroyer_bow_S3_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen }
 
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "point_defence_turret"
+		locatorname = "small_gun_03"
+	}
+	
+	small_utility_slots = 5
+	medium_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost1 }
+	}
+}
 
 ship_section_template = {
 	key = "DESTROYER_BOW_L1"
@@ -136,64 +185,29 @@ ship_section_template = {
 		locatorname = "large_gun_01"
 	}
 	
-	small_utility_slots = 5
+	small_utility_slots = 4
+	medium_utility_slots = 1
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost4 }
+		cost = { alloys = @cost3 }
 	}
 }
 
-
-
-#ship_section_template = {
-#	key = "DESTROYER_BOW_G2"
-#	ship_size = destroyer
-#	fits_on_slot = bow
-#	should_draw_components = yes
-#	entity = "destroyer_bow_L1_entity"
-#	icon = "GFX_ship_part_core_bow"
-#
-#	component_slot = {
-#		name = "MISSILE_01"
-#		template = "medium_missile_turret"
-#		locatorname = "large_gun_01"
-#	}
-#	component_slot = {
-#		name = "MISSILE_02"
-#		template = "invisible_missile_turret"
-#		locatorname = "large_gun_01"
-#	}
-#	
-#	small_utility_slots = 6
-#	
-#	resources = {
-#		category = ship_sections
-#		cost = { alloys = @cost2 }
-#	}
-#}
-
-
-
 ship_section_template = {
-	key = "DESTROYER_BOW_M2P4"
+	key = "DESTROYER_BOW_LC"
 	ship_size = destroyer
 	fits_on_slot = bow
-	entity = "destroyer_bow_M1S2_entity"
+	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { screen }
 
 	prerequisites = { "tech_pd_destroyer_1" }
 
 	component_slot = {
-		name = "MEDIUM_GUN_01"
-		template = "medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_02"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_01"
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "small_gun_02"
 	}
 	component_slot = {
 		name = "PD_GUN_01"
@@ -210,13 +224,8 @@ ship_section_template = {
 		template = "invisible_point_defence_turret"
 		locatorname = "small_gun_01"
 	}
-	component_slot = {
-		name = "PD_GUN_04"
-		template = "invisible_point_defence_turret"
-		locatorname = "small_gun_02"
-	}
 
-	small_utility_slots = 8
+	small_utility_slots = 3
 
 	resources = {
 		category = ship_sections
@@ -224,12 +233,13 @@ ship_section_template = {
 	}
 }
 
+
 ####################################################################################################################################################################
 ### STERN ##########################################################################################################################################################
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DESTROYER_STERN_S2"
+	key = "DESTROYER_STERN_S5"
 	ship_size = destroyer
 	fits_on_slot = stern
 	entity = "destroyer_stern_S2_entity"
@@ -246,6 +256,21 @@ ship_section_template = {
 		template = "small_turret"
 		locatorname = "small_gun_02"
 	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}	
 	
 	aux_utility_slots = 1
 	
@@ -256,7 +281,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DESTROYER_STERN_M1"
+	key = "DESTROYER_STERN_M2"
 	ship_size = destroyer
 	fits_on_slot = stern
 	entity = "destroyer_stern_M1_entity"
@@ -268,6 +293,53 @@ ship_section_template = {
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
 	}
+	component_slot = {
+		name = "MEDIUM_GUN_02"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+	
+	aux_utility_slots = 1
+	
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost2 }
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_STERN_S3P2"
+	ship_size = destroyer
+	fits_on_slot = stern
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship brawler }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}	
 	
 	aux_utility_slots = 1
 	
@@ -277,84 +349,53 @@ ship_section_template = {
 	}
 }
 
-#ship_section_template = {
-#	key = "DESTROYER_STERN_G1"
-#	ship_size = destroyer
-#	fits_on_slot = stern
-#	entity = "destroyer_stern_M1_entity"
-#	icon = "GFX_ship_part_core_stern"
-#
-#	component_slot = {
-#		name = "MISSILE_01"
-#		template = "medium_missile_turret"
-#		locatorname = "medium_gun_01"
-#	}
-#	
-#	aux_utility_slots = 1
-#	
-#	resources = {
-#		category = ship_sections
-#		cost = { alloys = @cost2 }
-#	}
-#}
-
 ship_section_template = {
-	key = "DESTROYER_STERN_P4"
+	key = "DESTROYER_STERN_LC"
 	ship_size = destroyer
 	fits_on_slot = stern
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen }
-	
-	prerequisites = { "tech_pd_destroyer_1" }
+	ai_tags = { gunship brawler }
 
 	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
 		locatorname = "small_gun_01"
-	}	
-	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
-		locatorname = "small_gun_02"
 	}
 	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "invisible_point_defence_turret"
+		name = "PD_GUN_01"
+		template = "point_defence_turret"
 		locatorname = "small_gun_01"
-	}	
-	component_slot = {
-		name = "SMALL_GUN_04"
-		template = "invisible_point_defence_turret"
-		locatorname = "small_gun_02"
 	}
+	component_slot = {
+		name = "PD_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}	
 	
-	aux_utility_slots = 2
+	aux_utility_slots = 1
 	
 	resources = {
 		category = ship_sections
 		cost = { alloys = @cost3 }
 	}
-	
-
 }
+
+
 
 ####################################################################################################################################################################
 ### VANILLA SECTIONS ###############################################################################################################################################
 ####################################################################################################################################################################
 
 
-
 ship_section_template = {
-	key = "DESTROYER_STERN_PD2"
+	key = "DESTROYER_BOW_M1S2"
 	ship_size = destroyer
-	fits_on_slot = stern
+	fits_on_slot = bow
 	should_draw_components = yes
-	entity = "destroyer_stern_S2_entity"
-	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen }
-
-	prerequisites = { "tech_nsc_disabled_sections" }
+	entity = "destroyer_bow_M1S2_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { gunship brawler }
 
 	ai_weight = {
 		modifier = {
@@ -368,6 +409,116 @@ ship_section_template = {
 			}
 		}
 	}
+	
+	prerequisites = { "tech_nsc_disabled_sections" }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_BOW_S3"
+	ship_size = destroyer
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "destroyer_bow_S3_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { screen }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			is_preferred_weapons = weapon_type_explosive
+		}
+		modifier = {
+			factor = 0.1
+			has_technology = tech_battleships
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+	}
+	
+	prerequisites = { "tech_nsc_disabled_sections" }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "small_turret"
+		locatorname = "small_gun_03"
+	}
+
+	small_utility_slots = 6
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+#STERN
+
+ship_section_template = {
+	key = "DESTROYER_STERN_PD2"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { screen }
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOR = {
+				has_ai_personality = peaceful_traders
+				has_ai_personality = slaving_despots
+				has_ai_personality = migrating_flock
+				has_ai_personality = evangelising_zealots
+				has_ai_personality = hive_mind
+			}
+		}
+	}
+	
+	prerequisites = { "tech_nsc_disabled_sections" }
 
 
 	component_slot = {
@@ -381,6 +532,70 @@ ship_section_template = {
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
+
+	aux_utility_slots = 1
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_STERN_S2"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_S2_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { gunship brawler }
+
+	ai_weight = {
+		factor = 100
+	}
+	
+	prerequisites = { "tech_nsc_disabled_sections" }
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "small_turret"
+		locatorname = "small_gun_01"
+	}
+
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "small_turret"
+		locatorname = "small_gun_02"
+	}
+
+	aux_utility_slots = 2
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @section_cost
+		}
+	}
+}
+
+ship_section_template = {
+	key = "DESTROYER_STERN_M1"
+	ship_size = destroyer
+	fits_on_slot = stern
+	should_draw_components = yes
+	entity = "destroyer_stern_M1_entity"
+	icon = "GFX_ship_part_core_stern"
+	ai_tags = { artillery artillery_stealth }
+
+	component_slot = {
+		name = "MEDIUM_GUN_01"
+		template = "medium_turret"
+		locatorname = "medium_gun_01"
+	}
+
+	prerequisites = { "tech_nsc_disabled_sections" }
 
 	aux_utility_slots = 1
 

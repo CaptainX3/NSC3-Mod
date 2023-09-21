@@ -716,7 +716,6 @@ nightclub = {
 		cost = {
 			alloys = 100
 			consumer_goods = 75
-			luxury_goods = 10
 		}
 		produces = { 
 			unity = 5

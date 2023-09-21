@@ -43,8 +43,14 @@ component_set = {
 }
 
 component_set = {
-	key = "HARPOON_CRUISE_MISSILE"
-	icon = "GFX_ship_part_cruise_missile_2"
+	key = "FRIGATE_TORPEDO_1"
+	icon = "GFX_ship_part_frigate_torpedo_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "BATTLECRUISER_TORPEDO_1"
+	icon = "GFX_ship_part_battlecruiser_torpedo_1"
 	icon_frame = 1
 }
 

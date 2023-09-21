@@ -18,7 +18,6 @@
 ### FLAGSHIP AURA COMPONENTS ###
 ################################
 
-
 utility_component_template = {
 	key = "NSC_FLAGSHIP_AURA_EMPTY"
 	size = medium
@@ -71,6 +70,8 @@ utility_component_template = {
 #############################
 ### TITAN AURA COMPONENTS ###
 #############################
+
+
 utility_component_template = {
 	key = "NSC_TITAN_AURA_EMPTY"
 	size = medium
@@ -122,6 +123,8 @@ utility_component_template = {
 ######################################
 ### STRIKE CRUISER AURA COMPONENTS ###
 ######################################
+
+
 utility_component_template = {
 	key = "NSC_STRIKE_CRUISER_AURA_EMPTY"
 	size = medium
