@@ -144,13 +144,13 @@ weapon_component_template = {
 	icon = "GFX_ship_part_battlecruiser_torpedo_1"
 	icon_frame = 1
 	
-	power = -10
+	power = -50
 	damage = { min = 150 max = 200 }
 	hull_damage = 1.75
 	shield_damage = 1.0
 	shield_penetration = 1.0
 	armor_damage = 1.75
-	armor_penetration = 0.80
+	armor_penetration = 0.75
 	windup = { min = 1 max = 10 }
 	total_fire_time = 30
 	range = 140

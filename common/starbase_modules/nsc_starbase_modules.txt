@@ -15,10 +15,6 @@ anchorage = {
 	section = "ANCHORAGE_STARBASE_SECTION"
 	construction_days = 180
 
-	potential = {
-		is_orbital_ring = no
-	}
-
 	resources = {
 		category = starbase_modules
 		cost = { alloys = 50 }
@@ -359,10 +355,6 @@ asteroid_mining = {
 		upkeep = { energy = 2 }
 	}
 	
-	potential = {
-		is_orbital_ring = no
-	}
-	
 	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
 		custom_tooltip = { fail_text = "nsc.requires.asteroid" solar_system = { any_system_planet = { is_asteroid = yes } } }
@@ -411,7 +403,7 @@ space_foundry = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	
-	potential = { exists = owner owner = { has_technology = tech_alloys_1 } is_orbital_ring = no }
+	potential = { exists = owner owner = { has_technology = tech_alloys_1 } }
 	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = space_foundry }
 	}
@@ -460,7 +452,6 @@ space_factory = {
 	potential = {
 		exists = owner 
 		owner = { has_technology = tech_luxuries_1 }
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -516,7 +507,6 @@ solar_panel = {
 
 	potential = {
 		exists = owner
-		is_orbital_ring = no
 		owner = {
 			is_gestalt = no
 		}
@@ -585,7 +575,6 @@ public_plaza = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -624,7 +613,6 @@ fleet_club = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -700,7 +688,6 @@ nightclub = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -746,7 +733,6 @@ public_market = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		is_orbital_ring = no
 	}
 	
 	possible = {
