@@ -144,8 +144,6 @@ starbase_starport = {
 		"18" = { locator = "part7" }
 		"19" = { locator = "part5" }
 		"20" = { locator = "part5" }
-
-
 	}
 	is_designable = no
 	num_target_locators = 0
@@ -237,7 +235,6 @@ starbase_starhold = {
 		"18" = { locator = "part7" }
 		"19" = { locator = "part5" }
 		"20" = { locator = "part5" }
-
 	}
 	is_designable = no
 	num_target_locators = 0
@@ -328,7 +325,6 @@ starbase_starfortress = {
 		"18" = { locator = "part7" }
 		"19" = { locator = "part5" }
 		"20" = { locator = "part5" }
-
 	}
 	is_designable = no
 	num_target_locators = 0
@@ -419,7 +415,6 @@ starbase_citadel = {
 		"18" = { locator = "part7" }
 		"19" = { locator = "part5" }
 		"20" = { locator = "part5" }
-
 	}
 	is_designable = no
 	num_target_locators = 0

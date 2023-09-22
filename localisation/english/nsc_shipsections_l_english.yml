@@ -11,7 +11,7 @@ CARRIER:0 "Carrier"
 DREADNOUGHT:0 "Dreadnought"
 FLAGSHIP:0 "Flagship"
 SUPPORTSHIP:0 "Fleet Support Ship"
-EXPLORATIONSHIP:0 "Exploration Cruiser"
+EXPLORATIONSHIP:0 "Explorer"
 
 StrikeCruiser:0 "Strike Cruiser"
 StrikeCruiser_plural:0 "Strike Cruisers"
@@ -25,21 +25,14 @@ Flagship:0 "Flagship"
 Flagship_plural:0 "Flagships"
 supportship:0 "Fleet Support Ship"
 supportship_plural:0 "Fleet Support Ships"
-explorationship:0 "Exploration Cruiser"
-explorationship_plural:0 "Exploration Cruisers"
+explorationship:0 "Explorer"
+explorationship_plural:0 "Explorers"
 
 starbase_stronghold:0 "Grand Citadel"
 starbase_stronghold_plural:0 "Grand Citadels"
 
 starbase_headquarters:0 "Solar Stronghold"
 starbase_headquarters_plural:0 "Solar Strongholds"
-
-headquarters:0 "Headquarters"
-headquarters_plural:0 "Headquarters"
-headquarters_desc:0 "Provides §GHeadquarters Station§! empire modifier."
-
-xl_cannon:0 "Annihilator Cannon"
-xl_cannon_plural:0 "Annihilator Cannons"
 
 
 

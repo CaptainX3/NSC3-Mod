@@ -252,7 +252,6 @@ mining_base = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_mining_base }
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -292,7 +291,6 @@ power_station = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_power_station }
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -332,7 +330,6 @@ farming_base = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_hydroponics }
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -370,7 +367,6 @@ customs_office = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_starbase_2 }
-		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -467,7 +463,6 @@ solar_capacitor = {
 
 	potential = {
 		exists = owner
-		is_orbital_ring = no
 		owner = {
 			is_gestalt = no
 			has_technology = "tech_starbase_4"
@@ -523,7 +518,6 @@ artifact_silo = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_archaeostudies }
-		is_orbital_ring = no
 		host_has_dlc = "Ancient Relics Story Pack"
 	}
 	
@@ -557,8 +551,6 @@ construction_office = {
 	icon = "GFX_starbase_adv_space_engineers"
 	construction_days = 180	
 
-	potential = { is_orbital_ring = no }
-
 	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = construction_office }
 	}
@@ -582,8 +574,6 @@ construction_office = {
 mining_manager = {
 	icon = "GFX_starbase_mining_experts"
 	construction_days = 220
-
-	potential = { is_orbital_ring = no }
 
 	possible = {
 		has_starbase_module = asteroid_mining 
@@ -622,7 +612,7 @@ reinforced_defenses = {
 		ship_armor_mult = 0.05
 		ship_armor_regen_add_perc = 0.01
 	}
-	potential = { is_orbital_ring = no has_starbase_size >= starbase_starport }#not for outposts
+	potential = { has_starbase_size >= starbase_starport }#not for outposts
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 50 modifier = { factor = 0.01 has_starbase_size < starbase_starport } }
@@ -647,7 +637,7 @@ strategic_defenses = {
 		ship_shield_regen_add_perc = 0.01
 		ship_fire_rate_mult = 0.1
 	}
-	potential = { is_orbital_ring = no has_starbase_size >= starbase_starfortress }
+	potential = { has_starbase_size >= starbase_starfortress }
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 50 modifier = { factor = 0.01 has_starbase_size < starbase_starfortress } }
@@ -672,7 +662,7 @@ adv_starbase_defenses = {
 		ship_fire_rate_mult = 0.1
 		ship_weapon_range_mult = 0.15
 	}
-	potential = { is_orbital_ring = no has_starbase_size >= starbase_citadel }
+	potential = { has_starbase_size >= starbase_citadel }
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 50 modifier = { factor = 0.01 has_starbase_size < starbase_citadel } }
@@ -682,8 +672,6 @@ adv_starbase_defenses = {
 repair_module = {
 	icon = "GFX_starbase_repair_module"
 	construction_days = 300
-
-	potential = { is_orbital_ring = no }
 
 	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = repair_module }
@@ -724,7 +712,9 @@ ground_forces_academy = {
 		planet_stability_add = 3
 		pop_government_ethic_attraction = 0.35
 	}
+	
 	potential = { is_orbital_ring = yes }
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
@@ -745,7 +735,6 @@ synthetic_crystal_fabricator = {
 		upkeep = { minerals = 10 energy = 3 }
 	}
 	potential = {
-		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_rare_crystals } 
 	}
@@ -772,7 +761,6 @@ synthetic_volatile_motes_fabricator = {
 		upkeep = { minerals = 10 energy = 3 }
 	}
 	potential = {
-		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_volatile_motes } 
 	}
@@ -799,7 +787,6 @@ synthetic_gase_fabricator = {
 		upkeep = { minerals = 10 energy = 3 }
 	}
 	potential = {
-		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_exotic_gases } 
 	}
@@ -825,7 +812,6 @@ robot_assembly = {
 		upkeep = { minerals = 10 energy = 2 }
 	}
 	potential = { 
-		is_orbital_ring = no 
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_robotic_workers } 
 		solar_system = { any_system_planet = { is_owned_by = from } }
@@ -861,7 +847,6 @@ assembly_line_manufacturing = {
 	}
 	
 	potential = {
-		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { OR = { has_technology = tech_alloys_2 has_technology = tech_luxuries_2 } }
 	}
@@ -904,7 +889,6 @@ federal_reserve_bank = {
 	potential = { 
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { is_gestalt = no }
-		is_orbital_ring = no
 	}
 	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = federal_reserve_bank }
@@ -972,8 +956,6 @@ cloning_facilities = {
 navcom_ai = {
 	icon = "GFX_starbase_emergency_portal"
 	construction_days = 720
-
-	potential = { is_orbital_ring = no }
 	
 	resources = {
 		category = starbase_buildings
