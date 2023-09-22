@@ -1037,32 +1037,60 @@ nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_off_but
         hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE } }
     }
 }
-#HARPOON_CRUISE_MISSILE
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_header_button_effect = {
+#FRIGATE_TORPEDO_1
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
     allow = { always = yes }
-    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_name_desc }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_name_desc }
 }
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_on_button_effect = {
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_on_button_effect = {
     potential = {
         has_global_flag = nsc_modmenu_ship_component_page_opened
-        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
     }
     allow = { nsc_modmenu_mp_host_trigger = yes }
     effect = {
         custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
-        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 } }
     }
 }
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_off_button_effect = {
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_off_button_effect = {
     potential = {
         has_global_flag = nsc_modmenu_ship_component_page_opened
-        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 } }
     }
     allow = { nsc_modmenu_mp_host_trigger = yes }
     effect = {
         custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
-        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 } }
+    }
+}
+#BATTLECRUISER_TORPEDO_1
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_component_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 } }
+    }
+}
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_component_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 } }
     }
 }
 #NSC_PD_MISSILE

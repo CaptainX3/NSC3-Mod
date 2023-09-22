@@ -3,41 +3,37 @@
 ### 디시인사이드 스텔라리스 갤러리 '어ㅅㅂ' 제작 ###
 
 ### ETC ###
-nsc_modmenu_game_content_disabled.fail:0 "\n£trigger_no£ §RThis Content is disabled by NSC2 Mod Menu.§!"
+nsc_modmenu_game_content_disabled.fail:0 "\n£trigger_no£ §RThis Content is disabled by NSC3 Mod Menu.§!"
 
 ### Edicts ###
-edict_nsc_modmenu:0 "§YNSC2 Mod Menu§!"
+edict_nsc_modmenu:0 "§YNSC3 Mod Menu§!"
 edict_nsc_modmenu_desc:0 "We can control various contents from New Ship Classes 2 mod here."
 edict_nsc_modmenu_tooltip:0 "§YClick to Open the Mod Configuration UI.§!"
 edict_nsc_modmenu_tooltip.fail:0 "£trigger_no£ §RCan not open this UI multiple times.§!"
 
 ### Country Modifiers ###
 #Ship Classes
-nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod:0 "NSC2 Modmenu"
-nsc_modmenu_ship_class_StrikeCruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Battlecruiser_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Battlecruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Carrier_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Carrier_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Dreadnought_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Dreadnought_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_headquarters_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_headquarters_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Battlecruiser_build_cost_mod:0 "NSC3 Modmenu"
+nsc_modmenu_ship_class_Battlecruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Carrier_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Carrier_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Dreadnought_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Dreadnought_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 #Starbase Levels
-nsc_modmenu_starbase_class_common_upgrade_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_starbase_class_common_upgrade_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_starbase_class_outpost_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_starbase_class_outpost_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_common_upgrade_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_common_upgrade_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_outpost_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_outpost_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 #ETC AI Difficulties
-nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_etc_feature_ai_difficulty_military_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_military_bonus_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 ### Fleet Modifiers ###
 nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod:0 "Mothballed Fleet"
@@ -49,7 +45,7 @@ nsc_modmenu.1.desc:0 ""
 nsc_modmenu.1.a:0 ""
 
 nsc_modmenu.2.name:0 "Caution"
-nsc_modmenu.2.desc:0 "§R*** WARNING *** WARNING *** WARNING ***\n\nThe NSC2 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!"
+nsc_modmenu.2.desc:0 "§YSpecial Note: To reopen this menu during the game, open the Governments screen, go to Policies & Edicts, enable the NSC3 Mod Menu edict.§!\n\n§RThe NSC3 Mod Menu allows you to configure the mod to your liking, however it is EXTREMELY important that you only make these changes AT THE START OF YOUR GAME!\n\nIf you turn on or off features in the middle of a game, there is a very good chance that it will completely break your save.\n\nThe only thing that is relatively safe to do in the middle of a game is increasing the AI bonuses, which should help them grow faster, but once their economy is dependent on those bonuses, lowering them can cause the AI to stop developing or even completely collapse.\n\nOnce again, DO NOT CHANGE MOD SETTINGS IN THE MIDDLE OF A GAME. It will likely break your save. You have been warned!§!"
 nsc_modmenu.2.a:0 "$ACKNOWLEDGED$"
 
 ### Custom GUI Common ###
@@ -112,36 +108,36 @@ nsc_modmenu_setting_page_mod_category_preset_apply.fail:0 "£trigger_no£ §RThi
 nsc_modmenu_setting_page_mod_category_preset_disable_all:0 "Why did I subscribe to this mod?"
 nsc_modmenu_setting_page_mod_category_preset_disable_all_desc:0 "Unable to recall the reason, you decided to simply turn off all of its contents and features, out of reluctance to restart the game..."
 nsc_modmenu_setting_page_mod_category_preset_disable_all_name_desc:0 "§H$nsc_modmenu_setting_page_mod_category_preset_disable_all$§!\n$nsc_modmenu_setting_page_mod_category_preset_disable_all_desc$"
-nsc_modmenu_setting_page_mod_category_preset_disable_all_effect_tooltip:0 "§YDisables all Contents and Features of NSC2.§!"
+nsc_modmenu_setting_page_mod_category_preset_disable_all_effect_tooltip:0 "§YDisables all Contents and Features of NSC3.§!"
 
 #preset_ship_classes_only
 nsc_modmenu_setting_page_mod_category_preset_ship_classes_only:0 "Good Old Times"
 nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_desc:0 "Do you miss the days when things were simpler? Do you miss the days when this mod offered only new ship classes but nothing else? Then this preset is just for you!"
 nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_name_desc:0 "§H$nsc_modmenu_setting_page_mod_category_preset_ship_classes_only$§!\n$nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_desc$"
-nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_effect_tooltip:0 "§YEnables only Ship Classes of NSC2.§!"
+nsc_modmenu_setting_page_mod_category_preset_ship_classes_only_effect_tooltip:0 "§YEnables only Ship Classes of NSC3.§!"
 
 ### Custom GUI Category: Mod Introduction ###
 nsc_modmenu_setting_page_mod_category_introduction_name:0 "$nsc_modmenu_setting_button_category_mod_name$ $nsc_modmenu_setting_button_mod_introduction_name$"
-nsc_modmenu_setting_page_mod_category_introduction_desc:0 "§EWelcome to the NSC2 Official Mod Menu!\n\nThis menu will allow you to customize the mod as you choose. We highly recommend only changing these settings upon starting a new game - it is currently unknown how changing these settings will affect a save game.\n\nWe also have a FAQ section of this menu which will answer common questions about the mod and a section with instructions to help explain how to use certain features of the mod.\n\nIf you have any questions that are not answered here, feel free to join the NSC2 Discord server linked on the mod's Steam page.§!"
+nsc_modmenu_setting_page_mod_category_introduction_desc:0 "§EWelcome to the NSC3 Official Mod Menu!\n\nThis menu will allow you to customize the mod as you choose. We highly recommend only changing these settings upon starting a new game - it is currently unknown how changing these settings will affect a save game.\n\nWe also have a FAQ section of this menu which will answer common questions about the mod and a section with instructions to help explain how to use certain features of the mod.\n\nIf you have any questions that are not answered here, feel free to join the NSC3 Discord server linked on the mod's Steam page.§!"
 
 ### Custom GUI Category: Mod FAQ ###
 nsc_modmenu_setting_page_mod_category_faq_name:0 "$nsc_modmenu_setting_button_category_mod_name$ $nsc_modmenu_setting_button_mod_faq_name$"
-nsc_modmenu_setting_page_mod_category_faq_desc:0 "§EWelcome to the NSC2 Frequently Asked Questions page.\n\nHere you'll find the most common questions we get asked by the community. Simply click the buttons on either side of this text box.\n\nMore questions will be added in the future as we see them come up. If you still have questions that are not on this page, feel free to join the NSC2 Discord and ask our community!§!"
+nsc_modmenu_setting_page_mod_category_faq_desc:0 "§EWelcome to the NSC3 Frequently Asked Questions page.\n\nHere you'll find the most common questions we get asked by the community. Simply click the buttons on either side of this text box.\n\nMore questions will be added in the future as we see them come up. If you still have questions that are not on this page, feel free to join the NSC3 Discord and ask our community!§!"
 
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_name:0 "FAQ List"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_name:0 "NSC2 Not Working"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_tooltip:0 "§EQuestion: What do I do if NSC2 isn't working properly?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_tooltip$\n\nThe very first step in troubleshooting mod problems is to check your mod load order in the Paradox Launcher. Having mods in the wrong order will cause issues.\n\nThe Paradox launcher functions on LIOS  - "Last in, only served." This means that when two mods modify the same thing, the mod that is lower on the list will overwrite anything higher on the list. This is super important because a lot of different mods modify the same things.\n\nA bad load order is what can cause common "bugs" like these:\n\n- Various numbers, modifiers, or stats not being what they should be.\n- Not being able to research the new ship classes.\n- Having the black hole reactor available at game start.\n- Not being able to save ship designs due to the SAVEFAIL error (empty component spot).\n- Not having the correct number of starbase building and module slots.\n\nThe PDX launcher loads mods from TOP TO BOTTOM, with mods at the bottom of the list overwriting everything above them.\n\nTo fix load order bugs: Open your launcher, open your current mod playset, and click on the "Load Order" setting near the top right, and click the "Z to A" setting. NSC2 usually needs to be at or very near the BOTTOM of your load order. Remember that any mods below NSC2 will overwrite NSC2 files, which can break the mod in weird ways.\n\nAlso make sure that you are not running outdated mods! You must disable any mod with the yellow triangle in the launcher until it is updated to the latest Stellaris version and the triangle disappears! We cannot help fix issues if you refuse to turn off outdated mods.\n\nOnce you have set the Z to A order, make sure that you manually re-order your patches and addons so that they are below the mods that they patch.§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_name:0 "Reset NSC2"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_name:0 "NSC3 Not Working"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_tooltip:0 "§EQuestion: What do I do if NSC3 isn't working properly?§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_1_tooltip$\n\nThe very first step in troubleshooting mod problems is to check your mod load order in the Paradox Launcher. Having mods in the wrong order will cause issues.\n\nThe Paradox launcher functions on LIOS  - "Last in, only served." This means that when two mods modify the same thing, the mod that is lower on the list will overwrite anything higher on the list. This is super important because a lot of different mods modify the same things.\n\nA bad load order is what can cause common "bugs" like these:\n\n- Various numbers, modifiers, or stats not being what they should be.\n- Not being able to research the new ship classes.\n- Having the black hole reactor available at game start.\n- Not being able to save ship designs due to the SAVEFAIL error (empty component spot).\n- Not having the correct number of starbase building and module slots.\n\nThe PDX launcher loads mods from TOP TO BOTTOM, with mods at the bottom of the list overwriting everything above them.\n\nTo fix load order bugs: Open your launcher, open your current mod playset, and click on the "Load Order" setting near the top right, and click the "Z to A" setting. NSC3 usually needs to be at or very near the BOTTOM of your load order. Remember that any mods below NSC3 will overwrite NSC3 files, which can break the mod in weird ways.\n\nAlso make sure that you are not running outdated mods! You must disable any mod with the yellow triangle in the launcher until it is updated to the latest Stellaris version and the triangle disappears! We cannot help fix issues if you refuse to turn off outdated mods.\n\nOnce you have set the Z to A order, make sure that you manually re-order your patches and addons so that they are below the mods that they patch.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_name:0 "Reset NSC3"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip:0 "§EQuestion: How can I completely reset the mod's files if it is not working properly?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip$\n\nIf your copy of NSC2 (or any other mod) is not working properly, try ALL of these steps in order:\n\n1. VERIFY MOD LOAD ORDER\nThe best way to make sure your mods work properly is to order them in REVERSE alphabetical order - choose the Z..A sorting option in the launcher. If you need detailed help with sorting mods, use the bot command !loadorder. in any channel.\n\n2. VERIFY GAME FILES\nOpen Steam, go to your game library, and right click on Stellaris. Click on Properties and then go to the Local Files page, and choose the Verify integrity of game files option.\n\n3. RESET NSC2 (OR ANY OTHER MOD)\nDelete this entire folder from your PC: Steam/SteamApps/workshop/content/281990/683230077 and then unsubscribe and resubscribe to the mod. Verify that Steam is downloading the mod, and then try to run again.\n\n(If your issue is not with NSC2, but another mod, you can replace the 683230077 with the ID number for the mod you want to reset. You can find the mod's ID number by opening its page in the Steam workshop - it is the very last set of numbers shown in the URL.)\n\n4. CLEAR THE STELLARIS MOD FOLDER\nDelete this entire folder from your PC: Steam/SteamApps/workshop/content/281990 and then unsubscribe and resubscribe to all of your mods. Verify that Steam is downloading the mods, and then try to run again.\n\n5. RESET THE PARADOX MOD LAUNCHER\nGo to Documents/Paradox Interactive/Stellaris, delete launcher_v2.sqlite, go into the mod folder, delete all of the ugc .mod files, then verify the game files in Steam and rebuild your mod load order.\n\n6. RESET THE STELLARIS FOLDER\nIf the above steps do not work, back up your custom races and personal mods and delete the entire Documents/Paradox Interactive/Stellaris folder and then verify the game files and rebuild your mod load order again.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_2_tooltip$\n\nIf your copy of NSC3 (or any other mod) is not working properly, try ALL of these steps in order:\n\n1. VERIFY MOD LOAD ORDER\nThe best way to make sure your mods work properly is to order them in REVERSE alphabetical order - choose the Z..A sorting option in the launcher. If you need detailed help with sorting mods, use the bot command !loadorder. in any channel.\n\n2. VERIFY GAME FILES\nOpen Steam, go to your game library, and right click on Stellaris. Click on Properties and then go to the Local Files page, and choose the Verify integrity of game files option.\n\n3. RESET NSC3 (OR ANY OTHER MOD)\nDelete this entire folder from your PC: Steam/SteamApps/workshop/content/281990/683230077 and then unsubscribe and resubscribe to the mod. Verify that Steam is downloading the mod, and then try to run again.\n\n(If your issue is not with NSC3, but another mod, you can replace the 683230077 with the ID number for the mod you want to reset. You can find the mod's ID number by opening its page in the Steam workshop - it is the very last set of numbers shown in the URL.)\n\n4. CLEAR THE STELLARIS MOD FOLDER\nDelete this entire folder from your PC: Steam/SteamApps/workshop/content/281990 and then unsubscribe and resubscribe to all of your mods. Verify that Steam is downloading the mods, and then try to run again.\n\n5. RESET THE PARADOX MOD LAUNCHER\nGo to Documents/Paradox Interactive/Stellaris, delete launcher_v2.sqlite, go into the mod folder, delete all of the ugc .mod files, then verify the game files in Steam and rebuild your mod load order.\n\n6. RESET THE STELLARIS FOLDER\nIf the above steps do not work, back up your custom races and personal mods and delete the entire Documents/Paradox Interactive/Stellaris folder and then verify the game files and rebuild your mod load order again.§!"
 #'\' here is changed to '/' because of the "[13:59:34][localization_reader.cpp:255]: Illegal break character (utf32=83)" errors
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_name:0 "Creating/Removing Hyperlanes"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip:0 "§EQuestion: How do I create or remove hyperlanes?§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_3_tooltip$\n\nTo create a new hyperlane, follow these steps:\n\nStep 1: Build the Hyperlane Generator (Transmitter) megastructure in the system where you want the new hyperlane to start.\n\nStep 2: Build the Hyperlane Generator (Receiver) megastructure in the system where you want the new hyperlane to end.\n\nStep 3: Upgrade the Hyperlane Generator (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Generator (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Generator (Transmitter) again to activate the transmitter and create the new hyperlane.\n\nTo remove a hyperlane, follow these steps:\n\nStep 1: Step 1: Build the Hyperlane Remover (Transmitter) megastructure in the system where the hyperlane you want to remove begins.\n\nStep 2: Build the Hyperlane Remover (Receiver) megastructure in the system where the hyperlane you want to remove ends.\n\nStep 3: Upgrade the Hyperlane Remover (Transmitter) in the starting system to complete it.\n\nStep 4: Upgrade the Hyperlane Remover (Receiver) in the ending system to complete it.\n\nStep 5: Finally, upgrade Hyperlane Remover (Transmitter) again to activate the remover and destroy the hyperlane.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_name:0 "Techs For Disabled Features"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip:0 "§EQuestion: Why do I still see the tech for a feature that I have disabled in the mod menu?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip$\n\nSome of the NSC2 techs (such as the megastructures) can be disabled along with their feature without an issue. The NSC2 Mod Menu will do this automatically when it can.\n\nHowever, there are some techs in NSC2 that require other techs to be researched in order to reach them, and therefore they cannot be disabled. An example of this is ship class techs. You can disable a ship such as the Battlecruiser, but its tech must remain in the game because if it were disabled, you would never be able to research Battleships or any of the ship classes that should appear after the Battlecruiser.\n\nSo if you disable a feature through the mod menu, its tech may still pop up for research if that tech is required by something else, and you will need to research it like normal to gain access to the techs that come after it. The feature will still remain disabled and won't appear in the game, but you'll still need to research its tech to keep from breaking other things.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_4_tooltip$\n\nSome of the NSC3 techs (such as the megastructures) can be disabled along with their feature without an issue. The NSC3 Mod Menu will do this automatically when it can.\n\nHowever, there are some techs in NSC3 that require other techs to be researched in order to reach them, and therefore they cannot be disabled. An example of this is ship class techs. You can disable a ship such as the Battlecruiser, but its tech must remain in the game because if it were disabled, you would never be able to research Battleships or any of the ship classes that should appear after the Battlecruiser.\n\nSo if you disable a feature through the mod menu, its tech may still pop up for research if that tech is required by something else, and you will need to research it like normal to gain access to the techs that come after it. The feature will still remain disabled and won't appear in the game, but you'll still need to research its tech to keep from breaking other things.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_name:0 "Name REPLACE_ME 5"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_tooltip:0 "§EQuestion: REPLACE_ME 5§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_1_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
@@ -167,13 +163,13 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_tooltip:0 "�
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_1_tooltip$\n\nThe ship upgrade techs give access to new ship sections, not totally new classes. Once you research a ship upgrade, look in the ship designer to see the new section options available for the ship.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_name:0 "Advanced Combat Tactics"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_tooltip:0 "§EQuestion: How do the Advanced Combat Tactics work?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_tooltip$\n\nAdvanced Combat Tactics are a second combat computer in NSC2 for most ship classes. These tactics determine how the ship behaves in combat and have several options.\n\nIf you want to use the advanced tactics, select a normal combat computer in the top slot and then choose an advanced tactic for it in the second slot. (choose the "Default Behavior" computer to revert this)\n\nHover over each advanced tactic to see a detailed description on what the behavior does.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_tooltip$\n\nAdvanced Combat Tactics are a second combat computer in NSC3 for most ship classes. These tactics determine how the ship behaves in combat and have several options.\n\nIf you want to use the advanced tactics, select a normal combat computer in the top slot and then choose an advanced tactic for it in the second slot. (choose the "Default Behavior" computer to revert this)\n\nHover over each advanced tactic to see a detailed description on what the behavior does.§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_name:0 "Mothballing Fleets"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip:0 "§EQuestion: How do I mothball a fleet?§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip$\n\nTo mothball a fleet, move it into orbit over one of your colonized planets. Make sure it's a planet that you don't plan to have other fleets orbiting, because once you activate the mothball system, all fleets that enter orbit will automatically be mothballed.\n\nOnce the fleet is in orbit, open the planetary decisions window and choose the Mothball option.§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Headquarters Station"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: How do I build the Headquarters Station?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip$\n\nThe Headquarters Station is a type of Juggernaut and can be built at a starbase that can build Juggernauts.\n\nNote: You must have purchased and installed the Federations DLC to have access to Juggernauts and to build the HQ Station.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Name REPLACE_ME 4"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: REPLACE_ME 4§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E Desc REPLACE_ME 4 §!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Name REPLACE_ME 5"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "§EQuestion: REPLACE_ME 5§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
@@ -206,17 +202,6 @@ nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_ship
 nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
 nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_speed_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_speed_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
-
-#StrikeCruiser
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_name_desc:0 "§H$STRIKECRUISER$§!\n$SHIP_GRAPHICS_STRIKECRUISER_DESC$"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_enabled_desc:0 "$STRIKECRUISER$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_disabled_desc:0 "$STRIKECRUISER$: §RDisabled§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
 
 #Battlecruiser
 nsc_modmenu_setting_page_ship_category_class_Battlecruiser_name_desc:0 "§H$BATTLECRUISER$§!\n$SHIP_GRAPHICS_BATTLECRUISER_DESC$"
@@ -261,17 +246,6 @@ nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_plus:0 "Bu
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
-
-#headquarters
-nsc_modmenu_setting_page_ship_category_class_headquarters_name_desc:0 "§H$headquarters$§!\n$SHIP_GRAPHICS_HEADQUARTERS_DESC$"
-nsc_modmenu_setting_page_ship_category_class_headquarters_enabled_desc:0 "$headquarters$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_disabled_desc:0 "$headquarters$: §RDisabled§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
 
 #explorationship
 nsc_modmenu_setting_page_ship_category_class_explorationship_name_desc:0 "§H$EXPLORATIONSHIP$§!\n$SHIP_GRAPHICS_EXPLORATIONSHIP_DESC$"
@@ -468,10 +442,15 @@ nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_name_de
 nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_enabled_desc:0 "$TOMAHAWK_CRUISE_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_disabled_desc:0 "$TOMAHAWK_CRUISE_MISSILE$: §RDisabled§!"
 
-#HARPOON_CRUISE_MISSILE
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_name_desc:0 "§H$HARPOON_CRUISE_MISSILE$§!\n$HARPOON_CRUISE_MISSILE_DESC$"
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_enabled_desc:0 "$HARPOON_CRUISE_MISSILE$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled_desc:0 "$HARPOON_CRUISE_MISSILE$: §RDisabled§!"
+#FRIGATE_TORPEDO_1
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_name_desc:0 "§H$FRIGATE_TORPEDO_1$§!\n$FRIGATE_TORPEDO_1_DESC$"
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_enabled_desc:0 "$FRIGATE_TORPEDO_1$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_disabled_desc:0 "$FRIGATE_TORPEDO_1$: §RDisabled§!"
+
+#BATTLECRUISER_TORPEDO_1
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_name_desc:0 "§H$BATTLECRUISER_TORPEDO_1$§!\n$BATTLECRUISER_TORPEDO_1_DESC$"
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_enabled_desc:0 "$BATTLECRUISER_TORPEDO_1$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_disabled_desc:0 "$BATTLECRUISER_TORPEDO_1$: §RDisabled§!"
 
 #NSC_PD_MISSILE
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H$NSC_PD_MISSILE$§!\n$NSC_PD_MISSILE_DESC$"
@@ -510,7 +489,7 @@ nsc_modmenu_setting_page_starbase_category_class_headquarters_enabled_desc:0 "$s
 nsc_modmenu_setting_page_starbase_category_class_headquarters_disabled_desc:0 "$starbase_headquarters$: §RDisabled§!"
 
 #outpost
-nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "This setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC2."
+nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "This setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3."
 nsc_modmenu_setting_page_starbase_category_class_outpost_enabled_desc:0 "$starbase_outpost$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_disabled_desc:0 "$starbase_outpost$: §RDisabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"

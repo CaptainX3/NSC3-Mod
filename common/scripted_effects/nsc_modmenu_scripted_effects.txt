@@ -116,19 +116,12 @@ nsc_modmenu_mod_faq_setting_reset_effect = {
 }
 nsc_modmenu_ship_class_setting_reset_effect = {
 	optimize_memory
-	#classes (total 7)
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
+	#classes (total 5)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = headquarters }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
-
-	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser MODIFIER = build_cost VALUE = 0 }
-	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser MODIFIER = build_speed VALUE = 0 }
-	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser MODIFIER = build_cost }
-	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser MODIFIER = build_speed }
 
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_speed VALUE = 0 }
@@ -150,11 +143,6 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_speed }
 
-	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost VALUE = 0 }
-	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed VALUE = 0 }
-	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost }
-	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed }
-
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed VALUE = 0 }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost }
@@ -162,7 +150,7 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 }
 nsc_modmenu_ship_component_setting_reset_effect = {
 	optimize_memory
-	#components (total 38)
+	#components (total 39)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
@@ -204,7 +192,8 @@ nsc_modmenu_ship_component_setting_reset_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
 	
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
 }
 nsc_modmenu_starbase_class_setting_reset_effect = {
@@ -361,12 +350,10 @@ nsc_modmenu_reset_all_settings_effect = {
 }
 nsc_modmenu_ship_class_settings_disable_effect = {
 	optimize_memory
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = headquarters }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
 }
 nsc_modmenu_ship_component_settings_disable_effect = {
@@ -412,7 +399,8 @@ nsc_modmenu_ship_component_settings_disable_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
 	
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
 }
 nsc_modmenu_starbase_class_settings_disable_effect = {

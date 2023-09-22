@@ -5,6 +5,10 @@
 ############ REPLACED KEYS ########################
 ###################################################
 
-CRUISER_BOW_M1S2: "Volley Bow"
+CORVETTE_MID_S2PD1: "Picket Core"
+CORVETTE_MID_S3: "Interceptor Core"
+CORVETTE_MID_PD3: "Pinpoint Core"
+
+DESTROYER_BOW_L1: "Artillery Bow"
 
 military_station_large: "Defense Fortress"
