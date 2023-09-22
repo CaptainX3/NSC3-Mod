@@ -170,7 +170,7 @@ tech_nsc_ai_computer_1:0 "Artificial Intelligence Combat System"
 tech_nsc_ai_computer_1_desc:0 "This extremely advanced computer system can intelligently run all combat systems on a ship without taking over the helm, allowing for complete movement control during combat. Available for Carriers, Fleet Support Ships, and the Flagship."
 
 tech_tomahawk_cruise_missile_1:0 "Advanced Cruise Missiles"
-tech_tomahawk_cruise_missile_1_desc:0 "With the advent of Battlecruisers, which are designed to be capable of fielding large numbers of missile launchers, and the development of combat at longer and longer ranges, as well as the appearance of massive capital ships and defensive installations, there is a clear need for larger, more powerful missiles capable of taking on these new threats, and being launched from our Battlecruisers. These Advanced Cruise Missiles are the answer to this emerging need."
+tech_tomahawk_cruise_missile_1_desc:0 "With the development of combat at longer and longer ranges, as well as the appearance of massive capital ships and defensive installations, there is a clear need for larger, more powerful missiles capable of taking on these new threats, and being launched from our own ships. These Advanced Cruise Missiles are the answer to this emerging need."
 
 tech_nsc_disabled_sections:0 "Disabled NSC Ship Sections"
 tech_nsc_disabled_sections_desc:0 "If you are seeing this tech, something is wrong or you used the console."
