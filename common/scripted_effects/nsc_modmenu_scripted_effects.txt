@@ -150,7 +150,7 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 }
 nsc_modmenu_ship_component_setting_reset_effect = {
 	optimize_memory
-	#components (total 38)
+	#components (total 39)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
@@ -192,7 +192,8 @@ nsc_modmenu_ship_component_setting_reset_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
 	
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
 }
 nsc_modmenu_starbase_class_setting_reset_effect = {
@@ -398,7 +399,8 @@ nsc_modmenu_ship_component_settings_disable_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
 	
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
 }
 nsc_modmenu_starbase_class_settings_disable_effect = {

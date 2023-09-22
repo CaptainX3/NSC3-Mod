@@ -502,18 +502,32 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_disabled_desc
 	}
 }
-#HARPOON_CRUISE_MISSILE
+#FRIGATE_TORPEDO_1
 defined_text = {
-	name = Get_nsc_ship_component_HARPOON_CRUISE_MISSILE_enable_disable_status
+	name = Get_nsc_ship_component_FRIGATE_TORPEDO_1_enable_disable_status
 	random = no
 
 	text = {
-		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } }
-		localization_key = nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_enabled_desc
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_enabled_desc
 	}
 	text = {
-		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE } } }
-		localization_key = nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled_desc
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_disabled_desc
+	}
+}
+#BATTLECRUISER_TORPEDO_1
+defined_text = {
+	name = Get_nsc_ship_component_BATTLECRUISER_TORPEDO_1_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_disabled_desc
 	}
 }
 #NSC_PD_MISSILE

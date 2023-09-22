@@ -435,8 +435,13 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
-		name = "GFX_nsc_modmenu_HARPOON_CRUISE_MISSILE"
-		textureFile = "gfx/interface/icons/ship_parts/ship_part_cruise_missile_2.dds"
+		name = "GFX_nsc_modmenu_FRIGATE_TORPEDO_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_frigate_torpedo_1.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_BATTLECRUISER_TORPEDO_1"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_battlecruiser_torpedo_1.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
