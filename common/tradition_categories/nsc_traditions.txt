@@ -1,0 +1,20 @@
+tradition_nsc_fleet_doctrine = {
+	tree_template = "tree_11_12"
+	adoption_bonus = "tr_nsc_fleet_doctrine_adopt"
+	finish_bonus = "tr_nsc_fleet_doctrine_finish"
+	traditions = {
+		"tr_nsc_fleet_doctrine_armament"
+		"tr_nsc_fleet_doctrine_defense"
+		"tr_nsc_fleet_doctrine_fleet"
+		"tr_nsc_fleet_doctrine_operations"
+		"tr_nsc_fleet_doctrine_crew"
+	}
+
+	potential = {
+		is_ai = no
+	}
+
+	ai_weight = {
+		factor = 0
+	}
+}

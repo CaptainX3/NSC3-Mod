@@ -15,6 +15,10 @@ anchorage = {
 	section = "ANCHORAGE_STARBASE_SECTION"
 	construction_days = 180
 
+	potential = {
+		is_normal_starbase = yes
+	}
+
 	resources = {
 		category = starbase_modules
 		cost = { alloys = 50 }
@@ -56,7 +60,7 @@ detection_array = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_detection_array }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -154,7 +158,7 @@ large_battery = {
 	construction_days = 240
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		has_starbase_size >= starbase_starfortress
 	}
 
@@ -218,7 +222,7 @@ xl_battery = {
 			}
 		}
 		has_starbase_size >= starbase_citadel
-		is_orbital_ring = no
+		is_normal_starbase = yes
 
 	}
 	
@@ -258,7 +262,7 @@ titanic_battery = {
 	potential = { 
 		exists = owner owner = { has_technology = tech_titans }
 		has_starbase_size >= starbase_citadel
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -354,6 +358,10 @@ asteroid_mining = {
 		produces = { trigger = { has_starbase_building = mining_manager } minerals = 2 }
 		upkeep = { energy = 2 }
 	}
+
+	potential = {
+		is_normal_starbase = yes
+	}
 	
 	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
@@ -377,6 +385,10 @@ space_foundry = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_foundry"
 	construction_days = 120
+
+	potential = {
+		is_normal_starbase = yes
+	}
 	
 	resources = {
 		category = starbase_modules
@@ -423,6 +435,10 @@ space_factory = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_factory"
 	construction_days = 120
+
+	potential = {
+		is_normal_starbase = yes
+	}
 	
 	resources = {
 		category = starbase_modules
@@ -476,7 +492,7 @@ security_branch_office = {
 	construction_days = 120
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		exists = owner
 		owner = { is_gestalt = no }
 	}
@@ -510,6 +526,7 @@ solar_panel = {
 		owner = {
 			is_gestalt = no
 		}
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -613,6 +630,7 @@ fleet_club = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -688,6 +706,7 @@ nightclub = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -733,6 +752,7 @@ public_market = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -751,7 +771,6 @@ public_market = {
 		}
 		produces = { 
 			consumer_goods = 5
-			luxury_goods = 5
 		}
 		upkeep = {
 			energy = 8
@@ -760,7 +779,7 @@ public_market = {
 	
 	system_modifier = { 
 		job_merchant_add = 3
-		job_administrator_add = 1
+		job_politician_add = 1
 	}
 	
 	station_modifier = {

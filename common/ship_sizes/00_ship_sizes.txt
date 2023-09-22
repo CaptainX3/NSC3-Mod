@@ -409,6 +409,10 @@ cruiser = {
 				has_technology = tech_cloaking_3
 			}
 		}
+		{
+			name = interdictor
+			trigger = { has_technology = tech_StrikeCruiser_1 }
+		}
 	}
 	prerequisites = { "tech_cruisers" }
 	
@@ -423,7 +427,6 @@ cruiser = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-	required_component_set = "nsc_strike_cruiser_upgrade"
 	required_component_set = "nsc_strike_cruiser_aura"
 
 	resources = {
@@ -1147,7 +1150,6 @@ colonizer = {
 				from = {
 					is_hive_empire = yes
 					is_lithoid_empire = no
-					NOT = { has_origin = origin_tree_of_life }
 				}
 			}
 			alloys = 200
@@ -1157,31 +1159,7 @@ colonizer = {
 			trigger = {
 				from = {
 					is_hive_empire = yes
-					is_lithoid_empire = no
-					has_origin = origin_tree_of_life
-				}
-			}
-			alloys = 50
-			food = 1000
-		}
-		cost = {
-			trigger = {
-				from = {
-					is_hive_empire = yes
 					is_lithoid_empire = yes
-					has_origin = origin_tree_of_life
-				}
-			}
-			alloys = 50
-			food = 500
-			minerals = 500
-		}
-		cost = {
-			trigger = {
-				from = {
-					is_hive_empire = yes
-					is_lithoid_empire = yes
-					NOT = { has_origin = origin_tree_of_life }
 				}
 			}
 			alloys = 200
@@ -1201,16 +1179,6 @@ colonizer = {
 			has_technology = tech_hyper_drive_3
 			has_technology = tech_jump_drive_1
 			has_technology = tech_psi_jump_drive_1
-		}
-	}
-
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
-			}
 		}
 	}
 
@@ -1439,7 +1407,7 @@ science = {
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
-		max = 5
+		max = value:max_science_ships
 	}
 }
 
@@ -1732,7 +1700,14 @@ mining_station = {
 		cost = {
 			minerals = 100
 		}
-
+		cost = {
+			trigger = {
+				from = {
+					has_valid_civic = civic_void_hive
+				}
+			}
+			unity = 10
+		}
 		upkeep = {
 			energy = 1
 		}
@@ -1769,7 +1744,14 @@ research_station = {
 		cost = {
 			minerals = 100
 		}
-
+		cost = {
+			trigger = {
+				from = {
+					has_valid_civic = civic_void_hive
+				}
+			}
+			unity = 10
+		}
 		upkeep = {
 			energy = 1
 		}
