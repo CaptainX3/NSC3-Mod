@@ -21,8 +21,6 @@ nsc_modmenu_ship_class_Dreadnought_build_cost_mod:0 "$nsc_modmenu_ship_class_Bat
 nsc_modmenu_ship_class_Dreadnought_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
-nsc_modmenu_ship_class_headquarters_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
-nsc_modmenu_ship_class_headquarters_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
@@ -169,9 +167,9 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_desc:0 "§E$
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_name:0 "Mothballing Fleets"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip:0 "§EQuestion: How do I mothball a fleet?§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip$\n\nTo mothball a fleet, move it into orbit over one of your colonized planets. Make sure it's a planet that you don't plan to have other fleets orbiting, because once you activate the mothball system, all fleets that enter orbit will automatically be mothballed.\n\nOnce the fleet is in orbit, open the planetary decisions window and choose the Mothball option.§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Headquarters Station"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: How do I build the Headquarters Station?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip$\n\nThe Headquarters Station is a type of Juggernaut and can be built at a starbase that can build Juggernauts.\n\nNote: You must have purchased and installed the Federations DLC to have access to Juggernauts and to build the HQ Station.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Name REPLACE_ME 4"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: REPLACE_ME 4§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E Desc REPLACE_ME 4 §!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Name REPLACE_ME 5"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "§EQuestion: REPLACE_ME 5§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
@@ -248,17 +246,6 @@ nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_plus:0 "Bu
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
-
-#headquarters
-nsc_modmenu_setting_page_ship_category_class_headquarters_name_desc:0 "§H$headquarters$§!\n$SHIP_GRAPHICS_HEADQUARTERS_DESC$"
-nsc_modmenu_setting_page_ship_category_class_headquarters_enabled_desc:0 "$headquarters$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_disabled_desc:0 "$headquarters$: §RDisabled§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
 
 #explorationship
 nsc_modmenu_setting_page_ship_category_class_explorationship_name_desc:0 "§H$EXPLORATIONSHIP$§!\n$SHIP_GRAPHICS_EXPLORATIONSHIP_DESC$"

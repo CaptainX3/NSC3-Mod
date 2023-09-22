@@ -190,54 +190,6 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_plus
 	}
 }
-#headquarters
-defined_text = {
-	name = Get_nsc_ship_class_headquarters_enable_disable_status
-	random = no
-
-	text = {
-		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_enabled_desc
-	}
-	text = {
-		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters } } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_disabled_desc
-	}
-}
-defined_text = {
-	name = Get_nsc_ship_class_headquarters_build_cost
-	random = no
-
-	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
-		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_neutral
-	}
-	text = {
-		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_minus
-	}
-	text = {
-		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_plus
-	}
-}
-defined_text = {
-	name = Get_nsc_ship_class_headquarters_build_speed
-	random = no
-
-	text = {
-		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_neutral
-	}
-	text = {
-		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_minus
-	}
-	text = {
-		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
-		localization_key = nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_plus
-	}
-}
 #explorationship
 defined_text = {
 	name = Get_nsc_ship_class_explorationship_enable_disable_status

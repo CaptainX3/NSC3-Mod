@@ -248,11 +248,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
-		name = "GFX_nsc_modmenu_ship_icon_top_headquarters"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_headquarters.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_explorationship"
 		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_explorationship.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"

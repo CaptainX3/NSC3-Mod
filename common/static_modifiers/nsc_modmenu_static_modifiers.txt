@@ -32,14 +32,6 @@ nsc_modmenu_ship_class_Flagship_build_speed_mod = {
 	shipsize_Flagship_build_speed_mult = 0.01
 	hide_from_country_list = yes
 }
-nsc_modmenu_ship_class_headquarters_build_cost_mod = {
-	ship_headquarters_cost_mult = 0.01
-	hide_from_country_list = yes
-}
-nsc_modmenu_ship_class_headquarters_build_speed_mod = {
-	shipsize_headquarters_build_speed_mult = 0.01
-	hide_from_country_list = yes
-}
 nsc_modmenu_ship_class_explorationship_build_cost_mod = {
 	ship_explorationship_cost_mult = 0.01
 	hide_from_country_list = yes

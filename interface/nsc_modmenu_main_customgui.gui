@@ -1094,98 +1094,10 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_up_button_effect"
 						}
 					}
-					#headquarters
-					containerWindowType = {
-						name = "nsc_modmenu_setting_page_ship_category_class_headquarters"
-						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_3 }
-						#icon / name
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_icon"
-							position = { x = 0 y = 0 }
-							spriteType = "GFX_nsc_modmenu_ship_icon_top_headquarters"
-							no_clicksound = yes
-							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_header"
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
-							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
-							spriteType = "GFX_nsc_modmenu_element_background_164_40"
-							text = "headquarters"
-							multiline = yes
-							font = "cg_16b"
-							no_clicksound = yes
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_header_button_effect"
-						}
-						#on / off
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_on_off_background"
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
-							spriteType = "GFX_nsc_modmenu_element_background_40_40"
-							no_clicksound = yes
-							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_on" #current state: content enabled #click this button will 'disable' the content
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
-							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_on_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_off" #current state: content disabled #click this button will 'enable' the content
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
-							spriteType = "GFX_checkbox_20_20_01"
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_off_button_effect"
-						}
-						#build cost
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
-							spriteType = "GFX_nsc_modmenu_element_background_280_40"
-							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_headquarters_build_cost]"
-							font = "cg_16b"
-							no_clicksound = yes
-							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_down"
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
-							quadTextureSprite = "GFX_topbar_date_minus"
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_down_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_up"
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
-							quadTextureSprite = "GFX_topbar_date_plus"
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_up_button_effect"
-						}
-						#build speed
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
-							spriteType = "GFX_nsc_modmenu_element_background_280_40"
-							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_headquarters_build_speed]"
-							font = "cg_16b"
-							no_clicksound = yes
-							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_down"
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
-							quadTextureSprite = "GFX_topbar_date_minus"
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_down_button_effect"
-						}
-						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_up"
-							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
-							quadTextureSprite = "GFX_topbar_date_plus"
-							effect = "nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_up_button_effect"
-						}
-					}
 					#explorationship
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_class_explorationship"
-						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_3 }
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_3 }
 						#icon / name
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_icon"

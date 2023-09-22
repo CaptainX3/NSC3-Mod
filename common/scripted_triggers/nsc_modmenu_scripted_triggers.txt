@@ -48,7 +48,6 @@ nsc_modmenu_ship_class_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
-	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = headquarters }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }	
 }
 nsc_modmenu_ship_component_settings_on_trigger = {

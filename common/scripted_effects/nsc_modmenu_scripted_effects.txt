@@ -116,12 +116,11 @@ nsc_modmenu_mod_faq_setting_reset_effect = {
 }
 nsc_modmenu_ship_class_setting_reset_effect = {
 	optimize_memory
-	#classes (total 6)
+	#classes (total 5)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = headquarters }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
 
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost VALUE = 0 }
@@ -143,11 +142,6 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_speed VALUE = 0 }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_speed }
-
-	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost VALUE = 0 }
-	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed VALUE = 0 }
-	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_cost }
-	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = headquarters MODIFIER = build_speed }
 
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed VALUE = 0 }
@@ -359,7 +353,6 @@ nsc_modmenu_ship_class_settings_disable_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = headquarters }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
 }
 nsc_modmenu_ship_component_settings_disable_effect = {
