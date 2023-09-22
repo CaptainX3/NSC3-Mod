@@ -14,7 +14,7 @@ drydock = {
 	construction_days = 180
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		exists = owner
 		owner = { has_technology = tech_drydock_1 }
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = drydock }
@@ -61,7 +61,7 @@ sensor_station = {
 	construction_days = 360
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		exists = owner
 		owner = { has_technology = tech_sensorstation_1 }
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = sensor_station }
@@ -98,6 +98,7 @@ starbase_management = {
 		owner = { is_gestalt = no }
 		is_orbital_ring = no
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_management }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -160,6 +161,7 @@ starbase_management_machine = {
 		owner = { is_machine_empire = yes }
 		is_orbital_ring = no
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_management } #this component is just the machine version of the default so I set the same flag here
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -207,6 +209,7 @@ starbase_management_hive = {
 		owner = { is_hive_empire = yes }
 		is_orbital_ring = no
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_management } #same as above
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -436,6 +439,7 @@ nsc_nanite_field = {
 	potential = {
 		is_orbital_ring = no
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = nsc_nanite_field }
+    is_normal_starbase = yes
 	}
 
 	possible = {
@@ -971,6 +975,8 @@ starbase_ai = {
 		is_orbital_ring = no 
 		exists = owner owner = { has_technology = tech_starbase_5 }
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = starbase_ai }
+		is_normal_starbase = yes 
+		exists = owner owner = { has_technology = tech_starbase_5 } 
 	}
 
 	resources = {

@@ -442,6 +442,9 @@ heavy_carrier: "Heavy Carrier"
 heavy_carrier_desc: "Heavy Carrier Configuration"
 super_carrier: "Super Carrier"
 super_carrier_desc: "Super Carrier Configuration"
+interdictor: "Interdictor"
+interdictor_desc: "Interdictor Configuration"
+
 
 ##################################################################################################################################################################################################################
 ### CLOAKS ###

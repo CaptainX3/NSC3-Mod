@@ -143,6 +143,23 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power2
 	component_set = "nsc_strike_cruiser_aura"
+
+	resources = {
+		category = ship_components
+		upkeep = {
+			energy = 0.3
+			alloy = 0.3
+		}
+	}
+	
+	triggered_ship_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_evasion_add = 2.5
+		ship_hull_add = 105
+		ship_piracy_suppression_add = 1.5
+	}
 	
 	hostile_aura = {
 		name = "nsc_strike_cruiser_aura"
@@ -167,7 +184,7 @@ utility_component_template = {
 			}
 		}
 	}
-	
+	ai_tags = { interdictor }
 	ai_weight = { weight = 10 }
 }
 
@@ -179,6 +196,23 @@ utility_component_template = {
 	power = @power3
 	prerequisites = { "tech_escortcarrier_1" }
 	component_set = "nsc_strike_cruiser_aura"
+
+	resources = {
+		category = ship_components
+		upkeep = {
+			energy = 0.3
+			alloy = 0.3
+		}
+	}
+	
+	triggered_ship_modifier = {
+		potential = {
+			always = yes
+		}
+		ship_evasion_add = 2.5
+		ship_hull_add = 105
+		ship_piracy_suppression_add = 1.5
+	}
 	
 	hostile_aura = {
 		name = "nsc_strike_cruiser_aura_2"
@@ -203,7 +237,7 @@ utility_component_template = {
 			}
 		}
 	}
-	
+	ai_tags = { interdictor }
 	ai_weight = { weight = 10 }
 }
 

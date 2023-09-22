@@ -15,6 +15,10 @@ anchorage = {
 	section = "ANCHORAGE_STARBASE_SECTION"
 	construction_days = 180
 
+	potential = {
+		is_normal_starbase = yes
+	}
+
 	resources = {
 		category = starbase_modules
 		cost = { alloys = 50 }
@@ -56,7 +60,7 @@ detection_array = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_detection_array }
-		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -151,7 +155,7 @@ large_battery = {
 	construction_days = 240
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		has_starbase_size >= starbase_starfortress
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = large_battery }
 	}
@@ -214,6 +218,7 @@ xl_battery = {
 		has_starbase_size >= starbase_citadel
 		is_orbital_ring = no
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = xl_battery }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -252,6 +257,7 @@ titanic_battery = {
 		has_starbase_size >= starbase_citadel
 		is_orbital_ring = no
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = titanic_battery }
+		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -342,6 +348,7 @@ asteroid_mining = {
 
 	potential = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -365,6 +372,10 @@ space_foundry = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_foundry"
 	construction_days = 120
+
+	potential = {
+		is_normal_starbase = yes
+	}
 	
 	resources = {
 		category = starbase_modules
@@ -413,6 +424,10 @@ space_factory = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_factory"
 	construction_days = 120
+
+	potential = {
+		is_normal_starbase = yes
+	}
 	
 	resources = {
 		category = starbase_modules
@@ -463,7 +478,7 @@ security_branch_office = {
 	construction_days = 120
 
 	potential = {
-		is_orbital_ring = no
+		is_normal_starbase = yes
 		exists = owner
 		owner = { is_gestalt = no }
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = security_branch_office }
@@ -495,6 +510,7 @@ solar_panel = {
 			is_gestalt = no
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -598,6 +614,7 @@ fleet_club = {
 			is_machine_empire = no
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -673,6 +690,7 @@ nightclub = {
 			is_machine_empire = no
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -718,6 +736,7 @@ public_market = {
 			is_machine_empire = no
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -735,7 +754,6 @@ public_market = {
 		}
 		produces = { 
 			consumer_goods = 5
-			luxury_goods = 5
 		}
 		upkeep = {
 			energy = 8
@@ -744,7 +762,7 @@ public_market = {
 	
 	system_modifier = { 
 		job_merchant_add = 3
-		job_administrator_add = 1
+		job_politician_add = 1
 	}
 	
 	station_modifier = {

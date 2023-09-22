@@ -7,7 +7,7 @@ spriteTypes = {
 	######################
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_fleet_doctrines"
+		name = "GFX_tradition_category_icon_tradition_nsc_fleet_doctrine"
 		textureFile = "gfx/interface/icons/traditions/tree_icons/tradition_fleet_doctrines.dds"
 	}
 	
@@ -17,27 +17,27 @@ spriteTypes = {
 	######################
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_armament"
+		name = "GFX_tr_nsc_fleet_doctrine_armament"
 		textureFile = "gfx/interface/icons/traditions/nsc_tradition_armament.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_armament"
+		name = "GFX_tr_nsc_fleet_doctrine_defense"
 		textureFile = "gfx/interface/icons/traditions/nsc_tradition_defense.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_armament"
+		name = "GFX_tr_nsc_fleet_doctrine_fleet"
 		textureFile = "gfx/interface/icons/traditions/nsc_tradition_fleet.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_armament"
+		name = "GFX_tr_nsc_fleet_doctrine_operations"
 		textureFile = "gfx/interface/icons/traditions/nsc_tradition_operations.dds"
 	}
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_armament"
+		name = "GFX_tr_nsc_fleet_doctrine_crew"
 		textureFile = "gfx/interface/icons/traditions/nsc_tradition_crew.dds"
 	}
 	
@@ -47,10 +47,11 @@ spriteTypes = {
 	#####################
 	
 	spriteType = {
-		name = "GFX_nsc_tradition_category_fleet_doctrines"
+		name = "GFX_tradition_category_bg_tradition_nsc_fleet_doctrine"
 		textureFile = "gfx/interface/tiles/nsc_tradition_category_fleet_doctrines.dds"
 	}
 	
+}
 	
 	######################
 	###  AGENDA ICONS  ###

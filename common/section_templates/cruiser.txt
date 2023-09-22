@@ -208,7 +208,15 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "cruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship }
+	ai_tags = { interdictor }
+	prerequisites = { tech_StrikeCruiser_1 }
+
+	modifier = {
+		ship_evasion_add = 2.5
+		ship_hull_add = 105
+		ship_base_speed_mult = 0.15
+		ship_piracy_suppression_add = 1.5
+	}
 	
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -486,7 +494,15 @@ ship_section_template = {
 	fits_on_slot = mid
 	entity = "cruiser_mid_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = { interdictor }
+	prerequisites = { tech_StrikeCruiser_1 }
+
+	modifier = {
+		ship_evasion_add = 2.5
+		ship_hull_add = 105
+		ship_base_speed_mult = 0.15
+		ship_piracy_suppression_add = 1.5
+	}
 	
 	component_slot = {
 		name = "PD_GUN_01"
@@ -668,7 +684,15 @@ ship_section_template = {
 	fits_on_slot = stern
 	entity = "cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship }
+	ai_tags = { interdictor }
+	prerequisites = { tech_StrikeCruiser_1 }
+
+	modifier = {
+		ship_evasion_add = 2.5
+		ship_hull_add = 105
+		ship_base_speed_mult = 0.15
+		ship_piracy_suppression_add = 1.5
+	}
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -690,6 +714,7 @@ ship_section_template = {
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
 	}
+	
 	
 	aux_utility_slots = 4
 		

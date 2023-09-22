@@ -5,3 +5,4 @@
 spitfire
 heavy_carrier
 super_carrier
+interdictor
