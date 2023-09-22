@@ -228,11 +228,6 @@ spriteTypes = {
 	}
 	#ship classes
 	spriteType = {
-		name = "GFX_nsc_modmenu_ship_icon_top_StrikeCruiser"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_StrikeCruiser.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_Battlecruiser"
 		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Battlecruiser.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"

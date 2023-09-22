@@ -44,7 +44,6 @@ nsc_modmenu_setting_page_starbase_category_class_common_settings_possible_starba
 }
 nsc_modmenu_ship_class_settings_on_trigger = {
 	optimize_memory
-	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = StrikeCruiser }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }

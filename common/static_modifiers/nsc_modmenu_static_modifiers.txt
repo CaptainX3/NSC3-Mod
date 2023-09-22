@@ -1,13 +1,5 @@
 ### Ship ###
 #classes
-nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod = {
-	ship_StrikeCruiser_cost_mult = 0.01
-	hide_from_country_list = yes
-}
-nsc_modmenu_ship_class_StrikeCruiser_build_speed_mod = {
-	shipsize_StrikeCruiser_build_speed_mult = 0.01
-	hide_from_country_list = yes
-}
 nsc_modmenu_ship_class_Battlecruiser_build_cost_mod = {
 	ship_Battlecruiser_cost_mult = 0.01
 	hide_from_country_list = yes
