@@ -144,17 +144,6 @@ ships = {
 			is_scope_valid = yes
 			is_ship_size = titan
 		}
-	}
-
-	triggered_cost_modifier = {
-		key = ship_StrikeCruiser
-		use_parent_icon = yes
-		modifier_types = { mult }
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_size = StrikeCruiser
-		}
 	}	
 	
 	triggered_cost_modifier = {
@@ -198,17 +187,6 @@ ships = {
 		trigger = {
 			is_scope_valid = yes
 			is_ship_size = Flagship
-		}
-	}
-
-	triggered_cost_modifier = {
-		key = ship_headquarters
-		use_parent_icon = yes
-		modifier_types = { mult }
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_size = headquarters
 		}
 	}
 	

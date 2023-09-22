@@ -8,13 +8,12 @@
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DREADNOUGHT_BOW_S6P6M6L6"
+	key = "DREADNOUGHT_BOW_S4P4M4L4"
 	ship_size = Dreadnought
 	fits_on_slot = bow
 	entity = "Dreadnought_bow_L1M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
 	ai_tags = { gunship brawler }
-
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -33,16 +32,6 @@ ship_section_template = {
 	}	
 	component_slot = {
 		name = "SMALL_GUN_04"
-		template = "invisible_small_turret"
-		locatorname = "small_gun_02"
-	}
-	component_slot = {
-		name = "SMALL_GUN_05"
-		template = "invisible_small_turret"
-		locatorname = "small_gun_01"
-	}	
-	component_slot = {
-		name = "SMALL_GUN_06"
 		template = "invisible_small_turret"
 		locatorname = "small_gun_02"
 	}
@@ -67,16 +56,6 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	component_slot = {
-		name = "PD_GUN_05"
-		template = "invisible_point_defence_turret"
-		locatorname = "small_gun_01"
-	}	
-	component_slot = {
-		name = "PD_GUN_06"
-		template = "invisible_point_defence_turret"
-		locatorname = "small_gun_02"
-	}
-	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "medium_turret"
 		locatorname = "medium_gun_01"
@@ -93,16 +72,6 @@ ship_section_template = {
 	}
 	component_slot = {
 		name = "MEDIUM_GUN_04"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_05"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MEDIUM_GUN_06"
 		template = "invisible_medium_turret"
 		locatorname = "medium_gun_01"
 	}
@@ -126,16 +95,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_05"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 	
 	large_utility_slots = 12
 	
@@ -146,7 +105,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_BOW_L12"
+	key = "DREADNOUGHT_BOW_L10"
 	ship_size = Dreadnought
 	fits_on_slot = bow
 	entity = "Dreadnought_bow_L2_entity"
@@ -203,18 +162,8 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_11"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
-	component_slot = {
-		name = "LARGE_GUN_12"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_02"
-	}
 
-	large_utility_slots = 10
+	large_utility_slots = 14
 	
 	resources = {
 		category = ship_sections
@@ -223,7 +172,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_BOW_S3P3G15"
+	key = "DREADNOUGHT_BOW_S2P2G13"
 	ship_size = Dreadnought
 	fits_on_slot = bow
 	entity = "Dreadnought_bow_M1S2SHB_entity"
@@ -241,11 +190,6 @@ ship_section_template = {
 		locatorname = "small_gun_02"
 	}
 	component_slot = {
-		name = "SMALL_GUN_03"
-		template = "invisible_small_turret"
-		locatorname = "small_gun_01"
-	}	
-	component_slot = {
 		name = "PD_GUN_01"
 		template = "invisible_point_defence_turret"
 		locatorname = "small_gun_01"
@@ -255,11 +199,6 @@ ship_section_template = {
 		template = "invisible_point_defence_turret"
 		locatorname = "small_gun_02"
 	}
-	component_slot = {
-		name = "PD_GUN_03"
-		template = "invisible_point_defence_turret"
-		locatorname = "small_gun_01"
-	}	
 	component_slot = {
 		name = "MISSILE_01"
 		template = "medium_missile_turret"
@@ -325,18 +264,8 @@ ship_section_template = {
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
 	}
-	component_slot = {
-		name = "MISSILE_14"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MISSILE_15"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_01"
-	}
 	
-	large_utility_slots = 12
+	large_utility_slots = 13
 	
 	resources = {
 		category = ship_sections
@@ -345,7 +274,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_BOW_XL1"
+	key = "DREADNOUGHT_BOW_XL4"
 	ship_size = Dreadnought
 	fits_on_slot = bow
 	entity = "Dreadnought_bow_XL1_entity"
@@ -375,7 +304,7 @@ ship_section_template = {
 		locatorname = "xl_gun_01"
 	}
 
-	large_utility_slots = 10
+	large_utility_slots = 12
 	
 	resources = {
 		category = ship_sections
@@ -388,7 +317,7 @@ ship_section_template = {
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID1_P3M7L7"
+	key = "DREADNOUGHT_MID1_P3M7L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
 	entity = "Dreadnought_mid_L2M2_entity"
@@ -475,11 +404,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	large_utility_slots = 10
 	
@@ -490,7 +414,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID1_P3G5L7"
+	key = "DREADNOUGHT_MID1_P3G5L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
 	entity = "Dreadnought_mid_L2M2_entity"
@@ -567,11 +491,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	large_utility_slots = 10
 	
@@ -582,7 +501,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID1_P3L10"
+	key = "DREADNOUGHT_MID1_P3L9"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
 	entity = "Dreadnought_mid_L3_entity"
@@ -649,11 +568,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_10"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_02"
-	}
 
 	large_utility_slots = 10
 	
@@ -664,7 +578,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID1_P3M10G10"
+	key = "DREADNOUGHT_MID1_P3M9G9"
 	ship_size = Dreadnought
 	fits_on_slot = mid1
 	entity = "Dreadnought_mid_M4SHB_entity"
@@ -732,11 +646,6 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	component_slot = {
-		name = "MEDIUM_GUN_10"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_02"
-	}
-	component_slot = {
 		name = "MISSILE_01"
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
@@ -780,11 +689,6 @@ ship_section_template = {
 		name = "MISSILE_09"
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MISSILE_10"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_02"
 	}
 
 	large_utility_slots = 10
@@ -800,12 +704,12 @@ ship_section_template = {
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID2_P3M7L7"
+	key = "DREADNOUGHT_MID2_P3M7L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid2
 	entity = "Dreadnought_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship brawler }
+	ai_tags = { brawler gunship }
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -887,11 +791,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	large_utility_slots = 10
 	
@@ -902,12 +801,12 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID2_P3G5L7"
+	key = "DREADNOUGHT_MID2_P3G5L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid2
 	entity = "Dreadnought_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { explosive }
+	ai_tags = { explosive energy_torpedoes }
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -979,11 +878,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	large_utility_slots = 10
 	
@@ -994,7 +888,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID2_P3L10"
+	key = "DREADNOUGHT_MID2_P3L9"
 	ship_size = Dreadnought
 	fits_on_slot = mid2
 	entity = "Dreadnought_mid_L3_entity"
@@ -1061,11 +955,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_10"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_02"
-	}
 
 	large_utility_slots = 10
 	
@@ -1076,12 +965,12 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID2_P3M10G10"
+	key = "DREADNOUGHT_MID2_P3M9G9"
 	ship_size = Dreadnought
 	fits_on_slot = mid2
 	entity = "Dreadnought_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { explosive }
+	ai_tags = { explosive energy_torpedoes }
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -1144,11 +1033,6 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	component_slot = {
-		name = "MEDIUM_GUN_10"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_02"
-	}
-	component_slot = {
 		name = "MISSILE_01"
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
@@ -1192,11 +1076,6 @@ ship_section_template = {
 		name = "MISSILE_09"
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MISSILE_10"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_02"
 	}
 
 	large_utility_slots = 10
@@ -1212,12 +1091,12 @@ ship_section_template = {
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID3_P3M7L7"
+	key = "DREADNOUGHT_MID3_P3M7L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid3
 	entity = "Dreadnought_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship brawler }
+	ai_tags = { brawler gunship }
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -1299,11 +1178,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	large_utility_slots = 10
 	
@@ -1314,12 +1188,12 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID3_P3G5L7"
+	key = "DREADNOUGHT_MID3_P3G5L6"
 	ship_size = Dreadnought
 	fits_on_slot = mid3
 	entity = "Dreadnought_mid_L2M2_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship brawler explosive }
+	ai_tags = { explosive energy_torpedoes }
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -1391,11 +1265,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_02"
 	}
-	component_slot = {
-		name = "LARGE_GUN_07"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	large_utility_slots = 10
 	
@@ -1406,7 +1275,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID3_P3L10"
+	key = "DREADNOUGHT_MID3_P3L9"
 	ship_size = Dreadnought
 	fits_on_slot = mid3
 	entity = "Dreadnought_mid_L3_entity"
@@ -1473,11 +1342,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_10"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_02"
-	}
 
 	large_utility_slots = 10
 	
@@ -1488,12 +1352,12 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_MID3_P3M10G10"
+	key = "DREADNOUGHT_MID3_P3M9G9"
 	ship_size = Dreadnought
 	fits_on_slot = mid3
 	entity = "Dreadnought_mid_M4SHB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship brawler explosive }
+	ai_tags = { explosive energy_torpedoes }
 
 	component_slot = {
 		name = "PD_GUN_01"
@@ -1556,11 +1420,6 @@ ship_section_template = {
 		locatorname = "medium_gun_01"
 	}
 	component_slot = {
-		name = "MEDIUM_GUN_10"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_02"
-	}
-	component_slot = {
 		name = "MISSILE_01"
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
@@ -1605,11 +1464,6 @@ ship_section_template = {
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
 	}
-	component_slot = {
-		name = "MISSILE_10"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_02"
-	}
 
 	large_utility_slots = 10
 	
@@ -1624,7 +1478,7 @@ ship_section_template = {
 ####################################################################################################################################################################
 
 ship_section_template = {
-	key = "DREADNOUGHT_STERN_L6"
+	key = "DREADNOUGHT_STERN_L5"
 	ship_size = Dreadnought
 	fits_on_slot = stern
 	entity = "Dreadnought_stern_L1_entity"
@@ -1656,11 +1510,6 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "large_gun_01"
 	}
-	component_slot = {
-		name = "LARGE_GUN_06"
-		template = "invisible_large_turret"
-		locatorname = "large_gun_01"
-	}
 
 	aux_utility_slots = 4
 	
@@ -1671,7 +1520,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_STERN_M15"
+	key = "DREADNOUGHT_STERN_M14"
 	ship_size = Dreadnought
 	fits_on_slot = stern
 	entity = "Dreadnought_stern_M2_entity"
@@ -1749,11 +1598,6 @@ ship_section_template = {
 		template = "invisible_medium_turret"
 		locatorname = "medium_gun_02"
 	}
-	component_slot = {
-		name = "MEDIUM_GUN_15"
-		template = "invisible_medium_turret"
-		locatorname = "medium_gun_01"
-	}
 
 	aux_utility_slots = 4
 	
@@ -1764,7 +1608,7 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "DREADNOUGHT_STERN_G10"
+	key = "DREADNOUGHT_STERN_G9"
 	ship_size = Dreadnought
 	fits_on_slot = stern
 	entity = "Dreadnought_stern_M2_entity"
@@ -1816,11 +1660,6 @@ ship_section_template = {
 		name = "MISSILE_09"
 		template = "invisible_missile_turret"
 		locatorname = "medium_gun_01"
-	}
-	component_slot = {
-		name = "MISSILE_10"
-		template = "invisible_missile_turret"
-		locatorname = "medium_gun_02"
 	}
 
 	aux_utility_slots = 4

@@ -1,6 +1,7 @@
 ######################
 ### NSC TECH COSTS ###
 ######################
+
 @tier1cost4 = 3500
 @tier2cost4 = 7000
 @tier3cost4 = 14000
@@ -17,30 +18,34 @@
 @tier7cost3 = 84000
 @tier7cost4 = 88000
 
-##################
-### SHIP HULLS ###
-##################
-tech_pd_destroyer_1 = {
+
+
+
+####################################################################################################################################################################
+### SHIP HULLS & UPGRADES ##########################################################################################################################################
+####################################################################################################################################################################
+
+tech_pd_frigate_1 = {
 	cost = @tier2cost2
 	area = engineering
 	tier = 2
 	category = { voidcraft }
-	prerequisites = { "tech_destroyers" }
+	prerequisites = { "tech_cruisers" }
 	weight = @tier2weight1
 	
 	gateway = ship
 	
 	prereqfor_desc = {
 		ship = {
-			title = "TECH_UNLOCK_PD_DESTROYER_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_PD_DESTROYER_CONSTRUCTION_DESC"
+			title = "TECH_UNLOCK_PD_FRIGATE_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_PD_FRIGATE_CONSTRUCTION_DESC"
 		}
 	}
 	
 	weight_modifier = {
 		modifier = {
 			factor = 10
-			any_neighbor_country = { has_technology = tech_pd_destroyer_1 }
+			any_neighbor_country = { has_technology = tech_pd_frigate_1 }
 		}
 	}
 	
@@ -88,7 +93,7 @@ tech_Battlecruiser_1 = {
 	area = engineering
 	tier = 3
 	category = { voidcraft }
-	prerequisites = { "tech_StrikeCruiser_1" }
+	prerequisites = { "tech_cruisers" }
 	weight = @tier3weight1
 	
 	gateway = ship
@@ -122,7 +127,7 @@ tech_escortcarrier_1 = {
 	area = engineering
 	tier = 2
 	category = { voidcraft }
-	prerequisites = { "tech_Battlecruiser_1" }
+	prerequisites = { "tech_cruisers" }
 	weight = @tier2weight1
 	
 	gateway = ship
@@ -545,9 +550,13 @@ tech_explorationship_4 = {
 	}
 }
 
-##################################
-### STARBASE MODULES/BUILDINGS ###
-##################################
+
+
+
+####################################################################################################################################################################
+### STARBASE MODULES/BUILDINGS #####################################################################################################################################
+####################################################################################################################################################################
+
 tech_drydock_1 = {
 	cost = @tier3cost1
 	area = engineering
@@ -734,9 +743,89 @@ tech_space_defense_station_3 = {
 	ai_weight = { factor = @ai_starbase_types_factor }
 }
 
-################
-### REACTORS ###
-################
+tech_mining_base = {
+	cost = @tier3cost2
+	area = engineering
+	tier = 3
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_mineral_purification_1" }
+	weight = @tier3weight1
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_MINING_BASE_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_MINING_BASE_CONSTRUCTION_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_mining_base }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = prospectorium }
+		}
+	}
+	
+	ai_weight = { factor = @ai_starbase_types_factor }
+}
+
+tech_power_station = {
+	cost = @tier3cost2
+	area = physics
+	tier = 3
+	is_rare = yes
+	category = { voidcraft }
+	prerequisites = { "tech_power_hub_1" }
+	weight = @tier3weight1
+	
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_POWER_STATON_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_POWER_STATON_CONSTRUCTION_DESC"
+		}
+	}
+	
+	weight_modifier = {
+		modifier = {
+			factor = @ap_technological_ascendancy_rare_tech
+			has_ascension_perk = ap_technological_ascendancy
+		}
+		modifier = {
+			factor = @federation_perk_factor
+			has_federation = yes
+			federation = {
+				has_federation_perk = rare_tech_boost
+				any_member = { has_technology = tech_power_station }
+			}
+		}
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = prospectorium }
+		}
+	}
+	
+	ai_weight = { factor = @ai_starbase_types_factor }
+}
+
+
+
+
+####################################################################################################################################################################
+### REACTORS #######################################################################################################################################################
+####################################################################################################################################################################
+
 tech_graviton_power = {
 	area = physics
 	cost = @tier6cost1
@@ -1015,9 +1104,13 @@ tech_bh_power_3 = {
 	}
 }
 
-########################
-### REACTOR BOOSTERS ###
-########################
+
+
+
+####################################################################################################################################################################
+### REACTOR BOOSTERS ###############################################################################################################################################
+####################################################################################################################################################################
+
 tech_nsc_reactor_boosters_1 = {
 	area = physics
 	cost = @tier4cost1
@@ -1072,80 +1165,13 @@ tech_nsc_reactor_boosters_3 = {
 	}
 }
 
-##############################
-### STRIKECRUISER UPGRADES ###
-##############################
-tech_strikecruiser_build_speed = {
-	cost = @tier3cost2
-	area = engineering
-	tier = 3
-	category = { voidcraft }
-	prerequisites = { "tech_StrikeCruiser_1" }
-	weight = @tier3weight2
-	
-	modifier = {
-		shipsize_StrikeCruiser_build_speed_mult = 0.25
-		ship_StrikeCruiser_cost_mult = -0.05
-	}
-	
-	weight_modifier = {}
-	
-	ai_weight = {
-		factor = @ai_ship_types_factor
-	}
-}
 
-tech_strikecruiser_hull_1 = {
-	cost = @tier3cost3
-	area = engineering
-	tier = 3
-	category = { voidcraft }
-	prerequisites = { "tech_StrikeCruiser_1" }
-	weight = @tier3weight3
-	
-	modifier = { shipsize_StrikeCruiser_hull_mult = 0.1 }
-	
-	weight_modifier = {}
-	
-	ai_weight = {
-		factor = @ai_ship_types_factor
-	}
-}
 
-tech_strikecruiser_hull_2 = {
-	cost = @tier4cost1
-	area = engineering
-	tier = 4
-	is_rare = yes
-	category = { voidcraft }
-	prerequisites = { "tech_strikecruiser_hull_1" }
-	weight = @tier4weight1
-	
-	modifier = { shipsize_StrikeCruiser_hull_mult = 0.1 }
-	
-	weight_modifier = {
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_strikecruiser_hull_2 }
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = @ai_ship_types_factor
-	}
-}
 
-##############################
-### BATTLECRUISER UPGRADES ###
-##############################
+####################################################################################################################################################################
+### BATTLECRUISER UPGRADES #########################################################################################################################################
+####################################################################################################################################################################
+
 tech_battlecruiser_build_speed = {
 	cost = @tier4cost1
 	area = engineering
@@ -1214,9 +1240,13 @@ tech_battlecruiser_hull_2 = {
 	}
 }
 
-########################
-### CARRIER UPGRADES ###
-########################
+
+
+
+####################################################################################################################################################################
+### CARRIER UPGRADES ###############################################################################################################################################
+####################################################################################################################################################################
+
 tech_carrier_build_speed = {
 	cost = @tier4cost2
 	area = engineering
@@ -1289,9 +1319,13 @@ tech_carrier_hull_2 = {
 	}
 }
 
-############################
-### DREADNOUGHT UPGRADES ###
-############################
+
+
+
+####################################################################################################################################################################
+### DREADNOUGHT UPGRADES ###########################################################################################################################################
+####################################################################################################################################################################
+
 tech_dreadnought_build_speed = {
 	cost = @tier5cost1
 	area = engineering
@@ -1370,9 +1404,13 @@ tech_dreadnought_hull_2 = {
 	}
 }
 
-#########################
-### FLAGSHIP UPGRADES ###
-#########################
+
+
+
+####################################################################################################################################################################
+### FLAGSHIP UPGRADES ##############################################################################################################################################
+####################################################################################################################################################################
+
 tech_flagship_hull_1 = {
 	cost = @tier5cost3
 	area = engineering
@@ -1426,9 +1464,12 @@ tech_flagship_hull_2 = {
 	}
 }
 
-#########################
-### STARBASE UPGRADES ###
-#########################
+
+
+####################################################################################################################################################################
+### STARBASE UPGRADES ##############################################################################################################################################
+####################################################################################################################################################################
+
 tech_stronghold_upgrades = {
 	cost = @tier5cost4
 	area = engineering
@@ -1468,130 +1509,6 @@ tech_stronghold_upgrades = {
 	}
 }
 
-############################
-### MINING/POWER STATION ###
-############################
-tech_mining_base = {
-	cost = @tier3cost2
-	area = engineering
-	tier = 3
-	is_rare = yes
-	category = { voidcraft }
-	prerequisites = { "tech_mineral_purification_1" }
-	weight = @tier3weight1
-	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_MINING_BASE_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_MINING_BASE_CONSTRUCTION_DESC"
-		}
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_mining_base }
-			}
-		}
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = prospectorium }
-		}
-	}
-	
-	ai_weight = { factor = @ai_starbase_types_factor }
-}
-
-tech_power_station = {
-	cost = @tier3cost2
-	area = physics
-	tier = 3
-	is_rare = yes
-	category = { voidcraft }
-	prerequisites = { "tech_power_hub_1" }
-	weight = @tier3weight1
-	
-	prereqfor_desc = {
-		ship = {
-			title = "TECH_UNLOCK_POWER_STATON_CONSTRUCTION_TITLE"
-			desc = "TECH_UNLOCK_POWER_STATON_CONSTRUCTION_DESC"
-		}
-	}
-	
-	weight_modifier = {
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_power_station }
-			}
-		}
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = prospectorium }
-		}
-	}
-	
-	ai_weight = { factor = @ai_starbase_types_factor }
-}
-
-##############
-### UPKEEP ###
-##############
-tech_ship_upkeep_1 = {
-	cost = @tier4cost3
-	area = engineering
-	tier = 3
-	category = { voidcraft }
-	prerequisites = { "tech_Battlecruiser_1" }
-	weight = @tier4weight2
-	
-	modifier = { ships_upkeep_mult = -0.20 }
-	
-	weight_modifier = {}
-	
-	ai_weight = {
-		factor = @ai_starbase_types_facto
-	}
-}
-
-tech_starbase_upkeep_1 = {
-	cost = @tier4cost3
-	area = engineering
-	tier = 3
-	category = { voidcraft }
-	prerequisites = { "tech_starbase_4" }
-	weight = @tier4weight2
-	
-	modifier = { starbases_upkeep_mult = -0.20 }
-	
-	weight_modifier = {
-		modifier = {
-			factor = 1.5
-			is_specialist_subject_type = { TYPE = bulwark }
-		}
-	}
-	
-	ai_weight = {
-		factor = @ai_starbase_types_facto
-	}
-}
-
-#########################
-### DEFENSE PLATFORMS ###
-#########################
 tech_defense_platforms_1 = {
 	cost = @tier4cost2
 	area = engineering
@@ -1680,9 +1597,59 @@ tech_defense_platforms_4 = {
 	}
 }
 
-############################
-### HYPERLANE GENERATION ###
-############################
+
+
+
+####################################################################################################################################################################
+### UPKEEP REDUCTION ###############################################################################################################################################
+####################################################################################################################################################################
+
+tech_ship_upkeep_1 = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_Battlecruiser_1" }
+	weight = @tier4weight2
+	
+	modifier = { ships_upkeep_mult = -0.20 }
+	
+	weight_modifier = {}
+	
+	ai_weight = {
+		factor = @ai_starbase_types_facto
+	}
+}
+
+tech_starbase_upkeep_1 = {
+	cost = @tier4cost3
+	area = engineering
+	tier = 3
+	category = { voidcraft }
+	prerequisites = { "tech_starbase_4" }
+	weight = @tier4weight2
+	
+	modifier = { starbases_upkeep_mult = -0.20 }
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.5
+			is_specialist_subject_type = { TYPE = bulwark }
+		}
+	}
+	
+	ai_weight = {
+		factor = @ai_starbase_types_facto
+	}
+}
+
+
+
+
+####################################################################################################################################################################
+### HYPERLANE MANIPULATION #########################################################################################################################################
+####################################################################################################################################################################
+
 tech_hyperlane_generation = {
 	cost = @tier5cost3
 	area = physics
@@ -1721,9 +1688,13 @@ tech_hyperlane_generation = {
 	}
 }
 
-#############
-### OTHER ###
-#############
+
+
+
+####################################################################################################################################################################
+### MISCELLANEOUS TECHS ############################################################################################################################################
+####################################################################################################################################################################
+
 tech_specialcomponents_1 = {
 	cost = @tier2cost3
 	area = engineering
@@ -1913,9 +1884,13 @@ tech_hospital = {
 	}
 }
 
-####################
-### LOCKS/CHECKS ###
-####################
+
+
+
+####################################################################################################################################################################
+### LOCKS & CHECKS #################################################################################################################################################
+####################################################################################################################################################################
+
 tech_nsc_dlc_check = {
 	area = physics
 	cost = 0

@@ -4,18 +4,18 @@
 
 weapon_component_template = {
 	key = "TOMAHAWK_CRUISE_MISSILE"
-	size = torpedo
+	size = large
 	type = missile
 	
 	icon = "GFX_ship_part_cruise_missile_1"
 	icon_frame = 1
 	
 	power = -120
-	damage = { min = 45 max = 75 }
-	hull_damage = 1.5
-	shield_damage = 1.0
-	shield_penetration = 1.0
-	armor_damage = 1.0
+	damage = { min = 75 max = 95}
+	hull_damage = 1.0
+	shield_damage = 0.75
+	shield_penetration = 0.75
+	armor_damage = 1.5
 	armor_penetration = 0.0
 	windup = { min = 1 max = 19 }
 	total_fire_time = 90
@@ -27,16 +27,15 @@ weapon_component_template = {
 	missile_evasion = 0.1
 	missile_shield = 0.0
 	missile_armor = 0.0
-	missile_health = 28.0
+	missile_health = 18.0
 	missile_retarget_range = 100.0
-	size_damage_factor = 1
 	
 	prerequisites = { "tech_tomahawk_cruise_missile_1" }
 	component_set = "TOMAHAWK_CRUISE_MISSILE"
 	projectile_gfx = "large_missile"
 	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship juggernaut military_station_small military_station_medium military_station_large }
 	inline_script = "targeting/capital_ships"
 
 	resources = {
@@ -73,40 +72,40 @@ weapon_component_template = {
 }
 
 weapon_component_template = {
-	key = "HARPOON_CRUISE_MISSILE"
+	key = "FRIGATE_TORPEDO_1"
 	size = torpedo
 	type = missile
 	
-	icon = "GFX_ship_part_cruise_missile_2"
+	icon = "GFX_ship_part_frigate_torpedo_1"
 	icon_frame = 1
 	
-	power = -90
-	damage = { min = 30 max = 50 }
+	power = -10
+	damage = { min = 40 max = 60 }
 	hull_damage = 1.5
 	shield_damage = 1.0
 	shield_penetration = 1.0
-	armor_damage = 1.0
-	armor_penetration = 0.0
+	armor_damage = 1.5
+	armor_penetration = 0.5
 	windup = { min = 1 max = 19 }
 	total_fire_time = 60
-	range = 100
+	range = 200
 	min_range = 50
 	accuracy = 1.0
 	tracking = 0.0
 	missile_speed = 24.0
-	missile_evasion = 0.15
+	missile_evasion = 0.30
 	missile_shield = 0.0
 	missile_armor = 0.0
-	missile_health = 18.0
-	missile_retarget_range = 100.0
+	missile_health = 25.0
+	missile_retarget_range = 150.0
 	size_damage_factor = 1
 	
-	prerequisites = { "tech_tomahawk_cruise_missile_1" }
-	component_set = "HARPOON_CRUISE_MISSILE"
+	prerequisites = { "tech_missiles_3" }
+	component_set = "FRIGATE_TORPEDO_1"
 	projectile_gfx = "large_missile"
 	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship headquarters juggernaut military_station_small military_station_medium military_station_large }
+	size_restriction = { frigate }
 	inline_script = "targeting/capital_ships"
 
 	resources = {
@@ -121,7 +120,72 @@ weapon_component_template = {
 	}
 
 	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = HARPOON_CRUISE_MISSILE }
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
+	}
+	
+	target_weights = {
+		Flagship = 5
+		titan = 4
+		Dreadnought = 3
+		battleship = 2
+		Carrier = 1
+	}
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+weapon_component_template = {
+	key = "BATTLECRUISER_TORPEDO_1"
+	size = torpedo
+	type = missile
+	
+	icon = "GFX_ship_part_battlecruiser_torpedo_1"
+	icon_frame = 1
+	
+	power = -50
+	damage = { min = 150 max = 200 }
+	hull_damage = 1.75
+	shield_damage = 1.0
+	shield_penetration = 1.0
+	armor_damage = 1.75
+	armor_penetration = 0.75
+	windup = { min = 1 max = 10 }
+	total_fire_time = 30
+	range = 140
+	min_range = 25
+	accuracy = 1.0
+	tracking = 0.0
+	missile_speed = 16.0
+	missile_evasion = 0.15
+	missile_shield = 0.0
+	missile_armor = 0.0
+	missile_health = 35.0
+	missile_retarget_range = 75.0
+	size_damage_factor = 1.5
+	
+	prerequisites = { "tech_missiles_5" }
+	component_set = "BATTLECRUISER_TORPEDO_1"
+	projectile_gfx = "large_missile"
+	tags = { weapon_type_explosive g_slot }
+	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
+	size_restriction = { Battlecruiser }
+	inline_script = "targeting/capital_ships"
+
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @l_t7_cost
+		}		
+		upkeep = {
+			energy = @l_t7_upkeep_energy
+			alloys = @l_t7_upkeep_alloys
+		}
+	}
+
+	valid_for_country = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	}
 
 	ai_weight = {

@@ -1,14 +1,3 @@
-headquarters_ship_limit = {
-	ship_types = {
-		headquarters
-	}
-	base = 50    # 1*Size Multiplier
-	show = {
-		is_scope_valid = yes
-		has_technology = tech_starbase_6
-	}
-}
-
 explorationship_ship_limit = {
 	ship_types = {
 		explorationship
