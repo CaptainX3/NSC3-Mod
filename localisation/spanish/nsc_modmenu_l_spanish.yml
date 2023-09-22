@@ -13,31 +13,27 @@ edict_nsc_modmenu_tooltip.fail:0 "£trigger_no£ §RCan not open this UI multipl
 
 ### Country Modifiers ###
 #Ship Classes
-nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod:0 "NSC3 Modmenu"
-nsc_modmenu_ship_class_StrikeCruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Battlecruiser_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Battlecruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Carrier_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Carrier_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Dreadnought_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Dreadnought_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_headquarters_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_headquarters_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Battlecruiser_build_cost_mod:0 "NSC3 Modmenu"
+nsc_modmenu_ship_class_Battlecruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Carrier_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Carrier_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Dreadnought_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Dreadnought_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 #Starbase Levels
-nsc_modmenu_starbase_class_common_upgrade_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_starbase_class_common_upgrade_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_starbase_class_outpost_build_cost_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_starbase_class_outpost_build_speed_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_common_upgrade_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_common_upgrade_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_outpost_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_starbase_class_outpost_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 #ETC AI Difficulties
-nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
-nsc_modmenu_etc_feature_ai_difficulty_military_bonus_mod:0 "$nsc_modmenu_ship_class_StrikeCruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_economy_bonus_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_technology_bonus_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_etc_feature_ai_difficulty_military_bonus_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 ### Fleet Modifiers ###
 nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod:0 "Mothballed Fleet"
@@ -171,9 +167,9 @@ nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_2_desc:0 "§E$
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_name:0 "Mothballing Fleets"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip:0 "§EQuestion: How do I mothball a fleet?§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_3_tooltip$\n\nTo mothball a fleet, move it into orbit over one of your colonized planets. Make sure it's a planet that you don't plan to have other fleets orbiting, because once you activate the mothball system, all fleets that enter orbit will automatically be mothballed.\n\nOnce the fleet is in orbit, open the planetary decisions window and choose the Mothball option.§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Headquarters Station"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: How do I build the Headquarters Station?§!"
-nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E$nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip$\n\nThe Headquarters Station is a type of Juggernaut and can be built at a starbase that can build Juggernauts.\n\nNote: You must have purchased and installed the Federations DLC to have access to Juggernauts and to build the HQ Station.§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_name:0 "Name REPLACE_ME 4"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_tooltip:0 "§EQuestion: REPLACE_ME 4§!"
+nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_4_desc:0 "§E Desc REPLACE_ME 4 §!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_name:0 "Name REPLACE_ME 5"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_tooltip:0 "§EQuestion: REPLACE_ME 5§!"
 nsc_modmenu_setting_page_mod_category_faq_question_list_2_context_5_desc:0 "§E Desc REPLACE_ME 5 §!"
@@ -206,17 +202,6 @@ nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_ship
 nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
 nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_speed_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail:0 "$nsc_modmenu_ship_class_build_speed_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"
-
-#StrikeCruiser
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_name_desc:0 "§H$STRIKECRUISER$§!\n$SHIP_GRAPHICS_STRIKECRUISER_DESC$"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_enabled_desc:0 "$STRIKECRUISER$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_disabled_desc:0 "$STRIKECRUISER$: §RDisabled§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_StrikeCruiser_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_StrikeCruiser_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_StrikeCruiser_build_speed_var]%§!"
 
 #Battlecruiser
 nsc_modmenu_setting_page_ship_category_class_Battlecruiser_name_desc:0 "§H$BATTLECRUISER$§!\n$SHIP_GRAPHICS_BATTLECRUISER_DESC$"
@@ -261,17 +246,6 @@ nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_plus:0 "Bu
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_Flagship_build_speed_var]%§!"
-
-#headquarters
-nsc_modmenu_setting_page_ship_category_class_headquarters_name_desc:0 "§H$headquarters$§!\n$SHIP_GRAPHICS_HEADQUARTERS_DESC$"
-nsc_modmenu_setting_page_ship_category_class_headquarters_enabled_desc:0 "$headquarters$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_disabled_desc:0 "$headquarters$: §RDisabled§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_headquarters_build_cost_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
-nsc_modmenu_setting_page_ship_category_class_headquarters_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_headquarters_build_speed_var]%§!"
 
 #explorationship
 nsc_modmenu_setting_page_ship_category_class_explorationship_name_desc:0 "§H$EXPLORATIONSHIP$§!\n$SHIP_GRAPHICS_EXPLORATIONSHIP_DESC$"
@@ -468,10 +442,15 @@ nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_name_de
 nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_enabled_desc:0 "$TOMAHAWK_CRUISE_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_TOMAHAWK_CRUISE_MISSILE_disabled_desc:0 "$TOMAHAWK_CRUISE_MISSILE$: §RDisabled§!"
 
-#FRIGATE HARPOON TORPEDO
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_name_desc:0 "§H$FRIGATE_TORPEDO_1$§!\n$FRIGATE_TORPEDO_1_DESC$"
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_enabled_desc:0 "$FRIGATE_TORPEDO_1$: §GEnabled§!"
-nsc_modmenu_setting_page_ship_category_component_HARPOON_CRUISE_MISSILE_disabled_desc:0 "$FRIGATE_TORPEDO_1$: §RDisabled§!"
+#FRIGATE_TORPEDO_1
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_name_desc:0 "§H$FRIGATE_TORPEDO_1$§!\n$FRIGATE_TORPEDO_1_DESC$"
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_enabled_desc:0 "$FRIGATE_TORPEDO_1$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_FRIGATE_TORPEDO_1_disabled_desc:0 "$FRIGATE_TORPEDO_1$: §RDisabled§!"
+
+#BATTLECRUISER_TORPEDO_1
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_name_desc:0 "§H$BATTLECRUISER_TORPEDO_1$§!\n$BATTLECRUISER_TORPEDO_1_DESC$"
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_enabled_desc:0 "$BATTLECRUISER_TORPEDO_1$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_BATTLECRUISER_TORPEDO_1_disabled_desc:0 "$BATTLECRUISER_TORPEDO_1$: §RDisabled§!"
 
 #NSC_PD_MISSILE
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H$NSC_PD_MISSILE$§!\n$NSC_PD_MISSILE_DESC$"
