@@ -84,11 +84,12 @@ SPECIAL_SLOT_MARS_WEAPON_SYSTEM_DESC: "This advanced point-defense weapon system
 SPECIAL_SLOT_STRIKE_CRAFT: "Carrier Command & Control Network"
 SPECIAL_SLOT_STRIKE_CRAFT_DESC: "An advanced network of radar and communication arrays that facilitate the command and control of large numbers of Strike Craft, increasing their effectiveness."
 
-
 SPECIAL_SLOT_MARS_WEAPON_SYSTEM: "MARS Weapon System"
 SPECIAL_SLOT_MARS_WEAPON_SYSTEM_DESC: "This advanced point-defense weapon system is specifically designed to track tiny, highly evasive targets - missiles, torpedoes, and strike craft - and provide extremely precise targeting solutions at blistering speeds, increasing the fire rate and damage potential of ship-borne point-defense weapons."
 SPECIAL_SLOT_STRIKE_CRAFT: "Carrier Command & Control Network"
 SPECIAL_SLOT_STRIKE_CRAFT_DESC: "An advanced network of radar and communication arrays that facilitate the command and control of large numbers of Strike Craft, increasing their effectiveness."
+
+
 
 EXPLORATION_SLOT_ANOMALY_LAB: "Anomaly Research Laboratory"
 EXPLORATION_SLOT_ANOMALY_LAB_DESC: "This laboratory is dedicated to the study of anomalies, those strange and wonderful things in the galaxy that don't seem to follow the same rules as everything else. Each one deserves a full, comprehensive analysis, but there is so much to discover, and so little time. By optimizing the laboratory for the study of these delightful oddities, we can insure that every anomaly gets the attention it deserves, while also dramatically speeding up research time."
@@ -121,6 +122,11 @@ EXPLORATION_SLOT_SOLAR_ARRAY_DESC: "§HProduces:§! 7 Energy\n§HUpkeep:§! 5 Mi
 
 EXPLORATION_SLOT_ALLOY_REFINERY: "Alloy Refinery"
 EXPLORATION_SLOT_ALLOY_REFINERY_DESC: "§HProduces:§! 7 Alloys\n§HUpkeep:§! 3 Minerals & 3 Energy\nThis facility allows an empire to convert an old Exploration Cruiser into a modern alloy refinery, able to produce a small amount of alloys each month."
+
+FRIGATE_CLOAK: "Frigate Advanced Cloaking Device"
+FRIGATE_CLOAKING: "Frigate Advanced Cloaking Device"
+BATTLECRUISER_CLOAK: "Battlecruiser Heavy Cloaking Device"
+BATTLECRUISER_CLOAKING: "Battlecruiser Heavy Cloaking Device"
 
 FIGHTERS_HANGAR_PD_1: "Basic Fighter Wing (PD)"
 FIGHTERS_HANGAR_PD_1_DESC: "Basic Fighter-class strike craft will deploy to engage nearby hostiles when the mothership enters battle. Will stay close to its carrier to intercept bombers and missiles."
@@ -408,8 +414,11 @@ TOMAHAWK_CRUISE_MISSILE_DESC: "An extremely expensive anti-capital ship missile 
 NSC_PD_MISSILE: "Harrington Advanced Missile Pod"
 NSC_PD_MISSILE_DESC: "An advanced pod of point defense missiles capable of taking down fast and maneuverable targets."
 
-HARPOON_CRUISE_MISSILE: "Harpoon Advanced Cruise Missile"
-HARPOON_CRUISE_MISSILE_DESC: "A smaller variant of the Tomahawk cruise missile, the Harpoon trades off some of the range and damage of the Tomahawk for an increase in speed and evasion."
+FRIGATE_TORPEDO_1: "Harpoon Torpedo"
+FRIGATE_TORPEDO_1_DESC: "A specialized torpedo designed to fit into the small launchers of the Frigate class, intended for use in quick stealth strikes in enemy territory."
+
+BATTLECRUISER_TORPEDO_1: "Minuteman Torpedo"
+BATTLECRUISER_TORPEDO_1_DESC: "Named after its ability to fire more rapidly than most other torpedoes, the Minuteman is a special variant designed for the Battlecruiser class to execute devastating strikes on larger enemy capital ships."
 
 BATTLESHIP_SNIPER_GUN_1: "Electro-Magnetic Flux Cannon"
 BATTLESHIP_SNIPER_GUN_1_DESC: "These specialized high speed turrets are designed for engaging nimble Corvettes. They have great precision at long range, but struggle against the thicker hulls of larger ships."

@@ -59,6 +59,8 @@ nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_track_technology_bonu
 nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_button_technology_bonus_1_button_effect = {
     potential = {
         has_global_flag = nsc_modmenu_etc_ai_difficulty_page_opened
+        #'SYMBOL = =' code here works fine, ignore those cwtools or irony mod manager errors #stellaris v3.8.4
+        #I leave this annotation because I've got the total 2 bug reports and expect more without it
         nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = etc SUBCAT = feature ID = ai_difficulty MODIFIER = technology_bonus SYMBOL = = VALUE = 0 }
     }
     allow = { nsc_modmenu_mp_host_trigger = yes }

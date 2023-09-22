@@ -64,7 +64,7 @@ tech_options_policy = {
 armament_doctrine = {
 	potential = {
 		is_country_type = default
-		is_ai = no
+		has_tradition = tr_nsc_fleet_doctrine_armament
 	}
 
 	option = {
@@ -113,7 +113,7 @@ armament_doctrine = {
 defense_doctrine = {
 	potential = {
 		is_country_type = default
-		is_ai = no
+		has_tradition = tr_nsc_fleet_doctrine_defense
 	}
 
 	option = {
@@ -141,13 +141,23 @@ defense_doctrine = {
 		}
 		ai_weight = { factor = 0 }
 	}
+
+	option = {
+		name = "hardening_focus"
+		policy_flags = { hardening_focus }
+		modifier = {
+			ship_armor_hardening_add = 0.2
+			ship_shield_hardening_add = 0.2
+		}
+		ai_weight = { factor = 0 }
+	}
 }
 
 ### FLEET COMPOSITION DOCTRINE ###
 composition_doctrine = {
 	potential = {
 		is_country_type = default
-		is_ai = no
+		has_tradition = tr_nsc_fleet_doctrine_fleet
 	}
 
 	option = {
@@ -158,7 +168,6 @@ composition_doctrine = {
 
 	option = {
 		name = "light_ship_focus"
-		valid = { has_technology = tech_battleships }
 		policy_flags = { light_ship_focus }
 		modifier = {
 			shipsize_corvette_build_speed_mult = 0.2
@@ -183,7 +192,6 @@ composition_doctrine = {
 
 	option = {
 		name = "versatility_focus"
-		valid = { has_technology = tech_battleships }
 		policy_flags = { versatility_focus }
 		modifier = {
 			shipsize_corvette_build_speed_mult = -0.2
@@ -208,7 +216,6 @@ composition_doctrine = {
 
 	option = {
 		name = "capital_focus"
-		valid = { has_technology = tech_Dreadnought_1 }
 		policy_flags = { capital_focus }
 		modifier = {
 			shipsize_corvette_build_speed_mult = -0.2
@@ -233,7 +240,6 @@ composition_doctrine = {
 
 	option = {
 		name = "carrier_focus"
-		valid = { has_technology = tech_Carrier_1 }
 		policy_flags = { carrier_focus }
 		modifier = {
 			shipsize_corvette_build_speed_mult = -0.2
@@ -261,7 +267,7 @@ composition_doctrine = {
 operations_doctrine = {
 	potential = {
 		is_country_type = default
-		is_ai = no
+		has_tradition = tr_nsc_fleet_doctrine_operations
 	}
 
 	option = {
@@ -272,10 +278,6 @@ operations_doctrine = {
 
 	option = {
 		name = "blue_sky"
-		valid = {
-			has_technology = tech_Battlecruiser_1
-			has_technology = tech_starbase_3
-		}
 		policy_flags = { blue_sky }
 		modifier = {
 			ship_home_territory_fire_rate_mult = 0.2
@@ -289,10 +291,6 @@ operations_doctrine = {
 
 	option = {
 		name = "black_sky"
-		valid = {
-			has_technology = tech_Battlecruiser_1
-			has_technology = tech_starbase_3
-		}
 		policy_flags = { black_sky }
 		modifier = {
 			ship_home_territory_fire_rate_mult = -0.1
@@ -307,8 +305,6 @@ operations_doctrine = {
 		name = "privateer_operation"
 		valid = {
 			is_gestalt = no
-			has_technology = tech_Battlecruiser_1
-			has_technology = tech_starbase_3
 		}
 		policy_flags = { privateer_operation }
 		modifier = {
@@ -327,7 +323,7 @@ operations_doctrine = {
 crew_doctrine = {
 	potential = {
 		is_country_type = default
-		is_ai = no
+		has_tradition = tr_nsc_fleet_doctrine_crew
 		is_gestalt = no
 	}
 
@@ -357,7 +353,7 @@ crew_doctrine = {
 			ship_accuracy_mult = -0.05
 			ship_tracking_mult = -0.05
 			ship_weapon_damage = -0.05
-			ship_disengage_opportunities_add = 1
+			ship_disengage_opportunities_add = 2
 		}
 		ai_weight = { factor = 0 }
 	}
@@ -369,6 +365,7 @@ crew_doctrine = {
 		modifier = {
 			ships_energy_upkeep_mult = 0.1
 			country_naval_cap_mult = 0.01
+			ship_cloaking_detection_add = 1
 		}
 		ai_weight = { factor = 0 }
 	}
@@ -378,7 +375,7 @@ crew_doctrine_gestalt = {
 	potential = {
 		is_country_type = default
 		is_gestalt = yes
-		is_ai = no
+		has_tradition = tr_nsc_fleet_doctrine_crew
 	}
 
 	option = {
@@ -405,9 +402,9 @@ crew_doctrine_gestalt = {
 		valid = { has_technology = tech_interstellar_fleet_traditions }
 		policy_flags = { adaptive_protocol }
 		modifier = {
-			ship_hull_regen_add_perc = 0.01
-			ship_shield_regen_add_perc = 0.01
-			ship_hull_regen_add_perc = 0.01
+			ship_hull_regen_add_perc = 0.02
+			ship_shield_regen_add_perc = 0.02
+			ship_hull_regen_add_perc = 0.02
 		}
 		ai_weight = { factor = 0 }
 	}
