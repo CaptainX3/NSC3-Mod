@@ -6,12 +6,13 @@ weapon_component_template = {
 	key = "TOMAHAWK_CRUISE_MISSILE"
 	size = large
 	type = missile
+	entity = "turret_torpedo_entity"
 	
 	icon = "GFX_ship_part_cruise_missile_1"
 	icon_frame = 1
 	
 	power = -120
-	damage = { min = 75 max = 95}
+	damage = { min = 100 max = 150}
 	hull_damage = 1.0
 	shield_damage = 0.75
 	shield_penetration = 0.75
@@ -19,7 +20,7 @@ weapon_component_template = {
 	armor_penetration = 0.0
 	windup = { min = 1 max = 19 }
 	total_fire_time = 90
-	range = 200
+	range = 150
 	min_range = 50
 	accuracy = 1.0
 	tracking = 0.0
@@ -35,7 +36,6 @@ weapon_component_template = {
 	projectile_gfx = "large_missile"
 	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	size_restriction = { Battlecruiser battleship Carrier Dreadnought titan Flagship juggernaut military_station_small military_station_medium military_station_large }
 	inline_script = "targeting/capital_ships"
 
 	resources = {
@@ -80,14 +80,14 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -10
-	damage = { min = 40 max = 60 }
+	damage = { min = 70 max = 100 }
 	hull_damage = 1.5
 	shield_damage = 1.0
 	shield_penetration = 1.0
 	armor_damage = 1.5
 	armor_penetration = 0.5
 	windup = { min = 1 max = 19 }
-	total_fire_time = 60
+	total_fire_time = 30
 	range = 200
 	min_range = 50
 	accuracy = 1.0
@@ -145,7 +145,7 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -50
-	damage = { min = 150 max = 200 }
+	damage = { min = 130 max = 180 }
 	hull_damage = 1.75
 	shield_damage = 1.0
 	shield_penetration = 1.0

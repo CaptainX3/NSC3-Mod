@@ -34,7 +34,9 @@ NSC_AI_BEHAVIOR_DESC: "This extremely advanced computer system can intelligently
 nsc_strike_cruiser_aura: "Advanced Combat Interdiction System"
 nsc_strike_cruiser_aura_DESC: "The Advanced Combat Systems function as an Interdictor, locking down all hostile ships within range and preventing them from fleeing or disengaging from combat. A must-have for any Admiral chasing an inferior or more evasive force."
 nsc_strike_cruiser_aura_2: "Advanced Combat Interdiction System II"
-NSC_STRIKE_CRUISER_AURA_2_DESC: "This updated Advanced Combat Systems module is an even more effective Interdictor than its predecessor. All hostile forces within range will be forced to stand and fight for quite some time before they can attempt an escape."
+nsc_strike_cruiser_aura_2_desc: "This updated Advanced Combat Systems module is an even more effective Interdictor than its predecessor. All hostile forces within range will be forced to stand and fight for quite some time before they can attempt an escape."
+nsc_strike_cruiser_upgrade: "Strike Cruiser Upgrade Systems"
+nsc_strike_cruiser_upgrade_desc: "This module contains all of the necessary systems to upgrade a Cruiser to a Strike Cruiser."
 nsc_titan_aura: "Fleet Command Network"
 nsc_flagship_aura: "Advanced Fleet Command Network"
 
@@ -442,6 +444,9 @@ heavy_carrier: "Heavy Carrier"
 heavy_carrier_desc: "Heavy Carrier Configuration"
 super_carrier: "Super Carrier"
 super_carrier_desc: "Super Carrier Configuration"
+interdictor: "Interdictor"
+interdictor_desc: "Interdictor Configuration"
+
 
 ##################################################################################################################################################################################################################
 ### CLOAKS ###

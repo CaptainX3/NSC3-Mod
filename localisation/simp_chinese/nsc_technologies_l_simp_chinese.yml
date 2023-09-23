@@ -4,7 +4,7 @@
 ### TECHNOLOGIES ###
 ####################
 
-tech_pd_frigate_1:0 "PD Frigate Upgrade"
+tech_pd_frigate_1:0 "Escort Frigate Upgrade"
 tech_pd_frigate_1_desc:0 "Missiles, torpedoes, and strike craft all pose a grave threat to our fleets. Our naval engineers suggest re-designing our Frigates to mount an array of numerous point-defense weapons to shoot down these targets before they can reach our ships."
 
 tech_StrikeCruiser_1:0 "Strike Cruiser Upgrade"
@@ -170,7 +170,7 @@ tech_nsc_ai_computer_1:0 "Artificial Intelligence Combat System"
 tech_nsc_ai_computer_1_desc:0 "This extremely advanced computer system can intelligently run all combat systems on a ship without taking over the helm, allowing for complete movement control during combat. Available for Carriers, Fleet Support Ships, and the Flagship."
 
 tech_tomahawk_cruise_missile_1:0 "Advanced Cruise Missiles"
-tech_tomahawk_cruise_missile_1_desc:0 "With the advent of Battlecruisers, which are designed to be capable of fielding large numbers of missile launchers, and the development of combat at longer and longer ranges, as well as the appearance of massive capital ships and defensive installations, there is a clear need for larger, more powerful missiles capable of taking on these new threats, and being launched from our Battlecruisers. These Advanced Cruise Missiles are the answer to this emerging need."
+tech_tomahawk_cruise_missile_1_desc:0 "With the development of combat at longer and longer ranges, as well as the appearance of massive capital ships and defensive installations, there is a clear need for larger, more powerful missiles capable of taking on these new threats, and being launched from our own ships. These Advanced Cruise Missiles are the answer to this emerging need."
 
 tech_nsc_disabled_sections:0 "Disabled NSC Ship Sections"
 tech_nsc_disabled_sections_desc:0 "If you are seeing this tech, something is wrong or you used the console."
@@ -216,8 +216,8 @@ TECH_UNLOCK_OPTIMIZED_ENIGMATIC_POWER_DESC:0 "§H$OPTIMIZED_ENIGMATIC_REACTOR$§
 TECH_UNLOCK_BH_POWER_TITLE:0 "§HUnlocks Component:§! $FLAGSHIP_BLACK_HOLE_REACTOR_1$"
 TECH_UNLOCK_BH_POWER_DESC:0 "§H$FLAGSHIP_BLACK_HOLE_REACTOR_1$§!\n$FLAGSHIP_BLACK_HOLE_REACTOR_1_DESC$"
 
-TECH_UNLOCK_PD_DESTROYER_CONSTRUCTION_TITLE:0 "§HUnlocks Section Type:§! PD Frigate"
-TECH_UNLOCK_PD_DESTROYER_CONSTRUCTION_DESC:0 "§HPD Frigate§!\nMissiles, torpedoes, and strike craft all pose a grave threat to our fleets. Our naval engineers suggest re-designing our Frigates to mount an array of numerous point-defense weapons to shoot down these targets before they can reach our ships."
+TECH_UNLOCK_PD_FRIGATE_CONSTRUCTION_TITLE:0 "§HUnlocks Section Type:§! Escort Frigate"
+TECH_UNLOCK_PD_FRIGATE_CONSTRUCTION_DESC:0 "§HPD Frigate§!\nMissiles, torpedoes, and strike craft all pose a grave threat to our fleets. Our naval engineers suggest re-designing our Frigates to mount an array of numerous point-defense weapons to shoot down these targets before they can reach our ships."
 
 TECH_UNLOCK_STRIKECRUISER_CONSTRUCTION_TITLE:0 "§HUnlocks Section Type:§! Strike Cruiser"
 TECH_UNLOCK_STRIKECRUISER_CONSTRUCTION_DESC:0 "§HStrike Cruiser§!\nBattle experience and extensive wargaming exercises show that fleet combat often ends without a decisive outcome, because the losing side makes an immediate, emergency jump to FTL. Our best scientists have miniaturized the Subspace Snare used on starbases for deployment onto a ship. These vessels will be blisteringly fast, to catch enemy fleets in their Snares, maneuverable enough to keep enemy ships from disengaging from combat, and tough enough to withstand significant punishment to ensure the enemy is pinned down for as long as possible."

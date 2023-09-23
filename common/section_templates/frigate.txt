@@ -50,7 +50,7 @@ ship_section_template = {
 	ai_tags = { gunship brawler }
 
 	component_slot = {
-		name = "MEDIUM_GUN_01"
+		name = "TORPEDO_01"
 		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}	
@@ -84,7 +84,7 @@ ship_section_template = {
 	prerequisites = { "tech_torpedoes_1" }
 
 	component_slot = {
-		name = "MEDIUM_GUN_01"
+		name = "TORPEDO_01"
 		template = "medium_missile_turret"
 		locatorname = "medium_gun_01"
 	}	
@@ -94,8 +94,8 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
+		name = "PD_GUN_01"
+		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
 
@@ -126,8 +126,8 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "small_turret"
+		name = "PD_GUN_01"
+		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
 
@@ -182,22 +182,22 @@ ship_section_template = {
 	prerequisites = { "tech_pd_frigate" }
 
 	component_slot = {
-		name = "SMALL_GUN_01"
+		name = "PD_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
-		name = "SMALL_GUN_02"
+		name = "PD_GUN_02"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
-		name = "SMALL_GUN_03"
+		name = "PD_GUN_03"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
 	component_slot = {
-		name = "SMALL_GUN_04"
+		name = "PD_GUN_04"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
@@ -251,12 +251,12 @@ ship_section_template = {
 	ai_tags = { gunship brawler }
 
 	component_slot = {
-		name = "SMALL_GUN_01"
+		name = "PD_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
-		name = "SMALL_GUN_02"
+		name = "PD_GUN_02"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
@@ -283,7 +283,7 @@ ship_section_template = {
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
-		name = "SMALL_GUN_02"
+		name = "PD_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
@@ -353,22 +353,22 @@ ship_section_template = {
 	prerequisites = { "tech_pd_frigate" }
 
 	component_slot = {
-		name = "SMALL_GUN_01"
-		template = "point_defence_turret"
-		locatorname = "small_gun_01"
-	}	
-	component_slot = {
-		name = "SMALL_GUN_02"
-		template = "point_defence_turret"
-		locatorname = "small_gun_02"
-	}
-	component_slot = {
 		name = "PD_GUN_01"
 		template = "point_defence_turret"
 		locatorname = "small_gun_01"
 	}	
 	component_slot = {
 		name = "PD_GUN_02"
+		template = "point_defence_turret"
+		locatorname = "small_gun_02"
+	}
+	component_slot = {
+		name = "PD_GUN_03"
+		template = "point_defence_turret"
+		locatorname = "small_gun_01"
+	}	
+	component_slot = {
+		name = "PD_GUN_04"
 		template = "point_defence_turret"
 		locatorname = "small_gun_02"
 	}
