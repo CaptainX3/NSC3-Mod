@@ -1,4 +1,4 @@
-name="NSC2 Season 8"
+name="((( NSC3 Season 1 - Github )))"
 tags={
 	"Spaceships"
 	"Gameplay"
@@ -6,4 +6,4 @@ tags={
 }
 picture="thumbnail.png"
 supported_version="3.9.*"
-path="C:/Users/xxdar/Documents/Paradox Interactive/Stellaris/mod/nsctest"
+path="C:/Users/timdg/Documents/Paradox Interactive/Stellaris/mod/nsc3-testing"

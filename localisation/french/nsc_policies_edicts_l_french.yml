@@ -67,6 +67,10 @@ armor_focus_name:0 "Armor Focus"
 armor_focus:0 "Armor Focus"
 armor_focus_desc:0 "Trust in the strength of our Armor. Thick and impenetrable, it surrounds our hulls in its protective embrace, and cannot be ignored by missiles or torpedoes."
 
+hardening_focus_name:0 "Defensive Hardening"
+hardening_focus:0 "Defensive Hardening"
+hardening_focus_desc:0 "If we focus on hardening our shields and armor plating we can resist penetration weapon systems to make our ships tougher"
+
 shield_focus_name:0 "Shield Focus"
 shield_focus:0 "Shield Focus"
 shield_focus_desc:0 "Shimmering shields are the superior defensive option. Unlike armor, they recharge without the need for repairs, allowing for extended campaigns without the need to halt our pace of operations."
@@ -162,3 +166,23 @@ swarm_protocol_desc:0 "Our drones require only minimal training. Our ships must 
 
 edict_nsc_emergency_defenses:0 "Emergency Defense Initiative"
 edict_nsc_emergency_defenses_desc:0 "An onslaught is imminent, and our defenses are weak. We absolutely must build up our starbases, and turn them into bristling defensive emplacements, but we have precious little time.\n\nHowever, by throwing everything we have into the effort, we may be able to fortify our defenses in a fraction of the normal time - it will be incredibly costly, but likely not as costly as losing the war to our hated foes."
+
+
+##################################################################################################################################################################################################################
+### TRADITIONS ###
+##############
+
+ tradition_nsc_fleet_doctrine:0 "Doctrine"
+ tradition_nsc_fleet_doctrine_desc:0 "As we continue our trek into the stars, we must find focus in the composition of our fleets."
+ tr_nsc_fleet_doctrine_adopt:0 "Fleet Doctrine Tradition"
+ tr_nsc_fleet_doctrine_finish:0 "Fleet Doctrine Tradition Finished"
+ tr_nsc_fleet_doctrine_armament:0 "$policy_armament_doctrine$"
+ tr_nsc_fleet_doctrine_armament_desc:0 "§HUnlocks Policy:§! $policy_armament_doctrine$"
+ tr_nsc_fleet_doctrine_defense:0 "$policy_defense_doctrine$"
+ tr_nsc_fleet_doctrine_defense_desc:0 "§HUnlocks Policy:§! $policy_defense_doctrine$"
+ tr_nsc_fleet_doctrine_fleet:0 "$policy_composition_doctrine$"
+ tr_nsc_fleet_doctrine_fleet_desc:0 "§HUnlocks Policy:§! $policy_composition_doctrine$"
+ tr_nsc_fleet_doctrine_operations:0 "$policy_operations_doctrine$"
+ tr_nsc_fleet_doctrine_operations_desc:0 "§HUnlocks Policy:§! $policy_operations_doctrine$"
+ tr_nsc_fleet_doctrine_crew:0 "$policy_crew_doctrine$"
+ tr_nsc_fleet_doctrine_crew_desc:0 "§HUnlocks Policy:§! $policy_crew_doctrine_doctrine$"

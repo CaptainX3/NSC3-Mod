@@ -26,17 +26,17 @@
 @destroyer_power_10 = 1030
 @destroyer_power_11 = 1150
 
-@cruiser_power_1 = 280
-@cruiser_power_2 = 360
-@cruiser_power_3 = 480
-@cruiser_power_4 = 620
-@cruiser_power_5 = 800
-@cruiser_power_6 = 1030
-@cruiser_power_7 = 1260
-@cruiser_power_8 = 1490
-@cruiser_power_9 = 1720
-@cruiser_power_10 = 1950
-@cruiser_power_11 = 2180
+@cruiser_power_1 = 380
+@cruiser_power_2 = 460
+@cruiser_power_3 = 580
+@cruiser_power_4 = 720
+@cruiser_power_5 = 900
+@cruiser_power_6 = 1130
+@cruiser_power_7 = 1360
+@cruiser_power_8 = 1590
+@cruiser_power_9 = 1820
+@cruiser_power_10 = 2050
+@cruiser_power_11 = 2280
 
 @Battlecruiser_power_1 = 675
 @Battlecruiser_power_2 = 825
