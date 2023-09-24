@@ -16,7 +16,7 @@ anchorage = {
 	construction_days = 180
 
 	potential = {
-		is_normal_starbase = yes
+		is_orbital_ring = no
 	}
 
 	resources = {
@@ -60,7 +60,7 @@ detection_array = {
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_detection_array }
-		is_normal_starbase = yes
+		is_orbital_ring = no
 	}
 
 	possible = {
@@ -139,9 +139,12 @@ pd_battery = {
 			}
 		}
 		has_starbase_size >= starbase_starport #not for outposts
+	}
+	
+	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = pd_battery }
 	}
-
+	
 	ai_weight = {
 		weight = 100
 		modifier = { factor = 0 has_starbase_size < starbase_starfortress }
@@ -155,11 +158,14 @@ large_battery = {
 	construction_days = 240
 
 	potential = {
-		is_normal_starbase = yes
+		is_orbital_ring = no
 		has_starbase_size >= starbase_starfortress
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = large_battery }
 	}
 
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = large_battery }
+	}
+	
 	resources =	{
 		category = starbase_modules
 		cost = { alloys = 125 }
@@ -217,8 +223,7 @@ xl_battery = {
 		}
 		has_starbase_size >= starbase_citadel
 		is_orbital_ring = no
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = xl_battery }
-		is_normal_starbase = yes
+
 	}
 	
 	possible = {
@@ -226,7 +231,9 @@ xl_battery = {
 			fail_text = "starbase_xl_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 6 type = xl_battery include_being_constructed = yes } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = xl_battery }
 	}
+
 
 	ai_weight = {
 		weight = 100
@@ -256,8 +263,6 @@ titanic_battery = {
 		exists = owner owner = { has_technology = tech_titans }
 		has_starbase_size >= starbase_citadel
 		is_orbital_ring = no
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = titanic_battery }
-		is_normal_starbase = yes
 	}
 
 	possible = {
@@ -265,7 +270,9 @@ titanic_battery = {
 			fail_text = "starbase_t_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 2 type = titanic_battery include_being_constructed = yes } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = titanic_battery }
 	}
+
 
 	ai_weight = {
 		weight = 100
@@ -296,6 +303,9 @@ shield_module = {
 	potential = { 
 		has_starbase_size >= starbase_starport #not for outposts
 		solar_system = { NOT = { is_star_class = sc_pulsar } } #not for Pulsar Systems
+	}
+
+	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = shield_module }
 	}
 
@@ -324,9 +334,12 @@ armor_module = {
 	
 	potential = {
 		has_starbase_size >= starbase_starport #not for outposts
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = armor_module }
 	}
 	
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = armor_module }
+	}
+
 	ai_weight = {
 		weight = 20
 		modifier = { factor = 0.5 count_starbase_modules = { type = armor_module count > 7 } }
@@ -345,13 +358,13 @@ asteroid_mining = {
 		produces = { trigger = { has_starbase_building = mining_manager } minerals = 2 }
 		upkeep = { energy = 2 }
 	}
-
+	
 	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
-		is_normal_starbase = yes
+		is_orbital_ring = no
 	}
 	
 	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = asteroid_mining }
 		custom_tooltip = { fail_text = "nsc.requires.asteroid" solar_system = { any_system_planet = { is_asteroid = yes } } }
 	}
 
@@ -372,10 +385,6 @@ space_foundry = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_foundry"
 	construction_days = 120
-
-	potential = {
-		is_normal_starbase = yes
-	}
 	
 	resources = {
 		category = starbase_modules
@@ -402,12 +411,10 @@ space_foundry = {
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_alloys_1 }
+	potential = { exists = owner owner = { has_technology = tech_alloys_1 } is_orbital_ring = no }
+	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = space_foundry }
 	}
-
 	ai_weight = {
 		weight = 50
 		modifier = { factor = 5 has_starbase_size < starbase_starport }
@@ -424,10 +431,6 @@ space_factory = {
 	section = "REFINERY_STARBASE_SECTION"
 	icon = "GFX_starbase_space_factory"
 	construction_days = 120
-
-	potential = {
-		is_normal_starbase = yes
-	}
 	
 	resources = {
 		category = starbase_modules
@@ -457,9 +460,13 @@ space_factory = {
 	potential = {
 		exists = owner 
 		owner = { has_technology = tech_luxuries_1 }
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = space_factory }
+		is_orbital_ring = no
 	}
 	
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = space_factory }
+	}
+
 	ai_weight = {
 		weight = 50
 		modifier = { factor = 5 has_starbase_size < starbase_starport }
@@ -478,12 +485,15 @@ security_branch_office = {
 	construction_days = 120
 
 	potential = {
-		is_normal_starbase = yes
+		is_orbital_ring = no
 		exists = owner
 		owner = { is_gestalt = no }
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = security_branch_office }
 	}
 	
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = security_branch_office }
+	}
+
 	resources = {
 		category = starbase_modules
 		cost = { alloys = 50 }
@@ -506,11 +516,10 @@ solar_panel = {
 
 	potential = {
 		exists = owner
+		is_orbital_ring = no
 		owner = {
 			is_gestalt = no
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
-		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -525,10 +534,11 @@ solar_panel = {
 				}
 			}
 			custom_tooltip = {
-				fail_text = "starbase_filler_limit.tooltip.fail"
-				NOT = { count_starbase_modules = { count > 6 type = solar_panel include_being_constructed = yes } }
-			}
+			fail_text = "starbase_filler_limit.tooltip.fail"
+			NOT = { count_starbase_modules = { count > 6 type = solar_panel include_being_constructed = yes } }
 		}
+		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
 	}
 
 	resources = {
@@ -575,7 +585,7 @@ public_plaza = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
+		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -583,6 +593,7 @@ public_plaza = {
 			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = public_plaza include_being_constructed = yes } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
 	}
 
 	resources = {
@@ -613,8 +624,7 @@ fleet_club = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
-		is_normal_starbase = yes
+		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -622,6 +632,7 @@ fleet_club = {
 			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = fleet_club include_being_constructed = yes } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
 	}
 
 	resources = {
@@ -656,7 +667,7 @@ storage_room = {
 	icon = "GFX_starbase_filler"
 	construction_days = 30
 	
-	potential = {
+	possible = {
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = storage_room }
 	}
 
@@ -689,8 +700,7 @@ nightclub = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
-		is_normal_starbase = yes
+		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -698,6 +708,7 @@ nightclub = {
 			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = nightclub include_being_constructed = yes } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
 	}
 
 	resources = {
@@ -705,6 +716,7 @@ nightclub = {
 		cost = {
 			alloys = 100
 			consumer_goods = 75
+			luxury_goods = 10
 		}
 		produces = { 
 			unity = 5
@@ -735,8 +747,7 @@ public_market = {
 			is_hive_empire = no
 			is_machine_empire = no
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
-		is_normal_starbase = yes
+		is_orbital_ring = no
 	}
 	
 	possible = {
@@ -744,6 +755,7 @@ public_market = {
 			fail_text = "starbase_filler_limit.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = public_market include_being_constructed = yes } }
 		}
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }
 	}
 
 	resources = {
@@ -754,6 +766,7 @@ public_market = {
 		}
 		produces = { 
 			consumer_goods = 5
+			luxury_goods = 5
 		}
 		upkeep = {
 			energy = 8
@@ -762,7 +775,7 @@ public_market = {
 	
 	system_modifier = { 
 		job_merchant_add = 3
-		job_politician_add = 1
+		job_administrator_add = 1
 	}
 	
 	station_modifier = {
