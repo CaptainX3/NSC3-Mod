@@ -141,7 +141,7 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
-	power = @power2
+	power = @power1
 	component_set = "nsc_strike_cruiser_aura"
 
 	resources = {
@@ -193,8 +193,8 @@ utility_component_template = {
 	size = medium
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
-	power = @power3
-	prerequisites = { "tech_escortcarrier_1" }
+	power = @power1
+	prerequisites = { "tech_Carrier_1" }
 	component_set = "nsc_strike_cruiser_aura"
 
 	resources = {
