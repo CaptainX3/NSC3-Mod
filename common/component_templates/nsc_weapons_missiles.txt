@@ -12,15 +12,15 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	power = -120
-	damage = { min = 100 max = 150}
+	damage = { min = 125 max = 175}
 	hull_damage = 1.0
 	shield_damage = 0.75
 	shield_penetration = 0.75
 	armor_damage = 1.5
 	armor_penetration = 0.0
 	windup = { min = 1 max = 19 }
-	total_fire_time = 90
-	range = 150
+	total_fire_time = 70
+	range = 175.0
 	min_range = 50
 	accuracy = 1.0
 	tracking = 0.0
@@ -79,7 +79,7 @@ weapon_component_template = {
 	icon = "GFX_ship_part_frigate_torpedo_1"
 	icon_frame = 1
 	
-	power = -10
+	power = -5
 	damage = { min = 70 max = 100 }
 	hull_damage = 1.5
 	shield_damage = 1.0
