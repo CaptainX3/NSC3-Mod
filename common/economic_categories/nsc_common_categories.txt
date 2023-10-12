@@ -136,6 +136,51 @@ ships = {
 	}
 
 	triggered_cost_modifier = {
+		key = ship_military
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_class = shipclass_military
+				is_ship_class = shipclass_military_special
+			}
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_military
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_class = shipclass_military
+				is_ship_class = shipclass_military_special
+			}
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_science
+		use_parent_icon = yes
+		modifier_types = {
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_class = shipclass_science_ship
+		}
+	}
+
+	triggered_cost_modifier = {
 		key = ship_titan
 		use_parent_icon = yes
 		modifier_types = { mult }
