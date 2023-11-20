@@ -30,6 +30,10 @@ nsc_flagship_shipyard = {
 			is_inside_border = from
 		}
 		custom_tooltip = {
+			fail_text = "requires_no_existing_grand_shipyard"
+			from = { NOT = { has_country_flag = built_nsc_mall } }
+		}
+		custom_tooltip = {
 			text = "requires_no_existing_nsc_flagship"
 			from = { NOT = { any_controlled_ship = { is_ship_size = Flagship } } }
 		}
@@ -100,8 +104,12 @@ nsc_flagship_shipyard = {
 
 	on_build_start = {}
 	on_build_cancel = {}
+	
 	on_build_complete = {
-		from = { set_country_flag = currently_building_nsc_flagship }
+		from = { 
+			set_country_flag = currently_building_nsc_flagship
+			set_country_flag = built_nsc_grand_shipyard
+		}
 		fromfrom.planet = {
 			if = {
 				limit = { has_orbital_station = yes }
@@ -151,5 +159,9 @@ nsc_flagship_shipyard_complete = {
 		starbase_shipyard_build_speed_mult = 0.70
 	}
 
-	on_build_complete = { from = { country_event = { id = nsc_events_flagship.3 } } }
+	on_build_complete = { 
+		from = { 
+			country_event = { id = nsc_events_flagship.3 } 
+		} 
+	}
 }

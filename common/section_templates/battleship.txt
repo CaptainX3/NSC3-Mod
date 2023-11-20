@@ -251,6 +251,14 @@ ship_section_template = {
 		template = "invisible_point_defence_turret"
 		locatorname = "small_gun_02"
 	}
+	
+	large_utility_slots = 12
+
+	resources = {
+		category = ship_sections
+		cost = { alloys = @cost3 }
+	}
+}
 
 
 
