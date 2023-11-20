@@ -64,6 +64,16 @@ diagnostician = {
 		}
 		planet_pop_assembly_mult = 0.025
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_modifier = revolutionary_medigel_modifier }
+		}
+		pop_growth_speed = 0.025
+		planet_pop_assembly_organic_mult = 0.025
+		pop_environment_tolerance = 0.0125
+	}
 		
 	weight = {
 		weight = @high_prio_specialist_job_weight

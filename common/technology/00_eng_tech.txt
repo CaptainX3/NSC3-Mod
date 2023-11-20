@@ -324,17 +324,9 @@ tech_juggernaut = {
 				has_trait_in_council = { TRAIT = leader_trait_maniacal_3 }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_juggernaut }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_juggernaut
 		}
 		modifier = {
 			factor = 1.25
@@ -434,17 +426,9 @@ tech_corvette_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_corvette_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_corvette_hull_2
 		}
 	}
 
@@ -535,17 +519,9 @@ tech_destroyer_hull_2 = {
 			factor = 1.25
 			has_tradition = tr_supremacy_adopt
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_destroyer_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_destroyer_hull_2
 		}
 	}
 
@@ -632,17 +608,9 @@ tech_cruiser_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_cruiser_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_cruiser_hull_2
 		}
 		modifier = {
 			factor = 1.25
@@ -733,17 +701,9 @@ tech_battleship_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_battleship_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_battleship_hull_2
 		}
 		modifier = {
 			factor = 1.25
@@ -783,17 +743,9 @@ tech_titan_hull_1 = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_titan_hull_1 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_titan_hull_1
 		}
 		modifier = {
 			factor = 1.25
@@ -829,17 +781,9 @@ tech_titan_hull_2 = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_voidcraft }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_titan_hull_2 }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_titan_hull_2
 		}
 		modifier = {
 			factor = 1.25
@@ -1171,14 +1115,8 @@ tech_habitat_2 = {
 		}
 	}
 
-	prereqfor_desc = {
-		ship = {
-			title = "tech_habitat_2_effect"
-		}
-	}
-
 	modifier = {
-		habitat_max_districts_mult = 0.10
+		habitat_max_districts_add = 1
 	}
 
 	weight_modifier = {
@@ -1224,14 +1162,8 @@ tech_habitat_3 = {
 		}
 	}
 
-	prereqfor_desc = {
-		ship = {
-			title = "tech_habitat_3_effect"
-		}
-	}
-
 	modifier = {
-		habitat_max_districts_mult = 0.10
+		habitat_max_districts_add = 1
 	}
 
 	weight_modifier = {
@@ -1290,17 +1222,9 @@ tech_modular_engineering = {
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_modular_engineering }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_modular_engineering
 		}
 	}
 
@@ -1337,17 +1261,9 @@ tech_space_defense_station_improvement = {
 			factor = 1.5
 			is_specialist_subject_type = { TYPE = bulwark }
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_space_defense_station_improvement }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_space_defense_station_improvement
 		}
 		modifier = {
 			factor = 1.25
@@ -1818,19 +1734,10 @@ tech_defense_platform_hull_1 = {
 
 	weight_modifier = {
 		factor = 0.50
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_defense_platform_hull_1
 		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_defense_platform_hull_1 }
-			}
-		}
-
 		modifier = {
 			factor = 1.5
 			has_valid_civic = civic_eager_explorers
@@ -2618,17 +2525,9 @@ tech_synthetic_workers = {
 				has_ethic = ethic_fanatic_materialist
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_synthetic_workers }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_synthetic_workers
 		}
 		modifier = {
 			factor = 2
@@ -2749,17 +2648,9 @@ tech_robot_assembly_complex = {
 				has_trait_in_council = { TRAIT = leader_trait_expertise_industry }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_robot_assembly_complex }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_robot_assembly_complex
 		}
 	}
 
@@ -2958,17 +2849,9 @@ tech_construction_templates = {
 				has_trait_in_council = { TRAIT = leader_trait_curator }
 			}
 		}
-		modifier = {
-			factor = @ap_technological_ascendancy_rare_tech
-			has_ascension_perk = ap_technological_ascendancy
-		}
-		modifier = {
-			factor = @federation_perk_factor
-			has_federation = yes
-			federation = {
-				has_federation_perk = rare_tech_boost
-				any_member = { has_technology = tech_construction_templates }
-			}
+		inline_script = {
+			script = technologies/rare_technologies_weight_modifiers
+			TECHNOLOGY = tech_construction_templates
 		}
 		modifier = {
 			factor = 1.25
