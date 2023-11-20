@@ -56,7 +56,7 @@ starbase_stronghold = {
 		"20" = { locator = "part5" }
 	}
 	num_target_locators = 0
-	icon_frame = 6
+	icon_frame = 10
 	icon = ship_size_military_station
 	base_buildtime = 360
 	
@@ -144,7 +144,7 @@ starbase_headquarters = {
 		"20" = { locator = "part5" }
 	}
 	num_target_locators = 0
-	icon_frame = 7
+	icon_frame = 11
 	icon = ship_size_military_station
 	base_buildtime = 2500
 	
