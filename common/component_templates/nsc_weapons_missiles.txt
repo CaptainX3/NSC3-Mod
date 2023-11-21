@@ -170,7 +170,7 @@ weapon_component_template = {
 	projectile_gfx = "large_missile"
 	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	size_restriction = { Battlecruiser }
+	size_restriction = { Battlecruiser military_station_small military_station_medium military_station_large starbase_starport starbase_starhold starbase_starfortress starbase_citadel starbase_stronghold starbase_headquarters }
 	inline_script = "targeting/capital_ships"
 
 	resources = {

@@ -420,7 +420,7 @@ FRIGATE_TORPEDO_1: "Harpoon Torpedo"
 FRIGATE_TORPEDO_1_DESC: "A specialized torpedo designed to fit into the small launchers of the Frigate class, intended for use in quick stealth strikes in enemy territory."
 
 BATTLECRUISER_TORPEDO_1: "Minuteman Torpedo"
-BATTLECRUISER_TORPEDO_1_DESC: "Named after its ability to fire more rapidly than most other torpedoes, the Minuteman is a special variant designed for the Battlecruiser class to execute devastating strikes on larger enemy capital ships."
+BATTLECRUISER_TORPEDO_1_DESC: "Named after its ability to fire more rapidly than most other torpedoes, the Minuteman is a special variant designed for the Battlecruiser class to execute devastating strikes on larger enemy capital ships. It can also be equipped on starbases and defense platforms for long-range capital ship defense."
 
 BATTLESHIP_SNIPER_GUN_1: "Electro-Magnetic Flux Cannon"
 BATTLESHIP_SNIPER_GUN_1_DESC: "These specialized high speed turrets are designed for engaging nimble Corvettes. They have great precision at long range, but struggle against the thicker hulls of larger ships."
