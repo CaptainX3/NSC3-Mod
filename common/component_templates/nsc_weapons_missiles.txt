@@ -18,7 +18,7 @@ weapon_component_template = {
 	shield_penetration = 0.75
 	armor_damage = 1.5
 	armor_penetration = 0.0
-	windup = { min = 1 max = 19 }
+	windup = { min = 10 max = 20 }
 	total_fire_time = 70
 	range = 175.0
 	min_range = 50
@@ -86,17 +86,17 @@ weapon_component_template = {
 	shield_penetration = 1.0
 	armor_damage = 1.5
 	armor_penetration = 0.5
-	windup = { min = 1 max = 19 }
-	total_fire_time = 30
+	windup = { min = 20 max = 30 }
+	total_fire_time = 300
 	range = 200
 	min_range = 50
 	accuracy = 1.0
 	tracking = 0.0
 	missile_speed = 24.0
-	missile_evasion = 0.30
+	missile_evasion = 0.15
 	missile_shield = 0.0
 	missile_armor = 0.0
-	missile_health = 25.0
+	missile_health = 15.0
 	missile_retarget_range = 150.0
 	size_damage_factor = 1
 	
@@ -151,8 +151,8 @@ weapon_component_template = {
 	shield_penetration = 1.0
 	armor_damage = 1.75
 	armor_penetration = 0.75
-	windup = { min = 1 max = 10 }
-	total_fire_time = 30
+	windup = { min = 20 max = 40 }
+	total_fire_time = 150
 	range = 140
 	min_range = 25
 	accuracy = 1.0
@@ -210,7 +210,7 @@ weapon_component_template = {
 	armor_damage = 2.0
 	armor_penetration = 0.75
 	windup = { min = 0 max = 0 }
-	total_fire_time = 5
+	total_fire_time = 20
 	range = 40.0
 	accuracy = 0.80
 	tracking = 0.80

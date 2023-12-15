@@ -31,7 +31,7 @@ nsc_flagship_shipyard = {
 		}
 		custom_tooltip = {
 			fail_text = "requires_no_existing_grand_shipyard"
-			from = { NOT = { has_country_flag = built_nsc_mall } }
+			from = { NOT = { has_country_flag = built_nsc_grand_shipyard } }
 		}
 		custom_tooltip = {
 			text = "requires_no_existing_nsc_flagship"
