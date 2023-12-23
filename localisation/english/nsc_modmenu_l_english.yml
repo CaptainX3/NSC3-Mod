@@ -77,8 +77,8 @@ nsc_modmenu_setting_button_category_etc_name:0 "§BETC§!"
 nsc_modmenu_setting_button_etc_feature_name:0 "Other Features"
 nsc_modmenu_setting_button_etc_ai_difficulty_name:0 "AI Difficulties"
 
-nsc_modmenu_game_content_enable_effect_tooltip:0 "Click to §Genable§! this Content. It is currently §Rdisabled§!."
-nsc_modmenu_game_content_disable_effect_tooltip:0 "Click to §Rdisable§! this Content. It is currently §Genabled§!."
+nsc_modmenu_game_content_enable_effect_tooltip:0 "§GClick to enable§! this Content. It is §Rcurrently disabled§!."
+nsc_modmenu_game_content_disable_effect_tooltip:0 "§RClick to disable§! this Content. It is §Gcurrently enabled§!."
 nsc_modmenu_game_content_setting_trigger_tooltip.fail:0 "£trigger_no£ §RThis Content is currently disabled. Enable it to change this setting.§!"
 nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail:0 "£trigger_no£ §RCan not disable Vanilla Content.§!"
 
