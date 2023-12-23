@@ -227,7 +227,7 @@ guiTypes = {
 							borderSize = { x = @nsc_modmenu_setting_page_mod_category_preset_common_borderSize_width y = 0 }
 							spriteType = "GFX_nsc_modmenu_element_background_164_40"
 							text = "nsc_modmenu_setting_page_mod_category_preset_disable_all"
-							multiline = yes
+							multiline = yes #allows '\n' to function #I learned this thanks to Orrie, the Modder of UIOD #[AM 12:56]Orrie: Try adding multiline = yes
 							font = "cg_16b"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_mod_category_preset_disable_all_header_button_effect"
@@ -338,7 +338,7 @@ guiTypes = {
 						borderSize = { x = @nsc_modmenu_setting_page_mod_common_text_borderSize_width y = @nsc_modmenu_setting_page_mod_common_text_bordersize_height }
 						quadTextureSprite = "GFX_tiles_frame_light"
 						text = "nsc_modmenu_setting_page_mod_category_introduction_desc"
-						multiline = yes #allows '\n' to function #I've learnt this thanks to Orrie, the Modder of UIOD #[AM 12:56]Orrie: Try adding multiline = yes
+						multiline = yes
 						font = "cg_16b"
 						format = left
 						vertical_alignment = top
