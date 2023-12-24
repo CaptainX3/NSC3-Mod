@@ -150,7 +150,7 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 }
 nsc_modmenu_ship_component_setting_reset_effect = {
 	optimize_memory
-	#components (total 39)
+	#components (total 26)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
@@ -173,20 +173,6 @@ nsc_modmenu_ship_component_setting_reset_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT }
-
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
 
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
@@ -380,20 +366,6 @@ nsc_modmenu_ship_component_settings_disable_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STELLAR_CARTOGRAPHY }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_MARS_WEAPON_SYSTEM }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SPECIAL_SLOT_STRIKE_CRAFT }
-
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANOMALY_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SURVEY_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ANALYSIS_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_DEBRIS_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_PHYSICS_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOCIETY_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ENGINEERING_LAB }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_STELLAR_CARTOGRAPHY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_QUANTUM_THRUSTERS }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_NAVIGATIONAL_ARRAY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_MINING_FACILITY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_SOLAR_ARRAY }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = EXPLORATION_SLOT_ALLOY_REFINERY }
 
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }

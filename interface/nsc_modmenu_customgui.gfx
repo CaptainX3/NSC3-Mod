@@ -354,71 +354,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/special_strike_craft.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_ANOMALY_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_anomaly_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_SURVEY_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_survey_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_ANALYSIS_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_analysis_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_DEBRIS_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_debris_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_PHYSICS_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_physics_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_SOCIETY_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_society_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_ENGINEERING_LAB"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_engineering_lab.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
-		textureFile = "gfx/interface/icons/ship_parts/special_stellar_cartography.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_QUANTUM_THRUSTERS"
-		textureFile = "gfx/interface/icons/ship_parts/special_quantum_thrusters.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
-		textureFile = "gfx/interface/icons/ship_parts/special_navigational_array.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_MINING_FACILITY"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_mining_facility.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_SOLAR_ARRAY"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_solar_array.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
-	spriteType = {
-		name = "GFX_nsc_modmenu_EXPLORATION_SLOT_ALLOY_REFINERY"
-		textureFile = "gfx/interface/icons/ship_parts/exploration_alloy_refinery.dds"
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}
+
+
+
+	
 	spriteType = {
 		name = "GFX_nsc_modmenu_BATTLESHIP_SNIPER_GUN_1"
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_bb_sniper_gun_1.dds"
