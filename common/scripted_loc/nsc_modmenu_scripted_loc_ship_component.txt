@@ -544,3 +544,203 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc
 	}
 }
+#GRAVITON_REACTOR
+defined_text = {
+	name = Get_nsc_ship_component_GRAVITON_REACTOR_enable_disable_status
+	random = no
+
+	text = {
+		trigger = {
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_GRAVITON_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_GRAVITON_REACTOR }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_enabled_desc
+	}
+	text = {
+		trigger = {
+            NOR = {
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_GRAVITON_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_GRAVITON_REACTOR }
+            }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_disabled_desc
+	}
+}
+#NAQUADRIA_REACTOR
+defined_text = {
+	name = Get_nsc_ship_component_NAQUADRIA_REACTOR_enable_disable_status
+	random = no
+
+	text = {
+		trigger = {
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_NAQUADRIA_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_NAQUADRIA_REACTOR }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_enabled_desc
+	}
+	text = {
+		trigger = {
+            NOR = {
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_NAQUADRIA_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_NAQUADRIA_REACTOR }
+            }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_disabled_desc
+	}
+}
+#SINGULARITY_REACTOR
+defined_text = {
+	name = Get_nsc_ship_component_SINGULARITY_REACTOR_enable_disable_status
+	random = no
+
+	text = {
+		trigger = {
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_SINGULARITY_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_SINGULARITY_REACTOR }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_enabled_desc
+	}
+	text = {
+		trigger = {
+            NOR = {
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_SINGULARITY_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_SINGULARITY_REACTOR }
+            }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_disabled_desc
+	}
+}
+#MULTIDIMENSIONAL_REACTOR
+defined_text = {
+	name = Get_nsc_ship_component_MULTIDIMENSIONAL_REACTOR_enable_disable_status
+	random = no
+
+	text = {
+		trigger = {
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_MULTIDIMENSIONAL_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_MULTIDIMENSIONAL_REACTOR }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_enabled_desc
+	}
+	text = {
+		trigger = {
+            NOR = {
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_MULTIDIMENSIONAL_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_MULTIDIMENSIONAL_REACTOR }
+            }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_disabled_desc
+	}
+}
+#OPTIMIZED_ENIGMATIC_REACTOR
+defined_text = {
+	name = Get_nsc_ship_component_OPTIMIZED_ENIGMATIC_REACTOR_enable_disable_status
+	random = no
+
+	text = {
+		trigger = {
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_OPTIMIZED_ENIGMATIC_REACTOR }
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_OPTIMIZED_ENIGMATIC_REACTOR }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_enabled_desc
+	}
+	text = {
+		trigger = {
+            NOR = {
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CORVETTE_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DESTROYER_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = CRUISER_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = DREADNOUGHT_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TITAN_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = JUGGERNAUT_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = PLATFORM_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = STATION_OPTIMIZED_ENIGMATIC_REACTOR }
+                nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FORTRESS_OPTIMIZED_ENIGMATIC_REACTOR }
+            }
+        }
+		localization_key = nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_disabled_desc
+	}
+}

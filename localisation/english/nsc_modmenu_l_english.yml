@@ -456,6 +456,31 @@ nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_enabled_desc:0 "$NSC_PD_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc:0 "$NSC_PD_MISSILE$: §RDisabled§!"
 
+#GRAVITON_REACTOR
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_name_desc:0 "§H$GRAVITON_REACTOR$§!\n$GRAVITON_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_enabled_desc:0 "$GRAVITON_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_disabled_desc:0 "$GRAVITON_REACTOR$: §RDisabled§!"
+
+#NAQUADRIA_REACTOR
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_name_desc:0 "§H$NAQUADRIA_REACTOR$§!\n$NAQUADRIA_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_enabled_desc:0 "$NAQUADRIA_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_disabled_desc:0 "$NAQUADRIA_REACTOR$: §RDisabled§!"
+
+#SINGULARITY_REACTOR
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_name_desc:0 "§H$SINGULARITY_REACTOR$§!\n$SINGULARITY_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_enabled_desc:0 "$SINGULARITY_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_disabled_desc:0 "$SINGULARITY_REACTOR$: §RDisabled§!"
+
+#MULTIDIMENSIONAL_REACTOR
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_name_desc:0 "§H$MULTIDIMENSIONAL_REACTOR$§!\n$MULTIDIMENSIONAL_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_enabled_desc:0 "$MULTIDIMENSIONAL_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_disabled_desc:0 "$MULTIDIMENSIONAL_REACTOR$: §RDisabled§!"
+
+#OPTIMIZED_ENIGMATIC_REACTOR
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_name_desc:0 "§H$OPTIMIZED_ENIGMATIC_REACTOR$§!\n$OPTIMIZED_ENIGMATIC_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_enabled_desc:0 "$OPTIMIZED_ENIGMATIC_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_disabled_desc:0 "$OPTIMIZED_ENIGMATIC_REACTOR$: §RDisabled§!"
+
 ### Custom GUI Category: Starbase Levels ###
 #Common
 nsc_modmenu_setting_page_starbase_category_class_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_class_name$"
