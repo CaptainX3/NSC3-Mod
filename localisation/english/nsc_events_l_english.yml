@@ -38,6 +38,7 @@ nsc_flagship_shipyard: "Grand Shipyard"
 nsc_flagship_shipyard_DESC: "This massive space station is necessary to construct the largest and deadliest warship that the galaxy has ever seen."
 
 nsc_flagship_shipyard_MEGASTRUCTURE_DETAILS: "$nsc_flagship_shipyard_DESC$"
+requires_no_existing_nsc_grand_shipyard:0 "$TRIGGER_FAIL$Cannot build more than one $nsc_flagship_shipyard$."
 requires_no_existing_nsc_flagship: "£trigger_no£ Cannot build more than one Flagship."
 can_not_start_another_nsc_flagship_building: "£trigger_no£ Cannot start another Flagship construction project."
 
