@@ -2394,10 +2394,747 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_component_SPECIAL_SLOT_STRIKE_CRAFT_off_button_effect"
 						}
 					}
-
-
-
-					
+					#EXPLORATION_SLOT_ANOMALY_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_11 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_ANOMALY_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_ANOMALY_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANOMALY_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_SURVEY_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_11 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_SURVEY_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_SURVEY_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SURVEY_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_ANALYSIS_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_12 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_ANALYSIS_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_ANALYSIS_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ANALYSIS_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_DEBRIS_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_12 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_DEBRIS_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_DEBRIS_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_DEBRIS_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_PHYSICS_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_13 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_PHYSICS_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_PHYSICS_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_PHYSICS_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_SOCIETY_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_13 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_SOCIETY_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_SOCIETY_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOCIETY_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_ENGINEERING_LAB
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_14 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_ENGINEERING_LAB"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_ENGINEERING_LAB"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ENGINEERING_LAB_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_STELLAR_CARTOGRAPHY
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_14 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_STELLAR_CARTOGRAPHY"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_QUANTUM_THRUSTERS
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_15 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_QUANTUM_THRUSTERS"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_QUANTUM_THRUSTERS_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_NAVIGATIONAL_ARRAY
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_15 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_NAVIGATIONAL_ARRAY"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_MINING_FACILITY
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_16 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_MINING_FACILITY"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_MINING_FACILITY"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_MINING_FACILITY_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_SOLAR_ARRAY
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_16 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_SOLAR_ARRAY"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_SOLAR_ARRAY"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_SOLAR_ARRAY_off_button_effect"
+						}
+					}
+					#EXPLORATION_SLOT_ALLOY_REFINERY
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY"
+						position = { x = @nsc_modmenu_setting_page_ship_category_component_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_component_content_container_height_17 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_icon_background"
+							position = { x = 0 y = 0 }
+							quadTextureSprite = "GFX_nsc_modmenu_element_background_62_62"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_icon"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_icon_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_icon_height
+							}
+							spriteType = "GFX_nsc_modmenu_EXPLORATION_SLOT_ALLOY_REFINERY"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_header_width y = @nsc_modmenu_setting_page_ship_category_component_common_header_height }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_component_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "EXPLORATION_SLOT_ALLOY_REFINERY"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_on_off_background"
+							position = {
+								x = @nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width
+								y = @nsc_modmenu_setting_page_ship_category_component_common_header_height
+							}
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_component_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_component_common_on_width y = @nsc_modmenu_setting_page_ship_category_component_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_component_EXPLORATION_SLOT_ALLOY_REFINERY_off_button_effect"
+						}
+					}
 					#BATTLESHIP_SNIPER_GUN_1
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_ship_category_component_BATTLESHIP_SNIPER_GUN_1"
