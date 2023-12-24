@@ -9,7 +9,6 @@ nsc_modmenu_game_content_disabled.fail:0 "\n£trigger_no£ §RThis Content is di
 edict_nsc_modmenu:0 "§YNSC3 Mod Menu§!"
 edict_nsc_modmenu_desc:0 "We can control various contents from New Ship Classes 2 mod here."
 edict_nsc_modmenu_tooltip:0 "§YClick to Open the Mod Configuration UI.§!"
-edict_nsc_modmenu_tooltip.fail:0 "£trigger_no£ §RCan not open this UI multiple times.§!"
 
 ### Country Modifiers ###
 #Ship Classes

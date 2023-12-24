@@ -12,7 +12,6 @@ nsc_modmenu_ai_difficulty_preset_custom_flag_remove_effect = {
 }
 nsc_modmenu_open_effect = {
 	optimize_memory
-	set_global_flag = nsc_modmenu_opened
 	country_event = { id = nsc_modmenu.1 } #the mod menu
 	if = {
 		limit = { NOT = { has_country_flag = nsc_modmenu_warning_evt_fired } }
