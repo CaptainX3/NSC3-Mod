@@ -14,11 +14,11 @@ nsc_modmenu_open_effect = {
 	optimize_memory
 	country_event = { id = nsc_modmenu.1 } #the mod menu
 	if = {
-		limit = { NOT = { has_country_flag = nsc_modmenu_warning_evt_fired } }
-		set_country_flag = nsc_modmenu_warning_evt_fired
-		country_event = { id = nsc_modmenu.2 }
+		limit = { NOT = { has_global_flag = nsc_modmenu_opened_first_time } }
+		set_global_flag = nsc_modmenu_opened_first_time
+		set_global_flag = nsc_modmenu_mod_preset_page_opened #first time only
+		country_event = { id = nsc_modmenu.2 } #mod menu warning event #and also first time only
 	}
-	set_global_flag = nsc_modmenu_mod_preset_page_opened
 }
 nsc_modmenu_clear_page_opened_flags_effect = {
 	optimize_memory

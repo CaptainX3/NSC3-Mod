@@ -8,7 +8,6 @@ nsc_modmenu_close_button_effect = {
     allow = { always = yes }
     effect = {
         custom_tooltip = CLOSE_TITLE
-        hidden_effect = { nsc_modmenu_clear_page_opened_flags_effect = yes }
     }
 }
 nsc_modmenu_reset_all_settings_button_effect = {
