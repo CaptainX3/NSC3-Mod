@@ -513,7 +513,7 @@ nsc_modmenu_setting_page_starbase_category_class_headquarters_enabled_desc:0 "$s
 nsc_modmenu_setting_page_starbase_category_class_headquarters_disabled_desc:0 "$starbase_headquarters$: §RDisabled§!"
 
 #outpost
-nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "This setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3."
+nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "$TECH_UNLOCK_OUTPOST_CONSTRUCTION_DESC$\n§YThis setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3.§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_enabled_desc:0 "$starbase_outpost$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_disabled_desc:0 "$starbase_outpost$: §RDisabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
