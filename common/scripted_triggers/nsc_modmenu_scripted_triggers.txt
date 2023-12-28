@@ -96,6 +96,12 @@ nsc_modmenu_ship_component_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
+
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
 }
 nsc_modmenu_starbase_class_settings_on_trigger = {
 	optimize_memory

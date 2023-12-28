@@ -40,12 +40,5 @@ nsc_modmenu = {
 		is_ai = no
 	}
 
-	allow = {
-		custom_tooltip_fail = {
-			text = edict_nsc_modmenu_tooltip.fail
-			NOT = { has_global_flag = nsc_modmenu_opened } #should not possible to open it multiple times
-		}
-	}
-
 	ai_weight = { weight = 0 }
 }

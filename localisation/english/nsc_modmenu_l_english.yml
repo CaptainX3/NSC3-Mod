@@ -9,7 +9,6 @@ nsc_modmenu_game_content_disabled.fail:0 "\n£trigger_no£ §RThis Content is di
 edict_nsc_modmenu:0 "§YNSC3 Mod Menu§!"
 edict_nsc_modmenu_desc:0 "We can control various contents from New Ship Classes 2 mod here."
 edict_nsc_modmenu_tooltip:0 "§YClick to Open the Mod Configuration UI.§!"
-edict_nsc_modmenu_tooltip.fail:0 "£trigger_no£ §RCan not open this UI multiple times.§!"
 
 ### Country Modifiers ###
 #Ship Classes
@@ -77,8 +76,8 @@ nsc_modmenu_setting_button_category_etc_name:0 "§BETC§!"
 nsc_modmenu_setting_button_etc_feature_name:0 "Other Features"
 nsc_modmenu_setting_button_etc_ai_difficulty_name:0 "AI Difficulties"
 
-nsc_modmenu_game_content_enable_effect_tooltip:0 "Click to §Genable§! this Content. It is currently §Rdisabled§!."
-nsc_modmenu_game_content_disable_effect_tooltip:0 "Click to §Rdisable§! this Content. It is currently §Genabled§!."
+nsc_modmenu_game_content_enable_effect_tooltip:0 "§GClick to enable§! this Content. It is §Rcurrently disabled§!."
+nsc_modmenu_game_content_disable_effect_tooltip:0 "§RClick to disable§! this Content. It is §Gcurrently enabled§!."
 nsc_modmenu_game_content_setting_trigger_tooltip.fail:0 "£trigger_no£ §RThis Content is currently disabled. Enable it to change this setting.§!"
 nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail:0 "£trigger_no£ §RCan not disable Vanilla Content.§!"
 
@@ -457,6 +456,31 @@ nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_enabled_desc:0 "$NSC_PD_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc:0 "$NSC_PD_MISSILE$: §RDisabled§!"
 
+#GRAVITON_REACTOR
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_name_desc:0 "§H$GRAVITON_REACTOR$§!\n$GRAVITON_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_enabled_desc:0 "$GRAVITON_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_disabled_desc:0 "$GRAVITON_REACTOR$: §RDisabled§!"
+
+#NAQUADRIA_REACTOR
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_name_desc:0 "§H$NAQUADRIA_REACTOR$§!\n$NAQUADRIA_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_enabled_desc:0 "$NAQUADRIA_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_disabled_desc:0 "$NAQUADRIA_REACTOR$: §RDisabled§!"
+
+#SINGULARITY_REACTOR
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_name_desc:0 "§H$SINGULARITY_REACTOR$§!\n$SINGULARITY_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_enabled_desc:0 "$SINGULARITY_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_disabled_desc:0 "$SINGULARITY_REACTOR$: §RDisabled§!"
+
+#MULTIDIMENSIONAL_REACTOR
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_name_desc:0 "§H$MULTIDIMENSIONAL_REACTOR$§!\n$MULTIDIMENSIONAL_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_enabled_desc:0 "$MULTIDIMENSIONAL_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_disabled_desc:0 "$MULTIDIMENSIONAL_REACTOR$: §RDisabled§!"
+
+#OPTIMIZED_ENIGMATIC_REACTOR
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_name_desc:0 "§H$OPTIMIZED_ENIGMATIC_REACTOR$§!\n$OPTIMIZED_ENIGMATIC_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_enabled_desc:0 "$OPTIMIZED_ENIGMATIC_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_disabled_desc:0 "$OPTIMIZED_ENIGMATIC_REACTOR$: §RDisabled§!"
+
 ### Custom GUI Category: Starbase Levels ###
 #Common
 nsc_modmenu_setting_page_starbase_category_class_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_class_name$"
@@ -489,7 +513,7 @@ nsc_modmenu_setting_page_starbase_category_class_headquarters_enabled_desc:0 "$s
 nsc_modmenu_setting_page_starbase_category_class_headquarters_disabled_desc:0 "$starbase_headquarters$: §RDisabled§!"
 
 #outpost
-nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "This setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3."
+nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "$TECH_UNLOCK_OUTPOST_CONSTRUCTION_DESC$\n§YThis setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3.§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_enabled_desc:0 "$starbase_outpost$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_disabled_desc:0 "$starbase_outpost$: §RDisabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
