@@ -12,14 +12,13 @@ nsc_modmenu_ai_difficulty_preset_custom_flag_remove_effect = {
 }
 nsc_modmenu_open_effect = {
 	optimize_memory
-	set_global_flag = nsc_modmenu_opened
 	country_event = { id = nsc_modmenu.1 } #the mod menu
 	if = {
-		limit = { NOT = { has_country_flag = nsc_modmenu_warning_evt_fired } }
-		set_country_flag = nsc_modmenu_warning_evt_fired
-		country_event = { id = nsc_modmenu.2 }
+		limit = { NOT = { has_global_flag = nsc_modmenu_opened_first_time } }
+		set_global_flag = nsc_modmenu_opened_first_time
+		set_global_flag = nsc_modmenu_mod_preset_page_opened #first time only
+		country_event = { id = nsc_modmenu.2 } #mod menu warning event #and also first time only
 	}
-	set_global_flag = nsc_modmenu_mod_preset_page_opened
 }
 nsc_modmenu_clear_page_opened_flags_effect = {
 	optimize_memory
@@ -148,9 +147,10 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed }
 }
+#change 'nsc_modmenu_ship_component_settings_disable_effect' scripted effect as well when changing this
 nsc_modmenu_ship_component_setting_reset_effect = {
 	optimize_memory
-	#components (total 39)
+	#components (total 44)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_2 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_REACTOR_BOOSTER_3 }
@@ -195,6 +195,12 @@ nsc_modmenu_ship_component_setting_reset_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
 }
 nsc_modmenu_starbase_class_setting_reset_effect = {
 	optimize_memory
@@ -400,8 +406,14 @@ nsc_modmenu_ship_component_settings_disable_effect = {
 	
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
-	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
+
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
 }
 nsc_modmenu_starbase_class_settings_disable_effect = {
 	optimize_memory

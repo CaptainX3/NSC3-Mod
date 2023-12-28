@@ -30,7 +30,7 @@ nsc_flagship_shipyard = {
 			is_inside_border = from
 		}
 		custom_tooltip = {
-			fail_text = "requires_no_existing_grand_shipyard"
+			fail_text = "requires_no_existing_nsc_grand_shipyard"
 			from = { NOT = { has_country_flag = built_nsc_grand_shipyard } }
 		}
 		custom_tooltip = {

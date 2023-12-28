@@ -449,6 +449,31 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_nsc_pd_missile.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_GRAVITON_REACTOR"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_6_NSC.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_NAQUADRIA_REACTOR"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_7_NSC.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_SINGULARITY_REACTOR"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_8_NSC.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_MULTIDIMENSIONAL_REACTOR"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_9_NSC.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_OPTIMIZED_ENIGMATIC_REACTOR"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_reactor_11_enigmatic_NSC.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
 	#starbase levels
 	spriteType = {
 		name = "GFX_nsc_modmenu_starbase_outpost"
