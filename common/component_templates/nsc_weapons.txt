@@ -52,7 +52,7 @@ weapon_component_template = {
 	prio_projectile = yes
 	damage = { min = 10000 max = 15000 }
 	windup = { min = 30 max = 45 }
-	total_fire_time = 120
+	total_fire_time = 300
 	firing_arc = 360.0
 	min_range = 50
 	range = 200
@@ -82,7 +82,7 @@ weapon_component_template = {
 	type = point_defence
 	damage = { min = 2 max = 6 }
 	windup = { min = 0 max = 0 }
-	total_fire_time = 8
+	total_fire_time = 60
 	range = 35
 	accuracy = 0.75
 	power = -20
@@ -119,7 +119,7 @@ weapon_component_template = {
 	armor_damage = 2.00
 	armor_penetration = 0.0
 	windup = { min = 10 max = 20 }
-	total_fire_time = 70
+	total_fire_time = 500
 	range = 200
 	accuracy = 0.85
 	tracking = 0.0
