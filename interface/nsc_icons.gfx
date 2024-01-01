@@ -11,32 +11,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
 	}
 	spriteType = {
-		name = "GFX_nsc_flagship_bow_outliner_icon"
-		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
-	}
-	spriteType = {
-		name = "GFX_nsc_flagship_mid_1_outliner_icon"
-		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
-	}
-	spriteType = {
-		name = "GFX_nsc_flagship_mid_2_outliner_icon"
-		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
-	}
-	spriteType = {
-		name = "GFX_nsc_flagship_mid_3_outliner_icon"
-		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
-	}
-	spriteType = {
-		name = "GFX_nsc_flagship_mid_4_outliner_icon"
-		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
-	}
-	spriteType = {
-		name = "GFX_nsc_flagship_stern_outliner_icon"
-		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
-	}
-	spriteType = {
 		name = "GFX_nsc_flagship_shipyard_complete_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/flagship.dds"
+	}
+	spriteType = {
+		name = "GFX_nsc_headquarters_0_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/headquarters.dds"
+	}
+	spriteType = {
+		name = "GFX_nsc_headquarters_1_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/headquarters.dds"
 	}
 	spriteType = {
 		name = "GFX_nsc_galactic_mall_0_outliner_icon"

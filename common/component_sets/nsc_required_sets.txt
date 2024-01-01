@@ -100,3 +100,17 @@ component_set = {
 	icon = "GFX_nsc_bombardment_3"
 	icon_frame = 1
 }
+
+### AMMO TYPES ###
+
+# component_set = {
+	# key = "NSC_AMMO_CRYSTAL_1"
+	# icon = "GFX_nsc_ammo_crystal_1"
+	# icon_frame = 1
+# }
+
+# component_set = {
+	# key = "NSC_AMMO_WARHEAD_1"
+	# icon = "GFX_nsc_ammo_crystal_1"
+	# icon_frame = 1
+# }

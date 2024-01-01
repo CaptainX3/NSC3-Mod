@@ -69,7 +69,7 @@ detection_array = {
 		}
 		custom_tooltip = {
 			fail_text = "starbase_detection_limit.tooltip.fail"
-			NOT = { count_starbase_modules = { count = 6 type = detection_array include_being_constructed = yes } }
+			NOT = { count_starbase_modules = { count > 6 type = detection_array include_being_constructed = yes } }
 		}
 	}
 

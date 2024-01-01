@@ -174,6 +174,12 @@ HEADQUARTERS_JUMP_DRIVE_DESC: "The Headquarters Jump Drive tears ship-sized hole
 EXPLORATION_HYPER_DRIVE: "Exploration Cruiser Hyper Drive"
 EXPLORATION_HYPER_DRIVE_DESC: "Ships equipped with Hyper Drives travel swiftly between the edges of star systems along interstellar hyperlanes."
 
+# NSC_AMMO_CRYSTAL_1: "Focusing Crystal"
+# NSC_AMMO_CRYSTAL_1_DESC: "A special crystal designed to focus laser beams to enhance their destructive power. Because of its extensive power use, other weapon types will suffer a drop in their rate of fire."
+
+# NSC_AMMO_WARHEAD_1: "Advanced Warhead"
+# NSC_AMMO_WARHEAD_1_DESC: ""
+
 ##################################################################################################################################################################################################################
 ### REACTORS ###
 ################

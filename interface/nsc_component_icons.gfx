@@ -349,4 +349,14 @@ spriteTypes = {
 		noOfFrames = 1
 	}
 
+	####################
+	###  AMMO TYPES  ###
+	####################
+	
+	spriteType = {
+		name = "GFX_nsc_ammo_crystal_1"
+		textureFile = "gfx/interface/icons/ship_parts/nsc_ammo_crystal_1.dds"
+		noOfFrames = 1
+	}
+
 }

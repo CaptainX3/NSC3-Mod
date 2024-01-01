@@ -1,0 +1,161 @@
+
+##########################
+### FLEET HEADQUARTERS ###
+##########################
+nsc_headquarters_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -20 y = -10 }
+	build_time = 1800
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = 1500
+		}
+		upkeep = {
+			energy = 15
+			alloys = 15
+		}
+	}
+	
+	prerequisites = { "tech_mega_engineering" "tech_starbase_6" }
+
+	possible = {
+		exists = starbase
+		custom_tooltip = {
+			fail_text = "requires_inside_border"
+			is_inside_border = from
+		}
+		custom_tooltip = {
+			fail_text = "requires_surveyed_system"
+			NOT = {
+				any_system_planet = {
+					is_surveyed = {
+						who = prev.from
+						status = no
+					}
+				}
+			}
+		}
+		custom_tooltip = {
+			fail_text = "requires_no_existing_nsc_headquarters"
+			from = { NOT = { has_country_flag = built_nsc_headquarters } }
+		}
+		#nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = nsc_headquarters }
+	}
+	
+	
+	placement_rules = {
+		planet_possible = {
+			custom_tooltip = {
+				fail_text = "requires_surveyed_planet"
+				is_surveyed = {
+					who = prev.from
+					status = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_existing_megastructure"
+				NOR = {
+					has_planet_flag = megastructure
+					has_planet_flag = has_megastructure
+					solar_system = { has_star_flag = ring_world_built }
+					is_planet_class = pc_ringworld_habitable
+					is_planet_class = pc_ringworld_habitable_damaged
+					is_planet_class = pc_ringworld_tech
+					is_planet_class = pc_ringworld_tech_damaged
+					is_planet_class = pc_ringworld_seam
+					is_planet_class = pc_ringworld_seam_damaged
+					is_planet_class = pc_habitat
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_no_anomaly"
+				NOT = { has_anomaly = yes }
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_minor_planetary_body"
+				NOR = {
+					is_asteroid = yes
+					is_moon = yes
+				}
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_star"
+				is_star = no
+			}
+			custom_tooltip = {
+				fail_text = "requires_not_ring_world"
+				has_ringworld_output_boost = no
+			}
+		}
+	}
+		
+	ai_weight = {
+		factor = 15
+		modifier = {
+			factor = 0.1
+			starbase = { NOT = { has_starbase_size >= starbase_starfortress } }
+		}
+		modifier = {
+			factor = 0.1
+			any_neighbor_system = {
+				exists = owner
+				NOT = { 
+					owner = { is_same_value = from } 
+				}
+			}
+		}
+	}
+
+	on_build_complete = {
+        from = { 
+            set_country_flag = built_nsc_headquarters
+            set_country_flag = has_built_or_repaired_megastructure
+        }
+		fromfrom.planet = { set_planet_flag = has_megastructure }
+    }
+}
+
+nsc_headquarters_1 = {
+	entity = "nsc_01_HQ_Mega_entity"
+	construction_entity = "nsc_01_HQ_Mega_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -20 y = -10 }
+	build_time = 3600
+	
+	resources = {
+		category = megastructures
+		cost = { alloys = 15000 unity = 1500 }
+		produces = {
+		}
+		upkeep = {
+			energy = 75
+			alloys = 50
+		}
+	}
+	
+	upgrade_from = { nsc_headquarters_0 }
+
+	#possible = {
+	#	nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = nsc_headquarters }
+	#}
+
+	country_modifier = {
+		country_commander_cap_add = 5
+		leader_commanders_cost_mult = -0.25
+		commander_exp_gain = 0.25
+		country_naval_cap_add = 500
+		command_limit_add = 400
+		ships_upkeep_mult = -0.15
+		country_starbase_capacity_add = 10
+		envoys_add = 1
+		pop_happiness = 0.05
+		pop_ethic_militarist_attraction_mult = 0.10
+	}
+}

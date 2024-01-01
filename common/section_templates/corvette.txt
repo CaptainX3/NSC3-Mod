@@ -149,8 +149,6 @@ ship_section_template = {
 	}
 }
 
-
-
 ship_section_template = {
 	key = "CORVETTE_MID_PD3"
 	ship_size = corvette
