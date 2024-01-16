@@ -252,12 +252,61 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_explorationship.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_corvette"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 2
+		#hover over an icon and you will see it becomes brighter and makes click sound (when that icon is part of an 'effectbuttonType' ui object) without this 'effectFile'
+		#and that's the only reason I made this
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_frigate"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 14
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_destroyer"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_cruiser"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 4
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_battleship"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 5
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_titan"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 6
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_colossus"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 7 #ship_size_military_32
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_ship_icon_top_juggernaut"
+		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
+		default_frame = 13 #ship_size_military_64
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
 	#ship components
 	spriteType = {
 		name = "GFX_nsc_modmenu_REACTOR_BOOSTER_1"
 		textureFile = "gfx/interface/icons/ship_parts/nsc_reactor_booster_4.dds"
-		#hover over an icon and you will see it becomes brighter and makes click sound (when that icon is part of an 'effectbuttonType' ui object) without this 'effectFile'
-		effectFile = "gfx/FX/buttonstate_onlydisable.shader" #and that's the only reason of this code block
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_REACTOR_BOOSTER_2"

@@ -240,11 +240,6 @@ defined_text = {
 		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_plus
 	}
 }
-
-
-
-
-
 #corvette
 defined_text = {
 	name = Get_nsc_ship_class_corvette_enable_disable_status
@@ -291,5 +286,341 @@ defined_text = {
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_plus
+	}
+}
+#frigate
+defined_text = {
+	name = Get_nsc_ship_class_frigate_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_frigate_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_frigate_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_desc_plus
+	}
+}
+#destroyer
+defined_text = {
+	name = Get_nsc_ship_class_destroyer_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_destroyer_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_destroyer_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_desc_plus
+	}
+}
+#cruiser
+defined_text = {
+	name = Get_nsc_ship_class_cruiser_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_cruiser_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_cruiser_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_desc_plus
+	}
+}
+#battleship
+defined_text = {
+	name = Get_nsc_ship_class_battleship_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_battleship_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_battleship_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_desc_plus
+	}
+}
+#titan
+defined_text = {
+	name = Get_nsc_ship_class_titan_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_titan_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_titan_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_titan_build_speed_desc_plus
+	}
+}
+#colossus
+defined_text = {
+	name = Get_nsc_ship_class_colossus_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_colossus_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_colossus_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_desc_plus
+	}
+}
+#juggernaut
+defined_text = {
+	name = Get_nsc_ship_class_juggernaut_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_juggernaut_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_juggernaut_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_desc_plus
 	}
 }

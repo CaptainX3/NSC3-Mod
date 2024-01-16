@@ -115,13 +115,20 @@ nsc_modmenu_mod_faq_setting_reset_effect = {
 }
 nsc_modmenu_ship_class_setting_reset_effect = {
 	optimize_memory
-	#classes (total 5 modded + 1 vanilla)
+	#classes (total 5 modded + 8 vanilla)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = corvette }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = frigate }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = destroyer }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = cruiser }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = battleship }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = titan }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = colossus }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = juggernaut }
 
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_speed VALUE = 0 }
@@ -152,6 +159,41 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed VALUE = 0 }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed }
 }
 #change 'nsc_modmenu_ship_component_settings_disable_effect' scripted effect as well when changing this
 nsc_modmenu_ship_component_setting_reset_effect = {
@@ -367,6 +409,13 @@ nsc_modmenu_ship_class_settings_disable_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = corvette }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = frigate }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = destroyer }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = cruiser }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = battleship }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = titan }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = colossus }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = juggernaut }
 }
 nsc_modmenu_ship_component_settings_disable_effect = {
 	optimize_memory

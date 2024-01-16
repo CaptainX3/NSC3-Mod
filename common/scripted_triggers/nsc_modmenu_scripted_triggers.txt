@@ -50,6 +50,13 @@ nsc_modmenu_ship_class_settings_on_trigger = {
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus }
+	nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut }
 }
 nsc_modmenu_ship_component_settings_on_trigger = {
 	optimize_memory
