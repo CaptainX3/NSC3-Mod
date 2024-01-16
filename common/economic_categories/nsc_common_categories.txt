@@ -53,6 +53,7 @@ ships = {
 			OR = {
 				is_ship_size = corvette
 				is_ship_size = offspring_corvette
+				is_ship_size = frigate
 			}
 		}
 	}
