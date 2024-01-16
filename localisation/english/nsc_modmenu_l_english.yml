@@ -257,6 +257,21 @@ nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_ne
 nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_explorationship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_explorationship_build_speed_var]%§!"
 
+
+
+
+
+#corvette
+nsc_modmenu_setting_page_ship_category_class_corvette_name_desc:0 "§H$CORVETTE$§!\n$SHIP_GRAPHICS_CORVETTE_DESC$"
+nsc_modmenu_setting_page_ship_category_class_corvette_enabled_desc:0 "$CORVETTE$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_disabled_desc:0 "$CORVETTE$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_corvette_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_corvette_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_corvette_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_corvette_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_corvette_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_corvette_build_speed_var]%§!"
+
 ### Custom GUI Category: Ship Components ###
 #Common
 nsc_modmenu_setting_page_ship_category_component_name:0 "$nsc_modmenu_setting_button_category_ship_name$ $nsc_modmenu_setting_button_ship_component_name$"
@@ -523,10 +538,10 @@ nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_neutra
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
 
-nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of all Starbase Levels by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
-nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of all Starbase Levels by by §R+5%§!."
-nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of all Starbase Levels by by §R-5%§!."
-nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of all Starbase Levels by by §G+5%§!."
+nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of this Starbase Level by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of this Starbase Level by by §R+5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of this Starbase Level by by §R-5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of this Starbase Level by by §G+5%§!."
 
 nsc_modmenu_starbase_class_outpost_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_starbase_class_outpost_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"

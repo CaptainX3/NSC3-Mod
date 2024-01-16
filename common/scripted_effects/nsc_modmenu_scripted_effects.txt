@@ -115,12 +115,13 @@ nsc_modmenu_mod_faq_setting_reset_effect = {
 }
 nsc_modmenu_ship_class_setting_reset_effect = {
 	optimize_memory
-	#classes (total 5)
+	#classes (total 5 modded + 1 vanilla)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Carrier }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = corvette }
 
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost VALUE = 0 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_speed VALUE = 0 }
@@ -146,6 +147,11 @@ nsc_modmenu_ship_class_setting_reset_effect = {
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed VALUE = 0 }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost }
 	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed }
+
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost VALUE = 0 }
+	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed VALUE = 0 }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost }
+	nsc_modmenu_game_content_remove_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed }
 }
 #change 'nsc_modmenu_ship_component_settings_disable_effect' scripted effect as well when changing this
 nsc_modmenu_ship_component_setting_reset_effect = {
@@ -207,7 +213,6 @@ nsc_modmenu_starbase_class_setting_reset_effect = {
 	#levels (total 2 modded + 1 vanilla)
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = stronghold }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = headquarters }
-	#the flag created here actually doesn't do anything, it's just for showing a check mark (nsc_modmenu_setting_page_starbase_category_class_outpost_off_button_effect) in the mod menu
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = starbase SUBCAT = class ID = outpost }
 
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = starbase SUBCAT = class ID = common MODIFIER = upgrade_cost VALUE = 0 }
@@ -289,7 +294,7 @@ nsc_modmenu_etc_feature_setting_reset_effect = {
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_cost VALUE = 20 }
 	nsc_modmenu_game_content_set_variable_effect = { CATEGORY = etc SUBCAT = feature ID = mothball MODIFIER = fleet_restore_time VALUE = 50 }
 
-	#this can cause an extensive performance issue #that makes me worried #in most cases, it will be fine though...
+	#this can cause an extensive performance issue #that makes me worried #although in most cases, it will be fine...
 	every_playable_country = {
 		limit = { any_owned_fleet = { nsc_mothball_target_fleet_all_flags_trigger = yes } }
 		every_owned_fleet = {
@@ -361,6 +366,7 @@ nsc_modmenu_ship_class_settings_disable_effect = {
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Dreadnought }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = Flagship }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = explorationship }
+	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = corvette }
 }
 nsc_modmenu_ship_component_settings_disable_effect = {
 	optimize_memory
@@ -419,8 +425,7 @@ nsc_modmenu_starbase_class_settings_disable_effect = {
 	optimize_memory
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = class ID = stronghold }
 	nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = class ID = headquarters }
-	#this flag is for showing a check mark (nsc_modmenu_setting_page_starbase_category_class_outpost_off_button_effect) in the mod menu #so don't remove it
-	#nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = class ID = outpost }
+    nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = starbase SUBCAT = class ID = outpost }
 }
 nsc_modmenu_starbase_module_settings_disable_effect = {
 	optimize_memory

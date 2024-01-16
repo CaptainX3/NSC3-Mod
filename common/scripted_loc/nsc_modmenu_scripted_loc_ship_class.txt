@@ -16,7 +16,9 @@ defined_text = {
 	name = Get_nsc_ship_class_Battlecruiser_build_cost
 	random = no
 
-	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+	#'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+	#and whatever the cwtools says, this works fine in game
+	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_cost_desc_neutral
 	}
@@ -64,7 +66,7 @@ defined_text = {
 	name = Get_nsc_ship_class_Carrier_build_cost
 	random = no
 
-	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_Carrier_build_cost_desc_neutral
 	}
@@ -112,7 +114,7 @@ defined_text = {
 	name = Get_nsc_ship_class_Dreadnought_build_cost
 	random = no
 
-	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_cost_desc_neutral
 	}
@@ -160,7 +162,7 @@ defined_text = {
 	name = Get_nsc_ship_class_Flagship_build_cost
 	random = no
 
-	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_desc_neutral
 	}
@@ -208,7 +210,7 @@ defined_text = {
 	name = Get_nsc_ship_class_explorationship_build_cost
 	random = no
 
-	text = { #'SYMBOL = = VALUE = 0' means 'check_variable = { value = 0 }' and 'SYMBOL = > VALUE = 0' means 'check_variable = { value > 0 }' #do you see the difference?
+	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_desc_neutral
 	}
@@ -236,5 +238,58 @@ defined_text = {
 	text = {
 		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
 		localization_key = nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_plus
+	}
+}
+
+
+
+
+
+#corvette
+defined_text = {
+	name = Get_nsc_ship_class_corvette_enable_disable_status
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_enabled_desc
+	}
+	text = {
+		trigger = { NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette } } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_disabled_desc
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_corvette_build_cost
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_plus
+	}
+}
+defined_text = {
+	name = Get_nsc_ship_class_corvette_build_speed
+	random = no
+
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed SYMBOL = = VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_neutral
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed SYMBOL = < VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_minus
+	}
+	text = {
+		trigger = { nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed SYMBOL = > VALUE = 0 } }
+		localization_key = nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_plus
 	}
 }

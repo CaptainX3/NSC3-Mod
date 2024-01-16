@@ -40,6 +40,19 @@ nsc_modmenu_ship_class_explorationship_build_speed_mod = {
 	shipsize_explorationship_build_speed_mult = 0.01
 	hide_from_country_list = yes
 }
+
+
+
+
+
+nsc_modmenu_ship_class_corvette_build_cost_mod = {
+	ship_corvette_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_corvette_build_speed_mod = {
+	shipsize_corvette_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
 ### Starbase ###
 #classes
 nsc_modmenu_starbase_class_common_upgrade_cost_mod = {
