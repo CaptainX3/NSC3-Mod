@@ -229,35 +229,40 @@ spriteTypes = {
 	#ship classes
 	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_Battlecruiser"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Battlecruiser.dds"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 15 #nsc_ship_size_military_15
+		#hover over an icon and you will see it becomes brighter and makes click sound (when that icon is part of an 'effectbuttonType' ui object) without this 'effectFile'
+		#and that's the only reason I made this
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_Carrier"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Carrier.dds"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 16
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_Dreadnought"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Dreadnought.dds"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 17
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_Flagship"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_Flagship.dds"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 18
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_explorationship"
-		textureFile = "gfx/interface/icons/customgui_elements/nsc_ship_sizes_top/nsc_explorationship.dds"
+		sprite_sheet_sprite_type = "GFX_nsc_ship_sizes_top"
+		default_frame = 14
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_ship_icon_top_corvette"
 		sprite_sheet_sprite_type = "GFX_ship_sizes_top"
 		default_frame = 2
-		#hover over an icon and you will see it becomes brighter and makes click sound (when that icon is part of an 'effectbuttonType' ui object) without this 'effectFile'
-		#and that's the only reason I made this
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	spriteType = {

@@ -721,8 +721,8 @@ guiTypes = {
 						effect = "nsc_modmenu_setting_page_ship_category_class_go_next_button_effect"
 					}
 			
-					@nsc_modmenu_setting_page_ship_category_class_content_container_width_1 = 64
-					@nsc_modmenu_setting_page_ship_category_class_content_container_width_2 = 417 #+353 x pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_width_1'
+					@nsc_modmenu_setting_page_ship_category_class_content_container_width_1 = 63
+					@nsc_modmenu_setting_page_ship_category_class_content_container_width_2 = 416 #+353 x pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_width_1'
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_1 = 55
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_2 = 193 #+138 y pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_height_1'
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_3 = 331
@@ -731,17 +731,19 @@ guiTypes = {
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_6 = 745
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_7 = 883
 
-					@nsc_modmenu_setting_page_ship_category_class_common_header_width = 77
+					@nsc_modmenu_setting_page_ship_category_class_common_header_width = 78
 					@nsc_modmenu_setting_page_ship_category_class_common_borderSize_width = 2
 
-					@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width = 240
-					@nsc_modmenu_setting_page_ship_category_class_common_on_width = 245 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width'
+					@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width = 241
+					@nsc_modmenu_setting_page_ship_category_class_common_on_width = 246 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width'
 					@nsc_modmenu_setting_page_ship_category_class_common_on_height = 5
 
+					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width = 1
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height = 39
-					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width = 43
+					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width = 44
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height = 50
-					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width = 214
+					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width = 215
+
 					@nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height = 78
 					@nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height = 89
 
@@ -791,7 +793,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Battlecruiser_build_cost]"
 							font = "cg_16b"
@@ -813,7 +815,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Battlecruiser_build_speed]"
 							font = "cg_16b"
@@ -879,7 +881,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Carrier_build_cost]"
 							font = "cg_16b"
@@ -901,7 +903,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Carrier_build_speed]"
 							font = "cg_16b"
@@ -967,7 +969,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Dreadnought_build_cost]"
 							font = "cg_16b"
@@ -989,7 +991,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Dreadnought_build_speed]"
 							font = "cg_16b"
@@ -1055,7 +1057,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Flagship_build_cost]"
 							font = "cg_16b"
@@ -1077,7 +1079,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Flagship_build_speed]"
 							font = "cg_16b"
@@ -1143,7 +1145,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_explorationship_build_cost]"
 							font = "cg_16b"
@@ -1165,7 +1167,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_explorationship_build_speed]"
 							font = "cg_16b"
@@ -1231,7 +1233,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_corvette_build_cost]"
 							font = "cg_16b"
@@ -1253,7 +1255,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_corvette_build_speed]"
 							font = "cg_16b"
@@ -1319,7 +1321,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_frigate_build_cost]"
 							font = "cg_16b"
@@ -1341,7 +1343,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_frigate_build_speed]"
 							font = "cg_16b"
@@ -1407,7 +1409,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_destroyer_build_cost]"
 							font = "cg_16b"
@@ -1429,7 +1431,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_destroyer_build_speed]"
 							font = "cg_16b"
@@ -1495,7 +1497,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_cruiser_build_cost]"
 							font = "cg_16b"
@@ -1517,7 +1519,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_cruiser_build_speed]"
 							font = "cg_16b"
@@ -1583,7 +1585,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_battleship_build_cost]"
 							font = "cg_16b"
@@ -1605,7 +1607,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_battleship_build_speed]"
 							font = "cg_16b"
@@ -1671,7 +1673,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_titan_build_cost]"
 							font = "cg_16b"
@@ -1693,7 +1695,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_titan_build_speed]"
 							font = "cg_16b"
@@ -1759,7 +1761,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_colossus_build_cost]"
 							font = "cg_16b"
@@ -1781,7 +1783,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_colossus_build_speed]"
 							font = "cg_16b"
@@ -1847,7 +1849,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_juggernaut_build_cost]"
 							font = "cg_16b"
@@ -1869,7 +1871,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_juggernaut_build_speed]"
 							font = "cg_16b"
