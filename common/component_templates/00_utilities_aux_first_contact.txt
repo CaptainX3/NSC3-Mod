@@ -110,8 +110,12 @@ utility_component_template = {
 
 	ship_limit = 1
 	
+	valid_for_country = {
+		nsc_modmenu_has_tech_or_content_is_off_trigger = { TECH_ID = tech_Battlecruiser_1 CATEGORY = ship SUBCAT = class ID = Battlecruiser }
+	}
+
 	size_restriction = { Battlecruiser }
-	prerequisites = { "tech_Battlecruiser_1" "tech_cloaking_3" }
+	prerequisites = { "tech_cloaking_3" }
 	component_set = "BATTLECRUISER_CLOAKING"
 	ai_tags = {
 		gunship_stealth
