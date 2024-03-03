@@ -25,7 +25,7 @@ nsc_modmenu_mp_host_trigger = {
 		}
 	}
 }
-nsc_modmenu_has_tech_or_content_is_off_trigger = {
+nsc_modmenu_has_tech_or_content_is_disabled_trigger = {
 	OR = {
 		has_technology = $TECH_ID$
 		NOT = { has_global_flag = nsc_modmenu_game_content_$CATEGORY$_$SUBCAT$_$ID$_on }

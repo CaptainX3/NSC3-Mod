@@ -104,6 +104,10 @@ tech_Battlecruiser_1 = {
 			desc = "TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_DESC"
 		}
 	}
+
+	potential = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
+	}
 	
 	modifier = {
 		command_limit_add = 10

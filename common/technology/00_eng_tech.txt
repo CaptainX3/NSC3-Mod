@@ -187,7 +187,7 @@ tech_battleships = {
 	weight = @tier4weight1
 
 	potential = {
-		nsc_modmenu_has_tech_or_content_is_off_trigger = { TECH_ID = tech_Battlecruiser_1 CATEGORY = ship SUBCAT = class ID = Battlecruiser }
+		nsc_modmenu_has_tech_or_content_is_disabled_trigger = { TECH_ID = tech_Battlecruiser_1 CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	}
 
 	## unlock battleships
