@@ -7,11 +7,10 @@
 requires_no_existing_nsc_factory: "You can only build one Strategic Resource Factory."
 requires_no_existing_mall: "You can only build one Galactic Mall."
 requires_no_existing_hospital: "You can only build one Galactic General Hospital."
+requires_no_existing_nsc_headquarters: "You can only build one Fleet Headquarters."
 
 TBA: "\n§g(- Description To Be Added -)§!\n"
 
-hq_limit: "§ROnly one §Y$sm_hq_annex$§! may exist per empire.§!"
-drydock_limit: "§ROnly one §Y$sm_drydock$§! may exist per empire.§!"
 starbase_management_limit: "§ROnly five §Y$sm_starbase_management$§! may exist per empire.§!"
 starbase_management_machine_limit: "§ROnly five §Y$sm_starbase_management_machine$§! may exist per empire.§!"
 starbase_management_hive_limit: "§ROnly five §Y$sm_starbase_management_hive$§! may exist per empire.§!"
@@ -34,7 +33,7 @@ requires_no_existing_remover_receptor: "$TRIGGER_FAIL$Cannot build due to existi
 
 nsc_headquarters_bonus: "Headquarters Station Bonus"
 
-requires_technology_exploration_cruiser: "Requires §HExploration Cruiser (Level 1)§!"
+requires_technology_exploration_cruiser: "Requires §HExplorer (Level 1)§!"
 requires_technology_automated_exploration: "Requires §BAutomated Exploration Protocols§!"
 requires_discovery_tree: "Requires completing the §MDiscovery Tradition§!"
 
@@ -48,3 +47,5 @@ nsc.requires.asteroid: "Requires asteroid in the system."
 
 CLOAKING_FRIGATE_TOOLTIP: "Ship Speed Bonus: §G25%§!\nFrigate Evasion Bonus: §G15%§!"
 CLOAKING_BATTLECRUISER_TOOLTIP: "Battlecruiser Shield Reduction: §R80%§!\nBattlecruiser Speed Reduction §R50%§!"
+
+starbase_detection_limit.tooltip.fail: "You cannot build more than 6 Detection Arrays per starbase."
