@@ -184,11 +184,8 @@ tech_battleships = {
 	area = engineering
 	tier = 4
 	category = { voidcraft }
+	prerequisites = { "tech_Battlecruiser_1" }
 	weight = @tier4weight1
-
-	potential = {
-		nsc_modmenu_has_tech_or_content_is_off_trigger = { TECH_ID = tech_Battlecruiser_1 CATEGORY = ship SUBCAT = class ID = Battlecruiser }
-	}
 
 	## unlock battleships
 	prereqfor_desc = {
