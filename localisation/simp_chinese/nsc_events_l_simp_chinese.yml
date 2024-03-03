@@ -1,19 +1,19 @@
 ﻿l_simp_chinese:
 
 ##################################################################################################################################################################################################################
-### EXPLORATION CRUISER EVENTS ###
+### Explorer EVENTS ###
 ##################################
 
 EXPLORATION_CRUISER_UPGRADE_PROJECT: "Science Ship Upgade Project"
-EXPLORATION_CRUISER_UPGRADE_PROJECT_DESC: "Our fleet engineers stand ready to begin the monumental task of retrofitting one of our existing Science ships into the new Exploration Cruiser class. It is expected that this project will take approximately 250 days to complete. When finished, the Scientist Leader of the ship will transfer to their new ship automatically."
+EXPLORATION_CRUISER_UPGRADE_PROJECT_DESC: "Our fleet engineers stand ready to begin the monumental task of retrofitting one of our existing Science ships into the new Explorer class. It is expected that this project will take approximately 250 days to complete. When finished, the Scientist Leader of the ship will transfer to their new ship automatically."
 
-nsc_events_exploration_ship.3.name: "Prototype Exploration Cruiser"
-nsc_events_exploration_ship.3.desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our ship engineers have been working together with our scientists to come up with a solution to this problem. We believe we finally have the answer.\n\nThe Exploration Cruiser is a large, combat-capable Science Ship dedicated to exploring new worlds and seeking out new life and new civilizations. Our scientists will no longer have to fear the terrors of the void!"
+nsc_events_exploration_ship.3.name: "Prototype Explorer"
+nsc_events_exploration_ship.3.desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our ship engineers have been working together with our scientists to come up with a solution to this problem. We believe we finally have the answer.\n\nThe Explorer is a large, combat-capable Science Ship dedicated to exploring new worlds and seeking out new life and new civilizations. Our scientists will no longer have to fear the terrors of the void!"
 
 nsc_events_exploration_ship.3.a: "Excellent, we shall boldly go where no one has gone before!"
 
 nsc_events_exploration_ship.10.name: "Science Fleet Upgrade"
-nsc_events_exploration_ship.10.desc: "Now that we have finalized the permanent design of the Exploration Cruiser, our fleet logistics team would like to know if you want to upgrade our fleet of Science ships to this new, enhanced design. Performing the upgrade for each ship will take approximately §G250 days§! and will require an investment of §B400 Alloys§! and §Y50 Energy§! per ship, but would give our leading exploration scientists a much better chance of survival in an increasingly hostile universe. We can upgrade up to 8 Science ships to the new class. A Special Project will be created for each ship you want to upgrade, which will require moving that ship to our home system to begin the project. There is no time limit on how quickly you complete the projects. We await your decision."
+nsc_events_exploration_ship.10.desc: "Now that we have finalized the permanent design of the Explorer, our fleet logistics team would like to know if you want to upgrade our fleet of Science ships to this new, enhanced design. Performing the upgrade for each ship will take approximately §G250 days§! and will require an investment of §B400 Alloys§! and §Y50 Energy§! per ship, but would give our leading exploration scientists a much better chance of survival in an increasingly hostile universe. We can upgrade up to 8 Science ships to the new class. A Special Project will be created for each ship you want to upgrade, which will require moving that ship to our home system to begin the project. There is no time limit on how quickly you complete the projects. We await your decision."
 
 nsc_events_exploration_ship.10.1: "Choose to upgrade §Y1§! ship. (§Y50 Energy§! & §B400 Alloys§!)"
 nsc_events_exploration_ship.10.2: "Choose to upgrade §Y2§! ships. (§Y100 Energy§! & §B800 Alloys§!)"
@@ -38,6 +38,7 @@ nsc_flagship_shipyard: "Grand Shipyard"
 nsc_flagship_shipyard_DESC: "This massive space station is necessary to construct the largest and deadliest warship that the galaxy has ever seen."
 
 nsc_flagship_shipyard_MEGASTRUCTURE_DETAILS: "$nsc_flagship_shipyard_DESC$"
+requires_no_existing_nsc_grand_shipyard:0 "$TRIGGER_FAIL$Cannot build more than one $nsc_flagship_shipyard$."
 requires_no_existing_nsc_flagship: "£trigger_no£ Cannot build more than one Flagship."
 can_not_start_another_nsc_flagship_building: "£trigger_no£ Cannot start another Flagship construction project."
 
