@@ -148,7 +148,7 @@ utility_component_template = {
 		category = ship_components
 		upkeep = {
 			energy = 0.3
-			alloy = 0.3
+			alloys = 0.3
 		}
 	}
 	
@@ -201,7 +201,7 @@ utility_component_template = {
 		category = ship_components
 		upkeep = {
 			energy = 0.3
-			alloy = 0.3
+			alloys = 0.3
 		}
 	}
 	

@@ -47,11 +47,6 @@ nsc_headquarters_0_DESC: "The Fleet Headquarters is the centralized command & co
 nsc_headquarters_0_MEGASTRUCTURE_DETAILS: "The Fleet Headquarters is the centralized command & control station for your empire. Building and maintaining the Fleet Headquarters provides significant bonuses."
 nsc_headquarters_0_CONSTRUCTION_INFO_DELAYED: "The Fleet Headquarters is the centralized command & control station for your empire. Building and maintaining the Fleet Headquarters provides significant bonuses."
 
-Empire Bonuses:\n\n
-
-
-
-
 nsc_headquarters_1: "Fleet Headquarters"
 nsc_headquarters_1_DESC: "The Fleet Headquarters is the centralized command & control station for your empire. Building and maintaining the Fleet Headquarters provides significant bonuses."
 nsc_headquarters_1_CONSTRUCTION_INFO_DELAYED: "The Fleet Headquarters is the centralized command & control station for your empire. Building and maintaining the Fleet Headquarters provides significant bonuses."

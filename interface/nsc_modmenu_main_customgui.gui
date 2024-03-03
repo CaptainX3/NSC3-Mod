@@ -721,24 +721,29 @@ guiTypes = {
 						effect = "nsc_modmenu_setting_page_ship_category_class_go_next_button_effect"
 					}
 			
-					@nsc_modmenu_setting_page_ship_category_class_content_container_width_1 = 64
-					@nsc_modmenu_setting_page_ship_category_class_content_container_width_2 = 417 #+353 x pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_width_1'
+					@nsc_modmenu_setting_page_ship_category_class_content_container_width_1 = 63
+					@nsc_modmenu_setting_page_ship_category_class_content_container_width_2 = 416 #+353 x pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_width_1'
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_1 = 55
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_2 = 193 #+138 y pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_height_1'
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_3 = 331
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_4 = 469
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_5 = 607
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_6 = 745
+					@nsc_modmenu_setting_page_ship_category_class_content_container_height_7 = 883
 
-					@nsc_modmenu_setting_page_ship_category_class_common_header_width = 77
+					@nsc_modmenu_setting_page_ship_category_class_common_header_width = 78
 					@nsc_modmenu_setting_page_ship_category_class_common_borderSize_width = 2
 
-					@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width = 240
-					@nsc_modmenu_setting_page_ship_category_class_common_on_width = 245 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width'
+					@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width = 241
+					@nsc_modmenu_setting_page_ship_category_class_common_on_width = 246 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width'
 					@nsc_modmenu_setting_page_ship_category_class_common_on_height = 5
 
+					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width = 1
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height = 39
-					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width = 43
+					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width = 44
 					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height = 50
-					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width = 214
+					@nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width = 215
+
 					@nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height = 78
 					@nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height = 89
 
@@ -788,7 +793,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Battlecruiser_build_cost]"
 							font = "cg_16b"
@@ -810,7 +815,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Battlecruiser_build_speed]"
 							font = "cg_16b"
@@ -862,13 +867,13 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_on" #current state: content enabled #click this button will 'disable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_on"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
 							effect = "nsc_modmenu_setting_page_ship_category_class_Carrier_on_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_off" #current state: content disabled #click this button will 'enable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_off"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_checkbox_20_20_01"
 							effect = "nsc_modmenu_setting_page_ship_category_class_Carrier_off_button_effect"
@@ -876,7 +881,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Carrier_build_cost]"
 							font = "cg_16b"
@@ -898,7 +903,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Carrier_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Carrier_build_speed]"
 							font = "cg_16b"
@@ -950,13 +955,13 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_on" #current state: content enabled #click this button will 'disable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_on"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
 							effect = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_on_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_off" #current state: content disabled #click this button will 'enable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_off"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_checkbox_20_20_01"
 							effect = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_off_button_effect"
@@ -964,7 +969,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Dreadnought_build_cost]"
 							font = "cg_16b"
@@ -986,7 +991,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Dreadnought_build_speed]"
 							font = "cg_16b"
@@ -1038,13 +1043,13 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_on" #current state: content enabled #click this button will 'disable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_on"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
 							effect = "nsc_modmenu_setting_page_ship_category_class_Flagship_on_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_off" #current state: content disabled #click this button will 'enable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_off"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_checkbox_20_20_01"
 							effect = "nsc_modmenu_setting_page_ship_category_class_Flagship_off_button_effect"
@@ -1052,7 +1057,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Flagship_build_cost]"
 							font = "cg_16b"
@@ -1074,7 +1079,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_Flagship_build_speed]"
 							font = "cg_16b"
@@ -1126,13 +1131,13 @@ guiTypes = {
 							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_on" #current state: content enabled #click this button will 'disable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_on"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
 							effect = "nsc_modmenu_setting_page_ship_category_class_explorationship_on_button_effect"
 						}
 						effectbuttonType = {
-							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_off" #current state: content disabled #click this button will 'enable' the content
+							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_off"
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
 							spriteType = "GFX_checkbox_20_20_01"
 							effect = "nsc_modmenu_setting_page_ship_category_class_explorationship_off_button_effect"
@@ -1140,7 +1145,7 @@ guiTypes = {
 						#build cost
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_explorationship_build_cost]"
 							font = "cg_16b"
@@ -1162,7 +1167,7 @@ guiTypes = {
 						#build speed
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_header"
-							position = { x = 0 y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
 							spriteType = "GFX_nsc_modmenu_element_background_280_40"
 							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_explorationship_build_speed]"
 							font = "cg_16b"
@@ -1180,6 +1185,710 @@ guiTypes = {
 							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
 							quadTextureSprite = "GFX_topbar_date_plus"
 							effect = "nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_up_button_effect"
+						}
+					}
+					#corvette
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_corvette"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_3 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_corvette"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "corvette"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_corvette_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_corvette_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_up_button_effect"
+						}
+					}
+					#frigate
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_frigate"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_4 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_frigate"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "frigate"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_frigate_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_frigate_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_up_button_effect"
+						}
+					}
+					#destroyer
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_destroyer"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_4 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_destroyer"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "destroyer"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_destroyer_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_destroyer_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_up_button_effect"
+						}
+					}
+					#cruiser
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_cruiser"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_5 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_cruiser"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "cruiser"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_cruiser_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_cruiser_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_up_button_effect"
+						}
+					}
+					#battleship
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_battleship"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_5 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_battleship"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "battleship"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_battleship_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_battleship_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_up_button_effect"
+						}
+					}
+					#titan
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_titan"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_6 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_titan"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "titan"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_titan_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_titan_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_titan_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_titan_build_speed_up_button_effect"
+						}
+					}
+					#colossus
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_colossus"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_2 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_6 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_colossus"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "colossus"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_colossus_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_colossus_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_up_button_effect"
+						}
+					}
+					#juggernaut
+					containerWindowType = {
+						name = "nsc_modmenu_setting_page_ship_category_class_juggernaut"
+						position = { x = @nsc_modmenu_setting_page_ship_category_class_content_container_width_1 y = @nsc_modmenu_setting_page_ship_category_class_content_container_height_7 }
+						#icon / name
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_icon"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_nsc_modmenu_ship_icon_top_juggernaut"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_header_width y = 0 }
+							borderSize = { x = @nsc_modmenu_setting_page_ship_category_class_common_borderSize_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_164_40"
+							text = "juggernaut"
+							multiline = yes
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_header_button_effect"
+						}
+						#on / off
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_on_off_background"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_off_background_width y = 0 }
+							spriteType = "GFX_nsc_modmenu_element_background_40_40"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_on"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_nsc_modmenu_contents_checkbox_checked"
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_on_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_off"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_on_width y = @nsc_modmenu_setting_page_ship_category_class_common_on_height }
+							spriteType = "GFX_checkbox_20_20_01"
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_off_button_effect"
+						}
+						#build cost
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_juggernaut_build_cost]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_up_button_effect"
+						}
+						#build speed
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_header"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_header_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_header_height }
+							spriteType = "GFX_nsc_modmenu_element_background_280_40"
+							text = "[nsc_modmenu_data_storage.Get_nsc_ship_class_juggernaut_build_speed]"
+							font = "cg_16b"
+							no_clicksound = yes
+							effect = "nsc_modmenu_setting_page_ship_category_class_shared_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_down"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_down_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_minus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_down_button_effect"
+						}
+						effectbuttonType = {
+							name = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_up"
+							position = { x = @nsc_modmenu_setting_page_ship_category_class_common_build_cost_up_width y = @nsc_modmenu_setting_page_ship_category_class_common_build_speed_down_height }
+							quadTextureSprite = "GFX_topbar_date_plus"
+							effect = "nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_up_button_effect"
 						}
 					}
 				}

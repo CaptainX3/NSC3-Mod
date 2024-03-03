@@ -179,13 +179,15 @@ nsc_modmenu_setting_page_starbase_category_class_outpost_header_button_effect = 
 nsc_modmenu_setting_page_starbase_category_class_outpost_on_button_effect = {
     potential = {
         has_global_flag = nsc_modmenu_starbase_class_page_opened
-        nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = class ID = outpost }
     }
     allow = {
         custom_tooltip_fail = {
             text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
-            always = no #vanilla content shouldn't be disabled
+            always = no
         }
+        #nsc_modmenu_mp_host_trigger = yes
     }
     effect = {
         custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip

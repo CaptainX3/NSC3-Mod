@@ -716,7 +716,6 @@ nightclub = {
 		cost = {
 			alloys = 100
 			consumer_goods = 75
-			luxury_goods = 10
 		}
 		produces = { 
 			unity = 5
@@ -764,18 +763,17 @@ public_market = {
 			alloys = 200
 			consumer_goods = 75
 		}
-		produces = { 
+		produces = {
 			consumer_goods = 5
-			luxury_goods = 5
 		}
 		upkeep = {
 			energy = 8
 		}
 	}
 	
-	system_modifier = { 
+	system_modifier = {
 		job_merchant_add = 3
-		job_administrator_add = 1
+		job_politician_add = 1
 	}
 	
 	station_modifier = {

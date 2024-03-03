@@ -6,3 +6,4 @@ spitfire
 heavy_carrier
 super_carrier
 interdictor
+#leave an empty line here or the game produces '[22:58:04][component.cpp:302]: unknown component tag [interdictor]' error log #weird, yeah, but you know it's PDX
