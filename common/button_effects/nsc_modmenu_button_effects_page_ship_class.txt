@@ -144,7 +144,7 @@ nsc_modmenu_setting_page_ship_category_class_Battlecruiser_build_speed_up_button
 #Carrier
 nsc_modmenu_setting_page_ship_category_class_Carrier_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
-    allow = { always = yes } #don't add mp host trigger in header buttons
+    allow = { always = yes }
     effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_Carrier_name_desc }
 }
 nsc_modmenu_setting_page_ship_category_class_Carrier_on_button_effect = {
@@ -256,7 +256,7 @@ nsc_modmenu_setting_page_ship_category_class_Carrier_build_speed_up_button_effec
 #Dreadnought
 nsc_modmenu_setting_page_ship_category_class_Dreadnought_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
-    allow = { always = yes } #don't add mp host trigger in header buttons
+    allow = { always = yes }
     effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_Dreadnought_name_desc }
 }
 nsc_modmenu_setting_page_ship_category_class_Dreadnought_on_button_effect = {
@@ -368,7 +368,7 @@ nsc_modmenu_setting_page_ship_category_class_Dreadnought_build_speed_up_button_e
 #Flagship
 nsc_modmenu_setting_page_ship_category_class_Flagship_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
-    allow = { always = yes } #don't add mp host trigger in header buttons
+    allow = { always = yes }
     effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_Flagship_name_desc }
 }
 nsc_modmenu_setting_page_ship_category_class_Flagship_on_button_effect = {
@@ -480,7 +480,7 @@ nsc_modmenu_setting_page_ship_category_class_Flagship_build_speed_up_button_effe
 #explorationship
 nsc_modmenu_setting_page_ship_category_class_explorationship_header_button_effect = {
     potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
-    allow = { always = yes } #don't add mp host trigger in header buttons
+    allow = { always = yes }
     effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_explorationship_name_desc }
 }
 nsc_modmenu_setting_page_ship_category_class_explorationship_on_button_effect = {
@@ -586,6 +586,958 @@ nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_up_butt
         hidden_effect = {
             nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed VALUE = 5 }
             every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = explorationship MODIFIER = build_speed } }
+        }
+    }
+}
+#corvette
+nsc_modmenu_setting_page_ship_category_class_corvette_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_corvette_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_corvette_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes #to always show the check mark for this ui element in the mod menu
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no #vanilla content shouldn't be disabled
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = corvette } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_corvette_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = corvette } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = corvette }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = corvette MODIFIER = build_speed } }
+        }
+    }
+}
+#frigate
+nsc_modmenu_setting_page_ship_category_class_frigate_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_frigate_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_frigate_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = frigate } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_frigate_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = frigate } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = frigate }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = frigate MODIFIER = build_speed } }
+        }
+    }
+}
+#destroyer
+nsc_modmenu_setting_page_ship_category_class_destroyer_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_destroyer_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_destroyer_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = destroyer } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_destroyer_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = destroyer } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = destroyer MODIFIER = build_speed } }
+        }
+    }
+}
+#cruiser
+nsc_modmenu_setting_page_ship_category_class_cruiser_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_cruiser_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_cruiser_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = cruiser } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_cruiser_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = cruiser } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = cruiser MODIFIER = build_speed } }
+        }
+    }
+}
+#battleship
+nsc_modmenu_setting_page_ship_category_class_battleship_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_battleship_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_battleship_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = battleship } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_battleship_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = battleship } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = battleship }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = battleship MODIFIER = build_speed } }
+        }
+    }
+}
+#titan
+nsc_modmenu_setting_page_ship_category_class_titan_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_titan_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_titan_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = titan } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_titan_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = titan } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_titan_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_titan_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_titan_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_titan_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = titan }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = titan MODIFIER = build_speed } }
+        }
+    }
+}
+#colossus
+nsc_modmenu_setting_page_ship_category_class_colossus_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_colossus_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_colossus_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = colossus } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_colossus_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = colossus } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = colossus }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = colossus MODIFIER = build_speed } }
+        }
+    }
+}
+#juggernaut
+nsc_modmenu_setting_page_ship_category_class_juggernaut_header_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = { always = yes }
+    effect = { custom_tooltip = nsc_modmenu_setting_page_ship_category_class_juggernaut_name_desc }
+}
+nsc_modmenu_setting_page_ship_category_class_juggernaut_on_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        always = yes
+        #nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut }
+    }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail
+            always = no
+        }
+        #nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_disable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = remove_global_flag CATEGORY = ship SUBCAT = class ID = juggernaut } } #click to 'disable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_juggernaut_off_button_effect = {
+    potential = {
+        has_global_flag = nsc_modmenu_ship_class_page_opened
+        NOT = { nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut } }
+    }
+    allow = { nsc_modmenu_mp_host_trigger = yes }
+    effect = {
+        custom_tooltip = nsc_modmenu_game_content_enable_effect_tooltip
+        hidden_effect = { nsc_modmenu_game_content_enable_disable_effect = { EFFECT = set_global_flag CATEGORY = ship SUBCAT = class ID = juggernaut } } #click to 'enable' the content
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_cost_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_cost_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_cost } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_down_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_down_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed SYMBOL = > VALUE = -100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_down_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed VALUE = -5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed } }
+        }
+    }
+}
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_up_button_effect = {
+    potential = { has_global_flag = nsc_modmenu_ship_class_page_opened }
+    allow = {
+        custom_tooltip_fail = {
+            text = nsc_modmenu_game_content_setting_trigger_tooltip.fail
+            nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut }
+        }
+        custom_tooltip_fail = {
+            text = nsc_modmenu_ship_class_build_speed_up_trigger_tooltip.fail
+            nsc_modmenu_game_content_check_variable_trigger = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed SYMBOL = < VALUE = 100 }
+        }
+        nsc_modmenu_mp_host_trigger = yes
+    }
+    effect = {
+        custom_tooltip = nsc_modmenu_ship_class_build_speed_up_effect_tooltip
+        hidden_effect = {
+            nsc_modmenu_game_content_change_variable_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed VALUE = 5 }
+            every_playable_country = { nsc_modmenu_game_content_add_modifier_effect = { CATEGORY = ship SUBCAT = class ID = juggernaut MODIFIER = build_speed } }
         }
     }
 }
