@@ -326,6 +326,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}
@@ -494,6 +495,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}
@@ -662,6 +664,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}
@@ -830,6 +833,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}
@@ -996,6 +1000,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}
@@ -1160,6 +1165,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}
@@ -1321,6 +1327,7 @@ utility_component_template = {
 				has_global_flag = ghost_signal_3_flag
 				has_global_flag = ghost_signal_2_flag
 				has_global_flag = ghost_signal_1_flag
+				has_policy_flag = ai_outlawed
 			}
 		}
 	}

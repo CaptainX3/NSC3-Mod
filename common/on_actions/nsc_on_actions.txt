@@ -29,7 +29,6 @@ on_game_start_country = {
 # From = Planet
 on_ship_built = {
 	events = {
-		nsc_events.2
 		nsc_events_flagship.4 #the notification event to tell players that their flagship construction has finished #This is also the event that spawns Flagships for a random set of AI empires.
 	}
 }
@@ -40,14 +39,7 @@ on_ship_built = {
 # FromFromFrom = ship 2
 on_ship_destroyed_victim = {
 	events = {
-		nsc_events.3
 		nsc_events_flagship.7
-	}
-}
-
-on_ship_destroyed_perp = {
-	events = {
-		nsc_events.4
 	}
 }
 
@@ -55,7 +47,6 @@ on_ship_destroyed_perp = {
 # From = disbanded fleet
 on_fleet_disbanded = {
 	events = {
-		nsc_events.5
 		nsc_events_flagship.8
 	}
 }
@@ -118,14 +109,5 @@ on_planet_ownerless = {
 on_planet_transfer = {
 	events = {
 		nsc_events_mothball.9
-	}
-}
-
-# Called when a Starbase changes owner
-# THIS = Ship (Starbase)
-# FROM = Former Owner (Country)
-on_starbase_transfer = {
-	events = {
-		nsc_events.35
 	}
 }

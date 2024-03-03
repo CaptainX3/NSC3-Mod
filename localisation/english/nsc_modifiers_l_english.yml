@@ -10,6 +10,12 @@ mod_ships_society_research_produces_add: "Society Research"
 mod_ships_engineering_research_produces_add: "Engineering Research"
 mod_ships_alloys_produces_add: "Alloy Production"
 
+mod_ship_colossus_cost_mult: "Colossus Build Cost"
+mod_shipsize_colossus_build_speed_mult: "Colossus Build Speed"
+
+mod_ship_juggernaut_cost_mult: "Juggernaut Build Cost"
+mod_shipsize_juggernaut_build_speed_mult: "Juggernaut Build Speed"
+
 mod_shipsize_escortcarrier_upkeep_mult: "Escort Carrier Upkeep"
 mod_shipsize_escortcarrier_hull_mult: "Escort Carrier Hull Points"
 mod_shipsize_escortcarrier_build_speed_mult: "Escort Carrier Build Speed"
@@ -28,7 +34,7 @@ mod_ship_Carrier_cost_mult: "Carrier Build Cost"
 mod_shipsize_Dreadnought_upkeep_mult: "Dreadnought Upkeep"
 mod_shipsize_Dreadnought_hull_mult: "Dreadnought Hull Points"
 mod_shipsize_Dreadnought_build_speed_mult: "Dreadnought Build Speed"
-mod_ship_dreadnought_cost_mult: "Dreadnought Build Cost"
+mod_ship_Dreadnought_cost_mult: "Dreadnought Build Cost"
 
 mod_shipsize_titan_upkeep_mult: "Titan Upkeep"
 mod_shipsize_titan_hull_mult: "Titan Hull Points"

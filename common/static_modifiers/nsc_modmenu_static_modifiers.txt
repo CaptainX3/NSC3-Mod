@@ -40,6 +40,72 @@ nsc_modmenu_ship_class_explorationship_build_speed_mod = {
 	shipsize_explorationship_build_speed_mult = 0.01
 	hide_from_country_list = yes
 }
+nsc_modmenu_ship_class_corvette_build_cost_mod = {
+	ship_corvette_cost_mult = 0.01
+	ship_frigate_cost_mult = -0.01 #this line is added to make this static modifier not affect frigate build cost #look for 'ship_corvette' economic category
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_corvette_build_speed_mod = {
+	shipsize_corvette_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_frigate_build_cost_mod = {
+	#frigate build cost is changed in here
+	ship_frigate_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_frigate_build_speed_mod = {
+	shipsize_frigate_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_destroyer_build_cost_mod = {
+	ship_destroyer_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_destroyer_build_speed_mod = {
+	shipsize_destroyer_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_cruiser_build_cost_mod = {
+	ship_cruiser_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_cruiser_build_speed_mod = {
+	shipsize_cruiser_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_battleship_build_cost_mod = {
+	ship_battleship_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_battleship_build_speed_mod = {
+	shipsize_battleship_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_titan_build_cost_mod = {
+	ship_titan_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_titan_build_speed_mod = {
+	shipsize_titan_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_colossus_build_cost_mod = {
+	ship_colossus_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_colossus_build_speed_mod = {
+	shipsize_colossus_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_juggernaut_build_cost_mod = {
+	ship_juggernaut_cost_mult = 0.01
+	hide_from_country_list = yes
+}
+nsc_modmenu_ship_class_juggernaut_build_speed_mod = {
+	shipsize_juggernaut_build_speed_mult = 0.01
+	hide_from_country_list = yes
+}
 ### Starbase ###
 #classes
 nsc_modmenu_starbase_class_common_upgrade_cost_mod = {
