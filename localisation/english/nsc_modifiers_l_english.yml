@@ -43,8 +43,8 @@ mod_ship_Flagship_cost_mult: "Flagship Build Cost"
 mod_shipsize_headquarters_build_speed_mult: "Headquarters Build Speed"
 mod_ship_headquarters_cost_mult: "Headquarters Build Cost"
 
-mod_shipsize_explorationship_build_speed_mult: "Exploration Cruiser Build Speed"
-mod_ship_explorationship_cost_mult: "Exploration Cruiser Build Cost"
+mod_shipsize_explorationship_build_speed_mult: "Explorer Build Speed"
+mod_ship_explorationship_cost_mult: "Explorer Build Cost"
 
 mod_country_resource_max_minerals_add: "Max Minerals"
 mod_country_resource_max_energy_add: "Max Energy"

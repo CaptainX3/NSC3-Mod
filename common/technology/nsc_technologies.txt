@@ -817,7 +817,7 @@ tech_graviton_power = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
@@ -853,7 +853,7 @@ tech_naquadria_power = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
@@ -889,7 +889,7 @@ tech_singularity_power = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
@@ -925,7 +925,7 @@ tech_multidimensional_power = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
@@ -962,7 +962,7 @@ tech_optimized_enigmatic_power = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
@@ -999,7 +999,7 @@ tech_bh_power_2 = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
@@ -1036,7 +1036,7 @@ tech_bh_power_3 = {
 	}
 	
 	ai_weight = {
-		factor = @energy_grid_ai_factor
+		factor = 100
 	}
 }
 
