@@ -1,0 +1,4 @@
+## FLAGSHIP BLUEPRINTS EVENT CHAIN w/ DIG SITE
+## Synopsis: Players find dig-site; upon completion, multiple POIs into dig-sites appear in their borders. Completion of chain unlocks Flagship, as well as selected bonus towards either T/XL slots, H/P slots, or M slots on the flagship (10% bonus for chosen weapon type in Flagship Aura [subject to change])
+
+##CaptainX3 if you're reading this, harrass me to get started if I don't get working on this by April 9th
