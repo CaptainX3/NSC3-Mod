@@ -482,6 +482,7 @@ utility_component_template = {
 	ai_tag_weight = 0
 
 	modifier = {
+		ship_evasion_mult = 0.10
 		weapon_type_explosive_weapon_damage_mult = 0.15
 	}
 
