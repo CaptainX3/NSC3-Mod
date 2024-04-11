@@ -37,17 +37,17 @@ tech_Flagship_1_desc: "The naval arms race has seen the production of larger and
 tech_supportcruiser_1: "Support Destroyer Upgrade"
 tech_supportcruiser_1_desc: "As our fleets grow in size, and the distance they travel from home increases, it becomes necessary to support them internally instead of trying to maintain long-range supply lines. The Support Destroyer is the answer to this problem, adding new support capabilities to our Destroyers through the addition of advanced modules." 
 
-tech_explorationship_1: "Exploration Cruiser (Level 1)"
+tech_explorationship_1: "Explorer (Level 1)"
 tech_explorationship_1_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers suggest the development of a large, combat-capable Science Ship dedicated to exploring new worlds, seeking out new life and new civilizations, and boldly going where no one has gone before."
 
-tech_explorationship_2: "Exploration Cruiser (Level 2)"
-tech_explorationship_2_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser, suggest developing a more powerful variant to further increase the protection available to our best and brightest Science Officers."
+tech_explorationship_2: "Explorer (Level 2)"
+tech_explorationship_2_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Explorer, suggest developing a more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
-tech_explorationship_3: "Exploration Cruiser (Level 3)"
-tech_explorationship_3_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
+tech_explorationship_3: "Explorer (Level 3)"
+tech_explorationship_3_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Explorer's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
-tech_explorationship_4: "Exploration Cruiser (Level 4)"
-tech_explorationship_4_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
+tech_explorationship_4: "Explorer (Level 4)"
+tech_explorationship_4_desc: "Our intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Explorer's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
 tech_drydock_1: "Starbase Drydock"
 tech_drydock_1_desc: "This specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair many warships at once."
@@ -246,20 +246,20 @@ TECH_UNLOCK_DREADNOUGHT_CONSTRUCTION_DESC: "§HDreadnought§!\nThe Battleship he
 TECH_UNLOCK_FLAGSHIP_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! Flagship"
 TECH_UNLOCK_FLAGSHIP_CONSTRUCTION_DESC: "§HFlagship§!\nThe naval arms race has seen the production of larger and larger warships with no end in sight. Our naval engineers have suggested jumping to the logical conclusion of this serial escalation by constructing a ship so massive and powerful, that no empire will be able to support more than one of them at a time. This proposed Flagship will be the ultimate warship. Designed for maximum versatility, each section will have many possible configurations, allowing us to design our Flagship to suit our purposes. Mounting far more thrusters per ton than any other ship, the Flagship will be able to take any position in the fleet, from a long-range battery in the rear, to a massive brawler at the tip of a fleet's spear.\n\nThis power and versatility will come at a heavy cost, however. Merely building the Flagship will be an enormous endeavor, requiring a colossal stockpile of resources and a significant investment of time and manpower. Upon completion, it will take the entire GDP of a small star nation to maintain; as a result, it will require a massive amount of political influence to obtain approval for the project."
 
-TECH_UNLOCK_SUPPORTSHIP_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Support Cruiser"
-TECH_UNLOCK_SUPPORTSHIP_CONSTRUCTION_DESC: "§HFleet Support Ship§!\nAs our fleets grow in size, and the distance they travel from home increases, it becomes necessary to support them internally instead of trying to maintain long-range supply lines. The Support Cruiser is the answer to this problem, adding new support capabilities to our Cruisers through the addition of advanced modules." 
+TECH_UNLOCK_SUPPORTSHIP_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Support Destroyer"
+TECH_UNLOCK_SUPPORTSHIP_CONSTRUCTION_DESC: "§HFleet Support Ship§!\nAs our fleets grow in size, and the distance they travel from home increases, it becomes necessary to support them internally instead of trying to maintain long-range supply lines. The Support Destroyer is the answer to this problem, adding new support capabilities to our Cruisers through the addition of advanced modules." 
 
-TECH_UNLOCK_EXPLORATIONSHIP_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! Exploration Cruiser"
-TECH_UNLOCK_EXPLORATIONSHIP_CONSTRUCTION_DESC: "§HExploration Cruiser§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers suggest the development of a large, combat-capable Science Ship dedicated to exploring new worlds, seeking out new life and new civilizations, and boldly going where no one has gone before."
+TECH_UNLOCK_EXPLORATIONSHIP_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! Explorer"
+TECH_UNLOCK_EXPLORATIONSHIP_CONSTRUCTION_DESC: "§HExplorer§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers suggest the development of a large, combat-capable Science Ship dedicated to exploring new worlds, seeking out new life and new civilizations, and boldly going where no one has gone before."
 
-TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Exploration Cruiser - Level 2"
-TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_DESC: "§HExploration Cruiser - Level 2§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser, suggest developing a more powerful variant to further increase the protection available to our best and brightest Science Officers."
+TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Explorer - Level 2"
+TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_DESC: "§HExplorer - Level 2§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Explorer, suggest developing a more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
-TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Exploration Cruiser - Level 3"
-TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_DESC: "§HExploration Cruiser - Level 3§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
+TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Explorer - Level 3"
+TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_DESC: "§HExplorer - Level 3§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Explorer's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
-TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Exploration Cruiser - Level 4"
-TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_DESC: "§HExploration Cruiser - Level 4§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Exploration Cruiser's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
+TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_TITLE: "§HUnlocks Ship Upgrade:§! Explorer - Level 4"
+TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_DESC: "§HExplorer - Level 4§!\nOur intrepid Science Officers have faced incredible danger in their quest to explore the galaxy and uncover all the secrets it has to offer. Our naval engineers, pleased with the performance of the Explorer's upgraded form, suggest developing an even more powerful variant to further increase the protection available to our best and brightest Science Officers."
 
 TECH_UNLOCK_DRYDOCK_CONSTRUCTION_TITLE: "§HUnlocks Starbase Building:§! Drydock"
 TECH_UNLOCK_DRYDOCK_CONSTRUCTION_DESC: "§HDrydock§!\nThis specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair many warships at once."

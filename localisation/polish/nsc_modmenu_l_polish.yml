@@ -9,7 +9,6 @@ nsc_modmenu_game_content_disabled.fail:0 "\n£trigger_no£ §RThis Content is di
 edict_nsc_modmenu:0 "§YNSC3 Mod Menu§!"
 edict_nsc_modmenu_desc:0 "We can control various contents from New Ship Classes 2 mod here."
 edict_nsc_modmenu_tooltip:0 "§YClick to Open the Mod Configuration UI.§!"
-edict_nsc_modmenu_tooltip.fail:0 "£trigger_no£ §RCan not open this UI multiple times.§!"
 
 ### Country Modifiers ###
 #Ship Classes
@@ -23,6 +22,22 @@ nsc_modmenu_ship_class_Flagship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battle
 nsc_modmenu_ship_class_Flagship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 nsc_modmenu_ship_class_explorationship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 nsc_modmenu_ship_class_explorationship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_corvette_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_corvette_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_frigate_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_frigate_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_destroyer_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_destroyer_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_cruiser_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_cruiser_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_battleship_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_battleship_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_titan_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_titan_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_colossus_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_colossus_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_juggernaut_build_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
+nsc_modmenu_ship_class_juggernaut_build_speed_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
 
 #Starbase Levels
 nsc_modmenu_starbase_class_common_upgrade_cost_mod:0 "$nsc_modmenu_ship_class_Battlecruiser_build_cost_mod$"
@@ -77,8 +92,8 @@ nsc_modmenu_setting_button_category_etc_name:0 "§BETC§!"
 nsc_modmenu_setting_button_etc_feature_name:0 "Other Features"
 nsc_modmenu_setting_button_etc_ai_difficulty_name:0 "AI Difficulties"
 
-nsc_modmenu_game_content_enable_effect_tooltip:0 "Click to §Genable§! this Content. It is currently §Rdisabled§!."
-nsc_modmenu_game_content_disable_effect_tooltip:0 "Click to §Rdisable§! this Content. It is currently §Genabled§!."
+nsc_modmenu_game_content_enable_effect_tooltip:0 "§GClick to enable§! this Content. It is §Rcurrently disabled§!."
+nsc_modmenu_game_content_disable_effect_tooltip:0 "§RClick to disable§! this Content. It is §Gcurrently enabled§!."
 nsc_modmenu_game_content_setting_trigger_tooltip.fail:0 "£trigger_no£ §RThis Content is currently disabled. Enable it to change this setting.§!"
 nsc_modmenu_game_content_vanilla_not_possible_to_disable_trigger_tooltip.fail:0 "£trigger_no£ §RCan not disable Vanilla Content.§!"
 
@@ -257,6 +272,94 @@ nsc_modmenu_setting_page_ship_category_class_explorationship_build_cost_desc_plu
 nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_explorationship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_explorationship_build_speed_var]%§!"
 nsc_modmenu_setting_page_ship_category_class_explorationship_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_explorationship_build_speed_var]%§!"
+
+#corvette
+nsc_modmenu_setting_page_ship_category_class_corvette_name_desc:0 "§H$corvette$§!\n$SHIP_GRAPHICS_CORVETTE_DESC$"
+nsc_modmenu_setting_page_ship_category_class_corvette_enabled_desc:0 "$corvette$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_disabled_desc:0 "$corvette$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_corvette_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_corvette_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_corvette_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_corvette_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_corvette_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_corvette_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_corvette_build_speed_var]%§!"
+
+#frigate
+nsc_modmenu_setting_page_ship_category_class_frigate_name_desc:0 "§H$frigate$§!\n$SHIP_GRAPHICS_FRIGATE_DESC$"
+nsc_modmenu_setting_page_ship_category_class_frigate_enabled_desc:0 "$frigate$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_disabled_desc:0 "$frigate$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_frigate_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_frigate_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_frigate_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_frigate_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_frigate_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_frigate_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_frigate_build_speed_var]%§!"
+
+#destroyer
+nsc_modmenu_setting_page_ship_category_class_destroyer_name_desc:0 "§H$destroyer$§!\n$SHIP_GRAPHICS_DESTROYER_DESC$"
+nsc_modmenu_setting_page_ship_category_class_destroyer_enabled_desc:0 "$destroyer$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_disabled_desc:0 "$destroyer$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_destroyer_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_destroyer_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_destroyer_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_destroyer_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_destroyer_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_destroyer_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_destroyer_build_speed_var]%§!"
+
+#cruiser
+nsc_modmenu_setting_page_ship_category_class_cruiser_name_desc:0 "§H$cruiser$§!\n$SHIP_GRAPHICS_CRUISER_DESC$"
+nsc_modmenu_setting_page_ship_category_class_cruiser_enabled_desc:0 "$cruiser$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_disabled_desc:0 "$cruiser$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_cruiser_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_cruiser_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_cruiser_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_cruiser_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_cruiser_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_cruiser_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_cruiser_build_speed_var]%§!"
+
+#battleship
+nsc_modmenu_setting_page_ship_category_class_battleship_name_desc:0 "§H$battleship$§!\n$SHIP_GRAPHICS_BATTLESHIP_DESC$"
+nsc_modmenu_setting_page_ship_category_class_battleship_enabled_desc:0 "$battleship$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_disabled_desc:0 "$battleship$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_battleship_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_battleship_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_battleship_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_battleship_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_battleship_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_battleship_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_battleship_build_speed_var]%§!"
+
+#titan
+nsc_modmenu_setting_page_ship_category_class_titan_name_desc:0 "§H$titan$§!\n$SHIP_GRAPHICS_TITAN_DESC$"
+nsc_modmenu_setting_page_ship_category_class_titan_enabled_desc:0 "$titan$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_titan_disabled_desc:0 "$titan$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_titan_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_titan_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_titan_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_titan_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_titan_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_titan_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_titan_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_titan_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_titan_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_titan_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_titan_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_titan_build_speed_var]%§!"
+
+#colossus
+nsc_modmenu_setting_page_ship_category_class_colossus_name_desc:0 "§H$colossus$§!\n$SHIP_GRAPHICS_COLOSSUS_DESC$"
+nsc_modmenu_setting_page_ship_category_class_colossus_enabled_desc:0 "$colossus$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_disabled_desc:0 "$colossus$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_colossus_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_colossus_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_colossus_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_colossus_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_colossus_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_colossus_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_colossus_build_speed_var]%§!"
+
+#juggernaut
+nsc_modmenu_setting_page_ship_category_class_juggernaut_name_desc:0 "§H$juggernaut$§!\n$SHIP_GRAPHICS_JUGGERNAUT_DESC$"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_enabled_desc:0 "$juggernaut$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_disabled_desc:0 "$juggernaut$: §RDisabled§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_ship_class_juggernaut_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_desc_minus:0 "Build Cost: §G[This.nsc_modmenu_ship_class_juggernaut_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_cost_desc_plus:0 "Build Cost: §R+[This.nsc_modmenu_ship_class_juggernaut_build_cost_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_desc_neutral:0 "Build Speed: §Y[This.nsc_modmenu_ship_class_juggernaut_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_ship_class_juggernaut_build_speed_var]%§!"
+nsc_modmenu_setting_page_ship_category_class_juggernaut_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_ship_class_juggernaut_build_speed_var]%§!"
 
 ### Custom GUI Category: Ship Components ###
 #Common
@@ -457,6 +560,31 @@ nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_name_desc:0 "§H
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_enabled_desc:0 "$NSC_PD_MISSILE$: §GEnabled§!"
 nsc_modmenu_setting_page_ship_category_component_NSC_PD_MISSILE_disabled_desc:0 "$NSC_PD_MISSILE$: §RDisabled§!"
 
+#GRAVITON_REACTOR
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_name_desc:0 "§H$GRAVITON_REACTOR$§!\n$GRAVITON_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_enabled_desc:0 "$GRAVITON_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_GRAVITON_REACTOR_disabled_desc:0 "$GRAVITON_REACTOR$: §RDisabled§!"
+
+#NAQUADRIA_REACTOR
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_name_desc:0 "§H$NAQUADRIA_REACTOR$§!\n$NAQUADRIA_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_enabled_desc:0 "$NAQUADRIA_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_NAQUADRIA_REACTOR_disabled_desc:0 "$NAQUADRIA_REACTOR$: §RDisabled§!"
+
+#SINGULARITY_REACTOR
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_name_desc:0 "§H$SINGULARITY_REACTOR$§!\n$SINGULARITY_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_enabled_desc:0 "$SINGULARITY_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_SINGULARITY_REACTOR_disabled_desc:0 "$SINGULARITY_REACTOR$: §RDisabled§!"
+
+#MULTIDIMENSIONAL_REACTOR
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_name_desc:0 "§H$MULTIDIMENSIONAL_REACTOR$§!\n$MULTIDIMENSIONAL_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_enabled_desc:0 "$MULTIDIMENSIONAL_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_MULTIDIMENSIONAL_REACTOR_disabled_desc:0 "$MULTIDIMENSIONAL_REACTOR$: §RDisabled§!"
+
+#OPTIMIZED_ENIGMATIC_REACTOR
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_name_desc:0 "§H$OPTIMIZED_ENIGMATIC_REACTOR$§!\n$OPTIMIZED_ENIGMATIC_REACTOR_DESC$"
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_enabled_desc:0 "$OPTIMIZED_ENIGMATIC_REACTOR$: §GEnabled§!"
+nsc_modmenu_setting_page_ship_category_component_OPTIMIZED_ENIGMATIC_REACTOR_disabled_desc:0 "$OPTIMIZED_ENIGMATIC_REACTOR$: §RDisabled§!"
+
 ### Custom GUI Category: Starbase Levels ###
 #Common
 nsc_modmenu_setting_page_starbase_category_class_name:0 "$nsc_modmenu_setting_button_category_starbase_name$ $nsc_modmenu_setting_button_starbase_class_name$"
@@ -489,7 +617,7 @@ nsc_modmenu_setting_page_starbase_category_class_headquarters_enabled_desc:0 "$s
 nsc_modmenu_setting_page_starbase_category_class_headquarters_disabled_desc:0 "$starbase_headquarters$: §RDisabled§!"
 
 #outpost
-nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "This setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3."
+nsc_modmenu_setting_page_starbase_category_class_outpost_name_desc:0 "$TECH_UNLOCK_OUTPOST_CONSTRUCTION_DESC$\n§YThis setting changes the numbers of ALL starbase levels in the game, both vanilla and those added by NSC3.§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_enabled_desc:0 "$starbase_outpost$: §GEnabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_disabled_desc:0 "$starbase_outpost$: §RDisabled§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_cost_desc_neutral:0 "Build Cost: §Y[This.nsc_modmenu_starbase_class_outpost_build_cost_var]%§!"
@@ -499,10 +627,10 @@ nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_neutra
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_minus:0 "Build Speed: §R[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
 nsc_modmenu_setting_page_starbase_category_class_outpost_build_speed_desc_plus:0 "Build Speed: §G+[This.nsc_modmenu_starbase_class_outpost_build_speed_var]%§!"
 
-nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of all Starbase Levels by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
-nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of all Starbase Levels by by §R+5%§!."
-nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of all Starbase Levels by by §R-5%§!."
-nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of all Starbase Levels by by §G+5%§!."
+nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip:0 "Click to change the Build Cost of this Starbase Level by §G-5%§!.\n§YWith v3.7 Update, Vanilla Cost Reduction is capped to -90%.§!"
+nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip:0 "Click to change the Build Cost of this Starbase Level by by §R+5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_down_effect_tooltip:0 "Click to change the Build Speed of this Starbase Level by by §R-5%§!."
+nsc_modmenu_starbase_class_outpost_build_speed_up_effect_tooltip:0 "Click to change the Build Speed of this Starbase Level by by §G+5%§!."
 
 nsc_modmenu_starbase_class_outpost_build_cost_down_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_down_effect_tooltip$\n£trigger_no£ §RMinimum Limit Reached§!"
 nsc_modmenu_starbase_class_outpost_build_cost_up_trigger_tooltip.fail:0 "$nsc_modmenu_starbase_class_outpost_build_cost_up_effect_tooltip$\n£trigger_no£ §RMaximum Limit Reached§!"

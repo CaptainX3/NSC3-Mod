@@ -117,13 +117,13 @@ EXPLORATION_SLOT_ENGINEERING_LAB: "Advanced Engineering Laboratory"
 EXPLORATION_SLOT_ENGINEERING_LAB_DESC: "§HProduces:§! 10 Engineering Research\nThis advanced laboratory is dedicated to producing ground-breaking Engineering research--exploration into the secrets of materials, industry, spacecraft, propulsion, and robotics."
 
 EXPLORATION_SLOT_MINING_FACILITY: "Asteroid Mining Facility"
-EXPLORATION_SLOT_MINING_FACILITY_DESC: "§HProduces:§! 7 Minerals\n§HUpkeep:§! 5 Energy\nThis facility allows an empire to convert an old Exploration Cruiser into an advanced mining platform, able to produce a small amount of minerals each month."
+EXPLORATION_SLOT_MINING_FACILITY_DESC: "§HProduces:§! 7 Minerals\n§HUpkeep:§! 5 Energy\nThis facility allows an empire to convert an old Explorer into an advanced mining platform, able to produce a small amount of minerals each month."
 
 EXPLORATION_SLOT_SOLAR_ARRAY: "Solar Panel Array"
-EXPLORATION_SLOT_SOLAR_ARRAY_DESC: "§HProduces:§! 7 Energy\n§HUpkeep:§! 5 Minerals\nThis facility allows an empire to convert an old Exploration Cruiser into a large solar panel array and battery system, able to produce a small amount of energy each month."
+EXPLORATION_SLOT_SOLAR_ARRAY_DESC: "§HProduces:§! 7 Energy\n§HUpkeep:§! 5 Minerals\nThis facility allows an empire to convert an old Explorer into a large solar panel array and battery system, able to produce a small amount of energy each month."
 
 EXPLORATION_SLOT_ALLOY_REFINERY: "Alloy Refinery"
-EXPLORATION_SLOT_ALLOY_REFINERY_DESC: "§HProduces:§! 7 Alloys\n§HUpkeep:§! 3 Minerals & 3 Energy\nThis facility allows an empire to convert an old Exploration Cruiser into a modern alloy refinery, able to produce a small amount of alloys each month."
+EXPLORATION_SLOT_ALLOY_REFINERY_DESC: "§HProduces:§! 7 Alloys\n§HUpkeep:§! 3 Minerals & 3 Energy\nThis facility allows an empire to convert an old Explorer into a modern alloy refinery, able to produce a small amount of alloys each month."
 
 FRIGATE_CLOAK: "Frigate Advanced Cloaking Device"
 FRIGATE_CLOAKING: "Frigate Advanced Cloaking Device"
@@ -171,7 +171,7 @@ FLAGSHIP_JUMP_DRIVE_DESC: "The Flagship Jump Drive tears ship-sized holes in the
 HEADQUARTERS_JUMP_DRIVE: "Headquarters Jump Drive"
 HEADQUARTERS_JUMP_DRIVE_DESC: "The Headquarters Jump Drive tears ship-sized holes in the very fabric of reality, allowing for near-instantaneous movement between systems. Because of the size and mass of the station, this drive has an extremely long recharge time and can only be used very sporadically."
 
-EXPLORATION_HYPER_DRIVE: "Exploration Cruiser Hyper Drive"
+EXPLORATION_HYPER_DRIVE: "Explorer Hyper Drive"
 EXPLORATION_HYPER_DRIVE_DESC: "Ships equipped with Hyper Drives travel swiftly between the edges of star systems along interstellar hyperlanes."
 
 # NSC_AMMO_CRYSTAL_1: "Focusing Crystal"
@@ -482,11 +482,11 @@ interdictor_desc: "Interdictor Configuration"
  CARRIER_CLOAKING_PSI_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-60%§!\nSublight Speed: §R-30%§!\nStrike Craft Damage: §R-20%§!\nStrike Craft Fire Rate: §R-20%§!\nStrike Craft Speed: §R-20%§!"
  
  
- EXPLORATION_CLOAKING_3: "Exploration Cruiser Elite Cloak"
+ EXPLORATION_CLOAKING_3: "Explorer Elite Cloak"
  EXPLORATION_CLOAKING_3_DESC: "$CLOAKING_3_DESC$"
- EXPLORATION_CLOAKING_DARK_MATTER: "Exploration Cruiser Dark Matter Cloak"
+ EXPLORATION_CLOAKING_DARK_MATTER: "Explorer Dark Matter Cloak"
  EXPLORATION_CLOAKING_DARK_MATTER_DESC: "$CLOAKING_DARK_MATTER_DESC$"
- EXPLORATION_CLOAKING_PSI: "Exploration Cruiser Psi-Phase Cloak"
+ EXPLORATION_CLOAKING_PSI: "Explorer Psi-Phase Cloak"
  EXPLORATION_CLOAKING_PSI_DESC: "$CLOAKING_PSI_DESC$"
  
  EXPLORATION_CLOAKING_3_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-50%§!\nSublight Speed: §G+10%§!\nSensor Range: §G+1§!\nCloak Detection Strength: §G1§!"
