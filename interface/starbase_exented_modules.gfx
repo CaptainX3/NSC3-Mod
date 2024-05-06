@@ -292,4 +292,29 @@ spriteTypes =
 		name = "GFX_starbase_filler"
 		texturefile = "gfx/interface/icons/modules/sb_filler.dds"
 	}	
+	spriteType = 
+	{
+		name = "GFX_starbase_fleet_club"
+		texturefile = "gfx/interface/icons/modules/sb_fleet_club.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_nightclub"
+		texturefile = "gfx/interface/icons/modules/sb_nightclub.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_public_market"
+		texturefile = "gfx/interface/icons/modules/sb_public_market.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_public_plaza"
+		texturefile = "gfx/interface/icons/modules/sb_public_plaza.dds"
+	}
+	spriteType = 
+	{
+		name = "GFX_starbase_storage_room"
+		texturefile = "gfx/interface/icons/modules/sb_storage_room.dds"
+	}
 }

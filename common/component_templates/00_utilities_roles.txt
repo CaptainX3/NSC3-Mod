@@ -418,7 +418,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "torpedo"
 	prerequisites = { "tech_combat_computers_1" "tech_torpedoes_1" }
-	upgrades_to = "COMBAT_COMPUTER_SWARM_ADVANCED"
+	upgrades_to = "COMBAT_COMPUTER_TORPEDO_ADVANCED"
 	ai_tags = { explosive explosive_stealth }
 	ai_tag_weight = 0
 

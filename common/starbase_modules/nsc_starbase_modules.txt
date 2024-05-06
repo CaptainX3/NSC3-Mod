@@ -576,7 +576,7 @@ solar_panel = {
 }
 
 public_plaza = {
-	icon = "GFX_starbase_filler"
+	icon = "GFX_starbase_public_plaza"
 	construction_days = 90
 
 	potential = {
@@ -615,7 +615,7 @@ public_plaza = {
 }
 
 fleet_club = {
-	icon = "GFX_starbase_filler"
+	icon = "GFX_starbase_fleet_club"
 	construction_days = 90
 
 	potential = {
@@ -664,7 +664,7 @@ fleet_club = {
 }
 
 storage_room = {
-	icon = "GFX_starbase_filler"
+	icon = "GFX_starbase_storage_room"
 	construction_days = 30
 	
 	possible = {
@@ -691,7 +691,7 @@ storage_room = {
 }
 
 nightclub = {
-	icon = "GFX_starbase_filler"
+	icon = "GFX_starbase_nightclub"
 	construction_days = 120
 
 	potential = {
@@ -737,7 +737,7 @@ nightclub = {
 }
 
 public_market = {
-	icon = "GFX_starbase_filler"
+	icon = "GFX_starbase_public_market"
 	construction_days = 100
 
 	potential = {

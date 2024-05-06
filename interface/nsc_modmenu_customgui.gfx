@@ -31,7 +31,7 @@ spriteTypes = {
 		name = "GFX_nsc_modmenu_title"
 		texturefile = "gfx/interface/icons/customgui_elements/nsc_modmenu_title.dds"
 		animation = {
-			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_title_mask.dds"			
+			animationmaskfile = "gfx/interface/icons/customgui_elements/nsc_modmenu_title_mask.dds"
 			animationtexturefile = "gfx/interface/icons/relics/shine_overlay_02.dds" 	# <- the animated file
 			animationrotation = -135	# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = yes			# yes or no ;)
@@ -594,7 +594,7 @@ spriteTypes = {
 		name = "GFX_nsc_modmenu_starbase_armor_module"
 		texturefile = "gfx/interface/icons/modules/sb_armor.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
-	}	
+	}
 	spriteType = {
 		name = "GFX_nsc_modmenu_starbase_asteroid_mining"
 		texturefile = "gfx/interface/icons/modules/asteroid_mining.dds"
@@ -623,6 +623,31 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_nsc_modmenu_starbase_filler"
 		texturefile = "gfx/interface/icons/modules/sb_filler.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_fleet_club"
+		texturefile = "gfx/interface/icons/modules/sb_fleet_club.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_nightclub"
+		texturefile = "gfx/interface/icons/modules/sb_nightclub.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_public_market"
+		texturefile = "gfx/interface/icons/modules/sb_public_market.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_public_plaza"
+		texturefile = "gfx/interface/icons/modules/sb_public_plaza.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
+	}
+	spriteType = {
+		name = "GFX_nsc_modmenu_starbase_storage_room"
+		texturefile = "gfx/interface/icons/modules/sb_storage_room.dds"
 		effectFile = "gfx/FX/buttonstate_onlydisable.shader"
 	}
 	#starbase buildings

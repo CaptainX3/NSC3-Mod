@@ -33,7 +33,7 @@ guiTypes = {
 			size = { width = 964 height = 350 }
 			clipping = yes
 			iconType = { name = "event_picture" spriteType = "GFX_diplomacy_portrait_frame" position = { x = -6 y = -5 } }
-			iconType = { name = "portrait" position = { x = 250 y = 0 } spriteType = "GFX_portrait_character" }	
+			iconType = { name = "portrait" position = { x = 250 y = 0 } spriteType = "GFX_portrait_character" }
 		}
 		containerWindowType = {
 			name = "portrait"
@@ -433,7 +433,7 @@ guiTypes = {
 						no_clicksound = yes
 						effect = "nsc_modmenu_setting_page_mod_category_faq_text_long_button_effect"
 					}
-					
+
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_height = 51
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_header_width = 1
 					@nsc_modmenu_setting_page_mod_category_faq_question_borderSize_width = 2
@@ -449,7 +449,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_button_8_height = 336
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_button_9_height = 380
 					@nsc_modmenu_setting_page_mod_category_faq_question_list_common_button_10_height = 424
-					
+
 					#FAQ Question List 1
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_mod_category_faq_question_list_1"
@@ -720,7 +720,7 @@ guiTypes = {
 						quadTextureSprite = "GFX_button_right"
 						effect = "nsc_modmenu_setting_page_ship_category_class_go_next_button_effect"
 					}
-			
+
 					@nsc_modmenu_setting_page_ship_category_class_content_container_width_1 = 63
 					@nsc_modmenu_setting_page_ship_category_class_content_container_width_2 = 416 #+353 x pixels from '@nsc_modmenu_setting_page_ship_category_class_content_container_width_1'
 					@nsc_modmenu_setting_page_ship_category_class_content_container_height_1 = 55
@@ -1929,7 +1929,7 @@ guiTypes = {
 						quadTextureSprite = "GFX_button_right"
 						effect = "nsc_modmenu_setting_page_ship_category_component_go_next_button_effect"
 					}
-				
+
 					@nsc_modmenu_setting_page_ship_category_component_content_container_width_1 = 74
 					@nsc_modmenu_setting_page_ship_category_component_content_container_width_2 = 423 #+349 x pixels from '@nsc_modmenu_setting_page_ship_category_component_content_container_width_1'
 					@nsc_modmenu_setting_page_ship_category_component_content_container_height_1 = 55
@@ -1960,7 +1960,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_ship_category_component_common_header_width = 61
 					@nsc_modmenu_setting_page_ship_category_component_common_header_height = 11
 					@nsc_modmenu_setting_page_ship_category_component_common_borderSize_width = 2
-					
+
 					@nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width = 224
 					@nsc_modmenu_setting_page_ship_category_component_common_on_width = 229 #+5 x pixels from '@nsc_modmenu_setting_page_ship_category_component_common_on_off_background_width'
 					@nsc_modmenu_setting_page_ship_category_component_common_on_height = 16
@@ -4859,7 +4859,7 @@ guiTypes = {
 						quadTextureSprite = "GFX_button_right"
 						effect = "nsc_modmenu_setting_page_starbase_category_module_go_next_button_effect"
 					}
-				
+
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_width_1 = 74
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_width_2 = 423 #+349 x pixels from '@nsc_modmenu_setting_page_starbase_category_module_content_container_width_1'
 					@nsc_modmenu_setting_page_starbase_category_module_content_container_height_1 = 55
@@ -4879,7 +4879,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width = 224
 					@nsc_modmenu_setting_page_starbase_category_module_common_on_width = 229 #+5 x pixels from '@nsc_modmenu_setting_page_starbase_category_module_common_on_off_background_width'
 					@nsc_modmenu_setting_page_starbase_category_module_common_on_height = 16
-				
+
 					#pd_battery
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_starbase_category_module_pd_battery"
@@ -5456,7 +5456,7 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_module_public_plaza_icon"
 							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
-							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							spriteType = "GFX_nsc_modmenu_starbase_public_plaza"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
 						}
@@ -5507,7 +5507,7 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_module_fleet_club_icon"
 							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
-							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							spriteType = "GFX_nsc_modmenu_starbase_fleet_club"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
 						}
@@ -5558,7 +5558,7 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_module_storage_room_icon"
 							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
-							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							spriteType = "GFX_nsc_modmenu_starbase_storage_room"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
 						}
@@ -5609,7 +5609,7 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_module_nightclub_icon"
 							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
-							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							spriteType = "GFX_nsc_modmenu_starbase_nightclub"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
 						}
@@ -5660,7 +5660,7 @@ guiTypes = {
 						effectbuttonType = {
 							name = "nsc_modmenu_setting_page_starbase_category_module_public_market_icon"
 							position = { x = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width y = @nsc_modmenu_setting_page_starbase_category_module_common_icon_width }
-							spriteType = "GFX_nsc_modmenu_starbase_filler"
+							spriteType = "GFX_nsc_modmenu_starbase_public_market"
 							no_clicksound = yes
 							effect = "nsc_modmenu_setting_page_starbase_category_module_shared_button_effect"
 						}
@@ -7288,7 +7288,7 @@ guiTypes = {
 						quadTextureSprite = "GFX_button_right"
 						effect = "nsc_modmenu_setting_page_etc_category_feature_go_next_button_effect"
 					}
-				
+
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_width_1 = 64
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_width_2 = 417 #+353 x pixels from '@nsc_modmenu_setting_page_etc_category_feature_content_container_width_1'
 					@nsc_modmenu_setting_page_etc_category_feature_content_container_height_1 = 55
@@ -8163,7 +8163,7 @@ guiTypes = {
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width = 325
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_button_21_width = 323
 					@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_up_width = 350 #25 x pixels from '@nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_common_track_21_width'
-					
+
 					#economy_bonus slider
 					containerWindowType = {
 						name = "nsc_modmenu_setting_page_etc_category_ai_difficulty_slider_economy_bonus"
@@ -9423,7 +9423,7 @@ guiTypes = {
 
 					@nsc_modmenu_setting_button_category_header_width = 12
 					@nsc_modmenu_setting_button_category_header_height = -18
-					
+
 					@nsc_modmenu_setting_button_height_1 = 10
 					@nsc_modmenu_setting_button_height_2 = 49 #+39 y pixels from '@nsc_modmenu_setting_button_height_1'
 					@nsc_modmenu_setting_button_height_3 = 88
