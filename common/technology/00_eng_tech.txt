@@ -1033,7 +1033,7 @@ tech_habitat_1 = {
 
 	potential = {
 		OR = {
-			has_origin = origin_void_dwellers
+			has_void_dweller_origin = yes
 			has_origin = origin_toxic_knights
 			host_has_dlc = "Utopia"
 		}
@@ -1110,7 +1110,7 @@ tech_habitat_2 = {
 
 	potential = {
 		OR = {
-			has_origin = origin_void_dwellers #Not toxic knights, they just need level 1 tech
+			has_void_dweller_origin = yes #Not toxic knights, they just need level 1 tech
 			host_has_dlc = "Utopia"
 		}
 	}
@@ -1130,7 +1130,7 @@ tech_habitat_2 = {
 		}
 		modifier = {
 			factor = 10
-			has_origin = origin_void_dwellers
+			is_void_dweller_empire = yes
 		}
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
@@ -1161,7 +1161,7 @@ tech_habitat_3 = {
 
 	potential = {
 		OR = {
-			has_origin = origin_void_dwellers
+			is_void_dweller_empire = yes
 			host_has_dlc = "Utopia"
 		}
 	}
@@ -1181,7 +1181,7 @@ tech_habitat_3 = {
 		}
 		modifier = {
 			factor = 10
-			has_origin = origin_void_dwellers
+			is_void_dweller_empire = yes
 		}
 		inline_script = {
 			script = technologies/rare_technologies_weight_modifiers
@@ -1193,7 +1193,7 @@ tech_habitat_3 = {
 		modifier = {
 			factor = 100
 			OR = {
-				has_origin = origin_void_dwellers
+				is_void_dweller_empire = yes
 				has_origin = origin_toxic_knights
 				has_country_flag = payback_habitat
 				has_valid_civic = civic_void_hive
@@ -2162,10 +2162,7 @@ tech_luxuries_1 = {
 	# Unlocks better consumer goods buildings
 
 	potential = {
-		OR = {
-			is_gestalt = no
-			has_valid_civic = civic_machine_servitor
-		}
+		country_uses_consumer_goods = yes
 	}
 
 	weight_modifier = {
@@ -2202,10 +2199,7 @@ tech_luxuries_2 = {
 	# Unlocks better luxury goods buildings
 
 	potential = {
-		OR = {
-			is_gestalt = no
-			has_valid_civic = civic_machine_servitor
-		}
+		country_uses_consumer_goods = yes
 	}
 
 	weight_modifier = {
@@ -2420,7 +2414,10 @@ tech_robotic_workers = {
 	feature_flags = { robots }
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2466,7 +2463,10 @@ tech_robotic_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_synthetic_fertility
+		}
 	}
 }
 
@@ -2484,7 +2484,10 @@ tech_droid_workers = {
 	feature_flags = { droids }
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2510,7 +2513,6 @@ tech_droid_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
 	}
 
 	ai_weight = {
@@ -2533,7 +2535,10 @@ tech_droid_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_synthetic_fertility
+		}
 	}
 }
 
@@ -2557,7 +2562,10 @@ tech_synthetic_workers = {
 	}
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2622,7 +2630,10 @@ tech_synthetic_workers = {
 			factor = 2
 			has_origin = origin_mechanists
 		}
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_synthetic_fertility
+		}
 	}
 }
 
@@ -2640,7 +2651,10 @@ tech_synthetic_leaders = {
 	## unlocks robot-leaders
 
 	potential = {
-		NOT = { has_ethic = "ethic_gestalt_consciousness" }
+		NOR = {
+			has_ethic = "ethic_gestalt_consciousness"
+			is_individual_machine = yes
+		}
 	}
 
 	weight_modifier = {
@@ -2730,7 +2744,10 @@ tech_integrated_cybernetics = {
 
 	potential = {
 		OR = {
+			AND = {
 			is_machine_empire = no
+				is_individual_machine = no
+			}
 			has_civic = civic_machine_assimilator
 		}
 	}
@@ -2742,7 +2759,10 @@ tech_integrated_cybernetics = {
 
 	ai_weight = {
 		factor = 2
-
+		modifier = {
+			factor = 1000
+			has_origin = origin_cybernetic_creed
+		}
 	}
 }
 
@@ -2976,6 +2996,50 @@ tech_housing_2 = {
 		modifier = {
 			factor = @housing_ai_tech_factor
 			num_pops >= 100
+		}
+	}
+}
+
+tech_leviathan_techgenesis = {
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	is_rare = yes
+	weight = @tier5weight1
+	category = { industry }
+
+	potential = {
+		has_machine_age_dlc = yes
+	}
+
+	prereqfor_desc = {
+		custom = {
+			title = "TECH_UNLOCK_LEVIATHAN_MACHINE_TITLE"
+			desc = "TECH_UNLOCK_LEVIATHAN_MACHINE_DESC"
+		}
+	}
+
+	weight_modifier = {
+		factor = 0
+		# Awarded by event
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 0.5
+			has_ethic = ethic_fanatic_xenophobe
+		}
+		modifier = {
+			factor = 0.75
+			has_ethic = ethic_xenophobe
+		}
+		modifier = {
+			factor = 1.25
+			has_ethic = ethic_xenophile
+		}
+		modifier = {
+			factor = 1.5
+			has_ethic = ethic_fanatic_xenophile
 		}
 	}
 }

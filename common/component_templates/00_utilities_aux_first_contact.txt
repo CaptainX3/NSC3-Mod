@@ -521,7 +521,7 @@ utility_component_template = {
 		DESTROYER_CLOAKING_DARK_MATTER
 		DESTROYER_CLOAKING_PSI
 	}
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	size_restriction = { destroyer crisis_destroyer cosmo_crisis_destroyer offspring_destroyer }
 	prerequisites = { "tech_cloaking_2" }
 	component_set = "CLOAKING_2"
 	upgrades_to = "DESTROYER_CLOAKING_3"
@@ -587,7 +587,7 @@ utility_component_template = {
 		DESTROYER_CLOAKING_DARK_MATTER
 		DESTROYER_CLOAKING_PSI
 	}
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	size_restriction = { destroyer crisis_destroyer cosmo_crisis_destroyer offspring_destroyer }
 	prerequisites = { "tech_cloaking_3" }
 	component_set = "CLOAKING_3"
 	ai_tags = {
@@ -652,7 +652,7 @@ utility_component_template = {
 		DESTROYER_CLOAKING_3
 		DESTROYER_CLOAKING_PSI
 	}
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	size_restriction = { destroyer crisis_destroyer cosmo_crisis_destroyer offspring_destroyer }
 	prerequisites = { "tech_cloaking_dark_matter" }
 	component_set = "CLOAKING_DARK_MATTER"
 	ai_tags = {
@@ -719,7 +719,7 @@ utility_component_template = {
 		DESTROYER_CLOAKING_3
 		DESTROYER_CLOAKING_DARK_MATTER
 	}
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	size_restriction = { destroyer crisis_destroyer cosmo_crisis_destroyer offspring_destroyer }
 	prerequisites = { "tech_cloaking_psi" }
 	component_set = "CLOAKING_PSI"
 	ai_tags = {
@@ -917,6 +917,137 @@ utility_component_template = {
 		CRUISER_CLOAKING_DARK_MATTER
 	}
 	size_restriction = { cruiser explorationship crisis_cruiser offspring_cruiser }
+	prerequisites = { "tech_cloaking_psi" }
+	component_set = "CLOAKING_PSI"
+	ai_tags = {
+		gunship_stealth
+		explosive_stealth
+		carrier_stealth
+		screen_stealth
+		artillery_stealth
+		brawler_stealth
+		energy_torpedoes_stealth
+	}
+	ai_weight = {
+		weight = @psi_cloaking_weight
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = sr_zro }
+		}
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = rare_crystals }
+		}
+		inline_script = ship_components/weights/roles_cloaking_devices
+	}
+}
+
+###############
+# Battleships #
+###############
+
+utility_component_template = {
+	key = "BATTLESHIP_CLOAKING_DARK_MATTER"
+	size = aux
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1
+	power = @power_L5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cloak_l_t4_cost_alloys
+			exotic_gases = @cloak_l_t4_cost_strategic_resources
+			sr_dark_matter = @cloak_l_cost_sr_dark_matter
+		}
+		upkeep = {
+			energy = @cloak_l_t4_upkeep_energy
+			alloys = @cloak_l_t4_upkeep_alloys
+		}
+	}
+
+	modifier = {
+		ship_cloaking_strength_add = @very_low_strength
+	}
+
+	triggered_ship_modifier = {
+		potential = {
+			is_cloaked = yes
+		}
+		modifier = {
+			ship_shield_reduction = 0.5
+		}
+	}
+	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
+
+	ship_limit = 1
+	blocked_by = {
+		BATTLESHIP_CLOAKING_PSI
+	}
+	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser titan cosmo_crisis_titan }
+	prerequisites = { "tech_cloaking_dark_matter" }
+	component_set = "CLOAKING_DARK_MATTER"
+	ai_tags = {
+		gunship_stealth
+		explosive_stealth
+		carrier_stealth
+		screen_stealth
+		artillery_stealth
+		brawler_stealth
+		energy_torpedoes_stealth
+	}
+	ai_weight = {
+		weight = @dark_matter_cloaking_weight
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = exotic_gases }
+		}
+		modifier = {
+			factor = 0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		inline_script = ship_components/weights/roles_cloaking_devices
+	}
+}
+
+utility_component_template = {
+	key = "BATTLESHIP_CLOAKING_PSI"
+	size = aux
+	icon = "GFX_ship_part_cloak_psi"
+	icon_frame = 1
+	power = @power_L5
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cloak_l_t5_cost_alloys
+			rare_crystals = @cloak_l_t5_cost_strategic_resources
+			sr_zro = @cloak_l_cost_sr_zro
+		}
+		upkeep = {
+			energy = @cloak_l_t5_upkeep_energy
+			alloys = @cloak_l_t5_upkeep_alloys
+		}
+	}
+
+	modifier = {
+		ship_cloaking_strength_add = @low_strength
+	}
+
+	triggered_ship_modifier = {
+		potential = {
+			is_cloaked = yes
+			has_non_psionic_shields = yes
+		}
+		modifier = {
+			ship_shield_reduction = 1
+		}
+	}
+	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
+
+	ship_limit = 1
+	blocked_by = {
+		BATTLESHIP_CLOAKING_DARK_MATTER
+	}
+	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser titan cosmo_crisis_titan }
 	prerequisites = { "tech_cloaking_psi" }
 	component_set = "CLOAKING_PSI"
 	ai_tags = {
