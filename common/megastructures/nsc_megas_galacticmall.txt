@@ -164,6 +164,9 @@ nsc_galactic_mall_1 = {
 	upgrade_from = { nsc_galactic_mall_0 }
 
 	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
 	}
 

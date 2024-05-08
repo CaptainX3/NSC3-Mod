@@ -31,6 +31,9 @@ hyperlane_creator_emisor_0 = {
 	}
 
 	possible = {
+		hidden_trigger = {
+			exists = starbase
+		}
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from

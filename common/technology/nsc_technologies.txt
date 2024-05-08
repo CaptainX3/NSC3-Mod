@@ -1734,7 +1734,10 @@ tech_galactic_mall = {
 	}
 
 	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+		AND = {
+			country_uses_consumer_goods = yes
+			nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
+		}
 	}
 	
 	weight_modifier = {

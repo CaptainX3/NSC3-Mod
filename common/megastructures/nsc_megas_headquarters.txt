@@ -25,7 +25,9 @@ nsc_headquarters_0 = {
 	prerequisites = { "tech_mega_engineering" "tech_starbase_6" }
 
 	possible = {
-		exists = starbase
+		hidden_trigger = {
+			exists = starbase
+		}
 		custom_tooltip = {
 			fail_text = "requires_inside_border"
 			is_inside_border = from
