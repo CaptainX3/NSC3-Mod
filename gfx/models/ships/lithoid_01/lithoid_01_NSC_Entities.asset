@@ -19,68 +19,6 @@
 
 
 #################################################################################################################################################################################################
-#####   TRANSPORT WEAPON LOCATOR   ##############################################################################################################################################################
-#################################################################################################################################################################################################
-
-
-entity = {
- name = "lithoid_01_transport_ship_entity"
-	pdxmesh = "lithoid_01_transport_mesh"
-
-	locator = { name = "transport_gun_01" position = { 0 0 0 } rotation = { 0 0 0 } }
-
-	default_state = "idle"
-	state = { name = "idle" state_time = 5
-		event = { time = 0 node = "engine_large" particle = "lithoid_1_75_exhaust_idle" keep_particle = yes trigger_once = yes}
-
-		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_04" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		start_event = { trigger_once = yes sound = { soundeffect = "lithoid_amb_transport_ship_hum" } }
-	}
-	state = { name = "moving" state_time = 2
-		event = { time = 0 node = "engine_large" particle = "lithoid_2_5_wide_exhaust_moving" keep_particle = yes trigger_once = yes}
-		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_lightning_m_entity" trigger_once = no life = 2}
-#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_m_entity" trigger_once = no life = 2}
-#		event = { time = 0 node = "engine_large" entity = "lithoid_thruster_sphere_2_m_entity" trigger_once = no life = 2}
-
-		event = { time = 0 node = "light_locator_01" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_02" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_03" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-		event = { time = 0 node = "light_locator_04" particle = "lithoid_01_ship_light_effect" trigger_once = yes keep_particle = yes }
-
-		event = { trigger_once = yes sound = { soundeffect = "lithoid_moving_out_transport" } }
-	}
-	state = { name = "death" chance = 1 looping = no state_time = 10
-
-		event = { time = 0.0 node = "transport_explosion_locator1" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 1.4 node = "transport_explosion_locator7" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 1.0 node = "transport_explosion_locator10" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 1.6 node = "transport_explosion_locator2" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 1.9 node = "transport_explosion_locator9" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 2.1 node = "transport_explosion_locator8" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 2.83 node = "transport_explosion_locator3" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 3.26 node = "transport_explosion_locator4" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 3.9 node = "transport_explosion_locator5" particle = "lithoid_ship_explosion_s_effect"  }
-		event = { time = 4.1 node = "transport_explosion_locator6" particle = "lithoid_ship_explosion_s_effect" sound = { soundeffect = ship_destroyed } }
-	}
-
-	game_data = {
-		trail_locators = {
-			"engine_large_01" = 		{ width = @small_trail_W 	length = @medium_trail_L   	}
-		}
-	}
-}
-
-
-
-
-
-
-
-
-#################################################################################################################################################################################################
 #####   EXPLORATION CRUISER   ###################################################################################################################################################################
 #################################################################################################################################################################################################
 
