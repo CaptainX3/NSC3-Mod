@@ -127,6 +127,21 @@ starbase_level_caravaneer = {
 	ai_weight = { weight = 5 }
 }
 
+starbase_level_synth_queen = {
+	ship_size = starbase_synth_queen
+	level_weight = 4
+	collects_trade = no
+	ai_weight = { weight = 5 }
+}
+
+starbase_level_synth_queen_big = {
+	ship_size = big_starbase_synth_queen
+	level_weight = 5
+	collects_trade = no
+	display_map_icon = yes
+	ai_weight = { weight = 5 }
+}
+
 starbase_level_fe_outpost = {
 	ship_size = starbase_fe_outpost
 	next_level = starbase_level_starport
