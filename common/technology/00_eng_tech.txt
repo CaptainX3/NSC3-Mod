@@ -1981,6 +1981,23 @@ tech_mining_3 = {
 		starbase_constructions_minerals_produces_mult = 0.10
 	}
 
+	technology_swap = {
+		name = tech_mining_3
+		inherit_icon = yes
+		inherit_effects = yes
+		trigger = {
+			has_ascension_perk = ap_weather_control
+		}
+		prereqfor_desc = {
+			custom = {
+				title = tech_generate_magnetic_storm_tt
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
 	weight_modifier = {
 
 	}
