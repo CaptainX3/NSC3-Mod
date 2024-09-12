@@ -68,7 +68,7 @@ detection_array = {
 			has_starbase_building = dark_matter_listening_post
 		}
 		custom_tooltip = {
-			fail_text = "starbase_detection_limit.tooltip.fail"
+			fail_text = "starbase_detection_limit_6.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 6 type = detection_array include_being_constructed = yes } }
 		}
 	}
@@ -534,8 +534,8 @@ solar_panel = {
 				}
 			}
 			custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail"
-			NOT = { count_starbase_modules = { count > 6 type = solar_panel include_being_constructed = yes } }
+			fail_text = "starbase_filler_limit.tooltip_10.fail"
+			NOT = { count_starbase_modules = { count > 10 type = solar_panel include_being_constructed = yes } }
 		}
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = solar_panel }
@@ -575,6 +575,49 @@ solar_panel = {
 	}
 }
 
+farming_base = {
+	icon = "GFX_starbase_farming_terminal"
+	construction_days = 180
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_hydroponics }
+		is_orbital_ring = no
+	}
+	
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_colonized_planet"
+			solar_system = { any_system_colony = { is_owned_by = from } }
+		}
+		
+		custom_tooltip = {
+			fail_text = "starbase_filler_limit.tooltip_10.fail"
+			NOT = { count_starbase_modules = { count > 10 type = farming_base include_being_constructed = yes } }
+			
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = farming_base }
+	}
+	
+	system_modifier = {
+		planet_farmers_food_produces_add = 1
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 1000
+			energy = 1000
+			influence = 50
+		}
+		upkeep = { energy = 5 }
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	
+	ai_weight = { weight = 25 }
+}
+
 public_plaza = {
 	icon = "GFX_starbase_public_plaza"
 	construction_days = 90
@@ -590,7 +633,7 @@ public_plaza = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail"
+			fail_text = "starbase_filler_limit.tooltip_3.fail"
 			NOT = { count_starbase_modules = { count > 3 type = public_plaza include_being_constructed = yes } }
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_plaza }
@@ -629,7 +672,7 @@ fleet_club = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail"
+			fail_text = "starbase_filler_limit_3.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = fleet_club include_being_constructed = yes } }
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = fleet_club }
@@ -705,7 +748,7 @@ nightclub = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail"
+			fail_text = "starbase_filler_limit_3.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = nightclub include_being_constructed = yes } }
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = nightclub }
@@ -751,7 +794,7 @@ public_market = {
 	
 	possible = {
 		custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip.fail"
+			fail_text = "starbase_filler_limit_3.tooltip.fail"
 			NOT = { count_starbase_modules = { count > 3 type = public_market include_being_constructed = yes } }
 		}
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = module ID = public_market }

@@ -212,7 +212,7 @@ frigate = {
 		}
 	}
 	
-	prerequisites = { "tech_destroyers" }
+	prerequisites = { "tech_torpedoes_1" }
 	
 	combat_disengage_chance = 1.00
 
