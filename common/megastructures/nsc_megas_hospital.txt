@@ -202,7 +202,7 @@ nsc_hospital_2 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -5 y = -5 }
-	build_time = 3600
+	build_time = 720
 	
 	resources = {
 		category = megastructures
@@ -272,7 +272,7 @@ nsc_hospital_3 = {
 	portrait = "GFX_megastructure_construction_background"
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -5 y = -5 }
-	build_time = 3600
+	build_time = 720
 	
 	resources = {
 		category = megastructures
@@ -334,4 +334,144 @@ nsc_hospital_3 = {
 	}
 
 	country_modifier = { job_diagnostician_add = 3 }
+}
+
+nsc_hospital_4 = {
+	entity = "nsc_03_Hospital_entity"
+	construction_entity = "nsc_03_Hospital_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -5 y = -5 }
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = { alloys = 15000 unity = 2500 }
+		cost = {
+			alloys = 150
+			unity = 25
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+		}
+		produces = {
+			society_research = 250
+			unity = 250
+		}
+		produces = {
+			society_research = 2.5
+			unity = 2.5
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 100
+			consumer_goods = 100
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 1.0
+			consumer_goods = 1.0
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			energy = 100
+			minerals = 100
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			energy = 1.0
+			minerals = 1.0
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
+		}
+	}
+	
+	upgrade_from = { nsc_hospital_3 }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+	}
+
+	country_modifier = { job_diagnostician_add = 5 }
+}
+
+nsc_hospital_5 = {
+	entity = "nsc_03_Hospital_entity"
+	construction_entity = "nsc_03_Hospital_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -5 y = -5 }
+	build_time = 720
+	
+	resources = {
+		category = megastructures
+		cost = { alloys = 15000 unity = 2500 }
+		cost = {
+			alloys = 150
+			unity = 25
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+		}
+		produces = {
+			society_research = 300
+			unity = 300
+		}
+		produces = {
+			society_research = 3.0
+			unity = 3.0
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 200
+			consumer_goods = 200
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_regular_empire = yes }
+			}
+			energy = 2.0
+			consumer_goods = 2.0
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			energy = 200
+			minerals = 200
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = { is_gestalt = yes }
+			}
+			energy = 2.0
+			minerals = 2.0
+			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
+		}
+	}
+	
+	upgrade_from = { nsc_hospital_4 }
+
+	possible = {
+		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
+	}
+
+	country_modifier = { job_diagnostician_add = 8 }
 }

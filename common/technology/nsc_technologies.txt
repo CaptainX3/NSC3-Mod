@@ -1553,7 +1553,7 @@ tech_hyperlane_generation = {
 	category = { particles }
 	is_rare = yes
 	is_reverse_engineerable = no
-	prerequisites = { "tech_gateway_activation" "tech_mega_engineering" }
+	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5cost3
 	
 	prereqfor_desc = {

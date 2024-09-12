@@ -5,5 +5,5 @@ tags={
 	"Technologies"
 }
 picture="thumbnail.png"
-supported_version="3.12.*"
+supported_version="v3.13.*"
 path="C:/Users/timdg/Documents/Paradox Interactive/Stellaris/mod/nsc3"
