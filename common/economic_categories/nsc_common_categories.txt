@@ -4,30 +4,64 @@
 
 ships = {
 	use_for_ai_budget = yes
-	generate_mult_modifiers = { produces upkeep }
-	generate_add_modifiers = { produces upkeep }
-
-	ai_use_parent_for_resources_upkeep = { energy }
-
-	parent = country
-
 	generate_mult_modifiers = {
 		cost
         produces
-        upkeep
+		upkeep
 	}
-	
+
 	generate_add_modifiers = {
 		cost
         produces
         upkeep
 	}
 
+	ai_use_parent_for_resources_upkeep = {
+		energy
+	}
+
+	parent = country
+	modifier_category = ship
+
 	triggered_cost_modifier = {
 		key = starbase_shipyard_build
 		use_parent_icon = yes
 
-		modifier_types = { mult }
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = starbase_shipyard_artificial_build
+		use_parent_icon = yes
+
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_space_fauna = no
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = starbase_shipyard_space_fauna_build
+		use_parent_icon = yes
+
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_space_fauna = yes
+		}
 	}
 
 	triggered_cost_modifier = {
@@ -38,15 +72,30 @@ ships = {
 		}
 
 		trigger = {
-			is_scope_valid = yes #When called from ship designer the design is not valid yet.
+			is_scope_valid = yes
 			has_ship_owner_type = galactic_community
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_nanite_swarmer
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = nanite_swarmer
 		}
 	}
 
 	triggered_cost_modifier = {
 		key = ship_corvette
 		use_parent_icon = yes
-		modifier_types = { mult }
+		modifier_types = {
+			mult
+		}
 
 		trigger = {
 			is_scope_valid = yes
@@ -58,22 +107,41 @@ ships = {
 		}
 	}
 
-	#added for 'nsc_modmenu_ship_class_frigate_build_cost_mod'
-	triggered_cost_modifier = {
-		key = ship_frigate
-		use_parent_icon = yes
-		modifier_types = { mult }
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_size = frigate
+		#added for 'nsc_modmenu_ship_class_frigate_build_cost_mod'
+		triggered_cost_modifier = {
+			key = ship_frigate
+			use_parent_icon = yes
+			modifier_types = { mult }
+	
+			trigger = {
+				is_scope_valid = yes
+				is_ship_size = frigate
+			}
 		}
-	}
+
+	#triggered_upkeep_modifier = {
+	#	key = ship_corvette
+	#	use_parent_icon = yes
+	#	modifier_types = {
+	#		add
+	#	}
+	#
+	#	trigger = {
+	#		is_scope_valid = yes
+	#		OR = {
+	#			is_ship_size = corvette
+	#			is_ship_size = offspring_corvette
+	#			is_ship_size = frigate
+	#		}
+	#	}
+	#}
 
 	triggered_cost_modifier = {
 		key = ship_destroyer
 		use_parent_icon = yes
-		modifier_types = { mult }
+		modifier_types = {
+			mult
+		}
 
 		trigger = {
 			is_scope_valid = yes
@@ -83,11 +151,29 @@ ships = {
 			}
 		}
 	}
-	
+
+	#triggered_upkeep_modifier = {
+	#	key = ship_destroyer
+	#	use_parent_icon = yes
+	#	modifier_types = {
+	#		add
+	#	}
+	#
+	#	trigger = {
+	#		is_scope_valid = yes
+	#		OR = {
+	#			is_ship_size = destroyer
+	#			is_ship_size = offspring_destroyer
+	#		}
+	#	}
+	#}
+
 	triggered_cost_modifier = {
 		key = ship_cruiser
 		use_parent_icon = yes
-		modifier_types = { mult }
+		modifier_types = {
+			mult
+		}
 
 		trigger = {
 			is_scope_valid = yes
@@ -97,11 +183,29 @@ ships = {
 			}
 		}
 	}
-	
+
+	#triggered_upkeep_modifier = {
+	#	key = ship_cruiser
+	#	use_parent_icon = yes
+	#	modifier_types = {
+	#		add
+	#	}
+	#
+	#	trigger = {
+	#		is_scope_valid = yes
+	#		OR = {
+	#			is_ship_size = cruiser
+	#			is_ship_size = offspring_cruiser
+	#		}
+	#	}
+	#}
+
 	triggered_cost_modifier = {
 		key = ship_battleship
 		use_parent_icon = yes
-		modifier_types = { mult }
+		modifier_types = {
+			mult
+		}
 
 		trigger = {
 			is_scope_valid = yes
@@ -112,10 +216,41 @@ ships = {
 		}
 	}
 
+	#triggered_upkeep_modifier = {
+	#	key = ship_battleship
+	#	use_parent_icon = yes
+	#	modifier_types = {
+	#		add
+	#	}
+	#
+	#	trigger = {
+	#		is_scope_valid = yes
+	#		OR = {
+	#			is_ship_size = battleship
+	#			is_ship_size = offspring_battleship
+	#		}
+	#	}
+	#}
+
+	#triggered_upkeep_modifier = {
+	#	key = ship_titan
+	#	use_parent_icon = yes
+	#	modifier_types = {
+	#		add
+	#	}
+	#
+	#	trigger = {
+	#		is_scope_valid = yes
+	#		is_ship_size = titan
+	#	}
+	#}
+
 	triggered_cost_modifier = {
 		key = ship_military_station_small
 		use_parent_icon = yes
-		modifier_types = { mult }
+		modifier_types = {
+			mult
+		}
 
 		trigger = {
 			is_scope_valid = yes
@@ -133,17 +268,6 @@ ships = {
 		trigger = {
 			is_scope_valid = yes
 			is_ship_size = military_station_small
-		}
-	}
-
-	triggered_cost_modifier = {
-		key = ship_science
-		use_parent_icon = yes
-		modifier_types = { mult }
-
-		trigger = {
-			is_scope_valid = yes
-			is_ship_class = shipclass_science_ship
 		}
 	}
 
@@ -184,6 +308,7 @@ ships = {
 		use_parent_icon = yes
 		modifier_types = {
 			add
+			mult
 		}
 
 		trigger = {
