@@ -6,4 +6,5 @@ component_set = {
 	icon = "GFX_ship_part_computer"
 	icon_frame = 1	
 	required_component_set = yes
+	is_core_component_set = yes
 }
