@@ -9,6 +9,7 @@ component_set = {
 	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
 	required_component_set = yes
+	is_core_component_set = yes
 }
 
 ### STRIKE CRUISER UPGRADE ###
@@ -17,6 +18,7 @@ component_set = {
 	icon = "GFX_ship_part_nsc_ai_computer"
 	icon_frame = 1
 	required_component_set = yes
+	is_core_component_set = yes
 }
 
 
@@ -26,11 +28,13 @@ component_set = {
 	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
 	required_component_set = yes
+	is_core_component_set = yes
 }
 
 component_set = {
 	key = "nsc_flagship_aura"
 	required_component_set = yes
+	is_core_component_set = yes
 	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
 }
@@ -40,6 +44,7 @@ component_set = {
 	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
 	required_component_set = yes
+	is_core_component_set = yes
 }
 
 component_set = {
@@ -47,6 +52,7 @@ component_set = {
 	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
 	required_component_set = yes
+	is_core_component_set = yes
 }
 
 component_set = {

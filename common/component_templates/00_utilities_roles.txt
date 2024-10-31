@@ -79,6 +79,7 @@ utility_component_template = {
 		}
 	}
 	ship_behavior = "swarm"
+	is_default_component = yes
 
 	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
@@ -104,11 +105,10 @@ utility_component_template = {
 		}
 	}
 	ship_behavior = "picket"
+	is_default_component = yes
 	
 	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
-	ai_tags = { screen }
-	ai_tag_weight = 0
 	upgrades_to = "COMBAT_COMPUTER_PICKET_BASIC"
 	ai_tags = { screen }
 	ai_tag_weight = 0
@@ -131,6 +131,7 @@ utility_component_template = {
 		}
 	}
 	ship_behavior = "line"
+	is_default_component = yes
 	
 	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
@@ -156,6 +157,7 @@ utility_component_template = {
 		}
 	}
 	ship_behavior = "artillery"
+	is_default_component = yes
 
 	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
@@ -184,6 +186,7 @@ utility_component_template = {
 	class_restriction = { shipclass_military_station }
 	component_set = "combat_computers"
 	ship_behavior = "platform"
+	is_default_component = yes
 	upgrades_to = "COMBAT_COMPUTER_PLATFORM_BASIC"
 
 	ship_modifier = {
@@ -207,6 +210,7 @@ utility_component_template = {
 		}
 	}
 	ship_behavior = "torpedo"
+	is_default_component = yes
 
 	class_restriction = { shipclass_military shipclass_science_ship shipclass_transport shipclass_constructor shipclass_colonizer }
 	component_set = "combat_computers"
