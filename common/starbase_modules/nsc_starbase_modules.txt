@@ -596,8 +596,8 @@ farming_base = {
 			NOT = { count_starbase_modules = { count > 10 type = farming_base include_being_constructed = yes } }
 			
 		nsc_modmenu_game_content_on_trigger = { CATEGORY = starbase SUBCAT = building ID = farming_base }
+		}
 	}
-	
 	system_modifier = {
 		planet_farmers_food_produces_add = 1
 	}
