@@ -42,7 +42,7 @@ ship_behavior = {
 	return_to_formation_distance = 60
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -55,7 +55,7 @@ ship_behavior = {
 	return_to_formation_distance = 70
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -68,7 +68,7 @@ ship_behavior = {
 	return_to_formation_distance = 80
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -81,7 +81,7 @@ ship_behavior = {
 	return_to_formation_distance = 95
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -94,7 +94,7 @@ ship_behavior = {
 	return_to_formation_distance = 100
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -107,7 +107,7 @@ ship_behavior = {
 	return_to_formation_distance = 110
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -120,7 +120,7 @@ ship_behavior = {
 	return_to_formation_distance = 120
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -133,7 +133,7 @@ ship_behavior = {
 	return_to_formation_distance = 130
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -146,7 +146,7 @@ ship_behavior = {
 	return_to_formation_distance = 150
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
@@ -159,7 +159,7 @@ ship_behavior = {
 	return_to_formation_distance = 240
 	collision_awareness = 0.35
 
-	attack_move_pattern = stay_at_range
+	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
 }
 
