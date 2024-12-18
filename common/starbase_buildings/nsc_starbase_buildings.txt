@@ -544,7 +544,7 @@ planetary_construction_office = {
 		cost = { alloys = 100 }
 		upkeep = { energy = 5 }
 	}
-	planet_modifier = { 
+	system_modifier = { 
 		planet_building_build_speed_mult = 1
 		planet_clear_blocker_speed_mult = 1
 	}
