@@ -52,6 +52,21 @@ tech_pd_frigate_1 = {
 	ai_weight = {
 		factor = @ai_ship_types_factor
 	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_pd
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			weapon_type_point_defense_weapon_damage_mult = 0.1
+			weapon_type_point_defense_weapon_fire_rate_mult = 0.1
+		}
+	}
 }
 
 tech_StrikeCruiser_1 = {
@@ -217,6 +232,21 @@ tech_heavycarrier_1 = {
 	ai_weight = {
 		factor = @ai_ship_types_factor
 	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_strikecraft_2
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			weapon_type_strike_craft_weapon_damage_mult = 0.05
+			weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		}
+	}
 }
 
 tech_supercarrier_1 = {
@@ -247,6 +277,21 @@ tech_supercarrier_1 = {
 	ai_weight = {
 		factor = @ai_ship_types_factor
 	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_strikecraft_3
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			weapon_type_strike_craft_weapon_damage_mult = 0.05
+			weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		}
+	}
 }
 
 tech_spitfire_1 = {
@@ -275,6 +320,21 @@ tech_spitfire_1 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_spitfire_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			gunship_weapon_damage_mult = 0.05
+			gunship_weapon_fire_rate_mult = 0.05
+		}
 	}
 }
 
@@ -1126,6 +1186,21 @@ tech_battlecruiser_build_speed = {
 	ai_weight = {
 		factor = @ai_ship_types_factor
 	}
+
+	technology_swap = {
+		name = tech_nsc_large_space_fauna_speed_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			large_space_fauna_ship_cost_mult = -0.05
+			large_space_fauna_build_speed_mult = 0.1
+		}
+	}
 }
 
 tech_battlecruiser_hull_1 = {
@@ -1142,6 +1217,20 @@ tech_battlecruiser_hull_1 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_large_space_fauna_hull_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			large_space_fauna_ship_hull_mult = 0.05
+		}
 	}
 }
 
@@ -1165,6 +1254,20 @@ tech_battlecruiser_hull_2 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_large_space_fauna_hull_2
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			large_space_fauna_ship_hull_mult = 0.05
+		}
 	}
 }
 
@@ -1193,6 +1296,21 @@ tech_carrier_build_speed = {
 	ai_weight = {
 		factor = @ai_ship_types_factor
 	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_strikecraft_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			weapon_type_strike_craft_weapon_damage_mult = 0.05
+			weapon_type_strike_craft_weapon_fire_rate_mult = 0.05
+		}
+	}
 }
 
 tech_carrier_hull_1 = {
@@ -1211,6 +1329,20 @@ tech_carrier_hull_1 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_shield_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			space_fauna_ship_shield_mult = 0.1
+		}
 	}
 }
 
@@ -1236,6 +1368,20 @@ tech_carrier_hull_2 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_shield_2
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			space_fauna_ship_shield_mult = 0.1
+		}
 	}
 }
 
@@ -1269,6 +1415,20 @@ tech_dreadnought_build_speed = {
 	ai_weight = {
 		factor = @ai_ship_types_factor
 	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_firerate_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			space_fauna_ship_fire_rate_mult = 0.1
+		}
+	}
 }
 
 tech_dreadnought_hull_1 = {
@@ -1290,6 +1450,20 @@ tech_dreadnought_hull_1 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_armor_1
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			space_fauna_ship_armor_mult = 0.1
+		}
 	}
 }
 
@@ -1313,6 +1487,20 @@ tech_dreadnought_hull_2 = {
 	
 	ai_weight = {
 		factor = @ai_ship_types_factor
+	}
+
+	technology_swap = {
+		name = tech_nsc_space_fauna_armor_2
+		inherit_icon = no
+		inherit_effects = no
+
+		trigger = {
+			is_beastmasters_empire = yes
+		}
+
+		modifier = {
+			space_fauna_ship_armor_mult = 0.1
+		}
 	}
 }
 

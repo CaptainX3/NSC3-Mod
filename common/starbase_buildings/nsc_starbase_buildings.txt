@@ -43,6 +43,15 @@ drydock = {
 		mult = value:num_starbase_modules_of_type|TYPE|shipyard|
 	}
 
+	triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			has_starbase_module = beastport
+		}
+		starbase_shipyard_capacity_add = 1
+		mult = value:num_starbase_modules_of_type|TYPE|beastport|
+	}
+
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 100 }
