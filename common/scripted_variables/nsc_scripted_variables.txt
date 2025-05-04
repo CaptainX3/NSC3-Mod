@@ -1,0 +1,23 @@
+##################
+# BATTLECRUISER
+##################
+
+@battlecruiser_logistic_upkeep_trade = 0.6
+
+##################
+# CARRIER
+##################
+
+@carrier_logistic_upkeep_trade = 1
+
+##################
+# DREADNOUGHT
+##################
+
+@dreadnought_logistic_upkeep_trade = 1.4
+
+##################
+# FLAGSHIP
+##################
+
+@flagship_logistic_upkeep_trade = 8

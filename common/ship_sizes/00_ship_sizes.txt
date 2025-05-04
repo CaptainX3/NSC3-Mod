@@ -80,7 +80,6 @@ corvette = {
 	max_hitpoints = 300
 	modifier = {
 		ship_evasion_add = 60
-		ship_piracy_suppression_add = 10
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
@@ -93,7 +92,7 @@ corvette = {
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
-	default_behavior = swarm
+	role_background = "GFX_role_selection_corvette"
 	ship_roles = { screen gunship artillery brawler }
 	triggered_ship_roles = {
 		{
@@ -101,6 +100,8 @@ corvette = {
 			trigger = { has_technology = tech_cloaking_1 }
 		}
 	}
+
+	default_behavior = swarm
 
 	prerequisites = { "tech_corvettes" }
 	
@@ -121,6 +122,9 @@ corvette = {
 		upkeep = {
 			energy = @corvette_upkeep_energy
 			alloys = @corvette_upkeep_alloys
+		}
+		logistics = {
+			trade = @corvette_logistic_upkeep_trade
 		}
 	}
 
@@ -184,7 +188,6 @@ frigate = {
 	max_hitpoints = 500
 	modifier = {
 		ship_evasion_add = 50
-		ship_piracy_suppression_add = 10
 	}
 	hull_scale = 1.25
 	size_multiplier = 2
@@ -200,6 +203,8 @@ frigate = {
 	use_shipnames_from = corvette
 
 	default_behavior = torpedo
+
+	role_background = "GFX_role_selection_frigate"
 	ship_roles = { explosive }
 	triggered_ship_roles = {
 		{
@@ -209,6 +214,10 @@ frigate = {
 		{
 			name = energy_torpedoes
 			trigger = { has_technology = tech_energy_torpedoes_1 }
+		}
+		{
+			name = picket
+			trigger = { has_technology = tech_pd_frigate_1 }
 		}
 	}
 	
@@ -231,6 +240,9 @@ frigate = {
 		upkeep = {
 			energy = @corvette_upkeep_energy
 			alloys = @corvette_upkeep_alloys
+		}
+		logistics = {
+			trade = @frigate_logistic_upkeep_trade
 		}
 	}
 
@@ -276,7 +288,6 @@ destroyer = {
 	max_hitpoints = 1000
 	modifier = {
 		ship_evasion_add = 35
-		ship_piracy_suppression_add = 8
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
@@ -290,6 +301,8 @@ destroyer = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = picket
+
+	role_background = "GFX_role_selection_destroyer"
 	ship_roles = { screen gunship artillery brawler }
 	triggered_ship_roles = {
 		{
@@ -317,6 +330,9 @@ destroyer = {
 		upkeep = {
 			energy = @destroyer_upkeep_energy
 			alloys = @destroyer_upkeep_alloys
+		}
+		logistics = {
+			trade = @destroyer_logistic_upkeep_trade
 		}
 	}
 	
@@ -376,7 +392,6 @@ cruiser = {
 	max_hitpoints = 1800
 	modifier = {
 		ship_evasion_add = 15
-		ship_piracy_suppression_add = 6
 	}
 	size_multiplier = 3
 	fleet_slot_size = 3
@@ -390,6 +405,8 @@ cruiser = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = line
+
+	role_background = "GFX_role_selection_cruiser"
 	ship_roles = { gunship artillery explosive carrier energy_torpedoes }
 	triggered_ship_roles = {
 		{
@@ -435,13 +452,15 @@ cruiser = {
 	required_component_set = "combat_computers"
 	required_component_set = "ai_behaviour"
 	required_component_set = "special_ship_slot"
-	required_component_set = "nsc_strike_cruiser_aura"
 
 	resources = {
 		category = ships
 		upkeep = {
 			energy = @cruiser_upkeep_energy
 			alloys = @cruiser_upkeep_alloys
+		}
+		logistics = {
+			trade = @cruiser_logistic_upkeep_trade
 		}
 	}
 
@@ -496,7 +515,6 @@ Battlecruiser = {
 	
 	modifier = {
 		ship_evasion_add = 8
-		ship_piracy_suppression_add = 9
 	}
 	
 	max_hitpoints = 3500
@@ -515,6 +533,7 @@ Battlecruiser = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = line
+	role_background = "GFX_role_selection_battleship"
 	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler screen }
 
 	prerequisites = { "tech_Battlecruiser_1" }
@@ -536,6 +555,9 @@ Battlecruiser = {
 			energy = 1.9
 			alloys = 0.7
 		}
+		logistics = {
+			trade = @battlecruiser_logistic_upkeep_trade
+		}
 	}
 
 	potential_construction = {
@@ -546,10 +568,6 @@ Battlecruiser = {
 				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
 			}
 		}
-	}
-
-	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Battlecruiser }
 	}
 
 	min_upgrade_cost = { alloys = 6 }
@@ -582,7 +600,6 @@ battleship = {
 	max_hitpoints = 5000
 	modifier = {
 		ship_evasion_add = 8
-		ship_piracy_suppression_add = 4
 	}
 	size_multiplier = 8
 	fleet_slot_size = 8
@@ -596,6 +613,8 @@ battleship = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = artillery
+
+	role_background = "GFX_role_selection_battleship"
 	ship_roles = { artillery carrier gunship spitfire }
 
 	prerequisites = { "tech_battleships" }
@@ -618,6 +637,9 @@ battleship = {
 		upkeep = {
 			energy = @battleship_upkeep_energy
 			alloys = @battleship_upkeep_alloys
+		}
+		logistics = {
+			trade = @battleship_logistic_upkeep_trade
 		}
 	}
 
@@ -676,7 +698,6 @@ Carrier = {
 	collision_radius = @carrier_collision_radius
 	
 	modifier = {
-		ship_piracy_suppression_add = 12
 		ship_evasion_add = 5
 	}
 	
@@ -696,6 +717,7 @@ Carrier = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = carrier
+	role_background = "GFX_role_selection_battleship"
 	ship_roles = { carrier heavy_carrier super_carrier }
 
 	prerequisites = { "tech_Carrier_1" }
@@ -718,6 +740,9 @@ Carrier = {
 			energy = 3.0
 			alloys = 1.0
 		}
+		logistics = {
+			trade = @carrier_logistic_upkeep_trade
+		}
 	}
 
 	potential_construction = {
@@ -728,10 +753,6 @@ Carrier = {
 				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
 			}
 		}
-	}
-
-	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Carrier }
 	}
 
 	min_upgrade_cost = { alloys = 10 }
@@ -760,7 +781,6 @@ Dreadnought = {
 	collision_radius = @dreadnought_collision_radius
 	
 	modifier = {
-		ship_piracy_suppression_add = 4
 		ship_evasion_mult = -1
 	}
 	
@@ -779,7 +799,10 @@ Dreadnought = {
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
-	default_behavior = line
+	default_behavior = artillery
+
+	role_background = "GFX_role_selection_titan"
+	ship_roles = { artillery line }
 
 	prerequisites = { "tech_Dreadnought_1" }
 
@@ -792,10 +815,9 @@ Dreadnought = {
 			energy = 3.4
 			alloys = 1.2
 		}
-	}
-
-	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Dreadnought }
+		logistics = {
+			trade = @dreadnought_logistic_upkeep_trade
+		}
 	}
 
 	min_upgrade_cost = { alloys = 12 }
@@ -847,6 +869,8 @@ titan = {
 	selectable = { host_has_dlc = "Apocalypse" }
 
 	default_behavior = artillery
+
+	role_background = "GFX_role_selection_titan"
 	ship_roles = { artillery gunship }
 
 	prerequisites = { "tech_titans" }
@@ -925,6 +949,9 @@ titan = {
 			energy = @titan_upkeep_energy
 			alloys = @titan_upkeep_alloys
 		}
+		logistics = {
+			trade = @titan_logistic_upkeep_trade
+		}
 	}
 
 	min_upgrade_cost = {
@@ -936,6 +963,8 @@ titan = {
 		max = 25
 		planet_mult = 0.1
 	}
+
+	available_to_everyone = yes
 }
 
 Flagship = {
@@ -946,7 +975,6 @@ Flagship = {
 	collision_radius = @flagship_collision_radius
 
 	modifier = {
-		ship_piracy_suppression_add = 20
 		ship_evasion_mult = -1
 	}
 
@@ -972,7 +1000,6 @@ Flagship = {
 			is_scope_type = megastructure
 			is_megastructure_type = nsc_flagship_shipyard_complete
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #also see: 'nsc_megas_flagship.txt'
 	}
 
 	prerequisites = { "tech_Flagship_1" }
@@ -994,6 +1021,9 @@ Flagship = {
 		produces = { 
 			unity = 25
 			influence = 3
+		}
+		logistics = {
+			trade = @flagship_logistic_upkeep_trade
 		}
 	}
 	min_upgrade_cost = { alloys = 25 }
@@ -1052,7 +1082,30 @@ constructor = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 100
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @construction_ship_cost
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @construction_ship_cost
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @construction_ship_cost
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 
 		upkeep = {
@@ -1071,15 +1124,7 @@ constructor = {
 		}
 	}
 
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
-			}
-		}
-	}
+	available_to_everyone = yes
 
 	ai_ship_data = {
 		min = value:desired_constructors_min
@@ -1129,6 +1174,7 @@ colonizer = {
 			trigger = {
 				from = {
 					is_virtual_empire = no
+					country_uses_bio_ships = no
 				}
 			}
 			alloys = @colony_cost_base
@@ -1138,9 +1184,31 @@ colonizer = {
 			trigger = {
 				from = {
 					is_virtual_empire = yes
+					country_uses_bio_ships = no
 				}
 			}
 			alloys = @colony_cost_low
+		}
+
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = no
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @colony_cost_base
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = yes
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @colony_cost_low
+			mult = 0.5
 		}
 
 		# Consumer goods for non-gestalt empires
@@ -1186,6 +1254,27 @@ colonizer = {
 				}
 			}
 			food = @colony_cost_high
+		}
+		# Additional food to replace alloys if you use biological ships
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = no
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @colony_cost_base
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = yes
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @colony_cost_low
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		# Minerals for lithoids
 		# 200 normally
@@ -1264,6 +1353,7 @@ colonizer = {
 
 	potential_country = {
 		is_guided_sapience_empire = no
+		is_wilderness_empire = no
 		OR = {
 			has_technology = tech_hyper_drive_1
 			has_technology = tech_hyper_drive_2
@@ -1272,6 +1362,8 @@ colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
+
+	available_to_everyone = yes
 
 	ai_ship_data = {
 		min = value:desired_colonizers
@@ -1337,6 +1429,9 @@ sponsored_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
+
+	available_to_everyone = yes
+
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1395,6 +1490,8 @@ lithoid_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
+	available_to_everyone = yes
+
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1445,6 +1542,8 @@ guided_sapience_colonizer = {
 		}
 	}
 
+	available_to_everyone = yes
+
 	ai_ship_data = {
 		min = value:desired_colonizers_base
 	}
@@ -1457,6 +1556,7 @@ guided_sapience_colonizer = {
 			trigger = {
 				from = {
 					is_virtual_empire = no
+					country_uses_bio_ships = no
 				}
 			}
 			alloys = @colony_cost_mid
@@ -1466,9 +1566,31 @@ guided_sapience_colonizer = {
 			trigger = {
 				from = {
 					is_virtual_empire = yes
+					country_uses_bio_ships = no
 				}
 			}
 			alloys = @colony_cost_base
+		}
+		# Halved if you use biological ships
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = no
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @colony_cost_mid
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = yes
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @colony_cost_base
+			mult = 0.5
 		}
 
 		# Consumer goods for non-gestalt empires
@@ -1515,6 +1637,28 @@ guided_sapience_colonizer = {
 			}
 			food = @colony_cost_high
 		}
+		# Additional food to replace alloys if you use biological ships
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = no
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @colony_cost_mid
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+		cost = {
+			trigger = {
+				from = {
+					is_virtual_empire = yes
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @colony_cost_base
+			mult = @halved_alloy_to_food_cost_ratio
+		}
+
 		# Minerals for lithoids
 		# 200 normally
 		cost = {
@@ -1631,7 +1775,30 @@ science = {
 	resources = {
 		category = ships
 		cost = {
-			alloys = 100
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @science_ship_cost
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @science_ship_cost
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @science_ship_cost
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		upkeep = {
 			energy = @science_upkeep_energy
@@ -1662,6 +1829,8 @@ science = {
 		}
 	}
 
+	available_to_everyone = yes
+
 	ai_ship_data = {
 		min = value:desired_science_ships
 		system_mult = value:desired_science_ships_system_mult
@@ -1676,7 +1845,6 @@ explorationship = {
 	
 	modifier = {
 		ship_evasion_add = 10
-		ship_piracy_suppression_add = 2
 		ship_disengage_opportunities_add = 1
 	}
 	
@@ -1719,10 +1887,6 @@ explorationship = {
 		}
 	}
 
-	possible_construction = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship } #also see: 'nsc_events_exploration_ship.3', 'nsc_events_exploration_ship.10'
-	}
-
 	min_upgrade_cost = { alloys = 5 }
 
 	required_component_set = "power_core"
@@ -1758,6 +1922,8 @@ transport = {
 	is_space_station = no
 	icon = ship_size_transport
 
+	available_to_everyone = yes
+
 	combat_disengage_chance = 1.5
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
@@ -1768,6 +1934,7 @@ transport = {
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
+	required_component_set = "science_cloaking_components"
 	auto_upgrade = yes
 }
 
@@ -1783,7 +1950,6 @@ military_station_small = {
 		ship_evasion_mult = -1
 		ship_armor_add = 1000
 		ships_upkeep_mult = -0.25
-		ship_piracy_suppression_add = 2
 	}
 	ship_modifier = { ship_weapon_range_mult = 0.30 }
 	
@@ -1802,6 +1968,7 @@ military_station_small = {
 	is_space_station = yes
 	base_buildtime = @corvette_build_time
 
+	role_background = "GFX_role_selection_defense_platform"
 	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
@@ -1820,12 +1987,15 @@ military_station_small = {
 		OR = {
 			has_starbase_size >= starbase_outpost
 			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
 		}
 	}
 
 	resources = {
 		category = ships
 	}
+
+	available_to_everyone = yes
 }
 
 military_station_medium = {
@@ -1848,6 +2018,8 @@ military_station_medium = {
 	num_target_locators = 5
 	is_space_station = yes
 	base_buildtime = 90
+	role_background = "GFX_role_selection_defense_platform"
+	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 	is_designable = yes
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
@@ -1868,12 +2040,15 @@ military_station_medium = {
 		OR = {
 			has_starbase_size >= starbase_outpost
 			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
 		}
 	}
 	
 	resources = {
 		category = ships
 	}
+
+	available_to_everyone = yes
 }
 
 military_station_large = {
@@ -1897,6 +2072,8 @@ military_station_large = {
 	is_space_station = yes
 	is_designable = yes
 	base_buildtime = 120
+	role_background = "GFX_role_selection_defense_platform"
+	ship_roles = { gunship screen artillery carrier energy_torpedoes }
 	uses_name_prefix = no
 	use_shipnames_from = military_station_small
 	takes_name_from_ship_design = yes
@@ -1916,12 +2093,15 @@ military_station_large = {
 		OR = {
 			has_starbase_size >= starbase_outpost
 			has_starbase_size >= orbital_ring_tier_1
+			has_starbase_size >= starbase_deep_space_citadel_1
 		}
 	}
 
 	resources = {
 		category = ships
 	}
+
+	available_to_everyone = yes
 }
 
 ################
@@ -1956,7 +2136,21 @@ mining_station = {
 	resources = {
 		category = station_gatherers
 		cost = {
-			minerals = 100
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			minerals = @civilian_station_cost
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @civilian_station_cost
+			mult = @mineral_to_food_cost_ratio
 		}
 		cost = {
 			trigger = {
@@ -1970,6 +2164,8 @@ mining_station = {
 			energy = 1
 		}
 	}
+
+	available_to_everyone = yes
 }
 
 research_station = {
@@ -2000,7 +2196,21 @@ research_station = {
 	resources = {
 		category = station_researchers
 		cost = {
-			minerals = 100
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			minerals = @civilian_station_cost
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @civilian_station_cost
+			mult = @mineral_to_food_cost_ratio
 		}
 		cost = {
 			trigger = {
@@ -2010,10 +2220,13 @@ research_station = {
 			}
 			unity = 10
 		}
+
 		upkeep = {
 			energy = 1
 		}
 	}
+
+	available_to_everyone = yes
 }
 
 observation_station = {
@@ -2043,11 +2256,26 @@ observation_station = {
 	resources = {
 		category = station_observers
 		cost = {
-			minerals = 100
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			minerals = @civilian_station_cost
 		}
-
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @civilian_station_cost
+			mult = @mineral_to_food_cost_ratio
+		}
 		upkeep = {
 			energy = 1
 		}
 	}
+
+	available_to_everyone = yes
 }

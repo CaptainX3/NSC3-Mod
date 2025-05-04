@@ -216,7 +216,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	component_slot = {
@@ -292,7 +291,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	component_slot = {
@@ -388,7 +386,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	component_slot = {
@@ -717,7 +714,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	component_slot = {
@@ -783,7 +779,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	component_slot = {
@@ -864,7 +859,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	component_slot = {
@@ -1075,7 +1069,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 	component_slot = {
 		name = "MISSILE_01"
@@ -1120,7 +1113,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 
 	component_slot = {
@@ -1176,7 +1168,6 @@ ship_section_template = {
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
 		ship_base_speed_mult = 0.15
-		ship_piracy_suppression_add = 1.5
 	}
 
 	component_slot = {

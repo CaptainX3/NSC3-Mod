@@ -13,7 +13,6 @@ ap_nsc_matterenergy = {
 			fail_text = "requires_mega_engineering"
 			has_technology = tech_mega_engineering
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = matterenergy }
 	}
 
 	on_enabled = { custom_tooltip = "allow_resource_factory" }	
@@ -65,7 +64,10 @@ ap_eternal_vigilance = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_technology_starbase_4"
-			has_technology = tech_starbase_4
+			OR = {
+				has_technology = tech_starbase_4
+				has_tradition = tr_unyielding_finish
+			}
 		}
 	}
 
@@ -75,6 +77,26 @@ ap_eternal_vigilance = {
 		shipclass_military_station_damage_mult = 0.50
 		starbase_defense_platform_capacity_mult = 0.25
 		country_starbase_capacity_add = 10
+		ship_military_station_small_upkeep_mult = -0.5
+		ship_military_station_medium_upkeep_mult = -0.5
+		ship_military_station_large_upkeep_mult = -0.5
+	}
+
+	triggered_modifier = {
+		potential = {
+			has_biogenesis_dlc = yes
+		}
+		deep_space_citadel_limit_add = 1
+	}
+
+	on_enabled = {
+		custom_tooltip = ap_eternal_vigilance_tt
+		hidden_effect = {
+			country_event = {
+				id = country.2050
+				days = 180
+			}
+		}
 	}
 
 	potential = {

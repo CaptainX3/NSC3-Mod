@@ -391,7 +391,6 @@ tech_Flagship_1 = {
                 has_technology = tech_titans
             }
         }
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship } #some other techs require this one so I decided not to lock it
     }
 	
 	gateway = ship
@@ -469,10 +468,6 @@ tech_explorationship_1 = {
 			desc = "TECH_UNLOCK_EXPLORATIONSHIP_CONSTRUCTION_DESC"
 		}
 	}
-
-	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
-	}
 	
 	weight_modifier = {	
 		modifier = {
@@ -501,10 +496,6 @@ tech_explorationship_2 = {
 			title = "TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_EXPLORATIONSHIP2_CONSTRUCTION_DESC"
 		}
-	}
-	
-	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
 	
 	modifier = {
@@ -544,10 +535,6 @@ tech_explorationship_3 = {
 			desc = "TECH_UNLOCK_EXPLORATIONSHIP3_CONSTRUCTION_DESC"
 		}
 	}
-	
-	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -580,10 +567,6 @@ tech_explorationship_4 = {
 			title = "TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_TITLE"
 			desc = "TECH_UNLOCK_EXPLORATIONSHIP4_CONSTRUCTION_DESC"
 		}
-	}
-	
-	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
 
 	weight_modifier = {
@@ -1751,10 +1734,6 @@ tech_hyperlane_generation = {
 		}
 	}
 
-	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hyperlane_generation }
-	}
-
 	weight_modifier = {
 		factor = 0.5
 		modifier = {
@@ -1922,10 +1901,7 @@ tech_galactic_mall = {
 	}
 
 	potential = {
-		AND = {
-			country_uses_consumer_goods = yes
-			nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = galactic_mall }
-		}
+		country_uses_consumer_goods = yes
 	}
 	
 	weight_modifier = {
@@ -1953,10 +1929,6 @@ tech_hospital = {
 			title = "TECH_UNLOCK_HOPSITAL_TITLE"
 			desc = "TECH_UNLOCK_HOSPITAL_DESC"
 		}
-	}
-
-	potential = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
 	}
 	
 	weight_modifier = {

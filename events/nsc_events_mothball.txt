@@ -168,8 +168,6 @@ fleet_event = {
 
 	immediate = {
 		every_owned_ship = { set_disabled = no }
-		remove_modifier = nsc_modmenu_etc_feature_mothball_fleet_resource_upkeep_mod
-		remove_modifier = nsc_modmenu_etc_feature_mothball_fleet_naval_capacity_upkeep_mod
 		nsc_mothball_target_fleet_remove_all_flags_effect = yes
 		clear_variable = nsc_fleet_in_mothball_spent_time_for_repair_var
 		clear_variable = nsc_fleet_in_mothball_repair_timer_var

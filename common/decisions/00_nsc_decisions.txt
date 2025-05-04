@@ -3,9 +3,9 @@ decision_nsc_mothball_menu = {
 	owned_planets_only = yes
 
 	potential = {
-		always = yes
-		exists = owner
-		owner = { is_ai = no }
+		always = no
+		#exists = owner
+		#owner = { is_ai = no }
 	}
 
 	allow = {
@@ -15,7 +15,6 @@ decision_nsc_mothball_menu = {
 			text = decision_nsc_mothball_menu_trigger.fail
 			any_fleet_in_orbit = { nsc_mothball_target_fleet_requirement = yes }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = mothball }
 	}
 
 	effect = {

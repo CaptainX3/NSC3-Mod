@@ -30,6 +30,18 @@ progenitor_ships_limit = {
 		offspring_destroyer
 		offspring_cruiser
 		offspring_battleship
+		offspring_mauler_stage_1
+		offspring_mauler_stage_2
+		offspring_mauler_stage_3
+		offspring_weaver_stage_1
+		offspring_weaver_stage_2
+		offspring_weaver_stage_3
+		offspring_harbinger_stage_1
+		offspring_harbinger_stage_2
+		offspring_harbinger_stage_3
+		offspring_stinger_stage_1
+		offspring_stinger_stage_2
+		offspring_stinger_stage_3
 	}
 	
 	base = 1

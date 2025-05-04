@@ -50,10 +50,6 @@ weapon_component_template = {
 		}
 	}
 
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = TOMAHAWK_CRUISE_MISSILE }
-	}
-
 	target_weights = {
 		Flagship = 5
 		titan = 4
@@ -105,7 +101,9 @@ weapon_component_template = {
 	projectile_gfx = "large_missile"
 	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	size_restriction = { frigate }
+	potential = {
+		is_ship_size = frigate
+	}
 	inline_script = "targeting/capital_ships"
 
 	resources = {
@@ -117,10 +115,6 @@ weapon_component_template = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
-	}
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = FRIGATE_TORPEDO_1 }
 	}
 	
 	target_weights = {
@@ -170,7 +164,13 @@ weapon_component_template = {
 	projectile_gfx = "large_missile"
 	tags = { weapon_type_explosive g_slot }
 	ai_tags = { weapon_role_artillery artillery artillery_stealth energy_torpedoes energy_torpedoes_stealth }
-	size_restriction = { Battlecruiser military_station_small military_station_medium military_station_large starbase_starport starbase_starhold starbase_starfortress starbase_citadel starbase_stronghold starbase_headquarters }
+	potential = {
+		OR = {
+			is_ship_class = shipclass_starbase
+			is_ship_class = shipclass_military_station
+			is_ship_size = Battlecruiser
+		}
+	}
 	inline_script = "targeting/capital_ships"
 
 	resources = {
@@ -182,10 +182,6 @@ weapon_component_template = {
 			energy = @l_t7_upkeep_energy
 			alloys = @l_t7_upkeep_alloys
 		}
-	}
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLECRUISER_TORPEDO_1 }
 	}
 
 	ai_weight = {
@@ -234,10 +230,6 @@ weapon_component_template = {
 			energy = 0.10
 			alloys = 0.010
 		}
-	}
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NSC_PD_MISSILE }
 	}
 
 	ai_weight = {

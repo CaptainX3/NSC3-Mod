@@ -13,19 +13,33 @@ nsc_hospital_0 = {
 	resources = {
 		category = megastructures
 		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
 			alloys = 5000
 			unity = 2500
 		}
 		cost = {
-			alloys = 50
-			unity = 25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 5000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 5000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		upkeep = { energy = 5 }
-		upkeep = {
-			energy = 0.05
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
 	}
 
 	potential = {
@@ -55,7 +69,6 @@ nsc_hospital_0 = {
 			fail_text = "requires_no_existing_hospital"
 			from = { NOT = { has_country_flag = built_nsc_hospital } }
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
 	}
 	placement_rules = {
 		planet_possible = {
@@ -136,20 +149,36 @@ nsc_hospital_1 = {
 	
 	resources = {
 		category = megastructures
-		cost = { alloys = 15000 unity = 2500 }
 		cost = {
-			alloys = 150
-			unity = 25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		produces = {
 			society_research = 100
 			unity = 100
-		}
-		produces = {
-			society_research = 1
-			unity = 1
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
 		}
 		upkeep = {
 			trigger = {
@@ -162,38 +191,16 @@ nsc_hospital_1 = {
 		upkeep = {
 			trigger = {
                 exists = owner
-				owner = { is_regular_empire = yes }
-			}
-			energy = 0.25
-			consumer_goods = 0.25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
-		upkeep = {
-			trigger = {
-                exists = owner
 				owner = { is_gestalt = yes }
 			}
 			energy = 25
 			minerals = 25
 		}
-		upkeep = {
-			trigger = {
-                exists = owner
-				owner = { is_gestalt = yes }
-			}
-			energy = 0.25
-			minerals = 0.25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
 	}
 	
 	upgrade_from = { nsc_hospital_0 }
-
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
-	}
 	
-	country_modifier = { job_diagnostician_add = 1 }
+	country_modifier = { job_diagnostician_add = 100 }
 }
 
 nsc_hospital_2 = {
@@ -206,20 +213,36 @@ nsc_hospital_2 = {
 	
 	resources = {
 		category = megastructures
-		cost = { alloys = 15000 unity = 2500 }
 		cost = {
-			alloys = 150
-			unity = 25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		produces = {
 			society_research = 150
 			unity = 150
-		}
-		produces = {
-			society_research = 1.5
-			unity = 1.5
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
 		}
 		upkeep = {
 			trigger = {
@@ -232,36 +255,14 @@ nsc_hospital_2 = {
 		upkeep = {
 			trigger = {
 				exists = owner
-				owner = { is_regular_empire = yes }
-			}
-			energy = 0.50
-			consumer_goods = 0.50
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
 				owner = { is_gestalt = yes }
 			}
 			energy = 50
 			minerals = 50
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = { is_gestalt = yes }
-			}
-			energy = 0.50
-			minerals = 0.50
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
 	}
 	
 	upgrade_from = { nsc_hospital_1 }
-
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
-	}
 	
 	country_modifier = { job_diagnostician_add = 2 }
 }
@@ -276,20 +277,36 @@ nsc_hospital_3 = {
 	
 	resources = {
 		category = megastructures
-		cost = { alloys = 15000 unity = 2500 }
 		cost = {
-			alloys = 150
-			unity = 25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		produces = {
 			society_research = 200
 			unity = 200
-		}
-		produces = {
-			society_research = 2
-			unity = 2
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
 		}
 		upkeep = {
 			trigger = {
@@ -302,38 +319,16 @@ nsc_hospital_3 = {
 		upkeep = {
 			trigger = {
 				exists = owner
-				owner = { is_regular_empire = yes }
-			}
-			energy = 0.75
-			consumer_goods = 0.75
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
 				owner = { is_gestalt = yes }
 			}
 			energy = 75
 			minerals = 75
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = { is_gestalt = yes }
-			}
-			energy = 0.75
-			minerals = 0.75
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
 	}
 	
 	upgrade_from = { nsc_hospital_2 }
 
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
-	}
-
-	country_modifier = { job_diagnostician_add = 3 }
+	country_modifier = { job_diagnostician_add = 300 }
 }
 
 nsc_hospital_4 = {
@@ -346,20 +341,36 @@ nsc_hospital_4 = {
 	
 	resources = {
 		category = megastructures
-		cost = { alloys = 15000 unity = 2500 }
 		cost = {
-			alloys = 150
-			unity = 25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		produces = {
 			society_research = 250
 			unity = 250
-		}
-		produces = {
-			society_research = 2.5
-			unity = 2.5
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
 		}
 		upkeep = {
 			trigger = {
@@ -372,38 +383,16 @@ nsc_hospital_4 = {
 		upkeep = {
 			trigger = {
 				exists = owner
-				owner = { is_regular_empire = yes }
-			}
-			energy = 1.0
-			consumer_goods = 1.0
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
 				owner = { is_gestalt = yes }
 			}
 			energy = 100
 			minerals = 100
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = { is_gestalt = yes }
-			}
-			energy = 1.0
-			minerals = 1.0
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
 	}
 	
 	upgrade_from = { nsc_hospital_3 }
 
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
-	}
-
-	country_modifier = { job_diagnostician_add = 5 }
+	country_modifier = { job_diagnostician_add = 500 }
 }
 
 nsc_hospital_5 = {
@@ -416,20 +405,36 @@ nsc_hospital_5 = {
 	
 	resources = {
 		category = megastructures
-		cost = { alloys = 15000 unity = 2500 }
 		cost = {
-			alloys = 150
-			unity = 25
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_build_cost_var
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 2500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		produces = {
 			society_research = 300
 			unity = 300
-		}
-		produces = {
-			society_research = 3.0
-			unity = 3.0
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_produce_var
 		}
 		upkeep = {
 			trigger = {
@@ -442,36 +447,14 @@ nsc_hospital_5 = {
 		upkeep = {
 			trigger = {
 				exists = owner
-				owner = { is_regular_empire = yes }
-			}
-			energy = 2.0
-			consumer_goods = 2.0
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
-		upkeep = {
-			trigger = {
-				exists = owner
 				owner = { is_gestalt = yes }
 			}
 			energy = 200
 			minerals = 200
 		}
-		upkeep = {
-			trigger = {
-				exists = owner
-				owner = { is_gestalt = yes }
-			}
-			energy = 2.0
-			minerals = 2.0
-			multiplier = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_hospital_resource_upkeep_var
-		}
 	}
 	
 	upgrade_from = { nsc_hospital_4 }
 
-	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = hospital }
-	}
-
-	country_modifier = { job_diagnostician_add = 8 }
+	country_modifier = { job_diagnostician_add = 800 }
 }

@@ -79,3 +79,9 @@ component_set = {
 	icon = "GFX_starbase_pd_battery"
 	icon_frame = 1
 }
+
+component_set = {
+	key = "NSC_HYPER_DISRUPTOR"
+	icon = "GFX_starbase_pd_battery"
+	icon_frame = 1
+}

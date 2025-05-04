@@ -2,29 +2,19 @@
 #	POWER	#
 #############
 
-@corvette_power_1 = 75
-@corvette_power_2 = 100
-@corvette_power_3 = 130
-@corvette_power_4 = 170
-@corvette_power_5 = 220
-@corvette_power_6 = 285
-@corvette_power_7 = 350
-@corvette_power_8 = 375
-@corvette_power_9 = 415
-@corvette_power_10 = 480
-@corvette_power_11 = 545
+@corvette_reactor_power_6 = 285
+@corvette_reactor_power_7 = 350
+@corvette_reactor_power_8 = 375
+@corvette_reactor_power_9 = 415
+@corvette_reactor_power_10 = 480
+@corvette_reactor_power_11 = 545
 
-@destroyer_power_1 = 140
-@destroyer_power_2 = 180
-@destroyer_power_3 = 240
-@destroyer_power_4 = 320
-@destroyer_power_5 = 430
-@destroyer_power_6 = 550
-@destroyer_power_7 = 670
-@destroyer_power_8 = 790
-@destroyer_power_9 = 910
-@destroyer_power_10 = 1030
-@destroyer_power_11 = 1150
+@destroyer_reactor_power_6 = 550
+@destroyer_reactor_power_7 = 670
+@destroyer_reactor_power_8 = 790
+@destroyer_reactor_power_9 = 910
+@destroyer_reactor_power_10 = 1030
+@destroyer_reactor_power_11 = 1150
 
 #Old Cruiser Levels
 # @cruiser_power_1 = 380
@@ -39,359 +29,215 @@
 # @cruiser_power_10 = 2050
 # @cruiser_power_11 = 2280
 
-@cruiser_power_1 = 580
-@cruiser_power_2 = 710
-@cruiser_power_3 = 900
-@cruiser_power_4 = 1140
-@cruiser_power_5 = 1445
-@cruiser_power_6 = 1825
-@cruiser_power_7 = 2200
-@cruiser_power_8 = 2575
-@cruiser_power_9 = 2950
-@cruiser_power_10 = 3330
-@cruiser_power_11 = 3710
+@cruiser_reactor_power_6 = 1825
+@cruiser_reactor_power_7 = 2200
+@cruiser_reactor_power_8 = 2575
+@cruiser_reactor_power_9 = 2950
+@cruiser_reactor_power_10 = 3330
+@cruiser_reactor_power_11 = 3710
 
-@Battlecruiser_power_1 = 675
-@Battlecruiser_power_2 = 825
-@Battlecruiser_power_3 = 1125
-@Battlecruiser_power_4 = 1455
-@Battlecruiser_power_5 = 1890
-@Battlecruiser_power_6 = 2415
-@Battlecruiser_power_7 = 2940
-@Battlecruiser_power_8 = 3465
-@Battlecruiser_power_9 = 3990
-@Battlecruiser_power_10 = 4515
-@Battlecruiser_power_11 = 5040
+@Battlecruiser_reactor_power_1 = 675
+@Battlecruiser_reactor_power_2 = 825
+@Battlecruiser_reactor_power_3 = 1125
+@Battlecruiser_reactor_power_4 = 1455
+@Battlecruiser_reactor_power_5 = 1890
+@Battlecruiser_reactor_power_6 = 2415
+@Battlecruiser_reactor_power_7 = 2940
+@Battlecruiser_reactor_power_8 = 3465
+@Battlecruiser_reactor_power_9 = 3990
+@Battlecruiser_reactor_power_10 = 4515
+@Battlecruiser_reactor_power_11 = 5040
 
-@battleship_power_1 = 1100
-@battleship_power_2 = 1440
-@battleship_power_3 = 1900
-@battleship_power_4 = 2500
-@battleship_power_5 = 3100
-@battleship_power_6 = 4000
-@battleship_power_7 = 4900
-@battleship_power_8 = 5800
-@battleship_power_9 = 6700
-@battleship_power_10 = 7600
-@battleship_power_11 = 9000
+@battleship_reactor_power_6 = 4000
+@battleship_reactor_power_7 = 4900
+@battleship_reactor_power_8 = 5800
+@battleship_reactor_power_9 = 6700
+@battleship_reactor_power_10 = 7600
+@battleship_reactor_power_11 = 9000
 
-@Carrier_power_1 = 1400
-@Carrier_power_2 = 2000
-@Carrier_power_3 = 3000
-@Carrier_power_4 = 4000
-@Carrier_power_5 = 5000
-@Carrier_power_6 = 6000
+@Dreadnought_reactor_power_1 = 3000
+@Dreadnought_reactor_power_2 = 4000
+@Dreadnought_reactor_power_3 = 5000
+@Dreadnought_reactor_power_4 = 6000
+@Dreadnought_reactor_power_5 = 7000
+@Dreadnought_reactor_power_6 = 8000
+@Dreadnought_reactor_power_7 = 9000
+@Dreadnought_reactor_power_8 = 10000
+@Dreadnought_reactor_power_9 = 11000
+@Dreadnought_reactor_power_10 = 12000
+@Dreadnought_reactor_power_11 = 13000
 
-@Dreadnought_power_1 = 3000
-@Dreadnought_power_2 = 4000
-@Dreadnought_power_3 = 5000
-@Dreadnought_power_4 = 6000
-@Dreadnought_power_5 = 7000
-@Dreadnought_power_6 = 8000
-@Dreadnought_power_7 = 9000
-@Dreadnought_power_8 = 10000
-@Dreadnought_power_9 = 11000
-@Dreadnought_power_10 = 12000
-@Dreadnought_power_11 = 13000
+@titan_reactor_power_6 = 9500
+@titan_reactor_power_7 = 11000
+@titan_reactor_power_8 = 12500
+@titan_reactor_power_9 = 14000
+@titan_reactor_power_10 = 15500
+@titan_reactor_power_11 = 17000
 
-@titan_power_1 = 2000
-@titan_power_2 = 2500
-@titan_power_3 = 3500
-@titan_power_4 = 5500
-@titan_power_5 = 7500
-@titan_power_6 = 9500
-@titan_power_7 = 11000
-@titan_power_8 = 12500
-@titan_power_9 = 14000
-@titan_power_10 = 15500
-@titan_power_11 = 17000
-
-@juggernaut_power_1 = 3850
-@juggernaut_power_2 = 5000
-@juggernaut_power_3 = 6500
-@juggernaut_power_4 = 8460
-@juggernaut_power_5 = 11000
-@juggernaut_power_6 = 14300
-@juggernaut_power_7 = 18650
-@juggernaut_power_8 = 24500
-@juggernaut_power_9 = 32510
-@juggernaut_power_10 = 43600
-@juggernaut_power_11 = 59000
+@juggernaut_reactor_power_6 = 14300
+@juggernaut_reactor_power_7 = 18650
+@juggernaut_reactor_power_8 = 24500
+@juggernaut_reactor_power_9 = 32510
+@juggernaut_reactor_power_10 = 43600
+@juggernaut_reactor_power_11 = 59000
 
 @hqpower = 90000
 
 @colossus_power = 10000
 
-@starbase_power = 50000
+@Flagship_reactor_power_1 = 35000
+@Flagship_reactor_power_2 = 65000
+@Flagship_reactor_power_3 = 95000
 
-@Flagship_power_1 = 35000
-@Flagship_power_2 = 65000
-@Flagship_power_3 = 95000
+@platform_reactor_power_6 = 2415
+@platform_reactor_power_7 = 2940
+@platform_reactor_power_8 = 3465
+@platform_reactor_power_9 = 3990
+@platform_reactor_power_10 = 4515
+@platform_reactor_power_11 = 5040
 
-@platform_power_1 = 675
-@platform_power_2 = 825
-@platform_power_3 = 1125
-@platform_power_4 = 1455
-@platform_power_5 = 1890
-@platform_power_6 = 2415
-@platform_power_7 = 2940
-@platform_power_8 = 3465
-@platform_power_9 = 3990
-@platform_power_10 = 4515
-@platform_power_11 = 5040
+@station_reactor_power_1 = 1100
+@station_reactor_power_2 = 1440
+@station_reactor_power_3 = 1900
+@station_reactor_power_4 = 2500
+@station_reactor_power_5 = 3100
+@station_reactor_power_6 = 3700
+@station_reactor_power_7 = 4300
+@station_reactor_power_8 = 4900
+@station_reactor_power_9 = 5500
+@station_reactor_power_10 = 6100
+@station_reactor_power_11 = 7000
 
-@station_power_1 = 1100
-@station_power_2 = 1440
-@station_power_3 = 1900
-@station_power_4 = 2500
-@station_power_5 = 3100
-@station_power_6 = 3700
-@station_power_7 = 4300
-@station_power_8 = 4900
-@station_power_9 = 5500
-@station_power_10 = 6100
-@station_power_11 = 7000
-
-@fortress_power_1 = 1200
-@fortress_power_2 = 1500
-@fortress_power_3 = 2000
-@fortress_power_4 = 2500
-@fortress_power_5 = 3000
-@fortress_power_6 = 3500
-@fortress_power_7 = 4000
-@fortress_power_8 = 6000
-@fortress_power_9 = 8000
-@fortress_power_10 = 10000
-@fortress_power_11 = 12000
+@fortress_reactor_power_1 = 1200
+@fortres_reactors_power_2 = 1500
+@fortress_reactor_power_3 = 2000
+@fortress_reactor_power_4 = 2500
+@fortress_reactor_power_5 = 3000
+@fortress_reactor_power_6 = 3500
+@fortress_reactor_power_7 = 4000
+@fortress_reactor_power_8 = 6000
+@fortress_reactor_power_9 = 8000
+@fortress_reactor_power_10 = 10000
+@fortress_reactor_power_11 = 12000
 
 
 ############
 ### COST ###
 ############
 
-@corvette_cost_1 = 10
-@corvette_cost_2 = 13
-@corvette_cost_3 = 17
-@corvette_cost_4 = 22
-@corvette_cost_5 = 28
-@corvette_cost_6 = 37
-@corvette_cost_7 = 47
-@corvette_cost_8 = 58
-@corvette_cost_9 = 70
-@corvette_cost_10 = 83
-@corvette_cost_11 = 97
+@corvette_reactor_cost_6 = 37
+@corvette_reactor_cost_7 = 47
+@corvette_reactor_cost_8 = 58
+@corvette_reactor_cost_9 = 70
+@corvette_reactor_cost_10 = 83
+@corvette_reactor_cost_11 = 97
 
-@destroyer_cost_1 = 20
-@destroyer_cost_2 = 26
-@destroyer_cost_3 = 34
-@destroyer_cost_4 = 44
-@destroyer_cost_5 = 56
-@destroyer_cost_6 = 74
-@destroyer_cost_7 = 94
-@destroyer_cost_8 = 116
-@destroyer_cost_9 = 140
-@destroyer_cost_10 = 166
-@destroyer_cost_11 = 194
+@destroyer_reactor_cost_6 = 74
+@destroyer_reactor_cost_7 = 94
+@destroyer_reactor_cost_8 = 116
+@destroyer_reactor_cost_9 = 140
+@destroyer_reactor_cost_10 = 166
+@destroyer_reactor_cost_11 = 194
 
-@cruiser_cost_1 = 40
-@cruiser_cost_2 = 52
-@cruiser_cost_3 = 68
-@cruiser_cost_4 = 88
-@cruiser_cost_5 = 112
-@cruiser_cost_6 = 148
-@cruiser_cost_7 = 188
-@cruiser_cost_8 = 232
-@cruiser_cost_9 = 280
-@cruiser_cost_10 = 332
-@cruiser_cost_11 = 388
+@cruiser_reactor_cost_6 = 148
+@cruiser_reactor_cost_7 = 188
+@cruiser_reactor_cost_8 = 232
+@cruiser_reactor_cost_9 = 280
+@cruiser_reactor_cost_10 = 332
+@cruiser_reactor_cost_11 = 388
 
-@Battlecruiser_cost_1 = 60
-@Battlecruiser_cost_2 = 78
-@Battlecruiser_cost_3 = 102
-@Battlecruiser_cost_4 = 132
-@Battlecruiser_cost_5 = 168
-@Battlecruiser_cost_6 = 222
-@Battlecruiser_cost_7 = 282
-@Battlecruiser_cost_8 = 348
-@Battlecruiser_cost_9 = 420
-@Battlecruiser_cost_10 = 498
-@Battlecruiser_cost_11 = 582
+@Battlecruiser_reactor_cost_1 = 60
+@Battlecruiser_reactor_cost_2 = 78
+@Battlecruiser_reactor_cost_3 = 102
+@Battlecruiser_reactor_cost_4 = 132
+@Battlecruiser_reactor_cost_5 = 168
+@Battlecruiser_reactor_cost_6 = 222
+@Battlecruiser_reactor_cost_7 = 282
+@Battlecruiser_reactor_cost_8 = 348
+@Battlecruiser_reactor_cost_9 = 420
+@Battlecruiser_reactor_cost_10 = 498
+@Battlecruiser_reactor_cost_11 = 582
 
-@battleship_cost_1 = 80
-@battleship_cost_2 = 104
-@battleship_cost_3 = 136
-@battleship_cost_4 = 176
-@battleship_cost_5 = 224
-@battleship_cost_6 = 296
-@battleship_cost_7 = 376
-@battleship_cost_8 = 464
-@battleship_cost_9 = 560
-@battleship_cost_10 = 664
-@battleship_cost_11 = 776
+@battleship_reactor_cost_6 = 296
+@battleship_reactor_cost_7 = 376
+@battleship_reactor_cost_8 = 464
+@battleship_reactor_cost_9 = 560
+@battleship_reactor_cost_10 = 664
+@battleship_reactor_cost_11 = 776
 
-@Dreadnought_cost_1 = 120
-@Dreadnought_cost_2 = 156
-@Dreadnought_cost_3 = 204
-@Dreadnought_cost_4 = 264
-@Dreadnought_cost_5 = 336
-@Dreadnought_cost_6 = 444
-@Dreadnought_cost_7 = 564
-@Dreadnought_cost_8 = 696
-@Dreadnought_cost_9 = 840
-@Dreadnought_cost_10 = 996
-@Dreadnought_cost_11 = 1164
+@Dreadnought_reactor_cost_1 = 120
+@Dreadnought_reactor_cost_2 = 156
+@Dreadnought_reactor_cost_3 = 204
+@Dreadnought_reactor_cost_4 = 264
+@Dreadnought_reactor_cost_5 = 336
+@Dreadnought_reactor_cost_6 = 444
+@Dreadnought_reactor_cost_7 = 564
+@Dreadnought_reactor_cost_8 = 696
+@Dreadnought_reactor_cost_9 = 840
+@Dreadnought_reactor_cost_10 = 996
+@Dreadnought_reactor_cost_11 = 1164
 
-@titan_cost_1 = 160
-@titan_cost_2 = 208
-@titan_cost_3 = 272
-@titan_cost_4 = 352
-@titan_cost_5 = 448
-@titan_cost_6 = 592
-@titan_cost_7 = 752
-@titan_cost_8 = 928
-@titan_cost_9 = 1120
-@titan_cost_10 = 1328
-@titan_cost_11 = 1552
+@titan_reactor_cost_6 = 592
+@titan_reactor_cost_7 = 752
+@titan_reactor_cost_8 = 928
+@titan_reactor_cost_9 = 1120
+@titan_reactor_cost_10 = 1328
+@titan_reactor_cost_11 = 1552
 
-@juggernaut_cost_1 = 560
-@juggernaut_cost_2 = 730
-@juggernaut_cost_3 = 950
-@juggernaut_cost_4 = 1220
-@juggernaut_cost_5 = 1540
-@juggernaut_cost_6 = 1910
-@juggernaut_cost_7 = 2330
-@juggernaut_cost_8 = 2800
-@juggernaut_cost_9 = 3320
-@juggernaut_cost_10 = 3890
-@juggernaut_cost_11 = 4510
+@juggernaut_reactor_cost_6 = 1910
+@juggernaut_reactor_cost_7 = 2330
+@juggernaut_reactor_cost_8 = 2800
+@juggernaut_reactor_cost_9 = 3320
+@juggernaut_reactor_cost_10 = 3890
+@juggernaut_reactor_cost_11 = 4510
 
-@colossus_cost_1 = 0
+@colossus_reactor_cost_1 = 0
 
 @Flagship_cost = 3070
 
-@platform_cost_1 = 20
-@platform_cost_2 = 26
-@platform_cost_3 = 34
-@platform_cost_4 = 44
-@platform_cost_5 = 56
-@platform_cost_6 = 74
-@platform_cost_7 = 100
-@platform_cost_8 = 110
-@platform_cost_9 = 120
-@platform_cost_10 = 130
-@platform_cost_11 = 140
+@platform_reactor_cost_6 = 74
+@platform_reactor_cost_7 = 100
+@platform_reactor_cost_8 = 110
+@platform_reactor_cost_9 = 120
+@platform_reactor_cost_10 = 130
+@platform_reactor_cost_11 = 140
 
-@station_cost_1 = 60
-@station_cost_2 = 70
-@station_cost_3 = 80
-@station_cost_4 = 90
-@station_cost_5 = 100
-@station_cost_6 = 110
-@station_cost_7 = 120
-@station_cost_8 = 130
-@station_cost_9 = 140
-@station_cost_10 = 150
-@station_cost_11 = 160
+@station_reactor_cost_1 = 60
+@station_reactor_cost_2 = 70
+@station_reactor_cost_3 = 80
+@station_reactor_cost_4 = 90
+@station_reactor_cost_5 = 100
+@station_reactor_cost_6 = 110
+@station_reactor_cost_7 = 120
+@station_reactor_cost_8 = 130
+@station_reactor_cost_9 = 140
+@station_reactor_cost_10 = 150
+@station_reactor_cost_11 = 160
 
-@fortress_cost_1 = 70
-@fortress_cost_2 = 80
-@fortress_cost_3 = 90
-@fortress_cost_4 = 100
-@fortress_cost_5 = 110
-@fortress_cost_6 = 120
-@fortress_cost_7 = 130
-@fortress_cost_8 = 140
-@fortress_cost_9 = 150
-@fortress_cost_10 = 160
-@fortress_cost_11 = 170
+@fortress_reactor_cost_1 = 70
+@fortress_reactor_cost_2 = 80
+@fortress_reactor_cost_3 = 90
+@fortress_reactor_cost_4 = 100
+@fortress_reactor_cost_5 = 110
+@fortress_reactor_cost_6 = 120
+@fortress_reactor_cost_7 = 130
+@fortress_reactor_cost_8 = 140
+@fortress_reactor_cost_9 = 150
+@fortress_reactor_cost_10 = 160
+@fortress_reactor_cost_11 = 170
+
+@starbase_reactor_power_1 = 15000
+@starbase_reactor_power_2 = 20000
+@starbase_reactor_power_3 = 25000
+@starbase_reactor_power_4 = 30000
+@starbase_reactor_power_5 = 35000
+@starbase_reactor_power_6 = 40000
 
 
 
 ########################################################################################################################################################################
 ### Fission Reactors (Level 1) #########################################################################################################################################
 ########################################################################################################################################################################
-
-utility_component_template = {
-	key = "CORVETTE_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @corvette_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @corvette_cost_1
-		}
-		upkeep = {
-			energy = 0.10
-			alloys = 0.01
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer nanite_interdictor gravity_snare }
-	upgrades_to = "CORVETTE_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "DESTROYER_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @destroyer_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @destroyer_cost_1
-		}
-		upkeep = {
-			energy = 0.20
-			alloys = 0.02
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "CRUISER_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @cruiser_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @cruiser_cost_1
-		}
-		upkeep = {
-			energy = 0.40
-			alloys = 0.04
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
 utility_component_template = {
 	key = "BATTLECRUISER_FISSION_REACTOR"
 	size = small
@@ -410,63 +256,20 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
+	potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLECRUISER_FUSION_REACTOR"
 	
 	ai_weight = { weight = 1 }
 }
-
-utility_component_template = {
-	key = "BATTLESHIP_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @battleship_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @battleship_cost_1
-		}
-		upkeep = {
-			energy = 0.80
-			alloys = 0.08
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "CARRIER_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @Carrier_power_1
-	
-	resources = {
-		category = ship_components
-		cost = { alloys = @battleship_cost_1 }	
-		upkeep = {
-			energy = 0.80
-			alloys = 0.08
-		}
-	}
-	
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { Carrier }
-	upgrades_to = "CARRIER_FUSION_REACTOR"
-	
-	ai_weight = { weight = 1 }
-}
-
 utility_component_template = {
 	key = "DREADNOUGHT_FISSION_REACTOR"
 	size = small
@@ -485,94 +288,19 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fission_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+	potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DREADNOUGHT_FUSION_REACTOR"
 	
 	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
-	key = "TITAN_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @titan_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titan_cost_1
-		}
-		upkeep = {
-			energy = 1.60
-			alloys = 0.16
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan payback_warship }
-	upgrades_to = "TITAN_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "JUGGERNAUT_FISSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @juggernaut_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @juggernaut_cost_1
-		}
-		upkeep = {
-			energy = 5.6
-			alloys = 0.56
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
-}
-
-utility_component_template = {
-	key = "PLATFORM_FISSION_REACTOR"
-	size = large
-	icon = "GFX_ship_part_reactor_1"
-	icon_frame = 1
-	power = @platform_power_1
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @platform_cost_1
-		}
-		upkeep = {
-			energy = 0.20
-			alloys = 0.02
-		}
-	}
-
-	prerequisites = { "tech_fission_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
-	}
-	component_set = "power_core"
-	upgrades_to = "PLATFORM_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 1
-	}
 }
 
 utility_component_template = {
@@ -593,9 +321,15 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_fission_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_medium
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	component_set = "power_core"
 	upgrades_to = "STATION_FUSION_REACTOR"
@@ -623,9 +357,15 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_fission_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_large
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	component_set = "power_core"
 	upgrades_to = "FORTRESS_FUSION_REACTOR"
@@ -635,93 +375,9 @@ utility_component_template = {
 	}
 }
 
-
-
 ########################################################################################################################################################################
 ### Fusion Reactors (Level 2) ##########################################################################################################################################
 ########################################################################################################################################################################
-
-utility_component_template = {
-	key = "CORVETTE_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @corvette_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @corvette_cost_2
-		}
-		upkeep = {
-			energy = 0.13
-			alloys = 0.013
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer nanite_interdictor gravity_snare }
-	upgrades_to = "CORVETTE_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-utility_component_template = {
-	key = "DESTROYER_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @destroyer_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @destroyer_cost_2
-		}
-		upkeep = {
-			energy = 0.26
-			alloys = 0.026
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-utility_component_template = {
-	key = "CRUISER_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @cruiser_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @cruiser_cost_2
-		}
-		upkeep = {
-			energy = 0.52
-			alloys = 0.052
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
 utility_component_template = {
 	key = "BATTLECRUISER_FUSION_REACTOR"
 	size = small
@@ -740,59 +396,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLECRUISER_COLD_FUSION_REACTOR"
-	
-	ai_weight = { weight = 2 }
-}
-
-utility_component_template = {
-	key = "BATTLESHIP_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @battleship_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @battleship_cost_2
-		}
-		upkeep = {
-			energy = 1.04
-			alloys = 0.104
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-utility_component_template = {
-	key = "CARRIER_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @Carrier_power_2
-	
-	resources = {
-		category = ship_components
-		cost = { alloys = @battleship_cost_2 }	
-		upkeep = {
-			energy = 1.04
-			alloys = 0.104
-		}
-	}
-	
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { Carrier }
-	upgrades_to = "CARRIER_COLD_FUSION_REACTOR"
 	
 	ai_weight = { weight = 2 }
 }
@@ -815,94 +429,19 @@ utility_component_template = {
 	
 	prerequisites = { "tech_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DREADNOUGHT_COLD_FUSION_REACTOR"
 	
 	ai_weight = { weight = 2 }
-}
-
-utility_component_template = {
-	key = "TITAN_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @titan_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titan_cost_2
-		}
-		upkeep = {
-			energy = 2.08
-			alloys = 0.208
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan payback_warship }
-	upgrades_to = "TITAN_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-utility_component_template = {
-	key = "JUGGERNAUT_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @juggernaut_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @juggernaut_cost_2
-		}
-		upkeep = {
-			energy = 7.28
-			alloys = 0.728
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
-}
-
-utility_component_template = {
-	key = "PLATFORM_FUSION_REACTOR"
-	size = large
-	icon = "GFX_ship_part_reactor_2"
-	icon_frame = 1
-	power = @platform_power_2
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @platform_cost_2
-		}
-		upkeep = {
-			energy = 0.26
-			alloys = 0.026
-		}
-	}
-
-	prerequisites = { "tech_fusion_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
-	}
-	component_set = "power_core"
-	upgrades_to = "PLATFORM_COLD_FUSION_REACTOR"
-
-	ai_weight = {
-		weight = 2
-	}
 }
 
 utility_component_template = {
@@ -923,9 +462,15 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_fusion_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_medium
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	component_set = "power_core"
 	upgrades_to = "STATION_COLD_FUSION_REACTOR"
@@ -953,9 +498,15 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_fusion_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_large
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	component_set = "power_core"
 	upgrades_to = "FORTRESS_COLD_FUSION_REACTOR"
@@ -965,92 +516,9 @@ utility_component_template = {
 	}
 }
 
-
-
 ########################################################################################################################################################################
 ### Cold Fusion Reactors (Level 3) #####################################################################################################################################
 ########################################################################################################################################################################
-
-utility_component_template = {
-	key = "CORVETTE_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @corvette_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @corvette_cost_3
-		}
-		upkeep = {
-			energy = 0.17
-			alloys = 0.017
-		}
-	}
-
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer nanite_interdictor gravity_snare }
-	upgrades_to = "CORVETTE_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
-}
-
-utility_component_template = {
-	key = "DESTROYER_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @destroyer_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @destroyer_cost_3
-		}
-		upkeep = {
-			energy = 0.34
-			alloys = 0.034
-		}
-	}
-
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
-}
-
-utility_component_template = {
-	key = "CRUISER_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @cruiser_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @cruiser_cost_3
-		}
-		upkeep = {
-			energy = 0.68
-			alloys = 0.068
-		}
-	}
-
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
-}
 
 utility_component_template = {
 	key = "BATTLECRUISER_COLD_FUSION_REACTOR"
@@ -1070,59 +538,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLECRUISER_ANTIMATTER_REACTOR"
-	
-	ai_weight = { weight = 3 }
-}
-
-utility_component_template = {
-	key = "BATTLESHIP_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @battleship_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @battleship_cost_3
-		}
-		upkeep = {
-			energy = 1.35
-			alloys = 0.135
-		}
-	}
-
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
-}
-
-utility_component_template = {
-	key = "CARRIER_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @Carrier_power_3
-	
-	resources = {
-		category = ship_components
-		cost = { alloys = @battleship_cost_3 }	
-		upkeep = {
-			energy = 1.35
-			alloys = 0.135
-		}
-	}
-	
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { Carrier }
-	upgrades_to = "CARRIER_ANTIMATTER_REACTOR"
 	
 	ai_weight = { weight = 3 }
 }
@@ -1145,94 +571,19 @@ utility_component_template = {
 	
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DREADNOUGHT_ANTIMATTER_REACTOR"
 	
 	ai_weight = { weight = 3 }
-}
-
-utility_component_template = {
-	key = "TITAN_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @titan_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titan_cost_3
-		}
-		upkeep = {
-			energy = 2.70
-			alloys = 0.270
-		}
-	}
-
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan payback_warship }
-	upgrades_to = "TITAN_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
-}
-
-utility_component_template = {
-	key = "JUGGERNAUT_COLD_FUSION_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @juggernaut_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @juggernaut_cost_3
-		}
-		upkeep = {
-			energy = 9.46
-			alloys = 0.946
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
-}
-
-utility_component_template = {
-	key = "PLATFORM_COLD_FUSION_REACTOR"
-	size = large
-	icon = "GFX_ship_part_reactor_3"
-	icon_frame = 1
-	power = @platform_power_3
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @platform_cost_3
-		}
-		upkeep = {
-			energy = 0.26
-			alloys = 0.026
-		}
-	}
-
-	prerequisites = { "tech_cold_fusion_power" }
-	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
-	}
-	upgrades_to = "PLATFORM_ANTIMATTER_REACTOR"
-
-	ai_weight = {
-		weight = 3
-	}
 }
 
 utility_component_template = {
@@ -1254,9 +605,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_medium
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = "STATION_ANTIMATTER_REACTOR"
 
@@ -1284,9 +641,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_cold_fusion_power" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_large
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = "FORTRESS_ANTIMATTER_REACTOR"
 
@@ -1295,92 +658,9 @@ utility_component_template = {
 	}
 }
 
-
-
 ########################################################################################################################################################################
 ### Antimatter Reactors (Level 4) ######################################################################################################################################
 ########################################################################################################################################################################
-
-utility_component_template = {
-	key = "CORVETTE_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @corvette_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @corvette_cost_4
-		}
-		upkeep = {
-			energy = 0.22
-			alloys = 0.022
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer nanite_interdictor gravity_snare }
-	upgrades_to = "CORVETTE_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
-}
-
-utility_component_template = {
-	key = "DESTROYER_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @destroyer_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @destroyer_cost_4
-		}
-		upkeep = {
-			energy = 0.44
-			alloys = 0.044
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
-}
-
-utility_component_template = {
-	key = "CRUISER_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @cruiser_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @cruiser_cost_4
-		}
-		upkeep = {
-			energy = 0.88
-			alloys = 0.088
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
-}
 
 utility_component_template = {
 	key = "BATTLECRUISER_ANTIMATTER_REACTOR"
@@ -1400,59 +680,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
+	potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLECRUISER_ZERO_POINT_REACTOR"
-	
-	ai_weight = { weight = 4 }
-}
-
-utility_component_template = {
-	key = "BATTLESHIP_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @battleship_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @battleship_cost_4
-		}
-		upkeep = {
-			energy = 1.76
-			alloys = 0.176
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
-}
-
-utility_component_template = {
-	key = "CARRIER_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @Carrier_power_4
-	
-	resources = {
-		category = ship_components
-		cost = { alloys = @battleship_cost_4 }	
-		upkeep = {
-			energy = 1.76
-			alloys = 0.176
-		}
-	}
-	
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { Carrier }
-	upgrades_to = "CARRIER_ZERO_POINT_REACTOR"
 	
 	ai_weight = { weight = 4 }
 }
@@ -1475,94 +713,19 @@ utility_component_template = {
 	
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DREADNOUGHT_ZERO_POINT_REACTOR"
 	
 	ai_weight = { weight = 4 }
-}
-
-utility_component_template = {
-	key = "TITAN_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @titan_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titan_cost_4
-		}
-		upkeep = {
-			energy = 3.51
-			alloys = 0.351
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan payback_warship }
-	upgrades_to = "TITAN_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
-}
-
-utility_component_template = {
-	key = "JUGGERNAUT_ANTIMATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @juggernaut_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @juggernaut_cost_4
-		}
-		upkeep = {
-			energy = 12.30
-			alloys = 1.230
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
-}
-
-utility_component_template = {
-	key = "PLATFORM_ANTIMATTER_REACTOR"
-	size = large
-	icon = "GFX_ship_part_reactor_4"
-	icon_frame = 1
-	power = @platform_power_4
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @platform_cost_4
-		}
-		upkeep = {
-			energy = 0.44
-			alloys = 0.044
-		}
-	}
-
-	prerequisites = { "tech_antimatter_power" }
-	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
-	}
-	upgrades_to = "PLATFORM_ZERO_POINT_REACTOR"
-
-	ai_weight = {
-		weight = 4
-	}
 }
 
 utility_component_template = {
@@ -1584,9 +747,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_medium
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = "STATION_ZERO_POINT_REACTOR"
 
@@ -1614,9 +783,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_antimatter_power" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_large
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = "FORTRESS_ZERO_POINT_REACTOR"
 
@@ -1625,92 +800,9 @@ utility_component_template = {
 	}
 }
 
-
-
 ########################################################################################################################################################################
 ### Zero Point Reactors (Level 5) ######################################################################################################################################
 ########################################################################################################################################################################
-
-utility_component_template = {
-	key = "CORVETTE_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @corvette_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @corvette_cost_5
-		}
-		upkeep = {
-			energy = 0.28
-			alloys = 0.028
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer nanite_interdictor gravity_snare }
-	upgrades_to = "CORVETTE_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
-}
-
-utility_component_template = {
-	key = "DESTROYER_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @destroyer_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @destroyer_cost_5
-		}
-		upkeep = {
-			energy = 0.57
-			alloys = 0.057
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
-}
-
-utility_component_template = {
-	key = "CRUISER_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @cruiser_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @cruiser_cost_5
-		}
-		upkeep = {
-			energy = 1.14
-			alloys = 0.114
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
-}
 
 utility_component_template = {
 	key = "BATTLECRUISER_ZERO_POINT_REACTOR"
@@ -1730,59 +822,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
+	potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLECRUISER_DARK_MATTER_REACTOR"
-	
-	ai_weight = { weight = 5 }
-}
-
-utility_component_template = {
-	key = "BATTLESHIP_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @battleship_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @battleship_cost_5
-		}
-		upkeep = {
-			energy = 2.29
-			alloys = 0.229
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
-}
-
-utility_component_template = {
-	key = "CARRIER_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @Carrier_power_5
-	
-	resources = {
-		category = ship_components
-		cost = { alloys = @battleship_cost_5 }
-		upkeep = {
-			energy = 2.29
-			alloys = 0.229
-		}
-	}
-	
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { Carrier }
-	upgrades_to = "CARRIER_DARK_MATTER_REACTOR"
 	
 	ai_weight = { weight = 5 }
 }
@@ -1805,94 +855,19 @@ utility_component_template = {
 	
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DREADNOUGHT_DARK_MATTER_REACTOR"
 	
 	ai_weight = { weight = 5 }
-}
-
-utility_component_template = {
-	key = "TITAN_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @titan_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @titan_cost_5
-		}
-		upkeep = {
-			energy = 4.56
-			alloys = 0.456
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan payback_warship }
-	upgrades_to = "TITAN_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
-}
-
-utility_component_template = {
-	key = "JUGGERNAUT_ZERO_POINT_REACTOR"
-	size = small
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @juggernaut_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @juggernaut_cost_5
-		}
-		upkeep = {
-			energy = 15.99
-			alloys = 1.599
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
-}
-
-utility_component_template = {
-	key = "PLATFORM_ZERO_POINT_REACTOR"
-	size = large
-	icon = "GFX_ship_part_reactor_5"
-	icon_frame = 1
-	power = @platform_power_5
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @platform_cost_5
-		}
-		upkeep = {
-			energy = 0.57
-			alloys = 0.057
-		}
-	}
-
-	prerequisites = { "tech_zero_point_power" }
-	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
-	}
-	upgrades_to = "PLATFORM_DARK_MATTER_REACTOR"
-
-	ai_weight = {
-		weight = 5
-	}
 }
 
 utility_component_template = {
@@ -1914,9 +889,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_medium
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = "STATION_DARK_MATTER_REACTOR"
 
@@ -1944,9 +925,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_zero_point_power" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_large
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = "FORTRESS_DARK_MATTER_REACTOR"
 
@@ -1954,8 +941,6 @@ utility_component_template = {
 		weight = 5
 	}
 }
-
-
 
 ########################################################################################################################################################################
 ### Dark Matter Reactors (Level 6) #####################################################################################################################################
@@ -1966,11 +951,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @corvette_power_6
+	power = @corvette_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @corvette_cost_6
+			alloys = @corvette_reactor_cost_6
 			sr_dark_matter = 1
 		}
 		upkeep = {
@@ -1981,7 +966,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate colonizer lithoid_colonizer sponsored_colonizer guided_sapience_colonizer colony_vessel constructor engineer_vessel science explorer_vessel transport crisis_corvette offspring_corvette nanite_swarmer nanite_interdictor gravity_snare }
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 
 	ai_weight = {
 		weight = 6
@@ -2001,11 +995,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @destroyer_power_6
+	power = @destroyer_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @destroyer_cost_6
+			alloys = @destroyer_reactor_cost_6
 			sr_dark_matter = 2
 		}
 		upkeep = {
@@ -2016,7 +1010,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
+	potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DESTROYER_GRAVITON_REACTOR"
 
 	ai_weight = {
@@ -2037,11 +1040,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @cruiser_power_6
+	power = @cruiser_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @cruiser_cost_6
+			alloys = @cruiser_reactor_cost_6
 			sr_dark_matter = 4
 		}
 		upkeep = {
@@ -2052,7 +1055,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
+	potential = {
+		ship_uses_cruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "CRUISER_GRAVITON_REACTOR"
 
 	ai_weight = {
@@ -2073,12 +1085,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @Battlecruiser_power_6
+	power = @Battlecruiser_reactor_power_6
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @Battlecruiser_cost_6
+			alloys = @Battlecruiser_reactor_cost_6
 			sr_dark_matter = 2
 		}
 		upkeep = {
@@ -2089,7 +1101,16 @@ utility_component_template = {
 	
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
+	potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLECRUISER_GRAVITON_REACTOR"
 	
 	ai_weight = { 
@@ -2106,11 +1127,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @battleship_power_6
+	power = @battleship_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @battleship_cost_6
+			alloys = @battleship_reactor_cost_6
 			sr_dark_matter = 8
 		}
 		upkeep = {
@@ -2121,7 +1142,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
+	potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "BATTLESHIP_GRAVITON_REACTOR"
 
 	ai_weight = {
@@ -2138,48 +1168,16 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "CARRIER_DARK_MATTER_REACTOR"
-	size = small
-	icon = "GFX_ship_part_dark_matter_power_core"
-	icon_frame = 1
-	power = @Carrier_power_6
-	
-	resources = {
-		category = ship_components
-		cost = {
-			alloys = @battleship_cost_6
-			sr_dark_matter = 3
-		}
-		upkeep = {
-			energy = 2.98
-			alloys = 0.298
-		}
-	}
-	
-	prerequisites = { "tech_dark_matter_power_core" }
-	component_set = "power_core"
-	size_restriction = { Carrier }
-	
-	ai_weight = { 
-		weight = 6
-		modifier = {
-			factor = 0.0
-			no_resource_for_component = { RESOURCE = sr_dark_matter }
-		}
-	}
-}
-
-utility_component_template = {
 	key = "DREADNOUGHT_DARK_MATTER_REACTOR"
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @Dreadnought_power_6
+	power = @Dreadnought_reactor_power_6
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @Dreadnought_cost_6
+			alloys = @Dreadnought_reactor_cost_6
 			sr_dark_matter = 4
 		}
 		upkeep = {
@@ -2190,7 +1188,16 @@ utility_component_template = {
 	
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought }
+	potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "DREADNOUGHT_GRAVITON_REACTOR"
 	
 	ai_weight = { 
@@ -2207,11 +1214,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @titan_power_6
+	power = @titan_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @titan_cost_6
+			alloys = @titan_reactor_cost_6
 			sr_dark_matter = 16
 		}
 		upkeep = {
@@ -2222,7 +1229,16 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { titan cosmo_crisis_titan payback_warship }
+	potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	upgrades_to = "TITAN_GRAVITON_REACTOR"
 
 	ai_weight = {
@@ -2243,11 +1259,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @juggernaut_power_6
+	power = @juggernaut_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @juggernaut_cost_6
+			alloys = @juggernaut_reactor_cost_6
 			sr_dark_matter = 20
 		}
 		upkeep = {
@@ -2258,7 +1274,31 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
+	potential = {
+		ship_uses_juggernaut_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	friendly_aura = {
+		name = "juggernaut_logistics"
+		system_wide = yes
+
+		stack_info = {			#A ship can only be affected by one aura of a certain id. If multiple auras have the same ID the one with the highest priority will be applied.
+			id = juggernaut_logistics
+			priority = 1
+		}
+
+		modifier = {
+			ships_logistics_mult = -0.75
+		}
+	}
+
 	upgrades_to = "JUGGERNAUT_GRAVITON_REACTOR"
 
 	ai_weight = {
@@ -2279,11 +1319,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @platform_power_6
+	power = @platform_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @platform_cost_6
+			alloys = @platform_reactor_cost_6
 			sr_dark_matter = 4
 		}
 		upkeep = {
@@ -2294,9 +1334,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_small
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = {
@@ -2317,11 +1363,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @station_power_6
+	power = @station_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_6
+			alloys = @station_reactor_cost_6
 			sr_dark_matter = 4
 		}
 		upkeep = {
@@ -2332,9 +1378,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_medium
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = STATION_GRAVITON_REACTOR
 
@@ -2356,11 +1408,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = @fortress_power_6
+	power = @fortress_reactor_power_6
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_6
+			alloys = @fortress_reactor_cost_6
 			sr_dark_matter = 4
 		}
 		upkeep = {
@@ -2371,9 +1423,15 @@ utility_component_template = {
 
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
-	class_restriction = { shipclass_military_station }
-	size_restriction = {
-		military_station_large
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 	upgrades_to = FORTRESS_GRAVITON_REACTOR
 
@@ -2389,8 +1447,6 @@ utility_component_template = {
 		}
 	}
 }
-
-
 
 ########################################################################################################################################################################
 ### Graviton Reactors (Level 7 NSC) ####################################################################################################################################
@@ -2414,12 +1470,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate crisis_corvette offspring_corvette offspring_corvette colonizer sponsored_colonizer lithoid_colonizer constructor science transport }
-	upgrades_to = "CORVETTE_NAQUADRIA_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CORVETTE_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2442,12 +1503,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_NAQUADRIA_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+		potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DESTROYER_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2470,12 +1536,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_NAQUADRIA_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+		potential = {
+		ship_uses_cruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CRUISER_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2498,12 +1569,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
-	upgrades_to = "BATTLECRUISER_NAQUADRIA_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLECRUISER_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2526,12 +1602,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_NAQUADRIA_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+		potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLESHIP_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2554,12 +1635,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought Carrier }
-	upgrades_to = "DREADNOUGHT_NAQUADRIA_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+	potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DREADNOUGHT_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2582,12 +1668,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { titan }
-	upgrades_to = "TITAN_NAQUADRIA_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+		potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "TITAN_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2611,12 +1702,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_NAQUADRIA_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
+		potential = {
+		ship_uses_juggernaut_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "JUGGERNAUT_NAQUADRIA_REACTOR"
 
 	ai_weight = { weight = 7 }
 }
@@ -2638,14 +1734,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_graviton_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_small }
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "PLATFORM_NAQUADRIA_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
-	}
 
 	ai_weight = { weight = 7 }
 }
@@ -2667,14 +1767,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_graviton_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_medium }
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "STATION_NAQUADRIA_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
-	}
 
 	ai_weight = { weight = 9 }
 }
@@ -2696,14 +1800,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_graviton_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_large }
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "FORTRESS_NAQUADRIA_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = GRAVITON_REACTOR }
-	}
 
 	ai_weight = { weight = 9 }
 }
@@ -2732,12 +1840,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate crisis_corvette offspring_corvette colonizer sponsored_colonizer lithoid_colonizer constructor science transport }
-	upgrades_to = "CORVETTE_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CORVETTE_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2760,12 +1873,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DESTROYER_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2788,12 +1906,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_cruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CRUISER_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2816,12 +1939,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
-	upgrades_to = "BATTLECRUISER_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLECRUISER_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2844,12 +1972,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLESHIP_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2872,12 +2005,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought Carrier }
-	upgrades_to = "DREADNOUGHT_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DREADNOUGHT_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2900,12 +2038,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { titan }
-	upgrades_to = "TITAN_SINGULARITY_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "TITAN_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2929,12 +2072,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_SINGULARITY_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
+		potential = {
+		ship_uses_juggernaut_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "JUGGERNAUT_SINGULARITY_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -2956,14 +2104,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_naquadria_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_small }
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "PLATFORM_SINGULARITY_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
-	}
 
 	ai_weight = { weight = 8 }
 }
@@ -2985,14 +2137,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_naquadria_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_medium }
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "STATION_SINGULARITY_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
-	}
 
 	ai_weight = { weight = 10 }
 }
@@ -3014,14 +2170,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_naquadria_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_large }
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "FORTRESS_SINGULARITY_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = NAQUADRIA_REACTOR }
-	}
 
 	ai_weight = { weight = 10 }
 }
@@ -3050,12 +2210,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate crisis_corvette offspring_corvette colonizer sponsored_colonizer lithoid_colonizer constructor science transport }
-	upgrades_to = "CORVETTE_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CORVETTE_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3078,12 +2243,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DESTROYER_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3106,12 +2276,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_cruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CRUISER_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3134,12 +2309,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
-	upgrades_to = "BATTLECRUISER_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLECRUISER_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3162,12 +2342,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLESHIP_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3190,12 +2375,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought Carrier }
-	upgrades_to = "DREADNOUGHT_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DREADNOUGHT_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3218,12 +2408,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { titan }
-	upgrades_to = "TITAN_MULTIDIMENSIONAL_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "TITAN_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3247,12 +2442,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_MULTIDIMENSIONAL_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
+		potential = {
+		ship_uses_juggernaut_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "JUGGERNAUT_MULTIDIMENSIONAL_REACTOR"
 
 	ai_weight = { weight = 8 }
 }
@@ -3274,14 +2474,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_singularity_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_small }
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "PLATFORM_MULTIDIMENSIONAL_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
-	}
 
 	ai_weight = { weight = 9 }
 }
@@ -3303,14 +2507,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_singularity_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_medium }
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "STATION_MULTIDIMENSIONAL_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
-	}
 
 	ai_weight = { weight = 11 }
 }
@@ -3332,14 +2540,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_singularity_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_large }
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "FORTRESS_MULTIDIMENSIONAL_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = SINGULARITY_REACTOR }
-	}
 
 	ai_weight = { weight = 11 }
 }
@@ -3368,12 +2580,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate crisis_corvette offspring_corvette colonizer sponsored_colonizer lithoid_colonizer constructor science transport }
-	upgrades_to = "CORVETTE_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CORVETTE_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3396,12 +2613,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	upgrades_to = "DESTROYER_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DESTROYER_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3424,12 +2646,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	upgrades_to = "CRUISER_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_cruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "CRUISER_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3452,12 +2679,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
-	upgrades_to = "BATTLECRUISER_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLECRUISER_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3480,12 +2712,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	upgrades_to = "BATTLESHIP_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "BATTLESHIP_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3508,12 +2745,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought Carrier }
-	upgrades_to = "DREADNOUGHT_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "DREADNOUGHT_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3536,12 +2778,17 @@ utility_component_template = {
 	
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { titan }
-	upgrades_to = "TITAN_OPTIMIZED_ENIGMATIC_REACTOR"
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "TITAN_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 10 }
 }
@@ -3565,12 +2812,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-	upgrades_to = "JUGGERNAUT_OPTIMIZED_ENIGMATIC_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
+		potential = {
+		ship_uses_juggernaut_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	upgrades_to = "JUGGERNAUT_OPTIMIZED_ENIGMATIC_REACTOR"
 
 	ai_weight = { weight = 9 }
 }
@@ -3592,14 +2844,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_multidimensional_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_small }
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "PLATFORM_OPTIMIZED_ENIGMATIC_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
-	}
 
 	ai_weight = { weight = 10 }
 }
@@ -3621,14 +2877,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_multidimensional_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_medium }
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "STATION_OPTIMIZED_ENIGMATIC_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
-	}
 
 	ai_weight = { weight = 12 }
 }
@@ -3650,14 +2910,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_multidimensional_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_large }
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 	upgrades_to = "FORTRESS_OPTIMIZED_ENIGMATIC_REACTOR"
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = MULTIDIMENSIONAL_REACTOR }
-	}
 
 	ai_weight = { weight = 12 }
 }
@@ -3689,10 +2953,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { corvette frigate crisis_corvette offspring_corvette colonizer sponsored_colonizer lithoid_colonizer constructor science transport }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+	potential = {
+		ship_uses_corvette_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3725,10 +2994,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { destroyer crisis_destroyer offspring_destroyer }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_destroyer_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3761,10 +3035,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { cruiser crisis_cruiser cosmo_crisis_destroyer offspring_cruiser }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_cruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3797,10 +3076,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { Battlecruiser explorationship }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_battlecruiser_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3833,10 +3117,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { battleship offspring_battleship cosmo_crisis_battlecruiser }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_battleship_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3869,10 +3158,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { Dreadnought Carrier }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_dreadnought_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3905,10 +3199,15 @@ utility_component_template = {
 	
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { titan }
-	
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_titan_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
 	}
 
 	ai_weight = { 
@@ -3940,11 +3239,17 @@ utility_component_template = {
 
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-	size_restriction = { juggernaut star_eater }
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
+		potential = {
+		ship_uses_juggernaut_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
 	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
 
 	ai_weight = { weight = 10 }
 }
@@ -3969,13 +3274,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_optimized_enigmatic_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_small }
+	potential = {
+		ship_uses_platform_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
-	}
 
 	ai_weight = { 
 		weight = 11
@@ -4006,13 +3316,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_optimized_enigmatic_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_medium }
+	potential = {
+		ship_uses_station_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
-	}
 
 	ai_weight = { 
 		weight = 13
@@ -4043,13 +3358,18 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_optimized_enigmatic_power" }
-	class_restriction = { shipclass_military_station }
-	size_restriction = { military_station_large }
+	potential = {
+		ship_uses_fortress_reactors = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = OPTIMIZED_ENIGMATIC_REACTOR }
-	}
 
 	ai_weight = { 
 		weight = 13
@@ -4082,7 +3402,16 @@ utility_component_template = {
 		}
 	}
 
-	size_restriction = { Flagship }
+	potential = {
+		ship_uses_flagship_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 
 	ai_weight = { weight = 10 }
@@ -4105,7 +3434,16 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_bh_power_2" }
-	size_restriction = { Flagship }
+	potential = {
+		ship_uses_flagship_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 
 	ai_weight = { weight = 11 }
@@ -4128,42 +3466,17 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_bh_power_3" }
-	size_restriction = { Flagship }
+	potential = {
+		ship_uses_flagship_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	component_set = "power_core"
 
 	ai_weight = { weight = 12 }
-}
-
-
-
-########################################################################################################################################################################
-### Special Reactors ###################################################################################################################################################
-########################################################################################################################################################################
-
-utility_component_template = {
-	key = "STARBASE_PRIMARY_REACTOR"
-	size = large
-	icon = "GFX_ship_part_reactor_10_NSC"
-	icon_frame = 1
-	power = 50000
-
-	prerequisites = { "tech_fission_power" }
-	component_set = "power_core"
-	class_restriction = { shipclass_starbase }
-	size_restriction = {
-		starbase_outpost
-		starbase_starport
-		starbase_starhold
-		starbase_starfortress
-		starbase_citadel
-		starbase_stronghold
-		starbase_headquarters
-		orbital_ring_tier_1
-		orbital_ring_tier_2
-		orbital_ring_tier_3
-	}
-
-	ai_weight = {
-		weight = 50
-	}
 }
