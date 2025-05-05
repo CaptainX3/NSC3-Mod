@@ -503,7 +503,6 @@ hyperlane_remover_receptor_0 = {
 			mult = @halved_alloy_to_food_cost_ratio
 		}
 	}
-	}
 	
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
@@ -603,7 +602,7 @@ hyperlane_remover_receptor_1 = {
 			mult = @halved_alloy_to_food_cost_ratio
 		}
 	}
-	}
+
 	
 	upgrade_from = { hyperlane_remover_receptor_0 }
 	

@@ -100,3 +100,5 @@ mod_megastructures_nsc_flagship_shipyard_cost_mult: "Grand Shipyard Build Cost"
 
 shipsize_military_station_medium_build_speed_mult: "Defense Station Build Speed"
 shipsize_military_station_large_build_speed_mult: "Fortress Build Speed"
+
+mod_shipsize_ion_cannon_hull_mult: "Ion Cannon Hull Points"

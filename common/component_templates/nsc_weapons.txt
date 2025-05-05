@@ -275,16 +275,16 @@ weapon_component_template = {
 
 	target_weights = {
 		Flagship = 10
-		Titan = 9
+		titan = 9
 		Dreadnought = 8
 		nanite_interdictor = 7
 		Carrier = 6
-		Battleship = 5
+		battleship = 5
 		Battlecruiser = 4
-		Cruiser = 3
-		Destroyer = 2
-		Frigate = 1
-		Corvette = 1
+		cruiser = 3
+		destroyer = 2
+		frigate = 1
+		corvette = 1
 	}
 
 	ship_limit = 2

@@ -987,7 +987,7 @@ Flagship = {
 	combat_disengage_chance = 0.50
 
 	is_space_station = no
-	can_have_federation_design = yes
+	can_have_federation_design = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
@@ -1867,7 +1867,7 @@ explorationship = {
 	
 	prerequisites = { "tech_explorationship_1" }
 	class = shipclass_science_ship
-	construction_type = starbase_shipyard
+	construction_type = { starbase_shipyard starbase_beastport }
 
 	resources = {
 		category = ships

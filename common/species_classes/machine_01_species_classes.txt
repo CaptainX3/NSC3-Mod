@@ -1,8 +1,0 @@
-Machine = {
-	archetype = MACHINE
-
-	graphical_culture = machine_01
-	move_pop_sound_effect = "robot_pops_move"
-
-
-}

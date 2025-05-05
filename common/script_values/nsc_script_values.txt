@@ -55,9 +55,9 @@
 # Then you can use $PARAM1$ in the script value and it will replace it with value1
 
 nsc_explorationship_ship_limit_value = {
-	base = 15
+	base = 20
 	modifier = {
-        add = 35
+        add = 30
         has_technology = tech_explorationship_2
     }
 }
