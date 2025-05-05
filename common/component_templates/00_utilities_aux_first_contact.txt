@@ -962,10 +962,7 @@ utility_component_template = {
 		CRUISER_CLOAKING_PSI
 	}
 	potential = {
-		OR = {
-			ship_uses_cruiser_cloaks = yes
-			ship_uses_explorationship_cloaks = yes
-		}
+		ship_uses_cruiser_cloaks = yes
 	}
 	prerequisites = { "tech_cloaking_3" }
 	component_set = "CLOAKING_3"
@@ -1048,10 +1045,7 @@ utility_component_template = {
 		CRUISER_CLOAKING_PSI
 	}
 	potential = {
-		OR = {
-			ship_uses_cruiser_cloaks = yes
-			ship_uses_explorationship_cloaks = yes
-		}
+		ship_uses_cruiser_cloaks = yes
 	}
 	prerequisites = { "tech_cloaking_dark_matter" }
 	component_set = "CLOAKING_DARK_MATTER"
@@ -1135,10 +1129,7 @@ utility_component_template = {
 		CRUISER_CLOAKING_DARK_MATTER
 	}
 	potential = {
-		OR = {
-			ship_uses_cruiser_cloaks = yes
-			ship_uses_explorationship_cloaks = yes
-		}
+		ship_uses_cruiser_cloaks = yes
 	}
 	prerequisites = { "tech_cloaking_psi" }
 	component_set = "CLOAKING_PSI"

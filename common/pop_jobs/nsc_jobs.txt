@@ -1,13 +1,40 @@
 ############
 ### JOBS ###
 ############
-diagnostician = {	
+diagnostician = {
     category = specialist
 	swappable_data = {
 		default = {
 			condition_string = SPECIALIST_JOB_TRIGGER
-			}
+			building_icon = building_medical_2
 		}
+		swap_type = {
+			trigger = {
+				is_hive_empire = yes
+			}
+			name = diagnostician_hive
+			desc = diagnostician_hive
+			icon = diagnostician
+			building_icon = building_spawning_pool
+			condition_string = SPECIALIST_JOB_TRIGGER
+			weight = 20
+		}
+		swap_type = {
+			trigger = {
+				OR ={
+					is_machine_empire = yes
+					is_individual_machine = yes
+					is_mechanical_empire = yes
+				}
+			}
+			name = diagnostician_machine
+			desc = diagnostician_machine
+			icon = diagnostician
+			building_icon = building_robot_assembly_complex
+			condition_string = SPECIALIST_JOB_TRIGGER
+			weight = 25
+		}
+	}
 	tags = { pop_growth pop_assembly amenities }
     
     possible_pre_triggers = {
@@ -24,7 +51,7 @@ diagnostician = {
 		upkeep = {
             trigger = {
                 exists = owner
-                owner = { is_regular_empire = yes }
+                owner = { is_gestalt = no }
             }
 			consumer_goods = 2.5
         }
@@ -64,7 +91,13 @@ diagnostician = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_machine_empire = yes }
+			owner = { 
+				OR = { 
+					is_machine_empire = yes 
+					is_individual_machine = yes 
+					is_mechanical_empire = yes
+				}
+			}
 		}
 		planet_pop_assembly_mult = 0.025
 	}
