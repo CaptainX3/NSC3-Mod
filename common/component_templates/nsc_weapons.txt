@@ -8,7 +8,7 @@ weapon_component_template = {
 	icon_frame = 1
 	
 	firing_arc = 10.0
-	use_ship_kill_target = no
+	use_ship_main_target = no
 	
 	power = -500
 	damage = { min = 10000 max = 16000 }
@@ -29,7 +29,9 @@ weapon_component_template = {
 	projectile_gfx = "perdition_beam"
 	tags = { weapon_type_energy weapon_role_artillery t_slot }
 	ai_tags = { weapon_role_artillery }
-	size_restriction = { Flagship }
+	potential = {
+		ship_uses_flagship_components = yes
+	}
 	inline_script = "targeting/capital_ships"
 
 	resources = {
@@ -65,11 +67,13 @@ weapon_component_template = {
 	icon = "GFX_ship_part_perdition_beam"
 	icon_frame = 1	
 	firing_arc = 360.0
-	use_ship_kill_target = no
+	use_ship_main_target = no
 	tags = { weapon_type_energy weapon_role_artillery t_slot }
 	component_set = "PERDITION_BEAM_STARBASE"
 	projectile_gfx = "perdition_beam"
-	size_restriction = { starbase_citadel starbase_stronghold starbase_headquarters }
+	potential = {
+		ship_uses_special_starbase_components = yes
+	}
 	inline_script = "targeting/capital_ships"
 }
 
@@ -96,7 +100,9 @@ weapon_component_template = {
 	projectile_gfx = "white_laser_pd"
 	tags = { weapon_type_point_defense weapon_type_energy }
 	ai_tags = { weapon_role_point_defense screen }
-	size_restriction = { starbase_starport starbase_starhold starbase_starfortress starbase_citadel starbase_stronghold starbase_headquarters }
+	potential = {
+		is_ship_class = shipclass_starbase
+	}
 	point_defence_targets = { "missile" "strike_craft" }
 }
 
@@ -128,7 +134,9 @@ weapon_component_template = {
 	projectile_gfx = "tachyon_lance"
 	tags = { weapon_type_energy weapon_role_artillery x_slot }
 	ai_tags = { weapon_role_artillery }
-	size_restriction = { starbase_stronghold starbase_headquarters }
+	potential = {
+		ship_uses_special_starbase_components = yes
+	}
 	inline_script = "targeting/capital_ships"
 	
 	resources = {
@@ -169,7 +177,9 @@ weapon_component_template = {
 	projectile_gfx = "gauss_cannon_s"
 	tags = { weapon_type_kinetic s_slot }
 	ai_tags = { weapon_role_anti_shield }
-	size_restriction = { battleship Flagship juggernaut military_station_small military_station_medium military_station_large }
+	potential = {
+		has_role = spitfire
+	}
 	inline_script = "targeting/support_ships"
 	
 	resources = {
@@ -179,10 +189,6 @@ weapon_component_template = {
 			energy = @s_t7_upkeep_energy
 			alloys = @s_t7_upkeep_alloys
 		}
-	}
-
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_1 }
 	}
 
 	ai_weight = { weight = 1 }
@@ -216,7 +222,9 @@ weapon_component_template = {
 	projectile_gfx = "infrared_laser_s"
 	tags = { weapon_type_energy s_slot }
 	ai_tags = { weapon_role_anti_armor }
-	size_restriction = { battleship Flagship juggernaut military_station_small military_station_medium military_station_large }
+	potential = {
+		has_role = spitfire
+	}
 	inline_script = "targeting/support_ships"
 	
 	resources = {
@@ -228,9 +236,73 @@ weapon_component_template = {
 		}
 	}
 
-	valid_for_country = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = component ID = BATTLESHIP_SNIPER_GUN_2 }
-	}
-
 	ai_weight = { weight = 1 }
 }
+
+weapon_component_template = {
+	key = NSC_HYPER_DISRUPTOR
+	icon = "GFX_ship_part_nsc_warp_disruptor"
+	icon_frame = 1
+	type = instant
+	windup = { min = 1.0 max = 15.0 }
+	total_fire_time = 20
+	range = 50
+	accuracy = 1
+	tracking = 1
+
+	size = point_defence
+	hide_damage_values_from_tooltip = yes
+	prerequisites = { "tech_StrikeCruiser_1" }
+	component_set = "NSC_HYPER_DISRUPTOR"
+	projectile_gfx = "infrared_laser_s"
+
+	potential = {
+		ship_uses_strikecruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	target_type = target_enemies
+	target_focus = focused
+	injected_modifier = {
+		modifier = nsc_ftl_disrupted
+		days = 15
+	}
+
+	target_weights = {
+		Flagship = 10
+		Titan = 9
+		Dreadnought = 8
+		nanite_interdictor = 7
+		Carrier = 6
+		Battleship = 5
+		Battlecruiser = 4
+		Cruiser = 3
+		Destroyer = 2
+		Frigate = 1
+		Corvette = 1
+	}
+
+	ship_limit = 2
+
+	blocked_by = {
+		NSC_STRIKE_CRUISER_AURA
+		NSC_STRIKE_CRUISER_AURA_2
+	}
+
+	resources = {
+	category = ship_components
+		cost = {
+			energy = 0.3
+			alloys = 0.3
+		}
+		upkeep = {
+			energy = 0.3
+			alloys = 0.3
+		}
+	}
+}	

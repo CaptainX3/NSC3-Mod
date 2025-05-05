@@ -32,6 +32,7 @@ requires_no_existing_system_remover_emisor: "$TRIGGER_FAIL$Cannot build due to e
 requires_no_existing_remover_receptor: "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Remover (Receptor)§! in the Empire."
 
 nsc_headquarters_bonus: "Headquarters Station Bonus"
+nsc_ftl_disrupted: "Hyperdrive Disrupted"
 
 requires_technology_exploration_cruiser: "Requires §HExplorer (Level 1)§!"
 requires_technology_automated_exploration: "Requires §BAutomated Exploration Protocols§!"

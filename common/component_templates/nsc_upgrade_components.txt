@@ -10,7 +10,6 @@ utility_component_template = {
 	icon_frame = 1
 	power = 0
 
-	size_restriction = { cruiser }
 	component_set = "nsc_strike_cruiser_upgrade"
 	
 	ai_weight = { weight = 1 }
@@ -37,7 +36,9 @@ utility_component_template = {
 
 	prerequisites = { "tech_StrikeCruiser_1" }
 	
-	size_restriction = { cruiser }
+	potential = {
+		potential = { ship_uses_strikecruiser_components = yes }
+	}
 	component_set = "nsc_strike_cruiser_upgrade"
 	
 	ai_weight = { weight = 5 }

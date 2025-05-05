@@ -30,7 +30,6 @@ nsc_mothball_target_fleet_repair_cost_calc_effect = {
 	every_owned_ship = {
 		export_trigger_value_to_variable = { trigger = has_hp variable = nsc_mothball_target_ship_cost_var }
 		divide_variable = { which = nsc_mothball_target_ship_cost_var value = 100 }
-		multiply_variable = { which = nsc_mothball_target_ship_cost_var value = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_restore_cost_var }
 		prev = { change_variable = { which = nsc_mothball_target_fleet_total_cost_var value = prev.nsc_mothball_target_ship_cost_var } }
 		clear_variable = nsc_mothball_target_ship_cost_var
 	}
@@ -165,7 +164,6 @@ nsc_mothball_target_fleet_selecting_effect = {
 					set_fleet_flag = nsc_mothball_temporal_target_10
 				}
 			}
-			count = event_target:nsc_modmenu_data_storage.nsc_modmenu_etc_feature_mothball_fleet_per_planet_var
 		}
 		clear_variable = nsc_mothball_target_fleet_count_var
 		set_planet_flag = nsc_mothball_target_fleets_counting_stopped

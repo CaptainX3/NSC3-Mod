@@ -18,9 +18,6 @@ starbase_stronghold = {
 		starbase_module_capacity_add = 15
 		starbase_building_capacity_add = 15
 		starbase_defense_platform_capacity_add = 30
-		starbase_trade_collection_range_add = 1
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 40
 		ship_sensor_range_add = 1
 	}
 	ship_modifier = {
@@ -68,10 +65,35 @@ starbase_stronghold = {
 	components_add_to_cost = no
 	can_disable = yes
 	flip_control_on_disable = yes
-	
+	available_to_everyone = yes
 	resources = {
-		category = starbase_stations
-		cost = { alloys = 4500 }
+		category = starbases
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 4500
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 4500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 4500
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 		upkeep = { energy = 8 }
 	}
 	build_block_radius = @build_block_radius_starbase
@@ -106,9 +128,6 @@ starbase_headquarters = {
 		starbase_module_capacity_add = 20  #35
 		starbase_building_capacity_add = 20  #35
 		starbase_defense_platform_capacity_add = 60
-		starbase_trade_collection_range_add = 3
-		starbase_trade_protection_range_add = 3
-		starbase_trade_protection_add = 60
 		ship_sensor_range_add = 1
 	}
 	ship_modifier = {
@@ -156,10 +175,35 @@ starbase_headquarters = {
 	components_add_to_cost = no
 	can_disable = yes
 	flip_control_on_disable = yes
-	
+	available_to_everyone = yes
 	resources = {
-		category = starbase_stations
-		cost = { alloys = 6500 }
+		category = starbases
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = 6500
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = 6500
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = 6500
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 		upkeep = { energy = 10 }
 	}
 	build_block_radius = @build_block_radius_starbase

@@ -308,12 +308,9 @@ operations_doctrine = {
 		}
 		policy_flags = { privateer_operation }
 		modifier = {
-			starbase_trade_protection_add = 5
-			starbase_trade_protection_range_add = 5
-			starbase_trade_collection_range_add = 5
-			piracy_suppression_mult = 0.25
-			damage_vs_country_type_pirate_mult = 0.25
-			country_naval_cap_mult = -0.15
+			ships_logistics_mult = -0.15
+			planet_jobs_trade_produces_mult = 0.1
+			country_naval_cap_mult = -0.1
 		}
 		ai_weight = { factor = 0 }
 	}

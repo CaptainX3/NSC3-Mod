@@ -91,6 +91,13 @@ utility_component_template = {
 	power = @power4
 	component_set = "nsc_titan_aura"
 
+	potential = {
+		OR = {
+			ship_uses_titan_components = yes
+			ship_uses_dsc_components = yes
+		}
+	}
+
 	friendly_aura = {
 		name = "nsc_titan_aura"
 		radius = @radius1
@@ -138,11 +145,22 @@ utility_component_template = {
 
 utility_component_template = {
 	key = "NSC_STRIKE_CRUISER_AURA"
-	size = medium
+	size = aux
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
 	component_set = "nsc_strike_cruiser_aura"
+	prerequisites = { "tech_StrikeCruiser_1" }
+
+	potential = {
+		potential = { ship_uses_strikecruiser_components = yes }
+	}
+
+	ship_limit = 1
+
+	blocked_by = {
+		NSC_STRIKE_CRUISER_AURA_2
+	}
 
 	resources = {
 		category = ship_components
@@ -158,7 +176,6 @@ utility_component_template = {
 		}
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	hostile_aura = {
@@ -185,17 +202,36 @@ utility_component_template = {
 		}
 	}
 	ai_tags = { interdictor }
-	ai_weight = { weight = 10 }
+	ai_weight = { 
+		weight = 10
+		modifier = {
+			factor = 0
+			from = { NOT = { 
+				has_role = interdictor
+				}
+			}
+		}
+	}
 }
 
 utility_component_template = {
 	key = "NSC_STRIKE_CRUISER_AURA_2"
-	size = medium
+	size = aux
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
 	prerequisites = { "tech_Carrier_1" }
 	component_set = "nsc_strike_cruiser_aura"
+
+	potential = {
+		potential = { ship_uses_strikecruiser_components = yes }
+	}
+
+	ship_limit = 1
+
+	blocked_by = {
+		NSC_STRIKE_CRUISER_AURA
+	}
 
 	resources = {
 		category = ship_components
@@ -211,7 +247,6 @@ utility_component_template = {
 		}
 		ship_evasion_add = 2.5
 		ship_hull_add = 105
-		ship_piracy_suppression_add = 1.5
 	}
 	
 	hostile_aura = {
@@ -238,7 +273,17 @@ utility_component_template = {
 		}
 	}
 	ai_tags = { interdictor }
-	ai_weight = { weight = 10 }
+	ai_weight = {
+		weight = 10
+		modifier = {
+			factor = 0
+			from = { 
+				NOT = { 
+					has_role = interdictor
+				}
+			}
+		}
+	}
 }
 
 ####################################
@@ -261,6 +306,10 @@ utility_component_template = {
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
+
+	potential = {
+		potential = { ship_uses_supportcruiser_components = yes }
+	}
 
 	prerequisites = { "tech_supportcruiser_1" }
 	component_set = "nsc_supportship_aura"
@@ -294,6 +343,10 @@ utility_component_template = {
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
+
+	potential = {
+		potential = { ship_uses_supportcruiser_components = yes }
+	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
 	component_set = "nsc_supportship_aura"
@@ -327,6 +380,10 @@ utility_component_template = {
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
+
+	potential = {
+		potential = { ship_uses_supportcruiser_components = yes }
+	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
 	component_set = "nsc_supportship_aura"
@@ -360,6 +417,10 @@ utility_component_template = {
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
+
+	potential = {
+		potential = { ship_uses_supportcruiser_components = yes }
+	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
 	component_set = "nsc_supportship_aura"
@@ -393,6 +454,10 @@ utility_component_template = {
 	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 	power = @power1
+
+	potential = {
+		potential = { ship_uses_supportcruiser_components = yes }
+	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
 	component_set = "nsc_supportship_aura"
@@ -434,7 +499,13 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power0
 
-	class_restriction = { shipclass_starbase }
+	potential = {
+		OR = {
+			ship_uses_titan_components = yes
+			ship_uses_dsc_components = yes
+		}
+	}
+
 	component_set = "nsc_starbase_nanite_aura"
 
 	hostile_aura = {

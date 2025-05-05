@@ -52,7 +52,6 @@ nsc_flagship_shipyard = {
 				}
 			}
 		}
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	placement_rules = {
@@ -151,7 +150,6 @@ nsc_flagship_shipyard_complete = {
 	prerequisites = { "tech_Flagship_1" }
 
 	possible = {
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = Flagship }
 	}
 
 	station_modifier = {

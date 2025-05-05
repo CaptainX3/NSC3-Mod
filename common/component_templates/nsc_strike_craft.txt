@@ -41,7 +41,15 @@ strike_craft_component_template = {
 			alloys = @l_t3_upkeep_alloys
 		}
 	}
-	
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	count = @count
 	regeneration_per_day = @regen
 	launch_time = @launch_time
@@ -91,7 +99,15 @@ strike_craft_component_template = {
 			alloys = @l_t4_upkeep_alloys
 		}
 	}
-	
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	count = @count
 	regeneration_per_day = @regen
 	launch_time = @launch_time
@@ -141,7 +157,15 @@ strike_craft_component_template = {
 			alloys = @l_t5_upkeep_alloys
 		}
 	}
-	
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
 	count = @count
 	regeneration_per_day = @regen
 	launch_time = @launch_time

@@ -13,8 +13,31 @@ nsc_headquarters_0 = {
 	resources = {
 		category = megastructures
 		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
 			alloys = 5000
 			unity = 1500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 5000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 1500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 5000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		upkeep = {
 			energy = 15
@@ -47,7 +70,6 @@ nsc_headquarters_0 = {
 			fail_text = "requires_no_existing_nsc_headquarters"
 			from = { NOT = { has_country_flag = built_nsc_headquarters } }
 		}
-		#nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = nsc_headquarters }
 	}
 	
 	
@@ -133,8 +155,32 @@ nsc_headquarters_1 = {
 	
 	resources = {
 		category = megastructures
-		cost = { alloys = 15000 unity = 1500 }
-		produces = {
+		cost = {
+			trigger = {
+				country_uses_bio_ships = no
+			}
+			alloys = 15000
+			unity = 1500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			alloys = 15000
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			unity = 1500
+		}
+		cost = {
+			trigger = {
+				country_uses_bio_ships = yes
+			}
+			food = 15000
+			mult = @halved_alloy_to_food_cost_ratio
 		}
 		upkeep = {
 			energy = 75
@@ -143,10 +189,6 @@ nsc_headquarters_1 = {
 	}
 	
 	upgrade_from = { nsc_headquarters_0 }
-
-	#possible = {
-	#	nsc_modmenu_game_content_on_trigger = { CATEGORY = etc SUBCAT = feature ID = nsc_headquarters }
-	#}
 
 	country_modifier = {
 		country_commander_cap_add = 5

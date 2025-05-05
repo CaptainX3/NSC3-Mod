@@ -44,7 +44,6 @@ country_event = {
 
 	trigger = {
 		NOT = { has_technology = tech_explorationship_1 } #rare case, but not impossible
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
 
 	option = {
@@ -64,7 +63,6 @@ country_event = {
 	trigger = {
 		is_ai = no
 		last_increased_tech = tech_explorationship_2
-		nsc_modmenu_game_content_on_trigger = { CATEGORY = ship SUBCAT = class ID = explorationship }
 	}
 
 	option = {

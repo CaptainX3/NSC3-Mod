@@ -43,8 +43,6 @@ component_set = {
 	key = "nsc_strike_cruiser_aura"
 	icon = "GFX_ship_part_sensor"
 	icon_frame = 1
-	required_component_set = yes
-	is_core_component_set = yes
 }
 
 component_set = {
