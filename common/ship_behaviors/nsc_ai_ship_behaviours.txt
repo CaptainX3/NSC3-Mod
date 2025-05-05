@@ -13,7 +13,9 @@ ship_behavior = {
 	collision_awareness = 0.75
 	collision_radius = 0.5
 	collision_strafe = 1.0
-	
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 	attack_move_pattern = none
 	passive_move_pattern = follow
 }
@@ -27,6 +29,9 @@ ship_behavior = {
 	formation_distance = 20
 	return_to_formation_distance = 60
 	collision_awareness = 0.5
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = charge
 	passive_move_pattern = charge
@@ -41,6 +46,9 @@ ship_behavior = {
 	formation_distance = 35
 	return_to_formation_distance = 60
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -54,6 +62,9 @@ ship_behavior = {
 	formation_distance = 55
 	return_to_formation_distance = 70
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -67,6 +78,9 @@ ship_behavior = {
 	formation_distance = 65
 	return_to_formation_distance = 80
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -80,6 +94,9 @@ ship_behavior = {
 	formation_distance = 75
 	return_to_formation_distance = 95
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -93,6 +110,9 @@ ship_behavior = {
 	formation_distance = 85
 	return_to_formation_distance = 100
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -106,6 +126,9 @@ ship_behavior = {
 	formation_distance = 100  
 	return_to_formation_distance = 110
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -119,6 +142,9 @@ ship_behavior = {
 	formation_distance = 110  
 	return_to_formation_distance = 120
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -132,6 +158,9 @@ ship_behavior = {
 	formation_distance = 120  
 	return_to_formation_distance = 130
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -145,6 +174,9 @@ ship_behavior = {
 	formation_distance = 125
 	return_to_formation_distance = 150
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -158,6 +190,9 @@ ship_behavior = {
 	formation_distance = 205
 	return_to_formation_distance = 240
 	collision_awareness = 0.35
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = maintain_distance
 	passive_move_pattern = charge
@@ -172,6 +207,9 @@ ship_behavior = {
 	formation_distance = 30
 	return_to_formation_distance = 10
 	collision_awareness = 0.75
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = orbit
 	passive_move_pattern = orbit
@@ -185,6 +223,9 @@ ship_behavior = {
 	formation_distance = 60
 	return_to_formation_distance = 10
 	collision_awareness = 0.75
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = orbit
 	passive_move_pattern = orbit
@@ -198,6 +239,9 @@ ship_behavior = {
 	formation_distance = 80
 	return_to_formation_distance = 10
 	collision_awareness = 0.75
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = orbit
 	passive_move_pattern = orbit
@@ -211,6 +255,9 @@ ship_behavior = {
 	formation_distance = 100
 	return_to_formation_distance = 10
 	collision_awareness = 0.75
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = orbit
 	passive_move_pattern = orbit
@@ -225,6 +272,9 @@ ship_behavior = {
 	formation_distance = 20
 	return_to_formation_distance = 50
 	collision_awareness = 0.5
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = flee
 	passive_move_pattern = charge
@@ -238,6 +288,9 @@ ship_behavior = {
 	formation_distance = 50
 	return_to_formation_distance = 70
 	collision_awareness = 0.5
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = flee
 	passive_move_pattern = charge
@@ -251,6 +304,9 @@ ship_behavior = {
 	formation_distance = 70
 	return_to_formation_distance = 80
 	collision_awareness = 0.5
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = flee
 	passive_move_pattern = charge
@@ -264,6 +320,9 @@ ship_behavior = {
 	formation_distance = 95
 	return_to_formation_distance = 110
 	collision_awareness = 0.5
+	source_target_anchor_factor = 1.0
+	combat_source_anchor = parent
+	combat_target_anchor = parent
 
 	attack_move_pattern = flee
 	passive_move_pattern = charge
