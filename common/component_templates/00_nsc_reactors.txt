@@ -17,17 +17,17 @@
 @destroyer_reactor_power_11 = 1150
 
 #Old Cruiser Levels
-# @cruiser_power_1 = 380
-# @cruiser_power_2 = 460
-# @cruiser_power_3 = 580
-# @cruiser_power_4 = 720
-# @cruiser_power_5 = 900
-# @cruiser_power_6 = 1130
-# @cruiser_power_7 = 1360
-# @cruiser_power_8 = 1590
-# @cruiser_power_9 = 1820
-# @cruiser_power_10 = 2050
-# @cruiser_power_11 = 2280
+# @cruiser_reactor_power_1 = 380
+# @cruiser_reactor_power_2 = 460
+# @cruiser_reactor_power_3 = 580
+# @cruiser_reactor_power_4 = 720
+# @cruiser_reactor_power_5 = 900
+# @cruiser_reactor_power_6 = 1130
+# @cruiser_reactor_power_7 = 1360
+# @cruiser_reactor_power_8 = 1590
+# @cruiser_reactor_power_9 = 1820
+# @cruiser_reactor_power_10 = 2050
+# @cruiser_reactor_power_11 = 2280
 
 @cruiser_reactor_power_6 = 1825
 @cruiser_reactor_power_7 = 2200
@@ -109,7 +109,7 @@
 @station_reactor_power_11 = 7000
 
 @fortress_reactor_power_1 = 1200
-@fortres_reactors_power_2 = 1500
+@fortress_reactor_power_2 = 1500
 @fortress_reactor_power_3 = 2000
 @fortress_reactor_power_4 = 2500
 @fortress_reactor_power_5 = 3000
@@ -243,11 +243,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_1"
 	icon_frame = 1
-	power = @Battlecruiser_power_1
+	power = @Battlecruiser_reactor_cost_1
+
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_1 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_1 }	
 		upkeep = {
 			energy = 0.6
 			alloys = 0.06
@@ -275,11 +276,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_1"
 	icon_frame = 1
-	power = @Dreadnought_power_1
+	power = @Dreadnought_reactor_power_1
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_1 }	
+		cost = { alloys = @Dreadnought_reactor_cost_1 }	
 		upkeep = {
 			energy = 1
 			alloys = 0.1
@@ -308,11 +309,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_1"
 	icon_frame = 1
-	power = @station_power_1
+	power = @station_reactor_power_1
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_1
+			alloys = @station_reactor_cost_1
 		}
 		upkeep = {
 			energy = 0.20
@@ -344,11 +345,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_1"
 	icon_frame = 1
-	power = @fortress_power_1
+	power = @fortress_reactor_power_1
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_1
+			alloys = @fortress_reactor_cost_1
 		}
 		upkeep = {
 			energy = 0.20
@@ -383,11 +384,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_2"
 	icon_frame = 1
-	power = @Battlecruiser_power_2
+	power = @Battlecruiser_reactor_power_2
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_2 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_2 }	
 		upkeep = {
 			energy = 0.78
 			alloys = 0.078
@@ -416,11 +417,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_2"
 	icon_frame = 1
-	power = @Dreadnought_power_2
+	power = @Dreadnought_reactor_power_2
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_2 }	
+		cost = { alloys = @Dreadnought_reactor_cost_2 }	
 		upkeep = {
 			energy = 1.3
 			alloys = 0.13
@@ -449,11 +450,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_2"
 	icon_frame = 1
-	power = @station_power_2
+	power = @station_reactor_power_2
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_2
+			alloys = @station_reactor_cost_2
 		}
 		upkeep = {
 			energy = 0.26
@@ -485,11 +486,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_2"
 	icon_frame = 1
-	power = @fortress_power_2
+	power = @fortress_reactor_power_2
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_2
+			alloys = @fortress_reactor_cost_2
 		}
 		upkeep = {
 			energy = 0.26
@@ -525,11 +526,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_3"
 	icon_frame = 1
-	power = @Battlecruiser_power_3
+	power = @Battlecruiser_reactor_power_3
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_3 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_3 }	
 		upkeep = {
 			energy = 1.02
 			alloys = 0.102
@@ -558,11 +559,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_3"
 	icon_frame = 1
-	power = @Dreadnought_power_3
+	power = @Dreadnought_reactor_power_3
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_3 }	
+		cost = { alloys = @Dreadnought_reactor_cost_3 }	
 		upkeep = {
 			energy = 1.69
 			alloys = 0.169
@@ -591,11 +592,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_3"
 	icon_frame = 1
-	power = @station_power_3
+	power = @station_reactor_power_3
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_3
+			alloys = @station_reactor_cost_3
 		}
 		upkeep = {
 			energy = 0.26
@@ -627,11 +628,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_3"
 	icon_frame = 1
-	power = @fortress_power_3
+	power = @fortress_reactor_power_3
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_3
+			alloys = @fortress_reactor_cost_3
 		}
 		upkeep = {
 			energy = 0.26
@@ -667,11 +668,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_4"
 	icon_frame = 1
-	power = @Battlecruiser_power_4
+	power = @Battlecruiser_reactor_power_4
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_4 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_4 }	
 		upkeep = {
 			energy = 1.32
 			alloys = 0.132
@@ -700,11 +701,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_4"
 	icon_frame = 1
-	power = @Dreadnought_power_4
+	power = @Dreadnought_reactor_power_4
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_4 }	
+		cost = { alloys = @Dreadnought_reactor_cost_4 }	
 		upkeep = {
 			energy = 2.2
 			alloys = 0.22
@@ -733,11 +734,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_4"
 	icon_frame = 1
-	power = @station_power_4
+	power = @station_reactor_power_4
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_4
+			alloys = @station_reactor_cost_4
 		}
 		upkeep = {
 			energy = 0.44
@@ -769,11 +770,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_4"
 	icon_frame = 1
-	power = @fortress_power_4
+	power = @fortress_reactor_power_4
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_4
+			alloys = @fortress_reactor_cost_4
 		}
 		upkeep = {
 			energy = 0.44
@@ -809,11 +810,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
-	power = @Battlecruiser_power_5
+	power = @Battlecruiser_reactor_power_5
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_5 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_5 }	
 		upkeep = {
 			energy = 1.7
 			alloys = 0.17
@@ -842,11 +843,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
-	power = @Dreadnought_power_5
+	power = @Dreadnought_reactor_power_5
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_5 }
+		cost = { alloys = @Dreadnought_reactor_cost_5 }
 		upkeep = {
 			energy = 2.86
 			alloys = 0.286
@@ -875,11 +876,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
-	power = @station_power_5
+	power = @station_reactor_power_5
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_5
+			alloys = @station_reactor_cost_5
 		}
 		upkeep = {
 			energy = 0.57
@@ -911,11 +912,11 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
-	power = @fortress_power_5
+	power = @fortress_reactor_power_5
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_5
+			alloys = @fortress_reactor_cost_5
 		}
 		upkeep = {
 			energy = 0.57
@@ -1457,11 +1458,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @corvette_power_7
+	power = @corvette_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @corvette_cost_7 }	
+		cost = { alloys = @corvette_reactor_cost_7 }	
 		upkeep = {
 			energy = 0.46
 			alloys = 0.046
@@ -1490,11 +1491,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @destroyer_power_7
+	power = @destroyer_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @destroyer_cost_7 }	
+		cost = { alloys = @destroyer_reactor_cost_7 }	
 		upkeep = {
 			energy = 0.91
 			alloys = 0.091
@@ -1523,11 +1524,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @cruiser_power_7
+	power = @cruiser_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @cruiser_cost_7 }	
+		cost = { alloys = @cruiser_reactor_cost_7 }	
 		upkeep = {
 			energy = 1.82
 			alloys = 0.182
@@ -1556,11 +1557,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @Battlecruiser_power_7
+	power = @Battlecruiser_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_7 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_7 }	
 		upkeep = {
 			energy = 2.74
 			alloys = 0.274
@@ -1589,11 +1590,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @battleship_power_7
+	power = @battleship_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @battleship_cost_7 }	
+		cost = { alloys = @battleship_reactor_cost_7 }	
 		upkeep = {
 			energy = 3.67
 			alloys = 0.367
@@ -1622,11 +1623,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @Dreadnought_power_7
+	power = @Dreadnought_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_7 }	
+		cost = { alloys = @Dreadnought_reactor_cost_7 }	
 		upkeep = {
 			energy = 4.58
 			alloys = 0.458
@@ -1655,11 +1656,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @titan_power_7
+	power = @titan_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @titan_cost_7 }	
+		cost = { alloys = @titan_reactor_cost_7 }	
 		upkeep = {
 			energy = 7.27
 			alloys = 0.727
@@ -1688,11 +1689,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @juggernaut_power_7
+	power = @juggernaut_reactor_power_7
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @juggernaut_cost_7
+			alloys = @juggernaut_reactor_cost_7
 		}
 		upkeep = {
 			energy = 22.39
@@ -1722,11 +1723,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @platform_power_7
+	power = @platform_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @platform_cost_7 }	
+		cost = { alloys = @platform_reactor_cost_7 }	
 		upkeep = {
 			energy = 0.83
 			alloys = 0.083
@@ -1755,11 +1756,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @station_power_7
+	power = @station_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @station_cost_7 }	
+		cost = { alloys = @station_reactor_cost_7 }	
 		upkeep = {
 			energy = 0.88
 			alloys = 0.088
@@ -1788,11 +1789,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_6_NSC"
 	icon_frame = 1
-	power = @fortress_power_7
+	power = @fortress_reactor_power_7
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @fortress_cost_7 }	
+		cost = { alloys = @fortress_reactor_cost_7 }	
 		upkeep = {
 			energy = 0.93
 			alloys = 0.093
@@ -1827,11 +1828,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @corvette_power_8
+	power = @corvette_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @corvette_cost_8 }	
+		cost = { alloys = @corvette_reactor_cost_8 }	
 		upkeep = {
 			energy = 0.55
 			alloys = 0.055
@@ -1860,11 +1861,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @destroyer_power_8
+	power = @destroyer_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @destroyer_cost_8 }	
+		cost = { alloys = @destroyer_reactor_cost_8 }	
 		upkeep = {
 			energy = 0.108
 			alloys = 0.0108
@@ -1893,11 +1894,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @cruiser_power_8
+	power = @cruiser_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @cruiser_cost_8 }	
+		cost = { alloys = @cruiser_reactor_cost_8 }	
 		upkeep = {
 			energy = 3.3
 			alloys = 0.33
@@ -1926,11 +1927,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @Battlecruiser_power_8
+	power = @Battlecruiser_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_8 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_8 }	
 		upkeep = {
 			energy = 4.4
 			alloys = 0.44
@@ -1959,11 +1960,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @battleship_power_8
+	power = @battleship_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @battleship_cost_8 }	
+		cost = { alloys = @battleship_reactor_cost_8 }	
 		upkeep = {
 			energy = 6.65
 			alloys = 0.665
@@ -1992,11 +1993,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @Dreadnought_power_8
+	power = @Dreadnought_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_8 }	
+		cost = { alloys = @Dreadnought_reactor_cost_8 }	
 		upkeep = {
 			energy = 6.758
 			alloys = 0.6758
@@ -2025,11 +2026,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @titan_power_8
+	power = @titan_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @titan_cost_8 }	
+		cost = { alloys = @titan_reactor_cost_8 }	
 		upkeep = {
 			energy = 13.17
 			alloys = 0.1317
@@ -2058,11 +2059,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @juggernaut_power_8
+	power = @juggernaut_reactor_power_8
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @juggernaut_cost_8
+			alloys = @juggernaut_reactor_cost_8
 		}
 		upkeep = {
 			energy = 25.39
@@ -2092,11 +2093,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @platform_power_8
+	power = @platform_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @platform_cost_8 }	
+		cost = { alloys = @platform_reactor_cost_8 }	
 		upkeep = {
 			energy = 0.92
 			alloys = 0.092
@@ -2125,11 +2126,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @station_power_8
+	power = @station_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @station_cost_8 }	
+		cost = { alloys = @station_reactor_cost_8 }	
 		upkeep = {
 			energy = 0.97
 			alloys = 0.097
@@ -2158,11 +2159,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_7_NSC"
 	icon_frame = 1
-	power = @fortress_power_8
+	power = @fortress_reactor_power_8
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @fortress_cost_8 }	
+		cost = { alloys = @fortress_reactor_cost_8 }	
 		upkeep = {
 			energy = 1.02
 			alloys = 0.102
@@ -2197,11 +2198,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @corvette_power_9
+	power = @corvette_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @corvette_cost_9 }	
+		cost = { alloys = @corvette_reactor_cost_9 }	
 		upkeep = {
 			energy = 0.64
 			alloys = 0.064
@@ -2230,11 +2231,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @destroyer_power_9
+	power = @destroyer_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @destroyer_cost_9 }	
+		cost = { alloys = @destroyer_reactor_cost_9 }	
 		upkeep = {
 			energy = 0.125
 			alloys = 0.0125
@@ -2263,11 +2264,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @cruiser_power_9
+	power = @cruiser_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @cruiser_cost_9 }	
+		cost = { alloys = @cruiser_reactor_cost_9 }	
 		upkeep = {
 			energy = 4.78
 			alloys = 0.478
@@ -2296,11 +2297,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @Battlecruiser_power_9
+	power = @Battlecruiser_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_9 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_9 }	
 		upkeep = {
 			energy = 6.06
 			alloys = 0.606
@@ -2329,11 +2330,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @battleship_power_9
+	power = @battleship_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @battleship_cost_9 }	
+		cost = { alloys = @battleship_reactor_cost_9 }	
 		upkeep = {
 			energy = 9.63
 			alloys = 0.963
@@ -2362,11 +2363,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @Dreadnought_power_9
+	power = @Dreadnought_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_9 }	
+		cost = { alloys = @Dreadnought_reactor_cost_9 }	
 		upkeep = {
 			energy = 9.755
 			alloys = 0.9755
@@ -2395,11 +2396,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @titan_power_9
+	power = @titan_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @titan_cost_9 }	
+		cost = { alloys = @titan_reactor_cost_9 }	
 		upkeep = {
 			energy = 19.07
 			alloys = 0.1907
@@ -2428,11 +2429,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @juggernaut_power_9
+	power = @juggernaut_reactor_power_9
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @juggernaut_cost_9
+			alloys = @juggernaut_reactor_cost_9
 		}
 		upkeep = {
 			energy = 28.39
@@ -2462,11 +2463,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @platform_power_9
+	power = @platform_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @platform_cost_9 }	
+		cost = { alloys = @platform_reactor_cost_9 }	
 		upkeep = {
 			energy = 1.01
 			alloys = 0.101
@@ -2495,11 +2496,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @station_power_9
+	power = @station_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @station_cost_9 }	
+		cost = { alloys = @station_reactor_cost_9 }	
 		upkeep = {
 			energy = 1.02
 			alloys = 0.102
@@ -2528,11 +2529,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_8_NSC"
 	icon_frame = 1
-	power = @fortress_power_9
+	power = @fortress_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @fortress_cost_9 }	
+		cost = { alloys = @fortress_reactor_cost_9 }	
 		upkeep = {
 			energy = 1.11
 			alloys = 0.111
@@ -2567,11 +2568,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @corvette_power_10
+	power = @corvette_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @corvette_cost_10 }	
+		cost = { alloys = @corvette_reactor_cost_10 }	
 		upkeep = {
 			energy = 0.73
 			alloys = 0.073
@@ -2600,11 +2601,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @destroyer_power_10
+	power = @destroyer_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @destroyer_cost_10 }	
+		cost = { alloys = @destroyer_reactor_cost_10 }	
 		upkeep = {
 			energy = 0.142
 			alloys = 0.0142
@@ -2633,11 +2634,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @cruiser_power_10
+	power = @cruiser_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @cruiser_cost_10 }	
+		cost = { alloys = @cruiser_reactor_cost_10 }	
 		upkeep = {
 			energy = 6.26
 			alloys = 0.626
@@ -2666,11 +2667,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @Battlecruiser_power_10
+	power = @Battlecruiser_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Battlecruiser_cost_10 }	
+		cost = { alloys = @Battlecruiser_reactor_cost_10 }	
 		upkeep = {
 			energy = 7.72
 			alloys = 0.772
@@ -2699,11 +2700,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @battleship_power_10
+	power = @battleship_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @battleship_cost_10 }	
+		cost = { alloys = @battleship_reactor_cost_10 }	
 		upkeep = {
 			energy = 12.61
 			alloys = 0.1261
@@ -2732,11 +2733,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @Dreadnought_power_10
+	power = @Dreadnought_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @Dreadnought_cost_10 }	
+		cost = { alloys = @Dreadnought_reactor_cost_10 }	
 		upkeep = {
 			energy = 12.752
 			alloys = 0.12652
@@ -2765,11 +2766,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @titan_power_10
+	power = @titan_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @titan_cost_10 }	
+		cost = { alloys = @titan_reactor_cost_10 }	
 		upkeep = {
 			energy = 24.97
 			alloys = 0.2497
@@ -2798,11 +2799,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @juggernaut_power_10
+	power = @juggernaut_reactor_power_10
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @juggernaut_cost_10
+			alloys = @juggernaut_reactor_cost_10
 		}
 		upkeep = {
 			energy = 31.38
@@ -2832,11 +2833,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @platform_power_10
+	power = @platform_reactor_power_10
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @platform_cost_10 }	
+		cost = { alloys = @platform_reactor_cost_10 }	
 		upkeep = {
 			energy = 1.1
 			alloys = 0.11
@@ -2865,11 +2866,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @station_power_10
+	power = @station_reactor_power_10
 	
 	resources = {
 	category = ship_components
-		cost = { alloys = @station_cost_10 }	
+		cost = { alloys = @station_reactor_cost_10 }	
 		upkeep = {
 			energy = 1.15
 			alloys = 0.115
@@ -2898,11 +2899,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @fortress_power_9
+	power = @fortress_reactor_power_9
 	
 	resources = {
 		category = ship_components
-		cost = { alloys = @fortress_cost_9 }	
+		cost = { alloys = @fortress_reactor_cost_9 }	
 		upkeep = {
 			energy = 1.2
 			alloys = 0.12
@@ -2937,12 +2938,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @corvette_power_11
+	power = @corvette_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @corvette_cost_11
+			alloys = @corvette_reactor_cost_11
 			sr_dark_matter = 1
 		}	
 		upkeep = {
@@ -2978,12 +2979,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @destroyer_power_11
+	power = @destroyer_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @destroyer_cost_11
+			alloys = @destroyer_reactor_cost_11
 			sr_dark_matter = 2
 		}	
 		upkeep = {
@@ -3019,12 +3020,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @cruiser_power_11
+	power = @cruiser_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @cruiser_cost_11
+			alloys = @cruiser_reactor_cost_11
 			sr_dark_matter = 3
 		}	
 		upkeep = {
@@ -3060,12 +3061,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @Battlecruiser_power_11
+	power = @Battlecruiser_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @Battlecruiser_cost_11
+			alloys = @Battlecruiser_reactor_cost_11
 			sr_dark_matter = 5
 		}	
 		upkeep = {
@@ -3101,12 +3102,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @battleship_power_11
+	power = @battleship_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @battleship_cost_11
+			alloys = @battleship_reactor_cost_11
 			sr_dark_matter = 6
 		}	
 		upkeep = {
@@ -3142,12 +3143,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @Dreadnought_power_11
+	power = @Dreadnought_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @Dreadnought_cost_11
+			alloys = @Dreadnought_reactor_cost_11
 			sr_dark_matter = 7
 		}	
 		upkeep = {
@@ -3183,12 +3184,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @titan_power_11
+	power = @titan_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @titan_cost_11
+			alloys = @titan_reactor_cost_11
 			sr_dark_matter = 8
 		}	
 		upkeep = {
@@ -3224,11 +3225,11 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_9_NSC"
 	icon_frame = 1
-	power = @juggernaut_power_11
+	power = @juggernaut_reactor_power_11
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @juggernaut_cost_11
+			alloys = @juggernaut_reactor_cost_11
 			sr_dark_matter = 10
 		}
 		upkeep = {
@@ -3259,12 +3260,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @platform_power_11
+	power = @platform_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @platform_cost_10
+			alloys = @platform_reactor_cost_10
 			sr_dark_matter = 2
 		}	
 		upkeep = {
@@ -3301,12 +3302,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @station_power_11
+	power = @station_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @station_cost_11
+			alloys = @station_reactor_cost_11
 			sr_dark_matter = 3
 		}	
 		upkeep = {
@@ -3343,12 +3344,12 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @fortress_power_11
+	power = @fortress_reactor_power_11
 	
 	resources = {
 		category = ship_components
 		cost = {
-			alloys = @fortress_cost_11
+			alloys = @fortress_reactor_cost_11
 			sr_dark_matter = 4
 		}	
 		upkeep = {
@@ -3391,7 +3392,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @Flagship_power_1
+	power = @Flagship_reactor_power_1
 	
 	resources = {
 		category = ship_components
@@ -3422,7 +3423,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @Flagship_power_2
+	power = @Flagship_reactor_power_2
 	
 	resources = {
 		category = ship_components
@@ -3454,7 +3455,7 @@ utility_component_template = {
 	size = small
 	icon = "GFX_ship_part_reactor_11_enigmatic_NSC"
 	icon_frame = 1
-	power = @Flagship_power_3
+	power = @Flagship_reactor_power_3
 	
 	resources = {
 		category = ship_components
