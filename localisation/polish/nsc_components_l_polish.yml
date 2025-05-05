@@ -36,10 +36,11 @@ nsc_strike_cruiser_aura_DESC: "The Advanced Combat Systems function as an Interd
 nsc_strike_cruiser_aura_2: "Advanced Combat Interdiction System II"
 nsc_strike_cruiser_aura_2_desc: "This updated Advanced Combat Systems module is an even more effective Interdictor than its predecessor. All hostile forces within range will be forced to stand and fight for quite some time before they can attempt an escape."
 nsc_strike_cruiser_upgrade: "Strike Cruiser Upgrade Systems"
-nsc_strike_cruiser_upgrade_desc: "This module contains all of the necessary systems to upgrade a Cruiser to a Strike Cruiser."
+nsc_strike_cruiser_upgrade_DESC: "This module contains all of the necessary systems to upgrade a Cruiser to a Strike Cruiser."
 nsc_titan_aura: "Fleet Command Network"
 nsc_flagship_aura: "Advanced Fleet Command Network"
 
+STRIKE_CRUISER_UPGRADE: "Strike Cruiser Upgrade Systems"
 NSC_STRIKE_CRUISER_AURA: "Advanced Combat Interdiction System"
 NSC_STRIKE_CRUISER_AURA_2: "Advanced Combat Interdiction System II"
 NSC_TITAN_AURA: "Fleet Command Network"
@@ -106,7 +107,7 @@ EXPLORATION_SLOT_ARCH_LAB_DESC: "This laboratory is dedicated to the study of ar
 EXPLORATION_SLOT_STELLAR_CARTOGRAPHY: "Stellar Cartography"
 EXPLORATION_SLOT_STELLAR_CARTOGRAPHY_DESC: "This large system is used for mapping the surrounding space, allowing the ship's computers to calculate and recover from FTL jumps with greatly increased speed. Far more effective than the model used on regular warships, these Stellar Cartography modules are also far more finicky, and require the steady hand of a highly-trained Science Officer to maintain."
 EXPLORATION_SLOT_QUANTUM_THRUSTERS: "Quantum Thrusters"
-EXPLORATION_SLOT_QUANTUM_THRUSTERS_DESC: "With so much to explore, every moment spent traveling between survey sites is a moment wasted. These Quantum Thrusters are designed to push our ship through space at blistering speeds, always rushing towards the next planet, the next star, the next great mystery waiting to be solved." 
+EXPLORATION_SLOT_QUANTUM_THRUSTERS_DESC: "With so much to explore, every moment spent traveling between survey sites is a moment wasted. These Quantum Thrusters are designed to push our ship through space at blistering speeds, always rushing towards the next planet, the next star, the next great mystery waiting to be solved."
 EXPLORATION_SLOT_NAVIGATIONAL_ARRAY: "Navigational Array"
 EXPLORATION_SLOT_NAVIGATIONAL_ARRAY_DESC: "These advanced 3D navigational systems are specially designed to extend our sensor range as far out into the galaxy as possible, rapidly updating and adding to our map of the galaxy by conducting preliminary scans of wide swathes of space from afar."
 EXPLORATION_SLOT_PHYSICS_LAB: "Advanced Physics Laboratory"
@@ -304,7 +305,7 @@ FORTRESS_OPTIMIZED_ENIGMATIC_REACTOR: "Optimized Dark Matter Reactor"
 
 OPTIMIZED_ENIGMATIC_REACTOR: "Optimized Dark Matter Reactor"
 OPTIMIZED_ENIGMATIC_REACTOR_DESC: "Taking advantage of the knowledge discovered from the Enigmatic Fortress along with our own discoveries, we can now take zero point energy directly from the subspace of our own universe without the risk of creating unstable exotic particles, allowing continuous energy limited only by our ability to control the flow of energy."
- 
+
 ### SPECIAL REACTORS ###
 FLAGSHIP_BLACK_HOLE_REACTOR_1: "Black Hole Reactor"
 FLAGSHIP_BLACK_HOLE_REACTOR_1_DESC: "Reactor powered by an artificial black hole."
@@ -464,38 +465,38 @@ interdictor_desc: "Interdictor Configuration"
  STRIKECRUISER_CLOAKING_DARK_MATTER_DESC: "$CLOAKING_DARK_MATTER_DESC$"
  STRIKECRUISER_CLOAKING_PSI: "Strike Cruiser Psi-Phase Cloak"
  STRIKECRUISER_CLOAKING_PSI_DESC: "$CLOAKING_PSI_DESC$"
- 
+
  STRIKECRUISER_CLOAKING_3_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-100%§!\nSublight Speed: §G+10%§!"
  STRIKECRUISER_CLOAKING_DARK_MATTER_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-50%§!\nSublight Speed: §G+15%§!"
  STRIKECRUISER_CLOAKING_PSI_TOOLTIP: "While Cloaked:\n\nSublight Speed: §G+20%§!"
- 
- 
+
+
  CARRIER_CLOAKING_3: "Carrier Elite Cloak"
  CARRIER_CLOAKING_3_DESC: "$CLOAKING_3_DESC$"
  CARRIER_CLOAKING_DARK_MATTER: "Carrier Dark Matter Cloak"
  CARRIER_CLOAKING_DARK_MATTER_DESC: "$CLOAKING_DARK_MATTER_DESC$"
  CARRIER_CLOAKING_PSI: "Carrier Psi-Phase Cloak"
  CARRIER_CLOAKING_PSI_DESC: "$CLOAKING_PSI_DESC$"
- 
+
  CARRIER_CLOAKING_3_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-100%§!\nSublight Speed: §R-50%§!\nStrike Craft Damage: §R-50%§!\nStrike Craft Fire Rate: §R-50%§!\nStrike Craft Speed: §R-50%§!"
  CARRIER_CLOAKING_DARK_MATTER_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-80%§!\nSublight Speed: §R-40%§!\nStrike Craft Damage: §R-35%§!\nStrike Craft Fire Rate: §R-35%§!\nStrike Craft Speed: §R-35%§!"
  CARRIER_CLOAKING_PSI_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-60%§!\nSublight Speed: §R-30%§!\nStrike Craft Damage: §R-20%§!\nStrike Craft Fire Rate: §R-20%§!\nStrike Craft Speed: §R-20%§!"
- 
- 
+
+
  EXPLORATION_CLOAKING_3: "Explorer Elite Cloak"
  EXPLORATION_CLOAKING_3_DESC: "$CLOAKING_3_DESC$"
  EXPLORATION_CLOAKING_DARK_MATTER: "Explorer Dark Matter Cloak"
  EXPLORATION_CLOAKING_DARK_MATTER_DESC: "$CLOAKING_DARK_MATTER_DESC$"
  EXPLORATION_CLOAKING_PSI: "Explorer Psi-Phase Cloak"
  EXPLORATION_CLOAKING_PSI_DESC: "$CLOAKING_PSI_DESC$"
- 
+
  EXPLORATION_CLOAKING_3_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-50%§!\nSublight Speed: §G+10%§!\nSensor Range: §G+1§!\nCloak Detection Strength: §G1§!"
  EXPLORATION_CLOAKING_DARK_MATTER_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-25%§!\nSublight Speed: §G+20%§!\nSensor Range: §G+2§!\nCloak Detection Strength: §G2§!"
  EXPLORATION_CLOAKING_PSI_TOOLTIP: "While Cloaked:\n\nSublight Speed: §G+30%§!\nSensor Range: §G+3§!\nCloak Detection Strength: §G3§!"
- 
- 
+
+
  FLAGSHIP_CLOAKING_3: "Flagship Special Cloak"
  FLAGSHIP_CLOAKING_3_DESC: "$CLOAKING_3_DESC$"
  FLAGSHIP_CLOAKING_3_TOOLTIP: "While Cloaked:\n\nShield Hit Points: §R-75%§!\nJump Drive Cooldown: §G-50%§!\nSublight Speed: §G+50%§!\nSensor Range: §G+3§!\nCloak Detection Strength: §G5§!"
- 
+
  BATTLECRUISER_CLOAKING_DESC: "A large cloaking device for the Battlecruiser."

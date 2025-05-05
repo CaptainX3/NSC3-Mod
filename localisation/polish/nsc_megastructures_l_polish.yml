@@ -99,6 +99,16 @@ nsc_hospital_3_DESC: "An utterly gargantuan, state-of-the-art space-borne hospit
 nsc_hospital_3_CONSTRUCTION_INFO_DELAYED: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
 nsc_hospital_3_MEGASTRUCTURE_DETAILS: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
 
+nsc_hospital_4: "Galactic General Hospital II"
+nsc_hospital_4_DESC: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_4_CONSTRUCTION_INFO_DELAYED: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_4_MEGASTRUCTURE_DETAILS: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+
+nsc_hospital_5: "Galactic General Hospital III"
+nsc_hospital_5_DESC: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_5_CONSTRUCTION_INFO_DELAYED: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+nsc_hospital_5_MEGASTRUCTURE_DETAILS: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+
 triggered_opinion_of_nsc_hopsital_1: "Galactic Hospital"
 triggered_opinion_of_nsc_hopsital_2: "$triggered_opinion_of_nsc_hopsital_1$"
 triggered_opinion_of_nsc_hopsital_3: "$triggered_opinion_of_nsc_hopsital_1$"

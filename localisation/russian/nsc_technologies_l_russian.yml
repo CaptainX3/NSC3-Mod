@@ -294,7 +294,7 @@ TECH_UNLOCK_POWER_STATON_CONSTRUCTION_DESC: "§HPower Station§!\nSystem wide en
 TECH_UNLOCK_AICOMPUTER_CONSTRUCTION_TITLE: "§HUnlocks Combat Computer:§! Artificial Intelligence Combat System"
 TECH_UNLOCK_AICOMPUTER_CONSTRUCTION_DESC: "§HAI Combat System§!\nThis extremely advanced computer system can intelligently run all combat systems on a ship without taking over the helm, allowing for complete movement control during combat. Available for Carriers, Fleet Support Ships, and the Flagship."
 
-TECH_UNLOCK_CRUISEMISSILE_CONSTRUCTION_TITLE: "§HUnlocks Weapon:§! Tomahawk Advanced Cruise Missile\n§HUnlocks Weapon:§! Harpoon Advanced Cruise Missile"
+TECH_UNLOCK_CRUISEMISSILE_CONSTRUCTION_TITLE: "§HUnlocks Weapon:§! Tomahawk Advanced Cruise Missile\n§HUnlocks Weapon:§! Harpoon Torpedo"
 TECH_UNLOCK_CRUISEMISSILE_CONSTRUCTION_DESC: "§HAdvanced Cruise Missiles§!\nWith the advent of Battlecruisers, which are designed to be capable of fielding large numbers of missile launchers, and the development of combat at longer and longer ranges, as well as the appearance of massive capital ships and defensive installations, there is a clear need for larger, more powerful missiles capable of taking on these new threats, and being launched from our Battlecruisers. These Advanced Cruise Missiles are the answer to this emerging need."
 
 TECH_UNLOCK_GALACTIC_MALL_TITLE: "§HUnlocks Megastructure:§! Galactic Mall"

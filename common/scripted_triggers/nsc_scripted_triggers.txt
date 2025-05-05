@@ -268,3 +268,14 @@ ship_uses_artillery_role = {
 		is_ship_size = Flagship
 	}
 }
+
+ship_uses_civilian_cloaks = {
+	OR = {
+		is_ship_size = transport
+		is_ship_size = science
+		is_ship_size = explorer_vessel
+		is_ship_size = observation_station
+		#NSC Ships
+		is_ship_size = explorationship
+	}
+}

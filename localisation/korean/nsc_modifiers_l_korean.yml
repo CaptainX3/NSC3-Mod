@@ -91,12 +91,14 @@ mod_shipsize_Carrier_hull_mult: "Carrier Hull"
 mod_shipsize_Dreadnought_hull_mult: "Dreadnought Hull"
 mod_shipsize_Flagship_hull_mult: "Flagship Hull"
 
-mod_brawler_weapon_damage_mult: "Brawler Weapon Damage"
-mod_gunship_weapon_damage_mult: "Gunship Weapon Damage"
-mod_explosive_weapon_damage_mult: "Explosive Weapon Damage"
+mod_brawler_weapon_damage_mult: "Brawler (Kinetic S/M/L) Weapon Damage"
+mod_gunship_weapon_damage_mult: "Gunship (Energy S/M/L) Weapon Damage"
+mod_explosive_weapon_damage_mult: "Explosive (Missile S/M/L) Weapon Damage"
 
 megastructures_nsc_flagship_shipyard: "Grand Shipyard"
 mod_megastructures_nsc_flagship_shipyard_cost_mult: "Grand Shipyard Build Cost"
 
 shipsize_military_station_medium_build_speed_mult: "Defense Station Build Speed"
 shipsize_military_station_large_build_speed_mult: "Fortress Build Speed"
+
+mod_shipsize_ion_cannon_hull_mult: "Ion Cannon Hull Points"

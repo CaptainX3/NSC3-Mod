@@ -1,0 +1,139 @@
+tech_battleships = {
+	cost = @tier4cost1
+	area = engineering
+	tier = 4
+	category = { voidcraft }
+	prerequisites = { "tech_Battlecruiser_1" }
+	weight = @tier4weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
+
+	## unlock battleships
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_BATTLESHIP_CONSTRUCTION_DESC"
+		}
+	}
+
+	modifier = {
+		command_limit_add = 10
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 50 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_battleships
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 60
+		}
+		modifier = {
+			factor = 3
+			years_passed > 65
+		}
+		modifier = {
+			factor = 4
+			years_passed > 70
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		factor = @ai_ship_types_factor
+
+	}
+}
+
+tech_titans = {
+	cost = @tier5cost1
+	area = engineering
+	tier = 5
+	category = { voidcraft }
+	prerequisites = {
+		OR = {
+			tech_Dreadnought_1
+			tech_stinger_growth_2
+		}
+	}
+	weight = @tier5weight1
+	ai_update_type = military
+
+	modifier = {
+		command_limit_add = 10
+	}
+
+	potential = {
+		host_has_dlc = "Apocalypse"
+	}
+
+	## unlock titans
+	prereqfor_desc = {
+		ship = {
+			title = "TECH_UNLOCK_TITAN_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_TITAN_CONSTRUCTION_DESC"
+		}
+		custom = {
+			title = "TECH_UNLOCK_ION_CANNON_CONSTRUCTION_TITLE"
+			desc = "TECH_UNLOCK_ION_CANNON_CONSTRUCTION_DESC"
+		}
+	}
+
+	technology_swap = {
+		name = tech_biogenesis_titans
+		inherit_icon = no
+		inherit_effects = yes
+
+		trigger = {
+			country_uses_bio_ships = yes
+		}
+		area = society
+		category = { biology }
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 0.1
+			NOT = { years_passed > 100 }
+		}
+		modifier = {
+			factor = 10
+			any_neighbor_country = {
+				has_technology = tech_titans
+			}
+		}
+		modifier = {
+			factor = 2
+			years_passed > 130
+		}
+		modifier = {
+			factor = 3
+			years_passed > 140
+		}
+		modifier = {
+			factor = 4
+			years_passed > 150
+		}
+		modifier = {
+			factor = 1.25
+			has_tradition = tr_supremacy_adopt
+		}
+	}
+
+	ai_weight = {
+		factor = @ai_ship_types_factor
+
+	}
+}
