@@ -156,7 +156,7 @@ sm_public_market_desc: "A large trading market accessible to the general public.
  sm_assembly_line_manufacturing: "Assembly Line Manufacturing"
  sm_assembly_line_manufacturing_desc: "Helps in the production of alloys and consumer goods both in space and on planets. Will also improve the output of every §GSpace Foundry§! by §Y1 Alloy§!  £alloys  and §GSpace Factory§! by §Y2 Consumer Goods§!  £consumer_goods.\n" 
 
- sm_federal_reserve_bank: "Federal Reserve Bank"
+ sm_federal_reserve_bank: "Central Reserve Bank"
  sm_federal_reserve_bank_desc: "A large financial bank that helps to improve trade within the system.\n"
 
  sm_cloning_facilities: "Cloning Facilities"
