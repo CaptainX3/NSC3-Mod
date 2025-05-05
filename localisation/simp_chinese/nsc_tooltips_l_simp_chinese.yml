@@ -32,6 +32,7 @@ requires_no_existing_system_remover_emisor: "$TRIGGER_FAIL$Cannot build due to e
 requires_no_existing_remover_receptor: "$TRIGGER_FAIL$Cannot build due to existing §YHyperlane Remover (Receptor)§! in the Empire."
 
 nsc_headquarters_bonus: "Headquarters Station Bonus"
+nsc_ftl_disrupted: "Hyperdrive Disrupted"
 
 requires_technology_exploration_cruiser: "Requires §HExplorer (Level 1)§!"
 requires_technology_automated_exploration: "Requires §BAutomated Exploration Protocols§!"
@@ -41,7 +42,9 @@ starbase_h_limit.tooltip.fail: "You cannot build more than 6 hangar bays per sta
 starbase_t_limit.tooltip.fail: "You cannot build more than 2 Titanic weapons per starbase."
 starbase_xl_limit.tooltip.fail: "You cannot build more than 6 XL weapons per starbase."
 
-starbase_filler_limit.tooltip.fail: "You cannot build more than 3 of these modules per starbase."
+starbase_filler_limit_3.tooltip.fail: "You cannot build more than 3 of these modules per starbase."
+starbase_filler_limit_6.tooltip.fail: "You cannot build more than 6 of these modules per starbase."
+starbase_filler_limit_10.tooltip.fail: "You cannot build more than 10 of these modules per starbase."
 
 nsc.requires.asteroid: "Requires asteroid in the system."
 
