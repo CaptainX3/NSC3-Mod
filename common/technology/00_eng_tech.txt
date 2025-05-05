@@ -256,7 +256,12 @@ tech_titans = {
 	area = engineering
 	tier = 5
 	category = { voidcraft }
-	prerequisites = { "tech_Dreadnought_1" }
+	prerequisites = {
+		OR = {
+			tech_Dreadnought_1
+			tech_stinger_growth_2
+		}
+	}
 	weight = @tier5weight1
 	ai_update_type = military
 
