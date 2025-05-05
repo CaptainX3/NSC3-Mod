@@ -8,9 +8,15 @@ starbase_level_outpost = {
 	next_level = starbase_level_starport
 	show_in_outliner = no
 	display_map_icon = no
-	collects_trade = no
 	level_weight = 0	
 	ai_weight = { weight = 1 }
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
+	
 }
 
 starbase_level_starport = {
@@ -19,6 +25,12 @@ starbase_level_starport = {
 	level_weight = 1
 	ai_weight = { weight = 2 }
 	potential_home_base = yes
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 starbase_level_starhold = {
@@ -27,6 +39,12 @@ starbase_level_starhold = {
 	level_weight = 2
 	ai_weight = { weight = 3 }
 	potential_home_base = yes
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 starbase_level_starfortress = {
@@ -35,6 +53,12 @@ starbase_level_starfortress = {
 	level_weight = 3
 	ai_weight = { weight = 4 }
 	potential_home_base = yes
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 starbase_level_citadel = {
@@ -43,6 +67,12 @@ starbase_level_citadel = {
 	level_weight = 4
 	ai_weight = { weight = 5 }
 	potential_home_base = yes
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 ### NSC STARBASES ###
@@ -52,6 +82,12 @@ starbase_level_stronghold = {
 	level_weight = 5
 	ai_weight = { weight = 6 }
 	potential_home_base = yes
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 starbase_level_headquarters = {
@@ -59,6 +95,12 @@ starbase_level_headquarters = {
 	level_weight = 6
 	ai_weight = { weight = 7 }
 	potential_home_base = yes
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 #########################
@@ -66,17 +108,16 @@ starbase_level_headquarters = {
 #########################
 
 ### VANILLA STARBASES ###
+
 starbase_level_swarm = {
 	ship_size = starbase_swarm
 	level_weight = 5
-	collects_trade = no
 	ai_weight = { weight = 5 }
 }
 
 starbase_level_ai = {
 	ship_size = starbase_ai
 	level_weight = 5
-	collects_trade = no
 	ai_weight = { weight = 5 }
 }
 
@@ -84,32 +125,47 @@ starbase_level_exd_0 = {
 	ship_size = starbase_exd_0
 	next_level = starbase_level_exd
 	level_weight = 5
-	collects_trade = no
 	ai_weight = { weight = 5 }
 }
 
 starbase_level_exd = {
-    ship_size = starbase_exd
-    display_map_icon = yes
-    display_empire_shield = yes
-    level_weight = 5
-    collects_trade = no
-    ai_weight = { weight = 5 }
+	ship_size = starbase_exd
+	display_map_icon = yes
+	display_empire_shield = yes
+	level_weight = 5
+	ai_weight = { weight = 5 }
 }
 
 starbase_level_marauder = {
 	ship_size = starbase_marauder
 	display_empire_shield = yes
 	level_weight = 5
-	collects_trade = no
 	ai_weight = { weight = 5 }
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 starbase_level_gatebuilders = {
 	ship_size = starbase_gatebuilders
 	display_empire_shield = yes
 	level_weight = 5
-	collects_trade = no
+	ai_weight = { weight = 5 }
+}
+
+starbase_level_synth_queen = {
+	ship_size = starbase_synth_queen
+	level_weight = 4
+	ai_weight = { weight = 5 }
+}
+
+starbase_level_synth_queen_big = {
+	ship_size = big_starbase_synth_queen
+	level_weight = 5
+	display_map_icon = yes
 	ai_weight = { weight = 5 }
 }
 
@@ -117,23 +173,13 @@ starbase_level_caravaneer = {
 	ship_size = starbase_caravaneer
 	display_empire_shield = yes
 	level_weight = 5
-	collects_trade = no
 	ai_weight = { weight = 5 }
-}
-
-starbase_level_synth_queen = {
-	ship_size = starbase_synth_queen
-	level_weight = 4
-	collects_trade = no
-	ai_weight = { weight = 5 }
-}
-
-starbase_level_synth_queen_big = {
-	ship_size = big_starbase_synth_queen
-	level_weight = 5
-	collects_trade = no
-	display_map_icon = yes
-	ai_weight = { weight = 5 }
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }
 
 starbase_level_fe_outpost = {
@@ -142,6 +188,30 @@ starbase_level_fe_outpost = {
 	show_in_outliner = no
 	display_map_icon = no
 	level_weight = 0
-	collects_trade = no
-	ai_weight = { weight = 1 }	
+	ai_weight = { weight = 1 }
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
+}
+
+starbase_level_voidworm_nest = {
+	ship_size = voidworm_nest
+	level_weight = 1
+	ai_weight = { weight = 2 }
+}
+
+starbase_level_hatchery = {
+	ship_size = starbase_hatchery
+	display_empire_shield = yes
+	level_weight = 5
+	ai_weight = { weight = 5 }
+	picture = {
+		trigger = {
+			owner = { uses_ship_category = bio_ship }
+		}
+		picture = "GFX_bioship_starbase_background"
+	}
 }

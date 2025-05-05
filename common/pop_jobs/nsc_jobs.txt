@@ -3,9 +3,11 @@
 ############
 diagnostician = {	
     category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
-    clothes_texture_index = 3
-
+	swappable_data = {
+		default = {
+			condition_string = SPECIALIST_JOB_TRIGGER
+			}
+		}
 	tags = { pop_growth pop_assembly amenities }
     
     possible_pre_triggers = {
