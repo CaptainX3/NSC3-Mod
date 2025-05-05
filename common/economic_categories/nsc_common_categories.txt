@@ -579,7 +579,7 @@ planet_livestock = {
 	generate_mult_modifiers = {
         produces
     }
-	modifier_category = pop
+	modifier_category = pop_job
 	# Inherited Modifiers
 	triggered_produces_modifier = {
 		key = planet_farmers
