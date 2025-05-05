@@ -32,6 +32,10 @@ tech_pd_frigate_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_cruisers" }
 	weight = @tier2weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 	
@@ -76,6 +80,10 @@ tech_StrikeCruiser_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_cruisers" }
 	weight = @tier3weight3
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 	
@@ -110,6 +118,10 @@ tech_Battlecruiser_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_cruisers" }
 	weight = @tier3weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 	
@@ -144,6 +156,10 @@ tech_escortcarrier_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_cruisers" }
 	weight = @tier2weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -178,6 +194,10 @@ tech_Carrier_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_battleships" }
 	weight = @tier4weight3
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -212,6 +232,10 @@ tech_heavycarrier_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_Carrier_1" }
 	weight = @tier4weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 	
@@ -256,6 +280,10 @@ tech_supercarrier_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_heavycarrier_1" }
 	weight = @tier4weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 	
@@ -301,6 +329,10 @@ tech_spitfire_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_battleships" }
 	weight = @tier3weight1
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 	
@@ -345,6 +377,10 @@ tech_Dreadnought_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_battleships" }
 	weight = @tier4weight3
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -379,6 +415,10 @@ tech_Flagship_1 = {
 	category = { voidcraft }
 	is_rare = yes
 	weight = @tier5weight3
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 
 	potential = {
         OR = {
@@ -430,6 +470,10 @@ tech_supportcruiser_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_battleships" }
 	weight = @tier4weight3
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -459,6 +503,10 @@ tech_explorationship_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_destroyers" }
 	weight = 90
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -488,6 +536,10 @@ tech_explorationship_2 = {
 	category = { voidcraft }
 	prerequisites = { "tech_explorationship_1" "tech_cruisers" }
 	weight = 80
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -526,6 +578,10 @@ tech_explorationship_3 = {
 	category = { voidcraft }
 	prerequisites = { "tech_explorationship_2" "tech_battleships" }
 	weight = 60
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 
@@ -559,6 +615,10 @@ tech_explorationship_4 = {
 	category = { voidcraft }
 	prerequisites = { "tech_explorationship_3" "tech_Dreadnought_1" }
 	weight = 60
+
+	potential = {
+		country_uses_bio_ships = no
+	}
 	
 	gateway = ship
 

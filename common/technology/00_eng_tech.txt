@@ -258,7 +258,7 @@ tech_titans = {
 	category = { voidcraft }
 	prerequisites = {
 		OR = {
-			tech_battleships
+			tech_Dreadnought_1
 			tech_stinger_growth_2
 		}
 	}
