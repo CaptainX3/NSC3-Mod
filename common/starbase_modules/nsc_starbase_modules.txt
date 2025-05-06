@@ -765,7 +765,7 @@ public_market = {
 		}
 		produces = {
 			consumer_goods = 5
-			trade_value = 2
+			trade = 2
 		}
 		upkeep = {
 			energy = 8

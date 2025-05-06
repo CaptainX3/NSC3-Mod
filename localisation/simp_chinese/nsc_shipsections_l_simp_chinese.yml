@@ -5,28 +5,35 @@
 ############ HULL SIZES #####################
 #############################################
 
-STRIKECRUISER: "Strike Cruiser"
-BATTLECRUISER: "Battlecruiser"
-CARRIER: "Carrier"
-DREADNOUGHT: "Dreadnought"
-FLAGSHIP: "Flagship"
-SUPPORTSHIP: "Fleet Support Ship"
-EXPLORATIONSHIP: "Explorer"
+STRIKECRUISER:0 "Strike Cruiser"
+StrikeCruiser:0 "Strike Cruiser"
+StrikeCruiser_cap:0 "Strike Cruiser"
+StrikeCruiser_plural:0 "Strike Cruisers"
 
-StrikeCruiser: "Strike Cruiser"
-StrikeCruiser_plural: "Strike Cruisers"
+BATTLECRUISER: "Battlecruiser"
 Battlecruiser: "Battlecruiser"
-Battlecruiser_plural: "Battlecruisers" 
+Battlecruiser_cap: "Battlecruiser"
+Battlecruiser_plural: "Battlecruisers"
+
+CARRIER: "Carrier"
 Carrier: "Carrier"
 Carrier_plural: "Carriers"
+Carrier_cap: "Carrier"
+
+DREADNOUGHT: "Dreadnought"
 Dreadnought: "Dreadnought"
 Dreadnought_plural: "Dreadnoughts"
+Dreadnought_cap: "Dreadnought"
+
+FLAGSHIP: "Flagship"
 Flagship: "Flagship"
 Flagship_plural: "Flagships"
-supportship: "Fleet Support Ship"
-supportship_plural: "Fleet Support Ships"
+Flagship_cap: "Flagship"
+
+EXPLORATIONSHIP: "Explorer"
 explorationship: "Explorer"
 explorationship_plural: "Explorers"
+explorationship_cap: "Explorer"
 
 starbase_stronghold: "Grand Citadel"
 starbase_stronghold_plural: "Grand Citadels"
@@ -115,6 +122,18 @@ CRUISER_STERN_P4: "Pinpoint Stern"
 CRUISER_STERN_STRIKE_A: "Strike Cruiser Stern A"
 CRUISER_STERN_STRIKE_B: "Strike Cruiser Stern B"
 CRUISER_STERN_STRIKE_C: "Strike Cruiser Stern C"
+#-------------------------------------------------------------------#
+STRIKECRUISER_BOW_G7P3: "Torpedo Bow"
+STRIKECRUISER_BOW_M10P4: "Broadside Bow"
+STRIKECRUISER_BOW_M4S14P2: "Gunship Bow"
+
+STRIKECRUISER_MID_G6P2: "Torpedo Core"
+STRIKECRUISER_MID_M9P2: "Broadside Core"
+STRIKECRUISER_MID_M4S10P2: "Gunship Core"
+
+STRIKECRUISER_STERN_G4: "Torpedo Stern"
+STRIKECRUISER_STERN_M6: "Broadside Stern"
+STRIKECRUISER_STERN_P12: "Interceptor Stern"
 #-------------------------------------------------------------------#
 OFFSPRING_CRUISER_BOW_L2: "Artillery Bow"
 OFFSPRING_CRUISER_BOW_S3M3: "Volley Bow"

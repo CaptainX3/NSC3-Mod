@@ -418,9 +418,6 @@ tech_Flagship_1 = {
 
 	potential = {
 		country_uses_bio_ships = no
-	}
-
-	potential = {
         OR = {
             AND = {
                 NOT = { host_has_dlc = "Apocalypse" }

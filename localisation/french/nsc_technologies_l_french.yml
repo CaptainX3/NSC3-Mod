@@ -185,7 +185,44 @@ tech_hyperlane_generation: "Hyperlane Generation"
 tech_hyperlane_generation_desc: "Recent developments in both the design of hyperdrives and the activation of derelict Gateways can enable us to develop the way of creating new hyperlanes and removing existing ones, finally allowing us to reshape galactic geography for our needs and purposes."
 requires_tech_hyperlane_generation: "§RRequires £physics£ §Y$tech_hyperlane_generation$§! technology.§!"
 
+tech_nsc_space_fauna_pd: ""
+tech_nsc_space_fauna_pd_desc: ""
 
+tech_nsc_space_fauna_strikecraft_1: ""
+tech_nsc_space_fauna_strikecraft_1_desc: ""
+
+tech_nsc_space_fauna_strikecraft_2: ""
+tech_nsc_space_fauna_strikecraft_2_desc: ""
+
+tech_nsc_space_fauna_strikecraft_3: ""
+tech_nsc_space_fauna_strikecraft_3_desc: ""
+
+tech_nsc_space_fauna_spitfire_1: ""
+tech_nsc_space_fauna_spitfire_1_desc: ""
+
+tech_nsc_large_space_fauna_speed_1: ""
+tech_nsc_large_space_fauna_speed_1_desc: ""
+
+tech_nsc_large_space_fauna_hull_1: ""
+tech_nsc_large_space_fauna_hull_1_desc: ""
+
+tech_nsc_large_space_fauna_hull_2: ""
+tech_nsc_large_space_fauna_hull_2_desc: ""
+
+tech_nsc_space_fauna_shield_1: ""
+tech_nsc_space_fauna_shield_1_desc: ""
+
+tech_nsc_space_fauna_shield_2: ""
+tech_nsc_space_fauna_shield_2_desc: ""
+
+tech_nsc_space_fauna_firerate_1: ""
+tech_nsc_space_fauna_firerate_1_desc: ""
+
+tech_nsc_space_fauna_armor_1: ""
+tech_nsc_space_fauna_armor_1_desc: ""
+
+tech_nsc_space_fauna_armor_2: ""
+tech_nsc_space_fauna_armor_2_desc: ""
 
 
 ##################################################################################################################################################################################################################
@@ -302,3 +339,5 @@ TECH_UNLOCK_GALACTIC_MALL_DESC: "The galaxy's largest consumer mall and shopping
 
 TECH_UNLOCK_HOPSITAL_TITLE: "§HUnlocks Megastructure:§! Galactic General Hospital"
 TECH_UNLOCK_HOSPITAL_DESC: "An utterly gargantuan, state-of-the-art space-borne hospital, dedicated to the study of the various xenoraces in the galaxy, and the analysis and treatment of all the diseases and conditions that afflict them."
+
+

@@ -439,6 +439,12 @@ NSC_BB_SNIPER_DESC: "These specialized high speed turrets are designed for engag
 NSC_BB_SNIPER_2: "Atomic Photon Flux Cannon"
 NSC_BB_SNIPER_2_DESC: "These specialized high speed turrets are designed for engaging nimble Corvettes. They have great precision at long range, but struggle against the thicker hulls of larger ships."
 
+NSC_HYPER_DISRUPTOR: "Hyperdrive Scrambler"
+NSC_HYPER_DISRUPTOR_DESC: "Specialized energy weapons disrupt the energy systems of Hyperdrives"
+
+NSC_FTL_SCAMBLER: "Hyperdrive Scrambler"
+NSC_FTL_SCAMBLER_DESC: "Specialized energy weapons disrupt the energy systems of Hyperdrives"
+
 ##################################################################################################################################################################################################################
 ### TAGS ###
 ###############
