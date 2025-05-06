@@ -187,7 +187,7 @@ utility_component_template = {
 	modifier = { ship_shield_mult = 0.10 }
 
 	prerequisites = { "tech_specialcomponents_1" }
-		potential = {
+	potential = {
 		is_ship_class = shipclass_military
 	}
 	component_set = "special_ship_slot"
@@ -213,7 +213,7 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_specialcomponents_1" }
-		potential = {
+	potential = {
 		is_ship_class = shipclass_military
 	}
 	component_set = "special_ship_slot"
@@ -235,7 +235,7 @@ utility_component_template = {
 	
 	modifier = { ship_shield_regen_add_perc = 0.025 }
 	
-		potential = {
+	potential = {
 		is_ship_class = shipclass_military
 	}
 	component_set = "special_ship_slot"
@@ -261,7 +261,7 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_specialcomponents_1" }
-		potential = {
+	potential = {
 		is_ship_class = shipclass_military
 	}
 	component_set = "special_ship_slot"

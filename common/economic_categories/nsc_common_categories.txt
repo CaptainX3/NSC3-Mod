@@ -588,7 +588,7 @@ planet_livestock = {
 			add
 		}
 		trigger = {
-			has_job = livestock	# This check is done so that livestock working zoo jobs don't inherit the modifier
+			has_job_type = livestock	# This check is done so that livestock working zoo jobs don't inherit the modifier
 			is_organic_species = yes
 			is_lithoid = no
 		}
@@ -601,7 +601,7 @@ planet_livestock = {
 			add
 		}
 		trigger = {
-			has_job = livestock	# This check is done so that livestock working zoo jobs don't inherit the modifier
+			has_job_type = livestock	# This check is done so that livestock working zoo jobs don't inherit the modifier
 			is_organic_species = yes
 			is_lithoid = yes
 		}

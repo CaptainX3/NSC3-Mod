@@ -83,6 +83,22 @@ ship_uses_battlecruiser_reactors = {
 	is_ship_size = Battlecruiser
 }
 
+ship_uses_battlecruiser_thrusters = {
+	is_ship_size = Battlecruiser
+}
+
+ship_uses_fortress_reactors = {
+	is_ship_size = military_station_large
+}
+
+ship_uses_station_reactors = {
+	is_ship_size = military_station_medium
+}
+
+ship_uses_dreadnought_thrusters = {
+	is_ship_size = Dreadnought
+}
+
 ship_uses_dreadnought_reactors = {
 	is_ship_size = Dreadnought
 }
@@ -186,6 +202,7 @@ ship_uses_line_role = {
 		is_ship_size = Battlecruiser
 		is_ship_size = Dreadnought
 		is_ship_size = Flagship
+		is_ship_size = explorationship
 	}
 }
 
@@ -275,6 +292,32 @@ ship_uses_civilian_cloaks = {
 		is_ship_size = science
 		is_ship_size = explorer_vessel
 		is_ship_size = observation_station
+		#NSC Ships
+		is_ship_size = explorationship
+	}
+}
+
+ship_uses_cruiser_components = {
+	OR = {
+		# Regular Ships
+		is_ship_size = cruiser
+		# Offspring Ships
+		is_ship_size = offspring_cruiser
+		# Galactic Nemesis Ships
+		is_ship_size = crisis_cruiser
+		# Nanotech Ships
+		is_ship_size = nanite_interdictor
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_destroyer
+		# Biological Ships
+		is_ship_size = harbinger_stage_1
+		is_ship_size = harbinger_stage_2
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_harbinger_stage_1
+		is_ship_size = offspring_harbinger_stage_2
+		is_ship_size = offspring_harbinger_stage_3
 		#NSC Ships
 		is_ship_size = explorationship
 	}

@@ -118,7 +118,7 @@ diagnostician = {
 		}
 		modifier = {
 			factor = 1.5
-			has_job = diagnostician
+			has_job_type = diagnostician
 		}
 		modifier = {
 			factor = 0.5
@@ -127,7 +127,7 @@ diagnostician = {
 		}
 		modifier = {
 			factor = 10
-			NOT = { has_job = diagnostician }
+			NOT = { has_job_type = diagnostician }
 			planet = {
 				free_amenities < 0
 			}

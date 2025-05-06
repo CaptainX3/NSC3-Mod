@@ -1868,6 +1868,8 @@ explorationship = {
 	prerequisites = { "tech_explorationship_1" }
 	class = shipclass_science_ship
 	construction_type = { starbase_shipyard starbase_beastport }
+	ship_roles = { Line }
+	default_behavior = Line
 
 	resources = {
 		category = ships

@@ -10,6 +10,7 @@ component_set = {
 	icon_frame = 1
 	required_component_set = yes
 	is_core_component_set = yes
+	affects_target_type = yes
 }
 
 ### STRIKE CRUISER UPGRADE ###
