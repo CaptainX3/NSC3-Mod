@@ -90,6 +90,9 @@ sm_public_market_desc: "A large trading market accessible to the general public.
  sm_construction_office: "Starbase Construction Office"
  sm_construction_office_desc: "Increases the efficiency at which the starbase builds modules, buildings, and upgrades.\n"
  
+ sm_planetary_construction_office: "Planetary Construction Office"
+ sm_planetary_construction_office_desc: "Increases the efficiency at which buildings are built on planets.\n"
+ 
  sm_asteroid_mining: "Asteroid Mining Team"
  sm_asteroid_mining_desc: "A team which mines stray asteroids that are too small to be targeted by a standard mining station. Having an §GAsteroid Mining Manager§! will improve the output by §Y2 Minerals§! £minerals.\n"
 
@@ -153,7 +156,7 @@ sm_public_market_desc: "A large trading market accessible to the general public.
  sm_assembly_line_manufacturing: "Assembly Line Manufacturing"
  sm_assembly_line_manufacturing_desc: "Helps in the production of alloys and consumer goods both in space and on planets. Will also improve the output of every §GSpace Foundry§! by §Y1 Alloy§!  £alloys  and §GSpace Factory§! by §Y2 Consumer Goods§!  £consumer_goods.\n" 
 
- sm_federal_reserve_bank: "Federal Reserve Bank"
+ sm_federal_reserve_bank: "Central Reserve Bank"
  sm_federal_reserve_bank_desc: "A large financial bank that helps to improve trade within the system.\n"
 
  sm_cloning_facilities: "Cloning Facilities"

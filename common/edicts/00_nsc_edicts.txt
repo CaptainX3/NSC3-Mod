@@ -2,8 +2,6 @@
 ### EDICTS ###
 ##############
 
-
-
 # nsc_doctrine_ai = {
     # length = -1
 	# icon = "GFX_edict_type_policy"
@@ -14,24 +12,10 @@
     # }
 
     # modifier = {
-        # ship_home_territory_fire_rate_mult = 0.10
-        # ship_fire_rate_mult = 0.1
-        # shipclass_military_station_damage_mult = 0.1
-        # planet_orbital_bombardment_damage = -0.10
-        # ship_orbital_bombardment_mult = 0.10
-        # starbase_shipyard_build_speed_mult = 0.1
-        # starbase_shipyard_build_cost_mult = -0.1
-        # ship_weapon_damage = 0.1
-        # ship_fire_rate_mult = 0.1
-        # ship_armor_mult = 0.1
-        # ship_shield_mult = 0.1
-        # ship_hull_mult = 0.1
-        # ship_accuracy_mult = 0.05
-        # ship_tracking_mult = 0.05
-        # ship_speed_mult = 0.05
-        # ship_disengage_chance_mult = 0.05
-        # ship_piracy_suppression_mult = 0.05
-        # ship_evasion_mult = 0.05
+		# ships_upkeep_mult = -0.75
+		# shipclass_military_build_cost_mult = -0.75
+		# shipclass_starbase_build_cost_mult = -0.75
+		# shipclass_military_special_build_cost_mult = -0.75
     # }
 
     # potential = { is_ai = yes }
