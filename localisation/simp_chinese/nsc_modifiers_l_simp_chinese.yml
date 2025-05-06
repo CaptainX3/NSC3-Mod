@@ -67,10 +67,6 @@ mod_pop_category_purge_produces_mult: "Purge Pops Output"
 
 mod_deposit_blockers_time_cost_mult: "Tile Blocker Removal Time"
 
-mod_shipsize_military_station_medium_build_speed_mult: "Defense Station Build Speed"
-
-mod_shipsize_military_station_large_build_speed_mult: "Defense Fortress Build Speed"
-
 mod_light_ship_focus: "Light Ship Focus"
 mod_light_ship_focus_desc: "A policy that focuses on a fleet of fast, light combat ships. Provides +20% build speed and -20% build cost to Corvettes, Destroyers, and Cruisers, but since our shipyards will be focused on these specific ships, larger classes will build 20% slower and be 20% more expensive."
 mod_versatility_focus: "Cruiser Focus"
@@ -98,7 +94,13 @@ mod_explosive_weapon_damage_mult: "Explosive (Missile S/M/L) Weapon Damage"
 megastructures_nsc_flagship_shipyard: "Grand Shipyard"
 mod_megastructures_nsc_flagship_shipyard_cost_mult: "Grand Shipyard Build Cost"
 
-shipsize_military_station_medium_build_speed_mult: "Defense Station Build Speed"
-shipsize_military_station_large_build_speed_mult: "Fortress Build Speed"
+mod_shipsize_military_station_medium_build_speed_mult: "Defense Station Build Speed"
+mod_ship_military_station_medium_upkeep_mult: "Defense Station Upkeep"
+
+mod_shipsize_military_station_large_build_speed_mult: "Fortress Build Speed"
+mod_ship_military_station_large_upkeep_mult: "Fortress Upkeep"
 
 mod_shipsize_ion_cannon_hull_mult: "Ion Cannon Hull Points"
+
+mod_commander_skill_levels: "Commander Skill Levels"
+mod_gunship_weapon_fire_rate_mult: "Gunship Weapon Fire Rate"

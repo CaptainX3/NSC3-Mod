@@ -47,6 +47,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/megastructures/hospital.dds"
 	}
 	spriteType = {
+		name = "GFX_nsc_hospital_4_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/hospital.dds"
+	}
+	spriteType = {
+		name = "GFX_nsc_hospital_5_outliner_icon"
+		textureFile = "gfx/interface/icons/megastructures/hospital.dds"
+	}
+	spriteType = {
 		name = "GFX_hyperlane_creator_emisor_0_outliner_icon"
 		textureFile = "gfx/interface/icons/megastructures/gateway.dds"
 	}

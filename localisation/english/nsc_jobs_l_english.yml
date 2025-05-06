@@ -20,3 +20,6 @@ job_diagnostician_machine: "Diagnostician"
 job_diagnostician_machine_plural: "Diagnosticians"
 job_diagnostician_machine_desc: "These specialized workers in the Galactic Hospital are experts in manufacturing robots or increasing reproduction of organic life"
 mod_job_diagnostician_machine_add: "$job_diagnostician$ Jobs"
+
+diagnostician_hive: "$job_diagnostician$"
+diagnostician_machine: "$job_diagnostician$"

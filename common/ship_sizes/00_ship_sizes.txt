@@ -521,6 +521,84 @@ cruiser = {
 	}
 }
 
+StrikeCruiser = {
+	formation_priority = @strikecruiser_formation
+	max_speed = 190
+	acceleration = 0.45
+	rotation_speed = 0.25
+	collision_radius = @cruiser_collision
+
+	modifier = {
+		ship_evasion_add = 15
+	}
+	max_hitpoints = 2300
+	size_multiplier = 5
+	fleet_slot_size = 5
+	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
+	num_target_locators = 4
+	icon = nsc_ship_size_military_13
+	base_buildtime = 330
+	use_shipnames_from = cruiser
+	combat_disengage_chance = 0.80
+
+	is_space_station = no
+	can_have_federation_design = yes
+	enable_default_design = yes
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+
+	default_behavior = swarm
+	ship_roles = { interdictor }
+	triggered_ship_roles = {}
+	
+	prerequisites = { "tech_StrikeCruiser_1" }
+	
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	
+	resources = {
+		category = ships
+		upkeep = {
+			energy = 1.6
+			alloys = 0.6
+		}
+	}
+	
+	potential_construction = {
+		OR = {
+			is_scope_type = starbase
+			AND = {
+				is_scope_type = megastructure
+				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
+			}
+		}
+	}
+	
+	min_upgrade_cost = { alloys = 5 }
+
+
+	ai_ship_data = {
+		fraction = {
+			base = 0
+			modifier = {
+				add = 10 #10
+				has_technology = tech_StrikeCruiser_1
+			}
+			modifier = {
+				add = -100
+				uses_standard_ship_sizes = no
+			}
+		}
+	}
+
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
+	required_component_set = "special_ship_slot"
+}
+
 Battlecruiser = {
 	formation_priority = @battlecruiser_formation_priority
 	max_speed = 120

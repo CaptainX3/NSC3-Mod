@@ -10,7 +10,10 @@ diagnostician = {
 		}
 		swap_type = {
 			trigger = {
-				is_hive_empire = yes
+				exists = owner
+                owner = {
+                    is_hive_empire = yes
+                }
 			}
 			name = diagnostician_hive
 			desc = diagnostician_hive

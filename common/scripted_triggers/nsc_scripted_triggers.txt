@@ -112,7 +112,7 @@ ship_uses_explorer_components = {
 }
 
 ship_uses_strikecruiser_components = {
-	is_ship_size = cruiser
+	is_ship_size = StrikeCruiser
 }
 
 ship_uses_picket_role = {
@@ -204,8 +204,6 @@ ship_uses_line_role = {
 ship_uses_carrier_role = {
 	OR = {
 		# Regular Ships
-		is_ship_size = cruiser
-		is_ship_size = battleship
 		is_ship_size = juggernaut
 		# Offspring Ships
 		is_ship_size = offspring_cruiser
@@ -315,6 +313,7 @@ ship_uses_cruiser_components = {
 		is_ship_size = offspring_harbinger_stage_3
 		#NSC Ships
 		is_ship_size = explorationship
+		is_ship_size = StrikeCruiser
 	}
 }
 
