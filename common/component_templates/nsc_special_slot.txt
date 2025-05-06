@@ -288,7 +288,7 @@ utility_component_template = {
 		cost = { alloys = @cost0 }
 	}
 	
-	modifier = { }
+	modifier = { ships_logistics_mult = -0.02 }
 	potential = {
 		is_ship_class = shipclass_military
 	}

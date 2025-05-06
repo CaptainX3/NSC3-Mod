@@ -219,6 +219,17 @@ frigate = {
 			name = picket
 			trigger = { has_technology = tech_pd_frigate_1 }
 		}
+		{
+			name = explosive_stealth
+			trigger = { has_technology = tech_cloaking_1 }
+		}
+		{
+			name = energy_torpedoes_stealth
+			trigger = {
+				has_technology = tech_cloaking_3
+				has_technology = tech_energy_torpedoes_1
+			}
+		}
 	}
 	
 	prerequisites = { "tech_torpedoes_1" }
@@ -308,6 +319,10 @@ destroyer = {
 		{
 			name = artillery_stealth
 			trigger = { has_technology = tech_cloaking_2 }
+		}
+		{
+			name = carrier
+			trigger = { has_technology = tech_escortcarrier_1 }
 		}
 	}
 	prerequisites = { "tech_destroyers" }
@@ -407,7 +422,7 @@ cruiser = {
 	default_behavior = line
 
 	role_background = "GFX_role_selection_cruiser"
-	ship_roles = { gunship artillery explosive carrier energy_torpedoes }
+	ship_roles = { gunship artillery }
 	triggered_ship_roles = {
 		{
 			name = explosive
@@ -534,7 +549,31 @@ Battlecruiser = {
 
 	default_behavior = line
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler  }
+	ship_roles = { artillery gunship brawler  }
+	triggered_ship_roles = {
+		{
+			name = explosive
+			trigger = { has_technology = tech_torpedoes_1 }
+		}
+		{
+			name = energy_torpedoes
+			trigger = { has_technology = tech_energy_torpedoes_1 }
+		}
+		{
+			name = energy_torpedoes_stealth
+			trigger = {
+				has_technology = tech_cloaking_3
+				has_technology = tech_energy_torpedoes_1
+			}
+		}
+		{
+			name = explosive_stealth
+			trigger = { 
+				has_technology = tech_cloaking_1
+				has_technology = tech_torpedoes_1 
+			}
+		}
+	}
 
 	prerequisites = { "tech_Battlecruiser_1" }
 	
@@ -615,7 +654,13 @@ battleship = {
 	default_behavior = artillery
 
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { artillery carrier gunship spitfire }
+	ship_roles = { artillery gunship }
+	triggered_ship_roles = {
+		{
+			name = spitfire
+			trigger = { has_technology = tech_spitfire_1 }
+		}
+	}
 
 	prerequisites = { "tech_battleships" }
 	
@@ -718,7 +763,17 @@ Carrier = {
 
 	default_behavior = carrier
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { carrier heavy_carrier super_carrier }
+	ship_roles = { carrier }
+	triggered_ship_roles = {
+		{
+			name = heavy_carrier
+			trigger = { has_technology = tech_heavycarrier_1 }
+		}
+		{
+			name = super_carrier
+			trigger = { has_technology = tech_supercarrier_1 }
+		}
+	}
 
 	prerequisites = { "tech_Carrier_1" }
 	
@@ -802,7 +857,7 @@ Dreadnought = {
 	default_behavior = artillery
 
 	role_background = "GFX_role_selection_titan"
-	ship_roles = { artillery line }
+	ship_roles = { artillery }
 
 	prerequisites = { "tech_Dreadnought_1" }
 
@@ -992,6 +1047,8 @@ Flagship = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = artillery
+	role_background = "GFX_role_selection_titan"
+	ship_roles = { artillery Brawler Gunship Carrier }
 	components_add_to_cost = no
 
 	possible_construction = {
@@ -1868,7 +1925,7 @@ explorationship = {
 	prerequisites = { "tech_explorationship_1" }
 	class = shipclass_science_ship
 	construction_type = { starbase_shipyard starbase_beastport }
-	ship_roles = { Line }
+	ship_roles = { Brawler }
 	default_behavior = Line
 
 	resources = {
