@@ -117,19 +117,15 @@ diagnostician = {
 			can_take_servant_job = yes
 		}
 		modifier = {
-			factor = 1.5
-			has_job_type = diagnostician
-		}
-		modifier = {
 			factor = 0.5
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
 		}
 		modifier = {
 			factor = 10
-			NOT = { has_job_type = diagnostician }
 			planet = {
 				free_amenities < 0
+				has_available_jobs = healthcare
 			}
 		}
 	}
