@@ -119,8 +119,7 @@ pd_battery = {
 	}
 	
 	station_modifier = {
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 3
+		weapon_type_point_defense_weapon_damage_mult = 0.025
 	}
 	
 	ai_build_at_chokepoint = yes
@@ -167,8 +166,6 @@ large_battery = {
 	station_modifier = {
 		ship_hull_mult = 0.10
 		ship_armor_mult = 0.10
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 5
 	}
 	
 	ai_build_at_chokepoint = yes
@@ -194,8 +191,8 @@ xl_battery = {
 	}
 	
 	station_modifier = {
-		starbase_trade_protection_range_add = 1
-		starbase_trade_protection_add = 5
+		ship_hull_mult = 0.05
+		ship_armor_mult = 0.05
 	}
 	
 	ai_build_at_chokepoint = yes
@@ -243,8 +240,8 @@ titanic_battery = {
 	}
 
 	station_modifier = { 
-		starbase_trade_protection_range_add = 2
-		starbase_trade_protection_add = 7
+		ship_hull_mult = 0.025
+		ship_armor_mult = 0.025
 	}
 
 	ai_build_at_chokepoint = yes
@@ -472,8 +469,7 @@ security_branch_office = {
 		upkeep = { energy = 1 }
 	}
 
-	station_modifier = { starbase_trade_protection_add = 25 starbase_trade_protection_range_add = 2 }
-	system_modifier = { planet_crime_add = -15 }
+	system_modifier = { planet_crime_add = -15 job_enforcer_add = 100 }
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
@@ -769,6 +765,7 @@ public_market = {
 		}
 		produces = {
 			consumer_goods = 5
+			trade_value = 2
 		}
 		upkeep = {
 			energy = 8
@@ -776,13 +773,8 @@ public_market = {
 	}
 	
 	system_modifier = {
-		job_merchant_add = 3
-		job_politician_add = 1
-	}
-	
-	station_modifier = {
-		trade_value_add = 2
-		starbase_trade_collection_range_add = 1
+		job_merchant_add = 300
+		job_politician_add = 100
 	}
 	
 	ai_build_at_chokepoint = no

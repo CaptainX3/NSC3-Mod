@@ -10,17 +10,8 @@ component_set = {
 	icon_frame = 1
 	required_component_set = yes
 	is_core_component_set = yes
+	affects_target_type = yes
 }
-
-### STRIKE CRUISER UPGRADE ###
-component_set = {
-	key = "nsc_strike_cruiser_upgrade"
-	icon = "GFX_ship_part_nsc_ai_computer"
-	icon_frame = 1
-	required_component_set = yes
-	is_core_component_set = yes
-}
-
 
 ### AURAS ###
 component_set = {
@@ -41,7 +32,7 @@ component_set = {
 
 component_set = {
 	key = "nsc_strike_cruiser_aura"
-	icon = "GFX_ship_part_sensor"
+	icon = "GFX_ship_part_science_lab_1"
 	icon_frame = 1
 }
 

@@ -534,7 +534,7 @@ Battlecruiser = {
 
 	default_behavior = line
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler screen }
+	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler  }
 
 	prerequisites = { "tech_Battlecruiser_1" }
 	
@@ -1868,6 +1868,8 @@ explorationship = {
 	prerequisites = { "tech_explorationship_1" }
 	class = shipclass_science_ship
 	construction_type = { starbase_shipyard starbase_beastport }
+	ship_roles = { Line }
+	default_behavior = Line
 
 	resources = {
 		category = ships
