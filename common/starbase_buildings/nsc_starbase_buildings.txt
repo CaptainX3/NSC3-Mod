@@ -841,7 +841,7 @@ federal_reserve_bank = {
 		exists = owner owner = { is_gestalt = no }
 		is_orbital_ring = no
 	}
-	system_modifier = { trade_value_mult = 0.1 }
+	system_modifier = { planet_jobs_trade_produces_mult = 0.1 }
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {

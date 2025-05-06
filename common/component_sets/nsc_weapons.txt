@@ -81,7 +81,7 @@ component_set = {
 }
 
 component_set = {
-	key = "NSC_HYPER_DISRUPTOR"
-	icon = "GFX_starbase_pd_battery"
+	key = "NSC_FTL_SCAMBLER"
+	icon = "GFX_ship_part_point_defense_1"
 	icon_frame = 1
 }

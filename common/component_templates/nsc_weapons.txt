@@ -241,7 +241,8 @@ weapon_component_template = {
 
 weapon_component_template = {
 	key = NSC_HYPER_DISRUPTOR
-	icon = "GFX_ship_part_nsc_warp_disruptor"
+	size = point_defence
+	icon = "GFX_ship_part_point_defense_1" #icon = "GFX_ship_part_nsc_warp_disruptor"
 	icon_frame = 1
 	type = instant
 	windup = { min = 1.0 max = 15.0 }
@@ -250,10 +251,9 @@ weapon_component_template = {
 	accuracy = 1
 	tracking = 1
 
-	size = point_defence
 	hide_damage_values_from_tooltip = yes
 	prerequisites = { "tech_StrikeCruiser_1" }
-	component_set = "NSC_HYPER_DISRUPTOR"
+	component_set = "NSC_FTL_SCAMBLER"
 	projectile_gfx = "infrared_laser_s"
 
 	potential = {
@@ -305,4 +305,5 @@ weapon_component_template = {
 			alloys = 0.3
 		}
 	}
-}	
+	tags = { interdictor }
+}

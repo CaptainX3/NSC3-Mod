@@ -133,17 +133,6 @@ utility_component_template = {
 
 
 utility_component_template = {
-	key = "NSC_STRIKE_CRUISER_AURA_EMPTY"
-	size = medium
-	icon = "GFX_ship_part_empty_ftl_drive"
-	icon_frame = 1
-	power = @power0
-	component_set = "nsc_strike_cruiser_aura"
-
-	ai_weight = { weight = 1 }
-}
-
-utility_component_template = {
 	key = "NSC_STRIKE_CRUISER_AURA"
 	size = aux
 	icon = "GFX_ship_part_science_lab_1"
@@ -153,13 +142,14 @@ utility_component_template = {
 	prerequisites = { "tech_StrikeCruiser_1" }
 
 	potential = {
-		potential = { ship_uses_strikecruiser_components = yes }
+		ship_uses_strikecruiser_components = yes
 	}
 
 	ship_limit = 1
 
 	blocked_by = {
 		NSC_STRIKE_CRUISER_AURA_2
+		NSC_HYPER_DISRUPTOR
 	}
 
 	resources = {
@@ -206,8 +196,8 @@ utility_component_template = {
 		weight = 10
 		modifier = {
 			factor = 0
-			from = { NOT = { 
-				has_role = interdictor
+				from = { NOT = { 
+					has_role = interdictor
 				}
 			}
 		}
@@ -224,13 +214,14 @@ utility_component_template = {
 	component_set = "nsc_strike_cruiser_aura"
 
 	potential = {
-		potential = { ship_uses_strikecruiser_components = yes }
+		ship_uses_strikecruiser_components = yes
 	}
 
 	ship_limit = 1
 
 	blocked_by = {
 		NSC_STRIKE_CRUISER_AURA
+		NSC_HYPER_DISRUPTOR
 	}
 
 	resources = {
@@ -277,9 +268,9 @@ utility_component_template = {
 		weight = 10
 		modifier = {
 			factor = 0
-			from = { 
-				NOT = { 
-					has_role = interdictor
+				from = { 
+					NOT = { 
+						has_role = interdictor
 				}
 			}
 		}
@@ -308,7 +299,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		potential = { ship_uses_supportcruiser_components = yes }
+		is_ship_size = cruiser
 	}
 
 	prerequisites = { "tech_supportcruiser_1" }
@@ -345,7 +336,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		potential = { ship_uses_supportcruiser_components = yes }
+		is_ship_size = cruiser
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
@@ -382,7 +373,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		potential = { ship_uses_supportcruiser_components = yes }
+		is_ship_size = cruiser
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
@@ -419,7 +410,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		potential = { ship_uses_supportcruiser_components = yes }
+		is_ship_size = cruiser
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
@@ -456,7 +447,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		potential = { ship_uses_supportcruiser_components = yes }
+		is_ship_size = cruiser
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }

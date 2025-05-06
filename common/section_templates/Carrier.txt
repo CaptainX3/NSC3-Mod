@@ -13,7 +13,7 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "Carrier_bow_L1M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship }
+	ai_tags = { carrier heavy_carrier super_carrier }
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -549,7 +549,7 @@ ship_section_template = {
 	fits_on_slot = stern
 	entity = "Carrier_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship }
+	ai_tags = { carrier heavy_carrier super_carrier }
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -581,7 +581,7 @@ ship_section_template = {
 	fits_on_slot = stern
 	entity = "Carrier_stern_M2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen }
+	ai_tags = { carrier heavy_carrier super_carrier }
 
 	component_slot = {
 		name = "PD_GUN_01"

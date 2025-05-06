@@ -112,8 +112,7 @@ ship_uses_explorer_components = {
 }
 
 ship_uses_strikecruiser_components = {
-	is_ship_size = Cruiser
-	owner = { has_technology = tech_StrikeCruiser_1 }
+	is_ship_size = cruiser
 }
 
 ship_uses_picket_role = {
@@ -144,11 +143,7 @@ ship_uses_picket_role = {
 		is_ship_size = offspring_mauler_stage_2
 		is_ship_size = offspring_mauler_stage_3
 		# NSC Special Tech
-		AND = {
-			is_ship_size = frigate
-			exists = owner
-			owner = { has_technology = tech_pd_frigate_1 }
-		}
+		is_ship_size = frigate
 	}
 }
 
@@ -320,5 +315,70 @@ ship_uses_cruiser_components = {
 		is_ship_size = offspring_harbinger_stage_3
 		#NSC Ships
 		is_ship_size = explorationship
+	}
+}
+
+ship_uses_battleship_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		# Nanotech Ships
+		is_ship_size = nanite_interdictor
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		# NSC Ships
+		is_ship_size = Carrier
+	}
+}
+
+ship_uses_battleship_thrusters = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		# NSC Ships
+		is_ship_size = Carrier
+	}
+}
+
+ship_uses_battleship_components = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		#  Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		# NSC Ships
 	}
 }

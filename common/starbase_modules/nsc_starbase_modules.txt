@@ -765,6 +765,7 @@ public_market = {
 		}
 		produces = {
 			consumer_goods = 5
+			trade_value = 2
 		}
 		upkeep = {
 			energy = 8
@@ -772,13 +773,8 @@ public_market = {
 	}
 	
 	system_modifier = {
-		job_merchant_add = 3
-		job_politician_add = 1
-	}
-	
-	station_modifier = {
-		trade_value_add = 2
-		starbase_trade_collection_range_add = 1
+		job_merchant_add = 300
+		job_politician_add = 100
 	}
 	
 	ai_build_at_chokepoint = no

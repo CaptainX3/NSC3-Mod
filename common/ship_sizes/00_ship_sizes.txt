@@ -534,7 +534,7 @@ Battlecruiser = {
 
 	default_behavior = line
 	role_background = "GFX_role_selection_battleship"
-	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler screen }
+	ship_roles = { artillery carrier gunship explosive energy_torpedoes brawler  }
 
 	prerequisites = { "tech_Battlecruiser_1" }
 	
