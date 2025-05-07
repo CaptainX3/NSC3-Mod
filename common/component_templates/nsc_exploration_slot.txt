@@ -2,20 +2,37 @@
 @cost = 10
 @research = 10
 
-##############################
-### EXPLORATION COMPONENTS ###
-##############################
-# utility_component_template = {
-	# key = "EXPLORATION_SLOT_EMPTY"
-	# size = aux
-	# icon = "GFX_ship_part_empty_ftl_drive"
-	# icon_frame = 1
-	# prerequisites = { "tech_explorationship_1" }
+## Overwrite of Default Computer
 
-	# component_set = "exploration_ship_slot"
-	
-	# ai_weight = { weight = 2 }
-# }
+utility_component_template = {
+	key = "COMBAT_COMPUTER_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_computer_default"
+	icon_frame = 1
+	ship_behavior = "default"
+	upgrade_path = default
+	potential = {
+		from = {
+			country_uses_bio_ships = no
+		}
+		OR = {
+			is_ship_class = shipclass_military
+			is_ship_size = juggernaut
+			is_ship_class = explorationship
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 1
+	}
+}
+
+
 
 utility_component_template = {
 	key = "EXPLORATION_SLOT_ANOMALY_LAB"
