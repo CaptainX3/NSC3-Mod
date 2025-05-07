@@ -7,7 +7,7 @@
 tech_pd_frigate_1: "Escort Frigate Upgrade"
 tech_pd_frigate_1_desc: "Missiles, torpedoes, and strike craft all pose a grave threat to our fleets. Our naval engineers suggest re-designing our Frigates to mount an array of numerous point-defense weapons to shoot down these targets before they can reach our ships."
 
-tech_StrikeCruiser_1: "Strike Cruiser Upgrade"
+tech_StrikeCruiser_1: "Strike Cruiser"
 tech_StrikeCruiser_1_desc: "Battle experience and extensive wargaming exercises show that fleet combat often ends without a decisive outcome, because the losing side makes an immediate, emergency jump to FTL. Our best scientists have miniaturized the Subspace Snare used on starbases for deployment onto a ship. These vessels will be blisteringly fast, to catch enemy fleets in their Snares, maneuverable enough to keep enemy ships from disengaging from combat, and tough enough to withstand significant punishment to ensure the enemy is pinned down for as long as possible."
 
 tech_Battlecruiser_1: "Battlecruiser"
@@ -256,7 +256,7 @@ TECH_UNLOCK_BH_POWER_DESC: "§H$FLAGSHIP_BLACK_HOLE_REACTOR_1$§!\n$FLAGSHIP_BLA
 TECH_UNLOCK_PD_FRIGATE_CONSTRUCTION_TITLE: "§HUnlocks Section Type:§! Escort Frigate"
 TECH_UNLOCK_PD_FRIGATE_CONSTRUCTION_DESC: "§HPD Frigate§!\nMissiles, torpedoes, and strike craft all pose a grave threat to our fleets. Our naval engineers suggest re-designing our Frigates to mount an array of numerous point-defense weapons to shoot down these targets before they can reach our ships."
 
-TECH_UNLOCK_STRIKECRUISER_CONSTRUCTION_TITLE: "§HUnlocks Section Type:§! Strike Cruiser"
+TECH_UNLOCK_STRIKECRUISER_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! Strike Cruiser"
 TECH_UNLOCK_STRIKECRUISER_CONSTRUCTION_DESC: "§HStrike Cruiser§!\nBattle experience and extensive wargaming exercises show that fleet combat often ends without a decisive outcome, because the losing side makes an immediate, emergency jump to FTL. Our best scientists have miniaturized the Subspace Snare used on starbases for deployment onto a ship. These vessels will be blisteringly fast, to catch enemy fleets in their Snares, maneuverable enough to keep enemy ships from disengaging from combat, and tough enough to withstand significant punishment to ensure the enemy is pinned down for as long as possible."
 
 TECH_UNLOCK_BATTLECRUISER_CONSTRUCTION_TITLE: "§HUnlocks Ship Type:§! Battlecruiser"

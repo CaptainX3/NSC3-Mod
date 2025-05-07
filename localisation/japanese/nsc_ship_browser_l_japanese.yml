@@ -1,4 +1,5 @@
 ﻿l_japanese:
+  SHIP_GRAPHICS_STRIKECRUISER_DESC:0 "Strike Cruisers are designed to catch enemy fleets and hold them in position until a friendly fleet can arrive to finish the job."
  SHIP_GRAPHICS_EXPLORATIONSHIP_DESC: "A combat-capable Science ship designed to withstand hostile forces while boldly going where no one has gone before."
  SHIP_GRAPHICS_BATTLECRUISER_DESC: "A much larger and more advanced version of the Cruiser designed for front-line combat duties."
  SHIP_GRAPHICS_CARRIER_DESC: "Massive warships capable of carrying large numbers of Strike Craft. Due to the space needed for the hangars, these ships have little direct offensive capability must be protected by other combat vessels."
