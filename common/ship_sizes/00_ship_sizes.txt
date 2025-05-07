@@ -449,10 +449,6 @@ cruiser = {
 				has_technology = tech_cloaking_3
 			}
 		}
-		{
-			name = interdictor
-			trigger = { has_technology = tech_StrikeCruiser_1 }
-		}
 	}
 	prerequisites = { "tech_cruisers" }
 	
@@ -548,7 +544,16 @@ StrikeCruiser = {
 
 	default_behavior = swarm
 	ship_roles = { interdictor }
-	triggered_ship_roles = {}
+	triggered_ship_roles = {
+		{
+			name = explosive
+			trigger = { has_technology = tech_torpedoes_1 }
+		}
+		{
+			name = energy_torpedoes
+			trigger = { has_technology = tech_energy_torpedoes_1 }
+		}
+	}
 	
 	prerequisites = { "tech_StrikeCruiser_1" }
 	

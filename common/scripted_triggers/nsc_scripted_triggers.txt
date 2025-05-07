@@ -144,6 +144,7 @@ ship_uses_picket_role = {
 		is_ship_size = offspring_mauler_stage_3
 		# NSC Special Tech
 		is_ship_size = frigate
+		is_ship_size = StrikeCruiser
 	}
 }
 
@@ -163,6 +164,7 @@ ship_uses_torpedo_role = {
 		is_ship_size = nanite_interdictor
 		# NSC Ships
 		is_ship_size = Battlecruiser
+		is_ship_size = StrikeCruiser
 	}
 }
 
@@ -198,6 +200,7 @@ ship_uses_line_role = {
 		is_ship_size = Dreadnought
 		is_ship_size = Flagship
 		is_ship_size = explorationship
+		is_ship_size = StrikeCruiser
 	}
 }
 
