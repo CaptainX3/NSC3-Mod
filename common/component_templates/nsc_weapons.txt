@@ -242,7 +242,7 @@ weapon_component_template = {
 weapon_component_template = {
 	key = NSC_HYPER_DISRUPTOR
 	size = point_defence
-	icon = "GFX_ship_part_point_defense_1" #icon = "GFX_ship_part_nsc_warp_disruptor"
+	icon = "GFX_ship_part_nsc_emp" #icon = "GFX_ship_part_nsc_warp_disruptor"
 	icon_frame = 1
 	type = instant
 	windup = { min = 1.0 max = 15.0 }

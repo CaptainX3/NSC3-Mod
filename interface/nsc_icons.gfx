@@ -333,5 +333,11 @@ spriteTypes = {
 		name = "GFX_mod_nsc_freebooter_jobs_upkeep_mult"
 		texturefile = "gfx/interface/icons/modifiers/mod_unknown.dds"
 	}
-
+	#######################
+	###### ROLES ######
+	#######################
+	spriteType = {
+		name = "GFX_role_interdictor"
+		texturefile = "gfx/interface/ship_designer/role_selection/nsc_interdictor_role.dds"
+	}
 }
