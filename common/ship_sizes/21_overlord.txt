@@ -526,6 +526,9 @@ offspring_mauler_stage_1 = {
 			food = @mauler_stage_1_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @mauler_stage_1_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -627,6 +630,9 @@ offspring_mauler_stage_2 = {
 			food = @mauler_stage_2_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @mauler_stage_2_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -726,6 +732,9 @@ offspring_mauler_stage_3 = {
 			food = @mauler_stage_3_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @mauler_stage_3_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -749,7 +758,6 @@ offspring_mauler_stage_3 = {
 
 offspring_weaver_stage_1 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = weaver_stage_1_entity
 	formation_priority = @weaver_formation_priority
@@ -824,6 +832,9 @@ offspring_weaver_stage_1 = {
 			food = @weaver_stage_1_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @weaver_stage_1_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -860,7 +871,6 @@ offspring_weaver_stage_1 = {
 
 offspring_weaver_stage_2 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02"}
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = weaver_stage_2_entity
 	formation_priority = @weaver_formation_priority
@@ -938,6 +948,9 @@ offspring_weaver_stage_2 = {
 			food = @weaver_stage_2_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @weaver_stage_2_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -974,7 +987,6 @@ offspring_weaver_stage_2 = {
 
 offspring_weaver_stage_3 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = weaver_stage_3_entity
 	formation_priority = @weaver_formation_priority
@@ -1050,6 +1062,9 @@ offspring_weaver_stage_3 = {
 			food = @weaver_stage_3_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @weaver_stage_3_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -1086,7 +1101,6 @@ offspring_weaver_stage_3 = {
 
 offspring_harbinger_stage_1 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = harbinger_stage_1_entity
 	formation_priority = @harbinger_formation_priority
@@ -1183,6 +1197,9 @@ offspring_harbinger_stage_1 = {
 			food = @harbinger_stage_1_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @harbinger_stage_1_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -1223,7 +1240,6 @@ offspring_harbinger_stage_1 = {
 
 offspring_harbinger_stage_2 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = harbinger_stage_2_entity
 	formation_priority = @harbinger_formation_priority
@@ -1322,6 +1338,9 @@ offspring_harbinger_stage_2 = {
 			food = @harbinger_stage_2_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @harbinger_stage_2_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -1362,7 +1381,6 @@ offspring_harbinger_stage_2 = {
 
 offspring_harbinger_stage_3 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = harbinger_stage_3_entity
 	formation_priority = @harbinger_formation_priority
@@ -1459,6 +1477,9 @@ offspring_harbinger_stage_3 = {
 			food = @harbinger_stage_3_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @harbinger_stage_3_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -1499,7 +1520,6 @@ offspring_harbinger_stage_3 = {
 
 offspring_stinger_stage_1 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = stinger_stage_1_entity
 	formation_priority = @stinger_formation_priority
@@ -1574,6 +1594,9 @@ offspring_stinger_stage_1 = {
 			food = @stinger_stage_1_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @stinger_stage_1_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -1623,7 +1646,6 @@ offspring_stinger_stage_1 = {
 
 offspring_stinger_stage_2 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = stinger_stage_2_entity
 	formation_priority = @stinger_formation_priority
@@ -1701,6 +1723,9 @@ offspring_stinger_stage_2 = {
 			food = @stinger_stage_2_upkeep_food
 			mult = 2
 		}
+		logistics = {
+			trade = @stinger_stage_2_upkeep_logistic
+		}
 	}
 
 	min_upgrade_cost = {
@@ -1750,7 +1775,6 @@ offspring_stinger_stage_2 = {
 
 offspring_stinger_stage_3 = {
 	graphical_culture = { "biogenesis_01" "biogenesis_02"}
-	entity = "placeholder_entity"	# TODO AUG-47128 replace with proper root entity once art assets are in
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
 	entity = stinger_stage_3_entity
 	formation_priority = @stinger_formation_priority
@@ -1825,6 +1849,9 @@ offspring_stinger_stage_3 = {
 			alloys = @stinger_stage_3_upkeep_alloys
 			food = @stinger_stage_3_upkeep_food
 			mult = 2
+		}
+		logistics = {
+			trade = @stinger_stage_3_upkeep_logistic
 		}
 	}
 
