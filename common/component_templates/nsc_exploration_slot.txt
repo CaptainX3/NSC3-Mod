@@ -5,7 +5,7 @@
 ## Overwrite of Default Computer
 
 utility_component_template = {
-	key = "COMBAT_COMPUTER_DEFAULT"
+	key = "EXPLORER_COMBAT_COMPUTER_DEFAULT"
 	size = small
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1
@@ -16,9 +16,7 @@ utility_component_template = {
 			country_uses_bio_ships = no
 		}
 		OR = {
-			is_ship_class = shipclass_military
-			is_ship_size = juggernaut
-			is_ship_class = explorationship
+			is_ship_size = explorationship
 		}
 	}
 
