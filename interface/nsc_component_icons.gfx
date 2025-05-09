@@ -205,6 +205,12 @@ spriteTypes = {
 		textureFile = "gfx/interface/icons/ship_parts/ship_part_nsc_pd_missile.dds"
 		noOfFrames = 1
 	}
+
+	spriteType = {
+		name = "GFX_ship_part_nsc_emp"
+		textureFile = "gfx/interface/icons/ship_parts/ship_part_nsc_emp.dds"
+		noOfFrames = 1
+	}
 	
 	####################
 	### STRIKE CRAFT ###

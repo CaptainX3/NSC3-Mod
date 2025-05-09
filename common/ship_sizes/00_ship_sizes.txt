@@ -216,7 +216,7 @@ frigate = {
 			trigger = { has_technology = tech_energy_torpedoes_1 }
 		}
 		{
-			name = picket
+			name = screen
 			trigger = { has_technology = tech_pd_frigate_1 }
 		}
 		{
@@ -543,6 +543,7 @@ StrikeCruiser = {
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 
 	default_behavior = swarm
+	role_background = "GFX_role_selection_cruiser"
 	ship_roles = { interdictor }
 	triggered_ship_roles = {
 		{
@@ -1101,8 +1102,6 @@ titan = {
 		max = 25
 		planet_mult = 0.1
 	}
-
-	available_to_everyone = yes
 }
 
 Flagship = {
