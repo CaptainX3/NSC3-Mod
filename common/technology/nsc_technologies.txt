@@ -892,7 +892,12 @@ tech_graviton_power = {
 	tier = 5
 	category = { particles }
 	ai_update_type = military
-	prerequisites = { "tech_zero_point_power" }
+	prerequisites = { 
+		OR = {
+			tech_zero_point_power
+			tech_bio_dark_matter_power_core
+		} 	
+	}
 	weight = @tier3weight3
 	
 	gateway = power_generation

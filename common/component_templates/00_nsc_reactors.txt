@@ -1360,6 +1360,150 @@ utility_component_template = {
 }
 
 utility_component_template = {
+	key = "ION_CANNON_DARK_MATTER_REACTOR"
+	size = small
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @cruiser_reactor_power_6
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = @cruiser_reactor_cost_6
+			sr_dark_matter = 8
+		}
+	}
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	potential = {
+		ship_uses_ion_cannon_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	ai_weight = {
+		weight = 6
+		modifier = {
+			factor = 0.0
+			no_resource_for_component = { RESOURCE = sr_dark_matter }
+		}
+		modifier = {
+			factor = 0.0
+			is_ai = yes
+		}
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = @starbase_reactor_power_6
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+
+	potential = {
+		ship_uses_starbase_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	upgrades_to = "STARBASE_PRIMARY_REACTOR"
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_PRIMARY_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 50000
+
+	prerequisites = { "tech_graviton_power" }
+	component_set = "power_core"
+
+	potential = {
+		ship_uses_starbase_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_BIO_DARK_MATTER_REACTOR"
+	size = large
+	icon = "GFX_ship_part_bio_dark_matter_power_core"
+	icon_frame = 1
+	power = @starbase_reactor_power_6
+
+	prerequisites = { "tech_dark_matter_power_core" }
+	component_set = "power_core"
+	potential = {
+		ship_uses_starbase_components = yes
+		from = {
+			country_uses_bio_ships = yes
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+
+	upgrades_to = "STARBASE_BIO_PRIMARY_REACTOR"
+
+	ai_weight = {
+		weight = 6
+	}
+}
+
+utility_component_template = {
+	key = "STARBASE_BIO_PRIMARY_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 50000
+
+	prerequisites = { "tech_graviton_power" }
+	component_set = "power_core"
+
+	potential = {
+		ship_uses_starbase_components = yes
+		from = {
+			country_uses_bio_ships = yes
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+
+utility_component_template = {
 	key = "STATION_DARK_MATTER_REACTOR"
 	size = large
 	icon = "GFX_ship_part_dark_matter_power_core"

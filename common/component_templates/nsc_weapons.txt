@@ -178,7 +178,10 @@ weapon_component_template = {
 	tags = { weapon_type_kinetic s_slot }
 	ai_tags = { weapon_role_anti_shield }
 	potential = {
-		has_role = spitfire
+		OR = {
+			is_ship_class = shipclass_military_station
+			is_ship_size = battleship
+		}
 	}
 	inline_script = "targeting/support_ships"
 	
@@ -223,7 +226,10 @@ weapon_component_template = {
 	tags = { weapon_type_energy s_slot }
 	ai_tags = { weapon_role_anti_armor }
 	potential = {
-		has_role = spitfire
+		OR = {
+			is_ship_class = shipclass_military_station
+			is_ship_size = battleship
+		}
 	}
 	inline_script = "targeting/support_ships"
 	
@@ -241,7 +247,7 @@ weapon_component_template = {
 
 weapon_component_template = {
 	key = NSC_HYPER_DISRUPTOR
-	size = point_defence
+	size = small
 	icon = "GFX_ship_part_nsc_emp" #icon = "GFX_ship_part_nsc_warp_disruptor"
 	icon_frame = 1
 	type = instant
