@@ -1424,32 +1424,6 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_PRIMARY_REACTOR"
-	size = large
-	icon = "GFX_ship_part_dark_matter_power_core"
-	icon_frame = 1
-	power = 50000
-
-	prerequisites = { "tech_graviton_power" }
-	component_set = "power_core"
-
-	potential = {
-		ship_uses_starbase_components = yes
-		from = {
-			country_uses_bio_ships = no
-		}
-	}
-
-	show_tech_unlock_if = {
-		country_uses_bio_ships = no
-	}
-
-	ai_weight = {
-		weight = 100
-	}
-}
-
-utility_component_template = {
 	key = "STARBASE_BIO_DARK_MATTER_REACTOR"
 	size = large
 	icon = "GFX_ship_part_bio_dark_matter_power_core"
@@ -1501,7 +1475,6 @@ utility_component_template = {
 		weight = 100
 	}
 }
-
 
 utility_component_template = {
 	key = "STATION_DARK_MATTER_REACTOR"
@@ -3624,4 +3597,36 @@ utility_component_template = {
 	component_set = "power_core"
 
 	ai_weight = { weight = 12 }
+}
+
+
+
+########################################################################################################################################################################
+### Special Reactors ###################################################################################################################################################
+########################################################################################################################################################################
+
+utility_component_template = {
+	key = "STARBASE_PRIMARY_REACTOR"
+	size = large
+	icon = "GFX_ship_part_dark_matter_power_core"
+	icon_frame = 1
+	power = 50000
+
+	prerequisites = { "tech_graviton_power" }
+	component_set = "power_core"
+
+	potential = {
+		ship_uses_starbase_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = no
+	}
+
+	ai_weight = {
+		weight = 100
+	}
 }
