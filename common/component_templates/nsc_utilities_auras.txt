@@ -299,7 +299,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		is_ship_size = cruiser
+		is_ship_size = destroyer
 	}
 
 	prerequisites = { "tech_supportcruiser_1" }
@@ -336,7 +336,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		is_ship_size = cruiser
+		is_ship_size = destroyer
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
@@ -373,7 +373,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		is_ship_size = cruiser
+		is_ship_size = destroyer
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
@@ -410,7 +410,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		is_ship_size = cruiser
+		is_ship_size = destroyer
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
@@ -447,7 +447,7 @@ utility_component_template = {
 	power = @power1
 
 	potential = {
-		is_ship_size = cruiser
+		is_ship_size = destroyer
 	}
 	
 	prerequisites = { "tech_supportcruiser_1" }
