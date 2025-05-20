@@ -92,3 +92,7 @@
 @juggernaut_reactor_power_9 = 38600
 @juggernaut_reactor_power_10 = 41100
 @juggernaut_reactor_power_11 = 43600
+
+## ESC Variable
+
+@nsc_modtag_suffix = "_nsc"
