@@ -28,11 +28,11 @@
 ##################
 
 @corvette_reactor_power_6 = 820
-@corvette_reactor_power_7 = 600
-@corvette_reactor_power_8 = 850
-@corvette_reactor_power_9 = 1100
-@corvette_reactor_power_10 = 1350
-@corvette_reactor_power_11 = 1600
+@corvette_reactor_power_7 = 1070
+@corvette_reactor_power_8 = 1320
+@corvette_reactor_power_9 = 1570
+@corvette_reactor_power_10 = 1820
+@corvette_reactor_power_11 = 2070
 
 @destroyer_reactor_power_6 = 1350
 @destroyer_reactor_power_7 = 1600
