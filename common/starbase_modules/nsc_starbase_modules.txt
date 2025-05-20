@@ -657,7 +657,7 @@ fleet_club = {
 	
 	system_modifier = { 
 		job_entertainer_add = 100
-		job_manager_add = 100
+		job_bureaucrat_add = 100
 	}
 	
 	country_modifier = {
@@ -728,7 +728,7 @@ nightclub = {
 	
 	system_modifier = { 
 		job_entertainer_add = 100
-		job_manager_add = 100
+		job_bureaucrat_add = 100
 		pop_government_ethic_attraction = 0.01
 	}
 	
@@ -773,7 +773,6 @@ public_market = {
 	}
 	
 	system_modifier = {
-		job_trader_add = 100
 		job_politician_add = 100
 	}
 	
