@@ -21,3 +21,78 @@
 ##################
 
 @flagship_logistic_upkeep_trade = 8
+
+
+##################
+# REACTORS
+##################
+
+@corvette_reactor_power_6 = 820
+@corvette_reactor_power_7 = 1070
+@corvette_reactor_power_8 = 1320
+@corvette_reactor_power_9 = 1570
+@corvette_reactor_power_10 = 1820
+@corvette_reactor_power_11 = 2070
+
+@destroyer_reactor_power_6 = 1350
+@destroyer_reactor_power_7 = 1600
+@destroyer_reactor_power_8 = 1850
+@destroyer_reactor_power_9 = 2100
+@destroyer_reactor_power_10 = 2350
+@destroyer_reactor_power_11 = 2600
+
+@cruiser_reactor_power_6 = 2410
+@cruiser_reactor_power_7 = 2760
+@cruiser_reactor_power_8 = 3110
+@cruiser_reactor_power_9 = 3460
+@cruiser_reactor_power_10 = 3810
+@cruiser_reactor_power_11 = 4160
+
+@Battlecruiser_reactor_power_1 = 1175
+@Battlecruiser_reactor_power_2 = 1425
+@Battlecruiser_reactor_power_3 = 1675
+@Battlecruiser_reactor_power_4 = 1925
+@Battlecruiser_reactor_power_5 = 2175
+@Battlecruiser_reactor_power_6 = 2425
+@Battlecruiser_reactor_power_7 = 2675
+@Battlecruiser_reactor_power_8 = 2925
+@Battlecruiser_reactor_power_9 = 3175
+@Battlecruiser_reactor_power_10 = 3425
+@Battlecruiser_reactor_power_11 = 3675
+
+@battleship_reactor_power_6 = 5000
+@battleship_reactor_power_7 = 6000
+@battleship_reactor_power_8 = 7000
+@battleship_reactor_power_9 = 8000
+@battleship_reactor_power_10 = 9000
+@battleship_reactor_power_11 = 10000
+
+@Dreadnought_reactor_power_1 = 5000
+@Dreadnought_reactor_power_2 = 6000
+@Dreadnought_reactor_power_3 = 7000
+@Dreadnought_reactor_power_4 = 8000
+@Dreadnought_reactor_power_5 = 9000
+@Dreadnought_reactor_power_6 = 10000
+@Dreadnought_reactor_power_7 = 11000
+@Dreadnought_reactor_power_8 = 12000
+@Dreadnought_reactor_power_9 = 13000
+@Dreadnought_reactor_power_10 = 14000
+@Dreadnought_reactor_power_11 = 15000
+
+@titan_reactor_power_6 = 9500
+@titan_reactor_power_7 = 11000
+@titan_reactor_power_8 = 12500
+@titan_reactor_power_9 = 14000
+@titan_reactor_power_10 = 15500
+@titan_reactor_power_11 = 17000
+
+@juggernaut_reactor_power_6 = 31000
+@juggernaut_reactor_power_7 = 33600
+@juggernaut_reactor_power_8 = 36100
+@juggernaut_reactor_power_9 = 38600
+@juggernaut_reactor_power_10 = 41100
+@juggernaut_reactor_power_11 = 43600
+
+## ESC Variable
+
+@nsc_modtag_suffix = "_nsc"

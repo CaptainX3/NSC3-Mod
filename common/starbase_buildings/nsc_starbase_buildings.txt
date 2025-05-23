@@ -51,6 +51,15 @@ drydock = {
 		mult = value:num_starbase_modules_of_type|TYPE|beastport|
 	}
 
+		triggered_station_modifier = {
+		potential = {
+			hidden_trigger = { exists = this }
+			has_starbase_module = hatchery
+		}
+		starbase_shipyard_capacity_add = 1
+		mult = value:num_starbase_modules_of_type|TYPE|hatchery|
+	}
+
 	resources = {
 		category = starbase_buildings
 		cost = { alloys = 100 }
@@ -122,22 +131,10 @@ starbase_management = {
 	
 	triggered_system_modifier = {
         potential = {
-            exists = owner
-            owner = { is_megacorp = no }
             NOT = { is_planet_class = pc_cosmogenesis_world }
         }
         planet_jobs_unity_produces_mult = 0.05
         job_politician_add = 100
-    }
-
-    triggered_system_modifier = {
-        potential = {
-            exists = owner
-            owner = { is_megacorp = yes }
-            NOT = { is_planet_class = pc_cosmogenesis_world }
-        }
-        planet_jobs_trade_produces_mult = 0.05
-        job_executive_add = 100
     }
 
 	resources = {
@@ -229,7 +226,7 @@ starbase_management_hive = {
 
 	system_modifier = {
 		bonus_pop_growth_mult = 0.05
-		job_synapse_drone_add = 100
+		job_coordinator_add = 100
 	}
 
 	resources = {
@@ -365,7 +362,7 @@ customs_office = {
 		}
 		modifier = {
 			planet_stability_add = 10
-			planet_livestock_produces_mult = 0.05
+			pop_livestock_bonus_workforce_mult = 0.05
 			pop_category_purge_produces_mult = 0.05
 		} 
 	}
