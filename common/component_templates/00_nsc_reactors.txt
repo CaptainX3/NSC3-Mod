@@ -3610,21 +3610,12 @@ utility_component_template = {
 	size = large
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
-	power = 50000
+	power = 100000
 
-	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
 
 	potential = {
 		ship_uses_starbase_components = yes
-		from = {
-			country_uses_bio_ships = no
-		}
-	}
-
-	show_tech_unlock_if = {
-		country_uses_bio_ships = no
-	}
 
 	ai_weight = {
 		weight = 100
