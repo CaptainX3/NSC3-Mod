@@ -320,6 +320,31 @@ ship_uses_cruiser_components = {
 	}
 }
 
+ship_uses_cruiser_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = cruiser
+		# Offspring Ships
+		is_ship_size = offspring_cruiser
+		# Galactic Nemesis Ships
+		is_ship_size = crisis_cruiser
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_destroyer
+		# Biological Ships
+		is_ship_size = harbinger_stage_1
+		is_ship_size = harbinger_stage_2
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_harbinger_stage_1
+		is_ship_size = offspring_harbinger_stage_2
+		is_ship_size = offspring_harbinger_stage_3
+		#NSC Ships
+		is_ship_size = explorationship
+		is_ship_size = StrikeCruiser
+	}
+}
+
 ship_uses_battleship_reactors = {
 	OR = {
 		# Regular Ships
