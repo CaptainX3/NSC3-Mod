@@ -179,7 +179,7 @@ starbase_management_machine = {
 	}
 	
 	system_modifier = {
-		planet_jobs_robotic_produces_mult = 0.05
+		robotic_pop_bonus_workforce_mult = 0.05
 		job_coordinator_add = 100
 	}
 
@@ -374,7 +374,7 @@ customs_office = {
 		}
 		modifier = {
 			pop_category_bio_trophy_unity_produces_mult = 0.1
-			planet_jobs_robotic_produces_mult = 0.05
+			robotic_pop_bonus_workforce_mult = 0.05
 		}
 	}
 
