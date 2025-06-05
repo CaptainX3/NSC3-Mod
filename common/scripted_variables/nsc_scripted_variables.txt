@@ -26,7 +26,11 @@
 ##################
 # REACTORS
 ##################
-
+@corvette_reactor_power_1 = 175
+@corvette_reactor_power_2 = 275
+@corvette_reactor_power_3 = 375
+@corvette_reactor_power_4 = 475
+@corvette_reactor_power_5 = 575
 @corvette_reactor_power_6 = 820
 @corvette_reactor_power_7 = 1070
 @corvette_reactor_power_8 = 1320
@@ -34,6 +38,11 @@
 @corvette_reactor_power_10 = 1820
 @corvette_reactor_power_11 = 2070
 
+@destroyer_reactor_power_1 = 420
+@destroyer_reactor_power_2 = 504
+@destroyer_reactor_power_3 = 604
+@destroyer_reactor_power_4 = 725
+@destroyer_reactor_power_5 = 870
 @destroyer_reactor_power_6 = 1350
 @destroyer_reactor_power_7 = 1600
 @destroyer_reactor_power_8 = 1850
@@ -41,6 +50,11 @@
 @destroyer_reactor_power_10 = 2350
 @destroyer_reactor_power_11 = 2600
 
+@cruiser_reactor_power_1 = 455
+@cruiser_reactor_power_2 = 630
+@cruiser_reactor_power_3 = 805
+@cruiser_reactor_power_4 = 980
+@cruiser_reactor_power_5 = 1155
 @cruiser_reactor_power_6 = 2410
 @cruiser_reactor_power_7 = 2760
 @cruiser_reactor_power_8 = 3110
@@ -60,6 +74,11 @@
 @Battlecruiser_reactor_power_10 = 3425
 @Battlecruiser_reactor_power_11 = 3675
 
+@battleship_reactor_power_1 = 1275
+@battleship_reactor_power_2 = 1825
+@battleship_reactor_power_3 = 2375
+@battleship_reactor_power_4 = 2925
+@battleship_reactor_power_5 = 3475
 @battleship_reactor_power_6 = 5000
 @battleship_reactor_power_7 = 6000
 @battleship_reactor_power_8 = 7000
@@ -79,7 +98,13 @@
 @Dreadnought_reactor_power_10 = 14000
 @Dreadnought_reactor_power_11 = 15000
 
-@titan_reactor_power_6 = 9500
+@titan_reactor_power_1 = 2000
+@titan_reactor_power_2 = 3000
+@titan_reactor_power_3 = 4000
+@titan_reactor_power_4 = 5000
+@titan_reactor_power_5 = 6000
+@titan_reactor_power_6 = 7000
+@titan_reactor_power_6 = 8000
 @titan_reactor_power_7 = 11000
 @titan_reactor_power_8 = 12500
 @titan_reactor_power_9 = 14000
@@ -92,6 +117,45 @@
 @juggernaut_reactor_power_9 = 38600
 @juggernaut_reactor_power_10 = 41100
 @juggernaut_reactor_power_11 = 43600
+
+@hqpower = 90000
+
+@colossus_power = 10000
+
+@Flagship_reactor_power_1 = 35000
+@Flagship_reactor_power_2 = 65000
+@Flagship_reactor_power_3 = 95000
+
+@platform_reactor_power_6 = 2415
+@platform_reactor_power_7 = 2940
+@platform_reactor_power_8 = 3465
+@platform_reactor_power_9 = 3990
+@platform_reactor_power_10 = 4515
+@platform_reactor_power_11 = 5040
+
+@station_reactor_power_1 = 1100
+@station_reactor_power_2 = 1440
+@station_reactor_power_3 = 1900
+@station_reactor_power_4 = 2500
+@station_reactor_power_5 = 3100
+@station_reactor_power_6 = 3700
+@station_reactor_power_7 = 4300
+@station_reactor_power_8 = 4900
+@station_reactor_power_9 = 5500
+@station_reactor_power_10 = 6100
+@station_reactor_power_11 = 7000
+
+@fortress_reactor_power_1 = 1200
+@fortress_reactor_power_2 = 1500
+@fortress_reactor_power_3 = 2000
+@fortress_reactor_power_4 = 2500
+@fortress_reactor_power_5 = 3000
+@fortress_reactor_power_6 = 3500
+@fortress_reactor_power_7 = 4000
+@fortress_reactor_power_8 = 6000
+@fortress_reactor_power_9 = 8000
+@fortress_reactor_power_10 = 10000
+@fortress_reactor_power_11 = 12000
 
 ## ESC Variable
 

@@ -518,11 +518,11 @@ cruiser = {
 }
 
 StrikeCruiser = {
-	formation_priority = @strikecruiser_formation
+	formation_priority = @strikecruiser_formation_priority
 	max_speed = 190
 	acceleration = 0.45
 	rotation_speed = 0.25
-	collision_radius = @cruiser_collision
+	collision_radius = @cruiser_collision_radius
 
 	modifier = {
 		ship_evasion_add = 15

@@ -264,7 +264,7 @@ nsc_hospital_2 = {
 	
 	upgrade_from = { nsc_hospital_1 }
 	
-	country_modifier = { job_diagnostician_add = 2 }
+	country_modifier = { job_diagnostician_add = 200 }
 }
 
 nsc_hospital_3 = {

@@ -123,7 +123,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_starbase_outliner"
 		textureFile = "gfx/interface/icons/starbase_outliner.dds"
-		noOfFrames = 7
+		noOfFrames = 10
 	}
 	
 	#################

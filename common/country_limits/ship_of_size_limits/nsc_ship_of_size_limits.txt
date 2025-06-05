@@ -19,3 +19,31 @@ Flagship_ship_limit = {
 		has_technology = tech_Flagship_1
 	}
 }
+
+titan_ships_limit = {
+	ship_types = {
+		titan
+		cosmo_crisis_titan
+		bio_titan
+	}
+
+	base = 100 # Base Limit 5 (5 * 20)
+	max = 2000 # Max Limit of 100 (100 * 20) 
+	naval_cap_fraction = 0.05
+
+	show = {
+		is_scope_valid = yes
+		has_technology = tech_titans
+	}
+}
+
+juggernaut_ships_limit = {
+	ship_types = {
+		juggernaut
+	}
+	base = 128 # Limit of 4 (4 * 32)
+	show = {
+		is_scope_valid = yes
+		has_technology = tech_juggernaut
+	}
+}

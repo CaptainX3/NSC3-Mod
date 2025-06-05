@@ -261,6 +261,7 @@ weapon_component_template = {
 	prerequisites = { "tech_StrikeCruiser_1" }
 	component_set = "NSC_FTL_SCAMBLER"
 	projectile_gfx = "infrared_laser_s"
+	tags = { interdictor weapon_type_energy s_slot }
 
 	potential = {
 		ship_uses_strikecruiser_components = yes
@@ -311,5 +312,4 @@ weapon_component_template = {
 			alloys = 0.3
 		}
 	}
-	tags = { interdictor }
 }
