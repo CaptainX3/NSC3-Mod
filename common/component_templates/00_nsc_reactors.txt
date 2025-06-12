@@ -847,7 +847,7 @@ utility_component_template = {
 	prerequisites = { "tech_dark_matter_power_core" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_components = yes
+		ship_uses_corvette_reactors = yes
 		from = {
 			country_uses_bio_ships = no
 		}
@@ -1468,7 +1468,7 @@ utility_component_template = {
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_components = yes
+		ship_uses_corvette_reactors = yes
 		from = {
 			country_uses_bio_ships = no
 		}
@@ -1838,7 +1838,7 @@ utility_component_template = {
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_components = yes
+		ship_uses_corvette_reactors = yes
 		from = {
 			country_uses_bio_ships = no
 		}
@@ -2208,7 +2208,7 @@ utility_component_template = {
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_components = yes
+		ship_uses_corvette_reactors = yes
 		from = {
 			country_uses_bio_ships = no
 		}
@@ -2578,7 +2578,7 @@ utility_component_template = {
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_components = yes
+		ship_uses_corvette_reactors = yes
 		from = {
 			country_uses_bio_ships = no
 		}
@@ -2951,7 +2951,7 @@ utility_component_template = {
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_components = yes
+		ship_uses_corvette_reactors = yes
 		from = {
 			country_uses_bio_ships = no
 		}
