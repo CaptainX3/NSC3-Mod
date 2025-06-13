@@ -1328,7 +1328,7 @@ colonizer = {
 			}
 			alloys = @colony_cost_low
 		}
-
+		# Halved if you use biological ships
 		cost = {
 			trigger = {
 				from = {
@@ -1379,6 +1379,9 @@ colonizer = {
 					is_lithoid_empire = no
 					is_robot_empire = no
 					is_hive_empire = no
+					NOT = {
+						has_origin = origin_synthetic_fertility
+					}
 				}
 			}
 			food = @colony_cost_base
@@ -1394,6 +1397,7 @@ colonizer = {
 			}
 			food = @colony_cost_high
 		}
+
 		# Additional food to replace alloys if you use biological ships
 		cost = {
 			trigger = {
@@ -1415,6 +1419,7 @@ colonizer = {
 			food = @colony_cost_low
 			mult = @halved_alloy_to_food_cost_ratio
 		}
+
 		# Minerals for lithoids
 		# 200 normally
 		cost = {
@@ -1423,6 +1428,9 @@ colonizer = {
 					is_lithoid_empire = yes
 					is_robot_empire = no
 					is_hive_empire = no
+					NOT = {
+						has_origin = origin_synthetic_fertility
+					}
 				}
 			}
 			minerals = @colony_cost_base
@@ -1446,6 +1454,15 @@ colonizer = {
 					is_robot_empire = yes
 					is_gestalt = no
 					is_virtual_empire = no
+				}
+			}
+			energy = @colony_cost_base
+		}
+		# 200 for synth fert
+		cost = {
+			trigger = {
+				from = {
+					has_origin = origin_synthetic_fertility
 				}
 			}
 			energy = @colony_cost_base
@@ -1490,6 +1507,8 @@ colonizer = {
 		}
 	}
 
+	available_to_everyone = yes
+
 	potential_country = {
 		is_guided_sapience_empire = no
 		is_wilderness_empire = no
@@ -1501,8 +1520,6 @@ colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
-
-	available_to_everyone = yes
 
 	ai_ship_data = {
 		min = value:desired_colonizers
@@ -1629,6 +1646,7 @@ lithoid_colonizer = {
 			has_technology = tech_psi_jump_drive_1
 		}
 	}
+
 	available_to_everyone = yes
 
 	ai_ship_data = {
@@ -1761,6 +1779,9 @@ guided_sapience_colonizer = {
 					is_lithoid_empire = no
 					is_robot_empire = no
 					is_hive_empire = no
+					NOT = {
+						has_origin = origin_synthetic_fertility
+					}
 				}
 			}
 			food = @colony_cost_base
@@ -1776,6 +1797,7 @@ guided_sapience_colonizer = {
 			}
 			food = @colony_cost_high
 		}
+
 		# Additional food to replace alloys if you use biological ships
 		cost = {
 			trigger = {
@@ -1806,6 +1828,9 @@ guided_sapience_colonizer = {
 					is_lithoid_empire = yes
 					is_robot_empire = no
 					is_hive_empire = no
+					NOT = {
+						has_origin = origin_synthetic_fertility
+					}
 				}
 			}
 			minerals = @colony_cost_base
@@ -1829,6 +1854,15 @@ guided_sapience_colonizer = {
 					is_robot_empire = yes
 					is_gestalt = no
 					is_virtual_empire = no
+				}
+			}
+			energy = @colony_cost_base
+		}
+		# 200 for synth fert
+		cost = {
+			trigger = {
+				from = {
+					has_origin = origin_synthetic_fertility
 				}
 			}
 			energy = @colony_cost_base
