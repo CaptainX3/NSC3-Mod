@@ -86,7 +86,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -155,7 +180,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -224,7 +274,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -271,15 +346,38 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
 		factor = 20
 	}
 }
-
-
 
 ship_section_template = {
 	key = "MEDTORP_MILITARY_STATION_SECTION"
@@ -321,7 +419,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -370,7 +493,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -407,7 +555,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -420,6 +593,14 @@ ship_section_template = {
 	key = "HANGAR_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
 	ai_tags = { carrier }
+	prerequisites = {
+		OR = {
+			tech_strike_craft_1
+			tech_strike_craft_2
+			tech_strike_craft_3
+			tech_strike_craft_skrand
+		}
+	}
 
 	fits_on_slot = "west"
 	fits_on_slot = "east"
@@ -446,7 +627,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -541,7 +747,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -632,7 +863,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -723,7 +979,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -815,7 +1096,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -859,7 +1165,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -872,6 +1203,14 @@ ship_section_template = {
 	key = "HANGAR_MILITARY_STATION_SECTION_2"
 	ship_size = military_station_medium
 	ai_tags = { carrier }
+	prerequisites = {
+		OR = {
+			tech_strike_craft_1
+			tech_strike_craft_2
+			tech_strike_craft_3
+			tech_strike_craft_skrand
+		}
+	}
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -906,7 +1245,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1085,7 +1449,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1260,7 +1649,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1435,7 +1849,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1536,7 +1975,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1640,7 +2104,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1744,7 +2233,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1809,7 +2323,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -1822,6 +2361,14 @@ ship_section_template = {
 	key = "HANGAR_MILITARY_STATION_SECTION_3"
 	ship_size = military_station_large
 	ai_tags = { carrier }
+	prerequisites = {
+		OR = {
+			tech_strike_craft_1
+			tech_strike_craft_2
+			tech_strike_craft_3
+			tech_strike_craft_skrand
+		}
+	}
 
 	fits_on_slot = "north"
 	fits_on_slot = "west"
@@ -1880,7 +2427,32 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = no
+				}
+			}
+			alloys = @cost0
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			alloys = @cost0
+			mult = 0.5
+		}
+		cost = {
+			trigger = {
+				from = {
+					country_uses_bio_ships = yes
+				}
+			}
+			food = @cost0
+			mult = @halved_alloy_to_food_cost_ratio
+		}
 	}
 	
 	ai_weight = {
@@ -2058,6 +2630,14 @@ ship_section_template = {
 	entity = "gatebuilder_01_cruiser_section_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier }
+	prerequisites = {
+		OR = {
+			tech_strike_craft_1
+			tech_strike_craft_2
+			tech_strike_craft_3
+			tech_strike_craft_skrand
+		}
+	}
 
 	component_slot = {
 		name = "STRIKE_CRAFT_01"
@@ -2078,6 +2658,14 @@ ship_section_template = { #Carrier section
 	entity = "gatebuilder_01_cruiser_section_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { carrier }
+	prerequisites = {
+		OR = {
+			tech_strike_craft_1
+			tech_strike_craft_2
+			tech_strike_craft_3
+			tech_strike_craft_skrand
+		}
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
