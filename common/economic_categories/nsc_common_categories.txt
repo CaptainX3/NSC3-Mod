@@ -589,8 +589,8 @@ pop_category_bio_trophy = {
 	modifier_category = pop_group
 }
 
-leader_admirals = {
-    parent = leader_commanders
+leader_commanders = {
+    parent = leaders
     
     generate_mult_modifiers = {
 		upkeep
