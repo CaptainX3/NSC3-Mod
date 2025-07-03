@@ -4,7 +4,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_1_entity"
+	entity = "harbinger_stage_1_ship_entity"
 
 	ai_tags = {
 		carrier
@@ -88,7 +88,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_1_entity"
+	entity = "harbinger_stage_1_ship_entity"
 
 	ai_tags = {
 		artillery
@@ -176,7 +176,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_2_entity"
+	entity = "harbinger_stage_2_ship_entity"
 
 	ai_tags = {
 		carrier
@@ -285,7 +285,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_2_entity"
+	entity = "harbinger_stage_2_ship_entity"
 
 	ai_tags = {
 		artillery
@@ -398,7 +398,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_3_entity"
+	entity = "harbinger_stage_3_ship_entity"
 
 	ai_tags = {
 		carrier
@@ -530,7 +530,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_harbinger_stage_1_entity"
+	entity = "harbinger_stage_1_ship_entity"
 
 	ai_tags = {
 		artillery

@@ -4,7 +4,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "mauler_stage_1_entity"
+	entity = "mauler_stage_1_ship_entity"
 
 	ai_tags = {
 		brawler
@@ -58,19 +58,19 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-			food = @mauler_stage_1_section_cost
+			food = @mauler_stage_1_ship_section_cost
 			mult = @alloy_to_food_cost_ratio
 		}
 	}
 }
 
 ship_section_template = {
-	key = "OFFSPRING_MAULER_STAGE_1_picket"
-	ship_size = offspring_mauler_stage_1
+	key = "OFFSPRING_mauler_stage_1_ship_picket"
+	ship_size = offspring_mauler_stage_1_ship
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "mauler_stage_1_entity"
+	entity = "mauler_stage_1_ship_entity"
 
 	ai_tags = {
 		screen
@@ -120,7 +120,7 @@ ship_section_template = {
 	resources = {
 		category = ship_sections
 		cost = {
-			food = @mauler_stage_1_section_cost
+			food = @mauler_stage_1_ship_section_cost
 			mult = @alloy_to_food_cost_ratio
 		}
 	}
@@ -132,7 +132,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "mauler_stage_2_entity"
+	entity = "mauler_stage_2_ship_entity"
 
 	ai_tags = {
 		brawler
@@ -216,7 +216,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "mauler_stage_2_entity"
+	entity = "mauler_stage_2_ship_entity"
 
 	ai_tags = {
 		screen
@@ -296,7 +296,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "mauler_stage_3_entity"
+	entity = "mauler_stage_3_ship_entity"
 
 	ai_tags = {
 		brawler
@@ -385,7 +385,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "mauler_stage_3_entity"
+	entity = "mauler_stage_3_ship_entity"
 
 	ai_tags = {
 		screen

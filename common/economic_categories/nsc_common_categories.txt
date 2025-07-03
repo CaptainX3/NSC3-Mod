@@ -473,6 +473,17 @@ ships = {
 	}
 	
 	triggered_cost_modifier = {
+		key = ship_StrikeCruiser
+		use_parent_icon = yes
+		modifier_types = { mult }
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = StrikeCruiser
+		}
+	}
+	
+	triggered_cost_modifier = {
 		key = ship_Battlecruiser
 		use_parent_icon = yes
 		modifier_types = { mult }

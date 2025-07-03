@@ -4,7 +4,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_stinger_stage_1_entity"
+	entity = "stinger_stage_1_ship_entity"
 
 	ai_tags = {
 		gunship
@@ -105,7 +105,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_stinger_stage_1_entity"
+	entity = "stinger_stage_1_ship_entity"
 
 	ai_tags = {
 		artillery
@@ -170,7 +170,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_stinger_stage_2_entity"
+	entity = "stinger_stage_2_ship_entity"
 
 	ai_tags = {
 		gunship
@@ -283,7 +283,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_stinger_stage_2_entity"
+	entity = "stinger_stage_2_ship_entity"
 
 	ai_tags = {
 		artillery
@@ -360,7 +360,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_stinger_stage_3_entity"
+	entity = "stinger_stage_3_ship_entity"
 
 	ai_tags = {
 		gunship
@@ -491,7 +491,7 @@ ship_section_template = {
 	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
-	entity = "biogenesis_01_stinger_stage_3_entity"
+	entity = "stinger_stage_3_ship_entity"
 
 	ai_tags = {
 		artillery

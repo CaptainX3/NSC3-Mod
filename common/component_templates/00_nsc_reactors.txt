@@ -3496,6 +3496,7 @@ utility_component_template = {
 	potential = {
 		ship_uses_starbase_components = yes
 	}
+
 	ai_weight = {
 		weight = 100
 	}

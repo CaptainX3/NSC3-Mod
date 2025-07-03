@@ -77,34 +77,34 @@ weapon_component_template = {
 	inline_script = "targeting/capital_ships"
 }
 
-weapon_component_template = {
-	key = "POINT_DEFENCE_STARBASE"
-	size = point_defence
-	icon = "GFX_ship_part_point_defense_3"
-	icon_frame = 1
-	entity = "turret_point_defence_entity"
-	type = point_defence
-	damage = { min = 2 max = 6 }
-	windup = { min = 0 max = 0 }
-	total_fire_time = 60
-	range = 35
-	accuracy = 0.75
-	power = -20
-	hull_damage = 1.0
-	armor_penetration = 0.0
-	armor_damage = 1.0
-	shield_penetration = 0.0
-	shield_damage = 1.0
-	tracking = 0.4
-	component_set = "POINT_DEFENCE_STARBASE"
-	projectile_gfx = "white_laser_pd"
-	tags = { weapon_type_point_defense weapon_type_energy }
-	ai_tags = { weapon_role_point_defense screen }
-	potential = {
-		is_ship_class = shipclass_starbase
-	}
-	point_defence_targets = { "missile" "strike_craft" }
-}
+# weapon_component_template = {
+	# key = "POINT_DEFENCE_STARBASE"
+	# size = point_defence
+	# icon = "GFX_ship_part_point_defense_3"
+	# icon_frame = 1
+	# entity = "turret_point_defence_entity"
+	# type = point_defence
+	# damage = { min = 2 max = 6 }
+	# windup = { min = 0 max = 0 }
+	# total_fire_time = 60
+	# range = 35
+	# accuracy = 0.75
+	# power = -20
+	# hull_damage = 1.0
+	# armor_penetration = 0.0
+	# armor_damage = 1.0
+	# shield_penetration = 0.0
+	# shield_damage = 1.0
+	# tracking = 0.4
+	# component_set = "POINT_DEFENCE_STARBASE"
+	# projectile_gfx = "white_laser_pd"
+	# tags = { weapon_type_point_defense weapon_type_energy }
+	# ai_tags = { weapon_role_point_defense screen }
+	# potential = {
+		# is_ship_class = shipclass_starbase
+	# }
+	# point_defence_targets = { "missile" "strike_craft" }
+# }
 
 weapon_component_template = {
 	key = "XL_BEAM_STARBASE"
