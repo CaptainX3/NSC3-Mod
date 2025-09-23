@@ -28,9 +28,7 @@ titan_ships_limit = {
 		cosmo_crisis_stinger
 	}
 
-	base = 100 # Base Limit 5 (5 * 20)
-	max = 2000 # Max Limit of 100 (100 * 20) 
-	naval_cap_fraction = 0.05
+	base = 2000 # Limit of 100 (100 * 20)
 
 	show = {
 		is_scope_valid = yes

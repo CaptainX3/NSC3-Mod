@@ -3498,6 +3498,6 @@ utility_component_template = {
 	}
 
 	ai_weight = {
-		weight = 100
+		weight = 1000
 	}
 }

@@ -37,9 +37,11 @@ explorationship_cap: "Explorer"
 
 starbase_stronghold: "Grand Citadel"
 starbase_stronghold_plural: "Grand Citadels"
+starbase_stronghold_cap: "Grand Citadel" 
 
 starbase_headquarters: "Solar Stronghold"
 starbase_headquarters_plural: "Solar Strongholds"
+starbase_headquarters_cap: "Solar Stronghold"
 
 
 
