@@ -208,22 +208,34 @@ ship_section_template = {
 	component_slot = {
 		name = "LARGE_GUN_05"
 		template = "invisible_large_turret"
-		locatorname = "weapon_02"
+		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "LARGE_GUN_06"
 		template = "invisible_large_turret"
-		locatorname = "weapon_01"
+		locatorname = "weapon_02"
 	}
 
 	component_slot = {
 		name = "LARGE_GUN_07"
 		template = "invisible_large_turret"
-		locatorname = "weapon_02"
+		locatorname = "weapon_01"
 	}
 
 	component_slot = {
+		name = "LARGE_GUN_08"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+		component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "invisible_medium_turret"
 		locatorname = "weapon_01"
@@ -315,22 +327,22 @@ ship_section_template = {
 	component_slot = {
 		name = "LARGE_GUN_01"
 		template = "invisible_large_turret"
-		locatorname = "weapon_02"
+		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "LARGE_GUN_02"
 		template = "invisible_large_turret"
-		locatorname = "weapon_01"
+		locatorname = "weapon_02"
 	}
 
 	component_slot = {
 		name = "LARGE_GUN_03"
 		template = "invisible_large_turret"
-		locatorname = "weapon_02"
+		locatorname = "weapon_01"
 	}
-	
-	component_slot = {
+
+		component_slot = {
 		name = "LARGE_GUN_04"
 		template = "invisible_large_turret"
 		locatorname = "weapon_02"
@@ -420,6 +432,30 @@ ship_section_template = {
 	}
 
 	component_slot = {
+		name = "LARGE_GUN_09"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_10"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+	
+	component_slot = {
+		name = "LARGE_GUN_11"
+		template = "invisible_large_turret"
+		locatorname = "weapon_01"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_12"
+		template = "invisible_large_turret"
+		locatorname = "weapon_02"
+	}
+
+		component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "invisible_medium_turret"
 		locatorname = "weapon_01"
@@ -549,8 +585,8 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "weapon_02"
 	}
-	
-	component_slot = {
+
+		component_slot = {
 		name = "LARGE_GUN_05"
 		template = "invisible_large_turret"
 		locatorname = "weapon_02"
@@ -567,7 +603,7 @@ ship_section_template = {
 		template = "invisible_large_turret"
 		locatorname = "weapon_02"
 	}
-
+	
 	large_utility_slots = 10
 	aux_utility_slots = 3
 
