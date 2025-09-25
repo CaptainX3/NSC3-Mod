@@ -102,6 +102,93 @@ detection_array = {
 	show_in_tech = "tech_detection_array"
 }
 
+solar_panel_network = {
+	icon = "GFX_solar_panel_network"
+	section = "SCIENCE_STARBASE_SECTION"
+	construction_days = 180
+	initial = yes
+
+	potential = {
+		exists = owner
+		is_normal_starbase = yes
+		owner = {
+			has_technology = "tech_solar_panel_network"
+			NOT = { has_civic = civic_machine_astromining_drones }
+		}
+	}
+
+	possible = {
+		OR = {
+			is_scope_valid = no
+			solar_system = {
+				custom_tooltip = {
+					fail_text = "requires_no_black_hole_or_dyson_sphere"
+					NOR = {
+						is_star_class = sc_black_hole
+						has_megastructure = dyson_sphere_3
+						has_megastructure = dyson_sphere_4
+						has_megastructure = dyson_sphere_5
+					}
+				}
+			}
+		}
+	}
+
+	show_in_tech = "tech_solar_panel_network"
+
+	resources = {
+		category = starbase_modules
+		cost = { alloys = 50 }
+		
+		produces = { 
+			energy = 6
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_galactic_community_member = yes
+				}
+				OR = {
+					is_active_resolution = "resolution_galacticstudies_astral_studies_network"
+					is_active_resolution = "resolution_galacticstudies_advanced_xenostudies"
+					is_active_resolution = "resolution_galacticstudies_ethical_guideline_refactoring"
+					is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				}
+			}
+			energy = 6
+		}
+		upkeep = {
+			alloys = 1
+		}
+		produces = {
+			trigger = { has_starbase_building = solar_capacitor }
+			energy = 3
+		}
+		upkeep = {
+			trigger = { has_starbase_building = solar_capacitor }
+			alloys = 1
+		}
+	}
+
+	ai_build_at_chokepoint = no
+	ai_build_outside_chokepoint = yes
+	
+	ai_weight = {
+		weight = 50
+		modifier = { factor = 5 has_starbase_size < starbase_starport }
+		modifier = { factor = 4 count_starbase_modules = { type = solar_panel count > 0 } }
+		modifier = { factor = 3 count_starbase_modules = { type = solar_panel count > 1 } }
+		modifier = { factor = 2 count_starbase_modules = { type = solar_panel count > 2 } }
+		modifier = { factor = 1 count_starbase_modules = { type = solar_panel count > 3 } }
+		modifier = { factor = 0 count_starbase_modules = { type = solar_panel count > 4 } }
+	}
+
+	ai_weight = {
+		weight = 100 #use same weight here - ai weighting is done in starbase_types.txt
+	}
+}
+
 
 #############################
 ### NSC2 STARBASE MODULES ###
@@ -477,70 +564,70 @@ security_branch_office = {
 	}
 }
 
-solar_panel = {
-	section = "SCIENCE_STARBASE_SECTION"
-	icon = "GFX_sb_solar_panel_network"
-	construction_days = 120
+# solar_panel = {
+	# section = "SCIENCE_STARBASE_SECTION"
+	# icon = "GFX_sb_solar_panel_network"
+	# construction_days = 120
 
-	potential = {
-		exists = owner
-		is_orbital_ring = no
-		owner = {
-			is_gestalt = no
-		}
-	}
+	# potential = {
+		# exists = owner
+		# is_orbital_ring = no
+		# owner = {
+			# is_gestalt = no
+		# }
+	# }
 	
-	possible = {
-		solar_system = {
-			custom_tooltip = {
-				fail_text = "requires_no_black_hole_or_dyson_sphere"
-				NOR = {
-					is_star_class = sc_black_hole
-					has_megastructure = dyson_sphere_3
-					has_megastructure = dyson_sphere_4
-					has_megastructure = dyson_sphere_5
-				}
-			}
-			custom_tooltip = {
-			fail_text = "starbase_filler_limit.tooltip_10.fail"
-			NOT = { count_starbase_modules = { count > 10 type = solar_panel include_being_constructed = yes } }
-			}
-		}
-	}
+	# possible = {
+		# solar_system = {
+			# custom_tooltip = {
+				# fail_text = "requires_no_black_hole_or_dyson_sphere"
+				# NOR = {
+					# is_star_class = sc_black_hole
+					# has_megastructure = dyson_sphere_3
+					# has_megastructure = dyson_sphere_4
+					# has_megastructure = dyson_sphere_5
+				# }
+			# }
+			# custom_tooltip = {
+			# fail_text = "starbase_filler_limit.tooltip_10.fail"
+			# NOT = { count_starbase_modules = { count > 10 type = solar_panel include_being_constructed = yes } }
+			# }
+		# }
+	# }
 
-	resources = {
-		category = starbase_modules
-		cost = { alloys = 150 }
+	# resources = {
+		# category = starbase_modules
+		# cost = { alloys = 150 }
 		
-		produces = { 
-			energy = 5
-		}
-		upkeep = {
-			alloys = 1
-		}
-		produces = {
-			trigger = { has_starbase_building = solar_capacitor }
-			energy = 3
-		}
-		upkeep = {
-			trigger = { has_starbase_building = solar_capacitor }
-			alloys = 1
-		}
-	}
+		# produces = { 
+			# energy = 5
+		# }
+		# upkeep = {
+			# alloys = 1
+		# }
+		# produces = {
+			# trigger = { has_starbase_building = solar_capacitor }
+			# energy = 3
+		# }
+		# upkeep = {
+			# trigger = { has_starbase_building = solar_capacitor }
+			# alloys = 1
+		# }
+	# }
 
-	ai_build_at_chokepoint = no
-	ai_build_outside_chokepoint = yes
+	# ai_build_at_chokepoint = no
+	# ai_build_outside_chokepoint = yes
 	
-	ai_weight = {
-		weight = 50
-		modifier = { factor = 5 has_starbase_size < starbase_starport }
-		modifier = { factor = 4 count_starbase_modules = { type = solar_panel count > 0 } }
-		modifier = { factor = 3 count_starbase_modules = { type = solar_panel count > 1 } }
-		modifier = { factor = 2 count_starbase_modules = { type = solar_panel count > 2 } }
-		modifier = { factor = 1 count_starbase_modules = { type = solar_panel count > 3 } }
-		modifier = { factor = 0 count_starbase_modules = { type = solar_panel count > 4 } }
-	}
-}
+	# ai_weight = {
+		# weight = 50
+		# modifier = { factor = 5 has_starbase_size < starbase_starport }
+		# modifier = { factor = 4 count_starbase_modules = { type = solar_panel count > 0 } }
+		# modifier = { factor = 3 count_starbase_modules = { type = solar_panel count > 1 } }
+		# modifier = { factor = 2 count_starbase_modules = { type = solar_panel count > 2 } }
+		# modifier = { factor = 1 count_starbase_modules = { type = solar_panel count > 3 } }
+		# modifier = { factor = 0 count_starbase_modules = { type = solar_panel count > 4 } }
+	# }
+# }
 
 farming_base = {
 	icon = "GFX_starbase_farming_terminal"

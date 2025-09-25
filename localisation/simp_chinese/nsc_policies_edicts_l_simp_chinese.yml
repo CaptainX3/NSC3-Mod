@@ -27,6 +27,21 @@ tech20_option_name: "Research Initiative 20"
 tech20_option:0 "Research Initiative 20"
 tech20_option_desc:0 "This option will increase the number of research alternatives to 20 and will cost approximately 30% of our monthly research production."
 
+eternal_vigilance_full_spending_medium: "Full Spending - Defense Stations"
+eternal_vigilance_full_spending_medium_name: "$eternal_vigilance_full_spending_medium$"
+eternal_vigilance_full_spending_medium_desc: "Every starbase needs to be properly defended. Spare no cost.\nAutomatically builds §YDefense Stations§! around every §YStarbase§!"
+eternal_vigilance_half_spending_medium: "Half Spending - Defense Stations"
+eternal_vigilance_half_spending_medium_name: "$eternal_vigilance_half_spending_medium$"
+eternal_vigilance_half_spending_medium_desc: "Only our strongest redoubts require our support.\nAutomatically builds §YDefense Stations§! around §YBastion Starbases§!"
+
+eternal_vigilance_full_spending_large: "Full Spending - Defense Fortresses"
+eternal_vigilance_full_spending_large_name: "$eternal_vigilance_full_spending_large$"
+eternal_vigilance_full_spending_large_desc: "Every starbase needs to be properly defended. Spare no cost.\nAutomatically builds §YDefense Fortresses§! around every §YStarbase§!"
+eternal_vigilance_half_spending_large: "Half Spending - Defense Fortresses"
+eternal_vigilance_half_spending_large_name: "$eternal_vigilance_half_spending_large$"
+eternal_vigilance_half_spending_large_desc: "Only our strongest redoubts require our support.\nAutomatically builds §YDefense Fortresses§! around §YBastion Starbases§!"
+
+
 
 
 ##################################################################################################################################################################################################################

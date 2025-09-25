@@ -1,0 +1,201 @@
+country_event = {
+	id = country.2050
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_ascension_perk = ap_eternal_vigilance
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = eternal_vigilance_full_spending
+			}
+			every_owned_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform = yes
+			}
+			every_owned_nonprimary_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				has_policy_flag = eternal_vigilance_half_spending
+			}
+			every_owned_starbase = {
+				limit = {
+					is_starbase_type = sfortress
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform = yes
+			}
+			every_owned_nonprimary_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					OR = {
+						is_starbase_type = sorbital_fortress
+						is_starbase_type = sdeepspacecitadel
+					}
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform = yes
+			}
+		}
+		country_event = {
+			id = country.2050
+			days = 90
+		}
+	}
+}
+
+
+
+country_event = {
+	id = country.2051
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_ascension_perk = ap_eternal_vigilance
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = eternal_vigilance_full_spending_medium
+			}
+			every_owned_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform = yes
+			}
+			every_owned_nonprimary_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform_medium = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				has_policy_flag = eternal_vigilance_half_spending_medium
+			}
+			every_owned_starbase = {
+				limit = {
+					is_starbase_type = sfortress
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform_medium = yes
+			}
+			every_owned_nonprimary_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					OR = {
+						is_starbase_type = sorbital_fortress
+						is_starbase_type = sdeepspacecitadel
+					}
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform_medium= yes
+			}
+		}
+		country_event = {
+			id = country.2051
+			days = 90
+		}
+	}
+}
+
+
+
+country_event = {
+	id = country.2052
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_ascension_perk = ap_eternal_vigilance
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				has_policy_flag = eternal_vigilance_full_spending_medium
+			}
+			every_owned_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform = yes
+			}
+			every_owned_nonprimary_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform_large = yes
+			}
+
+		}
+		else_if = {
+			limit = {
+				has_policy_flag = eternal_vigilance_half_spending_medium
+			}
+			every_owned_starbase = {
+				limit = {
+					is_starbase_type = sfortress
+					fleet = { is_in_combat = no }
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform_large = yes
+			}
+			every_owned_nonprimary_starbase = {
+				limit = {
+					fleet = { is_in_combat = no }
+					OR = {
+						is_starbase_type = sorbital_fortress
+						is_starbase_type = sdeepspacecitadel
+					}
+					is_controlled_by = owner
+					used_defense_platform_capacity_percent < 1.0
+				}
+				spawn_free_defense_platform_large = yes
+			}
+		}
+		country_event = {
+			id = country.2052
+			days = 90
+		}
+	}
+}

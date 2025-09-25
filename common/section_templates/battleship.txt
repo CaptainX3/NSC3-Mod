@@ -3,12 +3,60 @@
 @cost3 = 350
 @cost4 = 400
 @cost5 = 450
+@cost6 = 1000
 
 
 ####################################################################################################################################################################
 ### BOW ############################################################################################################################################################
 ####################################################################################################################################################################
 
+ship_section_template = {
+	key = "BATTLESHIP_BOW_XL"
+	ship_size = battleship
+	fits_on_slot = bow
+	should_draw_components = yes
+	entity = "battleship_bow_XL1_entity"
+	icon = "GFX_ship_part_core_bow"
+	ai_tags = { artillery }
+
+	prerequisites = {
+		OR = {
+			tech_energy_lance_1
+			tech_energy_lance_2
+			tech_arc_emitter_1
+			tech_arc_emitter_2
+			tech_mass_accelerator_1
+			tech_mass_accelerator_2
+			tech_archaeo_mass_accelerator
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 10.0
+			NOT = { is_preferred_weapons = weapon_type_explosive }
+		}
+		modifier = {
+			factor = 0.1
+			is_preferred_weapons = weapon_type_explosive
+		}
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "invisible_extra_large_fixed"
+		locatorname = "xl_gun_01"
+	}
+
+	large_utility_slots = 8
+
+	resources = {
+		category = ship_sections
+		cost = {
+			alloys = @cost6
+		}
+	}
+}
 
 ship_section_template = {
 	key = "BATTLESHIP_BOW_S6M4L4"

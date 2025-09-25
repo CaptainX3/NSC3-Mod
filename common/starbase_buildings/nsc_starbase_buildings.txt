@@ -434,7 +434,7 @@ solar_capacitor = {
 	}
 
 	possible = {
-		has_starbase_module = solar_panel
+		has_starbase_module = solar_panel_network
 	}
 	
 	show_in_tech = "tech_starbase_4"
@@ -967,7 +967,7 @@ real_estate_dev = {
 	}
 
 	planet_modifier = { 
-		planet_housing_add = 5
+		planet_housing_add = 500
 	}
 	
 	ai_build_at_chokepoint = no

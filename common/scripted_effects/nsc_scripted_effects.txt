@@ -1,3 +1,81 @@
+############################################
+### VANILLA SCRIPTED EFFECT OVERWRITES #####
+############################################
+
+
+
+############################################
+### NSC SCRIPTED EFFECTS ###################
+############################################
+
+spawn_free_defense_platform_medium = {
+	fleet = {
+		if = {
+			limit = {
+				any_owned_ship = {
+					is_ship_size = military_station_medium
+				}
+			}
+			random_owned_ship = {
+				limit = {
+					is_ship_size = military_station_medium
+				}
+				save_event_target_as = target_platform
+			}
+		}
+		else = {
+			owner = {
+				random_owned_design = {
+					limit = {
+						is_ship_size = military_station_medium
+					}
+					save_event_target_as = target_platform
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = event_target:target_platform
+			graphical_culture = owner
+		}
+	}
+}
+
+
+spawn_free_defense_platform_large = {
+	fleet = {
+		if = {
+			limit = {
+				any_owned_ship = {
+					is_ship_size = military_station_large
+				}
+			}
+			random_owned_ship = {
+				limit = {
+					is_ship_size = military_station_large
+				}
+				save_event_target_as = target_platform
+			}
+		}
+		else = {
+			owner = {
+				random_owned_design = {
+					limit = {
+						is_ship_size = military_station_large
+					}
+					save_event_target_as = target_platform
+				}
+			}
+		}
+		create_ship = {
+			name = random
+			design = event_target:target_platform
+			graphical_culture = owner
+		}
+	}
+}
+
+
 nsc_flagship_creation_for_ai_effect = {
 	optimize_memory
 	if = {

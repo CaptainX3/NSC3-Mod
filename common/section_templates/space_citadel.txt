@@ -1,0 +1,375 @@
+# DSC - Stage 1
+ship_section_template = {
+	key = "DEEP_SPACE_CITADEL_STAGE_1"
+	ship_size = starbase_deep_space_citadel_1
+
+	ai_tags = {
+		citadel
+	}
+
+	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	should_draw_components = no
+	entity = "deep_space_01_starbase_citadel_section_1_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret1"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret2"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret3"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret4"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret5"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret6"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret7"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret8"
+	}
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret9"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "citadel_large_turret"
+		locatorname = "large_turret1"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "citadel_large_turret"
+		locatorname = "large_turret2"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "citadel_large_turret"
+		locatorname = "large_turret3"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03"
+	}
+
+	large_utility_slots = 16
+	aux_utility_slots = 2
+}
+
+# DSC - Stage 2
+ship_section_template = {
+	key = "DEEP_SPACE_CITADEL_STAGE_2"
+	ship_size = starbase_deep_space_citadel_2
+
+	ai_tags = {
+		citadel
+	}
+
+	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	should_draw_components = no
+	entity = "deep_space_02_starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_05"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_06"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_07"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_08"
+	}
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_09"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_02_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_02_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_02_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_02_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_02_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_02_06"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02_04"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02_05"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_02_06"
+	}
+
+	large_utility_slots = 15
+	aux_utility_slots = 1
+}
+
+# DSC - Stage 3
+ship_section_template = {
+	key = "DEEP_SPACE_CITADEL_STAGE_3"
+	ship_size = starbase_deep_space_citadel_3
+
+	ai_tags = {
+		citadel
+	}
+
+	fits_on_slot = "core"
+	fits_on_slot = "core2"
+	fits_on_slot = "core3"
+	fits_on_slot = "core4"
+	fits_on_slot = "core5"
+	should_draw_components = no
+	entity = "deep_space_03_starbase_citadel_section_entity"
+	icon = "GFX_ship_part_core_mid"
+
+	component_slot = {
+		name = "SMALL_GUN_01"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_01"
+	}
+	component_slot = {
+		name = "SMALL_GUN_02"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_02"
+	}
+	component_slot = {
+		name = "SMALL_GUN_03"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_03"
+	}
+	component_slot = {
+		name = "SMALL_GUN_04"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_04"
+	}
+	component_slot = {
+		name = "SMALL_GUN_05"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_05"
+	}
+	component_slot = {
+		name = "SMALL_GUN_06"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_06"
+	}
+	component_slot = {
+		name = "SMALL_GUN_07"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_07"
+	}
+	component_slot = {
+		name = "SMALL_GUN_08"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_08"
+	}
+	component_slot = {
+		name = "SMALL_GUN_09"
+		template = "citadel_point_defence_turret"
+		locatorname = "point_defence_turret_02_09"
+	}
+
+	component_slot = {
+		name = "LARGE_GUN_01"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_03_01"
+	}
+	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_03_02"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_03_03"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_03_04"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_03_05"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "citadel_large_turret"
+		locatorname = "large_turret_03_06"
+	}
+
+	component_slot = {
+		name = "STRIKE_CRAFT_01"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_01"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_02"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_02"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_03"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_03"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_04"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_04"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_05"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_05"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_06"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_06"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_07"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_07"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_08"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_08"
+	}
+	component_slot = {
+		name = "STRIKE_CRAFT_09"
+		template = "large_strike_craft"
+		locatorname = "STRIKE_CRAFT_03_09"
+	}
+
+	component_slot = {
+		name = "EXTRA_LARGE_01"
+		template = "citadel_extra_large_turret"
+		locatorname = "extra_large_turret"
+	}
+
+	large_utility_slots = 20
+	aux_utility_slots = 1
+}

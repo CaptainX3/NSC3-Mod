@@ -54,6 +54,7 @@ mauler_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -111,7 +112,7 @@ mauler_stage_2 = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_mauler_stage_2
@@ -148,6 +149,7 @@ mauler_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -205,7 +207,7 @@ mauler_stage_3 = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_mauler_stage_3
@@ -242,6 +244,7 @@ mauler_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -330,6 +333,7 @@ weaver_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -400,7 +404,7 @@ weaver_stage_2 = {
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_weaver_stage_2
 	base_buildtime = @weaver_stage_2_build_time
@@ -436,6 +440,7 @@ weaver_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -506,7 +511,7 @@ weaver_stage_3 = {
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_weaver_stage_3
 	base_buildtime = @weaver_stage_3_build_time
@@ -542,6 +547,7 @@ weaver_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -665,6 +671,7 @@ harbinger_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -739,7 +746,7 @@ harbinger_stage_2 = {
 	}
 	size_multiplier = 4
 	fleet_slot_size = 3
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_harbinger_stage_2
 	base_buildtime = @harbinger_stage_2_build_time
@@ -796,6 +803,7 @@ harbinger_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -870,7 +878,7 @@ harbinger_stage_3 = {
 	}
 	size_multiplier = 4
 	fleet_slot_size = 3
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_harbinger_stage_3
 	base_buildtime = @harbinger_stage_3_build_time
@@ -927,6 +935,7 @@ harbinger_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1032,6 +1041,7 @@ stinger_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1115,7 +1125,7 @@ stinger_stage_2 = {
 	}
 	size_multiplier = 8
 	fleet_slot_size = 4
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_stinger_stage_2
 	base_buildtime = @stinger_stage_2_build_time
@@ -1151,6 +1161,7 @@ stinger_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1234,7 +1245,7 @@ stinger_stage_3 = {
 	}
 	size_multiplier = 8
 	fleet_slot_size = 4
-	section_slots = { "mid" = { locator = "root" } }
+	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_stinger_stage_3
 	base_buildtime = @stinger_stage_3_build_time
@@ -1270,6 +1281,7 @@ stinger_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1370,6 +1382,7 @@ bio_titan = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	required_component_set = "ai_behaviour"
 	required_component_set = "ship_aura_components"
 
 	potential_construction = {

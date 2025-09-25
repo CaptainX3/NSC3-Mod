@@ -211,7 +211,7 @@ utility_component_template = {
 	icon_frame = 1
 	power = @power1
 	prerequisites = { "tech_Carrier_1" }
-	component_set = "nsc_strike_cruiser_aura"
+	component_set = "nsc_strike_cruiser_aura_2"
 
 	potential = {
 		ship_uses_strikecruiser_components = yes
@@ -246,7 +246,7 @@ utility_component_template = {
 		apply_on = ships
 		
 		stack_info = {
-			id = nsc_strike_cruiser_aura
+			id = nsc_strike_cruiser_aura_2
 			priority = 1
 		}
 		

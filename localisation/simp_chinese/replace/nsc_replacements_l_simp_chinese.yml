@@ -14,3 +14,11 @@ CRISIS_CORVETTE_MID_S3: "Interceptor Core"
 DESTROYER_BOW_L1: "Artillery Bow"
 
 military_station_large: "Defense Fortress"
+
+
+eternal_vigilance_full_spending: "Full Spending - Defense Platforms"
+eternal_vigilance_full_spending_name: "$eternal_vigilance_full_spending$"
+eternal_vigilance_full_spending_desc: "Every starbase needs to be properly defended. Spare no cost.\nAutomatically builds §YDefense Platforms§! around every §YStarbase§!"
+eternal_vigilance_half_spending: "Half Spending - Defense Platforms"
+eternal_vigilance_half_spending_name: "$eternal_vigilance_half_spending$"
+eternal_vigilance_half_spending_desc: "Only our strongest redoubts require our support.\nAutomatically builds §YDefense Platforms§! around §YBastion Starbases§!"
