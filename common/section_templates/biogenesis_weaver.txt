@@ -35,13 +35,13 @@ ship_section_template = {
 
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_02"
 	}
 	
@@ -106,13 +106,13 @@ ship_section_template = {
 
 	component_slot = {
 		name = "SMALL_GUN_01"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_02"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_02"
 	}
 	
@@ -143,8 +143,7 @@ ship_section_template = {
 ship_section_template = {
 	key = "WEAVER_STAGE_2_buffer"
 	ship_size = weaver_stage_2
-	fits_on_slot = bow
-	fits_on_slot = stern
+	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	entity = "weaver_stage_2_ship_entity"
@@ -246,8 +245,7 @@ ship_section_template = {
 ship_section_template = {
 	key = "WEAVER_STAGE_2_debuffer"
 	ship_size = weaver_stage_2
-	fits_on_slot = bow
-	fits_on_slot = stern
+	fits_on_slot = mid
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	entity = "weaver_stage_2_ship_entity"
@@ -349,9 +347,7 @@ ship_section_template = {
 ship_section_template = {
 	key = "WEAVER_STAGE_3_buffer"
 	ship_size = weaver_stage_3
-	fits_on_slot = bow
 	fits_on_slot = mid
-	fits_on_slot = stern
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	entity = "weaver_stage_3_ship_entity"
@@ -416,24 +412,24 @@ ship_section_template = {
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "invisible_point_defence_turret"
-		locatorname = "weapon_01"
+		locatorname = "weapon_02"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "invisible_point_defence_turret"
-		locatorname = "weapon_02"
+		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_03"
 		template = "invisible_point_defence_turret"
-		locatorname = "weapon_01"
+		locatorname = "weapon_02"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_04"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_02"
 	}
 
@@ -465,9 +461,7 @@ ship_section_template = {
 ship_section_template = {
 	key = "WEAVER_STAGE_3_debuffer"
 	ship_size = weaver_stage_3
-	fits_on_slot = bow
 	fits_on_slot = mid
-	fits_on_slot = stern
 	should_draw_components = no
 	icon = "GFX_ship_part_core_mid"
 	entity = "weaver_stage_3_ship_entity"
@@ -532,36 +526,36 @@ ship_section_template = {
 	component_slot = {
 		name = "SMALL_GUN_01"
 		template = "invisible_point_defence_turret"
-		locatorname = "weapon_01"
+		locatorname = "weapon_02"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_02"
 		template = "invisible_point_defence_turret"
-		locatorname = "weapon_02"
+		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_03"
 		template = "invisible_point_defence_turret"
-		locatorname = "weapon_01"
+		locatorname = "weapon_02"
 	}
 	
 	component_slot = {
 		name = "SMALL_GUN_04"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_02"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_05"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_01"
 	}
 
 	component_slot = {
 		name = "SMALL_GUN_06"
-		template = "invisible_point_defence_turret"
+		template = "invisible_small_turret"
 		locatorname = "weapon_02"
 	}
 

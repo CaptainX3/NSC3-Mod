@@ -112,7 +112,7 @@ mauler_stage_2 = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_mauler_stage_2
@@ -207,7 +207,7 @@ mauler_stage_3 = {
 	}
 	size_multiplier = 1
 	fleet_slot_size = 1
-	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 2
 	is_space_station = no
 	icon = ship_size_mauler_stage_3
@@ -404,7 +404,7 @@ weaver_stage_2 = {
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_weaver_stage_2
 	base_buildtime = @weaver_stage_2_build_time
@@ -511,7 +511,7 @@ weaver_stage_3 = {
 	}
 	size_multiplier = 2
 	fleet_slot_size = 2
-	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_weaver_stage_3
 	base_buildtime = @weaver_stage_3_build_time
@@ -746,7 +746,7 @@ harbinger_stage_2 = {
 	}
 	size_multiplier = 4
 	fleet_slot_size = 3
-	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_harbinger_stage_2
 	base_buildtime = @harbinger_stage_2_build_time
@@ -878,7 +878,7 @@ harbinger_stage_3 = {
 	}
 	size_multiplier = 4
 	fleet_slot_size = 3
-	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_harbinger_stage_3
 	base_buildtime = @harbinger_stage_3_build_time
@@ -1125,7 +1125,7 @@ stinger_stage_2 = {
 	}
 	size_multiplier = 8
 	fleet_slot_size = 4
-	section_slots = { "bow" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_stinger_stage_2
 	base_buildtime = @stinger_stage_2_build_time
@@ -1245,7 +1245,7 @@ stinger_stage_3 = {
 	}
 	size_multiplier = 8
 	fleet_slot_size = 4
-	section_slots = { "bow" = { locator = "root" } "mid" = { locator = "root" } "stern" = { locator = "root" } }
+	section_slots = { "mid" = { locator = "root" } }
 	num_target_locators = 4
 	icon = ship_size_stinger_stage_3
 	base_buildtime = @stinger_stage_3_build_time
