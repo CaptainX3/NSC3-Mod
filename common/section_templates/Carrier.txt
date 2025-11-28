@@ -152,12 +152,12 @@ ship_section_template = {
 	}
 	component_slot = {
 		name = "PD_GUN_03"
-		template = "invisible_point_defence_turret"
+		template = "point_defence_turret"
 		locatorname = "medium_gun_03"
 	}
 	component_slot = {
 		name = "PD_GUN_04"
-		template = "invisible_point_defence_turret"
+		template = "point_defence_turret"
 		locatorname = "medium_gun_04"
 	}
 	component_slot = {
@@ -389,12 +389,12 @@ ship_section_template = {
 	}
 	component_slot = {
 		name = "PD_GUN_03"
-		template = "invisible_point_defence_turret"
+		template = "point_defence_turret"
 		locatorname = "medium_gun_03"
 	}
 	component_slot = {
 		name = "PD_GUN_04"
-		template = "invisible_point_defence_turret"
+		template = "point_defence_turret"
 		locatorname = "medium_gun_04"
 	}
 	component_slot = {
