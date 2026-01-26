@@ -1,39 +1,3 @@
-nsc_mothball_target_fleet_requirement = {
-	optimize_memory
-	owner = { is_same_value = prev.owner }
-	OR = {
-		is_ship_class = shipclass_military
-		is_ship_class = shipclass_military_special
-		AND = {
-			is_ship_class = shipclass_starbase
-			is_mobile = yes
-		}
-	}
-}
-nsc_mothball_target_fleet_all_flags_trigger = {
-	optimize_memory
-	OR = {
-		has_fleet_flag = nsc_mothballed_fleet_1
-		has_fleet_flag = nsc_mothballed_fleet_2
-		has_fleet_flag = nsc_mothballed_fleet_3
-		has_fleet_flag = nsc_mothballed_fleet_4
-		has_fleet_flag = nsc_mothballed_fleet_5
-		has_fleet_flag = nsc_mothballed_fleet_6
-		has_fleet_flag = nsc_mothballed_fleet_7
-		has_fleet_flag = nsc_mothballed_fleet_8
-		has_fleet_flag = nsc_mothballed_fleet_9
-		has_fleet_flag = nsc_mothballed_fleet_10
-	}
-}
-nsc_mothball_target_fleet_mothball_stop_trigger = {
-	optimize_memory
-	exists = event_target:nsc_mothball_target_fleet_$ID$
-	event_target:nsc_mothball_target_fleet_$ID$ = {
-		has_fleet_flag = nsc_mothballed_fleet_$ID$
-		NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
-	}
-}
-
 can_fill_diagnostic_job_trigger = {
 	custom_tooltip = SPECIALIST_JOB_TRIGGER
 	hidden_trigger = {
@@ -121,6 +85,7 @@ ship_uses_picket_role = {
 		is_ship_size = corvette
 		is_ship_size = destroyer
 		is_ship_size = cruiser
+		is_ship_size = battleship
 		# Offspring Ships
 		is_ship_size = offspring_corvette
 		is_ship_size = offspring_destroyer
@@ -145,6 +110,8 @@ ship_uses_picket_role = {
 		# NSC Special Tech
 		is_ship_size = frigate
 		is_ship_size = StrikeCruiser
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
 	}
 }
 
@@ -165,6 +132,8 @@ ship_uses_torpedo_role = {
 		# NSC Ships
 		is_ship_size = Battlecruiser
 		is_ship_size = StrikeCruiser
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
 	}
 }
 
@@ -199,8 +168,10 @@ ship_uses_line_role = {
 		is_ship_size = Battlecruiser
 		is_ship_size = Dreadnought
 		is_ship_size = Flagship
-		is_ship_size = explorationship
 		is_ship_size = StrikeCruiser
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
+		is_ship_size = ember_battleship
 	}
 }
 
@@ -208,6 +179,9 @@ ship_uses_carrier_role = {
 	OR = {
 		# Regular Ships
 		is_ship_size = juggernaut
+		is_ship_size = battleship
+		is_ship_size = cruiser
+		is_ship_size = destroyer
 		# Offspring Ships
 		is_ship_size = offspring_cruiser
 		is_ship_size = offspring_battleship
@@ -231,6 +205,10 @@ ship_uses_carrier_role = {
 		is_ship_size = offspring_harbinger_stage_3
 		# NSC Ships
 		is_ship_size = Carrier
+		is_ship_size = Flagship
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
+		is_ship_size = ember_battleship
 	}
 }
 
@@ -279,6 +257,10 @@ ship_uses_artillery_role = {
 		is_ship_size = Battlecruiser
 		is_ship_size = Dreadnought
 		is_ship_size = Flagship
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
+		is_ship_size = ember_battleship
+		is_ship_size = entropy_conduit
 	}
 }
 
@@ -317,6 +299,8 @@ ship_uses_cruiser_components = {
 		#NSC Ships
 		is_ship_size = explorationship
 		is_ship_size = StrikeCruiser
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
 	}
 }
 
@@ -342,6 +326,8 @@ ship_uses_cruiser_reactors = {
 		#NSC Ships
 		is_ship_size = explorationship
 		is_ship_size = StrikeCruiser
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
 	}
 }
 
@@ -364,6 +350,9 @@ ship_uses_battleship_reactors = {
 		is_ship_size = offspring_stinger_stage_3
 		# NSC Ships
 		is_ship_size = Carrier
+		# Hyperthermia Ships
+		is_ship_size = ember_battleship
+		is_ship_size = entropy_conduit
 	}
 }
 
@@ -386,6 +375,9 @@ ship_uses_battleship_thrusters = {
 		is_ship_size = offspring_stinger_stage_3
 		# NSC Ships
 		is_ship_size = Carrier
+		# Hyperthermia Ships
+		is_ship_size = ember_battleship
+		is_ship_size = entropy_conduit
 	}
 }
 
@@ -406,7 +398,8 @@ ship_uses_battleship_components = {
 		is_ship_size = offspring_stinger_stage_1
 		is_ship_size = offspring_stinger_stage_2
 		is_ship_size = offspring_stinger_stage_3
-		# NSC Ships
+		# Hyperthermia Ships
+		is_ship_size = ember_battleship
 	}
 }
 
