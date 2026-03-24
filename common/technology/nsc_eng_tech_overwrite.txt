@@ -19,7 +19,7 @@ tech_battleships = {
 	}
 
 	modifier = {
-		command_limit_add = 10
+		command_limit_add = 60
 	}
 
 	weight_modifier = {
@@ -72,7 +72,7 @@ tech_titans = {
 	ai_update_type = military
 
 	modifier = {
-		command_limit_add = 10
+		command_limit_add = 80
 	}
 
 	potential = {

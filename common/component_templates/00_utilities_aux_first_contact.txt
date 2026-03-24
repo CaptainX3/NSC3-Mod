@@ -172,9 +172,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_1_TOOLTIP"
 
@@ -257,9 +255,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_2_TOOLTIP"
 
@@ -345,9 +341,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_3_TOOLTIP"
 
@@ -431,9 +425,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 0.5
-		}
+		ship_shield_reduction = 0.5
 	}
 	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
 
@@ -518,9 +510,7 @@ utility_component_template = {
 			is_cloaked = yes
 			has_non_psionic_shields = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
 
@@ -607,9 +597,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_2_TOOLTIP"
 
@@ -692,9 +680,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_3_TOOLTIP"
 
@@ -776,9 +762,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 0.5
-		}
+		ship_shield_reduction = 0.5
 	}
 	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
 
@@ -861,9 +845,7 @@ utility_component_template = {
 			is_cloaked = yes
 			has_non_psionic_shields = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 
 	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
@@ -950,9 +932,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_3_TOOLTIP"
 
@@ -1033,9 +1013,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 0.5
-		}
+		ship_shield_reduction = 0.5
 	}
 	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
 
@@ -1117,9 +1095,7 @@ utility_component_template = {
 			is_cloaked = yes
 			has_non_psionic_shields = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
 
@@ -1520,9 +1496,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_1_TOOLTIP"
 
@@ -1554,9 +1528,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_2_TOOLTIP"
 
@@ -1588,9 +1560,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 	custom_tooltip = "CLOAKING_3_TOOLTIP"
 
@@ -1622,9 +1592,7 @@ utility_component_template = {
 		potential = {
 			is_cloaked = yes
 		}
-		modifier = {
-			ship_shield_reduction = 0.5
-		}
+		ship_shield_reduction = 0.5
 	}
 	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
 
@@ -1657,9 +1625,7 @@ utility_component_template = {
 			is_cloaked = yes
 			has_non_psionic_shields = yes
 		}
-		modifier = {
-			ship_shield_reduction = 1
-		}
+		ship_shield_reduction = 1
 	}
 
 	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
