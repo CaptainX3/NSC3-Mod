@@ -168,7 +168,7 @@ weapon_component_template = {
 	armor_penetration = 0.0
 	windup = { min = 1.0 max = 15.0 }
 	total_fire_time = 20
-	range = 40
+	range = 100
 	accuracy = 0.90
 	tracking = 0.80
 	
@@ -215,7 +215,7 @@ weapon_component_template = {
 	armor_penetration = 0.25
 	windup = { min = 1.0 max = 15.0 }
 	total_fire_time = 20
-	range = 40
+	range = 100
 
 	accuracy = 0.90
 	tracking = 0.80
@@ -246,7 +246,7 @@ weapon_component_template = {
 }
 
 weapon_component_template = {
-	key = NSC_HYPER_DISRUPTOR
+	key = "NSC_HYPER_DISRUPTOR"
 	size = small
 	icon = "GFX_ship_part_nsc_emp" #icon = "GFX_ship_part_nsc_warp_disruptor"
 	icon_frame = 1

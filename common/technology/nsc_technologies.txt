@@ -909,6 +909,11 @@ tech_graviton_power = {
 			desc = "TECH_UNLOCK_GRAVITON_POWER_DESC"
 		}
 	}
+	
+	potential = {
+		country_uses_bio_ships = no
+	}
+	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -943,6 +948,10 @@ tech_naquadria_power = {
 			title = "TECH_UNLOCK_NAQUADRIA_POWER_TITLE"
 			desc = "TECH_UNLOCK_NAQUADRIA_POWER_DESC"
 		}
+	}
+	
+	potential = {
+		country_uses_bio_ships = no
 	}
 	
 	weight_modifier = {
@@ -981,6 +990,10 @@ tech_singularity_power = {
 		}
 	}
 	
+	potential = {
+		country_uses_bio_ships = no
+	}
+	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -1015,6 +1028,10 @@ tech_multidimensional_power = {
 			title = "TECH_UNLOCK_MULTIDIMENSIONAL_POWER_TITLE"
 			desc = "TECH_UNLOCK_MULTIDIMENSIONAL_POWER_DESC"
 		}
+	}
+	
+	potential = {
+		country_uses_bio_ships = no
 	}
 	
 	weight_modifier = {
@@ -1054,6 +1071,10 @@ tech_optimized_enigmatic_power = {
 		}
 	}
 	
+	potential = {
+		country_uses_bio_ships = no
+	}
+	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -1091,6 +1112,10 @@ tech_bh_power_2 = {
 		}
 	}
 	
+	potential = {
+		country_uses_bio_ships = no
+	}
+	
 	weight_modifier = {
 		factor = 1.5
 		modifier = {
@@ -1126,6 +1151,10 @@ tech_bh_power_3 = {
 			title = "TECH_UNLOCK_BH_POWER_TITLE"
 			desc = "TECH_UNLOCK_BH_POWER_DESC"
 		}
+	}
+	
+	potential = {
+		country_uses_bio_ships = no
 	}
 	
 	weight_modifier = {

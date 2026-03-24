@@ -368,10 +368,36 @@ utility_component_template = {
 	}
 
 	prerequisites = { "tech_Carrier_1" }
+	
 	potential = {
 		is_ship_size = Carrier
 	}
 	component_set = "special_ship_slot"
 	
 	ai_weight = { weight = 1 }
+}
+
+utility_component_template = {
+	key = "SPECIAL_SLOT_TARGET_MAGNET"
+	size = medium
+	icon = "GFX_bulwark_array"
+	icon_frame = 1
+	power = @power2
+	
+	resources = {
+		category = ship_components
+		cost = { alloys = @cost1 }		
+	}
+	
+	potential = {
+		is_ship_class = shipclass_military
+	}
+
+	ship_modifier = {
+		ship_target_weight_mult = 0.50
+	}
+
+	component_set = "special_ship_slot"
+
+	ai_weight = { weight = 10 }
 }

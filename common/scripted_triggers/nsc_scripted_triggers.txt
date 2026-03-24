@@ -39,6 +39,20 @@ ship_uses_special_starbase_components = {
 	}
 }
 
+ship_uses_civilian_cloaks = {
+	OR = {
+		is_ship_size = constructor
+		is_ship_size = colonizer
+		is_ship_size = sponsored_colonizer
+		is_ship_size = lithoid_colonizer
+		is_ship_size = guided_sapience_colonizer
+		is_ship_size = transport
+		is_ship_size = science
+		is_ship_size = explorer_vessel
+		is_ship_size = observation_station
+	}
+}
+
 ship_uses_battlecruiser_cloaks = {
 	is_ship_size = Battlecruiser
 }
@@ -422,5 +436,41 @@ ship_uses_starbase_components = {
 		# NSC Starbases
 		is_ship_size = starbase_stronghold
 		is_ship_size = starbase_headquarters
+	}
+}
+
+nsc_mothball_target_fleet_requirement = {
+	optimize_memory
+	owner = { is_same_value = prev.owner }
+	OR = {
+		is_ship_class = shipclass_military
+		is_ship_class = shipclass_military_special
+		AND = {
+			is_ship_class = shipclass_starbase
+			is_mobile = yes
+		}
+	}
+}
+nsc_mothball_target_fleet_all_flags_trigger = {
+	optimize_memory
+	OR = {
+		has_fleet_flag = nsc_mothballed_fleet_1
+		has_fleet_flag = nsc_mothballed_fleet_2
+		has_fleet_flag = nsc_mothballed_fleet_3
+		has_fleet_flag = nsc_mothballed_fleet_4
+		has_fleet_flag = nsc_mothballed_fleet_5
+		has_fleet_flag = nsc_mothballed_fleet_6
+		has_fleet_flag = nsc_mothballed_fleet_7
+		has_fleet_flag = nsc_mothballed_fleet_8
+		has_fleet_flag = nsc_mothballed_fleet_9
+		has_fleet_flag = nsc_mothballed_fleet_10
+	}
+}
+nsc_mothball_target_fleet_mothball_stop_trigger = {
+	optimize_memory
+	exists = event_target:nsc_mothball_target_fleet_$ID$
+	event_target:nsc_mothball_target_fleet_$ID$ = {
+		has_fleet_flag = nsc_mothballed_fleet_$ID$
+		NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
 	}
 }

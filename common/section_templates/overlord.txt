@@ -1,7 +1,7 @@
-@corvette_section_cost = 30
-@destroyer_section_cost = 30
-@cruiser_section_cost = 40
-@battleship_section_cost = 80
+@corvette_section_cost = 40
+@destroyer_section_cost = 120
+@cruiser_section_cost = 240
+@battleship_section_cost = 640
 
 ship_section_template = {
 	key = "OFFSPRING_CORVETTE_MID_M1S1"

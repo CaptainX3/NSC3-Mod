@@ -1,7 +1,6 @@
-@cost1 = 125
-@cost2 = 150
-@cost3 = 175
-@cost4 = 300
+@cost1 = 350
+@cost2 = 400
+@cost3 = 500
 
 
 

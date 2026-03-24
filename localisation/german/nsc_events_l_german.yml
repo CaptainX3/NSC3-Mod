@@ -4,7 +4,7 @@
 ### Explorer EVENTS ###
 ##################################
 
-EXPLORATION_CRUISER_UPGRADE_PROJECT: "Science Ship Upgade Project"
+EXPLORATION_CRUISER_UPGRADE_PROJECT: "Science Ship Upgrade Project"
 EXPLORATION_CRUISER_UPGRADE_PROJECT_DESC: "Our fleet engineers stand ready to begin the monumental task of retrofitting one of our existing Science ships into the new Explorer class. It is expected that this project will take approximately 250 days to complete. When finished, the Scientist Leader of the ship will transfer to their new ship automatically."
 
 nsc_events_exploration_ship.3.name: "Prototype Explorer"

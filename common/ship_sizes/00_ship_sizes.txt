@@ -81,11 +81,12 @@ corvette = {
 	modifier = {
 		ship_evasion_add = 60
 	}
-	size_multiplier = 1
+	size_multiplier = 5
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 2
 	is_space_station = no
+	map_counter_icon = ship_counter_1
 	icon = ship_size_military_1
 	base_buildtime = 60
 	can_have_federation_design = yes
@@ -190,11 +191,12 @@ frigate = {
 		ship_evasion_add = 50
 	}
 	hull_scale = 1.25
-	size_multiplier = 2
+	size_multiplier = 8
 	fleet_slot_size = 2
 	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
 	num_target_locators = 2
 	is_space_station = no
+	map_counter_icon = ship_counter_1
 	icon = ship_size_military_1_torpedo
 	base_buildtime = 90
 	can_have_federation_design = yes
@@ -300,11 +302,11 @@ destroyer = {
 	modifier = {
 		ship_evasion_add = 35
 	}
-	size_multiplier = 2
+	size_multiplier = 10
 	fleet_slot_size = 2
 	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
 	num_target_locators = 4
-	icon = ship_size_military_2
+	map_counter_icon = ship_counter_2
 	is_space_station = no
 	base_buildtime = 120
 	can_have_federation_design = yes
@@ -408,11 +410,12 @@ cruiser = {
 	modifier = {
 		ship_evasion_add = 15
 	}
-	size_multiplier = 3
+	size_multiplier = 20
 	fleet_slot_size = 3
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
+	map_counter_icon = ship_counter_3
 	icon = ship_size_military_4
 	base_buildtime = 240
 	can_have_federation_design = yes
@@ -519,19 +522,20 @@ cruiser = {
 
 StrikeCruiser = {
 	formation_priority = @strikecruiser_formation_priority
-	max_speed = 190
+	max_speed = 130
 	acceleration = 0.45
 	rotation_speed = 0.25
 	collision_radius = @cruiser_collision_radius
 
 	modifier = {
-		ship_evasion_add = 15
+		ship_evasion_add = 25
 	}
 	max_hitpoints = 2300
-	size_multiplier = 5
-	fleet_slot_size = 5
+	size_multiplier = 25
+	fleet_slot_size = 4
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
+	map_counter_icon = ship_counter_6
 	icon = nsc_ship_size_military_13
 	base_buildtime = 330
 	use_shipnames_from = cruiser
@@ -617,10 +621,11 @@ Battlecruiser = {
 	}
 	
 	max_hitpoints = 3500
-	size_multiplier = 6
-	fleet_slot_size = 6
+	size_multiplier = 30
+	fleet_slot_size = 5
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
 	num_target_locators = 4
+	map_counter_icon = ship_counter_8
 	icon = nsc_ship_size_military_15
 	base_buildtime = 360
 	use_shipnames_from = battleship
@@ -724,11 +729,12 @@ battleship = {
 	modifier = {
 		ship_evasion_add = 8
 	}
-	size_multiplier = 8
+	size_multiplier = 40
 	fleet_slot_size = 8
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
+	map_counter_icon = ship_counter_10
 	icon = ship_size_military_8
 	base_buildtime = 480
 	can_have_federation_design = yes
@@ -831,10 +837,11 @@ Carrier = {
 	}
 	
 	max_hitpoints = 7000
-	size_multiplier = 10
+	size_multiplier = 50
 	fleet_slot_size = 10
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
 	num_target_locators = 4
+	map_counter_icon = ship_counter_12
 	icon = nsc_ship_size_military_16
 	base_buildtime = 540
 	use_shipnames_from = battleship
@@ -924,10 +931,11 @@ Dreadnought = {
 	}
 	
 	max_hitpoints = 10000
-	size_multiplier = 14
+	size_multiplier = 60
 	fleet_slot_size = 14
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "stern" = { locator = "part5" } }
 	num_target_locators = 4
+	map_counter_icon = ship_counter_14
 	icon = nsc_ship_size_military_17
 	base_buildtime = 600
 	use_shipnames_from = battleship
@@ -995,11 +1003,12 @@ titan = {
 	modifier = {
 		ship_evasion_mult = -1
 	}
-	size_multiplier = 20
+	size_multiplier = 80
 	fleet_slot_size = 20
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
+	map_counter_icon = ship_counter_18
 	icon = ship_size_military_16
 	base_buildtime = 900
 	can_have_federation_design = yes
@@ -1116,10 +1125,11 @@ Flagship = {
 	}
 
 	max_hitpoints = 60000
-	size_multiplier = 24
+	size_multiplier = 120
 	fleet_slot_size = 24
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "mid4" = { locator = "part5" } "stern" = { locator = "part6" } }
 	num_target_locators = 4
+	map_counter_icon = ship_counter_25
 	icon = nsc_ship_size_military_18
 	combat_disengage_chance = 0.50
 
@@ -1194,11 +1204,12 @@ constructor = {
 		ship_evasion_add = @construction_evasion
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_constructor
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_constructor
 	base_buildtime = @construction_build_time
 
 	combat_disengage_chance = 1.0
@@ -1280,12 +1291,13 @@ colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
 
 	combat_disengage_chance = 0.5
@@ -1502,6 +1514,7 @@ colonizer = {
 			}
 			energy = @colony_cost_very_high
 		}
+
 		# Alloys for Infernals
 		# 100 normally
 		cost = {
@@ -1556,12 +1569,13 @@ sponsored_colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
 
 	combat_disengage_chance = 0.5
@@ -1584,11 +1598,11 @@ sponsored_colonizer = {
 	resources = {
 		category = colonies
 		cost = {
-			energy = @colony_cost_high
+			trade = @colony_cost_high
 		}
 
 		upkeep = {
-			energy = @colony_upkeep_energy
+			trade = @colony_upkeep_energy
 			alloys = @colony_upkeep_alloys
 		}
 	}
@@ -1625,12 +1639,13 @@ lithoid_colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = 150
 
 	combat_disengage_chance = 0.2
@@ -1684,12 +1699,13 @@ guided_sapience_colonizer = {
 	modifier = {
 		ship_evasion_add = @colony_evasion
 	}
-	size_multiplier = 1
+	size_multiplier = 20
+	map_counter_icon = ship_counter_16
+	icon = ship_size_colonizer
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_colonizer
 	base_buildtime = @colony_build_time
 
 	combat_disengage_chance = 0.5
@@ -1942,11 +1958,12 @@ science = {
 		ship_hyperlane_range_add = 1
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_science
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_science
 	base_buildtime = @science_build_time
 
 	combat_disengage_chance = 2.0
@@ -2013,16 +2030,6 @@ science = {
 		}
 	}
 
-	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				NOT = { is_megastructure_type = nsc_flagship_shipyard_complete }
-			}
-		}
-	}
-
 	available_to_everyone = yes
 
 	ai_ship_data = {
@@ -2043,10 +2050,11 @@ explorationship = {
 	}
 	
 	max_hitpoints = 2000
-	size_multiplier = 5
+	size_multiplier = 30
 	fleet_slot_size = 5
 	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "stern" = { locator = "part4" } }
 	num_target_locators = 0
+	map_counter_icon = ship_counter_5
 	icon = nsc_ship_size_military_14
 	base_buildtime = 300
 	use_shipnames_from = science
@@ -2113,12 +2121,12 @@ transport = {
 		ship_evasion_add = @transport_evasion
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_4
+	icon = ship_size_transport
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	is_space_station = no
-	icon = ship_size_transport
-
 	available_to_everyone = yes
 
 	combat_disengage_chance = 1.5
@@ -2151,7 +2159,9 @@ military_station_small = {
 	ship_modifier = { ship_weapon_range_mult = 0.30 }
 	
 	max_hitpoints = 5000
+	combat_size_multiplier = 20
 	size_multiplier = 1
+	map_counter_icon = ship_counter_7
 	fleet_slot_size = 1
 	section_slots = { "west" = { locator = "part1" } "east" = { locator = "part2" } }
 	num_target_locators = 5
@@ -2209,7 +2219,9 @@ military_station_medium = {
 		ship_weapon_range_mult = 0.20
 	}
 	max_hitpoints = 10000
+	combat_size_multiplier = 40
 	size_multiplier = 2
+	map_counter_icon = ship_counter_7
 	fleet_slot_size = 2
 	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
 	num_target_locators = 5
@@ -2263,6 +2275,7 @@ military_station_large = {
 	}
 	max_hitpoints = 20000
 	size_multiplier = 3
+	map_counter_icon = ship_counter_7
 	fleet_slot_size = 3
 	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
 	num_target_locators = 5
@@ -2315,6 +2328,7 @@ mining_station = {
 		ship_evasion_mult = -1
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_7
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
@@ -2375,6 +2389,7 @@ research_station = {
 		ship_evasion_mult = -1
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_7
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 1
@@ -2436,6 +2451,7 @@ observation_station = {
 		ship_evasion_mult = -1
 	}
 	size_multiplier = 1
+	map_counter_icon = ship_counter_7
 	fleet_slot_size = 1
 	num_target_locators = 0
 	is_space_station = yes

@@ -3,9 +3,9 @@ decision_nsc_mothball_menu = {
 	owned_planets_only = yes
 
 	potential = {
-		always = no
-		#exists = owner
-		#owner = { is_ai = no }
+		#always = no
+		exists = owner
+		owner = { is_ai = no }
 	}
 
 	allow = {

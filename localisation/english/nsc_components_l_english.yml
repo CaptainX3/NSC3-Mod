@@ -91,6 +91,8 @@ SPECIAL_SLOT_MARS_WEAPON_SYSTEM: "MARS Weapon System"
 SPECIAL_SLOT_MARS_WEAPON_SYSTEM_DESC: "This advanced point-defense weapon system is specifically designed to track tiny, highly evasive targets - missiles, torpedoes, and strike craft - and provide extremely precise targeting solutions at blistering speeds, increasing the fire rate and damage potential of ship-borne point-defense weapons."
 SPECIAL_SLOT_STRIKE_CRAFT: "Carrier Command & Control Network"
 SPECIAL_SLOT_STRIKE_CRAFT_DESC: "An advanced network of radar and communication arrays that facilitate the command and control of large numbers of Strike Craft, increasing their effectiveness."
+SPECIAL_SLOT_TARGET_MAGNET: "Targeting Override"
+SPECIAL_SLOT_TARGET_MAGNET_DESC: "Antenna arrays artificially increase the detection cross-section of this ship, forcing enemy weapons to target it instead of nearby friendlies."
 
 
 
