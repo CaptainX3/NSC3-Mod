@@ -19,8 +19,10 @@ juggernaut = {
 		}
 	}
 
-	combat_size_multiplier = 5
-	size_multiplier = 32
+	combat_size_multiplier = 100
+	size_multiplier = 100
+	map_counter_icon = ship_counter_128
+	icon = ship_size_military_64
 	fleet_slot_size = 32
 	section_slots = { "core" = { locator = "part1" } "core2" = { locator = "part1" } "core3" = { locator = "part1" } "core4" = { locator = "part1" } }
 

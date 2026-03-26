@@ -97,3 +97,42 @@ utility_component_template = {
 		}	
 	}
 }
+
+utility_component_template = {
+	key = "STRIKE_CRUISER_AFTERBURNER"
+	size = aux
+	icon = "GFX_ship_part_afterburner_2"
+	icon_frame = 1
+	power = -20
+	resources = {
+		category = ship_components
+		cost = {
+			alloys = 6
+		}
+	}
+	modifier = {
+		ship_speed_mult = 0.50
+	}
+	prerequisites = { "tech_StrikeCruiser_1" }
+	component_set = "STRIKE_CRUISER_AFTERBURNER"
+	
+	ship_limit = 1
+	
+	blocked_by = {
+		OR = {
+			AFTERBURNER_1
+			AFTERBURNER_2
+		}
+	}
+	
+	potential = {
+		ship_uses_strikecruiser_components = yes
+		from = {
+			country_uses_bio_ships = no
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

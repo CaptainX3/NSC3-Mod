@@ -102,16 +102,8 @@ component_set = {
 	icon_frame = 1
 }
 
-### AMMO TYPES ###
-
-# component_set = {
-	# key = "NSC_AMMO_CRYSTAL_1"
-	# icon = "GFX_nsc_ammo_crystal_1"
-	# icon_frame = 1
-# }
-
-# component_set = {
-	# key = "NSC_AMMO_WARHEAD_1"
-	# icon = "GFX_nsc_ammo_crystal_1"
-	# icon_frame = 1
-# }
+component_set = {
+	key = "STRIKE_CRUISER_AFTERBURNER"
+	icon = "GFX_ship_part_afterburner_2"
+	icon_frame = 1
+}

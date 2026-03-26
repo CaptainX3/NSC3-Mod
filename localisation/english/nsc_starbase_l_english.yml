@@ -12,6 +12,10 @@ sm_drydock: "Drydock"
 sm_drydock_desc: "This specially-designed facility makes use of advanced technology to maintain atmospheric pressures within the Shipyards, allowing workers to more easily build, maintain, upgrade, and repair warships.\n"
 sm_drydock_desc_modifier: "Increases the build capacity of each §Y$sm_shipyard$§! by §G1§!\n"
 
+sm_fleet_anchorage: "Fleet Dock"
+sm_fleet_anchorage_desc: "A significantly larger version of the standard fleet anchorage for our rapidly expanding navy.\n"
+sm_fleet_anchorage_desc_modifier: "§Y$Fleet Capacity$§! +100\n"
+
 sm_sensor_station: "Sensor Station"
 sm_sensor_station_desc: "The starbase sensor station uses advanced sensor arrays to extend our intelligence gathering capabilities across several star systems, giving us advanced warning of any possible threats near our borders.\n"
 
