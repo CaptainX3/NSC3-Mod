@@ -46,6 +46,9 @@ NSC_STRIKE_CRUISER_AURA_2: "Advanced Combat Interdiction System II"
 NSC_TITAN_AURA: "Fleet Command Network"
 NSC_FLAGSHIP_AURA: "Advanced Fleet Command Network"
 
+STRIKE_CRUISER_AFTERBURNER: "Assault Afterburner"
+STRIKE_CRUISER_AFTERBURNER_DESC: "A special afterburner that vastly increases the speed and evasion of the §YStrike Cruiser§! for rapid closure and assault on enemy fleets."
+
 special_ship_slot: "Special Component"
 special_ship_slot_DESC: "A special component slot."
 
@@ -60,37 +63,46 @@ special_ship_slot_DESC: "A special component slot."
 
 SPECIAL_SLOT_MULTIPHASIC_SENSORS: "Multiphasic Sensors"
 SPECIAL_SLOT_MULTIPHASIC_SENSORS_DESC: "These advanced sensors increase sensor range using multiphase generators, updating and adding to our map of the galaxy by conducting preliminary scans of wide swathes of space from afar."
+
 SPECIAL_SLOT_DAMAGE_CONTROL: "Damage Control Teams"
 SPECIAL_SLOT_DAMAGE_CONTROL_DESC: "These specialized crew members are trained in rapid ship repair under battlefield conditions to keep the ship running longer, and to reduce the need to head home for repairs after combat engagements."
+
 SPECIAL_SLOT_READY_ROOM: "Captain's Ready Room"
 SPECIAL_SLOT_READY_ROOM_DESC: "Commanding a warship is a heavy burden, and even the most able Captains are likely to feel the strain. Setting aside a private space for the Captain of the vessel to relax, while still being available in case of emergencies, will improve the Captain's mental health, and improve their ability to command the vessel when the time comes to engage in combat."
+
 SPECIAL_SLOT_CREW_LOUNGE: "Crew Lounge"
 SPECIAL_SLOT_CREW_LOUNGE_DESC: "Long deployments aboard spacefaring warships can take their toll on a ship's crew. Having designated Crew Lounge areas will provide the crew with a place to relieve excess stress, improve mental health, and, in the end, improve combat performance as a result."
+
 SPECIAL_SLOT_FIRE_CONTROL: "Fire Control System"
 SPECIAL_SLOT_FIRE_CONTROL_DESC: "This advanced targeting system allows the ship to acquire targeting solutions faster and more precisely, inflicting greater damage on enemy vessels in combat."
+
 SPECIAL_SLOT_STRUCTURAL_INTEGRITY: "Structural Integrity Field"
 SPECIAL_SLOT_STRUCTURAL_INTEGRITY_DESC: "This advanced system of forcefields strengthens the ship's hull structure from within, helping the vessel resist enemy fire for longer periods before failing."
+
 SPECIAL_SLOT_AUXILIARY_SHIELDS: "Auxiliary Shield System"
 SPECIAL_SLOT_AUXILIARY_SHIELDS_DESC: "This secondary series of backup shield generators reinforces the ship's shields during combat, making the shields more resilient against enemy fire."
+
 SPECIAL_SLOT_QUANTUM_THRUSTERS: "Quantum Thrusters"
 SPECIAL_SLOT_QUANTUM_THRUSTERS_DESC: "Even the most powerful fleets are useless if they are not where they need to be, when they need to be there. While very expensive to maintain, and causing increased wear and tear on the ship as a whole, these Quantum Thrusters will provide a significant boost to sublight speed, allowing our fleets to travel faster to respond to any situations that may arise."
+
 SPECIAL_SLOT_DEFLECTOR_ARRAY: "Deflector Array"
 SPECIAL_SLOT_DEFLECTOR_ARRAY_DESC: "These deflector arrays relieve strain on the shield generators, allowing the ship's shields to regenerate faster after combat, to get ready for the next engagement. In campaigns where multiple battles may be fought in the same system in quick succession, this can mean the difference between victory and defeat."
+
 SPECIAL_SLOT_KITCHEN_SINK: "Kitchen Sink"
 SPECIAL_SLOT_KITCHEN_SINK_DESC: "A clean crew is a happy crew. A happy crew blows stuff up. And no, we still don't know why it uses power."
+
 SPECIAL_SLOT_STELLAR_CARTOGRAPHY: "Stellar Cartography"
 SPECIAL_SLOT_STELLAR_CARTOGRAPHY_DESC: "This large system is used for mapping the surrounding space, allowing the ship's computers to calculate and recover from FTL jumps with increased speed."
+
 SPECIAL_SLOT_NAVIGATIONAL_ARRAY: "Navigational Array"
 SPECIAL_SLOT_NAVIGATIONAL_ARRAY_DESC: "This advanced 3D navigational system serves two functions: First, increasing the ability of the ship's weapons to track enemy vessels in combat, and second, to increase the range of the ship's Jump Drives, if such drives are equipped."
-SPECIAL_SLOT_MARS_WEAPON_SYSTEM: "MARS Weapon System"
-SPECIAL_SLOT_MARS_WEAPON_SYSTEM_DESC: "This advanced point-defense weapon system is specifically designed to track tiny, highly evasive targets - missiles, torpedoes, and strike craft - and provide extremely precise targeting solutions at blistering speeds, increasing the fire rate and damage potential of ship-borne point-defense weapons."
-SPECIAL_SLOT_STRIKE_CRAFT: "Carrier Command & Control Network"
-SPECIAL_SLOT_STRIKE_CRAFT_DESC: "An advanced network of radar and communication arrays that facilitate the command and control of large numbers of Strike Craft, increasing their effectiveness."
 
 SPECIAL_SLOT_MARS_WEAPON_SYSTEM: "MARS Weapon System"
 SPECIAL_SLOT_MARS_WEAPON_SYSTEM_DESC: "This advanced point-defense weapon system is specifically designed to track tiny, highly evasive targets - missiles, torpedoes, and strike craft - and provide extremely precise targeting solutions at blistering speeds, increasing the fire rate and damage potential of ship-borne point-defense weapons."
+
 SPECIAL_SLOT_STRIKE_CRAFT: "Carrier Command & Control Network"
 SPECIAL_SLOT_STRIKE_CRAFT_DESC: "An advanced network of radar and communication arrays that facilitate the command and control of large numbers of Strike Craft, increasing their effectiveness."
+
 SPECIAL_SLOT_TARGET_MAGNET: "Targeting Override"
 SPECIAL_SLOT_TARGET_MAGNET_DESC: "Antenna arrays artificially increase the detection cross-section of this ship, forcing enemy weapons to target it instead of nearby friendlies."
 

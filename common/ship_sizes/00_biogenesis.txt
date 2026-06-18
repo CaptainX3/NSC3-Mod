@@ -55,7 +55,6 @@ mauler_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -152,7 +151,6 @@ mauler_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -249,7 +247,6 @@ mauler_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -339,7 +336,6 @@ weaver_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -448,7 +444,6 @@ weaver_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -557,7 +552,6 @@ weaver_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -682,7 +676,6 @@ harbinger_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -816,7 +809,6 @@ harbinger_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -950,7 +942,6 @@ harbinger_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1057,7 +1048,6 @@ stinger_stage_1 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1180,7 +1170,6 @@ stinger_stage_2 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1302,7 +1291,6 @@ stinger_stage_3 = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "bio_ship_unique_components"
 
 	is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
@@ -1405,55 +1393,14 @@ bio_titan = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
 	required_component_set = "ship_aura_components"
 
 	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
+		titan_potential_construction = yes
 	}
 
 	possible_construction = {
-		custom_tooltip = {
-			fail_text = starbase_citadel_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_size >= starbase_citadel
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = starbase_titan_yards_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_building = titan_yards
-				}
-			}
-		}
+		titan_possible_construction = yes
 	}
 
 	resources = {
@@ -1474,6 +1421,78 @@ bio_titan = {
 	ai_ship_data = {
 		min = 1
 		max = 15
+		planet_mult = 0.1
+	}
+}
+
+
+####################################################################################################################################################################
+### NSC CLASSES ####################################################################################################################################################
+####################################################################################################################################################################
+
+
+bio_dreadnought = {
+	formation_priority = 55
+	entity = "stinger_stage_3_entity"
+	ship_category = bio_ship
+	max_speed = 90
+	acceleration = 0.2
+	rotation_speed = 0.15
+	collision_radius = 12
+	max_hitpoints = 10000
+	modifier = {
+		ship_evasion_mult = 5
+	}
+	size_multiplier = 45
+	map_counter_icon = ship_counter_14
+	icon = nsc_ship_size_military_17
+	fleet_slot_size = 8
+	section_slots = { "bow" = { locator = "part1" } "mid1" = { locator = "part2" } "mid2" = { locator = "part3" } "mid3" = { locator = "part4" } "stern" = { locator = "part5" } }
+	num_target_locators = 4
+	is_space_station = no
+	base_buildtime = 600
+	can_have_federation_design = yes
+	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
+	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
+	selectable = { host_has_dlc = "Apocalypse" }
+	use_shipnames_from = battleship
+	evaluation_resource = food
+	default_behavior = artillery
+
+	role_background = "GFX_role_selection_stinger"
+	ship_roles = { artillery gunship }
+
+	prerequisites = { "tech_stinger_growth_2" }
+
+	combat_disengage_chance = 1.25
+
+	class = shipclass_military
+	construction_type = starbase_shipyard
+	required_component_set = "power_core"
+	required_component_set = "ftl_components"
+	required_component_set = "thruster_components"
+	required_component_set = "sensor_components"
+	required_component_set = "combat_computers"
+	required_component_set = "ship_aura_components"
+
+	resources = {
+		category = ships
+		upkeep = {
+			food = 28
+			alloys = 4.0
+		}
+		logistics = {
+			trade = 14
+		}
+	}
+
+	min_upgrade_cost = {
+		alloys = 12
+	}
+
+	ai_ship_data = {
+		min = 10
+		max = 50
 		planet_mult = 0.1
 	}
 }

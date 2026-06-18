@@ -1468,7 +1468,7 @@ utility_component_template = {
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
 	potential = {
-		ship_uses_corvette_reactors = yes
+		ship_uses_corvette_components = yes
 		from = {
 			country_uses_bio_ships = no
 		}

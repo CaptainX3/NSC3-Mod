@@ -37,6 +37,12 @@ utility_component_template = {
 		ship_speed_mult = 0.10
 		ship_evasion_mult = 0.05
 	}
+	potential = {
+		OR = {
+			is_ship_class = shipclass_military
+			is_arkship_ship = yes
+		}
+	}
 	prerequisites = { "tech_afterburners_1" }
 	component_set = "AFTERBURNER_1"
 	upgrades_to = "AFTERBURNER_2"
@@ -75,6 +81,12 @@ utility_component_template = {
 	modifier = {
 		ship_speed_mult = 0.20
 		ship_evasion_mult = 0.10
+	}
+	potential = {
+		OR = {
+			is_ship_class = shipclass_military
+			is_arkship_ship = yes
+		}
 	}
 	prerequisites = { "tech_afterburners_2" }
 	component_set = "AFTERBURNER_2"
@@ -127,9 +139,6 @@ utility_component_template = {
 	
 	potential = {
 		ship_uses_strikecruiser_components = yes
-		from = {
-			country_uses_bio_ships = no
-		}
 	}
 
 	ai_weight = {

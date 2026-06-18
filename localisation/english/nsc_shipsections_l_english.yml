@@ -422,3 +422,28 @@ CORE1_HEADQUARTERS_SECTION: "Headquarters Core"
 CORE2_HEADQUARTERS_SECTION: "Headquarters Core"
 CORE3_HEADQUARTERS_SECTION: "Headquarters Core"
 CORE4_HEADQUARTERS_SECTION: "Headquarters Core"
+#-------------------------------------------------------------------#
+BIO_DREADNOUGHT_BOW_S4P4M4L4: "Coverage Bow"
+BIO_DREADNOUGHT_BOW_L10: "Artillery Bow"
+BIO_DREADNOUGHT_BOW_S2P2G13: "Missile Bow"
+BIO_DREADNOUGHT_BOW_XL4: "Devastator Bow"
+
+BIO_DREADNOUGHT_MID1_P3M7L6: "Carronade Core"
+BIO_DREADNOUGHT_MID1_P3G5L6: "Bombardment Core"
+BIO_DREADNOUGHT_MID1_P3L9: "Artillery Core"
+BIO_DREADNOUGHT_MID1_P3M9G9: "Salvo Core"
+
+BIO_DREADNOUGHT_MID2_P3M7L6: "Carronade Core"
+BIO_DREADNOUGHT_MID2_P3G5L6: "Bombardment Core"
+BIO_DREADNOUGHT_MID2_P3L9: "Artillery Core"
+BIO_DREADNOUGHT_MID2_P3M9G9: "Salvo Core"
+
+BIO_DREADNOUGHT_MID3_P3M7L6: "Carronade Core"
+BIO_DREADNOUGHT_MID3_P3G5L6: "Bombardment Core"
+BIO_DREADNOUGHT_MID3_P3L9: "Artillery Core"
+BIO_DREADNOUGHT_MID3_P3M9G9: "Salvo Core"
+
+BIO_DREADNOUGHT_STERN_L5: "Artillery Stern"
+BIO_DREADNOUGHT_STERN_M14: "Broadside Stern"
+BIO_DREADNOUGHT_STERN_G9: "Missile Stern"
+#-------------------------------------------------------------------#

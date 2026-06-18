@@ -8,7 +8,7 @@ starbase_level_outpost = {
 	next_level = starbase_level_starport
 	show_in_outliner = no
 	display_map_icon = no
-	level_weight = 0	
+	level_weight = 0
 	ai_weight = { weight = 1 }
 	picture = {
 		trigger = {
@@ -16,10 +16,10 @@ starbase_level_outpost = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
-	
 }
 
 starbase_level_starport = {
+	starbase_capacity_used = 1
 	ship_size = starbase_starport
 	next_level = starbase_level_starhold
 	level_weight = 1
@@ -27,13 +27,16 @@ starbase_level_starport = {
 	potential_home_base = yes
 	picture = {
 		trigger = {
-			owner = { uses_ship_category = bio_ship }
+			owner = {  uses_ship_category = bio_ship }
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 }
+	building_slots = { 1 2 3 }
 }
 
 starbase_level_starhold = {
+	starbase_capacity_used = 1
 	ship_size = starbase_starhold
 	next_level = starbase_level_starfortress
 	level_weight = 2
@@ -45,9 +48,12 @@ starbase_level_starhold = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 4 5 }
+	building_slots = { 1 2 3 4 5 }
 }
 
 starbase_level_starfortress = {
+	starbase_capacity_used = 1
 	ship_size = starbase_starfortress
 	next_level = starbase_level_citadel
 	level_weight = 3
@@ -59,9 +65,12 @@ starbase_level_starfortress = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 4 5 6 7 }
+	building_slots = { 1 2 3 4 5 6 7 }
 }
 
 starbase_level_citadel = {
+	starbase_capacity_used = 1
 	ship_size = starbase_citadel
 	next_level = starbase_level_stronghold
 	level_weight = 4
@@ -73,10 +82,13 @@ starbase_level_citadel = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 4 5 6 7 8 9 10 }
+	building_slots = { 1 2 3 4 5 6 7 8 9 10 }
 }
 
 ### NSC STARBASES ###
 starbase_level_stronghold = {
+	starbase_capacity_used = 1
 	ship_size = starbase_stronghold
 	next_level = starbase_level_headquarters
 	level_weight = 5
@@ -88,9 +100,12 @@ starbase_level_stronghold = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 }
+	building_slots = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 }
 }
 
 starbase_level_headquarters = {
+starbase_capacity_used = 1
 	ship_size = starbase_headquarters
 	level_weight = 6
 	ai_weight = { weight = 7 }
@@ -101,6 +116,8 @@ starbase_level_headquarters = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 }
+	building_slots = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 }
 }
 
 #########################
@@ -108,6 +125,8 @@ starbase_level_headquarters = {
 #########################
 
 ### VANILLA STARBASES ###
+
+# Special
 
 starbase_level_swarm = {
 	ship_size = starbase_swarm
@@ -214,4 +233,6 @@ starbase_level_hatchery = {
 		}
 		picture = "GFX_bioship_starbase_background"
 	}
+	module_slots = { 1 2 3 4 5 6 }
+	building_slots = { 1 2 3 4 }
 }

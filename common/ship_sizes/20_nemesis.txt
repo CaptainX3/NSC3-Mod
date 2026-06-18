@@ -9,11 +9,11 @@ crisis_corvette = {
 	modifier = {
 		ship_armor_add = 3
 		ship_evasion_add = 60
-		#ship_piracy_suppression_add = 10
-
 	}
 	max_hitpoints = @corvette_hp
-	size_multiplier = 1
+	size_multiplier = 4
+	map_counter_icon = ship_counter_4
+	icon = ship_size_military_1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
@@ -40,7 +40,7 @@ crisis_corvette = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
+	
 	required_component_set = "special_ship_slot"
 
 	resources = {
@@ -70,15 +70,15 @@ crisis_destroyer = {
 	modifier = {
 		ship_evasion_add = 25
 		ship_armor_add = 15
-		#ship_piracy_suppression_add = 8
 	}
 	max_hitpoints = @destroyer_hp
-	size_multiplier = 2
+	size_multiplier = 8
+	map_counter_icon = ship_counter_8
+	icon = ship_size_military_2
 	fleet_slot_size = 2
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	icon_frame = 3
-	icon = ship_size_military_2
 	base_buildtime = 60
 	is_space_station = no
 	can_have_federation_design = no
@@ -100,7 +100,7 @@ crisis_destroyer = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
+	
 	required_component_set = "special_ship_slot"
 
 	resources = {
@@ -130,15 +130,15 @@ crisis_cruiser = {
 	modifier = {
 		ship_evasion_add = 10
 		ship_armor_add = 34
-		#ship_piracy_suppression_add = 6
 	}
 	max_hitpoints = @cruiser_hp
-	size_multiplier = 4
+	size_multiplier = 16
+	map_counter_icon = ship_counter_16
+	icon = ship_size_military_4
 	fleet_slot_size = 4
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 0
 	icon_frame = 4
-	icon = ship_size_military_4
 	base_buildtime = 120
 	is_space_station = no
 	can_have_federation_design = no
@@ -161,9 +161,8 @@ crisis_cruiser = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	required_component_set = "ai_behaviour"
+	
 	required_component_set = "special_ship_slot"
-	required_component_set = "nsc_supportship_aura"
 
 	resources = {
 		category = ships
@@ -195,13 +194,14 @@ star_eater = {
 		ships_upkeep_mult = -1
 	}
 	max_hitpoints = 150000
-	size_multiplier = 8
+	size_multiplier = 40
+	map_counter_icon = ship_counter_128
+	icon = ship_size_military_32
 	fleet_slot_size = 8
 	section_slots = { "mid" = { locator = "main_body" } }
 	num_target_locators = 0
 	is_space_station = no
 	icon_frame = 7
-	icon = ship_size_military_32
 	construction_type = starbase_shipyard
 	base_buildtime = 6000
 	can_have_federation_design = no
@@ -218,51 +218,11 @@ star_eater = {
 	}
 
 	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
+		colossus_potential_construction = yes
 	}
 
 	possible_construction = {
-		custom_tooltip = {
-			fail_text = starbase_citadel_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_size >= starbase_citadel
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = starbase_colossal_yards_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_building = colossus_yards
-				}
-			}
-		}
+		colossus_potential_construction = yes
 	}
 
 	required_component_set = "power_core"
@@ -270,6 +230,8 @@ star_eater = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
+	
+	required_component_set = "special_ship_slot"
 
 	resources = {
 		category = ships

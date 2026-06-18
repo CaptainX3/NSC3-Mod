@@ -1,3 +1,5 @@
+is_nsc_activated = { always = yes }
+
 can_fill_diagnostic_job_trigger = {
 	custom_tooltip = SPECIALIST_JOB_TRIGGER
 	hidden_trigger = {
@@ -39,20 +41,6 @@ ship_uses_special_starbase_components = {
 	}
 }
 
-ship_uses_civilian_cloaks = {
-	OR = {
-		is_ship_size = constructor
-		is_ship_size = colonizer
-		is_ship_size = sponsored_colonizer
-		is_ship_size = lithoid_colonizer
-		is_ship_size = guided_sapience_colonizer
-		is_ship_size = transport
-		is_ship_size = science
-		is_ship_size = explorer_vessel
-		is_ship_size = observation_station
-	}
-}
-
 ship_uses_battlecruiser_cloaks = {
 	is_ship_size = Battlecruiser
 }
@@ -75,6 +63,7 @@ ship_uses_station_reactors = {
 
 ship_uses_dreadnought_thrusters = {
 	is_ship_size = Dreadnought
+	is_ship_size = bio_dreadnought
 }
 
 ship_uses_dreadnought_reactors = {
@@ -91,6 +80,109 @@ ship_uses_explorer_components = {
 
 ship_uses_strikecruiser_components = {
 	is_ship_size = StrikeCruiser
+}
+
+ship_is_bioship = {
+	OR = {
+		is_ship_size = mauler_stage_1
+		is_ship_size = mauler_stage_2
+		is_ship_size = mauler_stage_3
+		is_ship_size = large_fallen_mauler
+		is_ship_size = weaver_stage_1
+		is_ship_size = weaver_stage_2
+		is_ship_size = weaver_stage_3
+		is_ship_size = small_fallen_weaver
+		is_ship_size = large_fallen_weaver
+		is_ship_size = harbinger_stage_1
+		is_ship_size = harbinger_stage_2
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		is_ship_size = offspring_mauler_stage_1
+		is_ship_size = offspring_mauler_stage_2
+		is_ship_size = offspring_mauler_stage_3
+		is_ship_size = offspring_weaver_stage_1
+		is_ship_size = offspring_weaver_stage_2
+		is_ship_size = offspring_weaver_stage_3
+		is_ship_size = offspring_harbinger_stage_1
+		is_ship_size = offspring_harbinger_stage_2
+		is_ship_size = offspring_harbinger_stage_3
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		is_ship_size = cosmo_crisis_mauler
+		is_ship_size = cosmo_crisis_weaver
+		is_ship_size = cosmo_crisis_harbinger
+		is_ship_size = cosmo_crisis_stinger
+		# NSC Ships
+		is_ship_size = bio_dreadnought
+	}
+}
+
+ship_uses_weaver_components = {
+	OR = {
+		is_ship_size = weaver_stage_1
+		is_ship_size = weaver_stage_2
+		is_ship_size = weaver_stage_3
+		is_ship_size = small_fallen_weaver
+		is_ship_size = large_fallen_weaver
+		is_ship_size = cosmo_crisis_weaver
+		is_ship_size = offspring_weaver_stage_1
+		is_ship_size = offspring_weaver_stage_2
+		is_ship_size = offspring_weaver_stage_3
+		# NSC Ships
+		is_ship_size = bio_explorer
+	}
+}
+
+
+ship_uses_titan_components = {
+	OR = {
+		is_ship_size = titan
+		is_ship_size = bio_titan
+		is_ship_size = cosmo_crisis_titan
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		# NSC Ships
+		is_ship_size = bio_dreadnought
+	}
+}
+
+ship_uses_titan_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = titan
+		# First Contact Ships
+		is_ship_size = payback_warship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = bio_titan
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		# NSC Ships
+		is_ship_size = bio_dreadnought
+	}
+}
+
+ship_uses_titan_thrusters = {
+	OR = {
+		# Regular Ships
+		is_ship_size = titan
+		# First Contact Ships
+		is_ship_size = payback_warship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_titan
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		# Biological Ships
+		is_ship_size = bio_titan
+		# NSC Ships
+		is_ship_size = bio_dreadnought
+	}
 }
 
 ship_uses_picket_role = {
@@ -280,12 +372,40 @@ ship_uses_artillery_role = {
 
 ship_uses_civilian_cloaks = {
 	OR = {
+		is_ship_size = constructor
+		is_ship_size = colonizer
+		is_ship_size = sponsored_colonizer
+		is_ship_size = lithoid_colonizer
+		is_ship_size = guided_sapience_colonizer
 		is_ship_size = transport
 		is_ship_size = science
 		is_ship_size = explorer_vessel
 		is_ship_size = observation_station
 		#NSC Ships
 		is_ship_size = explorationship
+	}
+}
+
+ship_uses_destroyer_components = {
+	OR = {
+		# Regular Ships
+		is_ship_size = destroyer
+		is_ship_size = frigate
+		# Offspring Ships
+		is_ship_size = offspring_destroyer
+		# Galactic Nemesis Ships
+		is_ship_size = crisis_destroyer
+		# Biological Ships
+		is_ship_size = weaver_stage_1
+		is_ship_size = weaver_stage_2
+		is_ship_size = weaver_stage_3
+		is_ship_size = small_fallen_weaver
+		is_ship_size = large_fallen_weaver
+		is_ship_size = cosmo_crisis_weaver
+		# Biological Offspring Ships
+		is_ship_size = offspring_weaver_stage_1
+		is_ship_size = offspring_weaver_stage_2
+		is_ship_size = offspring_weaver_stage_3
 	}
 }
 

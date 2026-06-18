@@ -30,53 +30,11 @@ colossus = {
 	required_component_set = "combat_computers"
 
 	potential_construction = {
-		OR = {
-			is_scope_type = starbase
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-					is_megastructure_type = nsc_flagship_shipyard_complete
-				}
-			}
-		}
+		colossus_potential_construction = yes
 	}
 
 	possible_construction = {
-		custom_tooltip = {
-			fail_text = starbase_citadel_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-						is_megastructure_type = nsc_flagship_shipyard_complete
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_size >= starbase_citadel
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = starbase_colossal_yards_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_building = colossus_yards
-				}
-			}
-		}
+		colossus_possible_construction = yes
 	}
 
 	resources = {

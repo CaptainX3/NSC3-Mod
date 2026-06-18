@@ -100,6 +100,12 @@ mega_shipyard_0 = {
 	placement_rules = {
 		planet_possible = {
 			custom_tooltip = {
+				fail_text = "requires_no_protostar"
+				NOT = {
+					is_planet_class = pc_protostar
+				}
+			}
+			custom_tooltip = {
 				fail_text = "must_build_around_star"
 				is_star = yes
 			}

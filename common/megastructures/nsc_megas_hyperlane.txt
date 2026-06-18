@@ -25,6 +25,8 @@ hyperlane_creator_emisor_0 = {
 		}
 	}
 	
+	construction_blocks_and_blocked_by = none
+	
 	potential = {
 		has_technology = tech_hyperlane_generation
 	}
@@ -88,6 +90,8 @@ hyperlane_creator_emisor_1 = {
 		}
 	}
 	
+	construction_blocks_and_blocked_by = none
+	
 	upgrade_from = { hyperlane_creator_emisor_0 }
 	
 	potential = { has_technology = tech_hyperlane_generation }
@@ -118,6 +122,8 @@ hyperlane_creator_emisor_2 = {
 			unity = 5
 		}
 	}
+	
+	construction_blocks_and_blocked_by = none
 	
 	upgrade_from = { hyperlane_creator_emisor_1 }
 	
@@ -176,6 +182,8 @@ hyperlane_creator_receptor_0 = {
 			mult = @halved_alloy_to_food_cost_ratio
 		}
 	}
+	
+	construction_blocks_and_blocked_by = none
 
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
@@ -281,6 +289,8 @@ hyperlane_creator_receptor_1 = {
 		}
 	}
 	
+	construction_blocks_and_blocked_by = none
+	
 	upgrade_from = { hyperlane_creator_receptor_0 }
 	
 	potential = { has_technology = tech_hyperlane_generation }
@@ -335,7 +345,9 @@ hyperlane_remover_emisor_0 = {
 			food = 2000
 			mult = @halved_alloy_to_food_cost_ratio
 		}
-	}	
+	}
+
+	construction_blocks_and_blocked_by = none
 
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
@@ -412,6 +424,8 @@ hyperlane_remover_emisor_1 = {
 			mult = @halved_alloy_to_food_cost_ratio
 		}
 	}
+	
+	construction_blocks_and_blocked_by = none
 	
 	upgrade_from = { hyperlane_remover_emisor_0 }
 	
@@ -503,6 +517,8 @@ hyperlane_remover_receptor_0 = {
 			mult = @halved_alloy_to_food_cost_ratio
 		}
 	}
+	
+	construction_blocks_and_blocked_by = none
 	
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
@@ -602,6 +618,8 @@ hyperlane_remover_receptor_1 = {
 			mult = @halved_alloy_to_food_cost_ratio
 		}
 	}
+	
+	construction_blocks_and_blocked_by = none
 
 	
 	upgrade_from = { hyperlane_remover_receptor_0 }

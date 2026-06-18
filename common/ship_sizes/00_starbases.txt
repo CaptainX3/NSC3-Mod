@@ -89,6 +89,10 @@ starbase_outpost = {
 	possible_construction = {
 		always = yes
 	}
+	
+	potential_country = {
+		is_nomadic = no
+	}
 
 	potential_construction = {
 		is_scope_type = planet
@@ -1112,6 +1116,8 @@ ion_cannon = {
 
 	potential_construction = {
 		is_scope_type = starbase
+		is_waystation_starbase = no
+		is_arkship_starbase = no
 	}
 
 	possible_construction = {

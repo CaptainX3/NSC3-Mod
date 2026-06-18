@@ -27,56 +27,11 @@ juggernaut = {
 	section_slots = { "core" = { locator = "part1" } "core2" = { locator = "part1" } "core3" = { locator = "part1" } "core4" = { locator = "part1" } }
 
 	potential_construction = {
-		OR = {
-			AND = {
-				is_scope_type = starbase
-				NOT = {
-					has_starbase_size = juggernaut
-				}
-			}
-			AND = {
-				is_scope_type = megastructure
-				OR = {
-					is_megastructure_type = mega_shipyard_3
-					is_megastructure_type = mega_shipyard_restored
-				}
-			}
-		}
+		juggernaut_potential_construction = yes
 	}
 
 	possible_construction = {
-		custom_tooltip = {
-			fail_text = starbase_citadel_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_size >= starbase_citadel
-				}
-			}
-		}
-		custom_tooltip = {
-			fail_text = starbase_colossal_yards_trigger
-			OR = {
-				AND = {
-					is_scope_type = megastructure
-					OR = {
-						is_megastructure_type = mega_shipyard_3
-						is_megastructure_type = mega_shipyard_restored
-					}
-				}
-				AND = {
-					is_scope_type = starbase
-					has_starbase_building = colossus_yards
-				}
-			}
-		}
+		juggernaut_possible_construction = yes
 	}
 
 	num_target_locators = 0

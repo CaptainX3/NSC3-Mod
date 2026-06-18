@@ -1640,3 +1640,131 @@ utility_component_template = {
 		weight = @psi_cloaking_weight
 	}
 }
+
+###############
+# Waystations #
+###############
+
+utility_component_template = {
+	key = "WAYSTATION_CLOAKING_1"
+	size = aux
+	icon = "GFX_ship_part_cloak_1"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @cloaking_very_low_strength
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_1_TOOLTIP"
+
+	potential = {
+		is_waystation_ship = yes
+	}
+	prerequisites = { "tech_cloaking_1" }
+	component_set = "waystation_cloaking_components"
+	upgrades_to = "WAYSTATION_CLOAKING_2"
+
+	ai_weight = {
+		weight = @basic_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "WAYSTATION_CLOAKING_2"
+	size = aux
+	icon = "GFX_ship_part_cloak_2"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @cloaking_low_strength
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_2_TOOLTIP"
+
+	potential = {
+		is_waystation_ship = yes
+	}
+	prerequisites = { "tech_cloaking_2" }
+	component_set = "waystation_cloaking_components"
+	upgrades_to = "WAYSTATION_CLOAKING_3"
+
+	ai_weight = {
+		weight = @advanced_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "WAYSTATION_CLOAKING_3"
+	size = aux
+	icon = "GFX_ship_part_cloak_3"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @cloaking_medium_strength
+	}
+	inline_script = ship_components/cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_3_TOOLTIP"
+
+	potential = {
+		is_waystation_ship = yes
+	}
+	prerequisites = { "tech_cloaking_3" }
+	component_set = "waystation_cloaking_components"
+	upgrades_to = "WAYSTATION_CLOAKING_DARK_MATTER"
+
+	ai_weight = {
+		weight = @elite_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "WAYSTATION_CLOAKING_DARK_MATTER"
+	size = aux
+	icon = "GFX_ship_part_cloak_dark_matter"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @cloaking_high_strength
+	}
+	inline_script = ship_components/dark_matter_cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_DARK_MATTER_TOOLTIP"
+
+	potential = {
+		is_waystation_ship = yes
+	}
+	prerequisites = { "tech_cloaking_dark_matter" }
+	component_set = "waystation_cloaking_components"
+	upgrades_to = "WAYSTATION_CLOAKING_PSI"
+
+	ai_weight = {
+		weight = @dark_matter_cloaking_weight
+	}
+}
+
+utility_component_template = {
+	key = "WAYSTATION_CLOAKING_PSI"
+	size = aux
+	icon = "GFX_ship_part_cloak_psi"
+	icon_frame = 1
+	power = 0
+
+	modifier = {
+		ship_cloaking_strength_add = @cloaking_very_high_strength
+	}
+	inline_script = ship_components/psi_cloaking_ship_shield_reduction
+	custom_tooltip = "CLOAKING_PSI_TOOLTIP"
+
+	potential = {
+		is_waystation_ship = yes
+	}
+	prerequisites = { "tech_cloaking_psi" }
+	component_set = "waystation_cloaking_components"
+
+	ai_weight = {
+		weight = @psi_cloaking_weight
+	}
+}

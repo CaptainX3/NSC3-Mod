@@ -8,7 +8,7 @@ NShip = {
 }
 
 NGameplay = {
-	COMMAND_LIMIT_MAX = 1000
+	COMMAND_LIMIT_MAX = 5000
 	COMMAND_LIMIT_BASE = 50
 	NAVAL_CAPACITY_BASE = 50
 	EXPERIMENTAL_SUBSPACE_NAVIGATION_TIME_MULT = 1.5	# value * hyperlane distance to system defines the MIA time (travel time in days) for a Science Ship MIA Jump

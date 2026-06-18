@@ -559,7 +559,11 @@ security_branch_office = {
 		upkeep = { energy = 1 }
 	}
 
-	system_modifier = { planet_crime_add = -15 job_enforcer_add = 100 }
+	system_modifier = { 
+		planet_crime_add = -15
+		job_enforcer_add = 100 
+	}
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {

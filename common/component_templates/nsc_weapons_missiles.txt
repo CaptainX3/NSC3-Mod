@@ -94,7 +94,7 @@ weapon_component_template = {
 	missile_armor = 0.0
 	missile_health = 15.0
 	missile_retarget_range = 150.0
-	size_damage_factor = 1
+	size_damage_factor = 0.5
 	
 	prerequisites = { "tech_missiles_3" }
 	component_set = "FRIGATE_TORPEDO_1"
@@ -157,7 +157,7 @@ weapon_component_template = {
 	missile_armor = 0.0
 	missile_health = 35.0
 	missile_retarget_range = 75.0
-	size_damage_factor = 1.5
+	size_damage_factor = 0.30
 	
 	prerequisites = { "tech_missiles_5" }
 	component_set = "BATTLECRUISER_TORPEDO_1"
