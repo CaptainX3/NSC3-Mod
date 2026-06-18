@@ -92,6 +92,26 @@ tech_titans = {
 	}
 
 	technology_swap = {
+		name = tech_nomads_titans
+		inherit_icon = yes
+		inherit_effects = no
+
+		trigger = {
+			is_nomadic = yes
+		}
+		prereqfor_desc = {
+			custom = {
+				title = "TECH_UNLOCK_ION_CANNON_CONSTRUCTION_TITLE"
+				desc = "TECH_UNLOCK_ION_CANNON_CONSTRUCTION_DESC"
+			}
+			custom = {
+				title = "TECH_UNLOCK_ARKSHIP_TITAN_AURAS_CONSTRUCTION_TITLE"
+				desc = "TECH_UNLOCK_ARKSHIP_TITAN_AURAS_CONSTRUCTION_DESC"
+			}
+		}
+	}
+
+	technology_swap = {
 		name = tech_biogenesis_titans
 		inherit_icon = no
 		inherit_effects = yes

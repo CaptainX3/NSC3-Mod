@@ -132,16 +132,4 @@ diagnostician = {
 			}
 		}
 	}
-
-	inline_script = "jobs/automodding_priority_amenities"
-
-	promotion = {
-		time = @standard_promotion_time
-		effect = {
-			pop_amount_change_category = {
-				CATEGORY = specialist
-				AMOUNT = local_pop_amount
-			}
-		}
-	}
 }

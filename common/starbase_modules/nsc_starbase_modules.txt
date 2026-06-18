@@ -14,6 +14,7 @@ detection_array = {
 	icon = "GFX_spaceport_module_detecton_array"
 	section = "SCIENCE_STARBASE_SECTION"
 	construction_days = 60
+	category = sm_naval_support_cat
 
 	potential = {
 		exists = owner
@@ -58,12 +59,17 @@ detection_array = {
 	}
 
 	show_in_tech = "tech_detection_array"
+
+	show_tech_unlock_if = {
+		is_nomadic = no
+	}
 }
 
 solar_panel_network = {
 	icon = "GFX_solar_panel_network"
 	section = "SCIENCE_STARBASE_SECTION"
 	construction_days = 180
+	category = sm_economy_cat
 	initial = yes
 
 	potential = {

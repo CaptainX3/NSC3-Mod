@@ -1156,8 +1156,11 @@ utility_component_template = {
 	component_set = "power_core"
 	potential = {
 		ship_uses_juggernaut_reactors = yes
-		from = {
-			country_uses_bio_ships = no
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
 		}
 	}
 
@@ -1699,10 +1702,13 @@ utility_component_template = {
 
 	prerequisites = { "tech_graviton_power" }
 	component_set = "power_core"
-		potential = {
+	potential = {
 		ship_uses_juggernaut_reactors = yes
-		from = {
-			country_uses_bio_ships = no
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
 		}
 	}
 
@@ -2069,10 +2075,13 @@ utility_component_template = {
 
 	prerequisites = { "tech_naquadria_power" }
 	component_set = "power_core"
-		potential = {
+	potential = {
 		ship_uses_juggernaut_reactors = yes
-		from = {
-			country_uses_bio_ships = no
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
 		}
 	}
 
@@ -2439,10 +2448,13 @@ utility_component_template = {
 
 	prerequisites = { "tech_singularity_power" }
 	component_set = "power_core"
-		potential = {
+	potential = {
 		ship_uses_juggernaut_reactors = yes
-		from = {
-			country_uses_bio_ships = no
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
 		}
 	}
 
@@ -2809,10 +2821,13 @@ utility_component_template = {
 
 	prerequisites = { "tech_multidimensional_power" }
 	component_set = "power_core"
-		potential = {
+	potential = {
 		ship_uses_juggernaut_reactors = yes
-		from = {
-			country_uses_bio_ships = no
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
 		}
 	}
 
@@ -3236,10 +3251,13 @@ utility_component_template = {
 
 	prerequisites = { "tech_optimized_enigmatic_power" }
 	component_set = "power_core"
-		potential = {
+	potential = {
 		ship_uses_juggernaut_reactors = yes
-		from = {
-			country_uses_bio_ships = no
+		OR = {
+			from = {
+				country_uses_bio_ships = no
+			}
+			is_arkship_ship = yes
 		}
 	}
 
