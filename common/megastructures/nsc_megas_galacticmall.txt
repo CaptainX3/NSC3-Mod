@@ -80,7 +80,7 @@ nsc_galactic_mall_0 = {
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
 				NOR = {
-					has_planet_flag = megastructure
+					has_carrier_flag = megastructure
 					has_planet_flag = has_megastructure
 					solar_system = { has_star_flag = ring_world_built }
 					is_planet_class = pc_ringworld_habitable
@@ -136,7 +136,7 @@ nsc_galactic_mall_0 = {
             set_country_flag = built_nsc_mall
             set_country_flag = has_built_or_repaired_megastructure
         }
-		fromfrom.planet = { set_planet_flag = has_megastructure }
+		fromfrom.planet = { set_carrier_flag = has_megastructure }
     }
 }
 

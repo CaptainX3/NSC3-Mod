@@ -66,7 +66,7 @@ nsc_flagship_shipyard = {
 			custom_tooltip = {
 				fail_text = "requires_no_existing_megastructure"
 				NOR = {
-					has_planet_flag = megastructure
+					has_carrier_flag = megastructure
 					has_planet_flag = has_megastructure
 					solar_system = { has_star_flag = ring_world_built }
 					is_planet_class = pc_ringworld_habitable
