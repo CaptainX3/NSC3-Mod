@@ -418,6 +418,7 @@ tech_Flagship_1 = {
 
 	potential = {
 		country_uses_bio_ships = no
+		is_nomadic = no
         OR = {
             AND = {
                 NOT = { host_has_dlc = "Apocalypse" }
@@ -1983,6 +1984,10 @@ tech_galactic_mall = {
 	category = { statecraft }
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
+
+	potential = {
+		is_nomadic = no
+	}
 	
 	prereqfor_desc = {
 		ship = {
@@ -2014,6 +2019,10 @@ tech_hospital = {
 	category = { biology }
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5weight3
+
+	potential = {
+		is_nomadic = no
+	}
 	
 	prereqfor_desc = {
 		ship = {

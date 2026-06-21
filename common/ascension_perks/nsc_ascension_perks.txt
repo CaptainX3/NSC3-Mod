@@ -3,7 +3,13 @@
 #######################
 
 ap_nsc_matterenergy = {
-	potential = { NOT = { has_ascension_perk = ap_nsc_matterenergy } }
+
+	potential = {
+		NOR = {
+			has_ascension_perk = ap_nsc_matterenergy
+			is_nomadic = no
+		}
+	}
 	
 	possible = {
 		custom_tooltip = {

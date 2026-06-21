@@ -9,6 +9,10 @@ nsc_headquarters_0 = {
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -20 y = -10 }
 	build_time = 1800
+
+	potential = {
+		is_nomadic = no
+	}
 	
 	resources = {
 		category = megastructures
