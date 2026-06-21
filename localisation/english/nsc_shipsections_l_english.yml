@@ -35,6 +35,21 @@ explorationship: "Explorer"
 explorationship_plural: "Explorers"
 explorationship_cap: "Explorer"
 
+BIO_DREADNOUGHT: "Ravager"
+bio_dreadnought: "Ravager"
+bio_dreadnought_plural: "Ravagers"
+bio_dreadnought_cap: "Ravager"
+
+BIO_EXPLORER: "Sentinel"
+bio_explorer: "Sentinel"
+bio_explorer_plural: "Sentinels"
+bio_explorer_cap: "Sentinel"
+
+BIO_FLAGSHIP: "Progenitor"
+bio_flagship: "Progenitor"
+bio_flagship_plural: "Progenitors"
+bio_flagship_cap: "Progenitor"
+
 starbase_stronghold: "Grand Citadel"
 starbase_stronghold_plural: "Grand Citadels"
 starbase_stronghold_cap: "Grand Citadel" 
@@ -446,4 +461,80 @@ BIO_DREADNOUGHT_MID3_P3M9G9: "Salvo Core"
 BIO_DREADNOUGHT_STERN_L5: "Artillery Stern"
 BIO_DREADNOUGHT_STERN_M14: "Broadside Stern"
 BIO_DREADNOUGHT_STERN_G9: "Missile Stern"
+#-------------------------------------------------------------------#
+BIO_EXPLORER_1_BOW_L1: "Artillery Bow (Level 1)"
+BIO_EXPLORER_1_BOW_M1S2: "Volley Bow (Level 1)"
+BIO_EXPLORER_1_BOW_M2: "Broadside Bow (Level 1)"
+
+BIO_EXPLORER_1_MID1_M3: "Volley Core (Level 1)"
+BIO_EXPLORER_1_MID1_S2: "Interceptor Core (Level 1)"
+BIO_EXPLORER_1_MID1_PD2: "Pinpoint Core (Level 1)"
+
+BIO_EXPLORER_1_MID2_M3: "Volley Core (Level 1)"
+BIO_EXPLORER_1_MID2_S2: "Interceptor Core (Level 1)"
+BIO_EXPLORER_1_MID2_PD2: "Pinpoint Core (Level 1)"
+
+BIO_EXPLORER_1_STERN_M1: "Broadside Stern (Level 1)"
+BIO_EXPLORER_1_STERN_S2: "Spitfire Stern (Level 1)"
+BIO_EXPLORER_1_STERN_PD2: "Pinpoint Stern (Level 1)"
+#-------------------------------------------------------------------#
+BIO_EXPLORER_2_BOW_L1: "Artillery Bow (Level 2)"
+BIO_EXPLORER_2_BOW_G1S2: "Fusillade Bow (Level 2)"
+BIO_EXPLORER_2_BOW_M5: "Broadside Bow (Level 2)"
+
+BIO_EXPLORER_2_MID1_L1G1: "Barrage Core (Level 2)"
+BIO_EXPLORER_2_MID1_L1M1: "Artillery Core (Level 2)"
+BIO_EXPLORER_2_MID1_M2S2: "Volley Core (Level 2)"
+BIO_EXPLORER_2_MID1_G3: "Missile Core (Level 2)"
+BIO_EXPLORER_2_MID1_M3: "Broadside Core (Level 2)"
+
+BIO_EXPLORER_2_MID2_L1G1: "Barrage Core (Level 2)"
+BIO_EXPLORER_2_MID2_L1M1: "Artillery Core (Level 2)"
+BIO_EXPLORER_2_MID2_M2S2: "Volley Core (Level 2)"
+BIO_EXPLORER_2_MID2_G3: "Missile Core (Level 2)"
+BIO_EXPLORER_2_MID2_M3: "Broadside Core (Level 2)"
+
+BIO_EXPLORER_2_STERN_M2: "Broadside Stern (Level 2)"
+BIO_EXPLORER_2_STERN_S4: "Spitfire Stern (Level 2)"
+BIO_EXPLORER_2_STERN_PD4: "PD Stern (Level 2)"
+#-------------------------------------------------------------------#
+BIO_EXPLORER_3_BOW_L3: "Artillery Bow (Level 3)"
+BIO_EXPLORER_3_BOW_G3S3: "Fusillade Bow (Level 3)"
+BIO_EXPLORER_3_BOW_M7: "Broadside Bow (Level 3)"
+
+BIO_EXPLORER_3_MID1_L1G3: "Barrage Core (Level 3)"
+BIO_EXPLORER_3_MID1_L3M1: "Artillery Core (Level 3)"
+BIO_EXPLORER_3_MID1_M5S5: "Volley Core (Level 3)"
+BIO_EXPLORER_3_MID1_G5H1: "Missile Core (Level 3)"
+BIO_EXPLORER_3_MID1_M7: "Broadside Core (Level 3)"
+
+BIO_EXPLORER_3_MID2_L1G3: "Barrage Core (Level 3)"
+BIO_EXPLORER_3_MID2_L3M1: "Artillery Core (Level 3)"
+BIO_EXPLORER_3_MID2_M5S5: "Volley Core (Level 3)"
+BIO_EXPLORER_3_MID2_G5H1: "Missile Core (Level 3)"
+BIO_EXPLORER_3_MID2_M7: "Broadside Core (Level 3)"
+
+BIO_EXPLORER_3_STERN_M4: "Broadside Stern (Level 3)"
+BIO_EXPLORER_3_STERN_S8: "Spitfire Stern (Level 3)"
+BIO_EXPLORER_3_STERN_PD8: "PD Stern (Level 3)"
+#-------------------------------------------------------------------#
+BIO_EXPLORER_4_BOW_L6: "Artillery Bow (Level 4)"
+BIO_EXPLORER_4_BOW_G7S7: "Fusillade Bow (Level 4)"
+BIO_EXPLORER_4_BOW_M14: "Broadside Bow (Level 4)"
+
+BIO_EXPLORER_4_MID1_L3G6: "Barrage Core (Level 4)"
+BIO_EXPLORER_4_MID1_L5M3: "Artillery Core (Level 4)"
+BIO_EXPLORER_4_MID1_M10S10: "Volley Core (Level 4)"
+BIO_EXPLORER_4_MID1_G7H2: "Missile Core (Level 4)"
+BIO_EXPLORER_4_MID1_M15: "Broadside Core (Level 4)"
+
+BIO_EXPLORER_4_MID2_L3G6: "Barrage Core (Level 4)"
+BIO_EXPLORER_4_MID2_L5M3: "Artillery Core (Level 4)"
+BIO_EXPLORER_4_MID2_M10S10: "Volley Core (Level 4)"
+BIO_EXPLORER_4_MID2_G7H2: "Missile Core (Level 4)"
+BIO_EXPLORER_4_MID2_M15: "Broadside Core (Level 4)"
+
+BIO_EXPLORER_4_STERN_M6: "Broadside Stern (Level 4)"
+BIO_EXPLORER_4_STERN_S12: "Spitfire Stern (Level 4)"
+BIO_EXPLORER_4_STERN_PD12: "PD Stern (Level 4)"
 #-------------------------------------------------------------------#

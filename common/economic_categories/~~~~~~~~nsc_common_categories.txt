@@ -575,11 +575,11 @@ planet_livestock_farmers = {
 	parent = planet_farmers
 	generate_add_modifiers = { produces
 	}
-	modifier_category = pop_job
+	modifier_category = colony
 
 	generate_mult_modifiers = { produces
 	}
-	modifier_category = pop_job
+	modifier_category = colony
 }
 
 pop_category_purge = {

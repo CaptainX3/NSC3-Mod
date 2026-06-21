@@ -33,12 +33,116 @@ can_fill_diagnostic_job_trigger = {
 }
 
 ### Ship Component Scripted Triggers ###
-ship_uses_special_starbase_components = {
+
+ship_uses_civilian_cloaks = {
 	OR = {
-		is_ship_size = starbase_citadel
-		is_ship_size = starbase_stronghold
-		is_ship_size = starbase_headquarters
+		is_ship_size = constructor
+		is_ship_size = colonizer
+		is_ship_size = sponsored_colonizer
+		is_ship_size = lithoid_colonizer
+		is_ship_size = guided_sapience_colonizer
+		is_ship_size = transport
+		is_ship_size = science
+		is_ship_size = explorer_vessel
+		is_ship_size = observation_station
+		#NSC Ships
+		is_ship_size = explorationship
+		is_ship_size = bio_explorer
 	}
+}
+
+ship_uses_explorer_components = {
+	is_ship_size = explorationship
+	is_ship_size = bio_explorer
+}
+
+ship_uses_destroyer_components = {
+	OR = {
+		# Regular Ships
+		is_ship_size = destroyer
+		is_ship_size = frigate
+		# Offspring Ships
+		is_ship_size = offspring_destroyer
+		# Galactic Nemesis Ships
+		is_ship_size = crisis_destroyer
+		# Biological Ships
+		is_ship_size = weaver_stage_1
+		is_ship_size = weaver_stage_2
+		is_ship_size = weaver_stage_3
+		is_ship_size = small_fallen_weaver
+		is_ship_size = large_fallen_weaver
+		is_ship_size = cosmo_crisis_weaver
+		# Biological Offspring Ships
+		is_ship_size = offspring_weaver_stage_1
+		is_ship_size = offspring_weaver_stage_2
+		is_ship_size = offspring_weaver_stage_3
+	}
+}
+
+ship_uses_cruiser_components = {
+	OR = {
+		# Regular Ships
+		is_ship_size = cruiser
+		# Offspring Ships
+		is_ship_size = offspring_cruiser
+		# Galactic Nemesis Ships
+		is_ship_size = crisis_cruiser
+		# Nanotech Ships
+		is_ship_size = nanite_interdictor
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_destroyer
+		# Biological Ships
+		is_ship_size = harbinger_stage_1
+		is_ship_size = harbinger_stage_2
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_harbinger_stage_1
+		is_ship_size = offspring_harbinger_stage_2
+		is_ship_size = offspring_harbinger_stage_3
+		#NSC Ships
+		is_ship_size = explorationship
+		is_ship_size = StrikeCruiser
+		is_ship_size = bio_explorer
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
+		# Paladin Ships
+		is_ship_size = paladin_ship
+	}
+}
+
+ship_uses_cruiser_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = cruiser
+		# Offspring Ships
+		is_ship_size = offspring_cruiser
+		# Galactic Nemesis Ships
+		is_ship_size = crisis_cruiser
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_destroyer
+		# Biological Ships
+		is_ship_size = harbinger_stage_1
+		is_ship_size = harbinger_stage_2
+		is_ship_size = harbinger_stage_3
+		is_ship_size = large_fallen_harbinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_harbinger_stage_1
+		is_ship_size = offspring_harbinger_stage_2
+		is_ship_size = offspring_harbinger_stage_3
+		#NSC Ships
+		is_ship_size = explorationship
+		is_ship_size = StrikeCruiser
+		is_ship_size = bio_explorer
+		# Hyperthermia Ships
+		is_ship_size = ember_cruiser
+		# Paladin Ships
+		is_ship_size = paladin_ship
+	}
+}
+
+ship_uses_strikecruiser_components = {
+	is_ship_size = StrikeCruiser
 }
 
 ship_uses_battlecruiser_cloaks = {
@@ -53,33 +157,177 @@ ship_uses_battlecruiser_thrusters = {
 	is_ship_size = Battlecruiser
 }
 
-ship_uses_fortress_reactors = {
-	is_ship_size = military_station_large
+ship_uses_battleship_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		# Nanotech Ships
+		is_ship_size = nanite_interdictor
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		# NSC Ships
+		is_ship_size = Carrier
+		# Hyperthermia Ships
+		is_ship_size = ember_battleship
+		is_ship_size = entropy_conduit
+	}
 }
 
-ship_uses_station_reactors = {
-	is_ship_size = military_station_medium
+ship_uses_battleship_thrusters = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		# NSC Ships
+		is_ship_size = Carrier
+		# Hyperthermia Ships
+		is_ship_size = ember_battleship
+		is_ship_size = entropy_conduit
+	}
+}
+
+ship_uses_battleship_components = {
+	OR = {
+		# Regular Ships
+		is_ship_size = battleship
+		# Offspring Ships
+		is_ship_size = offspring_battleship
+		#  Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
+		is_ship_size = large_fallen_stinger
+		# Biological Offspring Ships
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
+		# Hyperthermia Ships
+		is_ship_size = ember_battleship
+	}
 }
 
 ship_uses_dreadnought_thrusters = {
 	is_ship_size = Dreadnought
-	is_ship_size = bio_dreadnought
 }
 
 ship_uses_dreadnought_reactors = {
 	is_ship_size = Dreadnought
 }
 
+
+ship_uses_titan_components = {
+	OR = {
+		is_ship_size = titan
+		is_ship_size = bio_titan
+		is_ship_size = cosmo_crisis_titan
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		#NSC Ships
+		is_ship_size = bio_dreadnought
+	}
+}
+
+ship_uses_titan_reactors = {
+	OR = {
+		# Regular Ships
+		is_ship_size = titan
+		# First Contact Ships
+		is_ship_size = payback_warship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_battlecruiser
+		# Biological Ships
+		is_ship_size = bio_titan
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		#NSC Ships
+		is_ship_size = bio_dreadnought
+	}
+}
+
+ship_uses_titan_thrusters = {
+	OR = {
+		# Regular Ships
+		is_ship_size = titan
+		# First Contact Ships
+		is_ship_size = payback_warship
+		# Cosmogenesis Ships
+		is_ship_size = cosmo_crisis_titan
+		is_ship_size = large_fallen_stinger
+		is_ship_size = cosmo_crisis_stinger
+		# Biological Ships
+		is_ship_size = bio_titan
+		#NSC Ships
+		is_ship_size = bio_dreadnought
+	}
+}
+
 ship_uses_flagship_components = {
 	is_ship_size = Flagship
 }
 
-ship_uses_explorer_components = {
-	is_ship_size = explorationship
+ship_uses_starbase_components = {
+	OR = {
+		# Starbases
+		is_ship_size = starbase_outpost
+		is_ship_size = starbase_starport
+		is_ship_size = starbase_starhold
+		is_ship_size = starbase_starfortress
+		is_ship_size = starbase_citadel
+		# Orbital Rings
+		is_ship_size = orbital_ring_tier_1
+		is_ship_size = orbital_ring_tier_2
+		is_ship_size = orbital_ring_tier_3
+		# Waystations
+		is_ship_size = starbase_waystation_1
+		is_ship_size = starbase_waystation_2
+		is_ship_size = starbase_waystation_3
+		# Deep Space Citadel
+		is_ship_size = starbase_deep_space_citadel_1
+		is_ship_size = starbase_deep_space_citadel_2
+		is_ship_size = starbase_deep_space_citadel_3
+		# NSC Starbases
+		is_ship_size = starbase_stronghold
+		is_ship_size = starbase_headquarters
+	}
 }
 
-ship_uses_strikecruiser_components = {
-	is_ship_size = StrikeCruiser
+ship_uses_special_starbase_components = {
+	OR = {
+		is_ship_size = starbase_citadel
+		is_ship_size = starbase_stronghold
+		is_ship_size = starbase_headquarters
+	}
+}
+
+ship_uses_fortress_reactors = {
+	is_ship_size = military_station_large
+}
+
+ship_uses_station_reactors = {
+	is_ship_size = military_station_medium
 }
 
 ship_is_bioship = {
@@ -119,69 +367,23 @@ ship_is_bioship = {
 		is_ship_size = cosmo_crisis_stinger
 		# NSC Ships
 		is_ship_size = bio_dreadnought
-	}
-}
-
-ship_uses_weaver_components = {
-	OR = {
-		is_ship_size = weaver_stage_1
-		is_ship_size = weaver_stage_2
-		is_ship_size = weaver_stage_3
-		is_ship_size = small_fallen_weaver
-		is_ship_size = large_fallen_weaver
-		is_ship_size = cosmo_crisis_weaver
-		is_ship_size = offspring_weaver_stage_1
-		is_ship_size = offspring_weaver_stage_2
-		is_ship_size = offspring_weaver_stage_3
-		# NSC Ships
 		is_ship_size = bio_explorer
 	}
 }
 
-
-ship_uses_titan_components = {
+ship_uses_stinger_components = {
 	OR = {
-		is_ship_size = titan
-		is_ship_size = bio_titan
-		is_ship_size = cosmo_crisis_titan
+		is_ship_size = stinger_stage_1
+		is_ship_size = stinger_stage_2
+		is_ship_size = stinger_stage_3
 		is_ship_size = large_fallen_stinger
 		is_ship_size = cosmo_crisis_stinger
+		is_ship_size = offspring_stinger_stage_1
+		is_ship_size = offspring_stinger_stage_2
+		is_ship_size = offspring_stinger_stage_3
 		# NSC Ships
 		is_ship_size = bio_dreadnought
-	}
-}
-
-ship_uses_titan_reactors = {
-	OR = {
-		# Regular Ships
-		is_ship_size = titan
-		# First Contact Ships
-		is_ship_size = payback_warship
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_battlecruiser
-		# Biological Ships
-		is_ship_size = bio_titan
-		is_ship_size = large_fallen_stinger
-		is_ship_size = cosmo_crisis_stinger
-		# NSC Ships
-		is_ship_size = bio_dreadnought
-	}
-}
-
-ship_uses_titan_thrusters = {
-	OR = {
-		# Regular Ships
-		is_ship_size = titan
-		# First Contact Ships
-		is_ship_size = payback_warship
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_titan
-		is_ship_size = large_fallen_stinger
-		is_ship_size = cosmo_crisis_stinger
-		# Biological Ships
-		is_ship_size = bio_titan
-		# NSC Ships
-		is_ship_size = bio_dreadnought
+		is_ship_size = bio_explorer
 	}
 }
 
@@ -213,9 +415,11 @@ ship_uses_picket_role = {
 		is_ship_size = offspring_mauler_stage_1
 		is_ship_size = offspring_mauler_stage_2
 		is_ship_size = offspring_mauler_stage_3
-		# NSC Special Tech
+		# NSC Ships
 		is_ship_size = frigate
 		is_ship_size = StrikeCruiser
+		is_ship_size = bio_dreadnought
+		is_ship_size = bio_explorer
 		# Hyperthermia Ships
 		is_ship_size = ember_cruiser
 	}
@@ -238,6 +442,8 @@ ship_uses_torpedo_role = {
 		# NSC Ships
 		is_ship_size = Battlecruiser
 		is_ship_size = StrikeCruiser
+		is_ship_size = bio_dreadnought
+		is_ship_size = bio_explorer
 		# Hyperthermia Ships
 		is_ship_size = ember_cruiser
 	}
@@ -275,6 +481,8 @@ ship_uses_line_role = {
 		is_ship_size = Dreadnought
 		is_ship_size = Flagship
 		is_ship_size = StrikeCruiser
+		is_ship_size = bio_dreadnought
+		is_ship_size = bio_explorer
 		# Hyperthermia Ships
 		is_ship_size = ember_cruiser
 		is_ship_size = ember_battleship
@@ -363,207 +571,12 @@ ship_uses_artillery_role = {
 		is_ship_size = Battlecruiser
 		is_ship_size = Dreadnought
 		is_ship_size = Flagship
+		is_ship_size = bio_dreadnought
+		is_ship_size = bio_explorer
 		# Hyperthermia Ships
 		is_ship_size = ember_cruiser
 		is_ship_size = ember_battleship
 		is_ship_size = entropy_conduit
-	}
-}
-
-ship_uses_civilian_cloaks = {
-	OR = {
-		is_ship_size = constructor
-		is_ship_size = colonizer
-		is_ship_size = sponsored_colonizer
-		is_ship_size = lithoid_colonizer
-		is_ship_size = guided_sapience_colonizer
-		is_ship_size = transport
-		is_ship_size = science
-		is_ship_size = explorer_vessel
-		is_ship_size = observation_station
-		#NSC Ships
-		is_ship_size = explorationship
-	}
-}
-
-ship_uses_destroyer_components = {
-	OR = {
-		# Regular Ships
-		is_ship_size = destroyer
-		is_ship_size = frigate
-		# Offspring Ships
-		is_ship_size = offspring_destroyer
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_destroyer
-		# Biological Ships
-		is_ship_size = weaver_stage_1
-		is_ship_size = weaver_stage_2
-		is_ship_size = weaver_stage_3
-		is_ship_size = small_fallen_weaver
-		is_ship_size = large_fallen_weaver
-		is_ship_size = cosmo_crisis_weaver
-		# Biological Offspring Ships
-		is_ship_size = offspring_weaver_stage_1
-		is_ship_size = offspring_weaver_stage_2
-		is_ship_size = offspring_weaver_stage_3
-	}
-}
-
-ship_uses_cruiser_components = {
-	OR = {
-		# Regular Ships
-		is_ship_size = cruiser
-		# Offspring Ships
-		is_ship_size = offspring_cruiser
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_cruiser
-		# Nanotech Ships
-		is_ship_size = nanite_interdictor
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_destroyer
-		# Biological Ships
-		is_ship_size = harbinger_stage_1
-		is_ship_size = harbinger_stage_2
-		is_ship_size = harbinger_stage_3
-		is_ship_size = large_fallen_harbinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_harbinger_stage_1
-		is_ship_size = offspring_harbinger_stage_2
-		is_ship_size = offspring_harbinger_stage_3
-		#NSC Ships
-		is_ship_size = explorationship
-		is_ship_size = StrikeCruiser
-		# Hyperthermia Ships
-		is_ship_size = ember_cruiser
-		# Paladin Ships
-		is_ship_size = paladin_ship
-	}
-}
-
-ship_uses_cruiser_reactors = {
-	OR = {
-		# Regular Ships
-		is_ship_size = cruiser
-		# Offspring Ships
-		is_ship_size = offspring_cruiser
-		# Galactic Nemesis Ships
-		is_ship_size = crisis_cruiser
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_destroyer
-		# Biological Ships
-		is_ship_size = harbinger_stage_1
-		is_ship_size = harbinger_stage_2
-		is_ship_size = harbinger_stage_3
-		is_ship_size = large_fallen_harbinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_harbinger_stage_1
-		is_ship_size = offspring_harbinger_stage_2
-		is_ship_size = offspring_harbinger_stage_3
-		#NSC Ships
-		is_ship_size = explorationship
-		is_ship_size = StrikeCruiser
-		# Hyperthermia Ships
-		is_ship_size = ember_cruiser
-		# Paladin Ships
-		is_ship_size = paladin_ship
-	}
-}
-
-ship_uses_battleship_reactors = {
-	OR = {
-		# Regular Ships
-		is_ship_size = battleship
-		# Offspring Ships
-		is_ship_size = offspring_battleship
-		# Nanotech Ships
-		is_ship_size = nanite_interdictor
-		# Biological Ships
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		is_ship_size = large_fallen_stinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
-		# NSC Ships
-		is_ship_size = Carrier
-		# Hyperthermia Ships
-		is_ship_size = ember_battleship
-		is_ship_size = entropy_conduit
-	}
-}
-
-ship_uses_battleship_thrusters = {
-	OR = {
-		# Regular Ships
-		is_ship_size = battleship
-		# Offspring Ships
-		is_ship_size = offspring_battleship
-		# Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_battlecruiser
-		# Biological Ships
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		is_ship_size = large_fallen_stinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
-		# NSC Ships
-		is_ship_size = Carrier
-		# Hyperthermia Ships
-		is_ship_size = ember_battleship
-		is_ship_size = entropy_conduit
-	}
-}
-
-ship_uses_battleship_components = {
-	OR = {
-		# Regular Ships
-		is_ship_size = battleship
-		# Offspring Ships
-		is_ship_size = offspring_battleship
-		#  Cosmogenesis Ships
-		is_ship_size = cosmo_crisis_battlecruiser
-		# Biological Ships
-		is_ship_size = stinger_stage_1
-		is_ship_size = stinger_stage_2
-		is_ship_size = stinger_stage_3
-		is_ship_size = large_fallen_stinger
-		# Biological Offspring Ships
-		is_ship_size = offspring_stinger_stage_1
-		is_ship_size = offspring_stinger_stage_2
-		is_ship_size = offspring_stinger_stage_3
-		# Hyperthermia Ships
-		is_ship_size = ember_battleship
-	}
-}
-
-ship_uses_starbase_components = {
-	OR = {
-		# Starbases
-		is_ship_size = starbase_outpost
-		is_ship_size = starbase_starport
-		is_ship_size = starbase_starhold
-		is_ship_size = starbase_starfortress
-		is_ship_size = starbase_citadel
-		# Orbital Rings
-		is_ship_size = orbital_ring_tier_1
-		is_ship_size = orbital_ring_tier_2
-		is_ship_size = orbital_ring_tier_3
-		# Waystations
-		is_ship_size = starbase_waystation_1
-		is_ship_size = starbase_waystation_2
-		is_ship_size = starbase_waystation_3
-		# Deep Space Citadel
-		is_ship_size = starbase_deep_space_citadel_1
-		is_ship_size = starbase_deep_space_citadel_2
-		is_ship_size = starbase_deep_space_citadel_3
-		# NSC Starbases
-		is_ship_size = starbase_stronghold
-		is_ship_size = starbase_headquarters
 	}
 }
 
@@ -602,3 +615,18 @@ nsc_mothball_target_fleet_mothball_stop_trigger = {
 		NOT = { is_variable_set = nsc_fleet_in_mothball_repair_timer_var }
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

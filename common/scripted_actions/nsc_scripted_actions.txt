@@ -1,0 +1,106 @@
+nsc_harvest_resources = {
+	user_scope = fleet
+	scope = planet
+
+	automation_priority = 2
+	automation_default_on = no
+	on_completed = on_harvest_resources				# This shares the on_action with the arkship version
+	tooltip = nsc_harvest_resources_ship_button
+	icon = GFX_fleet_action_button_logistic_harvest_resources
+	icon_selected = GFX_fleet_action_button_logistic_harvest_resources
+
+	possible = {
+		NOT = {
+			has_modifier = "harvested_resources_mining"
+		}
+		if = {
+			limit = {
+				is_surveyed = {
+					who = from
+					status = yes
+				}
+				has_anomaly = yes
+			}
+			custom_tooltip = {
+				fail_text = arkship_target_has_anomaly_fail_tt
+				always = no
+			}
+		}
+		is_valid_harvest_target = yes
+	}
+
+	button_visible = {
+		always = yes
+	}
+
+	button_clickable = {
+		always = yes
+	}
+
+	activity_key = logistic_harvest_resources_activity_key
+	context_menu_name = logistic_harvest_resources
+	required_progress = @logistic_harvest_resources_required_progress
+	progress_activity_key = logistic_harvest_resources_progress_activity_key
+	required_progress_key = logistic_harvest_resources_required_progress_key
+	cooldown = @harvest_resources_cooldown
+	category = harvest_resources
+	category_limit = 1
+
+	uses_vfx_type = harvest_effect
+
+	cost = {
+		energy = @harvest_resources_cost
+	}
+	slot = 3
+	overrides_gained_resources = yes
+	completion_message_type = TOAST_HARVEST_RESOURCES_COMPLETE
+	completion_message_localization = TOAST_HARVEST_RESOURCES_COMPLETE_DESC
+
+	ai = {
+		#This - Target Planet
+		#From - Acting Fleet
+		weight = {
+			base = @ai_action_weight_15
+			# Discourage harvesting when stockpile is getting full, return threshold is 75%
+			modifier = {
+				factor = @ai_action_weight_factor_0_1 #stockpile nearly full, prefer dropping off
+				FROM = {
+					any_owned_ship = {
+						used_stockpile_capacity_percentage >= 0.75
+					}
+				}
+			}
+			# In Operational Reserves crisis (Stage 1), prioritize planets that yield energy or minerals
+			modifier = {
+				factor = @ai_low_resource_harvest_factor
+				FROM.controller = {
+					any_situation = {
+						is_situation_type = situation_nomad_economy
+						current_stage = situation_nomad_economy_stage_1_struggle
+					}
+				}
+				OR = {
+					is_planet_class = pc_ice_asteroid		# primary energy, secondary exotic gases
+					is_planet_class = pc_asteroid			# primary minerals, secondary volatile motes
+					is_planet_class = pc_barren				# primary minerals, secondary minerals
+					is_planet_class = pc_barren_cold		# primary minerals, secondary minerals
+					is_planet_class = pc_broken				# primary minerals, secondary alloys
+					is_planet_class = pc_shattered			# primary minerals, secondary alloys
+					is_planet_class = pc_shattered_2		# primary minerals, secondary alloys
+					has_resource = {						# energy deposits
+						type = energy
+						amount > 0
+					}
+					has_resource = {						# mineral deposits
+						type = minerals
+						amount > 0
+					}
+				}
+			}
+			inline_script = scripted_actions/ai_harvest_resources_modifiers
+		}
+		max_jumps = @ai_action_weight_10
+		good_enough_weight = @ai_action_weight_100
+		ai_minister = interior
+	}
+}

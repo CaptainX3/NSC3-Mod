@@ -320,7 +320,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID1_P3M7L6"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid1
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { brawler gunship }
 
@@ -417,7 +417,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID1_P3G5L6"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid1
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -504,7 +504,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID1_P3L9"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid1
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery }
 
@@ -581,7 +581,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID1_P3M9G9"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid1
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -707,7 +707,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID2_P3M7L6"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid2
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { brawler gunship }
 
@@ -804,7 +804,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID2_P3G5L6"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid2
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -891,7 +891,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID2_P3L9"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid2
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery }
 
@@ -968,7 +968,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID2_P3M9G9"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid2
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -1094,7 +1094,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID3_P3M7L6"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid3
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { brawler gunship }
 
@@ -1191,7 +1191,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID3_P3G5L6"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid3
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -1278,7 +1278,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID3_P3L9"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid3
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { artillery }
 
@@ -1355,7 +1355,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_MID3_P3M9G9"
 	ship_size = bio_dreadnought
 	fits_on_slot = mid3
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_mid"
 	ai_tags = { explosive energy_torpedoes }
 
@@ -1481,7 +1481,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_STERN_L5"
 	ship_size = bio_dreadnought
 	fits_on_slot = stern
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { artillery }
 
@@ -1523,7 +1523,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_STERN_M14"
 	ship_size = bio_dreadnought
 	fits_on_slot = stern
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { gunship }
 	icon_frame = 1
@@ -1611,7 +1611,7 @@ ship_section_template = {
 	key = "BIO_DREADNOUGHT_STERN_G9"
 	ship_size = bio_dreadnought
 	fits_on_slot = stern
-	entity = "empty_mesh"
+	entity = "stinger_stage_3_ship_entity"
 	icon = "GFX_ship_part_core_stern"
 	ai_tags = { energy_torpedoes }
 	icon_frame = 1

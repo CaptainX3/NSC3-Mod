@@ -52,3 +52,5 @@ CLOAKING_FRIGATE_TOOLTIP: "Ship Speed Bonus: §G25%§!\nFrigate Evasion Bonus: �
 CLOAKING_BATTLECRUISER_TOOLTIP: "Battlecruiser Shield Reduction: §R80%§!\nBattlecruiser Speed Reduction §R50%§!"
 
 starbase_detection_limit_6.tooltip.fail: "You cannot build more than 6 Detection Arrays per starbase."
+
+nsc_harvest_resources_ship_button: "Harvest resources from a designated planet or stellar body."

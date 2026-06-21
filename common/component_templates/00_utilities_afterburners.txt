@@ -131,10 +131,8 @@ utility_component_template = {
 	ship_limit = 1
 	
 	blocked_by = {
-		OR = {
 			AFTERBURNER_1
 			AFTERBURNER_2
-		}
 	}
 	
 	potential = {
