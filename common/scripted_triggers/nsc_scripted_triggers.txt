@@ -52,8 +52,10 @@ ship_uses_civilian_cloaks = {
 }
 
 ship_uses_explorer_components = {
-	is_ship_size = explorationship
-	is_ship_size = bio_explorer
+	OR = {
+		is_ship_size = explorationship
+		is_ship_size = bio_explorer
+	}
 }
 
 ship_uses_destroyer_components = {

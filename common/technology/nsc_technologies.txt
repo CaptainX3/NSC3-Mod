@@ -1818,10 +1818,6 @@ tech_hyperlane_generation = {
 	is_reverse_engineerable = no
 	prerequisites = { "tech_mega_engineering" }
 	weight = @tier5cost3
-
-	potential = {
-		is_nomadic = no
-	}
 	
 	prereqfor_desc = {
 		custom = {

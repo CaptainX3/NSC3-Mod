@@ -88,6 +88,7 @@ drydock = {
 	construction_days = 180
 
 	potential = {
+		is_normal_starbase = yes
 		is_orbital_ring = no
 		exists = owner
 		owner = { has_technology = tech_drydock_1 }
@@ -152,6 +153,7 @@ sensor_station = {
 	construction_days = 360
 
 	potential = {
+		is_normal_starbase = yes
 		is_orbital_ring = no
 		exists = owner
 		owner = { has_technology = tech_sensorstation_1 }
@@ -187,6 +189,7 @@ starbase_management = {
 		exists = owner
 		owner = { is_gestalt = no }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -236,6 +239,7 @@ starbase_management_machine = {
 		exists = owner
 		owner = { is_machine_empire = yes }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -282,6 +286,7 @@ starbase_management_hive = {
 		exists = owner
 		owner = { is_hive_empire = yes }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -328,6 +333,7 @@ mining_base = {
 		exists = owner
 		owner = { has_technology = tech_mining_base }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -367,6 +373,7 @@ power_station = {
 		exists = owner
 		owner = { has_technology = tech_power_station }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -406,6 +413,7 @@ customs_office = {
 		exists = owner
 		owner = { has_technology = tech_starbase_2 }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	
 	possible = {
@@ -471,7 +479,10 @@ nsc_nanite_field = {
 	icon = "GFX_spaceport_module_orbital_mind_control_lazer"
 	construction_days = 180
 	
-	potential = { is_orbital_ring = no }
+	potential = { 
+		is_normal_starbase = yes
+		is_orbital_ring = no 
+	}
 
 	possible = {
 		custom_tooltip = {
@@ -501,6 +512,7 @@ solar_capacitor = {
 	potential = {
 		exists = owner
 		is_orbital_ring = no
+		is_normal_starbase = yes
 		owner = {
 			is_gestalt = no
 			has_technology = "tech_starbase_4"
@@ -546,6 +558,7 @@ artifact_silo = {
 		exists = owner
 		owner = { has_technology = tech_archaeostudies }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 		host_has_dlc = "Ancient Relics Story Pack"
 	}
 	
@@ -575,7 +588,10 @@ construction_office = {
 	icon = "GFX_starbase_adv_space_engineers"
 	construction_days = 180	
 
-	potential = { is_orbital_ring = no }
+	potential = { 
+		is_normal_starbase = yes
+		is_orbital_ring = no 
+	}
 
 	resources = {
 		category = starbase_buildings
@@ -618,7 +634,10 @@ mining_manager = {
 	icon = "GFX_starbase_mining_experts"
 	construction_days = 220
 
-	potential = { is_orbital_ring = no }
+	potential = { 
+		is_normal_starbase = yes
+		is_orbital_ring = no 
+	}
 
 	possible = {
 		has_starbase_module = asteroid_mining 
@@ -673,7 +692,12 @@ strategic_defenses = {
 		ship_shield_regen_add_perc = 0.01
 		ship_fire_rate_mult = 0.1
 	}
-	potential = { is_orbital_ring = no has_starbase_size >= starbase_starfortress }
+	potential = { 
+		is_normal_starbase = yes
+		is_orbital_ring = no
+		has_starbase_size >= starbase_starfortress 
+	}
+	
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 50 modifier = { factor = 0.01 has_starbase_size < starbase_starfortress } }
@@ -694,7 +718,11 @@ adv_starbase_defenses = {
 		ship_fire_rate_mult = 0.1
 		ship_weapon_range_mult = 0.15
 	}
-	potential = { is_orbital_ring = no has_starbase_size >= starbase_citadel }
+	potential = { 
+		is_normal_starbase = yes
+		is_orbital_ring = no
+		has_starbase_size >= starbase_citadel 
+	}
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = { weight = 50 modifier = { factor = 0.01 has_starbase_size < starbase_citadel } }
@@ -705,7 +733,10 @@ repair_module = {
 	icon = "GFX_starbase_repair_module"
 	construction_days = 300
 
-	potential = { is_orbital_ring = no }
+	potential = { 
+		is_normal_starbase = yes
+		is_orbital_ring = no 
+	}
 
 	resources = {
 		category = starbase_buildings
@@ -741,7 +772,10 @@ ground_forces_academy = {
 		planet_stability_add = 3
 		pop_government_ethic_attraction = 0.35
 	}
-	potential = { is_orbital_ring = yes }
+	potential = { 
+		is_orbital_ring = yes
+		is_normal_starbase = yes
+	}
 	ai_build_at_chokepoint = no
 	ai_build_outside_chokepoint = yes
 	ai_weight = {
@@ -762,6 +796,7 @@ synthetic_crystal_fabricator = {
 		upkeep = { minerals = 10 energy = 3 }
 	}
 	potential = {
+		is_normal_starbase = yes
 		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_rare_crystals } 
@@ -786,6 +821,7 @@ synthetic_volatile_motes_fabricator = {
 		upkeep = { minerals = 10 energy = 3 }
 	}
 	potential = {
+		is_normal_starbase = yes
 		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_volatile_motes } 
@@ -810,6 +846,7 @@ synthetic_gase_fabricator = {
 		upkeep = { minerals = 10 energy = 3 }
 	}
 	potential = {
+		is_normal_starbase = yes
 		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_exotic_gases } 
@@ -833,6 +870,7 @@ robot_assembly = {
 		upkeep = { minerals = 10 energy = 2 }
 	}
 	potential = { 
+		is_normal_starbase = yes
 		is_orbital_ring = no 
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { has_technology = tech_robotic_workers } 
@@ -868,6 +906,7 @@ assembly_line_manufacturing = {
 	}
 	
 	potential = {
+		is_normal_starbase = yes
 		is_orbital_ring = no
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { OR = { has_technology = tech_alloys_2 has_technology = tech_luxuries_2 } }
@@ -911,6 +950,7 @@ federal_reserve_bank = {
 		has_starbase_size >= starbase_starhold
 		exists = owner owner = { is_gestalt = no }
 		is_orbital_ring = no
+		is_normal_starbase = yes
 	}
 	system_modifier = { planet_jobs_trade_produces_mult = 0.1 }
 	ai_build_at_chokepoint = no
@@ -938,6 +978,7 @@ cloning_facilities = {
 	}
 	potential = {
 		is_orbital_ring = yes
+		is_normal_starbase = yes
 		solar_system = { any_system_planet = { is_owned_by = from } }
 		exists = owner 
 		owner = { 
@@ -975,7 +1016,10 @@ navcom_ai = {
 	icon = "GFX_starbase_emergency_portal"
 	construction_days = 720
 
-	potential = { is_orbital_ring = no }
+	potential = { 
+		is_orbital_ring = no
+		is_normal_starbase = yes
+	}
 	
 	resources = {
 		category = starbase_buildings
@@ -996,6 +1040,7 @@ starbase_ai = {
 	construction_days = 720
 
 	potential = { 
+		is_normal_starbase = yes
 		is_orbital_ring = no 
 		exists = owner owner = { has_technology = tech_starbase_5 } 
 	}
@@ -1024,6 +1069,7 @@ real_estate_dev = {
 	construction_days = 360
 
 	potential = { 
+		is_normal_starbase = yes
 		is_orbital_ring = yes
 		exists = owner owner = { has_technology = tech_housing_2 }
 	}
@@ -1063,6 +1109,7 @@ tv_network = {
 		exists = owner
 		owner = { has_technology = tech_colonial_centralization }
 		is_orbital_ring = yes
+		is_normal_starbase = yes
 	}
 
 	resources = {
@@ -1096,7 +1143,10 @@ tv_studio = {
 	icon = "GFX_starbase_market_computers"
 	construction_days = 360
 
-	potential = { is_orbital_ring = yes }
+	potential = { 
+		is_orbital_ring = yes
+		is_normal_starbase = yes
+	}
 
 	resources = {
 		category = starbase_buildings

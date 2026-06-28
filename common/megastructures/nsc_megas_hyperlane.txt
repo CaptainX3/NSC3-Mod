@@ -32,12 +32,36 @@ hyperlane_creator_emisor_0 = {
 	}
 
 	possible = {
-		hidden_trigger = {
-			exists = starbase
+		if = {
+			limit = {
+				from = {
+					is_nomadic = no
+				}
+			}
+			hidden_trigger = {
+				exists = starbase
+			}
+			custom_tooltip = {
+				fail_text = "requires_inside_border"
+				is_inside_border = from
+			}
 		}
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
+		else = {
+			custom_tooltip = {
+				fail_text = requires_tier_2_waystation_on_wayline
+				any_starbase_in_system = {
+					is_waystation_starbase = yes
+					owner? = {
+						is_same_value = from
+					}
+					any_starbase_in_network = {
+						has_starbase_size >= starbase_waystation_2
+						owner? = {
+							is_same_value = from
+						}
+					}
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
@@ -187,9 +211,36 @@ hyperlane_creator_receptor_0 = {
 
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
+		if = {
+			limit = {
+				from = {
+					is_nomadic = no
+				}
+			}
+			hidden_trigger = {
+				exists = starbase
+			}
+			custom_tooltip = {
+				fail_text = "requires_inside_border"
+				is_inside_border = from
+			}
+		}
+		else = {
+			custom_tooltip = {
+				fail_text = requires_tier_2_waystation_on_wayline
+				any_starbase_in_system = {
+					is_waystation_starbase = yes
+					owner? = {
+						is_same_value = from
+					}
+					any_starbase_in_network = {
+						has_starbase_size >= starbase_waystation_2
+						owner? = {
+							is_same_value = from
+						}
+					}
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
@@ -351,9 +402,36 @@ hyperlane_remover_emisor_0 = {
 
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
+		if = {
+			limit = {
+				from = {
+					is_nomadic = no
+				}
+			}
+			hidden_trigger = {
+				exists = starbase
+			}
+			custom_tooltip = {
+				fail_text = "requires_inside_border"
+				is_inside_border = from
+			}
+		}
+		else = {
+			custom_tooltip = {
+				fail_text = requires_tier_2_waystation_on_wayline
+				any_starbase_in_system = {
+					is_waystation_starbase = yes
+					owner? = {
+						is_same_value = from
+					}
+					any_starbase_in_network = {
+						has_starbase_size >= starbase_waystation_2
+						owner? = {
+							is_same_value = from
+						}
+					}
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
@@ -522,9 +600,36 @@ hyperlane_remover_receptor_0 = {
 	
 	potential = { has_technology = tech_hyperlane_generation }
 	possible = {
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
+		if = {
+			limit = {
+				from = {
+					is_nomadic = no
+				}
+			}
+			hidden_trigger = {
+				exists = starbase
+			}
+			custom_tooltip = {
+				fail_text = "requires_inside_border"
+				is_inside_border = from
+			}
+		}
+		else = {
+			custom_tooltip = {
+				fail_text = requires_tier_2_waystation_on_wayline
+				any_starbase_in_system = {
+					is_waystation_starbase = yes
+					owner? = {
+						is_same_value = from
+					}
+					any_starbase_in_network = {
+						has_starbase_size >= starbase_waystation_2
+						owner? = {
+							is_same_value = from
+						}
+					}
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"

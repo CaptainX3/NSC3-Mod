@@ -1,6 +1,4 @@
 spriteTypes = {
-
-	
 	
 	######################
 	### MEGASTRUCTURES ###
@@ -108,27 +106,31 @@ spriteTypes = {
 	#####################
 	### STARBASE SIZE ###
 	#####################
+	
 	spriteType = {
 		name = "GFX_starbase_ship_size_small"
 		textureFile = "gfx/interface/icons/starbase_ship_sizes.dds"
-		noOfFrames = 15
+		noOfFrames = 18
 	}
 
 	spriteType = {
 		name = "GFX_starbase_ship_size_medium"
 		textureFile = "gfx/interface/icons/starbase_ship_sizes_medium.dds"
-		noOfFrames = 15
+		noOfFrames = 18
 	}
-	
+
 	spriteType = {
 		name = "GFX_starbase_outliner"
 		textureFile = "gfx/interface/icons/starbase_outliner.dds"
 		noOfFrames = 18
 	}
 	
+	
+	
 	#################
 	### SHIP SIZE ###
 	#################
+	
 	#templates
 	spriteType = {
 		name = "GFX_nsc_ship_sizes"

@@ -24,10 +24,36 @@ nsc_flagship_shipyard = {
 	prerequisites = { "tech_Flagship_1" }
 
 	possible = {
-		exists = starbase
-		custom_tooltip = {
-			fail_text = "requires_inside_border"
-			is_inside_border = from
+		if = {
+			limit = {
+				from = {
+					is_nomadic = no
+				}
+			}
+			hidden_trigger = {
+				exists = starbase
+			}
+			custom_tooltip = {
+				fail_text = "requires_inside_border"
+				is_inside_border = from
+			}
+		}
+		else = {
+			custom_tooltip = {
+				fail_text = requires_tier_2_waystation_on_wayline
+				any_starbase_in_system = {
+					is_waystation_starbase = yes
+					owner? = {
+						is_same_value = from
+					}
+					any_starbase_in_network = {
+						has_starbase_size >= starbase_waystation_2
+						owner? = {
+							is_same_value = from
+						}
+					}
+				}
+			}
 		}
 		custom_tooltip = {
 			fail_text = "requires_no_existing_nsc_grand_shipyard"
@@ -149,11 +175,36 @@ nsc_flagship_shipyard_complete = {
 
 	prerequisites = { "tech_Flagship_1" }
 
-	possible = {
+	dismantle_cost = {
+		category = megastructures
+		cost = {
+			energy = 500
+		}
+	}
+
+	dismantle_time = 360
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_possible = {
+		can_dismantle_megastructure = {
+			TECH = tech_Flagship_1
+		}
+	}
+
+	on_dismantle_complete = {
+		from = {
+			add_resource = {
+				alloys = 1000
+				mult = modifier:megastructure_dismantle_refund_mult
+			}
+		}
 	}
 
 	station_modifier = {
-		starbase_shipyard_capacity_add = 5
+		starbase_shipyard_capacity_add = 15
 		starbase_shipyard_build_speed_mult = 0.70
 	}
 
