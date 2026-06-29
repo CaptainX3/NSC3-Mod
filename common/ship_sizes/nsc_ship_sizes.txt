@@ -696,11 +696,12 @@ bio_dreadnought = {
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
-	selectable = { host_has_dlc = "Apocalypse" }
+	selectable = { has_biogenesis_dlc = yes }
 	use_shipnames_from = battleship
 	evaluation_resource = food
 	default_behavior = artillery
-
+	is_bio_ship = yes
+	
 	role_background = "GFX_role_selection_stinger"
 	ship_roles = { artillery gunship }
 
@@ -764,23 +765,29 @@ bio_explorer = {
 	use_shipnames_from = science
 	combat_disengage_chance = 2.0
 	components_add_to_cost = no
+	selectable = { has_biogenesis_dlc = yes }
 	
 	is_space_station = no
 	enable_default_design = yes
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
 	is_designable = yes
 	is_civilian = yes
+	is_bio_ship = yes
 	
 	class = shipclass_science_ship
 	construction_type = { starbase_shipyard starbase_beastport }
-	ship_roles = { Brawler }
-	default_behavior = Line
+	ship_roles = { screen gunship artillery brawler }
+	default_behavior = line
+	evaluation_resource = food
 
 	resources = {
 		category = ships
 		upkeep = {
-			energy = 5
-			alloys = 5
+			food = 5
+			alloys = 1.5
+		}
+		logistics = {
+			trade = 4
 		}
 	}
 

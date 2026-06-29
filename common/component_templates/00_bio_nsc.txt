@@ -1,0 +1,32 @@
+
+## Overwrite of Bioship Default Computer
+
+utility_component_template = {
+	key = "BIO_COMBAT_COMPUTER_DEFAULT"
+	size = small
+	icon = "GFX_ship_part_bioship_computer_default"
+	icon_frame = 1
+	ship_behavior = "default"
+	upgrade_path = default
+	potential = {
+		is_arkship_ship = no
+		from = {
+			country_uses_bio_ships = yes
+		}
+		OR = {
+			is_ship_class = shipclass_military
+			is_ship_size = bio_explorer
+			is_ship_size = bio_dreadnought
+			is_ship_size = juggernaut
+		}
+	}
+
+	show_tech_unlock_if = {
+		country_uses_bio_ships = yes
+	}
+	component_set = "combat_computers"
+
+	ai_weight = {
+		weight = 1
+	}
+}

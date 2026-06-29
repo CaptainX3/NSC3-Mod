@@ -418,7 +418,6 @@ tech_Flagship_1 = {
 
 	potential = {
 		country_uses_bio_ships = no
-		is_nomadic = no
         OR = {
             AND = {
                 NOT = { host_has_dlc = "Apocalypse" }
@@ -501,10 +500,6 @@ tech_explorationship_1 = {
 	category = { voidcraft }
 	prerequisites = { "tech_destroyers" }
 	weight = 90
-
-	potential = {
-		country_uses_bio_ships = no
-	}
 	
 	gateway = ship
 
@@ -534,10 +529,6 @@ tech_explorationship_2 = {
 	category = { voidcraft }
 	prerequisites = { "tech_explorationship_1" "tech_cruisers" }
 	weight = 80
-
-	potential = {
-		country_uses_bio_ships = no
-	}
 	
 	gateway = ship
 
@@ -576,10 +567,6 @@ tech_explorationship_3 = {
 	category = { voidcraft }
 	prerequisites = { "tech_explorationship_2" "tech_battleships" }
 	weight = 60
-
-	potential = {
-		country_uses_bio_ships = no
-	}
 	
 	gateway = ship
 
@@ -613,10 +600,6 @@ tech_explorationship_4 = {
 	category = { voidcraft }
 	prerequisites = { "tech_explorationship_3" "tech_Dreadnought_1" }
 	weight = 60
-
-	potential = {
-		country_uses_bio_ships = no
-	}
 	
 	gateway = ship
 

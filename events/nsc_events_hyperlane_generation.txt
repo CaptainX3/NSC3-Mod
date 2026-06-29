@@ -9,11 +9,11 @@ country_event = {
 	show_sound = event_radio_chatter
 	
 	immediate = {
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_emisor_2 } }
 			save_event_target_as = hyperlane_creator_emisor
 		}	
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_receptor_1 } }
 			save_event_target_as = hyperlane_creator_receptor
 		}	
@@ -55,11 +55,11 @@ country_event = {
 	show_sound = event_radio_chatter
 	
 	immediate = {
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_emisor_2 } }
 			save_event_target_as = hyperlane_remover_emisor
 		}	
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_receptor_1 } }
 			save_event_target_as = hyperlane_remover_receptor
 		}	
@@ -230,7 +230,7 @@ country_event = {
 	}
 	
 	immediate = {
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_emisor_0 } }
 			save_event_target_as = hyperlane_generator_1
 		}
@@ -248,7 +248,7 @@ country_event = {
 	}
 	
 	immediate = {
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_creator_receptor_0 } }
 			save_event_target_as = hyperlane_generator_2
 		}
@@ -266,7 +266,7 @@ country_event = {
 	}
 	
 	immediate = {
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_emisor_0 } }
 			save_event_target_as = hyperlane_generator_3
 		}
@@ -284,7 +284,7 @@ country_event = {
 	}
 	
 	immediate = {
-		random_system_within_border = {
+		random_system = {
 			limit = { any_system_megastructure = { is_megastructure_type = hyperlane_remover_receptor_0 } }
 			save_event_target_as = hyperlane_generator_4
 		}

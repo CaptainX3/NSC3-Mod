@@ -195,7 +195,7 @@ starbase_management = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	
@@ -245,7 +245,7 @@ starbase_management_machine = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	
@@ -292,7 +292,7 @@ starbase_management_hive = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	
@@ -339,7 +339,7 @@ mining_base = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	
@@ -379,7 +379,7 @@ power_station = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	
@@ -419,7 +419,7 @@ customs_office = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	
@@ -764,7 +764,7 @@ ground_forces_academy = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	planet_modifier = { 
@@ -880,7 +880,7 @@ robot_assembly = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	system_modifier = { planet_pop_assembly_mult = 0.1 }
@@ -916,7 +916,7 @@ assembly_line_manufacturing = {
 		OR = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 			has_starbase_module = space_foundry
 			has_starbase_module = space_factory
@@ -973,7 +973,7 @@ cloning_facilities = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 	potential = {
@@ -1082,7 +1082,7 @@ real_estate_dev = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 
@@ -1120,7 +1120,7 @@ tv_network = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 
@@ -1156,7 +1156,7 @@ tv_studio = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = {  any_system_planet_colony = { is_owned_by = from } }
 		}
 	}
 

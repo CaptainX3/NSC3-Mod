@@ -1,4 +1,4 @@
-name="((( NSC3 Season 1 - Github )))"
+name="NSC3 - Github"
 tags={
 	"Spaceships"
 	"Gameplay"
