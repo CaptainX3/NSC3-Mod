@@ -31,7 +31,10 @@ ship_section_template = {
 ship_section_template = {
 	key = "LIGHT_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
 	
 	fits_on_slot = "west"
 	fits_on_slot = "east"
@@ -123,9 +126,10 @@ ship_section_template = {
 ship_section_template = {
 	key = "PD_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
-	ai_tags = { screen }
-
-	prerequisites = { "tech_pd_tracking_1" }
+	ai_tags = {
+		screen
+		screen_stealth
+	}
 	
 	fits_on_slot = "west"
 	fits_on_slot = "east"
@@ -311,7 +315,10 @@ ship_section_template = {
 ship_section_template = {
 	key = "MEDIUM_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
 
 	fits_on_slot = "west"
 	fits_on_slot = "east"
@@ -456,9 +463,12 @@ ship_section_template = {
 ship_section_template = {
 	key = "MISSILE_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
-	ai_tags = { explosive energy_torpedoes }
-	
-	prerequisites = { tech_torpedoes_1 }
+	ai_tags = {
+ 		explosive
+ 		explosive_stealth
+ 		energy_torpedoes
+ 		energy_torpedoes_stealth
+ 	}
 
 	fits_on_slot = "west"
 	fits_on_slot = "east"
@@ -530,7 +540,10 @@ ship_section_template = {
 ship_section_template = {
 	key = "HEAVY_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
-	ai_tags = { artillery }
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
 
 	fits_on_slot = "west"
 	fits_on_slot = "east"
@@ -592,7 +605,10 @@ ship_section_template = {
 ship_section_template = {
 	key = "HANGAR_MILITARY_STATION_SECTION"
 	ship_size = military_station_small
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
 	prerequisites = {
 		OR = {
 			tech_strike_craft_1
@@ -2545,7 +2561,14 @@ ship_section_template = {
 	fits_on_slot = mid
 	entity = "gatebuilder_01_cruiser_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { explosive }
+	ai_tags = {
+		explosive
+		explosive_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "TORPEDO_01"
@@ -2569,7 +2592,14 @@ ship_section_template = {
 	fits_on_slot = mid
 	entity = "gatebuilder_01_cruiser_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "MEDIUM_01"
@@ -2593,7 +2623,14 @@ ship_section_template = {
 	fits_on_slot = mid
 	entity = "gatebuilder_01_cruiser_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { screen }
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -2629,14 +2666,13 @@ ship_section_template = {
 	fits_on_slot = mid
 	entity = "gatebuilder_01_cruiser_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
-	prerequisites = {
-		OR = {
-			tech_strike_craft_1
-			tech_strike_craft_2
-			tech_strike_craft_3
-			tech_strike_craft_skrand
-		}
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	ai_weight = {
+		weight = 10
 	}
 
 	component_slot = {
@@ -2657,7 +2693,14 @@ ship_section_template = { #Carrier section
 	fits_on_slot = mid
 	entity = "gatebuilder_01_mothership_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -2708,7 +2751,16 @@ ship_section_template = { #Torpedo section
 	fits_on_slot = mid
 	entity = "gatebuilder_01_mothership_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { energy_torpedoes explosive }
+	ai_tags = {
+		energy_torpedoes
+		energy_torpedoes_stealth
+		explosive
+		explosive_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "TORPEDO_01"

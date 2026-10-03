@@ -17,7 +17,12 @@ ship_section_template = {
 	
 	entity = "juggernaut_core_section_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier artillery }
+	ai_tags = {
+		carrier
+		carrier_stealth
+		artillery
+		artillery_stealth
+	}
 
 	component_slot = {
 		name = "EXTRA_LARGE_01"

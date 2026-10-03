@@ -9,7 +9,16 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_corvette_M1S1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship artillery }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -33,7 +42,14 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { brawler }
+	ai_tags = {
+		brawler
+		brawler_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -133,7 +149,18 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_destroyer_1M2S1M_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { brawler explosive energy_torpedoes }
+	ai_tags = {
+		brawler
+		brawler_stealth
+		explosive
+		explosive_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -201,7 +228,16 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_destroyer_1L2S_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship artillery }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -238,6 +274,18 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "crisis_cruiser_hull_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+		gunship_stealth
+		artillery
+		artillery_stealth
+		brawler
+		brawler_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -401,6 +449,16 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "star_eater_ship_entity"
 	icon = "GFX_ship_part_core_mid"
+	ai_tags = {
+		gunship
+		gunship_stealth
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "PLANET_KILLER_GUN_01"

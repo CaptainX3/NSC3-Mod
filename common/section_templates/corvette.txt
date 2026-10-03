@@ -7,7 +7,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "corvette_M1S1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tags = {
+		explosive
+		explosive_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
 	prerequisites = {
 		tech_nsc_disabled_sections
 	}
@@ -52,7 +57,14 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship artillery brawler brawler_stealth }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		artillery
+		artillery_stealth
+		brawler
+		brawler_stealth
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -107,7 +119,10 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "corvette_S3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { screen }
+	ai_tags = {
+		screen
+		screen_stealth
+	}
 
 	ai_weight = {
 		modifier = {

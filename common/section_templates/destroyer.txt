@@ -14,7 +14,16 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "destroyer_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship brawler }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"
@@ -90,7 +99,14 @@ ship_section_template = {
 	fits_on_slot = bow
 	entity = "destroyer_bow_S3_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { screen }
+	ai_tags = {
+		screen
+		screen_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "SMALL_GUN_01"
@@ -177,7 +193,14 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth }
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "LARGE_GUN_01"
@@ -505,19 +528,13 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { screen }
+	ai_tags = {
+		screen
+		screen_stealth
+	}
 
 	ai_weight = {
-		modifier = {
-			factor = 10.0
-			NOR = {
-				has_ai_personality = peaceful_traders
-				has_ai_personality = slaving_despots
-				has_ai_personality = migrating_flock
-				has_ai_personality = evangelising_zealots
-				has_ai_personality = hive_mind
-			}
-		}
+		weight = 10
 	}
 	
 	prerequisites = { "tech_nsc_disabled_sections" }
@@ -552,10 +569,15 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { gunship brawler }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		brawler
+		brawler_stealth
+	}
 
 	ai_weight = {
-		factor = 100
+		weight = 10
 	}
 	
 	prerequisites = { "tech_nsc_disabled_sections" }
@@ -589,7 +611,14 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "destroyer_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { artillery artillery_stealth }
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
+
+	ai_weight = {
+		weight = 10
+	}
 
 	component_slot = {
 		name = "MEDIUM_GUN_01"

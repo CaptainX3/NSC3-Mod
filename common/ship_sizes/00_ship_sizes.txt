@@ -34,6 +34,7 @@
 # is_bio_ship = yes					# this indicates that this ship uses bioship mechanic
 # is_entropy_conduit = yes			# this indicates that this ship is a type of entropy conduit ship used in the galactic hyperthermia crisis
 # upgrades_to = mauler_stage_2		# the next stage of the bioship growth
+# use_ai_design_role_from = corvette	# when no role is found for this size, the role lookup is retried using the target size. only one level of delegation is followed
 #
 # bioship_growth_progress_required  = 150	# for bioships: growth threshold at which the ship will grow into its next stage
 #                                 			# for hero ships that are NOT bioships: if > 0 this activates the manual growth interface. threshold at which the manual growth is enabled
@@ -97,12 +98,17 @@
 # carries_colony = <planet_class>			# default: empty. If filled, ship is able to carry a colony of that class and a colony is created by default when the ship is created
 #								  			# (see create_ship effect for special case). Ships that are not carrying a colony when supposed to are killed on a daily basis.
 #								  			# The ship size must also have "class = shipclass_starbase".
+# auto_upgrade = <yes/no>					# default: no. Keeps the country's auto-generated design for this size current with researched tech and auto-upgrades existing mobile ships to it.
+#								  			# Non-designable starbases keep an independent per-instance design instead; their components still upgrade in place as component techs unlock, regardless of this flag.
 # arkship_picture = "arkship_civilian"		# Image from gfx/portraits/arkships/ships used in portrait background for arkships
 #
 # encampment_required_progress: 50.0	# default: 100.0. Base required progress for arkship encampment/going mobile transition.
 # display_attack_neutral_fleet_button = no	# Default yes, if yes show attack neutral fleet button on military fleet UI
 # construction_offset_mult = 1.0		# distance multiplier for construction ships, will multiply the default construction distance between construction ship and construction site to adapt it to the size of the ship.
 # base_ship_size = "civilian_arkship_tier_1" # will set a base ship size for a ship size; it is used for ark ships so higher tier ark ships can be downgraded to the base version in empire creation
+# preserve_movement_animation_progress = yes	# If yes, transitioning between movement loop states (idle, moving and their combat variants) keeps the current
+#												# animation progress instead of restarting the loop. Prevents large hulls such as arkships and behemoths from
+#												# visibly snapping their move/idle animation on state changes (including script-driven ones). Default: no.
 
 
 ####################
@@ -149,22 +155,23 @@
 
 corvette = {
 	formation_priority = @corvette_formation_priority
-	max_speed = 160
+	max_speed = @speed_very_fast
 	acceleration = 0.35
 	rotation_speed = 0.1
 	collision_radius = @corvette_collision_radius
-	max_hitpoints = 300
+	max_hitpoints = @corvette_hp
 	modifier = {
-		ship_evasion_add = 60
+		ship_evasion_add = @corvette_evasion
+		#ship_piracy_suppression_add = 10
 	}
-	size_multiplier = 5
+	size_multiplier = @corvette_size_multiplier
+	map_counter_icon = ship_counter_4
+	icon = ship_size_military_1
 	fleet_slot_size = 1
 	section_slots = { "mid" = { locator = "part1" } }
 	num_target_locators = 2
 	is_space_station = no
-	map_counter_icon = ship_counter_1
-	icon = ship_size_military_1
-	base_buildtime = 60
+	base_buildtime = @corvette_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -174,7 +181,7 @@ corvette = {
 	triggered_ship_roles = {
 		{
 			name = brawler_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 	}
 
@@ -226,30 +233,20 @@ corvette = {
 				add = 15
 				uses_standard_ship_sizes = yes
 			}
+			# Reduce light-hull share as larger hulls unlock.
 			modifier = {
-				factor = 1.5
-				is_hive_empire = yes
+				factor = @composition_tech_taper
+				has_technology = tech_battleships
 			}
-			modifier = {
-				factor = 1.25
-				NOT = { is_preferred_weapons = weapon_type_explosive }
-			}
-			modifier = {
-				factor = 0.75
-				is_preferred_weapons = weapon_type_strike_craft
-				has_technology = tech_destroyers
-			}
-			modifier = {
-				factor = 0.10
-				has_technology = tech_Battlecruiser_1
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = ruthless_capitalists #doing it cheap, or something
-					has_ai_personality = hegemonic_imperialists
-				}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_strong_favored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_disfavored
+				STRIKE_WING = @doctrine_composition_minor
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_favored
 			}
 		}
 	}
@@ -258,23 +255,24 @@ corvette = {
 frigate = {
 	formation_priority = @frigate_formation_priority
 	entity = corvette_entity
-	max_speed = 150
+	max_speed = @speed_fast
 	acceleration = 0.25
 	rotation_speed = 0.1
 	collision_radius = @frigate_collision_radius
-	max_hitpoints = 500
+	max_hitpoints = @frigate_hp
 	modifier = {
-		ship_evasion_add = 50
+		ship_evasion_add = @frigate_evasion
+		#ship_piracy_suppression_add = 10
 	}
-	hull_scale = 1.25
-	size_multiplier = 8
-	fleet_slot_size = 2
+	size_multiplier = @frigate_size_multiplier
+	map_counter_icon = ship_counter_8
+	icon = ship_size_military_1_torpedo
+	fleet_slot_size = 1
+	hull_scale = 1.35
 	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
 	num_target_locators = 2
 	is_space_station = no
-	map_counter_icon = ship_counter_1
-	icon = ship_size_military_1_torpedo
-	base_buildtime = 90
+	base_buildtime = @frigate_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -321,7 +319,6 @@ frigate = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
 	required_component_set = "special_ship_slot"
 
 	resources = {
@@ -356,13 +353,25 @@ frigate = {
 				add = 10
 				uses_standard_ship_sizes = yes
 			}
+			# Reduce light-hull share as larger hulls unlock.
 			modifier = {
-				factor = 1.25
-				is_preferred_weapons = weapon_type_explosive
-			}
-			modifier = {
-				factor = 0.5
+				factor = @composition_tech_taper
 				has_technology = tech_battleships
+			}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_minor
+				STRIKE_WING = @doctrine_composition_minor_disfavored
+				AMBUSH = @doctrine_composition_favored
+				PHALANX = @doctrine_composition_neutral
+			}
+			# Nudged toward hulls matching the empire's preferred weapon family.
+			inline_script = {
+				script = "ai/weapon_preference_composition_weight"
+				SHIP_SIZE = frigate
 			}
 		}
 	}
@@ -370,21 +379,22 @@ frigate = {
 
 destroyer = {
 	formation_priority = @destroyer_formation_priority
-	max_speed = 140
+	max_speed = @speed_fast
 	acceleration = 0.3
 	rotation_speed = 0.2
 	collision_radius = @destroyer_collision_radius
-	max_hitpoints = 1000
+	max_hitpoints = @destroyer_hp
 	modifier = {
-		ship_evasion_add = 35
+		ship_evasion_add = @destroyer_evasion
+		#ship_piracy_suppression_add = 8
 	}
-	size_multiplier = 10
+	size_multiplier = @destroyer_size_multiplier
+	map_counter_icon = ship_counter_8
 	fleet_slot_size = 2
 	section_slots = { "bow" = { locator = "part1" } "stern" = { locator = "part2" } }
 	num_target_locators = 4
-	map_counter_icon = ship_counter_2
 	is_space_station = no
-	base_buildtime = 120
+	base_buildtime = @destroyer_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -450,27 +460,15 @@ destroyer = {
 				add = 15
 				uses_standard_ship_sizes = yes
 			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = erudite_explorers
-					has_ai_personality = federation_builders
-					has_ai_personality = peaceful_traders
-				}
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-				NOT = { has_technology = tech_battleships }
-			}
-			modifier = {
-				factor = 0.25
-				has_technology = tech_Battlecruiser_1
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_favored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_minor_disfavored
+				STRIKE_WING = @doctrine_composition_minor
+				AMBUSH = @doctrine_composition_favored
+				PHALANX = @doctrine_composition_favored
 			}
 		}
 	}
@@ -478,22 +476,23 @@ destroyer = {
 
 cruiser = {
 	formation_priority = @cruiser_formation_priority
-	max_speed = 130
+	max_speed = @speed_default
 	acceleration = 0.25
 	rotation_speed = 0.175
 	collision_radius = @cruiser_collision_radius
-	max_hitpoints = 1800
+	max_hitpoints = @cruiser_hp
 	modifier = {
-		ship_evasion_add = 15
+		ship_evasion_add = @cruiser_evasion
+		#ship_piracy_suppression_add = 6
 	}
-	size_multiplier = 20
+	size_multiplier = @cruiser_size_multiplier
+	map_counter_icon = ship_counter_16
+	icon = ship_size_military_4
 	fleet_slot_size = 3
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
-	map_counter_icon = ship_counter_3
-	icon = ship_size_military_4
-	base_buildtime = 240
+	base_buildtime = @cruiser_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -513,7 +512,7 @@ cruiser = {
 		}
 		{
 			name = energy_torpedoes
-			trigger = { has_technology = tech_energy_torpedoes_1 }
+			trigger = { has_energy_torpedo_tech = yes }
 		}
 		{
 			name = energy_torpedoes_stealth
@@ -540,7 +539,6 @@ cruiser = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
 	required_component_set = "special_ship_slot"
 
 	resources = {
@@ -575,46 +573,44 @@ cruiser = {
 				add = 25
 				uses_standard_ship_sizes = yes
 			}
-			modifier = {
-				factor = 0.50
-				has_technology = tech_Battlecruiser_1
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_minor_disfavored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_favored
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_neutral
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = evangelising_zealots
-					has_ai_personality = spiritual_seekers
-					has_ai_personality = slaving_despots
+			# Nudged toward hulls matching the empire's preferred weapon family.
+			inline_script = {
+				script = "ai/weapon_preference_composition_weight"
+				SHIP_SIZE = cruiser
 				}
 			}
 		}
 	}
-}
-
 
 battleship = {
 	formation_priority = @battleship_formation_priority
-	max_speed = 100
+	max_speed = @speed_slow
 	acceleration = 0.2
 	rotation_speed = 0.15
 	collision_radius = @battleship_collision_radius
-	max_hitpoints = 5000
+	max_hitpoints = @battleship_hp
 	modifier = {
-		ship_evasion_add = 8
+		ship_evasion_add = @battleship_evasion
+		#ship_piracy_suppression_add = 4
 	}
-	size_multiplier = 40
-	fleet_slot_size = 8
+	size_multiplier = @battleship_size_multiplier
+	map_counter_icon = ship_counter_32
+	icon = ship_size_military_8
+	fleet_slot_size = 4
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
-	map_counter_icon = ship_counter_10
-	icon = ship_size_military_8
-	base_buildtime = 480
+	base_buildtime = @battleship_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -641,7 +637,6 @@ battleship = {
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
 	required_component_set = "special_ship_slot"
 	required_component_set = "special_ship_slot"
 
@@ -703,25 +698,24 @@ battleship = {
 	}
 }
 
-
 titan = {
 	formation_priority = @titan_formation_priority
-	max_speed = 90
+	max_speed = @speed_slow
 	acceleration = 0.2
 	rotation_speed = 0.15
 	collision_radius = @titan_collision_radius
-	max_hitpoints = 15000
+	max_hitpoints = @titan_hp
 	modifier = {
 		ship_evasion_mult = -1
 	}
-	size_multiplier = 80
-	fleet_slot_size = 20
+	size_multiplier = @titan_size_multiplier
+	map_counter_icon = ship_counter_64
+	icon = ship_size_military_16
+	fleet_slot_size = 8
 	section_slots = { "bow" = { locator = "part1" } "mid" = { locator = "part2" } "stern" = { locator = "part3" } }
 	num_target_locators = 4
 	is_space_station = no
-	map_counter_icon = ship_counter_18
-	icon = ship_size_military_16
-	base_buildtime = 900
+	base_buildtime = @titan_build_time
 	can_have_federation_design = yes
 	enable_default_design = yes	#if yes, countries will have an auto-generated design at start
 	enable_3dview_in_ship_browser = yes #if yes, ship design will have a 3d view in the ship browser
@@ -738,13 +732,11 @@ titan = {
 
 	class = shipclass_military
 	construction_type = starbase_shipyard
-	
 	required_component_set = "power_core"
 	required_component_set = "ftl_components"
 	required_component_set = "thruster_components"
 	required_component_set = "sensor_components"
 	required_component_set = "combat_computers"
-	
 	required_component_set = "special_ship_slot"
 	required_component_set = "special_ship_slot"
 	required_component_set = "special_ship_slot"
@@ -757,7 +749,6 @@ titan = {
 	possible_construction = {
 		titan_possible_construction = yes
 	}
-
 
 	resources = {
 		category = ships
@@ -780,7 +771,6 @@ titan = {
 		planet_mult = 0.1
 	}
 }
-
 
 constructor = {
 	max_speed = @speed_fast
@@ -1645,7 +1635,6 @@ science = {
 	}
 }
 
-
 transport = {
 	max_speed = @speed_very_fast
 	rotation_speed = 0.2
@@ -1686,26 +1675,23 @@ military_station_small = {
 	max_speed = 6
 	rotation_speed = 10
 	acceleration = 10
+	max_hitpoints = @station_small_hp
 	modifier = {
 		ship_evasion_mult = -1
-		ship_armor_add = 1000
 		ships_upkeep_mult = -0.25
+		#ship_piracy_suppression_add = 2
 	}
-	ship_modifier = { ship_weapon_range_mult = 0.30 }
-	
-	max_hitpoints = 5000
+	ship_modifier = {
+		ship_weapon_range_mult = 0.30
+	}
 	combat_size_multiplier = 20
 	size_multiplier = 1
-	map_counter_icon = ship_counter_7
-	fleet_slot_size = 1
+	map_counter_icon = ship_counter_4
+	fleet_slot_size = 2
 	section_slots = { "west" = { locator = "part1" } "east" = { locator = "part2" } }
-	num_target_locators = 5
-	base_buildtime = 60
-	
-	is_space_station = yes
-	enable_default_design = yes
 	is_designable = yes
 	uses_name_prefix = no
+	takes_name_from_ship_design = yes
 	num_target_locators = 0
 	is_space_station = yes
 	base_buildtime = @corvette_build_time
@@ -1756,8 +1742,8 @@ military_station_medium = {
 	max_hitpoints = 10000
 	combat_size_multiplier = 40
 	size_multiplier = 2
-	map_counter_icon = ship_counter_7
-	fleet_slot_size = 2
+	map_counter_icon = ship_counter_4
+	fleet_slot_size = 4
 	section_slots = { "north" = { locator = "part1" } "west" = { locator = "part1" } "east" = { locator = "part2" } "south" = { locator = "part2" } }
 	num_target_locators = 5
 	is_space_station = yes

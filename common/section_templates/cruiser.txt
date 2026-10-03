@@ -530,7 +530,10 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_L1_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { artillery artillery_stealth }
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
 	
 	prerequisites = { "tech_nsc_disabled_sections" }
 
@@ -557,7 +560,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_M1S2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tags = {
+		explosive
+		explosive_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
 
 	prerequisites = { "tech_torpedoes_1" "tech_nsc_disabled_sections" }
 
@@ -607,7 +615,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_bow_M2_entity"
 	icon = "GFX_ship_part_core_bow"
-	ai_tags = { gunship carrier }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		carrier
+		carrier_stealth
+	}
 	
 	prerequisites = { "tech_nsc_disabled_sections" }
 
@@ -641,7 +654,10 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_S2HB_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { carrier }
+	ai_tags = {
+		carrier
+		carrier_stealth
+	}
 
 	ai_weight = {
 		modifier = {
@@ -690,7 +706,10 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_L1M1_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { artillery artillery_stealth }
+	ai_tags = {
+		artillery
+		artillery_stealth
+	}
 	
 	prerequisites = { "tech_nsc_disabled_sections" }
 
@@ -722,7 +741,10 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_M3_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { gunship }
+	ai_tags = {
+		gunship
+		gunship_stealth
+	}
 	
 	prerequisites = { "tech_nsc_disabled_sections" }
 
@@ -761,7 +783,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_mid_M2S2_entity"
 	icon = "GFX_ship_part_core_mid"
-	ai_tags = { explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tags = {
+		explosive
+		explosive_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
 
 	prerequisites = { "tech_torpedoes_1" "tech_nsc_disabled_sections" }
 
@@ -819,7 +846,12 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_stern_M1_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = { artillery artillery_stealth carrier	}
+	ai_tags = {
+		artillery
+		artillery_stealth
+		carrier
+		carrier_stealth
+	}
 	prerequisites = { "tech_nsc_disabled_sections" }
 
 	component_slot = {
@@ -845,7 +877,14 @@ ship_section_template = {
 	should_draw_components = yes
 	entity = "cruiser_stern_S2_entity"
 	icon = "GFX_ship_part_core_stern"
-	ai_tags = {	gunship explosive explosive_stealth energy_torpedoes energy_torpedoes_stealth }
+	ai_tags = {
+		gunship
+		gunship_stealth
+		explosive
+		explosive_stealth
+		energy_torpedoes
+		energy_torpedoes_stealth
+	}
 	prerequisites = { "tech_nsc_disabled_sections" }
 
 	component_slot = {

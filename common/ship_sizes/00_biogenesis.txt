@@ -15,7 +15,7 @@ mauler_stage_1 = {
 	modifier = {
 		ship_evasion_add = @mauler_stage_1_evasion
 	}
-	size_multiplier = 4
+	size_multiplier = @mauler_size_multiplier
 	map_counter_icon = ship_counter_4
 	icon = ship_size_mauler_stage_1
 	fleet_slot_size = 1
@@ -37,11 +37,11 @@ mauler_stage_1 = {
 	triggered_ship_roles = {
 		{
 			name = brawler_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 		{
 			name = screen_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 	}
 	prerequisites = { "tech_maulers" }
@@ -83,15 +83,22 @@ mauler_stage_1 = {
 				add = 12.5
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.25
-				is_preferred_weapons = weapon_type_kinetic
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_strong_favored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_disfavored
+				STRIKE_WING = @doctrine_composition_minor
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_favored
 			}
 		}
 	}
 }
 
 mauler_stage_2 = {
+	use_ai_design_role_from = mauler_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02"}
 	entity = "mauler_stage_2_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -111,7 +118,7 @@ mauler_stage_2 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 0.50
 	}
-	size_multiplier = 4
+	size_multiplier = @mauler_size_multiplier
 	map_counter_icon = ship_counter_4
 	icon = ship_size_mauler_stage_2
 	fleet_slot_size = 1
@@ -133,11 +140,11 @@ mauler_stage_2 = {
 	triggered_ship_roles = {
 		{
 			name = brawler_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 		{
 			name = screen_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 	}
 	prerequisites = { "tech_mauler_growth_1" }
@@ -179,15 +186,22 @@ mauler_stage_2 = {
 				add = 7.5
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.25
-				is_preferred_weapons = weapon_type_kinetic
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_strong_favored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_disfavored
+				STRIKE_WING = @doctrine_composition_minor
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_favored
 			}
 		}
 	}
 }
 
 mauler_stage_3 = {
+	use_ai_design_role_from = mauler_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
 	entity = "mauler_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -207,7 +221,7 @@ mauler_stage_3 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 1.0
 	}
-	size_multiplier = 4
+	size_multiplier = @mauler_size_multiplier
 	map_counter_icon = ship_counter_4
 	icon = ship_size_mauler_stage_3
 	fleet_slot_size = 1
@@ -229,11 +243,11 @@ mauler_stage_3 = {
 	triggered_ship_roles = {
 		{
 			name = brawler_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 		{
 			name = screen_stealth
-			trigger = { has_technology = tech_cloaking_1 }
+			trigger = { has_cloaking_tech = yes }
 		}
 	}
 	prerequisites = { "tech_mauler_growth_2" }
@@ -273,9 +287,15 @@ mauler_stage_3 = {
 				add = 5
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.25
-				is_preferred_weapons = weapon_type_kinetic
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_strong_favored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_disfavored
+				STRIKE_WING = @doctrine_composition_minor
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_favored
 			}
 		}
 	}
@@ -297,7 +317,7 @@ weaver_stage_1 = {
 	modifier = {
 		ship_evasion_add = @weaver_stage_1_evasion
 	}
-	size_multiplier = 8
+	size_multiplier = @weaver_size_multiplier
 	map_counter_icon = ship_counter_8
 	icon = ship_size_weaver_stage_1
 	fleet_slot_size = 2
@@ -364,28 +384,22 @@ weaver_stage_1 = {
 				add = 15
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_minor
+				BARRAGE = @doctrine_composition_neutral
+				STRIKE_WING = @doctrine_composition_neutral
+				AMBUSH = @doctrine_composition_neutral
+				PHALANX = @doctrine_composition_minor
 			}
 		}
 	}
 }
 
 weaver_stage_2 = {
+	use_ai_design_role_from = weaver_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02"}
 	entity = "weaver_stage_2_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -405,7 +419,7 @@ weaver_stage_2 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 0.50
 	}
-	size_multiplier = 8
+	size_multiplier = @weaver_size_multiplier
 	map_counter_icon = ship_counter_8
 	icon = ship_size_weaver_stage_2
 	fleet_slot_size = 2
@@ -472,28 +486,22 @@ weaver_stage_2 = {
 				add = 10
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_minor
+				BARRAGE = @doctrine_composition_neutral
+				STRIKE_WING = @doctrine_composition_neutral
+				AMBUSH = @doctrine_composition_neutral
+				PHALANX = @doctrine_composition_minor
 			}
 		}
 	}
 }
 
 weaver_stage_3 = {
+	use_ai_design_role_from = weaver_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
 	entity = "weaver_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -513,7 +521,7 @@ weaver_stage_3 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 1.0
 	}
-	size_multiplier = 8
+	size_multiplier = @weaver_size_multiplier
 	map_counter_icon = ship_counter_8
 	icon = ship_size_weaver_stage_3
 	fleet_slot_size = 2
@@ -578,22 +586,15 @@ weaver_stage_3 = {
 				add = 10
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_minor
+				BARRAGE = @doctrine_composition_neutral
+				STRIKE_WING = @doctrine_composition_neutral
+				AMBUSH = @doctrine_composition_neutral
+				PHALANX = @doctrine_composition_minor
 			}
 		}
 	}
@@ -615,7 +616,7 @@ harbinger_stage_1 = {
 	modifier = {
 		ship_evasion_add = @harbinger_stage_1_evasion
 	}
-	size_multiplier = 16
+	size_multiplier = @harbinger_size_multiplier
 	map_counter_icon = ship_counter_16
 	icon = ship_size_harbinger_stage_1
 	fleet_slot_size = 3
@@ -704,32 +705,27 @@ harbinger_stage_1 = {
 				add = 7.5
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_strike_craft
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_disfavored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_strong_favored
+				AMBUSH = @doctrine_composition_neutral
+				PHALANX = @doctrine_composition_minor
 			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
+			# Nudged toward hulls matching the empire's preferred weapon family.
+			inline_script = {
+				script = "ai/weapon_preference_composition_weight"
+				SHIP_SIZE = harbinger_stage_1
 			}
 		}
 	}
 }
 
 harbinger_stage_2 = {
+	use_ai_design_role_from = harbinger_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
 	entity = "harbinger_stage_2_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -749,7 +745,7 @@ harbinger_stage_2 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 0.50
 	}
-	size_multiplier = 16
+	size_multiplier = @harbinger_size_multiplier
 	map_counter_icon = ship_counter_16
 	icon = ship_size_harbinger_stage_2
 	fleet_slot_size = 3
@@ -837,32 +833,22 @@ harbinger_stage_2 = {
 				add = 5
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_disfavored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_strong_favored
+				AMBUSH = @doctrine_composition_neutral
+				PHALANX = @doctrine_composition_minor
 			}
 		}
 	}
 }
 
 harbinger_stage_3 = {
+	use_ai_design_role_from = harbinger_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
 	entity = "harbinger_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -882,7 +868,7 @@ harbinger_stage_3 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 1.0
 	}
-	size_multiplier = 16
+	size_multiplier = @harbinger_size_multiplier
 	map_counter_icon = ship_counter_16
 	icon = ship_size_harbinger_stage_3
 	fleet_slot_size = 3
@@ -968,26 +954,15 @@ harbinger_stage_3 = {
 				add = 2.5
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_strike_craft
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_disfavored
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_strong_favored
+				AMBUSH = @doctrine_composition_neutral
+				PHALANX = @doctrine_composition_minor
 			}
 		}
 	}
@@ -1009,7 +984,7 @@ stinger_stage_1 = {
 	modifier = {
 		ship_evasion_add = @stinger_stage_1_evasion
 	}
-	size_multiplier = 32
+	size_multiplier = @stinger_size_multiplier
 	map_counter_icon = ship_counter_32
 	icon = ship_size_stinger_stage_1
 	fleet_slot_size = 4
@@ -1076,41 +1051,22 @@ stinger_stage_1 = {
 				add = 30
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_energy
-			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_kinetic
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				is_machine_empire = yes
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = became_the_crisis
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_neutral
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_neutral
 			}
 		}
 	}
 }
 
 stinger_stage_2 = {
+	use_ai_design_role_from = stinger_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02" }
 	entity = "stinger_stage_2_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -1130,7 +1086,7 @@ stinger_stage_2 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 0.50
 	}
-	size_multiplier = 32
+	size_multiplier = @stinger_size_multiplier
 	map_counter_icon = ship_counter_32
 	icon = ship_size_stinger_stage_2
 	fleet_slot_size = 4
@@ -1198,41 +1154,22 @@ stinger_stage_2 = {
 				add = 20
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_energy
-			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_kinetic
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				is_machine_empire = yes
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = became_the_crisis
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_neutral
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_neutral
 			}
 		}
 	}
 }
 
 stinger_stage_3 = {
+	use_ai_design_role_from = stinger_stage_1
 	graphical_culture = { "biogenesis_01" "biogenesis_02"}
 	entity = "stinger_stage_3_entity"
 	ship_category = bio_ship					# Used to filter ships sizes for graphical cultures
@@ -1252,7 +1189,7 @@ stinger_stage_3 = {
 	ship_modifier = {
 		mod_ship_naval_cap_usage_mult = 1.0
 	}
-	size_multiplier = 32
+	size_multiplier = @stinger_size_multiplier
 	map_counter_icon = ship_counter_32
 	icon = ship_size_stinger_stage_3
 	fleet_slot_size = 4
@@ -1317,41 +1254,22 @@ stinger_stage_3 = {
 				add = 10
 				country_uses_bio_ships = yes
 			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_energy
-			}
-			modifier = {
-				factor = 1.5
-				is_preferred_weapons = weapon_type_kinetic
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_civic = civic_hive_devouring_swarm
-			}
-			modifier = {
-				factor = 1.5
-				is_machine_empire = yes
-			}
-			modifier = {
-				factor = 1.5
-				has_valid_ai_personality = yes
-				OR = {
-					has_ai_personality = honorbound_warriors
-					has_ai_personality = hegemonic_imperialists
-					has_ai_personality = democratic_crusaders
-					has_ai_personality = became_the_crisis
-					has_ai_personality = hive_mind
-					has_ai_personality = hive_mind_friend
-					has_ai_personality = benevolent_wilderness
-					has_ai_personality = rampant_wilderness
-				}
+			# Composition is shaped by the active fleet doctrine.
+			inline_script = {
+				script = "ai/doctrine_composition_weight"
+				SPEARHEAD = @doctrine_composition_neutral
+				BATTLELINE = @doctrine_composition_neutral
+				BARRAGE = @doctrine_composition_favored
+				STRIKE_WING = @doctrine_composition_neutral
+				AMBUSH = @doctrine_composition_minor
+				PHALANX = @doctrine_composition_neutral
 			}
 		}
 	}
 }
 
 bio_titan = {
+	use_ai_design_role_from = titan
 	formation_priority = @titan_formation_priority
 	entity = titan_entity
 	ship_category = bio_ship
@@ -1363,7 +1281,7 @@ bio_titan = {
 	modifier = {
 		ship_evasion_add = @titan_evasion
 	}
-	size_multiplier = 80
+	size_multiplier = @titan_size_multiplier
 	map_counter_icon = ship_counter_64
 	icon = ship_size_military_16
 	fleet_slot_size = 8
