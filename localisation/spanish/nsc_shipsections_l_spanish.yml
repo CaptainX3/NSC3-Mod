@@ -5,50 +5,60 @@
 ############ HULL SIZES #####################
 #############################################
 
-STRIKECRUISER:0 "Strike Cruiser"
-StrikeCruiser:0 "Strike Cruiser"
-StrikeCruiser_cap:0 "Strike Cruiser"
-StrikeCruiser_plural:0 "Strike Cruisers"
+STRIKECRUISER: "Strike Cruiser"
+StrikeCruiser: "Strike Cruiser"
+StrikeCruiser_cap: "Strike Cruiser"
+StrikeCruiser_plural: "Strike Cruisers"
+StrikeCruiser_plural_cap: "Strike Cruisers"
 
 BATTLECRUISER: "Battlecruiser"
 Battlecruiser: "Battlecruiser"
 Battlecruiser_cap: "Battlecruiser"
 Battlecruiser_plural: "Battlecruisers"
+Battlecruiser_plural_cap: "Battlecruisers"
 
 CARRIER: "Carrier"
 Carrier: "Carrier"
-Carrier_plural: "Carriers"
 Carrier_cap: "Carrier"
+Carrier_plural: "Carriers"
+Carrier_plural_cap: "Carriers"
 
 DREADNOUGHT: "Dreadnought"
 Dreadnought: "Dreadnought"
-Dreadnought_plural: "Dreadnoughts"
 Dreadnought_cap: "Dreadnought"
+Dreadnought_plural: "Dreadnoughts"
+Dreadnought_plural_cap: "Dreadnoughts"
 
 FLAGSHIP: "Flagship"
 Flagship: "Flagship"
-Flagship_plural: "Flagships"
 Flagship_cap: "Flagship"
+Flagship_plural: "Flagships"
+Flagship_plural_cap: "Flagships"
 
 EXPLORATIONSHIP: "Explorer"
 explorationship: "Explorer"
-explorationship_plural: "Explorers"
 explorationship_cap: "Explorer"
+explorationship_plural: "Explorers"
+explorationship_plural_cap: "Explorers"
 
 BIO_DREADNOUGHT: "Ravager"
 bio_dreadnought: "Ravager"
-bio_dreadnought_plural: "Ravagers"
 bio_dreadnought_cap: "Ravager"
+bio_dreadnought_plural: "Ravagers"
+bio_dreadnought_plural_cap: "Ravagers"
 
 BIO_EXPLORER: "Sentinel"
 bio_explorer: "Sentinel"
-bio_explorer_plural: "Sentinels"
 bio_explorer_cap: "Sentinel"
+bio_explorer_plural: "Sentinels"
+bio_explorer_plural_cap: "Sentinels"
 
 BIO_FLAGSHIP: "Progenitor"
 bio_flagship: "Progenitor"
-bio_flagship_plural: "Progenitors"
 bio_flagship_cap: "Progenitor"
+bio_flagship_plural: "Progenitors"
+bio_flagship_plural_cap: "Progenitors"
+
 
 starbase_stronghold: "Grand Citadel"
 starbase_stronghold_plural: "Grand Citadels"
