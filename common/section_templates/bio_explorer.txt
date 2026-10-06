@@ -32,7 +32,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -63,7 +63,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -89,7 +89,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -126,7 +126,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -152,7 +152,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -178,7 +178,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -215,7 +215,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -241,7 +241,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -267,7 +267,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -294,7 +294,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -320,7 +320,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -346,7 +346,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost0 }
+		cost = { food = @cost0 }
 	}
 }
 
@@ -386,7 +386,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -419,7 +419,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -462,7 +462,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -496,7 +496,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -524,7 +524,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -562,7 +562,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -595,7 +595,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -628,7 +628,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -662,7 +662,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -690,7 +690,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -728,7 +728,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -761,7 +761,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -794,7 +794,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -828,7 +828,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -866,7 +866,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -904,7 +904,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost1 }
+		cost = { food = @cost1 }
 	}
 }
 
@@ -954,7 +954,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1002,7 +1002,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1055,7 +1055,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1099,7 +1099,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1137,7 +1137,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1205,7 +1205,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1253,7 +1253,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1306,7 +1306,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1350,7 +1350,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1388,7 +1388,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1456,7 +1456,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1504,7 +1504,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1557,7 +1557,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1601,7 +1601,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1659,7 +1659,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1717,7 +1717,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost2 }
+		cost = { food = @cost2 }
 	}
 }
 
@@ -1782,7 +1782,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -1870,7 +1870,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -1958,7 +1958,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2027,7 +2027,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2085,7 +2085,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2203,7 +2203,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2266,7 +2266,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2359,7 +2359,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2428,7 +2428,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2486,7 +2486,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2604,7 +2604,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2667,7 +2667,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2760,7 +2760,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2814,7 +2814,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2892,7 +2892,7 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }
 
@@ -2970,6 +2970,6 @@ ship_section_template = {
 	
 	resources = {
 		category = ship_sections
-		cost = { alloys = @cost3 }
+		cost = { food = @cost3 }
 	}
 }

@@ -141,7 +141,7 @@ utility_component_template = {
 		category = ship_components
 		cost = {
 			alloys = @cloak_s_t1_cost_alloys
-			exotic_gases = @cloak_s_t1_cost_strategic_resources
+			exotic_gases = @cloak_s_t2_cost_strategic_resources
 		}
 		upkeep = {
 			trigger = {

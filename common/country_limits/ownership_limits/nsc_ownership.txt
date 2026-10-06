@@ -16,5 +16,9 @@ default = {
 	ship_of_size_limits = {
 		explorationship_ship_limit
 		Flagship_ship_limit
+		bio_explorationship_ship_limit
+		titan_ships_limit
+		juggernaut_ships_limit
+		colossus_ships_limit
 	}
 }

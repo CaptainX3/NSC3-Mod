@@ -671,7 +671,7 @@ farming_base = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_colonized_planet"
-			solar_system = { any_system_colony = { is_owned_by = from } }
+			solar_system = { any_system_planet_colony = { is_owned_by = from } }
 		}
 		
 		custom_tooltip = {
