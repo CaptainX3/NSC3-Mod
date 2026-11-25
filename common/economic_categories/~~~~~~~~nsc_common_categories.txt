@@ -47,6 +47,7 @@ ships = {
 
 		trigger = {
 			is_scope_valid = yes
+			is_ship_class = shipclass_military #only combat ships, as in vanilla (Beastmasters/artificial shipset cost penalty must not hit civilian ships)
 			is_space_fauna = no
 		}
 	}
@@ -569,6 +570,149 @@ ships = {
 			}
 		}
 	}
+
+	# Re-added from vanilla 4.6 (missing from this override; includes Willpower cultural envoy ship)
+
+	triggered_cost_modifier = {
+		key = starbase_defenses_build
+		use_parent_icon = yes
+
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_class = shipclass_military_station
+		}
+	}
+
+	triggered_cost_modifier = {
+		key = ship_cultural_envoy_ship
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = cultural_envoy_ship
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_ion_cannon
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_size = ion_cannon
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_cultural_envoy
+		use_parent_icon = yes
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_class = shipclass_cultural_envoy
+		}
+	}
+
+	triggered_upkeep_modifier = {
+		key = ship_military_artificial
+		use_parent_icon = yes
+
+		modifier_types = {
+			mult
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			OR = {
+				is_ship_class = shipclass_military
+				is_ship_class = shipclass_military_special
+			}
+			is_space_fauna = no
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = ship_tiyanki
+		use_parent_icon = yes
+
+		modifier_types = {
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_category = tiyanki
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = ship_amoeba
+		use_parent_icon = yes
+
+		modifier_types = {
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_category = space_amoeba
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = ship_crystalline_entity
+		use_parent_icon = yes
+
+		modifier_types = {
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_category = crystalline_entity
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = ship_voidworm
+		use_parent_icon = yes
+
+		modifier_types = {
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_category = voidworm
+		}
+	}
+
+	triggered_produces_modifier = {
+		key = ship_cutholoid
+		use_parent_icon = yes
+
+		modifier_types = {
+			add
+		}
+
+		trigger = {
+			is_scope_valid = yes
+			is_ship_category = cutholoid
+		}
+	}
 }
 
 planet_livestock_farmers = {
@@ -601,9 +745,14 @@ pop_category_bio_trophy = {
 }
 
 leader_commanders = {
-    parent = leaders
-    
-    generate_mult_modifiers = {
+	parent = leaders
+
+	generate_mult_modifiers = {
+		cost
+		upkeep
+	}
+	generate_add_modifiers = {
+		produces
 		upkeep
 	}
 	modifier_category = leader

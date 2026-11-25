@@ -160,3 +160,10 @@
 ## ESC Variable
 
 @nsc_modtag_suffix = "_nsc"
+
+## Mothball
+# Time to reactivate a mothballed fleet: 30 days per ship x this percentage (the removed Mod Menu used to set this; its default was 20)
+@nsc_mothball_restore_time_percent = 20
+@nsc_mothball_naval_cap_factor = 5 # displayed fleet Naval Cap = sum of ship size_multiplier values (cruiser 20, corvette 5 ...) = base table (size_multiplier/5) x 5
+@nsc_mothball_naval_cap_reduction = 0.75 # share of a mothballed fleet's naval capacity usage that is freed
+@nsc_mothball_upkeep_reduction = 0.9 # share of a mothballed fleet's upkeep that is refunded

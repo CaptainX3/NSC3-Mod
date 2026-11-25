@@ -20,5 +20,10 @@ default = {
 		titan_ships_limit
 		juggernaut_ships_limit
 		colossus_ships_limit
+		# Re-added from vanilla 4.6
+		progenitor_ships_limit
+		space_dragon_origin_babies_limit
+		paladin_ship_limit
+		nomadic_constructor_limit
 	}
 }

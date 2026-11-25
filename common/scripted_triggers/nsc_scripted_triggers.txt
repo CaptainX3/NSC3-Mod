@@ -45,6 +45,7 @@ ship_uses_civilian_cloaks = {
 		is_ship_size = science
 		is_ship_size = explorer_vessel
 		is_ship_size = observation_station
+		is_ship_size = cultural_envoy_ship	# Willpower 4.6
 		#NSC Ships
 		is_ship_size = explorationship
 		is_ship_size = bio_explorer
@@ -584,7 +585,7 @@ ship_uses_artillery_role = {
 
 nsc_mothball_target_fleet_requirement = {
 	optimize_memory
-	owner = { is_same_value = prev.owner }
+	owner = { is_same_value = prev.prev.owner }	# fleet owner must be the planet owner
 	OR = {
 		is_ship_class = shipclass_military
 		is_ship_class = shipclass_military_special

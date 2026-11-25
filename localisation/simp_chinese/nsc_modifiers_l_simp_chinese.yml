@@ -104,3 +104,7 @@ mod_shipsize_ion_cannon_hull_mult: "Ion Cannon Hull Points"
 
 mod_commander_skill_levels: "Commander Skill Levels"
 mod_gunship_weapon_fire_rate_mult: "Gunship Weapon Fire Rate"
+ nsc_mothball_offset_cap:0 "Mothballed Fleets (Naval Capacity)"
+ nsc_mothball_offset_energy:0 "Mothballed Fleets (Energy Upkeep)"
+ nsc_mothball_offset_alloys:0 "Mothballed Fleets (Alloy Upkeep)"
+ nsc_mothball_offset_food:0 "Mothballed Fleets (Food Upkeep)"

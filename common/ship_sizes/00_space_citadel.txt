@@ -49,6 +49,7 @@ starbase_deep_space_citadel_1 = {
 		ship_shield_add = 20000
 		ship_shield_regen_add_static = 70		# Roughly the same shield regen as T3 Shields
 		starbase_building_capacity_add = 1
+		ideological_push_mult = 0.05		# Willpower 4.6: vanilla value (NSC slot capacity unchanged)
 		starbase_defense_platform_capacity_add = 9
 		ship_sensor_range_add = 1
 	}
@@ -174,6 +175,7 @@ starbase_deep_space_citadel_2 = {
 		ship_shield_add = 40000
 		ship_shield_regen_add_static = 135		# Roughly the same shield regen as T4 Shields
 		starbase_building_capacity_add = 2
+		ideological_push_mult = 0.1		# Willpower 4.6: vanilla value (NSC slot capacity unchanged)
 		starbase_defense_platform_capacity_add = 12
 		ship_sensor_range_add = 1
 	}
@@ -295,6 +297,7 @@ starbase_deep_space_citadel_3 = {
 		ship_shield_add = 80000
 		ship_shield_regen_add_static = 265		# Roughly the same shield regen as T5 Shields
 		starbase_building_capacity_add = 4
+		ideological_push_mult = 0.15		# Willpower 4.6: vanilla value (NSC slot capacity unchanged)
 		starbase_defense_platform_capacity_add = 15
 		ship_sensor_range_add = 1
 	}

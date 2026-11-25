@@ -142,6 +142,7 @@ starbase_starport = {
 		ship_armor_add = 2000
 		starbase_module_capacity_add = 3
 		starbase_building_capacity_add = 3
+		ideological_push_mult = 0.075		# Willpower 4.6: scaled to NSC slot capacity
 		starbase_defense_platform_capacity_add = 6
 		ship_sensor_range_add = 1
 	}
@@ -253,6 +254,7 @@ starbase_starhold = {
 		ship_armor_add = 5000
 		starbase_module_capacity_add = 5
 		starbase_building_capacity_add = 5
+		ideological_push_mult = 0.125		# Willpower 4.6: scaled to NSC slot capacity
 		starbase_defense_platform_capacity_add = 9
 		ship_sensor_range_add = 1
 	}
@@ -363,6 +365,7 @@ starbase_starfortress = {
 		ship_armor_add = 10000
 		starbase_module_capacity_add = 7
 		starbase_building_capacity_add = 7
+		ideological_push_mult = 0.175		# Willpower 4.6: scaled to NSC slot capacity
 		starbase_defense_platform_capacity_add = 12
 		ship_sensor_range_add = 1
 	}
@@ -473,6 +476,7 @@ starbase_citadel = {
 		ship_armor_add = 20000
 		starbase_module_capacity_add = 10
 		starbase_building_capacity_add = 10
+		ideological_push_mult = 0.33		# Willpower 4.6: scaled to NSC slot capacity
 		starbase_defense_platform_capacity_add = 15
 		ship_sensor_range_add = 1
 	}
